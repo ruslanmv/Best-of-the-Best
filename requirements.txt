@@ -1,2 +1,6 @@
 streamlit 
 pyngrok
+opencv-python
+google-cloud-bigquery
+matplotlib
+pypistats
