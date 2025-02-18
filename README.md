@@ -85,9 +85,9 @@
 [![Word Cloud](./images/cloud.svg)](./images/cloud.svg)
 ## Trending Dashboard
 ![Trending Dashboard](./images/dashboard.png)
-## Cources
+## Courses
 <details>
-<summary>COURCES</summary>
+<summary>Courses</summary>
 
 | name | description | authors | links | colaboratory | update |
 |------|-------------|:--------|:------|:------------:|:------:|
