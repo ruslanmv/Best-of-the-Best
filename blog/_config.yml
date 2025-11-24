@@ -1,0 +1,23 @@
+# GitHub Pages Configuration
+title: Daily AI Package Highlights
+description: Discover the best AI packages with watsonx.ai and Watson Orchestrate integration insights
+theme: minima
+url: "https://ruslanmv.github.io"
+baseurl: "/Best-of-the-Best"
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /posts/:name
+
+# Exclude from build
+exclude:
+  - README.md
+  - generate_index.py
