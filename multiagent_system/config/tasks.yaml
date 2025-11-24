@@ -1,0 +1,104 @@
+research_task:
+  description: |
+    Analyze the current data in the repository to identify today's most trending AI package.
+    Look at:
+    1. Recent download trends from PyPI statistics
+    2. GitHub star growth rates
+    3. Community discussions and adoption signals
+    4. Technical innovation and unique features
+
+    Select ONE package that shows the most promise and interest today.
+    Provide detailed information about:
+    - Package name and purpose
+    - Key features and capabilities
+    - Current popularity metrics (downloads, stars)
+    - Main use cases
+    - Technical requirements
+
+  expected_output: |
+    A comprehensive research report containing:
+    - Selected package name
+    - Detailed description of the package
+    - Popularity metrics and trends
+    - Key features and capabilities
+    - Main use cases and applications
+    - Installation and basic usage information
+
+analysis_task:
+  description: |
+    Based on the researched package, conduct a deep analysis of how it can be integrated
+    with IBM watsonx.ai and Watson Orchestrate. Focus on:
+
+    1. **watsonx.ai Integration Opportunities:**
+       - How can this package enhance watsonx.ai capabilities?
+       - What specific watsonx.ai features complement this package?
+       - Potential use cases for enterprise AI workflows
+       - Data preprocessing, model training, or deployment synergies
+
+    2. **Watson Orchestrate Applications:**
+       - How can this package be leveraged in Watson Orchestrate workflows?
+       - Automation opportunities and skill integration
+       - Business process enhancement possibilities
+       - Integration with existing enterprise systems
+
+    3. **Business Value:**
+       - ROI potential for enterprises
+       - Time-to-value considerations
+       - Scalability and enterprise readiness
+       - Competitive advantages
+
+    Provide concrete examples and implementation strategies.
+
+  expected_output: |
+    A detailed analysis report containing:
+    - Executive summary of integration potential
+    - Specific watsonx.ai integration scenarios (at least 3)
+    - Watson Orchestrate use cases (at least 2)
+    - Technical implementation approach
+    - Business value proposition
+    - Recommended next steps for implementation
+
+writing_task:
+  description: |
+    Create an engaging, well-structured blog post about today's featured AI package.
+    The blog post should:
+
+    1. **Opening:**
+       - Catchy headline that includes the package name
+       - Compelling introduction that hooks the reader
+       - Brief overview of what the package does
+
+    2. **Main Content:**
+       - Package overview and key features
+       - Why it's trending today
+       - Practical examples and use cases
+       - Integration with IBM watsonx.ai (detailed section)
+       - Applications with Watson Orchestrate (detailed section)
+       - Code snippets or configuration examples where appropriate
+
+    3. **Business Value Section:**
+       - How enterprises can benefit
+       - ROI and efficiency gains
+       - Real-world application scenarios
+
+    4. **Getting Started:**
+       - Installation instructions
+       - Quick start guide
+       - Links to documentation and resources
+
+    5. **Conclusion:**
+       - Summary of key takeaways
+       - Call to action for readers
+
+    Format the post in Markdown with proper headings, code blocks, and links.
+    Target length: 1000-1500 words.
+
+  expected_output: |
+    A complete blog post in Markdown format with:
+    - SEO-optimized title
+    - Engaging introduction
+    - Well-structured sections with H2 and H3 headings
+    - Code examples in proper code blocks
+    - Links to relevant resources
+    - Conclusion with call to action
+    - Metadata (date, author, tags)
