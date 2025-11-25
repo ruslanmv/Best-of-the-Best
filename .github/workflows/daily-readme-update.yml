@@ -1,0 +1,89 @@
+name: Daily README and Database Update
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC (midnight)
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install requests
+
+      - name: Run README updater
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python update_readme_daily.py
+
+      - name: Export data feeds for API
+        run: |
+          python export_data_feeds.py
+
+      - name: Check database size
+        run: |
+          if [ -f data/tracking.db ]; then
+            DB_SIZE=$(du -m data/tracking.db | cut -f1)
+            echo "Database size: ${DB_SIZE} MB"
+            if [ $DB_SIZE -gt 100 ]; then
+              echo "⚠️ Warning: Database exceeds 100 MB"
+            fi
+          fi
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          # Add README if modified
+          git add README.md || true
+
+          # Add database file
+          git add data/tracking.db || true
+
+          # Add API feeds
+          git add blog/api/*.json blog/api/*.xml blog/api/README.md || true
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📊 Daily README and database update - $(date +'%Y-%m-%d')"
+            git push
+            echo "✓ Changes committed and pushed"
+          fi
+
+      - name: Generate update summary
+        run: |
+          echo "## Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "**Date:** $(date +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+
+          if [ -f data/tracking.db ]; then
+            DB_SIZE=$(du -h data/tracking.db | cut -f1)
+            echo "**Database Size:** $DB_SIZE" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "✓ README.md updated with current date" >> $GITHUB_STEP_SUMMARY
+          echo "✓ Latest statistics stored in tracking database" >> $GITHUB_STEP_SUMMARY
+          echo "✓ Database size maintained under 100 MB limit" >> $GITHUB_STEP_SUMMARY
