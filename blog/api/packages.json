@@ -1,0 +1,143 @@
+{
+  "packages": [
+    {
+      "name": "xgboost",
+      "downloads_last_month": 22589142,
+      "total_downloads": 148405359,
+      "url": "https://pypi.org/project/xgboost/"
+    },
+    {
+      "name": "langchain",
+      "downloads_last_month": 33774884,
+      "total_downloads": 143306111,
+      "url": "https://pypi.org/project/langchain/"
+    },
+    {
+      "name": "catboost",
+      "downloads_last_month": 2868991,
+      "total_downloads": 19520534,
+      "url": "https://pypi.org/project/catboost/"
+    },
+    {
+      "name": "llama-index",
+      "downloads_last_month": 3044084,
+      "total_downloads": 16487973,
+      "url": "https://pypi.org/project/llama-index/"
+    },
+    {
+      "name": "langgraph",
+      "downloads_last_month": 3365849,
+      "total_downloads": 12041239,
+      "url": "https://pypi.org/project/langgraph/"
+    },
+    {
+      "name": "folium",
+      "downloads_last_month": 1692535,
+      "total_downloads": 9457406,
+      "url": "https://pypi.org/project/folium/"
+    },
+    {
+      "name": "ollama",
+      "downloads_last_month": 1687023,
+      "total_downloads": 6004437,
+      "url": "https://pypi.org/project/ollama/"
+    },
+    {
+      "name": "bert-score",
+      "downloads_last_month": 415131,
+      "total_downloads": 2499355,
+      "url": "https://pypi.org/project/bert-score/"
+    },
+    {
+      "name": "gin-config",
+      "downloads_last_month": 405775,
+      "total_downloads": 2137581,
+      "url": "https://pypi.org/project/gin-config/"
+    },
+    {
+      "name": "autofaiss",
+      "downloads_last_month": 680266,
+      "total_downloads": 1880317,
+      "url": "https://pypi.org/project/autofaiss/"
+    },
+    {
+      "name": "pyglove",
+      "downloads_last_month": 310966,
+      "total_downloads": 1691247,
+      "url": "https://pypi.org/project/pyglove/"
+    },
+    {
+      "name": "mmdet",
+      "downloads_last_month": 174754,
+      "total_downloads": 1261858,
+      "url": "https://pypi.org/project/mmdet/"
+    },
+    {
+      "name": "earthengine-api",
+      "downloads_last_month": 128521,
+      "total_downloads": 1177695,
+      "url": "https://pypi.org/project/earthengine-api/"
+    },
+    {
+      "name": "unsloth",
+      "downloads_last_month": 312197,
+      "total_downloads": 990725,
+      "url": "https://pypi.org/project/unsloth/"
+    },
+    {
+      "name": "pybullet",
+      "downloads_last_month": 119032,
+      "total_downloads": 665521,
+      "url": "https://pypi.org/project/pybullet/"
+    },
+    {
+      "name": "scikit-video",
+      "downloads_last_month": 84794,
+      "total_downloads": 568040,
+      "url": "https://pypi.org/project/scikit-video/"
+    },
+    {
+      "name": "Crawl4AI",
+      "downloads_last_month": 166528,
+      "total_downloads": 389473,
+      "url": "https://pypi.org/project/Crawl4AI/"
+    },
+    {
+      "name": "mmsegmentation",
+      "downloads_last_month": 63208,
+      "total_downloads": 340993,
+      "url": "https://pypi.org/project/mmsegmentation/"
+    },
+    {
+      "name": "TPOT",
+      "downloads_last_month": 40543,
+      "total_downloads": 273867,
+      "url": "https://pypi.org/project/TPOT/"
+    },
+    {
+      "name": "tensorflow-graphics",
+      "downloads_last_month": 89003,
+      "total_downloads": 230509,
+      "url": "https://pypi.org/project/tensorflow-graphics/"
+    },
+    {
+      "name": "tensorflow-federated",
+      "downloads_last_month": 42560,
+      "total_downloads": 213289,
+      "url": "https://pypi.org/project/tensorflow-federated/"
+    },
+    {
+      "name": "langfun",
+      "downloads_last_month": 9833,
+      "total_downloads": 201538,
+      "url": "https://pypi.org/project/langfun/"
+    },
+    {
+      "name": "dopamine-rl",
+      "downloads_last_month": 25720,
+      "total_downloads": 190609,
+      "url": "https://pypi.org/project/dopamine-rl/"
+    }
+  ],
+  "last_updated": "2025-11-25T13:00:02.040287"
+}
