@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "best-of-the-best-ai": {
+      "command": "python",
+      "args": ["mcp_server.py"],
+      "cwd": "/path/to/Best-of-the-Best",
+      "description": "Access to AI/ML repositories, papers, and packages data with historical trends",
+      "capabilities": {
+        "resources": true,
+        "tools": true
+      }
+    }
+  }
+}
