@@ -50,11 +50,15 @@ jobs:
         run: |
           python blog/generate_index.py
 
+      - name: Export data feeds for API
+        run: |
+          python export_data_feeds.py
+
       - name: Commit and push blog post
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add blog/posts/*.md blog/posts/index.json
+          git add blog/posts/*.md blog/posts/index.json blog/api/*.json blog/api/*.xml blog/api/README.md blog/*.html
           git diff --staged --quiet || git commit -m "📝 Add daily AI package blog post - $(date +'%Y-%m-%d')"
           git push
 

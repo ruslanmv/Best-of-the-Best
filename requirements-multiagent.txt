@@ -1,5 +1,5 @@
 crewai==0.86.0
-crewai-tools==0.14.0
+crewai-tools>=0.17.0
 ollama==0.4.4
 langchain-ollama==0.2.0
 requests
