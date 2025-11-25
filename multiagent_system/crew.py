@@ -7,7 +7,7 @@ import yaml
 from datetime import datetime
 from pathlib import Path
 from crewai import Agent, Task, Crew, Process
-from langchain_ollama import ChatOllama
+from llm_client import get_llm
 from tools.package_research_tool import PackageResearchTool, WatsonXAnalysisTool
 
 
@@ -36,12 +36,8 @@ class DailyBlogCrew:
         self.tasks = self._create_tasks()
 
     def _setup_llm(self):
-        """Setup Ollama LLM"""
-        return ChatOllama(
-            model=self.model_name,
-            base_url="http://localhost:11434",
-            temperature=0.7
-        )
+        """Setup Ollama LLM with proper LiteLLM configuration"""
+        return get_llm(model_name=self.model_name)
 
     def _load_config(self, filename: str) -> dict:
         """Load YAML configuration file"""
