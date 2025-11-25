@@ -46,6 +46,16 @@ jobs:
           python crew.py
         timeout-minutes: 30
 
+      - name: Update README tables with latest data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python update_readme_tables.py
+
+      - name: Update tracking database
+        run: |
+          python update_readme_daily.py
+
       - name: Generate blog index
         run: |
           python blog/generate_index.py
@@ -58,8 +68,8 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add blog/posts/*.md blog/posts/index.json blog/api/*.json blog/api/*.xml blog/api/README.md blog/*.html
-          git diff --staged --quiet || git commit -m "📝 Add daily AI package blog post - $(date +'%Y-%m-%d')"
+          git add README.md data/tracking.db blog/posts/*.md blog/posts/index.json blog/api/*.json blog/api/*.xml blog/api/README.md blog/*.html
+          git diff --staged --quiet || git commit -m "📝 Daily update: blog post + README tables - $(date +'%Y-%m-%d')"
           git push
 
       - name: Deploy to GitHub Pages
