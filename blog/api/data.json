@@ -2,7 +2,7 @@
   "repositories": [
     {
       "name": "ollama/ollama",
-      "stars": 156640,
+      "stars": 156643,
       "url": "https://github.com/ollama/ollama"
     },
     {
@@ -12,12 +12,12 @@
     },
     {
       "name": "comfyanonymous/ComfyUI",
-      "stars": 94640,
+      "stars": 94641,
       "url": "https://github.com/comfyanonymous/ComfyUI"
     },
     {
       "name": "openai/whisper",
-      "stars": 91302,
+      "stars": 91303,
       "url": "https://github.com/openai/whisper"
     },
     {
@@ -42,7 +42,7 @@
     },
     {
       "name": "ultralytics/yolov5",
-      "stars": 56172,
+      "stars": 56171,
       "url": "https://github.com/ultralytics/yolov5"
     },
     {
@@ -373,5 +373,5 @@
       "url": "https://pypi.org/project/dopamine-rl/"
     }
   ],
-  "last_updated": "2025-11-27T06:48:00.734009"
+  "last_updated": "2025-11-27T07:05:15.310277"
 }
