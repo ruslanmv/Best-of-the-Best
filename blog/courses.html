@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Courses - Best-of-the-Best</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Curated AI and Data Science courses from the Best-of-the-Best project">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #1d4ed8 0%, #4f46e5 100%);
+      padding: 20px;
+      color: #0f172a;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 35px rgba(15, 23, 42, 0.25);
+      overflow: hidden;
+    }
+    header {
+      background: linear-gradient(135deg, #1d4ed8 0%, #4f46e5 100%);
+      color: #ffffff;
+      padding: 36px 40px 28px;
+    }
+    header h1 { font-size: 2.1rem; margin-bottom: 6px; }
+    header p { opacity: 0.9; max-width: 620px; font-size: 0.98rem; }
+    nav {
+      background: #0f172a;
+      padding: 12px 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      font-size: 0.9rem;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      transition: all 0.2s;
+    }
+    nav a:hover { background: #1f2937; border-color: #4b5563; }
+    nav a.active { background: #ffffff; color: #111827; font-weight: 600; }
+    .content { padding: 28px 40px 36px; }
+    .intro { margin-bottom: 22px; }
+    .intro h2 { font-size: 1.5rem; margin-bottom: 6px; }
+    .intro p { font-size: 0.95rem; color: #4b5563; max-width: 720px; }
+    .filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; align-items: center; }
+    .filters label { font-size: 0.85rem; color: #6b7280; }
+    .filters select, .filters input {
+      padding: 6px 10px; font-size: 0.9rem; border-radius: 8px;
+      border: 1px solid #e5e7eb; background: #f9fafb; min-width: 160px;
+    }
+    .filters input { flex: 1; min-width: 220px; }
+    .table-wrapper {
+      margin-top: 8px; border-radius: 10px; overflow: hidden;
+      border: 1px solid #e5e7eb; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06); background: white;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    thead { background: #0f172a; color: #e5e7eb; }
+    th, td { padding: 10px 12px; text-align: left; vertical-align: top; }
+    th { font-weight: 600; border-bottom: 1px solid #1f2937; }
+    tbody tr:nth-child(odd) { background: #f9fafb; }
+    tbody tr:hover { background: #eff6ff; }
+    .item-name { font-weight: 600; color: #111827; }
+    .badge { display: inline-block; padding: 3px 8px; border-radius: 999px; font-size: 0.75rem; font-weight: 500; }
+    .badge-topic { background: #ecfeff; color: #0369a1; }
+    .link { color: #2563eb; text-decoration: none; font-weight: 500; }
+    .link:hover { text-decoration: underline; }
+    .loading, .error { text-align: center; padding: 24px 0; font-size: 0.9rem; }
+    .error { color: #b91c1c; }
+    footer { background: #0f172a; color: #9ca3af; font-size: 0.82rem; text-align: center; padding: 14px; }
+    @media (max-width: 768px) {
+      header { padding: 24px 20px; }
+      nav { padding: 10px 20px; }
+      .content { padding: 22px 20px 28px; }
+      th:nth-child(3) { display: none; }
+      td:nth-child(3) { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AI & Data Science Courses</h1>
+      <p>Curated learning paths selected based on real usage in top repositories and research relevance.</p>
+    </header>
+
+    <nav>
+      <a href="../">🏠 Home</a>
+      <a href="courses.html" class="active">📚 Courses</a>
+      <a href="research.html">📄 Research</a>
+      <a href="tutorials.html">🧪 Tutorials</a>
+      <a href="notebooks.html">📓 Notebooks</a>
+    </nav>
+
+    <div class="content">
+      <section class="filters">
+        <label for="filter-topic">Topic:</label>
+        <select id="filter-topic"><option value="">All topics</option></select>
+        <input id="search-text" type="text" placeholder="Search courses...">
+      </section>
+
+      <div class="table-wrapper">
+        <div class="loading" id="loading">Loading courses...</div>
+        <table id="courses-table" style="display:none;">
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>Author/Provider</th>
+              <th>Topic</th>
+              <th>Date</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody id="courses-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <footer>&copy; 2025 Best-of-the-Best</footer>
+  </div>
+
+  <script>
+    const API_URL = 'api/courses.json';
+    let allItems = [];
+
+    function populateFilters(items) {
+      const select = document.getElementById('filter-topic');
+      const tags = new Set();
+      items.forEach(i => (i.tags || []).forEach(t => tags.add(t)));
+      Array.from(tags).sort().forEach(tag => {
+        const opt = document.createElement('option');
+        opt.value = tag; opt.textContent = tag;
+        select.appendChild(opt);
+      });
+    }
+
+    function renderItems() {
+      const tbody = document.getElementById('courses-body');
+      const topic = document.getElementById('filter-topic').value.toLowerCase();
+      const search = document.getElementById('search-text').value.toLowerCase();
+
+      const filtered = allItems.filter(item => {
+        const matchesTopic = !topic || (item.tags || []).some(t => t.toLowerCase() === topic);
+        const matchesSearch = !search || item.title.toLowerCase().includes(search) || item.author.toLowerCase().includes(search);
+        return matchesTopic && matchesSearch;
+      });
+
+      if (!filtered.length) {
+        tbody.innerHTML = '<tr><td colspan="5" style="text-align:center; padding:2rem;">No courses found.</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = filtered.map(item => `
+        <tr>
+          <td><div class="item-name">${item.title}</div></td>
+          <td>${item.author || 'Best-of-the-Best'}</td>
+          <td>${item.tags && item.tags[0] ? `<span class="badge badge-topic">${item.tags[0]}</span>` : '-'}</td>
+          <td>${new Date(item.date).toLocaleDateString()}</td>
+          <td><a class="link" href="${item.url}" target="_blank">View →</a></td>
+        </tr>
+      `).join('');
+    }
+
+    fetch(API_URL).then(r => r.json()).then(data => {
+      allItems = data;
+      populateFilters(data);
+      renderItems();
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('courses-table').style.display = 'table';
+    }).catch(e => {
+      document.getElementById('loading').textContent = 'Error loading data.';
+      console.error(e);
+    });
+
+    document.getElementById('filter-topic').addEventListener('change', renderItems);
+    document.getElementById('search-text').addEventListener('input', renderItems);
+  </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Research - Best-of-the-Best</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Reusing base styles for consistency */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; line-height: 1.6; background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%); padding: 20px; color: #0f172a; }
+    .container { max-width: 1200px; margin: 0 auto; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+    header { background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%); color: #fff; padding: 30px 40px; }
+    nav { background: #0f172a; padding: 12px 40px; display: flex; gap: 10px; flex-wrap: wrap; }
+    nav a { color: #e2e8f0; text-decoration: none; padding: 6px 12px; border-radius: 20px; font-size: 0.9rem; }
+    nav a:hover { background: #334155; }
+    nav a.active { background: #fff; color: #0f172a; font-weight: bold; }
+    .content { padding: 30px 40px; }
+    .filters { margin-bottom: 20px; display: flex; gap: 10px; }
+    input, select { padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px; }
+    input { flex-grow: 1; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th { text-align: left; padding: 12px; border-bottom: 2px solid #e2e8f0; background: #f8fafc; }
+    td { padding: 12px; border-bottom: 1px solid #e2e8f0; }
+    tr:hover { background: #f1f5f9; }
+    .tag { background: #f3e8ff; color: #6b21a8; padding: 2px 8px; border-radius: 12px; font-size: 0.8rem; }
+    a.view-link { color: #4f46e5; text-decoration: none; font-weight: bold; }
+    .loading { text-align: center; padding: 20px; color: #64748b; }
+    @media(max-width:768px){ th:nth-child(3), td:nth-child(3) { display: none; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📄 AI Research Papers</h1>
+      <p>Trending papers and academic resources analyzed by the multi-agent system.</p>
+    </header>
+    <nav>
+      <a href="../">🏠 Home</a>
+      <a href="courses.html">📚 Courses</a>
+      <a href="research.html" class="active">📄 Research</a>
+      <a href="tutorials.html">🧪 Tutorials</a>
+      <a href="notebooks.html">📓 Notebooks</a>
+    </nav>
+    <div class="content">
+      <div class="filters">
+        <select id="filter-tag"><option value="">All Topics</option></select>
+        <input type="text" id="search" placeholder="Search papers...">
+      </div>
+      <div id="loading" class="loading">Loading research...</div>
+      <table id="table" style="display:none;">
+        <thead><tr><th>Paper Title</th><th>Author(s)</th><th>Topics</th><th>Date</th><th>Link</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+  <script>
+    fetch('api/research.json').then(r=>r.json()).then(data => {
+      const tbody = document.getElementById('tbody');
+      const tagSelect = document.getElementById('filter-tag');
+      
+      // Populate Tags
+      const tags = new Set();
+      data.forEach(d => (d.tags||[]).forEach(t=>tags.add(t)));
+      Array.from(tags).sort().forEach(t => {
+        const opt = document.createElement('option');
+        opt.value=t; opt.textContent=t; tagSelect.appendChild(opt);
+      });
+
+      const render = () => {
+        const term = document.getElementById('search').value.toLowerCase();
+        const tag = tagSelect.value.toLowerCase();
+        const filtered = data.filter(d => 
+          (d.title.toLowerCase().includes(term) || d.author.toLowerCase().includes(term)) &&
+          (!tag || (d.tags||[]).some(t=>t.toLowerCase()===tag))
+        );
+        
+        if(!filtered.length) { tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;padding:20px">No results</td></tr>'; return; }
+        
+        tbody.innerHTML = filtered.map(d => `
+          <tr>
+            <td style="font-weight:600">${d.title}</td>
+            <td>${d.author}</td>
+            <td>${(d.tags||[]).slice(0,2).map(t=>`<span class="tag">${t}</span>`).join(' ')}</td>
+            <td>${new Date(d.date).toLocaleDateString()}</td>
+            <td><a class="view-link" href="${d.url}">Read</a></td>
+          </tr>
+        `).join('');
+      };
+
+      render();
+      document.getElementById('loading').style.display='none';
+      document.getElementById('table').style.display='table';
+      
+      document.getElementById('search').addEventListener('input', render);
+      tagSelect.addEventListener('change', render);
+    });
+  </script>
+</body>
+</html>

@@ -1,16 +1,19 @@
 [
   {
-    "filename": "2024-11-22-example-langchain.md",
     "title": "LangChain: Revolutionizing LLM Application Development with watsonx.ai",
+    "url": "posts/2024-11-22-example-langchain.html",
     "date": "2024-11-22",
     "author": "AI Multi-Agent System",
+    "category": "general",
     "tags": [
       "AI",
       "LLM",
       "LangChain",
-      "watsonx.ai",
+      "watsonx",
+      "ai",
       "Watson Orchestrate"
     ],
-    "excerpt": "In today's rapidly evolving AI landscape, **LangChain** has emerged as one of the most influential frameworks for building applications powered by Large Language Models (LLMs). With over 33 million mo..."
+    "excerpt": "In today's rapidly evolving AI landscape, **LangChain** has emerged as one of the most influential frameworks for building applications powered by Large Language Models (LLMs). Wit...",
+    "filename": "2024-11-22-example-langchain.md"
   }
 ]
