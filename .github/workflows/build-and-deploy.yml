@@ -16,17 +16,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # -----------------------------------------------------------
-      # 1) Checkout repo (full history because you commit in CI)
-      # -----------------------------------------------------------
+      # 1) Checkout repo
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # -----------------------------------------------------------
-      # 2) Python + Ollama backend (unchanged from your current flow)
-      # -----------------------------------------------------------
+      # 2) Python + Ollama backend
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -35,10 +31,8 @@ jobs:
       - name: Install Ollama
         run: |
           curl -fsSL https://ollama.com/install.sh | sh
-          # Start Ollama service
           ollama serve &
           sleep 5
-          # Pull the model
           ollama pull llama3.2
 
       - name: Install Python dependencies
@@ -52,27 +46,21 @@ jobs:
           python crew.py
         timeout-minutes: 30
 
-      - name: Update README tables with latest data
+      - name: Update README tables
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python update_readme_tables.py
+        run: python update_readme_tables.py
 
       - name: Update tracking database
-        run: |
-          python update_readme_daily.py
+        run: python update_readme_daily.py
 
       - name: Generate blog index
-        run: |
-          python blog/generate_index.py
+        run: python blog/generate_index.py
 
       - name: Export data feeds for API
-        run: |
-          python export_data_feeds.py
+        run: python export_data_feeds.py
 
-      # -----------------------------------------------------------
-      # 3) Commit content changes (same behavior as before)
-      # -----------------------------------------------------------
+      # 3) Commit content changes
       - name: Commit and push blog updates
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -81,16 +69,7 @@ jobs:
           git diff --staged --quiet || git commit -m "📝 Daily update: blog post + README tables - $(date +'%Y-%m-%d')"
           git push
 
-      # -----------------------------------------------------------
-      # 4) Jekyll + Minimal Mistakes build
-      #
-      #    Assumes you have:
-      #      - Gemfile       (with jekyll + minimal-mistakes-jekyll)
-      #      - _config.yml   (url: https://ruslanmv.com, baseurl: /Best-of-the-Best)
-      #      - index.md etc. using your generated data
-      #
-      #    This builds the site into ./_site (not committed).
-      # -----------------------------------------------------------
+      # 4) Jekyll Build
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -106,18 +85,10 @@ jobs:
           JEKYLL_ENV: production
         run: |
           bundle exec jekyll build --baseurl "/Best-of-the-Best"
+          # CRITICAL FIX: Create .nojekyll to prevent GitHub from trying to rebuild the site
+          touch ./_site/.nojekyll
 
-      # -----------------------------------------------------------
-      # 5) Deploy built Jekyll site to GitHub Pages
-      #
-      #    GitHub Pages settings for this repo should be:
-      #      - Source: Deploy from a branch
-      #      - Branch: gh-pages
-      #      - Folder: / (root)
-      #
-      #    The final URL will be:
-      #      https://ruslanmv.com/Best-of-the-Best/
-      # -----------------------------------------------------------
+      # 5) Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
