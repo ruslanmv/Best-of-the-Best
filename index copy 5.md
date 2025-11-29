@@ -18,6 +18,12 @@ author_profile: false
   --botb-border:    #e2e8f0;
   --botb-card-bg:   #ffffff;
   --botb-radius:    12px;
+
+  /* Category Accents */
+  --acc-course:     #10b981; /* Emerald */
+  --acc-research:   #8b5cf6; /* Violet */
+  --acc-tutorial:   #3b82f6; /* Blue */
+  --acc-notebook:   #f59e0b; /* Amber */
 }
 
 /* Page container */
@@ -91,10 +97,13 @@ author_profile: false
   box-shadow: 0 6px 12px rgba(15, 23, 42, 0.10);
   text-align: center;
   border: 1px solid var(--botb-border);
-  transition: transform 0.18s ease;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
-.botb-stat-card:hover { transform: translateY(-2px); }
+.botb-stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 18px rgba(15, 23, 42, 0.16);
+}
 
 .botb-stat-value {
   font-size: 2rem;
@@ -145,24 +154,15 @@ author_profile: false
   align-items: center;
   gap: 0.45rem;
   white-space: nowrap;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
 }
 
 .botb-btn-primary { background-color: var(--botb-dark); color: white !important; }
-.botb-btn-primary:hover { background-color: #1f2937; transform: translateY(-1px); }
+.botb-btn-primary:hover { background-color: #1f2937; }
 
-.botb-btn-outline { 
-  background-color: #ffffff; 
-  border: 1px solid #cbd5e1; 
-  color: #475569 !important; 
-}
-.botb-btn-outline:hover { 
-  background-color: #f8fafc; 
-  border-color: #94a3b8; 
-  transform: translateY(-1px);
-}
+.botb-btn-outline { background-color: #ffffff; border-color: #cbd5e1; color: #475569 !important; }
+.botb-btn-outline:hover { background-color: #f8fafc; border-color: #94a3b8; }
 
-/* 4. SECTIONS */
+/* 4. SECTION TITLES */
 .botb-section-title {
   font-size: 1.4rem;
   font-weight: 700;
@@ -181,7 +181,11 @@ author_profile: false
   margin: 0 1.5rem;
   border: 1px solid var(--botb-border);
   box-shadow: 0 6px 12px rgba(15, 23, 42, 0.10);
-  margin-bottom: 3rem;
+}
+
+.botb-featured--loading {
+  text-align: center;
+  color: #9ca3af;
 }
 
 .botb-featured-header {
@@ -197,20 +201,27 @@ author_profile: false
 .botb-featured h3 a { color: var(--botb-dark); text-decoration: none; }
 .botb-featured h3 a:hover { color: var(--botb-primary); }
 
-.botb-featured p { color: #475569; line-height: 1.6; margin-bottom: 0.9rem; }
+.botb-featured p {
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 0.9rem;
+}
+
+.botb-tag-container { margin-top: 0.4rem; }
 
 .botb-tag {
   display: inline-block;
   background-color: #eff6ff;
   color: var(--botb-primary);
-  padding: 0.2rem 0.6rem;
-  border-radius: 6px;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
   font-size: 0.75rem;
   font-weight: 600;
   margin-right: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 
-/* 6. PREVIOUS HIGHLIGHTS GRID */
+/* 6. GRID ARCHIVE (Previous Highlights) */
 .botb-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -225,12 +236,13 @@ author_profile: false
   padding: 1.4rem 1.35rem;
   display: flex;
   flex-direction: column;
-  transition: transform 0.18s, box-shadow 0.18s;
+  transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
 }
 
 .botb-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 16px rgba(15, 23, 42, 0.12);
+  border-color: #cbd5e1;
 }
 
 .botb-card-date {
@@ -247,7 +259,12 @@ author_profile: false
   font-weight: 600;
   line-height: 1.4;
 }
-.botb-card-title a { color: var(--botb-dark); text-decoration: none; }
+
+.botb-card-title a {
+  color: var(--botb-dark);
+  text-decoration: none;
+}
+
 .botb-card-title a:hover { color: var(--botb-primary); }
 
 .botb-card-excerpt {
@@ -258,134 +275,84 @@ author_profile: false
   line-height: 1.5;
 }
 
-.botb-card-footer { font-size: 0.8rem; color: #2563eb; font-weight: 600; }
-
-/* 7. DASHBOARD GRID & HEADERS */
-.botb-dash-intro {
-  padding: 0 1.5rem;
-  color: #64748b;
-  margin-top: -1rem;
-  margin-bottom: 1.5rem;
-  font-size: 0.95rem;
+.botb-card-footer {
+  font-size: 0.8rem;
+  color: #2563eb;
+  font-weight: 600;
 }
 
+/* 7. DASHBOARD GRID (Courses, Research, Tutorials, Notebooks) */
 .botb-dash-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.8rem;
   padding: 0 1.5rem;
 }
 
-.botb-dash-column {
-  background: #ffffff;
-  border-radius: var(--botb-radius);
+.botb-col {
+  background: var(--botb-card-bg);
   border: 1px solid var(--botb-border);
+  border-radius: var(--botb-radius);
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  min-height: 250px;
 }
 
-/* Enhanced Header "Button" */
-.botb-dash-header {
-  padding: 1rem 1.1rem;
+/* clickable header */
+.botb-col-header {
+  padding: 1.25rem;
   border-bottom: 1px solid var(--botb-border);
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  background: #f9fafb;
-  transition: background-color 0.2s ease;
-  position: relative; /* For clickable area */
-}
-
-.botb-dash-header:hover {
-  background-color: #f1f5f9;
-  cursor: pointer;
-}
-
-.botb-dash-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-size: 0.9rem;
-}
-
-.botb-dash-icon--courses   { background: #10b981; }
-.botb-dash-icon--research  { background: #8b5cf6; }
-.botb-dash-icon--tutorials { background: #3b82f6; }
-.botb-dash-icon--notebooks { background: #f59e0b; }
-
-.botb-dash-title {
-  margin: 0;
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #1e293b;
-}
-
-/* Link styling inside header */
-.botb-dash-title a {
+  background: #f8fafc;
+  text-decoration: none !important;
   color: inherit;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.botb-col-header:hover { background: #f1f5f9; }
+
+.botb-col-icon {
+  width: 32px; height: 32px;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  color: white; font-size: 0.9rem;
 }
 
-/* Arrow effect on hover */
-.botb-dash-title a::after {
-  content: '→';
-  font-size: 1rem;
-  opacity: 0;
-  transform: translateX(-5px);
-  transition: all 0.2s ease;
-  color: var(--botb-primary);
+.icon-course   { background: var(--acc-course); }
+.icon-research { background: var(--acc-research); }
+.icon-tutorial { background: var(--acc-tutorial); }
+.icon-notebook { background: var(--acc-notebook); }
+
+.botb-list-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.botb-dash-header:hover .botb-dash-title a::after {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-/* Make the whole header clickable by expanding the link (optional UX trick) */
-.botb-dash-title a::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-}
-
-/* List Items */
-.botb-dash-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.botb-dash-item {
-  padding: 0.75rem 1.1rem;
-  border-bottom: 1px solid #e5e7eb;
+.botb-list-item {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--botb-border);
   transition: background 0.15s;
 }
+.botb-list-item:last-child { border-bottom: none; }
+.botb-list-item:hover { background: #fdfdfd; }
 
-.botb-dash-item:last-child { border-bottom: none; }
-.botb-dash-item:hover { background: #f8fafc; }
-
-.botb-dash-item a {
+.botb-item-title {
   display: block;
-  font-size: 0.95rem;
   font-weight: 600;
   color: #334155;
   text-decoration: none;
-  line-height: 1.4;
+  font-size: 0.95rem;
   margin-bottom: 0.25rem;
+  line-height: 1.4;
 }
+.botb-item-title:hover { color: var(--botb-primary); }
 
-.botb-dash-item a:hover { color: var(--botb-primary); }
-
-.botb-dash-meta {
+.botb-item-meta {
   font-size: 0.8rem;
   color: #94a3b8;
   display: flex;
@@ -393,18 +360,17 @@ author_profile: false
   align-items: center;
 }
 
-.botb-dash-tag {
-  background: #eff6ff;
-  color: #2563eb;
-  padding: 1px 6px;
-  border-radius: 4px;
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
+/* Loading/Empty State */
+.botb-empty {
+  padding: 2rem;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: auto;
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
   .botb-hero__title { font-size: 2.1rem; }
   .botb-hero__lead { font-size: 1rem; }
@@ -422,7 +388,7 @@ author_profile: false
     <div class="botb-hero__badge">RuslanMV Blog Section</div>
     <h1 class="botb-hero__title">The Best of the Best</h1>
     <p class="botb-hero__lead">
-      Daily AI highlights from an autonomous multi-agent system that monitors GitHub, 
+      Daily AI highlights from an autonomous multi-agent system that monitors GitHub,
       Papers with Code and HuggingFace to surface the #1 ranked asset every day.
     </p>
   </header>
@@ -461,10 +427,6 @@ author_profile: false
         <i class="fas fa-chart-bar" aria-hidden="true"></i>
         <span>Full leaderboard</span>
       </a>
-      <a class="botb-btn botb-btn-outline" href="{{ site.baseurl }}/blog/">
-        <i class="fas fa-table" aria-hidden="true"></i>
-        <span>Trending dashboard</span>
-      </a>
       <a class="botb-btn botb-btn-outline" href="{{ site.baseurl }}/blog/api/feed.xml">
         <i class="fas fa-rss" aria-hidden="true"></i>
         <span>RSS</span>
@@ -486,92 +448,80 @@ author_profile: false
     </div>
   </div>
 
-  <!-- DASHBOARD GRID -->
-  <h2 class="botb-section-title">📈 AI Ecosystem Dashboard</h2>
-  <p class="botb-dash-intro">
-    A compact view of the most relevant <strong>Courses</strong>, <strong>Research papers</strong>, 
-    <strong>Tutorials</strong>, and <strong>Notebooks</strong> curated by the multi-agent system.
-    Explore more details in the full <a href="{{ site.baseurl }}/blog/data.html" style="color:#2563eb;text-decoration:none;font-weight:600;">Trending Dashboard</a>.
-  </p>
-
-  <div class="botb-dash-grid">
-
-    <!-- Courses -->
-    <div class="botb-dash-column">
-      <div class="botb-dash-header">
-        <div class="botb-dash-icon botb-dash-icon--courses">
-          <i class="fas fa-graduation-cap" aria-hidden="true"></i>
-        </div>
-        <h3 class="botb-dash-title">
-          <a href="{{ site.baseurl }}/blog/courses.html">Courses</a>
-        </h3>
-      </div>
-      <ul id="botb-dash-courses" class="botb-dash-list">
-        <li class="botb-dash-item" style="text-align:center; color:#9ca3af;">Loading…</li>
-      </ul>
-    </div>
-
-    <!-- Research -->
-    <div class="botb-dash-column">
-      <div class="botb-dash-header">
-        <div class="botb-dash-icon botb-dash-icon--research">
-          <i class="fas fa-scroll" aria-hidden="true"></i>
-        </div>
-        <h3 class="botb-dash-title">
-          <a href="{{ site.baseurl }}/blog/research.html">Research</a>
-        </h3>
-      </div>
-      <ul id="botb-dash-research" class="botb-dash-list">
-        <li class="botb-dash-item" style="text-align:center; color:#9ca3af;">Loading…</li>
-      </ul>
-    </div>
-
-    <!-- Tutorials -->
-    <div class="botb-dash-column">
-      <div class="botb-dash-header">
-        <div class="botb-dash-icon botb-dash-icon--tutorials">
-          <i class="fas fa-code" aria-hidden="true"></i>
-        </div>
-        <h3 class="botb-dash-title">
-          <a href="{{ site.baseurl }}/blog/tutorials.html">Tutorials</a>
-        </h3>
-      </div>
-      <ul id="botb-dash-tutorials" class="botb-dash-list">
-        <li class="botb-dash-item" style="text-align:center; color:#9ca3af;">Loading…</li>
-      </ul>
-    </div>
-
-    <!-- Notebooks -->
-    <div class="botb-dash-column">
-      <div class="botb-dash-header">
-        <div class="botb-dash-icon botb-dash-icon--notebooks">
-          <i class="fas fa-book-open" aria-hidden="true"></i>
-        </div>
-        <h3 class="botb-dash-title">
-          <a href="{{ site.baseurl }}/blog/notebooks.html">Notebooks</a>
-        </h3>
-      </div>
-      <ul id="botb-dash-notebooks" class="botb-dash-list">
-        <li class="botb-dash-item" style="text-align:center; color:#9ca3af;">Loading…</li>
-      </ul>
-    </div>
-
-  </div>
-
   <!-- PREVIOUS HIGHLIGHTS -->
   <h2 class="botb-section-title">📅 Previous Highlights</h2>
   <div id="recent-highlights" class="botb-grid"></div>
 
+  <!-- AI ECOSYSTEM DASHBOARD -->
+  <h2 class="botb-section-title">📊 AI Ecosystem Dashboard</h2>
+  <p style="margin:-1rem 0 2rem 1.5rem; color:#64748b;">
+    A compact view of the most relevant <strong>Courses</strong>, <strong>Research</strong> papers,
+    <strong>Tutorials</strong>, and <strong>Notebooks</strong> curated by the multi-agent system.
+    Explore more details in the full <a href="{{ site.baseurl }}/blog/">Trending Dashboard</a>.
+  </p>
+
+  <div class="botb-dash-grid">
+
+    <!-- COURSES -->
+    <article class="botb-col">
+      <a href="{{ site.baseurl }}/blog/api/courses.json" class="botb-col-header" target="_blank" rel="noopener">
+        <div class="botb-col-icon icon-course"><i class="fas fa-graduation-cap"></i></div>
+        <h3 style="margin:0; font-size:1.1rem;">Courses</h3>
+        <i class="fas fa-external-link-alt" style="margin-left:auto; font-size:0.8rem; color:#94a3b8;"></i>
+      </a>
+      <div id="list-courses" class="botb-list-container">
+        <div class="botb-empty"><i class="fas fa-spinner fa-spin"></i> Loading…</div>
+      </div>
+    </article>
+
+    <!-- RESEARCH -->
+    <article class="botb-col">
+      <a href="{{ site.baseurl }}/blog/api/research.json" class="botb-col-header" target="_blank" rel="noopener">
+        <div class="botb-col-icon icon-research"><i class="fas fa-scroll"></i></div>
+        <h3 style="margin:0; font-size:1.1rem;">Research</h3>
+        <i class="fas fa-external-link-alt" style="margin-left:auto; font-size:0.8rem; color:#94a3b8;"></i>
+      </a>
+      <div id="list-research" class="botb-list-container">
+        <div class="botb-empty"><i class="fas fa-spinner fa-spin"></i> Loading…</div>
+      </div>
+    </article>
+
+    <!-- TUTORIALS -->
+    <article class="botb-col">
+      <a href="{{ site.baseurl }}/blog/api/tutorials.json" class="botb-col-header" target="_blank" rel="noopener">
+        <div class="botb-col-icon icon-tutorial"><i class="fas fa-code"></i></div>
+        <h3 style="margin:0; font-size:1.1rem;">Tutorials</h3>
+        <i class="fas fa-external-link-alt" style="margin-left:auto; font-size:0.8rem; color:#94a3b8;"></i>
+      </a>
+      <div id="list-tutorials" class="botb-list-container">
+        <div class="botb-empty"><i class="fas fa-spinner fa-spin"></i> Loading…</div>
+      </div>
+    </article>
+
+    <!-- NOTEBOOKS -->
+    <article class="botb-col">
+      <a href="{{ site.baseurl }}/blog/api/notebooks.json" class="botb-col-header" target="_blank" rel="noopener">
+        <div class="botb-col-icon icon-notebook"><i class="fas fa-book-open"></i></div>
+        <h3 style="margin:0; font-size:1.1rem;">Notebooks</h3>
+        <i class="fas fa-external-link-alt" style="margin-left:auto; font-size:0.8rem; color:#94a3b8;"></i>
+      </a>
+      <div id="list-notebooks" class="botb-list-container">
+        <div class="botb-empty"><i class="fas fa-spinner fa-spin"></i> Loading…</div>
+      </div>
+    </article>
+
+  </div>
+
 </div>
 
 <script>
-const baseurl         = '{{ site.baseurl | default: "" }}'.replace(/\/$/, '');
-const postsIndexUrl   = baseurl + '/blog/posts/index.json';
-const dataApiUrl      = baseurl + '/blog/api/data.json';
+const baseurl        = '{{ site.baseurl | default: "" }}'.replace(/\/$/, '');
+const postsIndexUrl  = baseurl + '/blog/posts/index.json';
+const dataApiUrl     = baseurl + '/blog/api/data.json';
 const dashboardApiUrl = baseurl + '/blog/api/dashboard.json';
 
+// Helpers
 const fmtNum = (n) => n ? n.toLocaleString('en-US') : '0';
-
 const compactNum = (n) => Intl.NumberFormat('en-US', {
   notation: "compact",
   maximumFractionDigits: 1
@@ -586,7 +536,19 @@ const stripMarkdown = (text) => {
     .replace(/#{1,6}\s/g, '');
 };
 
-// 1. Load live stats from API (repositories, papers, packages, stars)
+// Normalize URL from JSON to a full href (handles "/blog/..." and "posts/..." cases)
+function makePostHref(url) {
+  if (!url) return '#';
+  if (url.startsWith('http')) return url;
+  if (url.startsWith(baseurl)) return url;
+  if (url.startsWith('/')) {
+    return baseurl + url;
+  }
+  // relative like "posts/xyz.html"
+  return baseurl + '/blog/' + url;
+}
+
+/* 1. Load stats from data.json */
 async function loadStats() {
   try {
     const res = await fetch(dataApiUrl);
@@ -615,7 +577,7 @@ async function loadStats() {
   }
 }
 
-// 2. Load posts index and render today + previous (blog/posts/index.json)
+/* 2. Load posts index for Today + Previous */
 async function loadHighlights() {
   const todayContainer  = document.getElementById('today-highlight');
   const recentContainer = document.getElementById('recent-highlights');
@@ -627,6 +589,8 @@ async function loadHighlights() {
     let posts = await response.json();
     if (!posts.length) {
       todayContainer.innerHTML = '<div class="botb-featured">No highlights found yet.</div>';
+      recentContainer.innerHTML =
+        '<p style="padding-left:1.5rem; color:#64748b">No previous highlights yet.</p>';
       return;
     }
 
@@ -638,7 +602,6 @@ async function loadHighlights() {
       `<span class="botb-tag">#${t}</span>`
     ).join('');
 
-    // today.url from generator is "posts/<name>.html" (relative to /blog/)
     todayContainer.innerHTML = `
       <article class="botb-featured">
         <div class="botb-featured-header">
@@ -647,7 +610,7 @@ async function loadHighlights() {
             weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
           })}</span>
         </div>
-        <h3><a href="${baseurl}/blog/${today.url}">${today.title}</a></h3>
+        <h3><a href="${makePostHref(today.url)}">${today.title}</a></h3>
         <p>${stripMarkdown(today.excerpt) || 'Daily highlight selected from the leaderboard.'}</p>
         <div class="botb-tag-container">${tagsHtml}</div>
       </article>
@@ -663,7 +626,7 @@ async function loadHighlights() {
             })}
           </div>
           <h4 class="botb-card-title">
-            <a href="${baseurl}/blog/${post.url}">${post.title}</a>
+            <a href="${makePostHref(post.url)}">${post.title}</a>
           </h4>
           <p class="botb-card-excerpt">
             ${stripMarkdown(post.excerpt || '').substring(0, 110)}…
@@ -680,59 +643,58 @@ async function loadHighlights() {
     console.error('Content error:', err);
     todayContainer.innerHTML =
       '<div class="botb-featured">Content is currently updating…</div>';
+    document.getElementById('recent-highlights').innerHTML =
+      '<p style="padding-left:1.5rem; color:#64748b">Unable to load previous highlights.</p>';
   }
 }
 
-// 3. Load dashboard summary (courses, research, tutorials, notebooks) from blog/api/dashboard.json
-async function loadDashboardSummary() {
+/* 3. Load dashboard.json for Courses / Research / Tutorials / Notebooks */
+async function loadDashboardColumns() {
+  const lists = ['list-courses', 'list-research', 'list-tutorials', 'list-notebooks'];
+
   try {
     const res = await fetch(dashboardApiUrl);
     if (!res.ok) throw new Error('Failed to load dashboard.json');
     const data = await res.json();
 
-    const renderColumn = (items, elementId) => {
+    const renderList = (items, elementId) => {
       const el = document.getElementById(elementId);
       if (!el) return;
 
-      if (!items || !items.length) {
-        el.innerHTML = '<li class="botb-dash-item" style="text-align:center; color:#9ca3af;">No items yet.</li>';
+      if (!items || items.length === 0) {
+        el.innerHTML = '<div class="botb-empty">No items found.</div>';
         return;
       }
 
-      const html = items.slice(0, 4).map(item => `
-        <li class="botb-dash-item">
-          <a href="${baseurl}/blog/${item.url}">${item.title}</a>
-          <div class="botb-dash-meta">
-            <span>${new Date(item.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}</span>
-            ${(item.tags && item.tags.length > 0)
-              ? `<span class="botb-dash-tag">${item.tags[0]}</span>`
-              : ''}
+      el.innerHTML = items.slice(0, 5).map(item => `
+        <div class="botb-list-item">
+          <a href="${makePostHref(item.url)}" class="botb-item-title">${item.title}</a>
+          <div class="botb-item-meta">
+            <span>${new Date(item.date).toLocaleDateString(undefined, {month:'short', day:'numeric'})}</span>
           </div>
-        </li>
+        </div>
       `).join('');
-
-      el.innerHTML = html;
     };
 
-    renderColumn(data.courses,   'botb-dash-courses');
-    renderColumn(data.research,  'botb-dash-research');
-    renderColumn(data.tutorials, 'botb-dash-tutorials');
-    renderColumn(data.notebooks, 'botb-dash-notebooks');
+    renderList(data.courses,   'list-courses');
+    renderList(data.research,  'list-research');
+    renderList(data.tutorials, 'list-tutorials');
+    renderList(data.notebooks, 'list-notebooks');
 
   } catch (err) {
-    console.error('Dashboard summary error:', err);
-    ['botb-dash-courses','botb-dash-research','botb-dash-tutorials','botb-dash-notebooks']
-      .forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.innerHTML =
-          '<li class="botb-dash-item" style="text-align:center; color:#9ca3af;">Dashboard offline.</li>';
-      });
+    console.error('Dashboard error:', err);
+    lists.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.innerHTML = '<div class="botb-empty">Data missing. Run the dashboard generator.</div>';
+      }
+    });
   }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   loadStats();
   loadHighlights();
-  loadDashboardSummary();
+  loadDashboardColumns();
 });
 </script>

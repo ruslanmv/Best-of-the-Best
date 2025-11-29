@@ -1,5 +1,8 @@
 """
-Generate index.json and index.html for blog posts
+generate_index_html.py
+
+Generate index.json and index.html for blog posts.
+Can be run standalone or imported by generate_index.py.
 """
 
 import json
@@ -7,6 +10,12 @@ from pathlib import Path
 from datetime import datetime
 import re
 
+# --- Configuration ---
+# Robustly detect the project root (assuming this file is in blog/)
+BASE_DIR = Path(__file__).resolve().parent.parent
+POSTS_DIR = BASE_DIR / "blog" / "posts"
+OUTPUT_HTML = BASE_DIR / "blog" / "index.html"
+OUTPUT_JSON = POSTS_DIR / "index.json"
 
 def extract_frontmatter(content: str) -> dict:
     """Extract YAML frontmatter from markdown file"""
@@ -29,6 +38,9 @@ def extract_frontmatter(content: str) -> dict:
                     if key == 'tags':
                         # Extract tags from ["tag1", "tag2"] format
                         tags = re.findall(r'"([^"]*)"', value)
+                        # Fallback for comma separated tags if regex fails or format differs
+                        if not tags and ',' in value:
+                            tags = [t.strip() for t in value.replace('[', '').replace(']', '').split(',')]
                         frontmatter[key] = tags
                     else:
                         frontmatter[key] = value
@@ -42,7 +54,6 @@ def extract_frontmatter(content: str) -> dict:
                 frontmatter['excerpt'] = excerpt
 
     return frontmatter
-
 
 def generate_html_index(posts: list):
     """Generate index.html file for the blog"""
@@ -64,11 +75,7 @@ def generate_html_index(posts: list):
     <!-- Minimal Mistakes inspired CSS -->
     <style>
         /* Reset and Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
             --primary-color: #7a8288;
@@ -85,328 +92,81 @@ def generate_html_index(posts: list):
             --font-family-mono: Monaco, Consolas, "Lucida Console", monospace;
         }
 
-        html {
-            font-size: 16px;
-            -webkit-text-size-adjust: 100%;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        body {
-            font-family: var(--font-family);
-            color: var(--text-color);
-            background-color: var(--background-color);
-            line-height: 1.5;
-        }
+        html { font-size: 16px; -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; }
+        body { font-family: var(--font-family); color: var(--text-color); background-color: var(--background-color); line-height: 1.5; }
 
         /* Masthead */
-        .masthead {
-            position: relative;
-            background-color: var(--masthead-bg);
-            border-bottom: 1px solid var(--border-color);
-            animation: intro 0.3s both;
-            animation-delay: 0.15s;
-            z-index: 20;
-        }
-
-        .masthead__inner-wrap {
-            max-width: 1280px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 1em;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .site-title {
-            font-size: 1.25rem;
-            font-weight: bold;
-            line-height: 1;
-            text-decoration: none;
-            color: var(--text-color);
-        }
-
-        .greedy-nav {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .greedy-nav a {
-            color: var(--text-color);
-            text-decoration: none;
-            padding: 0.5rem;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-        }
-
-        .greedy-nav a:hover {
-            background-color: var(--notice-bg);
-        }
+        .masthead { position: relative; background-color: var(--masthead-bg); border-bottom: 1px solid var(--border-color); animation: intro 0.3s both; animation-delay: 0.15s; z-index: 20; }
+        .masthead__inner-wrap { max-width: 1280px; margin-left: auto; margin-right: auto; padding: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        .site-title { font-size: 1.25rem; font-weight: bold; line-height: 1; text-decoration: none; color: var(--text-color); }
+        .greedy-nav { display: flex; align-items: center; gap: 1rem; }
+        .greedy-nav a { color: var(--text-color); text-decoration: none; padding: 0.5rem; border-radius: 4px; transition: background-color 0.2s; }
+        .greedy-nav a:hover { background-color: var(--notice-bg); }
 
         /* Page Content */
-        .page__content {
-            max-width: 1024px;
-            margin: 0 auto;
-            padding: 2em 1em;
-        }
+        .page__content { max-width: 1024px; margin: 0 auto; padding: 2em 1em; }
 
         /* Hero */
-        .page__hero {
-            position: relative;
-            margin-bottom: 2em;
-            background-color: var(--notice-bg);
-            background-size: cover;
-            background-position: center;
-            animation: intro 0.3s both;
-            animation-delay: 0.25s;
-        }
-
-        .page__hero-overlay {
-            position: relative;
-            padding: 3em 1em;
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%);
-            color: #fff;
-        }
-
-        .page__title {
-            font-size: 2.5em;
-            line-height: 1.2;
-            margin-bottom: 0.5em;
-            color: #fff;
-        }
-
-        .page__lead {
-            font-size: 1.25em;
-            margin-bottom: 0;
-        }
+        .page__hero { position: relative; margin-bottom: 2em; background-color: var(--notice-bg); background-size: cover; background-position: center; animation: intro 0.3s both; animation-delay: 0.25s; }
+        .page__hero-overlay { position: relative; padding: 3em 1em; background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%); color: #fff; }
+        .page__title { font-size: 2.5em; line-height: 1.2; margin-bottom: 0.5em; color: #fff; }
+        .page__lead { font-size: 1.25em; margin-bottom: 0; }
 
         /* Archive */
-        .archive {
-            margin-bottom: 2em;
-        }
-
-        .archive__item-title {
-            margin-bottom: 0.25em;
-            font-size: 1.5em;
-            line-height: 1.2;
-        }
-
-        .archive__item-title a {
-            color: var(--text-color);
-            text-decoration: none;
-        }
-
-        .archive__item-title a:hover {
-            color: var(--link-color);
-            text-decoration: underline;
-        }
-
-        .archive__item-excerpt {
-            margin-top: 0.5em;
-            font-size: 0.875em;
-            color: var(--primary-color);
-        }
-
-        .archive__item {
-            background: var(--background-color);
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            padding: 1.5em;
-            margin-bottom: 1.5em;
-            transition: box-shadow 0.2s;
-        }
-
-        .archive__item:hover {
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .page__meta {
-            margin-top: 0.5em;
-            color: var(--primary-color);
-            font-size: 0.875em;
-        }
-
-        .page__meta i {
-            margin-right: 0.25em;
-        }
+        .archive { margin-bottom: 2em; }
+        .archive__item-title { margin-bottom: 0.25em; font-size: 1.5em; line-height: 1.2; }
+        .archive__item-title a { color: var(--text-color); text-decoration: none; }
+        .archive__item-title a:hover { color: var(--link-color); text-decoration: underline; }
+        .archive__item-excerpt { margin-top: 0.5em; font-size: 0.875em; color: var(--primary-color); }
+        .archive__item { background: var(--background-color); border: 1px solid var(--border-color); border-radius: 4px; padding: 1.5em; margin-bottom: 1.5em; transition: box-shadow 0.2s; }
+        .archive__item:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        .page__meta { margin-top: 0.5em; color: var(--primary-color); font-size: 0.875em; }
+        .page__meta i { margin-right: 0.25em; }
 
         /* Tags */
-        .page__taxonomy {
-            margin-top: 1em;
-        }
-
-        .page__taxonomy-item {
-            display: inline-block;
-            margin-right: 0.5em;
-            margin-bottom: 0.5em;
-            padding: 0.25em 0.75em;
-            background-color: var(--code-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            font-size: 0.75em;
-            text-decoration: none;
-            color: var(--text-color);
-        }
-
-        .page__taxonomy-item:hover {
-            background-color: var(--notice-bg);
-        }
+        .page__taxonomy { margin-top: 1em; }
+        .page__taxonomy-item { display: inline-block; margin-right: 0.5em; margin-bottom: 0.5em; padding: 0.25em 0.75em; background-color: var(--code-bg); border: 1px solid var(--border-color); border-radius: 4px; font-size: 0.75em; text-decoration: none; color: var(--text-color); }
+        .page__taxonomy-item:hover { background-color: var(--notice-bg); }
 
         /* Notice */
-        .notice {
-            margin: 2em 0;
-            padding: 1em;
-            background-color: var(--notice-bg);
-            border-left: 4px solid var(--link-color);
-            border-radius: 4px;
-        }
-
-        .notice h4 {
-            margin-bottom: 0.5em;
-            color: var(--text-color);
-        }
+        .notice { margin: 2em 0; padding: 1em; background-color: var(--notice-bg); border-left: 4px solid var(--link-color); border-radius: 4px; }
+        .notice h4 { margin-bottom: 0.5em; color: var(--text-color); }
 
         /* Features */
-        .feature__wrapper {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5em;
-            margin: 2em 0;
-        }
-
-        .feature__item {
-            background: var(--background-color);
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            padding: 1.5em;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .feature__item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .feature__item h3 {
-            font-size: 1.25em;
-            margin-bottom: 0.5em;
-            color: var(--text-color);
-        }
+        .feature__wrapper { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5em; margin: 2em 0; }
+        .feature__item { background: var(--background-color); border: 1px solid var(--border-color); border-radius: 4px; padding: 1.5em; transition: transform 0.2s, box-shadow 0.2s; }
+        .feature__item:hover { transform: translateY(-5px); box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); }
+        .feature__item h3 { font-size: 1.25em; margin-bottom: 0.5em; color: var(--text-color); }
 
         /* Footer */
-        .page__footer {
-            background-color: var(--footer-bg);
-            color: #fff;
-            margin-top: 3em;
-            animation: intro 0.3s both;
-            animation-delay: 0.45s;
-        }
-
-        .page__footer-inner {
-            max-width: 1024px;
-            margin: 0 auto;
-            padding: 2em 1em;
-        }
-
-        .page__footer-copyright {
-            text-align: center;
-            font-size: 0.875em;
-        }
-
-        .page__footer-follow {
-            text-align: center;
-            margin-bottom: 1em;
-        }
-
-        .page__footer a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 0.5em;
-        }
-
-        .page__footer a:hover {
-            text-decoration: underline;
-        }
+        .page__footer { background-color: var(--footer-bg); color: #fff; margin-top: 3em; animation: intro 0.3s both; animation-delay: 0.45s; }
+        .page__footer-inner { max-width: 1024px; margin: 0 auto; padding: 2em 1em; }
+        .page__footer-copyright { text-align: center; font-size: 0.875em; }
+        .page__footer-follow { text-align: center; margin-bottom: 1em; }
+        .page__footer a { color: #fff; text-decoration: none; margin: 0 0.5em; }
+        .page__footer a:hover { text-decoration: underline; }
 
         /* Buttons */
-        .btn {
-            display: inline-block;
-            margin-bottom: 0.25em;
-            padding: 0.5em 1em;
-            font-family: var(--font-family);
-            font-size: 0.875em;
-            font-weight: bold;
-            text-align: center;
-            text-decoration: none;
-            border-width: 0;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-
-        .btn--primary {
-            background-color: var(--link-color);
-            color: #fff;
-        }
-
-        .btn--primary:hover {
-            background-color: #276cda;
-        }
+        .btn { display: inline-block; margin-bottom: 0.25em; padding: 0.5em 1em; font-family: var(--font-family); font-size: 0.875em; font-weight: bold; text-align: center; text-decoration: none; border-width: 0; border-radius: 4px; cursor: pointer; transition: background-color 0.2s; }
+        .btn--primary { background-color: var(--link-color); color: #fff; }
+        .btn--primary:hover { background-color: #276cda; }
 
         /* Animations */
-        @keyframes intro {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
+        @keyframes intro { 0% { opacity: 0; } 100% { opacity: 1; } }
+        
         /* Responsive */
         @media (max-width: 768px) {
-            .page__title {
-                font-size: 2em;
-            }
-
-            .page__lead {
-                font-size: 1em;
-            }
-
-            .archive__item-title {
-                font-size: 1.25em;
-            }
-
-            .masthead__inner-wrap {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .greedy-nav {
-                margin-top: 1em;
-                flex-wrap: wrap;
-            }
+            .page__title { font-size: 2em; }
+            .page__lead { font-size: 1em; }
+            .archive__item-title { font-size: 1.25em; }
+            .masthead__inner-wrap { flex-direction: column; align-items: flex-start; }
+            .greedy-nav { margin-top: 1em; flex-wrap: wrap; }
         }
 
         /* Loading state */
-        .loading {
-            text-align: center;
-            padding: 2em;
-            color: var(--primary-color);
-        }
-
-        .loading::after {
-            content: '...';
-            animation: loading 1.5s infinite;
-        }
-
-        @keyframes loading {
-            0% { content: '.'; }
-            33% { content: '..'; }
-            66% { content: '...'; }
-        }
+        .loading { text-align: center; padding: 2em; color: var(--primary-color); }
+        .loading::after { content: '...'; animation: loading 1.5s infinite; }
+        @keyframes loading { 0% { content: '.'; } 33% { content: '..'; } 66% { content: '...'; } }
     </style>
 </head>
 <body>
@@ -504,6 +264,7 @@ def generate_html_index(posts: list):
             const container = document.getElementById('posts-container');
 
             try {
+                // Ensure we look in posts/index.json relative to the current location (blog/)
                 const response = await fetch('posts/index.json');
                 if (!response.ok) {
                     throw new Error('Could not load posts index');
@@ -535,7 +296,7 @@ def generate_html_index(posts: list):
                     return `
                         <article class="archive__item">
                             <h2 class="archive__item-title">
-                                <a href="posts/${post.filename}">${post.title}</a>
+                                <a href="posts/${post.filename.replace('.md', '.html')}">${post.title}</a>
                             </h2>
                             <p class="page__meta">
                                 <i>📅</i> <time datetime="${post.date}">${formattedDate}</time>
@@ -571,34 +332,38 @@ def generate_html_index(posts: list):
 </html>'''
 
     # Write the HTML file
-    with open('blog/index.html', 'w', encoding='utf-8') as f:
+    with open(OUTPUT_HTML, 'w', encoding='utf-8') as f:
         f.write(html_template)
 
-    print(f"✅ Generated blog/index.html")
-
+    print(f"✅ Generated {OUTPUT_HTML}")
 
 def generate_posts_index():
     """Generate index.json file for all blog posts"""
-    posts_dir = Path('blog/posts')
-    posts_dir.mkdir(parents=True, exist_ok=True)
+    POSTS_DIR.mkdir(parents=True, exist_ok=True)
 
     posts = []
 
     # Scan all markdown files
-    for md_file in posts_dir.glob('*.md'):
+    for md_file in POSTS_DIR.glob('*.md'):
         try:
             with open(md_file, 'r', encoding='utf-8') as f:
                 content = f.read()
 
             frontmatter = extract_frontmatter(content)
 
+            # URL where Jekyll will serve the rendered post.
+            # We assume the final site URL will be:
+            #   {site.baseurl}/blog/posts/<name>.html
+            post_url = f"/blog/posts/{md_file.stem}.html"
+
             post_info = {
-                'filename': md_file.name,
-                'title': frontmatter.get('title', md_file.stem),
-                'date': frontmatter.get('date', datetime.now().isoformat()),
-                'author': frontmatter.get('author', 'AI Multi-Agent System'),
-                'tags': frontmatter.get('tags', ['AI', 'Machine Learning']),
-                'excerpt': frontmatter.get('excerpt', '')
+                "filename": md_file.name,
+                "url": post_url,
+                "title": frontmatter.get("title", md_file.stem),
+                "date": frontmatter.get("date", datetime.now().isoformat()),
+                "author": frontmatter.get("author", "AI Multi-Agent System"),
+                "tags": frontmatter.get("tags", ["AI", "Machine Learning"]),
+                "excerpt": frontmatter.get("excerpt", "")
             }
 
             posts.append(post_info)
@@ -607,21 +372,19 @@ def generate_posts_index():
             print(f"Error processing {md_file}: {e}")
 
     # Write index.json
-    index_file = posts_dir / 'index.json'
-    with open(index_file, 'w', encoding='utf-8') as f:
+    with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
         json.dump(posts, f, indent=2, ensure_ascii=False)
 
     print(f"✅ Generated index with {len(posts)} posts")
-    print(f"📝 Index file: {index_file}")
+    print(f"📝 Index file: {OUTPUT_JSON}")
 
     return posts
 
-
-if __name__ == '__main__':
+def main():
     # Generate JSON index
     posts = generate_posts_index()
+    # Generate HTML index
+    generate_html_index(posts)
 
-    # HTML index is now handled by Jekyll (index.md using Minimal Mistakes).
-    # If you still want a standalone HTML blog index under /blog/,
-    # you can keep the next line; otherwise, comment it out.
-    # generate_html_index(posts)
+if __name__ == '__main__':
+    main()
