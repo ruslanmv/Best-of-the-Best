@@ -577,7 +577,7 @@ def generate_html_index(posts: list):
     print(f"✅ Generated blog/index.html")
 
 
-def generate_posts_index_old():
+def generate_posts_index():
     """Generate index.json file for all blog posts"""
     posts_dir = Path('blog/posts')
     posts_dir.mkdir(parents=True, exist_ok=True)
@@ -609,51 +609,6 @@ def generate_posts_index_old():
     # Write index.json
     index_file = posts_dir / 'index.json'
     with open(index_file, 'w', encoding='utf-8') as f:
-        json.dump(posts, f, indent=2, ensure_ascii=False)
-
-    print(f"✅ Generated index with {len(posts)} posts")
-    print(f"📝 Index file: {index_file}")
-
-    return posts
-
-def generate_posts_index():
-    """Generate index.json file for all blog posts"""
-    posts_dir = Path('blog/posts')
-    posts_dir.mkdir(parents=True, exist_ok=True)
-
-    posts = []
-
-    # Scan all markdown files
-    for md_file in posts_dir.glob('*.md'):
-        try:
-            with open(md_file, 'r', encoding='utf-8') as f:
-                content = f.read()
-
-            frontmatter = extract_frontmatter(content)
-
-            # URL where Jekyll will serve the rendered post.
-            # We assume the final site URL will be:
-            #   {site.baseurl}/blog/posts/<name>.html
-            post_url = f"/blog/posts/{md_file.stem}.html"
-
-            post_info = {
-                "filename": md_file.name,
-                "url": post_url,
-                "title": frontmatter.get("title", md_file.stem),
-                "date": frontmatter.get("date", datetime.now().isoformat()),
-                "author": frontmatter.get("author", "AI Multi-Agent System"),
-                "tags": frontmatter.get("tags", ["AI", "Machine Learning"]),
-                "excerpt": frontmatter.get("excerpt", "")
-            }
-
-            posts.append(post_info)
-
-        except Exception as e:
-            print(f"Error processing {md_file}: {e}")
-
-    # Write index.json
-    index_file = posts_dir / "index.json"
-    with open(index_file, "w", encoding="utf-8") as f:
         json.dump(posts, f, indent=2, ensure_ascii=False)
 
     print(f"✅ Generated index with {len(posts)} posts")
