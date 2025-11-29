@@ -2,16 +2,16 @@
 ### Repositories
 | Repository | Stars | Link |
 |---|---|---|
-| ollama/ollama | 156686 | [GitHub](https://github.com/ollama/ollama) |
-| langchain-ai/langchain | 120655 | [GitHub](https://github.com/langchain-ai/langchain) |
-| comfyanonymous/ComfyUI | 94745 | [GitHub](https://github.com/comfyanonymous/ComfyUI) |
-| openai/whisper | 91327 | [GitHub](https://github.com/openai/whisper) |
+| ollama/ollama | 156727 | [GitHub](https://github.com/ollama/ollama) |
+| langchain-ai/langchain | 120712 | [GitHub](https://github.com/langchain-ai/langchain) |
+| comfyanonymous/ComfyUI | 94858 | [GitHub](https://github.com/comfyanonymous/ComfyUI) |
+| openai/whisper | 91359 | [GitHub](https://github.com/openai/whisper) |
 | tensorflow/models | 77678 | [GitHub](https://github.com/tensorflow/models) |
-| CompVis/stable-diffusion | 71893 | [GitHub](https://github.com/CompVis/stable-diffusion) |
+| CompVis/stable-diffusion | 71903 | [GitHub](https://github.com/CompVis/stable-diffusion) |
 | KillianLucas/open-interpreter | 60916 | [GitHub](https://github.com/KillianLucas/open-interpreter) |
-| CorentinJ/Real-Time-Voice-Cloning | 58924 | [GitHub](https://github.com/CorentinJ/Real-Time-Voice-Cloning) |
-| ultralytics/yolov5 | 56178 | [GitHub](https://github.com/ultralytics/yolov5) |
-| facebookresearch/segment-anything | 52696 | [GitHub](https://github.com/facebookresearch/segment-anything) |
+| CorentinJ/Real-Time-Voice-Cloning | 58930 | [GitHub](https://github.com/CorentinJ/Real-Time-Voice-Cloning) |
+| ultralytics/yolov5 | 56189 | [GitHub](https://github.com/ultralytics/yolov5) |
+| facebookresearch/segment-anything | 52706 | [GitHub](https://github.com/facebookresearch/segment-anything) |
 | jakevdp/PythonDataScienceHandbook | 43761 | [GitHub](https://github.com/jakevdp/PythonDataScienceHandbook) |
 | lllyasviel/Fooocus | 42965 | [GitHub](https://github.com/lllyasviel/Fooocus) |
 | Stability-AI/stablediffusion | 39935 | [GitHub](https://github.com/Stability-AI/stablediffusion) |
@@ -25,6 +25,7 @@
 | ray-project/ray | 35151 | [GitHub](https://github.com/ray-project/ray) |
 | google-research/google-research | 34801 | [GitHub](https://github.com/google-research/google-research) |
 | microsoft/visual-chatgpt | 34541 | [GitHub](https://github.com/microsoft/visual-chatgpt) |
+
 
 
 
