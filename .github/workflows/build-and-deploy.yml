@@ -17,7 +17,7 @@ jobs:
 
     steps:
       # -----------------------------------------------------------
-      # 1) Checkout repo (full history because you commit in CI)
+      # 1) Checkout repo
       # -----------------------------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -25,7 +25,7 @@ jobs:
           fetch-depth: 0
 
       # -----------------------------------------------------------
-      # 2) Python + Ollama backend (unchanged from your current flow)
+      # 2) Python + Ollama backend
       # -----------------------------------------------------------
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -35,10 +35,8 @@ jobs:
       - name: Install Ollama
         run: |
           curl -fsSL https://ollama.com/install.sh | sh
-          # Start Ollama service
           ollama serve &
           sleep 5
-          # Pull the model
           ollama pull llama3.2
 
       - name: Install Python dependencies
@@ -52,26 +50,22 @@ jobs:
           python crew.py
         timeout-minutes: 30
 
-      - name: Update README tables with latest data
+      - name: Update README tables
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python update_readme_tables.py
+        run: python update_readme_tables.py
 
       - name: Update tracking database
-        run: |
-          python update_readme_daily.py
+        run: python update_readme_daily.py
 
       - name: Generate blog index
-        run: |
-          python blog/generate_index.py
+        run: python blog/generate_index.py
 
       - name: Export data feeds for API
-        run: |
-          python export_data_feeds.py
+        run: python export_data_feeds.py
 
       # -----------------------------------------------------------
-      # 3) Commit content changes (same behavior as before)
+      # 3) Commit content changes
       # -----------------------------------------------------------
       - name: Commit and push blog updates
         run: |
@@ -82,14 +76,7 @@ jobs:
           git push
 
       # -----------------------------------------------------------
-      # 4) Jekyll + Minimal Mistakes build
-      #
-      #    Assumes you have:
-      #      - Gemfile       (with jekyll + minimal-mistakes-jekyll)
-      #      - _config.yml   (url: https://ruslanmv.com, baseurl: /Best-of-the-Best)
-      #      - index.md etc. using your generated data
-      #
-      #    This builds the site into ./_site (not committed).
+      # 4) Jekyll Build (Manual Build)
       # -----------------------------------------------------------
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -101,27 +88,22 @@ jobs:
         run: |
           bundle install --jobs 4 --retry 3
 
-      - name: Build Jekyll site (Minimal Mistakes)
+      - name: Build Jekyll site
         env:
           JEKYLL_ENV: production
         run: |
           bundle exec jekyll build --baseurl "/Best-of-the-Best"
+          # Create .nojekyll to ensure GitHub serves it as static files
+          touch ./_site/.nojekyll
 
       # -----------------------------------------------------------
-      # 5) Deploy built Jekyll site to GitHub Pages
-      #
-      #    GitHub Pages settings for this repo should be:
-      #      - Source: Deploy from a branch
-      #      - Branch: gh-pages
-      #      - Folder: / (root)
-      #
-      #    The final URL will be:
-      #      https://ruslanmv.com/Best-of-the-Best/
+      # 5) Deploy Artifact (Requires Source: GitHub Actions in Settings)
       # -----------------------------------------------------------
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          publish_branch: gh-pages
-          force_orphan: true
+          path: ./_site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
