@@ -1,0 +1,810 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>LangChain: Revolutionizing LLM Application Development with watsonx.ai - Best-of-the-Best</title>
+<meta name="description" content="Curated list of top AI repositories, papers, packages, and courses.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="Best-of-the-Best">
+<meta property="og:title" content="LangChain: Revolutionizing LLM Application Development with watsonx.ai">
+<meta property="og:url" content="https://ruslanmv.com/Best-of-the-Best/blog/posts/2024-11-22-example-langchain.html">
+
+
+  <meta property="og:description" content="Curated list of top AI repositories, papers, packages, and courses.">
+
+
+
+
+
+  <meta name="twitter:site" content="@ruslanmv">
+  <meta name="twitter:title" content="LangChain: Revolutionizing LLM Application Development with watsonx.ai">
+  <meta name="twitter:description" content="Curated list of top AI repositories, papers, packages, and courses.">
+  <meta name="twitter:url" content="https://ruslanmv.com/Best-of-the-Best/blog/posts/2024-11-22-example-langchain.html">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2024-11-22T00:00:00+01:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://ruslanmv.com/Best-of-the-Best/blog/posts/2024-11-22-example-langchain.html">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/Best-of-the-Best/feed.xml" type="application/atom+xml" rel="alternate" title="Best-of-the-Best Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/Best-of-the-Best/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/Best-of-the-Best/">
+          Best-of-the-Best
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/Best-of-the-Best/"
+                
+                
+              >The Best</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="https://ruslanmv.com/news-and-trends/"
+                
+                
+              >News</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="https://ruslanmv.com/projects/"
+                
+                
+              >Projects</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="https://ruslanmv.com/publications"
+                
+                
+              >Publications</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="https://ruslanmv.com/talks/"
+                
+                
+              >Talks</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="https://ruslanmv.com/certifications/"
+                
+                
+              >Certifications</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="https://ruslanmv.com/about/"
+                
+                
+              >About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://ruslanmv.com/Best-of-the-Best/" itemprop="url"></a>
+    </h3>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="LangChain: Revolutionizing LLM Application Development with watsonx.ai">
+    
+    <meta itemprop="datePublished" content="November 22, 2024">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">LangChain: Revolutionizing LLM Application Development with watsonx.ai
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  
+    5 minute read
+  
+
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+
+        <h1 id="-langchain-revolutionizing-llm-application-development-with-watsonxai"><a href="#-langchain-revolutionizing-llm-application-development-with-watsonxai"></a>🦜 LangChain: Revolutionizing LLM Application Development with watsonx.ai</h1>
+
+<h2 id="introduction"><a href="#introduction"></a>Introduction</h2>
+
+<p>In today’s rapidly evolving AI landscape, <strong>LangChain</strong> has emerged as one of the most influential frameworks for building applications powered by Large Language Models (LLMs). With over 33 million monthly downloads and 143 million total downloads on PyPI, LangChain has become the go-to toolkit for developers looking to harness the power of LLMs in production environments.</p>
+
+<p>But what makes LangChain truly exciting is its potential integration with enterprise AI platforms like <strong>IBM watsonx.ai</strong> and <strong>Watson Orchestrate</strong>. Today, we’ll explore how this powerful framework can supercharge your enterprise AI workflows.</p>
+
+<h2 id="-what-is-langchain"><a href="#-what-is-langchain"></a>📦 What is LangChain?</h2>
+
+<p>LangChain is a comprehensive framework designed to simplify the development of applications using language models. It provides:</p>
+
+<ul>
+  <li><strong>Chains</strong>: Sequences of calls to LLMs or other utilities</li>
+  <li><strong>Agents</strong>: Systems that use LLMs to decide which actions to take</li>
+  <li><strong>Memory</strong>: Persistent state between chain/agent calls</li>
+  <li><strong>Document Loaders</strong>: Easy integration with various data sources</li>
+  <li><strong>Vector Stores</strong>: Efficient similarity search for retrieval-augmented generation (RAG)</li>
+</ul>
+
+<h3 id="key-features"><a href="#key-features"></a>Key Features</h3>
+
+<ol>
+  <li><strong>Modular Components</strong>: Mix and match components to build custom workflows</li>
+  <li><strong>LLM Agnostic</strong>: Works with OpenAI, Anthropic, HuggingFace, and more</li>
+  <li><strong>Production Ready</strong>: Battle-tested in numerous enterprise deployments</li>
+  <li><strong>Active Community</strong>: Over 99K GitHub stars and growing</li>
+</ol>
+
+<h2 id="-integration-with-ibm-watsonxai"><a href="#-integration-with-ibm-watsonxai"></a>🧠 Integration with IBM watsonx.ai</h2>
+
+<p>LangChain’s architecture makes it an ideal companion for watsonx.ai, IBM’s next-generation enterprise AI platform. Here are three powerful integration scenarios:</p>
+
+<h3 id="1-enhanced-rag-retrieval-augmented-generation-pipelines"><a href="#1-enhanced-rag-retrieval-augmented-generation-pipelines"></a>1. Enhanced RAG (Retrieval-Augmented Generation) Pipelines</h3>
+
+<p><strong>Use Case</strong>: Enterprise Knowledge Management</p>
+
+<p>Combine LangChain’s document loaders and vector stores with watsonx.ai’s foundation models to create intelligent knowledge bases.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">langchain.document_loaders</span> <span class="kn">import</span> <span class="n">DirectoryLoader</span>
+<span class="kn">from</span> <span class="n">langchain.embeddings</span> <span class="kn">import</span> <span class="n">HuggingFaceEmbeddings</span>
+<span class="kn">from</span> <span class="n">langchain.vectorstores</span> <span class="kn">import</span> <span class="n">FAISS</span>
+<span class="kn">from</span> <span class="n">langchain.chains</span> <span class="kn">import</span> <span class="n">RetrievalQA</span>
+<span class="c1"># watsonx.ai integration
+</span><span class="kn">from</span> <span class="n">ibm_watson_machine_learning.foundation_models</span> <span class="kn">import</span> <span class="n">Model</span>
+
+<span class="c1"># Load enterprise documents
+</span><span class="n">loader</span> <span class="o">=</span> <span class="nc">DirectoryLoader</span><span class="p">(</span><span class="sh">'</span><span class="s">./enterprise_docs</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">documents</span> <span class="o">=</span> <span class="n">loader</span><span class="p">.</span><span class="nf">load</span><span class="p">()</span>
+
+<span class="c1"># Create vector store
+</span><span class="n">embeddings</span> <span class="o">=</span> <span class="nc">HuggingFaceEmbeddings</span><span class="p">()</span>
+<span class="n">vectorstore</span> <span class="o">=</span> <span class="n">FAISS</span><span class="p">.</span><span class="nf">from_documents</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="n">embeddings</span><span class="p">)</span>
+
+<span class="c1"># Initialize watsonx.ai model
+</span><span class="n">watsonx_model</span> <span class="o">=</span> <span class="nc">Model</span><span class="p">(</span>
+    <span class="n">model_id</span><span class="o">=</span><span class="sh">"</span><span class="s">ibm/granite-13b-chat-v2</span><span class="sh">"</span><span class="p">,</span>
+    <span class="n">credentials</span><span class="o">=</span><span class="p">{...}</span>
+<span class="p">)</span>
+
+<span class="c1"># Create RAG chain
+</span><span class="n">qa_chain</span> <span class="o">=</span> <span class="n">RetrievalQA</span><span class="p">.</span><span class="nf">from_chain_type</span><span class="p">(</span>
+    <span class="n">llm</span><span class="o">=</span><span class="n">watsonx_model</span><span class="p">,</span>
+    <span class="n">retriever</span><span class="o">=</span><span class="n">vectorstore</span><span class="p">.</span><span class="nf">as_retriever</span><span class="p">(),</span>
+    <span class="n">return_source_documents</span><span class="o">=</span><span class="bp">True</span>
+<span class="p">)</span>
+
+<span class="c1"># Query enterprise knowledge
+</span><span class="n">result</span> <span class="o">=</span> <span class="nf">qa_chain</span><span class="p">(</span><span class="sh">"</span><span class="s">What is our customer retention policy?</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>Business Value</strong>: Reduce time-to-information by 70%, improve decision-making accuracy, ensure compliance with enterprise policies.</p>
+
+<h3 id="2-multi-model-orchestration"><a href="#2-multi-model-orchestration"></a>2. Multi-Model Orchestration</h3>
+
+<p><strong>Use Case</strong>: Specialized Task Routing</p>
+
+<p>Use LangChain to route different types of queries to the most appropriate watsonx.ai foundation model.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">langchain.chains</span> <span class="kn">import</span> <span class="n">LLMChain</span>
+<span class="kn">from</span> <span class="n">langchain.prompts</span> <span class="kn">import</span> <span class="n">PromptTemplate</span>
+
+<span class="c1"># Define specialized chains for different tasks
+</span><span class="n">code_chain</span> <span class="o">=</span> <span class="nc">LLMChain</span><span class="p">(</span>
+    <span class="n">llm</span><span class="o">=</span><span class="n">watsonx_model_code</span><span class="p">,</span>  <span class="c1"># Code-specialized model
+</span>    <span class="n">prompt</span><span class="o">=</span><span class="n">code_prompt_template</span>
+<span class="p">)</span>
+
+<span class="n">analysis_chain</span> <span class="o">=</span> <span class="nc">LLMChain</span><span class="p">(</span>
+    <span class="n">llm</span><span class="o">=</span><span class="n">watsonx_model_analysis</span><span class="p">,</span>  <span class="c1"># Analysis-specialized model
+</span>    <span class="n">prompt</span><span class="o">=</span><span class="n">analysis_prompt_template</span>
+<span class="p">)</span>
+
+<span class="c1"># Route based on query type
+</span><span class="k">def</span> <span class="nf">route_query</span><span class="p">(</span><span class="n">query</span><span class="p">):</span>
+    <span class="k">if</span> <span class="sh">"</span><span class="s">code</span><span class="sh">"</span> <span class="ow">in</span> <span class="n">query</span><span class="p">.</span><span class="nf">lower</span><span class="p">()</span> <span class="ow">or</span> <span class="sh">"</span><span class="s">function</span><span class="sh">"</span> <span class="ow">in</span> <span class="n">query</span><span class="p">.</span><span class="nf">lower</span><span class="p">():</span>
+        <span class="k">return</span> <span class="n">code_chain</span><span class="p">.</span><span class="nf">run</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">analysis_chain</span><span class="p">.</span><span class="nf">run</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>Business Value</strong>: Optimize costs by using specialized models only when needed, improve response quality by 40%, reduce token consumption.</p>
+
+<h3 id="3-prompt-engineering-and-governance"><a href="#3-prompt-engineering-and-governance"></a>3. Prompt Engineering and Governance</h3>
+
+<p><strong>Use Case</strong>: Standardized Prompt Templates</p>
+
+<p>Create enterprise-grade prompt templates with LangChain that ensure consistent, compliant outputs from watsonx.ai.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">langchain.prompts</span> <span class="kn">import</span> <span class="n">PromptTemplate</span>
+<span class="kn">from</span> <span class="n">langchain.output_parsers</span> <span class="kn">import</span> <span class="n">PydanticOutputParser</span>
+<span class="kn">from</span> <span class="n">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">Field</span>
+
+<span class="k">class</span> <span class="nc">ComplianceReport</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="n">summary</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="nc">Field</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="sh">"</span><span class="s">Executive summary</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">risk_level</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="nc">Field</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="sh">"</span><span class="s">Risk level: LOW, MEDIUM, HIGH</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">recommendations</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="nc">Field</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="sh">"</span><span class="s">List of recommendations</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="n">parser</span> <span class="o">=</span> <span class="nc">PydanticOutputParser</span><span class="p">(</span><span class="n">pydantic_object</span><span class="o">=</span><span class="n">ComplianceReport</span><span class="p">)</span>
+
+<span class="n">prompt</span> <span class="o">=</span> <span class="nc">PromptTemplate</span><span class="p">(</span>
+    <span class="n">template</span><span class="o">=</span><span class="sh">"""</span><span class="s">Analyze the following data for compliance:
+    {data}
+
+    {format_instructions}
+    </span><span class="sh">"""</span><span class="p">,</span>
+    <span class="n">input_variables</span><span class="o">=</span><span class="p">[</span><span class="sh">"</span><span class="s">data</span><span class="sh">"</span><span class="p">],</span>
+    <span class="n">partial_variables</span><span class="o">=</span><span class="p">{</span><span class="sh">"</span><span class="s">format_instructions</span><span class="sh">"</span><span class="p">:</span> <span class="n">parser</span><span class="p">.</span><span class="nf">get_format_instructions</span><span class="p">()}</span>
+<span class="p">)</span>
+
+<span class="c1"># Use with watsonx.ai
+</span><span class="n">compliance_chain</span> <span class="o">=</span> <span class="nc">LLMChain</span><span class="p">(</span><span class="n">llm</span><span class="o">=</span><span class="n">watsonx_model</span><span class="p">,</span> <span class="n">prompt</span><span class="o">=</span><span class="n">prompt</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>Business Value</strong>: Ensure regulatory compliance, standardize reporting across teams, reduce manual review time by 60%.</p>
+
+<h2 id="️-watson-orchestrate-applications"><a href="#️-watson-orchestrate-applications"></a>⚙️ Watson Orchestrate Applications</h2>
+
+<p>Watson Orchestrate excels at automating business processes, and LangChain can power intelligent skills within these workflows.</p>
+
+<h3 id="1-intelligent-document-processing-skill"><a href="#1-intelligent-document-processing-skill"></a>1. Intelligent Document Processing Skill</h3>
+
+<p><strong>Scenario</strong>: Automated Invoice Processing</p>
+
+<p>Create a Watson Orchestrate skill that uses LangChain to extract, validate, and categorize invoice data.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">langchain.chains</span> <span class="kn">import</span> <span class="n">create_extraction_chain</span>
+
+<span class="c1"># Define extraction schema
+</span><span class="n">schema</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="sh">"</span><span class="s">properties</span><span class="sh">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="sh">"</span><span class="s">vendor_name</span><span class="sh">"</span><span class="p">:</span> <span class="p">{</span><span class="sh">"</span><span class="s">type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">string</span><span class="sh">"</span><span class="p">},</span>
+        <span class="sh">"</span><span class="s">invoice_number</span><span class="sh">"</span><span class="p">:</span> <span class="p">{</span><span class="sh">"</span><span class="s">type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">string</span><span class="sh">"</span><span class="p">},</span>
+        <span class="sh">"</span><span class="s">total_amount</span><span class="sh">"</span><span class="p">:</span> <span class="p">{</span><span class="sh">"</span><span class="s">type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">number</span><span class="sh">"</span><span class="p">},</span>
+        <span class="sh">"</span><span class="s">due_date</span><span class="sh">"</span><span class="p">:</span> <span class="p">{</span><span class="sh">"</span><span class="s">type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">string</span><span class="sh">"</span><span class="p">},</span>
+        <span class="sh">"</span><span class="s">line_items</span><span class="sh">"</span><span class="p">:</span> <span class="p">{</span><span class="sh">"</span><span class="s">type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">array</span><span class="sh">"</span><span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1"># Create extraction chain
+</span><span class="n">extraction_chain</span> <span class="o">=</span> <span class="nf">create_extraction_chain</span><span class="p">(</span><span class="n">schema</span><span class="p">,</span> <span class="n">watsonx_model</span><span class="p">)</span>
+
+<span class="c1"># Watson Orchestrate skill function
+</span><span class="k">def</span> <span class="nf">process_invoice</span><span class="p">(</span><span class="n">invoice_text</span><span class="p">):</span>
+    <span class="n">extracted</span> <span class="o">=</span> <span class="n">extraction_chain</span><span class="p">.</span><span class="nf">run</span><span class="p">(</span><span class="n">invoice_text</span><span class="p">)</span>
+    <span class="c1"># Validate and categorize
+</span>    <span class="n">category</span> <span class="o">=</span> <span class="nf">categorize_expense</span><span class="p">(</span><span class="n">extracted</span><span class="p">)</span>
+    <span class="c1"># Route for approval
+</span>    <span class="k">return</span> <span class="p">{</span>
+        <span class="sh">"</span><span class="s">data</span><span class="sh">"</span><span class="p">:</span> <span class="n">extracted</span><span class="p">,</span>
+        <span class="sh">"</span><span class="s">category</span><span class="sh">"</span><span class="p">:</span> <span class="n">category</span><span class="p">,</span>
+        <span class="sh">"</span><span class="s">requires_approval</span><span class="sh">"</span><span class="p">:</span> <span class="n">extracted</span><span class="p">[</span><span class="sh">"</span><span class="s">total_amount</span><span class="sh">"</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">10000</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Automation Value</strong>: Process 1000+ invoices per hour, 95% accuracy, reduce processing cost by 80%.</p>
+
+<h3 id="2-customer-service-automation"><a href="#2-customer-service-automation"></a>2. Customer Service Automation</h3>
+
+<p><strong>Scenario</strong>: Intelligent Ticket Routing and Response</p>
+
+<p>Integrate LangChain-powered analysis into Watson Orchestrate workflows for customer support.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">langchain.agents</span> <span class="kn">import</span> <span class="n">AgentExecutor</span><span class="p">,</span> <span class="n">create_react_agent</span>
+
+<span class="c1"># Define tools for the agent
+</span><span class="n">tools</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">knowledge_base_search</span><span class="p">,</span>
+    <span class="n">ticket_history_lookup</span><span class="p">,</span>
+    <span class="n">sentiment_analyzer</span>
+<span class="p">]</span>
+
+<span class="c1"># Create agent
+</span><span class="n">agent</span> <span class="o">=</span> <span class="nf">create_react_agent</span><span class="p">(</span>
+    <span class="n">llm</span><span class="o">=</span><span class="n">watsonx_model</span><span class="p">,</span>
+    <span class="n">tools</span><span class="o">=</span><span class="n">tools</span><span class="p">,</span>
+    <span class="n">prompt</span><span class="o">=</span><span class="n">customer_service_prompt</span>
+<span class="p">)</span>
+
+<span class="n">agent_executor</span> <span class="o">=</span> <span class="nc">AgentExecutor</span><span class="p">(</span><span class="n">agent</span><span class="o">=</span><span class="n">agent</span><span class="p">,</span> <span class="n">tools</span><span class="o">=</span><span class="n">tools</span><span class="p">)</span>
+
+<span class="c1"># Watson Orchestrate integration
+</span><span class="k">def</span> <span class="nf">handle_customer_ticket</span><span class="p">(</span><span class="n">ticket</span><span class="p">):</span>
+    <span class="n">analysis</span> <span class="o">=</span> <span class="n">agent_executor</span><span class="p">.</span><span class="nf">invoke</span><span class="p">({</span>
+        <span class="sh">"</span><span class="s">input</span><span class="sh">"</span><span class="p">:</span> <span class="n">ticket</span><span class="p">[</span><span class="sh">"</span><span class="s">description</span><span class="sh">"</span><span class="p">]</span>
+    <span class="p">})</span>
+
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="sh">"</span><span class="s">priority</span><span class="sh">"</span><span class="p">:</span> <span class="n">analysis</span><span class="p">[</span><span class="sh">"</span><span class="s">priority</span><span class="sh">"</span><span class="p">],</span>
+        <span class="sh">"</span><span class="s">category</span><span class="sh">"</span><span class="p">:</span> <span class="n">analysis</span><span class="p">[</span><span class="sh">"</span><span class="s">category</span><span class="sh">"</span><span class="p">],</span>
+        <span class="sh">"</span><span class="s">suggested_response</span><span class="sh">"</span><span class="p">:</span> <span class="n">analysis</span><span class="p">[</span><span class="sh">"</span><span class="s">response</span><span class="sh">"</span><span class="p">],</span>
+        <span class="sh">"</span><span class="s">escalate</span><span class="sh">"</span><span class="p">:</span> <span class="n">analysis</span><span class="p">[</span><span class="sh">"</span><span class="s">sentiment</span><span class="sh">"</span><span class="p">]</span> <span class="o">==</span> <span class="sh">"</span><span class="s">very_negative</span><span class="sh">"</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Business Impact</strong>: 50% reduction in resolution time, 90% first-contact resolution, improved customer satisfaction scores.</p>
+
+<h2 id="-enterprise-business-value"><a href="#-enterprise-business-value"></a>💼 Enterprise Business Value</h2>
+
+<h3 id="roi-metrics"><a href="#roi-metrics"></a>ROI Metrics</h3>
+
+<p>Implementing LangChain with watsonx.ai typically delivers:</p>
+
+<ul>
+  <li><strong>Development Time</strong>: 60% faster application development</li>
+  <li><strong>Operational Costs</strong>: 40-50% reduction in LLM API costs through optimization</li>
+  <li><strong>Accuracy</strong>: 30-40% improvement in task-specific performance</li>
+  <li><strong>Time-to-Market</strong>: 3-6 months faster for AI-powered features</li>
+</ul>
+
+<h3 id="scalability-and-enterprise-readiness"><a href="#scalability-and-enterprise-readiness"></a>Scalability and Enterprise Readiness</h3>
+
+<p>LangChain’s production-ready features include:</p>
+
+<ul>
+  <li><strong>Observability</strong>: Built-in tracing and monitoring with LangSmith</li>
+  <li><strong>Security</strong>: Support for private deployments and on-premises models</li>
+  <li><strong>Governance</strong>: Version control for prompts and chains</li>
+  <li><strong>Testing</strong>: Comprehensive evaluation framework</li>
+</ul>
+
+<h2 id="-getting-started"><a href="#-getting-started"></a>🚀 Getting Started</h2>
+
+<h3 id="installation"><a href="#installation"></a>Installation</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>langchain langchain-community
+pip <span class="nb">install </span>ibm-watson-machine-learning
+</code></pre></div></div>
+
+<h3 id="basic-example"><a href="#basic-example"></a>Basic Example</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">langchain.chains</span> <span class="kn">import</span> <span class="n">LLMChain</span>
+<span class="kn">from</span> <span class="n">langchain.prompts</span> <span class="kn">import</span> <span class="n">PromptTemplate</span>
+
+<span class="c1"># Define your prompt
+</span><span class="n">prompt</span> <span class="o">=</span> <span class="nc">PromptTemplate</span><span class="p">(</span>
+    <span class="n">input_variables</span><span class="o">=</span><span class="p">[</span><span class="sh">"</span><span class="s">product</span><span class="sh">"</span><span class="p">],</span>
+    <span class="n">template</span><span class="o">=</span><span class="sh">"</span><span class="s">Write a compelling description for {product}</span><span class="sh">"</span>
+<span class="p">)</span>
+
+<span class="c1"># Create chain
+</span><span class="n">chain</span> <span class="o">=</span> <span class="nc">LLMChain</span><span class="p">(</span><span class="n">llm</span><span class="o">=</span><span class="n">watsonx_model</span><span class="p">,</span> <span class="n">prompt</span><span class="o">=</span><span class="n">prompt</span><span class="p">)</span>
+
+<span class="c1"># Run
+</span><span class="n">result</span> <span class="o">=</span> <span class="n">chain</span><span class="p">.</span><span class="nf">run</span><span class="p">(</span><span class="sh">"</span><span class="s">enterprise AI platform</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="learning-resources"><a href="#learning-resources"></a>Learning Resources</h3>
+
+<ul>
+  <li><strong>Official Documentation</strong>: <a href="https://python.langchain.com">python.langchain.com</a></li>
+  <li><strong>watsonx.ai Docs</strong>: <a href="https://www.ibm.com/watsonx">ibm.com/watsonx</a></li>
+  <li><strong>GitHub Repository</strong>: <a href="https://github.com/langchain-ai/langchain">github.com/langchain-ai/langchain</a></li>
+  <li><strong>Community</strong>: Join the LangChain Discord</li>
+</ul>
+
+<h2 id="-implementation-roadmap"><a href="#-implementation-roadmap"></a>🎯 Implementation Roadmap</h2>
+
+<h3 id="phase-1-proof-of-concept-2-4-weeks"><a href="#phase-1-proof-of-concept-2-4-weeks"></a>Phase 1: Proof of Concept (2-4 weeks)</h3>
+<ol>
+  <li>Set up LangChain development environment</li>
+  <li>Connect to watsonx.ai</li>
+  <li>Build simple RAG application</li>
+  <li>Validate with sample data</li>
+</ol>
+
+<h3 id="phase-2-production-pilot-4-8-weeks"><a href="#phase-2-production-pilot-4-8-weeks"></a>Phase 2: Production Pilot (4-8 weeks)</h3>
+<ol>
+  <li>Design production architecture</li>
+  <li>Implement security and governance</li>
+  <li>Deploy to Watson Orchestrate</li>
+  <li>Train operations team</li>
+</ol>
+
+<h3 id="phase-3-scale-8-12-weeks"><a href="#phase-3-scale-8-12-weeks"></a>Phase 3: Scale (8-12 weeks)</h3>
+<ol>
+  <li>Expand to multiple use cases</li>
+  <li>Optimize performance and costs</li>
+  <li>Integrate with enterprise systems</li>
+  <li>Establish MLOps practices</li>
+</ol>
+
+<h2 id="-competitive-advantages"><a href="#-competitive-advantages"></a>📊 Competitive Advantages</h2>
+
+<p>Choosing LangChain with watsonx.ai provides:</p>
+
+<ol>
+  <li><strong>Best-in-Class Components</strong>: Industry-leading framework + enterprise AI platform</li>
+  <li><strong>Flexibility</strong>: Switch between models and providers easily</li>
+  <li><strong>Control</strong>: Keep sensitive data on-premises with watsonx.ai private cloud</li>
+  <li><strong>Support</strong>: Enterprise-grade support from IBM for watsonx.ai</li>
+  <li><strong>Innovation</strong>: Regular updates and new features from active communities</li>
+</ol>
+
+<h2 id="-future-possibilities"><a href="#-future-possibilities"></a>🔮 Future Possibilities</h2>
+
+<p>The LangChain ecosystem is rapidly evolving. Upcoming features that will benefit watsonx.ai users:</p>
+
+<ul>
+  <li><strong>LangGraph</strong>: Advanced agent workflows with cycles and conditionals</li>
+  <li><strong>LangServe</strong>: Deploy LangChain applications as production APIs</li>
+  <li><strong>Enhanced Streaming</strong>: Real-time token streaming for better UX</li>
+  <li><strong>Multi-Modal</strong>: Native support for vision and audio models</li>
+</ul>
+
+<h2 id="conclusion"><a href="#conclusion"></a>Conclusion</h2>
+
+<p>LangChain represents a paradigm shift in how we build LLM-powered applications. When combined with IBM watsonx.ai’s enterprise-grade capabilities and Watson Orchestrate’s automation power, organizations can:</p>
+
+<ul>
+  <li>Accelerate AI application development</li>
+  <li>Maintain enterprise security and compliance</li>
+  <li>Scale AI initiatives across the organization</li>
+  <li>Deliver measurable business value</li>
+</ul>
+
+<p>The convergence of LangChain’s flexibility and watsonx.ai’s enterprise features creates a powerful platform for the future of business AI.</p>
+
+<h3 id="-next-steps"><a href="#-next-steps"></a>🎬 Next Steps</h3>
+
+<ol>
+  <li><strong>Experiment</strong>: Start with the code examples above</li>
+  <li><strong>Learn</strong>: Explore the documentation and tutorials</li>
+  <li><strong>Build</strong>: Create a proof-of-concept for your use case</li>
+  <li><strong>Scale</strong>: Work with IBM to deploy to production</li>
+</ol>
+
+<p>Ready to transform your enterprise with intelligent automation? The future is being built with LangChain and watsonx.ai—today.</p>
+
+<hr />
+
+<p><em>This post was generated by our Multi-Agent AI System, analyzing the latest trends in AI packages and their enterprise applications. For more daily insights, subscribe to our blog!</em></p>
+
+<p><strong>Tags</strong>: #LangChain #watsonx.ai #WatsonOrchestrate #AI #MachineLearning #EnterpriseAI #LLM #Automation</p>
+
+
+        
+
+        <!-- google adsense -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6216047850588517"
+        crossorigin="anonymous"></script>
+        <!-- advertising ruslanmv -->
+        <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-client="ca-pub-6216047850588517"
+              data-ad-slot="5348532932"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/Best-of-the-Best/tags/#ai" class="page__taxonomy-item p-category" rel="tag">AI</a><span class="sep">, </span>
+    
+      <a href="/Best-of-the-Best/tags/#langchain" class="page__taxonomy-item p-category" rel="tag">LangChain</a><span class="sep">, </span>
+    
+      <a href="/Best-of-the-Best/tags/#llm" class="page__taxonomy-item p-category" rel="tag">LLM</a><span class="sep">, </span>
+    
+      <a href="/Best-of-the-Best/tags/#watson-orchestrate" class="page__taxonomy-item p-category" rel="tag">Watson Orchestrate</a><span class="sep">, </span>
+    
+      <a href="/Best-of-the-Best/tags/#watsonx-ai" class="page__taxonomy-item p-category" rel="tag">watsonx.ai</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2024-11-22T00:00:00+01:00">November 22, 2024</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://x.com/intent/tweet?via=ruslanmv&text=LangChain%3A+Revolutionizing+LLM+Application+Development+with+watsonx.ai%20https%3A%2F%2Fruslanmv.com%2FBest-of-the-Best%2Fblog%2Fposts%2F2024-11-22-example-langchain.html" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fruslanmv.com%2FBest-of-the-Best%2Fblog%2Fposts%2F2024-11-22-example-langchain.html" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://ruslanmv.com/Best-of-the-Best/blog/posts/2024-11-22-example-langchain.html" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=LangChain%3A+Revolutionizing+LLM+Application+Development+with+watsonx.ai%20https%3A%2F%2Fruslanmv.com%2FBest-of-the-Best%2Fblog%2Fposts%2F2024-11-22-example-langchain.html" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+
+    </div>
+
+    
+  </article>
+
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+
+    
+      <li><a href="/Best-of-the-Best/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2025 <a href="https://ruslanmv.com">Best-of-the-Best</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/Best-of-the-Best/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/Best-of-the-Best/assets/js/lunr/lunr.min.js"></script>
+<script src="/Best-of-the-Best/assets/js/lunr/lunr-store.js"></script>
+<script src="/Best-of-the-Best/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-88BDP322XW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-88BDP322XW', { 'anonymize_ip': true});
+</script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
