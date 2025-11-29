@@ -1,0 +1,4604 @@
+[
+  {
+    "title": "TPOT",
+    "url": "https://doi.org/10.1007/978-3-030-05318-5_8",
+    "date": "2025-11-29T21:10:36.056883",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "NeuSpell",
+    "url": "https://doi.org/10.18653/v1/2020.emnlp-demos.21",
+    "date": "2025-11-29T21:10:36.056881",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Contextualized Topic Models",
+    "url": "https://doi.org/10.18653/v1/2021.eacl-main.143",
+    "date": "2025-11-29T21:10:36.056879",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "XGBoost",
+    "url": "https://doi.org/10.1145/2939672.2939785",
+    "date": "2025-11-29T21:10:36.056876",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Cleanlab",
+    "url": "https://doi.org/10.1613/jair.1.12125",
+    "date": "2025-11-29T21:10:36.056873",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "PyTerrier",
+    "url": "https://doi.org/10.1145/3459637.3482013",
+    "date": "2025-11-29T21:10:36.056869",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "deep-significance",
+    "url": "https://doi.org/10.18653/v1/p19-1266",
+    "date": "2025-11-29T21:10:36.056867",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Kornia",
+    "url": "https://doi.org/10.1109/WACV45572.2020.9093363",
+    "date": "2025-11-29T21:10:36.056865",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "SAHI",
+    "url": "https://doi.org/10.1109/ICIP46576.2022.9897990",
+    "date": "2025-11-29T21:10:36.056863",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "py-irt",
+    "url": "https://doi.org/10.18653/v1/2021.acl-long.346",
+    "date": "2025-11-29T21:10:36.056861",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "MMOCR",
+    "url": "https://doi.org/10.1145/3474085.3478328",
+    "date": "2025-11-29T21:10:36.056859",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "MMRotate",
+    "url": "https://doi.org/10.1145/3503161.3548541",
+    "date": "2025-11-29T21:10:36.056857",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "PyTorchVideo",
+    "url": "https://doi.org/10.1145/3474085.3478329",
+    "date": "2025-11-29T21:10:36.056855",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Scenic",
+    "url": "https://doi.org/10.1109/CVPR52688.2022.02070",
+    "date": "2025-11-29T21:10:36.056852",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "EfficientDet",
+    "url": "https://doi.org/10.1109/CVPR42600.2020.01079",
+    "date": "2025-11-29T21:10:36.056850",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "TensorFlow Graphics",
+    "url": "https://doi.org/10.1145/3450508.3464595",
+    "date": "2025-11-29T21:10:36.056847",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Classify text with BERT",
+    "url": "https://doi.org/10.18653/v1/N19-1423",
+    "date": "2025-11-29T21:10:36.056845",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Image segmentation",
+    "url": "http://doi.org/10.1007/978-3-319-24574-4_28",
+    "date": "2025-11-29T21:10:36.056843",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Pix2Pix",
+    "url": "https://doi.org/10.1109/CVPR.2017.632",
+    "date": "2025-11-29T21:10:36.056840",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "CycleGAN",
+    "url": "https://doi.org/10.1109/ICCV.2017.244",
+    "date": "2025-11-29T21:10:36.056838",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "AudioLM",
+    "url": "https://doi.org/10.1109/TASLP.2023.3288409",
+    "date": "2025-11-29T21:10:36.056836",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "FELIX",
+    "url": "https://doi.org/10.1007/978-3-031-70359-1_14",
+    "date": "2025-11-29T21:10:36.056834",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Score Jacobian Chaining",
+    "url": "https://doi.org/10.1109/CVPR52729.2023.01214",
+    "date": "2025-11-29T21:10:36.056831",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "CodeTalker",
+    "url": "https://doi.org/10.1109/CVPR52729.2023.01229",
+    "date": "2025-11-29T21:10:36.056829",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "DifFace",
+    "url": "https://doi.org/10.1109/TPAMI.2024.3432651",
+    "date": "2025-11-29T21:10:36.056827",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "BiRefNet",
+    "url": "https://doi.org/10.26599/AIR.2024.9150038",
+    "date": "2025-11-29T21:10:36.056825",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "BasicVSR++",
+    "url": "https://doi.org/10.1109/CVPR52688.2022.00588",
+    "date": "2025-11-29T21:10:36.056822",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "RealBasicVSR",
+    "url": "https://doi.org/10.1109/CVPR52688.2022.00587",
+    "date": "2025-11-29T21:10:36.056819",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "ROMP",
+    "url": "https://doi.org/10.1109/ICCV48922.2021.01099",
+    "date": "2025-11-29T21:10:36.056817",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "FateZero",
+    "url": "https://doi.org/10.1109/ICCV51070.2023.01460",
+    "date": "2025-11-29T21:10:36.056815",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "HMR",
+    "url": "https://doi.org/10.1109/CVPR.2018.00744",
+    "date": "2025-11-29T21:10:36.056813",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "FollowYourPose",
+    "url": "https://doi.org/10.1609/aaai.v38i5.28206",
+    "date": "2025-11-29T21:10:36.056811",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "SCALE",
+    "url": "https://doi.org/10.1109/CVPR46437.2021.01582",
+    "date": "2025-11-29T21:10:36.056809",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "CAPE",
+    "url": "https://doi.org/10.1109/CVPR42600.2020.00650",
+    "date": "2025-11-29T21:10:36.056807",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "SPIN",
+    "url": "https://doi.org/10.1109/ICCV.2019.00234",
+    "date": "2025-11-29T21:10:36.056805",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "AlphaPose",
+    "url": "https://doi.org/10.1109/TPAMI.2022.3222784",
+    "date": "2025-11-29T21:10:36.056803",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "VIBE",
+    "url": "https://doi.org/10.1109/CVPR42600.2020.00530",
+    "date": "2025-11-29T21:10:36.056801",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Background Matting V2",
+    "url": "https://doi.org/10.1109/CVPR46437.2021.00865",
+    "date": "2025-11-29T21:10:36.056799",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "RITM",
+    "url": "https://doi.org/10.1109/ICIP46576.2022.9897365",
+    "date": "2025-11-29T21:10:36.056797",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "f-BRS",
+    "url": "https://doi.org/10.1109/CVPR42600.2020.00865",
+    "date": "2025-11-29T21:10:36.056795",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "DeepLabCut",
+    "url": "https://doi.org/10.1038/s41593-018-0209-y",
+    "date": "2025-11-29T21:10:36.056792",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "T2M-GPT",
+    "url": "https://doi.org/10.1109/CVPR52729.2023.01415",
+    "date": "2025-11-29T21:10:36.056790",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "VideoReTalking",
+    "url": "https://doi.org/10.1145/3550469.3555399",
+    "date": "2025-11-29T21:10:36.056786",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "SadTalker",
+    "url": "https://doi.org/10.1109/CVPR52729.2023.00836",
+    "date": "2025-11-29T21:10:36.056784",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Gaussian Splatting",
+    "url": "https://doi.org/10.1145/3592433",
+    "date": "2025-11-29T21:10:36.056782",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Tune-A-Video",
+    "url": "https://doi.org/10.1109/ICCV51070.2023.00701",
+    "date": "2025-11-29T21:10:36.056780",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Text2Video-Zero",
+    "url": "https://doi.org/10.1109/ICCV51070.2023.01462",
+    "date": "2025-11-29T21:10:36.056778",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "NAFNet",
+    "url": "https://doi.org/10.1007/978-3-031-20071-7_2",
+    "date": "2025-11-29T21:10:36.056775",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "PyMAF-X",
+    "url": "https://doi.org/10.1109/TPAMI.2023.3271691",
+    "date": "2025-11-29T21:10:36.056773",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "HybrIK",
+    "url": "https://doi.org/10.1109/CVPR46437.2021.00339",
+    "date": "2025-11-29T21:10:36.056771",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "IDE-3D",
+    "url": "https://doi.org/10.1145/3550454.3555506",
+    "date": "2025-11-29T21:10:36.056769",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "StyleSDF",
+    "url": "https://doi.org/10.1109/CVPR52688.2022.01314",
+    "date": "2025-11-29T21:10:36.056767",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "EPro-PnP",
+    "url": "https://doi.org/10.1109/TPAMI.2024.3354997",
+    "date": "2025-11-29T21:10:36.056765",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "UniFormerV2",
+    "url": "https://doi.org/10.1109/ICCV51070.2023.00157",
+    "date": "2025-11-29T21:10:36.056763",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Panini-Net",
+    "url": "https://doi.org/10.1609/aaai.v36i3.20159",
+    "date": "2025-11-29T21:10:36.056761",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Thin-Plate Spline Motion Model",
+    "url": "https://doi.org/10.1109/CVPR52688.2022.00364",
+    "date": "2025-11-29T21:10:36.056759",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "E2FGVI",
+    "url": "https://doi.org/10.1109/CVPR52688.2022.01704",
+    "date": "2025-11-29T21:10:36.056757",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "PTI",
+    "url": "https://doi.org/10.1145/3544777",
+    "date": "2025-11-29T21:10:36.056754",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "PoolFormer",
+    "url": "https://doi.org/10.1109/CVPR52688.2022.01055",
+    "date": "2025-11-29T21:10:36.056752",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "ECON",
+    "url": "https://doi.org/10.1109/CVPR52729.2023.00057",
+    "date": "2025-11-29T21:10:36.056750",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "ICON",
+    "url": "https://doi.org/10.1109/CVPR52688.2022.01294",
+    "date": "2025-11-29T21:10:36.056748",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "LIDA",
+    "url": "https://doi.org/10.18653/v1/2023.acl-demo.11",
+    "date": "2025-11-29T21:10:36.056745",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "GLIP",
+    "url": "https://doi.org/10.1109/CVPR52688.2022.01069",
+    "date": "2025-11-29T21:10:36.056743",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "VQ-Diffusion",
+    "url": "https://doi.org/10.1109/CVPR52688.2022.01043",
+    "date": "2025-11-29T21:10:36.056741",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Bringing Old Photo Back to Life",
+    "url": "https://doi.org/10.1109/CVPR42600.2020.00282",
+    "date": "2025-11-29T21:10:36.056738",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "MTTR",
+    "url": "https://doi.org/10.1109/CVPR52688.2022.00493",
+    "date": "2025-11-29T21:10:36.056736",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Swin2SR",
+    "url": "https://doi.org/10.1007/978-3-031-25063-7_42",
+    "date": "2025-11-29T21:10:36.056734",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "VRT",
+    "url": "https://doi.org/10.1109/TIP.2024.3372454",
+    "date": "2025-11-29T21:10:36.056732",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "SwinIR",
+    "url": "https://doi.org/10.1109/ICCVW54120.2021.00210",
+    "date": "2025-11-29T21:10:36.056730",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "JoJoGAN",
+    "url": "https://doi.org/10.1007/978-3-031-19787-1_8",
+    "date": "2025-11-29T21:10:36.056728",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "RVM",
+    "url": "https://doi.org/10.1109/WACV51458.2022.00319",
+    "date": "2025-11-29T21:10:36.056726",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "LaMa",
+    "url": "https://doi.org/10.1109/WACV51458.2022.00323",
+    "date": "2025-11-29T21:10:36.056724",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Instant-NGP",
+    "url": "https://doi.org/10.1145/3528223.3530127",
+    "date": "2025-11-29T21:10:36.056722",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "StyleCariGAN",
+    "url": "https://doi.org/10.1145/3450626.3459860",
+    "date": "2025-11-29T21:10:36.056720",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Live Speech Portraits",
+    "url": "https://doi.org/10.1145/3478513.3480484",
+    "date": "2025-11-29T21:10:36.056718",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "GFPGAN",
+    "url": "https://doi.org/10.1109/CVPR46437.2021.00905",
+    "date": "2025-11-29T21:10:36.056716",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Real-ESRGAN",
+    "url": "https://doi.org/10.1109/ICCVW54120.2021.00217",
+    "date": "2025-11-29T21:10:36.056714",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Lifespan Age Transformation Synthesis",
+    "url": "https://doi.org/10.1007/978-3-030-58539-6_44",
+    "date": "2025-11-29T21:10:36.056710",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "InterFaceGAN",
+    "url": "https://doi.org/10.1109/CVPR42600.2020.00926",
+    "date": "2025-11-29T21:10:36.056708",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "HiGAN",
+    "url": "https://doi.org/10.1007/s11263-020-01429-5",
+    "date": "2025-11-29T21:10:36.056705",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "SeFa",
+    "url": "https://doi.org/10.1109/CVPR46437.2021.00158",
+    "date": "2025-11-29T21:10:36.056703",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Rewriting a Deep Generative Model",
+    "url": "https://doi.org/10.1007/978-3-030-58452-8_21",
+    "date": "2025-11-29T21:10:36.056699",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Anycost GAN",
+    "url": "https://doi.org/10.1109/CVPR46437.2021.01474",
+    "date": "2025-11-29T21:10:36.056697",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "NeX",
+    "url": "https://doi.org/10.1109/CVPR46437.2021.00843",
+    "date": "2025-11-29T21:10:36.056695",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "TediGAN",
+    "url": "https://doi.org/10.1109/CVPR46437.2021.00229",
+    "date": "2025-11-29T21:10:36.056693",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "SimSwap",
+    "url": "https://doi.org/10.1145/3394171.3413630",
+    "date": "2025-11-29T21:10:36.056690",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Parallel WaveGAN",
+    "url": "https://doi.org/10.1109/ICASSP40776.2020.9053795",
+    "date": "2025-11-29T21:10:36.056688",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "StyleCLIP",
+    "url": "https://doi.org/10.1109/ICCV48922.2021.00209",
+    "date": "2025-11-29T21:10:36.056686",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "StyleGAN-NADA",
+    "url": "https://doi.org/10.1145/3528223.3530164",
+    "date": "2025-11-29T21:10:36.056684",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "NeRViS",
+    "url": "https://doi.org/10.1109/ICCV48922.2021.00230",
+    "date": "2025-11-29T21:10:36.056682",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "AnimeGANv3",
+    "url": "http://doi.org/10.1587/transinf.2023EDP7061",
+    "date": "2025-11-29T21:10:36.056680",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "AnimeGANv2",
+    "url": "https://doi.org/10.1007/978-981-15-5577-0_18",
+    "date": "2025-11-29T21:10:36.056678",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "HyperStyle",
+    "url": "https://doi.org/10.1109/CVPR52688.2022.01796",
+    "date": "2025-11-29T21:10:36.056674",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "SAM",
+    "url": "https://doi.org/10.1145/3450626.3459805",
+    "date": "2025-11-29T21:10:36.056672",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "encoder4editing",
+    "url": "https://doi.org/10.1145/3450626.3459838",
+    "date": "2025-11-29T21:10:36.056670",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "ReStyle",
+    "url": "https://doi.org/10.1109/ICCV48922.2021.00664",
+    "date": "2025-11-29T21:10:36.056668",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Pixel2Style2Pixel",
+    "url": "https://doi.org/10.1109/CVPR46437.2021.00232",
+    "date": "2025-11-29T21:10:36.056666",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "SVG VAE",
+    "url": "https://doi.org/10.1109/ICCV.2019.00802",
+    "date": "2025-11-29T21:10:36.056664",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Stylized Neural Painting",
+    "url": "https://doi.org/10.1109/CVPR46437.2021.01543",
+    "date": "2025-11-29T21:10:36.056662",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "SkyAR",
+    "url": "https://doi.org/10.1109/TIP.2022.3192717",
+    "date": "2025-11-29T21:10:36.056660",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "MSG-Net",
+    "url": "https://doi.org/10.1007/978-3-030-11018-5_32",
+    "date": "2025-11-29T21:10:36.056657",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Wav2Lip",
+    "url": "https://doi.org/10.1145/3394171.3413532",
+    "date": "2025-11-29T21:10:36.056655",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "HiDT",
+    "url": "https://doi.org/10.1109/CVPR42600.2020.00751",
+    "date": "2025-11-29T21:10:36.056653",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "AvatarCLIP",
+    "url": "https://doi.org/10.1145/3528223.3530094",
+    "date": "2025-11-29T21:10:36.056651",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "LaSAFT",
+    "url": "https://doi.org/10.1109/ICASSP39728.2021.9413896",
+    "date": "2025-11-29T21:10:36.056649",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Open-Unmix",
+    "url": "https://doi.org/10.21105/joss.01667",
+    "date": "2025-11-29T21:10:36.056647",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Neural Style Transfer",
+    "url": "https://doi.org/10.1167/16.12.326",
+    "date": "2025-11-29T21:10:36.056645",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Ithaca",
+    "url": "https://doi.org/10.1038/s41586-022-04448-z",
+    "date": "2025-11-29T21:10:36.056643",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "GraphCast",
+    "url": "https://doi.org/10.1126/science.adi2336",
+    "date": "2025-11-29T21:10:36.056640",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "AlphaTensor",
+    "url": "https://doi.org/10.1038/s41586-022-05172-4",
+    "date": "2025-11-29T21:10:36.056638",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "AlphaFold",
+    "url": "https://doi.org/10.1038/s41586-021-03819-2",
+    "date": "2025-11-29T21:10:36.056634",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Skillful Precipitation Nowcasting Using Deep Generative Models of Radar",
+    "url": "https://doi.org/10.1038/s41586-021-03854-z",
+    "date": "2025-11-29T21:10:36.056632",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "LDM",
+    "url": "https://doi.org/10.1109/CVPR52688.2022.01042",
+    "date": "2025-11-29T21:10:36.056630",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Rethinking Style Transfer: From Pixels to Parameterized Brushstrokes",
+    "url": "https://doi.org/10.1109/CVPR46437.2021.01202",
+    "date": "2025-11-29T21:10:36.056628",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Geometry-Free View Synthesis",
+    "url": "https://doi.org/10.1109/ICCV48922.2021.01409",
+    "date": "2025-11-29T21:10:36.056626",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Taming Transformers for High-Resolution Image Synthesis",
+    "url": "https://doi.org/10.1109/CVPR46437.2021.01268",
+    "date": "2025-11-29T21:10:36.056624",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "MakeItTalk",
+    "url": "https://doi.org/10.1145/3414685.3417774",
+    "date": "2025-11-29T21:10:36.056622",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Instance-aware Image Colorization",
+    "url": "https://doi.org/10.1109/CVPR42600.2020.00799",
+    "date": "2025-11-29T21:10:36.056620",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "FGVC",
+    "url": "https://doi.org/10.1007/978-3-030-58610-2_42",
+    "date": "2025-11-29T21:10:36.056618",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "3D Photo Inpainting",
+    "url": "https://doi.org/10.1109/CVPR42600.2020.00805",
+    "date": "2025-11-29T21:10:36.056616",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "ByteTrack",
+    "url": "https://doi.org/10.1007/978-3-031-20047-2_1",
+    "date": "2025-11-29T21:10:36.056612",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "DualStyleGAN",
+    "url": "https://doi.org/10.1109/CVPR52688.2022.00754",
+    "date": "2025-11-29T21:10:36.056610",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "VToonify",
+    "url": "https://doi.org/10.1145/3550454.3555437",
+    "date": "2025-11-29T21:10:36.056608",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "CartoonGAN",
+    "url": "https://doi.org/10.1109/CVPR.2018.00986",
+    "date": "2025-11-29T21:10:36.056606",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "MoCo",
+    "url": "https://doi.org/10.1109/CVPR42600.2020.00975",
+    "date": "2025-11-29T21:10:36.056604",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "ESM",
+    "url": "https://doi.org/10.1101/622803",
+    "date": "2025-11-29T21:10:36.056602",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Omnivore",
+    "url": "https://doi.org/10.1109/CVPR52688.2022.01563",
+    "date": "2025-11-29T21:10:36.056600",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "ConvNeXt",
+    "url": "https://doi.org/10.1109/CVPR52688.2022.01167",
+    "date": "2025-11-29T21:10:36.056598",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Mask2Former",
+    "url": "https://doi.org/10.1109/CVPR52688.2022.00135",
+    "date": "2025-11-29T21:10:36.056596",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Detic",
+    "url": "https://doi.org/10.1007/978-3-031-20077-9_21",
+    "date": "2025-11-29T21:10:36.056592",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "PIFuHD",
+    "url": "https://doi.org/10.1109/CVPR42600.2020.00016",
+    "date": "2025-11-29T21:10:36.056590",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "PIFu",
+    "url": "https://doi.org/10.1109/ICCV.2019.00239",
+    "date": "2025-11-29T21:10:36.056588",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Nerfies",
+    "url": "https://doi.org/10.1109/ICCV48922.2021.00581",
+    "date": "2025-11-29T21:10:36.056586",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "StylEx",
+    "url": "https://doi.org/10.1109/ICCV48922.2021.00073",
+    "date": "2025-11-29T21:10:36.056584",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "BiT",
+    "url": "https://doi.org/10.1007/978-3-030-58558-7_29",
+    "date": "2025-11-29T21:10:36.056582",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "OWL-ViT",
+    "url": "https://doi.org/10.1007/978-3-031-20080-9_42",
+    "date": "2025-11-29T21:10:36.056580",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "FILM",
+    "url": "https://doi.org/10.1007/978-3-031-20071-7_15",
+    "date": "2025-11-29T21:10:36.056578",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Dream Fields",
+    "url": "https://doi.org/10.1109/CVPR52688.2022.00094",
+    "date": "2025-11-29T21:10:36.056576",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Motion Representations for Articulated Animation",
+    "url": "https://doi.org/10.1109/CVPR46437.2021.01344",
+    "date": "2025-11-29T21:10:36.056574",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Motion Supervised co-part Segmentation",
+    "url": "https://doi.org/10.1109/ICPR48806.2021.9412520",
+    "date": "2025-11-29T21:10:36.056570",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Text2Human",
+    "url": "https://doi.org/10.1145/3528223.3530104",
+    "date": "2025-11-29T21:10:36.056566",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "StyleGAN-Human",
+    "url": "https://doi.org/10.1007/978-3-031-19787-1_1",
+    "date": "2025-11-29T21:10:36.056562",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "StyleGAN 2",
+    "url": "https://doi.org/10.1109/CVPR42600.2020.00813",
+    "date": "2025-11-29T21:10:36.056560",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Learning to Paint",
+    "url": "https://doi.org/10.1109/ICCV.2019.00880",
+    "date": "2025-11-29T21:10:36.056557",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "3D Ken Burns",
+    "url": "https://doi.org/10.1145/3355089.3356528",
+    "date": "2025-11-29T21:10:36.056553",
+    "author": "AI Agent",
+    "tags": [
+      "Paper",
+      "Citation",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "AlphaFold",
+    "url": "https://colab.research.google.com/github/deepmind/alphafold/blob/master/notebooks/AlphaFold.ipynb",
+    "date": "2025-01-29T14:32:24",
+    "author": "John Jumper",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Highly accurate protein structure prediction"
+  },
+  {
+    "title": "DeepLabCut",
+    "url": "https://colab.research.google.com/github/DeepLabCut/DeepLabCut/blob/master/examples/COLAB/COLAB_maDLC_TrainNetwork_VideoAnalysis.ipynb",
+    "date": "2025-01-27T13:31:47",
+    "author": "Alexander Mathis",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Efficient method for markerless pose estimation based on transfer learning with deep neural networks that achieves excellent results with minimal training data"
+  },
+  {
+    "title": "STAR",
+    "url": "https://colab.research.google.com/drive/1K8A1U_BNpAteRhhW9A8pAYs6LWjItQs_",
+    "date": "2025-01-22T17:41:10.828000",
+    "author": "Rui Xie",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Spatial Temporal Augmentation with T2V models for Real-world video super-resolution, a novel approach that leverages T2V models for real-world video super-resolution, achieving realistic spatial detai..."
+  },
+  {
+    "title": "InvSR",
+    "url": "https://colab.research.google.com/drive/1hjgCFnAU4oUUhh9VRfTwsFN1AiIjdcSR",
+    "date": "2025-01-21T13:03:14.067000",
+    "author": "Zongsheng Yue",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Image super-resolution technique based on diffusion inversion, aiming at harnessing the rich image priors encapsulated in large pre-trained diffusion models to improve SR performance"
+  },
+  {
+    "title": "ModernBERT",
+    "url": "https://colab.research.google.com/github/AnswerDotAI/ModernBERT/blob/master/examples/finetune_modernbert_on_glue.ipynb",
+    "date": "2024-12-21T23:06:25",
+    "author": "Benjamin Warner",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Bringing modern model optimizations to encoder-only models and representing a major Pareto improvement over older encoders"
+  },
+  {
+    "title": "GraphCast",
+    "url": "https://colab.research.google.com/github/deepmind/graphcast/blob/master/graphcast_demo.ipynb",
+    "date": "2024-12-04T14:19:21",
+    "author": "Rémi Lam",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Learning skillful medium-range global weather forecasting"
+  },
+  {
+    "title": "TAPIR",
+    "url": "https://colab.research.google.com/github/deepmind/tapnet/blob/master/colabs/causal_tapir_demo.ipynb",
+    "date": "2024-11-30T10:12:02",
+    "author": "Carl Doersch",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Tracking Any Point with per-frame Initialization and temporal Refinement"
+  },
+  {
+    "title": "T2M-GPT",
+    "url": "https://colab.research.google.com/drive/1Vy69w2q2d-Hg19F-KibqG0FRdpSj3L4O",
+    "date": "2024-11-24T08:08:28.161000",
+    "author": "Jianrong Zhang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Conditional generative framework based on Vector Quantised-Variational AutoEncoder and Generative Pre-trained Transformer for human motion generation from textural descriptions"
+  },
+  {
+    "title": "PuLID",
+    "url": "https://colab.research.google.com/github/camenduru/PuLID-jupyter/blob/main/PuLID_jupyter.ipynb",
+    "date": "2024-11-09T22:31:43",
+    "author": "Zinan Guo",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Pure and Lightning ID customization, a tuning-free ID customization method for text-to-image generation"
+  },
+  {
+    "title": "CoTracker",
+    "url": "https://colab.research.google.com/github/facebookresearch/co-tracker/blob/main/notebooks/demo.ipynb",
+    "date": "2024-10-16T11:32:52",
+    "author": "Nikita Karaev",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Architecture that jointly tracks multiple points throughout an entire video"
+  },
+  {
+    "title": "PIFu",
+    "url": "https://colab.research.google.com/drive/1GFSsqP2BWz4gtq0e-nki00ZHSirXwFyY",
+    "date": "2024-10-07T22:41:51.739000",
+    "author": "Ryota Natsume",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Pixel-Aligned Implicit Function for High-Resolution Clothed Human Digitization"
+  },
+  {
+    "title": "DifFace",
+    "url": "https://colab.research.google.com/drive/1BNtoPPRuJwNDvqfwDOOmD9XJyF05Zh4m",
+    "date": "2024-10-05T15:28:48.404000",
+    "author": "Zongsheng Yue",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Method that is capable of coping with unseen and complex degradations more gracefully without complicated loss designs"
+  },
+  {
+    "title": "Segment Anything 2",
+    "url": "https://colab.research.google.com/github/facebookresearch/segment-anything-2/blob/main/notebooks/image_predictor_example.ipynb",
+    "date": "2024-10-01T03:27:44",
+    "author": "Nikhila Ravi",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Foundation model towards solving promptable visual segmentation in images and videos"
+  },
+  {
+    "title": "Open-Unmix",
+    "url": "https://colab.research.google.com/drive/1mijF0zGWxN-KaxTnd0q6hayAlrID5fEQ",
+    "date": "2024-09-25T09:48:06.773000",
+    "author": "Fabian-Robert Stöter",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A deep neural network reference implementation for music source separation, applicable for researchers, audio engineers and artists"
+  },
+  {
+    "title": "Deep Painterly Harmonization",
+    "url": "https://colab.research.google.com/gist/eyaler/5303782669fb43510d398bd346c6e3e6/deep-painterly-harmonization.ipynb",
+    "date": "2024-09-23T17:14:34",
+    "author": "Fujun Luan",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Algorithm produces significantly better results than photo compositing or global stylization techniques and that it enables creative painterly edits that would be otherwise difficult to achieve"
+  },
+  {
+    "title": "audio2photoreal",
+    "url": "https://colab.research.google.com/drive/1A6EwKM3PeX7dcKV66zxQWuP-v_dKlX_0",
+    "date": "2024-09-13T01:25:24.769000",
+    "author": "Evonne Ng",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Framework for generating full-bodied photorealistic avatars that gesture according to the conversational dynamics of a dyadic interaction"
+  },
+  {
+    "title": "Fast Segment Anything",
+    "url": "https://colab.research.google.com/drive/1oX14f6IneGGw612WgVlAiy91UHwFAvr9",
+    "date": "2024-09-10T02:42:15.776000",
+    "author": "Xu Zhao",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "CNN Segment Anything Model trained using only 2% of the SA-1B dataset published by SAM authors"
+  },
+  {
+    "title": "Neuralangelo",
+    "url": "https://colab.research.google.com/drive/1i16s8W_OV0Hd3-PIuo64JKDwwdOesgXQ",
+    "date": "2024-09-02T14:41:36.999000",
+    "author": "Zhaoshuo Li",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Framework for high-fidelity 3D surface reconstruction from RGB video captures"
+  },
+  {
+    "title": "BiRefNet",
+    "url": "https://colab.research.google.com/drive/1B6aKZ3ekcvKMkSBn0N5mCASLUYMp0whK",
+    "date": "2024-08-23T13:36:30.230000",
+    "author": "Peng Zheng",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Bilateral reference framework for high-resolution dichotomous image segmentation"
+  },
+  {
+    "title": "SPIN",
+    "url": "https://colab.research.google.com/drive/1uH2JtavOtDrFl6RsipyIncCSr19GWW4x",
+    "date": "2024-08-21T08:14:19.290000",
+    "author": "Nikos Kolotouros",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Learning to Reconstruct 3D Human Pose and Shape via Model-fitting in the Loop"
+  },
+  {
+    "title": "YOLOv10",
+    "url": "https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/train-yolov10-object-detection-on-custom-dataset.ipynb",
+    "date": "2024-08-20T18:30:45",
+    "author": "Ao Wang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Aim to further advance the performance-efficiency boundary of YOLOs from both the post-processing and model architecture"
+  },
+  {
+    "title": "SpecVQGAN",
+    "url": "https://colab.research.google.com/drive/1pxTIMweAKApJZ3ZFqyBee3HtMqFpnwQ0",
+    "date": "2024-07-12T09:14:53.365000",
+    "author": "Vladimir Iashin",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Taming the visually guided sound generation by shrinking a training dataset to a set of representative vectors"
+  },
+  {
+    "title": "LivePortrait",
+    "url": "https://colab.research.google.com/github/camenduru/LivePortrait-jupyter/blob/main/LivePortrait_jupyter.ipynb",
+    "date": "2024-07-10T19:49:14",
+    "author": "Jianzhu Guo",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Video-driven portrait animation framework with a focus on better generalization, controllability, and efficiency for practical usage"
+  },
+  {
+    "title": "Wav2Lip",
+    "url": "https://colab.research.google.com/github/eyaler/avatars4all/blob/master/melaflefon.ipynb",
+    "date": "2024-06-27T16:23:41",
+    "author": "Prajwal Renukanand",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A Lip Sync Expert Is All You Need for Speech to Lip Generation In the Wild"
+  },
+  {
+    "title": "FELIX",
+    "url": "https://colab.research.google.com/github/simonmalberg/felix/blob/main/Paper/FELIX.ipynb",
+    "date": "2024-06-13T06:57:50",
+    "author": "Simon Malberg",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Feature Engineering with LLMs for Interpretability and Explainability, a novel approach harnessing the vast world knowledge embedded in pre-trained Large Language Models to automatically generate a se..."
+  },
+  {
+    "title": "PoolFormer",
+    "url": "https://colab.research.google.com/github/sail-sg/poolformer/blob/main/misc/poolformer_demo.ipynb",
+    "date": "2024-06-01T15:09:09",
+    "author": "Weihao Yu",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "MetaFormer Is Actually What You Need for Vision"
+  },
+  {
+    "title": "StoryDiffusion",
+    "url": "https://colab.research.google.com/github/HVision-NKU/StoryDiffusion/blob/main/Comic_Generation.ipynb",
+    "date": "2024-05-04T21:42:04",
+    "author": "Yupeng Zhou",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Way of self-attention calculation, termed Consistent Self-Attention, that significantly boosts the consistency between the generated images and augments prevalent pretrained diffusion-based text-to-im..."
+  },
+  {
+    "title": "FILM",
+    "url": "https://colab.research.google.com/drive/1sK0uc-GJxmdnaxHhYqD2afRknakpdTNZ",
+    "date": "2024-05-03T01:32:56.070000",
+    "author": "Fitsum Reda",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A frame interpolation algorithm that synthesizes multiple intermediate frames from two input images with large in-between motion"
+  },
+  {
+    "title": "VoiceCraft",
+    "url": "https://colab.research.google.com/github/jasonppy/VoiceCraft/blob/master/voicecraft-gradio-colab.ipynb",
+    "date": "2024-04-21T16:38:09",
+    "author": "Puyuan Peng",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "token infilling neural codec language model, that achieves state-of-the-art performance on both speech editing and zero-shot text-to-speech on audiobooks, internet videos, and podcasts"
+  },
+  {
+    "title": "ZeST",
+    "url": "https://colab.research.google.com/github/camenduru/zest-jupyter/blob/main/zest_jupyter.ipynb",
+    "date": "2024-04-16T12:40:56",
+    "author": "Ta-Ying Cheng",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Method for zero-shot material transfer to an object in the input image given a material exemplar image"
+  },
+  {
+    "title": "InstantMesh",
+    "url": "https://colab.research.google.com/github/camenduru/InstantMesh-jupyter/blob/main/InstantMesh_jupyter.ipynb",
+    "date": "2024-04-16T09:51:43",
+    "author": "Jiale Xu",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Feed-forward framework for instant 3D mesh generation from a single image, featuring state-of-the-art generation quality and significant training scalability"
+  },
+  {
+    "title": "Würstchen",
+    "url": "https://colab.research.google.com/github/dome272/Wuerstchen/blob/main/w%C3%BCrstchen-stage-C.ipynb",
+    "date": "2024-04-06T09:19:58",
+    "author": "Pablo Pernias",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Architecture for text-to-image synthesis that combines competitive performance with unprecedented cost-effectiveness for large-scale text-to-image diffusion models"
+  },
+  {
+    "title": "AudioSep",
+    "url": "https://colab.research.google.com/github/Audio-AGI/AudioSep/blob/main/AudioSep_Colab.ipynb",
+    "date": "2024-03-15T15:03:36",
+    "author": "Xubo Liu",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Foundation model for open-domain audio source separation with natural language queries"
+  },
+  {
+    "title": "AQLM",
+    "url": "https://colab.research.google.com/github/Vahe1994/AQLM/blob/main/notebooks/colab_example.ipynb",
+    "date": "2024-03-08T10:39:01",
+    "author": "Vage Egiazarian",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Extreme Compression of Large Language Models via Additive Quantization"
+  },
+  {
+    "title": "YOLOv9",
+    "url": "https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/train-yolov9-object-detection-on-custom-dataset.ipynb",
+    "date": "2024-03-05T09:54:57",
+    "author": "Chien-Yao Wang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Learning What You Want to Learn Using Programmable Gradient Information"
+  },
+  {
+    "title": "Multi-LoRA Composition",
+    "url": "https://colab.research.google.com/drive/1eSTj6qGOtSY5NaazwwN3meXOzEZxgaZq",
+    "date": "2024-03-03T14:57:02.515000",
+    "author": "Ming Zhong",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "LoRA Switch and LoRA Composite, approaches that aim to surpass traditional techniques in terms of accuracy and image quality, especially in complex compositions"
+  },
+  {
+    "title": "AMARETTO",
+    "url": "https://colab.research.google.com/drive/1JfnRoNgTVX_7VEGAAmjGjwP_yX2tdDxs",
+    "date": "2024-02-28T13:28:19.230000",
+    "author": "Nathalie Pochet",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Multiscale and multimodal inference of regulatory networks to identify cell circuits and their drivers shared and distinct within and across biological systems of human disease"
+  },
+  {
+    "title": "LIDA",
+    "url": "https://colab.research.google.com/github/microsoft/lida/blob/main/notebooks/tutorial.ipynb",
+    "date": "2024-02-06T22:59:36",
+    "author": "Victor Dibia",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Tool for generating grammar-agnostic visualizations and infographics"
+  },
+  {
+    "title": "ViT",
+    "url": "https://colab.research.google.com/github/google-research/vision_transformer/blob/main/vit_jax.ipynb",
+    "date": "2024-02-06T11:27:41",
+    "author": "Alexey Dosovitskiy",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Vision Transformer and MLP-Mixer Architectures"
+  },
+  {
+    "title": "Qwen",
+    "url": "https://colab.research.google.com/github/QwenLM/Qwen/blob/master/recipes/quickstart/qwen.ipynb",
+    "date": "2024-01-30T07:57:09",
+    "author": "qwenlm",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Comprehensive language model series that encompasses distinct models with varying parameter counts"
+  },
+  {
+    "title": "3D Ken Burns",
+    "url": "https://colab.research.google.com/github/mrm8488/shared_colab_notebooks/blob/master/3D_Ken_Burns.ipynb",
+    "date": "2024-01-24T21:03:03",
+    "author": "Manuel Romero",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A reference implementation of 3D Ken Burns Effect from a Single Image using PyTorch - given a single input image, it animates this still image with a virtual camera scan and zoom subject to motion par..."
+  },
+  {
+    "title": "VALL-E X",
+    "url": "https://colab.research.google.com/drive/1yyD_sz531QntLKowMHo-XxorsFBCfKul",
+    "date": "2024-01-19T01:37:11.536000",
+    "author": "Ziqiang Zhang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Cross-lingual neural codec language model for cross-lingual speech synthesis"
+  },
+  {
+    "title": "PhotoMaker",
+    "url": "https://colab.research.google.com/github/TencentARC/PhotoMaker/blob/main/photomaker_demo.ipynb",
+    "date": "2024-01-18T08:30:02",
+    "author": "Zhen Li",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Efficient personalized text-to-image generation method, which mainly encodes an arbitrary number of input ID images into a stack ID embedding for preserving ID information"
+  },
+  {
+    "title": "DDColor",
+    "url": "https://colab.research.google.com/github/camenduru/DDColor-colab/blob/main/DDColor_colab.ipynb",
+    "date": "2024-01-15T10:18:08",
+    "author": "Xiaoyang Kang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "End-to-end method with dual decoders for image colorization"
+  },
+  {
+    "title": "PASD",
+    "url": "https://colab.research.google.com/drive/1lZ_-rSGcmreLCiRniVT973x6JLjFiC-b",
+    "date": "2024-01-12T19:40:31.844000",
+    "author": "Tao Yang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Pixel-aware stable diffusion network to achieve robust Real-ISR as well as personalized stylization"
+  },
+  {
+    "title": "HandRefiner",
+    "url": "https://colab.research.google.com/github/camenduru/HandRefiner-colab/blob/main/HandRefiner_colab.ipynb",
+    "date": "2024-01-08T22:16:35",
+    "author": "Wenquan Lu",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Refining Malformed Hands in Generated Images by Diffusion-based Conditional Inpainting"
+  },
+  {
+    "title": "ESM",
+    "url": "https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/ESMFold.ipynb",
+    "date": "2023-12-28T19:18:56",
+    "author": "Zeming Lin",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Evolutionary Scale Modeling: Pretrained language models for proteins"
+  },
+  {
+    "title": "LLaVA",
+    "url": "https://colab.research.google.com/github/camenduru/LLaVA-colab/blob/main/LLaVA_13b_4bit_vanilla_colab.ipynb",
+    "date": "2023-12-22T19:26:44",
+    "author": "Haotian Liu",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Large Language and Vision Assistant, an end-to-end trained large multimodal model that connects a vision encoder and LLM for general-purpose visual and language understanding"
+  },
+  {
+    "title": "Background Matting V2",
+    "url": "https://colab.research.google.com/drive/1cTxFq1YuoJ5QPqaTcnskwlHDolnjBkB9",
+    "date": "2023-12-21T23:00:00",
+    "author": "Shanchuan Lin",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Real-time, high-resolution background replacement technique which operates at 30fps in 4K resolution, and 60fps for HD on a modern GPU"
+  },
+  {
+    "title": "Gaussian Splatting",
+    "url": "https://colab.research.google.com/github/camenduru/gaussian-splatting-colab/blob/main/gaussian_splatting_colab.ipynb",
+    "date": "2023-12-19T00:53:28",
+    "author": "Bernhard Kerbl",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "State-of-the-art visual quality while maintaining competitive training times and importantly allow high-quality real-time (≥ 100 fps) novel-view synthesis at 1080p resolution"
+  },
+  {
+    "title": "SMPLer-X",
+    "url": "https://colab.research.google.com/github/camenduru/SMPLer-X-colab/blob/main/SMPLer_X_colab.ipynb",
+    "date": "2023-12-18T19:57:59",
+    "author": "Zhongang Cai",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Scaling up EHPS towards the first generalist foundation model, with up to ViT-Huge as the backbone and training with up to 4.5M instances from diverse data sources"
+  },
+  {
+    "title": "DeepCache",
+    "url": "https://colab.research.google.com/github/camenduru/DeepCache-colab/blob/main/DeepCache_colab.ipynb",
+    "date": "2023-12-18T13:03:52",
+    "author": "Xinyin Ma",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Training-free paradigm that accelerates diffusion models from the perspective of model architecture"
+  },
+  {
+    "title": "MagicAnimate",
+    "url": "https://colab.research.google.com/github/camenduru/MagicAnimate-colab/blob/main/MagicAnimate_colab.ipynb",
+    "date": "2023-12-18T12:27:21",
+    "author": "Zhongcong Xu",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Diffusion-based framework that aims at enhancing temporal consistency, preserving reference image faithfully, and improving animation fidelity"
+  },
+  {
+    "title": "DiffBIR",
+    "url": "https://colab.research.google.com/github/camenduru/DiffBIR-colab/blob/main/DiffBIR_colab.ipynb",
+    "date": "2023-12-18T12:26:33",
+    "author": "Xinqi Lin",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Towards Blind Image Restoration with Generative Diffusion Prior"
+  },
+  {
+    "title": "AudioLDM",
+    "url": "https://colab.research.google.com/github/olaviinha/NeuralTextToAudio/blob/main/AudioLDM_pub.ipynb",
+    "date": "2023-12-02T15:19:33",
+    "author": "Haohe Liu",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Text-to-audio system that is built on a latent space to learn the continuous audio representations from contrastive language-audio pretraining latents"
+  },
+  {
+    "title": "TabPFN",
+    "url": "https://colab.research.google.com/drive/194mCs6SEPEW6C0rcP7xWzcEtt1RBc8jJ",
+    "date": "2023-11-29T11:48:36.460000",
+    "author": "Noah Hollmann",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Neural network that learned to do tabular data prediction"
+  },
+  {
+    "title": "Concept Sliders",
+    "url": "https://colab.research.google.com/github/rohitgandikota/sliders/blob/main/demo_concept_sliders.ipynb",
+    "date": "2023-11-26T05:10:03",
+    "author": "Rohit Gandikota",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Plug-and-play low rank adaptors applied on top of pretrained models"
+  },
+  {
+    "title": "Qwen-VL",
+    "url": "https://colab.research.google.com/github/camenduru/Qwen-VL-Chat-colab/blob/main/Qwen_VL_Chat_colab.ipynb",
+    "date": "2023-11-24T07:15:00",
+    "author": "Jinze Bai",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Set of large-scale vision-language models designed to perceive and understand both text and images"
+  },
+  {
+    "title": "AnimeGANv3",
+    "url": "https://colab.research.google.com/drive/1XYNWwM8Xq-U7KaTOqNap6A-Yq1f-V-FB",
+    "date": "2023-11-23T06:27:02.566000",
+    "author": "Gang Liu",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Double-tail generative adversarial network for fast photo animation"
+  },
+  {
+    "title": "Ithaca",
+    "url": "https://colab.research.google.com/github/deepmind/ithaca/blob/master/colabs/ithaca_inference.ipynb",
+    "date": "2023-11-21T18:56:11",
+    "author": "Yannis Assael",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "First Deep Neural Network for the textual restoration, geographical and chronological attribution of ancient Greek inscriptions"
+  },
+  {
+    "title": "PixArt-Σ",
+    "url": "https://colab.research.google.com/drive/1jZ5UZXk7tcpTfVwnX33dDuefNMcnW9ME",
+    "date": "2023-11-07T06:14:49.896000",
+    "author": "Junsong Chen",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation"
+  },
+  {
+    "title": "Zero123++",
+    "url": "https://colab.research.google.com/drive/1_5ECnTOosRuAsm2tUp0zvBG0DppL-F3V",
+    "date": "2023-10-26T01:34:05.894000",
+    "author": "Ruoxi Shi",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Image-conditioned diffusion model for generating 3D-consistent multi-view images from a single input view"
+  },
+  {
+    "title": "UniFormerV2",
+    "url": "https://colab.research.google.com/drive/1Z6RzLcno_eLGD_E96mlWoyGieGbKxPQr",
+    "date": "2023-10-20T10:39:19.344000",
+    "author": "Kunchang Li",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Unified Transformer for Efficient Spatiotemporal Representation Learning"
+  },
+  {
+    "title": "Show-1",
+    "url": "https://colab.research.google.com/github/camenduru/Show-1-colab/blob/main/Show_1_steps_colab.ipynb",
+    "date": "2023-10-15T19:15:54",
+    "author": "David Junhao Zhang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Hybrid model, dubbed as Show-1, which marries pixel-based and latent-based VDMs for text-to-video generation"
+  },
+  {
+    "title": "DA-CLIP",
+    "url": "https://colab.research.google.com/github/camenduru/daclip-uir-colab/blob/main/daclip_uir_gradio_colab.ipynb",
+    "date": "2023-10-11T20:12:03",
+    "author": "Ziwei Luo",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Degradation-aware vision-language model to better transfer pretrained vision-language models to low-level vision tasks as a universal framework for image restoration"
+  },
+  {
+    "title": "SadTalker",
+    "url": "https://colab.research.google.com/github/OpenTalker/SadTalker/blob/main/quick_demo.ipynb",
+    "date": "2023-10-10T16:10:21",
+    "author": "Wenxuan Zhang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Generates 3D motion coefficients of the 3DMM from audio and implicitly modulates a novel 3D-aware face render for talking head generation"
+  },
+  {
+    "title": "Musika",
+    "url": "https://colab.research.google.com/drive/1PowSw3doBURwLE-OTCiWkO8HVbS5paRb",
+    "date": "2023-10-09T10:11:32.266000",
+    "author": "Marco Pasini",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Music generation system that can be trained on hundreds of hours of music using a single consumer GPU, and that allows for much faster than real-time generation of music of arbitrary length on a consu..."
+  },
+  {
+    "title": "YOLOv6",
+    "url": "https://colab.research.google.com/github/meituan/YOLOv6/blob/master/turtorial.ipynb",
+    "date": "2023-10-08T07:57:06",
+    "author": "Kaiheng Weng",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Single-stage object detection framework dedicated to industrial applications"
+  },
+  {
+    "title": "DreamGaussian",
+    "url": "https://colab.research.google.com/drive/1sLpYmmLS209-e5eHgcuqdryFRRO6ZhFS",
+    "date": "2023-10-04T14:04:06.492000",
+    "author": "Jiaxiang Tang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Algorithm to convert 3D Gaussians into textured meshes and apply a fine-tuning stage to refine the details"
+  },
+  {
+    "title": "ICON",
+    "url": "https://colab.research.google.com/drive/1-AWeWhPvCTBX0KfMtgtMk10uPU05ihoA",
+    "date": "2023-08-31T20:52:15.028000",
+    "author": "Yuliang Xiu",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Given a set of images, method estimates a detailed 3D surface from each image and then combines these into an animatable avatar"
+  },
+  {
+    "title": "DINOv2",
+    "url": "https://colab.research.google.com/github/facebookresearch/dinov2/blob/main/notebooks/semantic_segmentation.ipynb",
+    "date": "2023-08-31T16:43:55",
+    "author": "Maxime Oquab",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Produce high-performance visual features that can be directly employed with classifiers as simple as linear layers on a variety of computer vision tasks; these visual features are robust and perform w..."
+  },
+  {
+    "title": "OWL-ViT",
+    "url": "https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/zeroshot_object_detection_with_owlvit.ipynb",
+    "date": "2023-08-21T14:35:01",
+    "author": "Matthias Minderer",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Simple Open-Vocabulary Object Detection with Vision Transformers"
+  },
+  {
+    "title": "StyleGAN3",
+    "url": "https://colab.research.google.com/drive/1BXNHZBai-pXtP-ncliouXo_kUiG1Pq7M",
+    "date": "2023-08-13T02:21:37.850000",
+    "author": "Tero Karras",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Alias-Free Generative Adversarial Networks"
+  },
+  {
+    "title": "FateZero",
+    "url": "https://colab.research.google.com/github/ChenyangQiQi/FateZero/blob/main/colab_fatezero.ipynb",
+    "date": "2023-08-12T22:38:36",
+    "author": "Chenyang Qi",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Zero-shot text-based editing method on real-world videos without per-prompt training or use-specific mask"
+  },
+  {
+    "title": "Big GAN",
+    "url": "https://colab.research.google.com/github/tensorflow/hub/blob/master/examples/colab/biggan_generation_with_tf_hub.ipynb",
+    "date": "2023-08-03T21:30:25",
+    "author": "Andrew Brock",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Large Scale GAN Training for High Fidelity Natural Image Synthesis"
+  },
+  {
+    "title": "LaMa",
+    "url": "https://colab.research.google.com/github/saic-mdal/lama/blob/master/colab/LaMa_inpainting.ipynb",
+    "date": "2023-08-01T23:58:45",
+    "author": "Roman Suvorov",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Resolution-robust Large Mask Inpainting with Fourier Convolutions"
+  },
+  {
+    "title": "MakeItTalk",
+    "url": "https://colab.research.google.com/github/iboyles/makeittalknow/blob/main/working_quick_demo_of_makeittalk_07_2023.ipynb",
+    "date": "2023-07-27T12:56:20",
+    "author": "Yang Zhou",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A method that generates expressive talking-head videos from a single facial image with audio as the only input"
+  },
+  {
+    "title": "HiDT",
+    "url": "https://colab.research.google.com/github/saic-mdal/hidt/blob/master/notebooks/HighResolutionDaytimeTranslation.ipynb",
+    "date": "2023-07-24T08:43:10",
+    "author": "Denis Korzhenkov",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A generative image-to-image model and a new upsampling scheme that allows to apply image translation at high resolution"
+  },
+  {
+    "title": "CutLER",
+    "url": "https://colab.research.google.com/drive/1NgEyFHvOfuA2MZZnfNPWg1w5gSr3HOBb",
+    "date": "2023-07-24T04:19:17.240000",
+    "author": "Xudong Wang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Simple approach for training unsupervised object detection and segmentation models"
+  },
+  {
+    "title": "Recognize Anything & Tag2Text",
+    "url": "https://colab.research.google.com/github/mhd-medfa/recognize-anything/blob/main/recognize_anything_demo.ipynb",
+    "date": "2023-07-09T16:04:49",
+    "author": "Xinyu Huang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Vision language pre-training framework, which introduces image tagging into vision-language models to guide the learning of visual-linguistic features"
+  },
+  {
+    "title": "Thin-Plate Spline Motion Model",
+    "url": "https://colab.research.google.com/drive/1DREfdpnaBhqISg0fuQlAAIwyGVn1loH_",
+    "date": "2023-07-07T18:04:56.148000",
+    "author": "Jian Zhao",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "End-to-end unsupervised motion transfer framework"
+  },
+  {
+    "title": "MobileSAM",
+    "url": "https://colab.research.google.com/github/ChaoningZhang/MobileSAM/blob/master/notebooks/predictor_example.ipynb",
+    "date": "2023-06-30T02:57:32",
+    "author": "Chaoning Zhang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Towards Lightweight SAM for Mobile Applications"
+  },
+  {
+    "title": "Grounding DINO",
+    "url": "https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/zero-shot-object-detection-with-grounding-dino.ipynb",
+    "date": "2023-06-28T12:03:48",
+    "author": "Shilong Liu",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Marrying DINO with Grounded Pre-Training for Open-Set Object Detection"
+  },
+  {
+    "title": "T5X",
+    "url": "https://colab.research.google.com/github/google-research/t5x/blob/main/t5x/notebooks/introduction.ipynb",
+    "date": "2023-06-27T01:43:41",
+    "author": "Adam Roberts",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Modular, composable, research-friendly framework for high-performance, configurable, self-service training, evaluation, and inference of sequence models at many scales"
+  },
+  {
+    "title": "CodeTalker",
+    "url": "https://colab.research.google.com/github/Doubiiu/CodeTalker/blob/main/demo.ipynb",
+    "date": "2023-06-16T08:24:45",
+    "author": "Jinbo Xing",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Cast speech-driven facial animation as a code query task in a finite proxy space of the learned codebook, which effectively promotes the vividness of the generated motions by reducing the cross-modal ..."
+  },
+  {
+    "title": "First Order Motion Model for Image Animation",
+    "url": "https://colab.research.google.com/github/AliaksandrSiarohin/first-order-model/blob/master/demo.ipynb",
+    "date": "2023-06-04T04:36:53",
+    "author": "Aliaksandr Siarohin",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Transferring facial movements from video to image"
+  },
+  {
+    "title": "Parallel WaveGAN",
+    "url": "https://colab.research.google.com/github/espnet/notebook/blob/master/espnet2_tts_realtime_demo.ipynb",
+    "date": "2023-06-01T06:24:19",
+    "author": "Tomoki Hayashi",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "State-of-the-art non-autoregressive models to build your own great vocoder"
+  },
+  {
+    "title": "ECON",
+    "url": "https://colab.research.google.com/drive/1YRgwoRCZIrSB2e7auEWFyG10Xzjbrbno",
+    "date": "2023-05-31T02:19:27.318000",
+    "author": "Yuliang Xiu",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "designed for \"Human digitization from a color image\", which combines the best properties of implicit and explicit representations, to infer high-fidelity 3D clothed humans from in-the-wild images, eve..."
+  },
+  {
+    "title": "MMS",
+    "url": "https://colab.research.google.com/github/facebookresearch/fairseq/blob/main/examples/mms/asr/tutorial/MMS_ASR_Inference_Colab.ipynb",
+    "date": "2023-05-26T01:50:46",
+    "author": "Vineel Pratap",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "The Massively Multilingual Speech project expands speech technology from about 100 languages to over 1000 by building a single multilingual speech recognition model supporting over 1100 languages, lan..."
+  },
+  {
+    "title": "FAB",
+    "url": "https://colab.research.google.com/github/lollcat/fab-torch/blob/master/experiments/gmm/fab_gmm.ipynb",
+    "date": "2023-04-29T07:23:11",
+    "author": "Laurence Midgley",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Flow AIS Bootstrap uses AIS to generate samples in regions where the flow is a poor approximation of the target, facilitating the discovery of new modes"
+  },
+  {
+    "title": "CodeFormer",
+    "url": "https://colab.research.google.com/drive/1m52PNveE4PBhYrecj34cnpEeiHcC5LTb",
+    "date": "2023-04-21T01:10:02.390000",
+    "author": "Shangchen Zhou",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Transformer-based prediction network to model global composition and context of the low-quality faces for code prediction, enabling the discovery of natural faces that closely approximate the target f..."
+  },
+  {
+    "title": "Text2Video-Zero",
+    "url": "https://colab.research.google.com/github/camenduru/text2video-zero-colab/blob/main/text2video_all.ipynb",
+    "date": "2023-04-11T12:17:41",
+    "author": "Levon Khachatryan",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Text-to-Image Diffusion Models are Zero-Shot Video Generators"
+  },
+  {
+    "title": "Segment Anything",
+    "url": "https://colab.research.google.com/github/facebookresearch/segment-anything/blob/main/notebooks/predictor_example.ipynb",
+    "date": "2023-04-10T17:50:17",
+    "author": "Alexander Kirillov",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "The Segment Anything Model produces high quality object masks from input prompts such as points or boxes, and it can be used to generate masks for all objects in an image"
+  },
+  {
+    "title": "FollowYourPose",
+    "url": "https://colab.research.google.com/github/mayuelala/FollowYourPose/blob/main/quick_demo.ipynb",
+    "date": "2023-04-07T08:54:10",
+    "author": "Yue Ma",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Two-stage training scheme that can utilize image pose pair and pose-free video datasets and the pre-trained text-to-image model to obtain the pose-controllable character videos"
+  },
+  {
+    "title": "EVA3D",
+    "url": "https://colab.research.google.com/github/hongfz16/EVA3D/blob/main/notebook/EVA3D_Demo.ipynb",
+    "date": "2023-04-06T12:21:51",
+    "author": "Fangzhou Hong",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "High-quality unconditional 3D human generative model that only requires 2D image collections for training"
+  },
+  {
+    "title": "Stable Dreamfusion",
+    "url": "https://colab.research.google.com/drive/1MXT3yfOFvO0ooKEfiUUvTKwUkrrlCHpF",
+    "date": "2023-04-04T02:35:48.565000",
+    "author": "Jiaxiang Tang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Using a pretrained 2D text-to-image diffusion model to perform text-to-3D synthesis"
+  },
+  {
+    "title": "PIFuHD",
+    "url": "https://colab.research.google.com/drive/11z58bl3meSzo6kFqkahMa35G5jmh2Wgt",
+    "date": "2023-03-26T15:12:39.379000",
+    "author": "Shunsuke Saito",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Multi-Level Pixel-Aligned Implicit Function for High-Resolution 3D Human Digitization"
+  },
+  {
+    "title": "VideoReTalking",
+    "url": "https://colab.research.google.com/github/vinthony/video-retalking/blob/main/quick_demo.ipynb",
+    "date": "2023-03-19T05:19:16",
+    "author": "Kun Cheng",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "System to edit the faces of a real-world talking head video according to input audio, producing a high-quality and lip-syncing output video even with a different emotion"
+  },
+  {
+    "title": "Visual ChatGPT",
+    "url": "https://colab.research.google.com/drive/11BtP3h-w0dZjA-X8JsS9_eo8OeGYvxXB",
+    "date": "2023-03-15T02:16:16.322000",
+    "author": "Chenfei Wu",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Connects ChatGPT and a series of Visual Foundation Models to enable sending and receiving images during chatting"
+  },
+  {
+    "title": "Tune-A-Video",
+    "url": "https://colab.research.google.com/github/showlab/Tune-A-Video/blob/main/notebooks/Tune-A-Video.ipynb",
+    "date": "2023-02-23T01:35:29",
+    "author": "Jay Zhangjie Wu",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "One-Shot Tuning of Image Diffusion Models for Text-to-Video Generation"
+  },
+  {
+    "title": "GPEN",
+    "url": "https://colab.research.google.com/github/yangxy/GPEN/blob/main/GPEN.ipynb",
+    "date": "2023-02-15T03:20:43",
+    "author": "Tao Yang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "GAN Prior Embedded Network for Blind Face Restoration in the Wild"
+  },
+  {
+    "title": "PyMAF-X",
+    "url": "https://colab.research.google.com/drive/13Iytx1Hb0ZryEwbJdpXBW9ggDxs2Y-tL",
+    "date": "2023-02-14T09:36:10.460000",
+    "author": "Hongwen Zhang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Кegression-based approach to recovering parametric full-body models from monocular images"
+  },
+  {
+    "title": "Disco Diffusion",
+    "url": "https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb",
+    "date": "2023-02-11T11:53:37",
+    "author": "Max Ingham",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A frankensteinian amalgamation of notebooks, models and techniques for the generation of AI Art and Animations"
+  },
+  {
+    "title": "GrooVAE",
+    "url": "https://colab.research.google.com/github/tensorflow/magenta-demos/blob/master/colab-notebooks/GrooVAE.ipynb",
+    "date": "2023-02-01T23:40:30",
+    "author": "Jon Gillick",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Some applications of machine learning for generating and manipulating beats and drum performances"
+  },
+  {
+    "title": "Multitrack MusicVAE",
+    "url": "https://colab.research.google.com/github/magenta/magenta-demos/blob/master/colab-notebooks/Multitrack_MusicVAE.ipynb",
+    "date": "2023-02-01T23:40:30",
+    "author": "Ian Simon",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "The models in this notebook are capable of encoding and decoding single measures of up to 8 tracks, optionally conditioned on an underlying chord"
+  },
+  {
+    "title": "MusicVAE",
+    "url": "https://colab.research.google.com/github/magenta/magenta-demos/blob/master/colab-notebooks/MusicVAE.ipynb",
+    "date": "2023-02-01T23:40:30",
+    "author": "Adam Roberts",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A Hierarchical Latent Vector Model for Learning Long-Term Structure in Music"
+  },
+  {
+    "title": "Learning to Paint",
+    "url": "https://colab.research.google.com/github/mrm8488/shared_colab_notebooks/blob/master/custom_learningtopaint.ipynb",
+    "date": "2023-02-01T09:32:28",
+    "author": "Manuel Romero",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Learning to Paint With Model-based Deep Reinforcement Learning"
+  },
+  {
+    "title": "Instant-NGP",
+    "url": "https://colab.research.google.com/github/NVlabs/instant-ngp/blob/master/notebooks/instant_ngp.ipynb",
+    "date": "2023-01-18T09:39:50",
+    "author": "Thomas Müller",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Instant Neural Graphics Primitives with a Multiresolution Hash Encoding"
+  },
+  {
+    "title": "Fourier Feature Networks",
+    "url": "https://colab.research.google.com/github/tancik/fourier-feature-networks/blob/master/Demo.ipynb",
+    "date": "2023-01-17T19:51:09",
+    "author": "Matthew Tancik",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Fourier Features Let Networks Learn High Frequency Functions in Low Dimensional Domains"
+  },
+  {
+    "title": "AlphaPose",
+    "url": "https://colab.research.google.com/drive/1_3Wxi4H3QGVC28snL3rHIoeMAwI2otMR",
+    "date": "2023-01-07T16:54:26.930000",
+    "author": "Hao-Shu Fang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Whole-Body Regional Multi-Person Pose Estimation and Tracking in Real-Time"
+  },
+  {
+    "title": "HybrIK",
+    "url": "https://colab.research.google.com/drive/1n41l7I2NxWseuruVQEU8he2XqzSXhu2f",
+    "date": "2023-01-01T07:21:31.190000",
+    "author": "Jiefeng Li",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Hybrid Analytical-Neural Inverse Kinematics Solution for 3D Human Pose and Shape Estimation"
+  },
+  {
+    "title": "Score Jacobian Chaining",
+    "url": "https://colab.research.google.com/drive/1zixo66UYGl70VOPy053o7IV_YkQt5lCZ",
+    "date": "2022-12-05T18:19:39.865000",
+    "author": "Haochen Wang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Apply chain rule on the learned gradients, and back-propagate the score of a diffusion model through the Jacobian of a differentiable renderer, which we instantiate to be a voxel radiance field"
+  },
+  {
+    "title": "Demucs",
+    "url": "https://colab.research.google.com/drive/1dC9nVxk3V_VPjUADsnFu8EiT-xnU1tGH",
+    "date": "2022-11-21T15:12:31.684000",
+    "author": "Alexandre Défossez",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Hybrid Spectrogram and Waveform Source Separation"
+  },
+  {
+    "title": "StyleCLIP",
+    "url": "https://colab.research.google.com/github/orpatashnik/StyleCLIP/blob/main/notebooks/StyleCLIP_global_torch.ipynb",
+    "date": "2022-10-30T22:56:27",
+    "author": "Or Patashnik",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Text-Driven Manipulation of StyleGAN Imager"
+  },
+  {
+    "title": "MotionDiffuse",
+    "url": "https://colab.research.google.com/drive/1Dp6VsZp2ozKuu9ccMmsDjyij_vXfCYb3",
+    "date": "2022-10-13T15:43:54.251000",
+    "author": "Mingyuan Zhang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "The first diffusion model-based text-driven motion generation framework, which demonstrates several desired properties over existing methods"
+  },
+  {
+    "title": "VToonify",
+    "url": "http://colab.research.google.com/github/williamyang1991/VToonify/blob/master/notebooks/inference_playground.ipynb",
+    "date": "2022-10-07T02:51:58",
+    "author": "Shuai Yang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Leverages the mid- and high-resolution layers of StyleGAN to render high-quality artistic portraits based on the multi-scale content features extracted by an encoder to better preserve the frame detai..."
+  },
+  {
+    "title": "PyMAF",
+    "url": "https://colab.research.google.com/drive/11RXLsH9BdoSCwY6G-IX7KgqDxVoImu6K",
+    "date": "2022-10-06T15:32:20.200000",
+    "author": "Hongwen Zhang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Pyramidal Mesh Alignment Feedback loop in regression network for well-aligned body mesh recovery and extend it for the recovery of expressive full-body models"
+  },
+  {
+    "title": "AlphaTensor",
+    "url": "https://colab.research.google.com/github/deepmind/alphatensor/blob/master/nonequivalence/inspect_factorizations_notebook.ipynb",
+    "date": "2022-10-04T10:05:48",
+    "author": "Alhussein Fawzi",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Discovering faster matrix multiplication algorithms with reinforcement learning"
+  },
+  {
+    "title": "Swin2SR",
+    "url": "https://colab.research.google.com/drive/1paPrt62ydwLv2U2eZqfcFsePI4X4WRR1",
+    "date": "2022-10-03T11:06:46.185000",
+    "author": "Marcos Conde",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Novel Swin Transformer V2, to improve SwinIR for image super-resolution, and in particular, the compressed input scenario"
+  },
+  {
+    "title": "Functa",
+    "url": "https://colab.research.google.com/github/deepmind/functa/blob/main/modulation_visualization_colab.ipynb",
+    "date": "2022-09-24T09:06:46",
+    "author": "Emilien Dupont",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "From data to functa: Your data point is a function and you can treat it like one"
+  },
+  {
+    "title": "Whisper",
+    "url": "https://colab.research.google.com/github/openai/whisper/blob/master/notebooks/LibriSpeech.ipynb",
+    "date": "2022-09-21T16:09:43",
+    "author": "Alec Radford",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Automatic speech recognition system trained on 680,000 hours of multilingual and multitask supervised data collected from the web"
+  },
+  {
+    "title": "DeOldify (video)",
+    "url": "https://colab.research.google.com/github/jantic/DeOldify/blob/master/VideoColorizerColab.ipynb",
+    "date": "2022-09-19T09:34:29",
+    "author": "Jason Antic",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Colorize your own videos!"
+  },
+  {
+    "title": "DeOldify (photo)",
+    "url": "https://colab.research.google.com/github/jantic/DeOldify/blob/master/ImageColorizerColab.ipynb",
+    "date": "2022-09-19T09:34:29",
+    "author": "Jason Antic",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Colorize your own photos!"
+  },
+  {
+    "title": "Real-ESRGAN",
+    "url": "https://colab.research.google.com/drive/1k2Zod6kSHEvraybHl50Lys0LerhyTMCo",
+    "date": "2022-09-18T18:02:24.647000",
+    "author": "Xintao Wang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Extend the powerful ESRGAN to a practical restoration application, which is trained with pure synthetic data"
+  },
+  {
+    "title": "IDE-3D",
+    "url": "https://colab.research.google.com/github/MrTornado24/IDE-3D/blob/main/inversion/notebooks/inference_playground.ipynb",
+    "date": "2022-09-08T17:20:57",
+    "author": "Jingxiang Sun",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Interactive Disentangled Editing for High-Resolution 3D-aware Portrait Synthesis"
+  },
+  {
+    "title": "Decision Transformers",
+    "url": "https://colab.research.google.com/drive/1K3UuajwoPY1MzRKNkONNRS3gS5DxZ-qF",
+    "date": "2022-09-06T12:34:27.684000",
+    "author": "Lili Chen",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "An architecture that casts the problem of RL as conditional sequence modeling"
+  },
+  {
+    "title": "textual-inversion",
+    "url": "https://colab.research.google.com/github/rinongal/textual_inversion/blob/master/scripts/latent_imagenet_diffusion.ipynb",
+    "date": "2022-08-21T20:05:43",
+    "author": "Rinon Gal",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "An Image is Worth One Word: Personalizing Text-to-Image Generation using Textual Inversion"
+  },
+  {
+    "title": "StyleGAN-Human",
+    "url": "https://colab.research.google.com/drive/1sgxoDM55iM07FS54vz9ALg1XckiYA2On",
+    "date": "2022-08-19T04:35:51.060000",
+    "author": "Jianglin Fu",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A Data-Centric Odyssey of Human Generation"
+  },
+  {
+    "title": "Make-A-Scene",
+    "url": "https://colab.research.google.com/drive/1SPyQ-epTsAOAu8BEohUokN4-b5RM_TnE",
+    "date": "2022-08-12T03:44:40.152000",
+    "author": "Oran Gafni",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Scene-Based Text-to-Image Generation with Human Priors"
+  },
+  {
+    "title": "StyleGAN-NADA",
+    "url": "https://colab.research.google.com/github/rinongal/stylegan-nada/blob/main/stylegan_nada.ipynb",
+    "date": "2022-08-09T19:12:34",
+    "author": "Rinon Gal",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Zero-Shot non-adversarial domain adaptation of pre-trained generators"
+  },
+  {
+    "title": "YOLOv7",
+    "url": "https://colab.research.google.com/github/WongKinYiu/yolov7/blob/main/tools/compare_YOLOv7_vs_YOLOv5m6_half.ipynb",
+    "date": "2022-08-09T04:46:47",
+    "author": "Chien-Yao Wang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors"
+  },
+  {
+    "title": "GLIP",
+    "url": "https://colab.research.google.com/drive/12x7v-_miN7-SRiziK3Cx4ffJzstBJNqb",
+    "date": "2022-07-30T01:40:03.250000",
+    "author": "Liunian Harold Li",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Grounded language-image pre-training model for learning object-level, language-aware, and semantic-rich visual representations"
+  },
+  {
+    "title": "Anycost GAN",
+    "url": "https://colab.research.google.com/github/mit-han-lab/anycost-gan/blob/master/notebooks/intro_colab.ipynb",
+    "date": "2022-07-20T21:41:44",
+    "author": "Ji Lin",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Interactive natural image editing"
+  },
+  {
+    "title": "GFPGAN",
+    "url": "https://colab.research.google.com/drive/1sVsoBd9AjckIXThgtZhGrHRfFI6UUYOo",
+    "date": "2022-07-13T02:13:32.056000",
+    "author": "Xintao Wang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Towards Real-World Blind Face Restoration with Generative Facial Prior"
+  },
+  {
+    "title": "EPro-PnP",
+    "url": "https://colab.research.google.com/github/tjiiv-cprg/EPro-PnP/blob/main/demo/fit_identity.ipynb",
+    "date": "2022-07-12T13:02:32",
+    "author": "Hansheng Chen",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Generalized End-to-End Probabilistic Perspective-n-Points for Monocular Object Pose Estimation"
+  },
+  {
+    "title": "Text2Human",
+    "url": "https://colab.research.google.com/drive/1AVwbqLwMp_Gz3KTCgBTtnGVtXIlCZDPk",
+    "date": "2022-07-04T20:58:38.321000",
+    "author": "Yuming Jiang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Text-driven controllable framework for a high-quality and diverse human generation"
+  },
+  {
+    "title": "VQ-Diffusion",
+    "url": "https://colab.research.google.com/drive/1Ws0_wK2cnsWEnfB7HtmPT4bjCPElb40C",
+    "date": "2022-06-30T19:38:19.730000",
+    "author": "Shuyang Gu",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Based on a VQ-VAE whose latent space is modeled by a conditional variant of the recently developed Denoising Diffusion Probabilistic Model"
+  },
+  {
+    "title": "OPT",
+    "url": "https://colab.research.google.com/drive/14wnxMvD9zsiBQo2FtTpxn6w2cpXCcb-7",
+    "date": "2022-06-29T08:56:33.669000",
+    "author": "Susan Zhang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Open Pre-trained Transformers is a family of NLP models trained on billions of tokens of text obtained from the internet"
+  },
+  {
+    "title": "Customizing a Transformer Encoder",
+    "url": "https://colab.research.google.com/github/tensorflow/models/blob/master/official/colab/nlp/customize_encoder.ipynb",
+    "date": "2022-06-22T18:46:35",
+    "author": "Chen Chen",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "We will learn how to customize the encoder to employ new network architectures"
+  },
+  {
+    "title": "MTTR",
+    "url": "https://colab.research.google.com/drive/12p0jpSx3pJNfZk-y_L44yeHZlhsKVra-",
+    "date": "2022-06-20T20:38:57.613000",
+    "author": "Adam Botach",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "End-to-End Referring Video Object Segmentation with Multimodal Transformers"
+  },
+  {
+    "title": "SwinIR",
+    "url": "https://colab.research.google.com/gist/JingyunLiang/a5e3e54bc9ef8d7bf594f6fee8208533/swinir-demo-on-real-world-image-sr.ipynb",
+    "date": "2022-06-17T19:51:46",
+    "author": "Jingyun Liang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Image Restoration Using Swin Transformer"
+  },
+  {
+    "title": "VRT",
+    "url": "https://colab.research.google.com/gist/JingyunLiang/deb335792768ad9eb73854a8efca4fe0/vrt-demo-on-video-restoration.ipynb",
+    "date": "2022-06-15T17:43:11",
+    "author": "Jingyun Liang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A Video Restoration Transformer"
+  },
+  {
+    "title": "Omnivore",
+    "url": "https://colab.research.google.com/github/facebookresearch/omnivore/blob/main/inference_tutorial.ipynb",
+    "date": "2022-06-14T13:16:34",
+    "author": "Rohit Girdhar",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A single model which excels at classifying images, videos, and single-view 3D data using exactly the same model parameters"
+  },
+  {
+    "title": "Dream Fields",
+    "url": "https://colab.research.google.com/drive/17GtPqdUCbG5CsmTnQFecPpoq_zpNKX7A",
+    "date": "2022-06-10T15:41:04.270000",
+    "author": "Ajay Jain",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Zero-Shot Text-Guided Object Generation"
+  },
+  {
+    "title": "Detic",
+    "url": "https://colab.research.google.com/drive/1QtTW9-ukX2HKZGvt0QvVGqjuqEykoZKI",
+    "date": "2022-06-07T05:49:20.311000",
+    "author": "Xingyi Zhou",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Detecting Twenty-thousand Classes using Image-level Supervision"
+  },
+  {
+    "title": "SimCTG",
+    "url": "https://colab.research.google.com/drive/1ImvR-ldHf9rJyFzOCMJ_zjAGK8n1iTW7",
+    "date": "2022-06-04T21:09:16.572000",
+    "author": "Yixuan Su",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Contrastive training objective to calibrate the model's representation space, and a decoding method -- contrastive search -- to encourage diversity while maintaining coherence in the generated text"
+  },
+  {
+    "title": "T0",
+    "url": "https://colab.research.google.com/drive/1xx7SgdLaAu23YFBirXmaQViDr8caowX_",
+    "date": "2022-05-29T09:12:30.845000",
+    "author": "Victor Sanh",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Multitask Prompted Training Enables Zero-Shot Task Generalization"
+  },
+  {
+    "title": "AvatarCLIP",
+    "url": "https://colab.research.google.com/drive/1dfaecX7xF3nP6fyXc8XBljV5QY1lc1TR",
+    "date": "2022-05-15T14:40:09.406000",
+    "author": "Fangzhou Hong",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A zero-shot text-driven framework for 3D avatar generation and animation"
+  },
+  {
+    "title": "Text2Mesh",
+    "url": "https://colab.research.google.com/github/threedle/text2mesh/blob/master/colab_demo.ipynb",
+    "date": "2022-05-14T14:57:20",
+    "author": "Oscar Michel",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Text-Driven Neural Stylization for Meshes"
+  },
+  {
+    "title": "T5",
+    "url": "https://colab.research.google.com/github/google-research/text-to-text-transfer-transformer/blob/main/notebooks/t5-trivia.ipynb",
+    "date": "2022-05-11T20:41:01",
+    "author": "Colin Raffel",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Text-To-Text Transfer Transformer"
+  },
+  {
+    "title": "XLS-R",
+    "url": "https://colab.research.google.com/github/patrickvonplaten/notebooks/blob/master/Fine_Tune_XLS_R_on_Common_Voice.ipynb",
+    "date": "2022-05-10T09:23:22",
+    "author": "Arun Babu",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Self-supervised Cross-lingual Speech Representation Learning at Scale"
+  },
+  {
+    "title": "MAGIC",
+    "url": "https://colab.research.google.com/drive/1NDVkKpanbsaUwecHoRp_2kIpMztOFW25",
+    "date": "2022-05-02T15:13:52.142000",
+    "author": "Yixuan Su",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Training-free framework, iMAge-Guided text generatIon with CLIP, for plugging in visual controls in the generation process and enabling LMs to perform multimodal tasks in a zero-shot manner"
+  },
+  {
+    "title": "DiffCSE",
+    "url": "https://colab.research.google.com/github/voidism/DiffCSE/blob/master/diffcse_evaluation.ipynb",
+    "date": "2022-04-24T01:05:46",
+    "author": "Yung-Sung Chuang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Unsupervised contrastive learning framework for learning sentence embeddings"
+  },
+  {
+    "title": "ViDT+",
+    "url": "https://colab.research.google.com/github/EherSenaw/ViDT_colab/blob/main/vidt_colab.ipynb",
+    "date": "2022-04-20T07:26:02",
+    "author": "Hwanjun Song",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "An Extendable, Efficient and Effective Transformer-based Object Detector"
+  },
+  {
+    "title": "BasicVSR++",
+    "url": "https://colab.research.google.com/drive/1I0kZMM0DQyb4ueHZw5si8fMnRCJ_eUX3",
+    "date": "2022-04-18T03:51:26.730000",
+    "author": "Kelvin Chan",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Redesign BasicVSR by proposing second-order grid propagation and flow-guided deformable alignment"
+  },
+  {
+    "title": "NAFNet",
+    "url": "https://colab.research.google.com/drive/1dkO5AyktmBoWwxBwoKFUurIDn0m4qDXT",
+    "date": "2022-04-15T05:35:08.624000",
+    "author": "Liangyu Chen",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Nonlinear Activation Free Network for Image Restoration"
+  },
+  {
+    "title": "Panini-Net",
+    "url": "https://colab.research.google.com/github/GeeveGeorge/Panini-Net-Colab/blob/main/PaniniNet_Working.ipynb",
+    "date": "2022-04-13T03:49:29",
+    "author": "Yinhuai Wang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "GAN Prior based Degradation-Aware Feature Interpolation for Face Restoration"
+  },
+  {
+    "title": "E2FGVI",
+    "url": "https://colab.research.google.com/drive/12rwY2gtG8jVWlNx9pjmmM8uGmh5ue18G",
+    "date": "2022-04-06T15:30:11.212000",
+    "author": "Zhen Li",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "An End-to-End framework for Flow-Guided Video Inpainting through elaborately designed three trainable modules, namely, flow completion, feature propagation, and content hallucination modules"
+  },
+  {
+    "title": "LDM",
+    "url": "https://colab.research.google.com/github/CompVis/latent-diffusion/blob/master/scripts/latent_imagenet_diffusion.ipynb",
+    "date": "2022-04-04T14:17:48",
+    "author": "Robin Rombach",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "High-Resolution Image Synthesis with Latent Diffusion Models"
+  },
+  {
+    "title": "GP-UNIT",
+    "url": "https://colab.research.google.com/github/williamyang1991/GP-UNIT/blob/main/notebooks/inference_playground.ipynb",
+    "date": "2022-04-02T12:58:30",
+    "author": "Shuai Yang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Novel framework, Generative Prior-guided UNsupervised Image-to-image Translation, to improve the overall quality and applicability of the translation algorithm"
+  },
+  {
+    "title": "DualStyleGAN",
+    "url": "https://colab.research.google.com/github/williamyang1991/DualStyleGAN/blob/master/notebooks/inference_playground.ipynb",
+    "date": "2022-03-24T07:53:35",
+    "author": "Shuai Yang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "More challenging exemplar-based high-resolution portrait style transfer by introducing a novel DualStyleGAN with flexible control of dual styles of the original face domain and the extended artistic p..."
+  },
+  {
+    "title": "CLIPasso",
+    "url": "https://colab.research.google.com/github/yael-vinker/CLIPasso/blob/main/CLIPasso.ipynb",
+    "date": "2022-03-21T14:55:24",
+    "author": "Yael Vinker",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Semantically-Aware Object Sketching"
+  },
+  {
+    "title": "StyleSDF",
+    "url": "https://colab.research.google.com/github/royorel/StyleSDF/blob/main/StyleSDF_demo.ipynb",
+    "date": "2022-03-05T01:25:25",
+    "author": "Roy Or-El",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A high resolution, 3D-consistent image and shape generation technique"
+  },
+  {
+    "title": "Disentangled Lifespan Face Synthesis",
+    "url": "https://colab.research.google.com/drive/1fgVAoxCSaqPkj0rUK4RmBh7GTQRqLNpE",
+    "date": "2022-02-22T15:41:01.162000",
+    "author": "Sen He",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "LFS model is proposed to disentangle the key face characteristics including shape, texture and identity so that the unique shape and texture age transformations can be modeled effectively"
+  },
+  {
+    "title": "ClipCap",
+    "url": "https://colab.research.google.com/github/rmokady/CLIP_prefix_caption/blob/main/notebooks/clip_prefix_captioning_inference.ipynb#scrollTo=glBzYsgIwhwF",
+    "date": "2022-02-15T08:19:32",
+    "author": "Ron Mokady",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "CLIP Prefix for Image Captioning"
+  },
+  {
+    "title": "ROMP",
+    "url": "https://colab.research.google.com/drive/1oz9E6uIbj4udOPZvA1Zi9pFx0SWH_UXg",
+    "date": "2022-02-11T07:38:05.103000",
+    "author": "Yu Sun",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Monocular, One-stage, Regression of Multiple 3D People"
+  },
+  {
+    "title": "Mask2Former",
+    "url": "https://colab.research.google.com/drive/1uIWE5KbGFSjrxey2aRd5pWkKNY1_SaNq",
+    "date": "2022-02-09T15:44:44.286000",
+    "author": "Bowen Cheng",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Masked-attention Mask Transformer for Universal Image Segmentation"
+  },
+  {
+    "title": "JoJoGAN",
+    "url": "https://colab.research.google.com/github/mchong6/JoJoGAN/blob/master/stylize.ipynb",
+    "date": "2022-02-02T21:49:40",
+    "author": "Min Jin Chong",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "One Shot Face Stylization"
+  },
+  {
+    "title": "Pose with Style",
+    "url": "https://colab.research.google.com/github/tg-bomze/collection-of-notebooks/blob/master/HomeStylist.ipynb",
+    "date": "2022-01-19T15:44:04",
+    "author": "Badour AlBahar",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Detail-Preserving Pose-Guided Image Synthesis with Conditional StyleGAN"
+  },
+  {
+    "title": "ConvNeXt",
+    "url": "https://colab.research.google.com/drive/1CBYTIZ4tBMsVL5cqu9N_-Q3TBprqsfEO",
+    "date": "2022-01-19T02:26:21.197000",
+    "author": "Zhuang Liu",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A pure ConvNet model constructed entirely from standard ConvNet modules"
+  },
+  {
+    "title": "diffsort",
+    "url": "https://colab.research.google.com/drive/1q0TZFFYB9FlOJYWKt0_7ZaXQT190anhm",
+    "date": "2022-01-17T00:51:15.757000",
+    "author": "Felix Petersen",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Differentiable Sorting Networks"
+  },
+  {
+    "title": "Taming Transformers for High-Resolution Image Synthesis",
+    "url": "https://colab.research.google.com/github/CompVis/taming-transformers/blob/master/scripts/taming-transformers.ipynb",
+    "date": "2022-01-13T17:50:07",
+    "author": "Patrick Esser",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "We combine the efficiancy of convolutional approaches with the expressivity of transformers by introducing a convolutional VQGAN, which learns a codebook of context-rich visual parts, whose compositio..."
+  },
+  {
+    "title": "RealBasicVSR",
+    "url": "https://colab.research.google.com/drive/1JzWRUR34hpKvtCHm84IGx6nv35LCv20J",
+    "date": "2021-12-25T13:00:09.976000",
+    "author": "Kelvin Chan",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Investigating Tradeoffs in Real-World Video Super-Resolution"
+  },
+  {
+    "title": "GLIDE",
+    "url": "https://colab.research.google.com/github/openai/glide-text2im/blob/master/notebooks/inpaint.ipynb",
+    "date": "2021-12-22T01:46:19",
+    "author": "Alex Nichol",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models"
+  },
+  {
+    "title": "Nerfies",
+    "url": "https://colab.research.google.com/github/google/nerfies/blob/main/notebooks/Nerfies_Capture_Processing.ipynb",
+    "date": "2021-12-06T00:39:18",
+    "author": "Keunhong Park",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "First method capable of photorealistically reconstructing deformable scenes using photos/videos captured casually from mobile phones"
+  },
+  {
+    "title": "HyperStyle",
+    "url": "https://colab.research.google.com/github/yuval-alaluf/hyperstyle/blob/master/notebooks/inference_playground.ipynb",
+    "date": "2021-12-03T07:28:13",
+    "author": "Yuval Alaluf",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A hypernetwork that learns to modulate StyleGAN's weights to faithfully express a given image in editable regions of the latent space"
+  },
+  {
+    "title": "encoder4editing",
+    "url": "https://colab.research.google.com/github/omertov/encoder4editing/blob/master/notebooks/inference_playground.ipynb",
+    "date": "2021-12-02T16:20:49",
+    "author": "Omer Tov",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Designing an Encoder for StyleGAN Image Manipulation"
+  },
+  {
+    "title": "StyleCariGAN",
+    "url": "https://colab.research.google.com/drive/1HDRQGm7pvC9mAb6Lktoft_SmY9sCq_Qg",
+    "date": "2021-11-30T20:36:44.158000",
+    "author": "Wonjong Jang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Caricature Generation via StyleGAN Feature Map Modulation"
+  },
+  {
+    "title": "CartoonGAN",
+    "url": "https://colab.research.google.com/github/TobiasSunderdiek/cartoon-gan/blob/master/CartoonGAN.ipynb",
+    "date": "2021-11-24T15:32:22",
+    "author": "Tobias Sunderdiek",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "The implementation of the cartoon GAN model with PyTorch"
+  },
+  {
+    "title": "SimSwap",
+    "url": "https://colab.research.google.com/github/neuralchen/SimSwap/blob/master/SimSwap%20colab.ipynb",
+    "date": "2021-11-24T11:19:04",
+    "author": "Xuanhong Chen",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "An efficient framework, called Simple Swap, aiming for generalized and high fidelity face swapping"
+  },
+  {
+    "title": "RVM",
+    "url": "https://colab.research.google.com/drive/10z-pNKRnVNsp0Lq9tH1J_XPZ7CBC_uHm",
+    "date": "2021-11-24T08:29:04.201000",
+    "author": "Shanchuan Lin",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Robust High-Resolution Video Matting with Temporal Guidance"
+  },
+  {
+    "title": "AnimeGANv2",
+    "url": "https://colab.research.google.com/github/bryandlee/animegan2-pytorch/blob/master/colab_demo.ipynb",
+    "date": "2021-11-17T02:09:01",
+    "author": "Xin Chen",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "An improved version of AnimeGAN - it prevents the generation of high-frequency artifacts by simply changing the normalization of features in the network"
+  },
+  {
+    "title": "SOAT",
+    "url": "https://colab.research.google.com/github/mchong6/SOAT/blob/master/infinity.ipynb",
+    "date": "2021-11-13T15:38:04",
+    "author": "Min Jin Chong",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "StyleGAN of All Trades: Image Manipulation with Only Pretrained StyleGAN"
+  },
+  {
+    "title": "Arnheim",
+    "url": "https://colab.research.google.com/github/deepmind/arnheim/blob/master/arnheim_2.ipynb",
+    "date": "2021-11-11T12:50:16",
+    "author": "Chrisantha Fernando",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Generative Art Using Neural Visual Grammars and Dual Encoders"
+  },
+  {
+    "title": "StyleGAN 2",
+    "url": "https://colab.research.google.com/drive/1ShgW6wohEFQtqs_znMna3dzrcVoABKIH",
+    "date": "2021-11-05T20:08:23.170000",
+    "author": "Mikael Christensen",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Generation of faces, cars, etc."
+  },
+  {
+    "title": "ByteTrack",
+    "url": "https://colab.research.google.com/drive/1bDilg4cmXFa8HCKHbsZ_p16p0vrhLyu0",
+    "date": "2021-10-30T04:01:57.748000",
+    "author": "Yifu Zhang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Multi-Object Tracking by Associating Every Detection Box"
+  },
+  {
+    "title": "GPT-2",
+    "url": "https://colab.research.google.com/drive/1VLG8e7YSEwypxU-noRNhsv5dW4NfTGce",
+    "date": "2021-10-18T02:29:42.040000",
+    "author": "Max Woolf",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Retrain an advanced text generating neural network on any text dataset using gpt-2-simple!"
+  },
+  {
+    "title": "ConvMixer",
+    "url": "https://colab.research.google.com/github/locuslab/convmixer/blob/main/pytorch-image-models/notebooks/EffResNetComparison.ipynb",
+    "date": "2021-10-05T22:33:30",
+    "author": "Asher Trockman",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "An extremely simple model that is similar in spirit to the ViT and the even-more-basic MLP-Mixer in that it operates directly on patches as input, separates the mixing of spatial and channel dimension..."
+  },
+  {
+    "title": "IC-GAN",
+    "url": "https://colab.research.google.com/github/facebookresearch/ic_gan/blob/master/inference/icgan_colab.ipynb",
+    "date": "2021-10-01T13:32:30",
+    "author": "Arantxa Casanova",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Instance-Conditioned GAN"
+  },
+  {
+    "title": "Skillful Precipitation Nowcasting Using Deep Generative Models of Radar",
+    "url": "https://colab.research.google.com/github/deepmind/deepmind-research/blob/master/nowcasting/Open_sourced_dataset_and_model_snapshot_for_precipitation_nowcasting.ipynb",
+    "date": "2021-09-29T15:00:30",
+    "author": "Suman Ravuri",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Open-sourced dataset and model snapshot for precipitation nowcasting"
+  },
+  {
+    "title": "Live Speech Portraits",
+    "url": "https://colab.research.google.com/drive/1tKvi-9kY3GkEK8lgtfTSM70rMFo_TY50",
+    "date": "2021-09-26T19:42:40.817000",
+    "author": "Yuanxun Lu",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Real-Time Photorealistic Talking-Head Animation"
+  },
+  {
+    "title": "StylEx",
+    "url": "https://colab.research.google.com/github/google/explaining-in-style/blob/main/Explaining_in_Style_AttFind.ipynb",
+    "date": "2021-08-25T17:59:26",
+    "author": "Oran Lang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Training a GAN to explain a classifier in StyleSpace"
+  },
+  {
+    "title": "VITS",
+    "url": "https://colab.research.google.com/drive/1CO61pZizDj7en71NQG_aqqKdGaA_SaBf",
+    "date": "2021-08-23T05:10:29.206000",
+    "author": "Jaehyeon Kim",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Parallel end-to-end TTS method that generates more natural sounding audio than current two-stage models"
+  },
+  {
+    "title": "Bringing Old Photo Back to Life",
+    "url": "https://colab.research.google.com/drive/1NEm6AsybIiC5TwTU_4DqDkQO0nFRB-uA",
+    "date": "2021-07-13T10:28:12.191000",
+    "author": "Ziyu Wan",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Restoring old photos that suffer from severe degradation through a deep learning approach"
+  },
+  {
+    "title": "PTI",
+    "url": "https://colab.research.google.com/github/danielroich/PTI/blob/main/notebooks/inference_playground.ipynb",
+    "date": "2021-07-01T07:05:31",
+    "author": "Daniel Roich",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Pivotal Tuning Inversion enables employing off-the-shelf latent based semantic editing techniques on real images using StyleGAN"
+  },
+  {
+    "title": "TediGAN",
+    "url": "http://colab.research.google.com/github/weihaox/TediGAN/blob/master/playground.ipynb",
+    "date": "2021-06-30T14:28:25",
+    "author": "Weihao Xia",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Framework for multi-modal image generation and manipulation with textual descriptions"
+  },
+  {
+    "title": "SCALE",
+    "url": "https://colab.research.google.com/drive/1lp6r-A-s1kBorIvg6rLD4Ja3o6JOvu3G",
+    "date": "2021-06-26T09:32:50.138000",
+    "author": "Qianli Ma",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Modeling Clothed Humans with a Surface Codec of Articulated Local Elements"
+  },
+  {
+    "title": "CogView",
+    "url": "https://colab.research.google.com/drive/1Bi2TnSUp2vNiSUhamsNuC4HqkZ2J4WwZ",
+    "date": "2021-06-21T15:38:37.456000",
+    "author": "Ming Ding",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Mastering Text-to-Image Generation via Transformers"
+  },
+  {
+    "title": "GANs N' Roses",
+    "url": "https://colab.research.google.com/github/mchong6/GANsNRoses/blob/master/inference_colab.ipynb",
+    "date": "2021-06-19T16:21:22",
+    "author": "Min Jin Chong",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Stable, Controllable, Diverse Image to Image Translation"
+  },
+  {
+    "title": "Rethinking Style Transfer: From Pixels to Parameterized Brushstrokes",
+    "url": "https://colab.research.google.com/github/CompVis/brushstroke-parameterized-style-transfer/blob/tensorflow_v2/notebooks/BrushstrokeStyleTransfer_TF2.ipynb",
+    "date": "2021-06-02T09:15:01",
+    "author": "Dmytro Kotovenko",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A method to stylize images by optimizing parameterized brushstrokes instead of pixels"
+  },
+  {
+    "title": "Pixel2Style2Pixel",
+    "url": "https://colab.research.google.com/github/eladrich/pixel2style2pixel/blob/master/notebooks/inference_playground.ipynb",
+    "date": "2021-06-01T16:24:44",
+    "author": "Elad Richardson",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Encoding in Style: A StyleGAN Encoder for Image-to-Image Translation"
+  },
+  {
+    "title": "Fine-tuning a BERT",
+    "url": "https://colab.research.google.com/github/tensorflow/models/blob/master/official/colab/fine_tuning_bert.ipynb",
+    "date": "2021-05-24T23:33:57",
+    "author": "Chen Chen",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "We will work through fine-tuning a BERT model using the tensorflow-models PIP package"
+  },
+  {
+    "title": "ReStyle",
+    "url": "https://colab.research.google.com/github/yuval-alaluf/restyle-encoder/blob/master/notebooks/inference_playground.ipynb",
+    "date": "2021-05-21T19:23:27",
+    "author": "Yuval Alaluf",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A Residual-Based StyleGAN Encoder via Iterative Refinement"
+  },
+  {
+    "title": "Motion Representations for Articulated Animation",
+    "url": "https://colab.research.google.com/github/AliaksandrSiarohin/articulated-animation/blob/master/demo.ipynb",
+    "date": "2021-04-29T18:21:00",
+    "author": "Aliaksandr Siarohin",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Novel motion representations for animating articulated objects consisting of distinct parts"
+  },
+  {
+    "title": "SAM",
+    "url": "http://colab.research.google.com/github/yuval-alaluf/SAM/blob/master/notebooks/animation_inference_playground.ipynb",
+    "date": "2021-04-26T07:16:09",
+    "author": "Yuval Alaluf",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Age Transformation Using a Style-Based Regression Model"
+  },
+  {
+    "title": "Geometry-Free View Synthesis",
+    "url": "https://colab.research.google.com/github/CompVis/geometry-free-view-synthesis/blob/master/scripts/braindance.ipynb",
+    "date": "2021-04-22T12:41:13",
+    "author": "Robin Rombach",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Is a geometric model required to synthesize novel views from a single image?"
+  },
+  {
+    "title": "NeRViS",
+    "url": "https://colab.research.google.com/drive/1l-fUzyM38KJMZyKMBWw_vu7ZUyDwgdYH",
+    "date": "2021-04-11T07:22:06.731000",
+    "author": "Yu-Lun Liu",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "An algorithm for full-frame video stabilization by first estimating dense warp fields"
+  },
+  {
+    "title": "NeX",
+    "url": "https://colab.research.google.com/drive/1hXVvYdAwLA0EFg2zrafJUE0bFgB_F7PU",
+    "date": "2021-03-25T17:18:48.707000",
+    "author": "Suttisak Wizadwongsa",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "View synthesis based on enhancements of multiplane image that can reproduce NeXt-level view-dependent effects in real time"
+  },
+  {
+    "title": "Score SDE",
+    "url": "https://colab.research.google.com/github/yang-song/score_sde/blob/main/Score_SDE_demo.ipynb",
+    "date": "2021-03-18T20:01:09",
+    "author": "Yang Song",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Score-Based Generative Modeling through Stochastic Differential Equations"
+  },
+  {
+    "title": "Talking Head Anime from a Single Image",
+    "url": "https://colab.research.google.com/github/pkhungurn/talking-head-anime-demo/blob/master/tha_colab.ipynb",
+    "date": "2021-02-23T21:38:27",
+    "author": "Pramook Khungurn",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "The network takes as input an image of an anime character's face and a desired pose, and it outputs another image of the same character in the given pose"
+  },
+  {
+    "title": "NFNet",
+    "url": "https://colab.research.google.com/github/deepmind/deepmind-research/blob/master/nfnets/nfnet_demo_colab.ipynb",
+    "date": "2021-02-17T17:42:56",
+    "author": "Andrew Brock",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "An adaptive gradient clipping technique, a significantly improved class of Normalizer-Free ResNets"
+  },
+  {
+    "title": "RITM",
+    "url": "https://colab.research.google.com/github/SamsungLabs/ritm_interactive_segmentation/blob/master/notebooks/colab_test_any_model.ipynb",
+    "date": "2021-02-13T16:57:27",
+    "author": "Konstantin Sofiiuk",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Simple feedforward model for click-based interactive segmentation that employs the segmentation masks from previous steps"
+  },
+  {
+    "title": "CLIP",
+    "url": "https://colab.research.google.com/github/openai/clip/blob/master/Interacting_with_CLIP.ipynb",
+    "date": "2021-01-29T15:22:03",
+    "author": "Jong Wook Kim",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A neural network which efficiently learns visual concepts from natural language supervision"
+  },
+  {
+    "title": "Adversarial Patch",
+    "url": "https://colab.research.google.com/github/cleverhans-lab/cleverhans/blob/master/examples/adversarial_patch/AdversarialPatch.ipynb",
+    "date": "2021-01-27T14:10:06",
+    "author": "Tom Brown",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A method to create universal, robust, targeted adversarial image patches in the real world"
+  },
+  {
+    "title": "MSG-Net",
+    "url": "https://colab.research.google.com/github/zhanghang1989/PyTorch-Multi-Style-Transfer/blob/master/msgnet.ipynb",
+    "date": "2021-01-25T20:38:41",
+    "author": "Hang Zhang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Multi-style Generative Network with a novel Inspiration Layer, which retains the functionality of optimization-based approaches and has the fast speed of feed-forward networks"
+  },
+  {
+    "title": "f-BRS",
+    "url": "https://colab.research.google.com/github/SamsungLabs/fbrs_interactive_segmentation/blob/master/notebooks/colab_test_any_model.ipynb",
+    "date": "2021-01-25T13:18:33",
+    "author": "Konstantin Sofiiuk",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Feature backpropagating refinement scheme that solves an optimization problem with respect to auxiliary variables instead of the network inputs, and requires running forward and backward pass just for..."
+  },
+  {
+    "title": "Neural Style Transfer",
+    "url": "https://colab.research.google.com/github/titu1994/Neural-Style-Transfer/blob/master/NeuralStyleTransfer.ipynb",
+    "date": "2021-01-22T09:40:06",
+    "author": "Somshubra Majumdar",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Implementation of Neural Style Transfer in Keras 2.0+"
+  },
+  {
+    "title": "SkyAR",
+    "url": "https://colab.research.google.com/github/jiupinjia/SkyAR/blob/master/colab_demo.ipynb",
+    "date": "2021-01-18T13:42:47",
+    "author": "Zhengxia Zou",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A vision-based method for video sky replacement and harmonization, which can automatically generate realistic and dramatic sky backgrounds in videos with controllable styles"
+  },
+  {
+    "title": "MusicXML Documentation",
+    "url": "https://colab.research.google.com/github/magenta/magenta-demos/blob/master/colab-notebooks/MusicXML_Document_Structure_Documentation.ipynb",
+    "date": "2021-01-08T16:06:37",
+    "author": "Prakruti Joshi",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "The goal of this notebook is to explore one of the magenta libraries for music"
+  },
+  {
+    "title": "SVG VAE",
+    "url": "https://colab.research.google.com/github/magenta/magenta-demos/blob/master/colab-notebooks/vae_svg_decoding.ipynb",
+    "date": "2021-01-08T16:06:37",
+    "author": "Raphael Gontijo Lopes",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A colab demo for the SVG VAE model"
+  },
+  {
+    "title": "Neural Magic Eye",
+    "url": "https://colab.research.google.com/drive/1f59dFLJ748i2TleE54RkbUZSMo9Hyx7l",
+    "date": "2021-01-01T01:52:23.743000",
+    "author": "Zhengxia Zou",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Learning to See and Understand the Scene Behind an Autostereogram"
+  },
+  {
+    "title": "FGVC",
+    "url": "https://colab.research.google.com/drive/1pb6FjWdwq_q445rG2NP0dubw7LKNUkqc",
+    "date": "2020-12-30T20:57:05.432000",
+    "author": "Chen Gao",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Method first extracts and completes motion edges, and then uses them to guide piecewise-smooth flow completion with sharp edges"
+  },
+  {
+    "title": "VIBE",
+    "url": "https://colab.research.google.com/drive/1dFfwxZ52MN86FA6uFNypMEdFShd2euQA",
+    "date": "2020-12-23T08:00:27.317000",
+    "author": "Muhammed Kocabas",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Video Inference for Body Pose and Shape Estimation, which makes use of an existing large-scale motion capture dataset together with unpaired, in-the-wild, 2D keypoint annotations"
+  },
+  {
+    "title": "SeFa",
+    "url": "https://colab.research.google.com/github/genforce/sefa/blob/master/docs/SeFa.ipynb",
+    "date": "2020-12-06T02:04:02",
+    "author": "Yujun Shen",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A closed-form approach for unsupervised latent semantic factorization in GANs"
+  },
+  {
+    "title": "Stylized Neural Painting",
+    "url": "https://colab.research.google.com/drive/1ch_41GtcQNQT1NLOA21vQJ_rQOjjv9D8",
+    "date": "2020-12-01T15:10:03.466000",
+    "author": "Zhengxia Zou",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "An image-to-painting translation method that generates vivid and realistic painting artworks with controllable styles"
+  },
+  {
+    "title": "BiT",
+    "url": "https://colab.research.google.com/github/google-research/big_transfer/blob/master/colabs/big_transfer_tf2.ipynb",
+    "date": "2020-11-12T15:04:10",
+    "author": "Alexander Kolesnikov",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Big Transfer: General Visual Representation Learning"
+  },
+  {
+    "title": "LaSAFT",
+    "url": "https://colab.research.google.com/github/ws-choi/Conditioned-Source-Separation-LaSAFT/blob/master/colab_demo/LaSAFT_with_GPoCM_Stella_Jang_Example.ipynb",
+    "date": "2020-11-01T16:16:56",
+    "author": "Woosung Choi",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Latent Source Attentive Frequency Transformation for Conditioned Source Separation"
+  },
+  {
+    "title": "Lifespan Age Transformation Synthesis",
+    "url": "https://colab.research.google.com/github/royorel/Lifespan_Age_Transformation_Synthesis/blob/master/LATS_demo.ipynb",
+    "date": "2020-10-31T19:20:28",
+    "author": "Roy Or-El",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Multi-domain image-to-image generative adversarial network architecture, whose learned latent space models a continuous bi-directional aging process"
+  },
+  {
+    "title": "HiGAN",
+    "url": "https://colab.research.google.com/github/genforce/higan/blob/master/docs/HiGAN_Bedroom.ipynb",
+    "date": "2020-10-14T05:06:02",
+    "author": "Ceyuan Yang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Semantic Hierarchy Emerges in Deep Generative Representations for Scene Synthesis"
+  },
+  {
+    "title": "InterFaceGAN",
+    "url": "https://colab.research.google.com/github/genforce/interfacegan/blob/master/docs/InterFaceGAN.ipynb",
+    "date": "2020-10-13T06:38:16",
+    "author": "Yujun Shen",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Interpreting the Latent Space of GANs for Semantic Face Editing"
+  },
+  {
+    "title": "Instance-aware Image Colorization",
+    "url": "https://colab.research.google.com/github/ericsujw/InstColorization/blob/master/InstColorization.ipynb",
+    "date": "2020-08-30T10:15:00",
+    "author": "Jheng-Wei Su",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Novel deep learning framework to achieve instance-aware colorization"
+  },
+  {
+    "title": "MoCo",
+    "url": "https://colab.research.google.com/github/facebookresearch/moco/blob/colab-notebook/colab/moco_cifar10_demo.ipynb",
+    "date": "2020-08-20T16:56:18",
+    "author": "Kaiming He",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Momentum Contrast for unsupervised visual representation learning"
+  },
+  {
+    "title": "CAPE",
+    "url": "https://colab.research.google.com/drive/1DCNo2OyyTNi1xDG-7j32FZQ9sBA6i9Ys",
+    "date": "2020-08-05T16:42:16.414000",
+    "author": "Qianli Ma",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Learning to Dress 3D People in Generative Clothing"
+  },
+  {
+    "title": "Rewriting a Deep Generative Model",
+    "url": "https://colab.research.google.com/github/davidbau/rewriting/blob/master/notebooks/rewriting-interface.ipynb",
+    "date": "2020-07-31T22:02:12",
+    "author": "David Bau",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "We ask if a deep network can be reprogrammed to follow different rules, by enabling a user to directly change the weights, instead of training with a data set"
+  },
+  {
+    "title": "SIREN",
+    "url": "https://colab.research.google.com/github/vsitzmann/siren/blob/master/explore_siren.ipynb",
+    "date": "2020-06-24T22:40:01",
+    "author": "Vincent Sitzmann",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Implicit Neural Representations with Periodic Activation Functions"
+  },
+  {
+    "title": "3D Photo Inpainting",
+    "url": "https://colab.research.google.com/drive/1706ToQrkIZshRSJSHvZ1RuCiM__YX3Bz",
+    "date": "2020-05-04T08:04:18.042000",
+    "author": "Meng-Li Shih",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Method for converting a single RGB-D input image into a 3D photo, i.e., a multi-layer representation for novel view synthesis that contains hallucinated color and depth structures in regions occluded ..."
+  },
+  {
+    "title": "Motion Supervised co-part Segmentation",
+    "url": "https://colab.research.google.com/github/AliaksandrSiarohin/motion-cosegmentation/blob/master/part_swap.ipynb",
+    "date": "2020-04-07T18:55:32",
+    "author": "Aliaksandr Siarohin",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "A self-supervised deep learning method for co-part segmentation"
+  },
+  {
+    "title": "Onsets and Frames",
+    "url": "https://colab.research.google.com/notebooks/magenta/onsets_frames_transcription/onsets_frames_transcription.ipynb",
+    "date": "2020-04-01T22:00:00",
+    "author": "Curtis Hawthorne",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Onsets and Frames is an automatic music transcription framework with piano and drums models"
+  },
+  {
+    "title": "FBA Matting",
+    "url": "https://colab.research.google.com/drive/1Ut2szLBTxPejGHt_GYUkua21yUVWseOE",
+    "date": "2020-03-19T00:17:20.529000",
+    "author": "Marco Forte",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Low-cost modification to alpha matting networks to also predict the foreground and background colours"
+  },
+  {
+    "title": "BERT score",
+    "url": "https://colab.research.google.com/github/Tiiiger/bert_score/blob/master/example/Demo.ipynb",
+    "date": "2020-03-05T19:02:20",
+    "author": "Tianyi Zhang",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "An automatic evaluation metric for text generation"
+  },
+  {
+    "title": "ProxylessNAS",
+    "url": "https://colab.research.google.com/github/pytorch/pytorch.github.io/blob/master/assets/hub/pytorch_vision_proxylessnas.ipynb",
+    "date": "2019-10-29T03:43:32",
+    "author": "Han Cai",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Directly learn the architectures for large-scale target tasks and target hardware platforms"
+  },
+  {
+    "title": "Generating Piano Music with Transformer",
+    "url": "https://colab.research.google.com/notebooks/magenta/piano_transformer/piano_transformer.ipynb",
+    "date": "2019-09-15T22:00:00",
+    "author": "Ian Simon",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "This Colab notebook lets you play with pretrained Transformer models for piano music generation, based on the Music Transformer"
+  },
+  {
+    "title": "HMR",
+    "url": "https://colab.research.google.com/github/Dene33/video_to_bvh/blob/master/video_to_bvh.ipynb",
+    "date": "2019-03-15T20:13:23",
+    "author": "Angjoo Kanazawa",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "End-to-end framework for reconstructing a full 3D mesh of a human body from a single RGB image"
+  },
+  {
+    "title": "GANSynth",
+    "url": "https://colab.research.google.com/notebooks/magenta/gansynth/gansynth_demo.ipynb",
+    "date": "2019-02-24T23:00:00",
+    "author": "Jesse Engel",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "This notebook is a demo GANSynth, which generates audio with Generative Adversarial Networks"
+  },
+  {
+    "title": "Latent Constraints",
+    "url": "https://colab.research.google.com/notebooks/latent_constraints/latentconstraints.ipynb",
+    "date": "2017-11-26T23:00:00",
+    "author": "Jesse Engel",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "Conditional Generation from Unconditional Generative Models"
+  },
+  {
+    "title": "Performance RNN",
+    "url": "https://colab.research.google.com/notebooks/magenta/performance_rnn/performance_rnn.ipynb",
+    "date": "2017-07-10T22:00:00",
+    "author": "Ian Simon",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "This notebook shows you how to generate new performed compositions from a trained model"
+  },
+  {
+    "title": "NSynth",
+    "url": "https://colab.research.google.com/notebooks/magenta/nsynth/nsynth.ipynb",
+    "date": "2017-04-05T22:00:00",
+    "author": "Jesse Engel",
+    "tags": [
+      "Paper"
+    ],
+    "category": "research",
+    "excerpt": "This colab notebook has everything you need to upload your own sounds and use NSynth models to reconstruct and interpolate between them"
+  }
+]

@@ -1,0 +1,3247 @@
+[
+  {
+    "title": "LangGraph",
+    "url": "https://colab.research.google.com/github/langchain-ai/langgraph/blob/main/docs/docs/tutorials/introduction.ipynb",
+    "date": "2025-02-03T20:13:58",
+    "author": "LangChain",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Library for building stateful, multi-actor applications with LLMs, used to create agent and multi-agent workflows"
+  },
+  {
+    "title": "VC",
+    "url": "https://colab.research.google.com/github/hinabl/voice-changer-colab/blob/master/Hina_Modified_Realtime_Voice_Changer_on_Colab.ipynb",
+    "date": "2025-01-30T12:05:50",
+    "author": "w-okada",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Client software for performing real-time voice conversion using various Voice Conversion AI"
+  },
+  {
+    "title": "YOLOv8",
+    "url": "https://colab.research.google.com/github/ultralytics/ultralytics/blob/main/examples/tutorial.ipynb",
+    "date": "2025-01-30T11:28:19",
+    "author": "Glenn Jocher",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "State-of-the-art model that builds upon the success of previous YOLO versions and introduces new features and improvements to further boost performance and flexibility"
+  },
+  {
+    "title": "Building Your Own Federated Learning Algorithm",
+    "url": "https://colab.research.google.com/github/tensorflow/federated/blob/master/docs/tutorials/building_your_own_federated_learning_algorithm.ipynb",
+    "date": "2025-01-29T19:01:31",
+    "author": "Zachary Charles",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "We discuss how to implement federated learning algorithms without deferring to the tff.learning API"
+  },
+  {
+    "title": "Federated Learning for Image Classification",
+    "url": "https://colab.research.google.com/github/tensorflow/federated/blob/master/docs/tutorials/federated_learning_for_image_classification.ipynb",
+    "date": "2025-01-29T19:01:31",
+    "author": "Krzysztof Ostrowski",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "We use the classic MNIST training example to introduce the Federated Learning API layer of TFF, tff.learning - a set of higher-level interfaces that can be used to perform common types of federated le..."
+  },
+  {
+    "title": "Federated Learning for Text Generation",
+    "url": "https://colab.research.google.com/github/tensorflow/federated/blob/master/docs/tutorials/federated_learning_for_text_generation.ipynb",
+    "date": "2025-01-29T19:01:31",
+    "author": "Krzysztof Ostrowski",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "We start with a RNN that generates ASCII characters, and refine it via federated learning"
+  },
+  {
+    "title": "Custom Federated Algorithms, Part 1: Introduction to the Federated Core",
+    "url": "https://colab.research.google.com/github/tensorflow/federated/blob/master/docs/tutorials/custom_federated_algorithms_1.ipynb",
+    "date": "2025-01-29T19:01:31",
+    "author": "Krzysztof Ostrowski",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial is the first part of a two-part series that demonstrates how to implement custom types of federated algorithms in TensorFlow Federated using the Federated Core - a set of lower-level int..."
+  },
+  {
+    "title": "Custom Federated Algorithms, Part 2: Implementing Federated Averaging",
+    "url": "https://colab.research.google.com/github/tensorflow/federated/blob/master/docs/tutorials/custom_federated_algorithms_2.ipynb",
+    "date": "2025-01-29T19:01:31",
+    "author": "Krzysztof Ostrowski",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial is the second part of a two-part series that demonstrates how to implement custom types of federated algorithms in TFF using the Federated Core, which serves as a foundation for the Fede..."
+  },
+  {
+    "title": "Kornia",
+    "url": "https://colab.research.google.com/github/kornia/kornia/blob/master/examples/augmentation/kornia_augmentation.ipynb",
+    "date": "2025-01-27T21:58:10",
+    "author": "Edgar Riba",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Library is composed by a subset of packages containing operators that can be inserted within neural networks to train models to perform image transformations, epipolar geometry, depth estimation, and ..."
+  },
+  {
+    "title": "Contextualized Topic Models",
+    "url": "https://colab.research.google.com/drive/1fXJjr_rwqvpp1IdNQ4dxqN4Dp88cxO97",
+    "date": "2025-01-16T14:27:56.264000",
+    "author": "Federico Bianchi",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Family of topic models that use pre-trained representations of language to support topic modeling"
+  },
+  {
+    "title": "dm_control",
+    "url": "https://colab.research.google.com/github/deepmind/dm_control/blob/master/tutorial.ipynb",
+    "date": "2025-01-15T17:32:09",
+    "author": "Saran Tunyasuvunakool",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "DeepMind Infrastructure for Physics-Based Simulation"
+  },
+  {
+    "title": "MuJoCo",
+    "url": "https://colab.research.google.com/github/deepmind/dm_control/blob/master/dm_control/mujoco/tutorial.ipynb",
+    "date": "2025-01-15T17:32:09",
+    "author": "Emo Todorov",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A general purpose physics engine that aims to facilitate research and development in robotics, biomechanics, graphics and animation, machine learning, and other areas which demand fast and accurate si..."
+  },
+  {
+    "title": "Ollama",
+    "url": "https://colab.research.google.com/github/ollama/ollama/blob/master/examples/jupyter-notebook/ollama.ipynb",
+    "date": "2025-01-13T19:26:22",
+    "author": "Michael Yang",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Get up and running with large language models"
+  },
+  {
+    "title": "LangChain",
+    "url": "https://colab.research.google.com/github/langchain-ai/langchain/blob/master/docs/docs/tutorials/qa_chat_history.ipynb",
+    "date": "2025-01-11T01:24:40",
+    "author": "LangChain",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Framework for developing applications powered by large language models"
+  },
+  {
+    "title": "NotebookLlama",
+    "url": "https://colab.research.google.com/github/meta-llama/llama-recipes/blob/main/recipes/quickstart/NotebookLlama/Step-1%20PDF-Pre-Processing-Logic.ipynb",
+    "date": "2025-01-09T17:06:53",
+    "author": "Meta",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Open Source version of NotebookLM"
+  },
+  {
+    "title": "Anomalib",
+    "url": "https://colab.research.google.com/github/openvinotoolkit/anomalib/blob/main/notebooks/000_getting_started/001_getting_started.ipynb",
+    "date": "2025-01-08T14:06:03",
+    "author": "Samet Akcay",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Deep learning library that aims to collect state-of-the-art anomaly detection algorithms for benchmarking on both public and private datasets"
+  },
+  {
+    "title": "Hello, many worlds",
+    "url": "https://colab.research.google.com/github/tensorflow/quantum/blob/master/docs/tutorials/hello_many_worlds.ipynb",
+    "date": "2025-01-04T19:25:48",
+    "author": "Michael Broughton",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial shows how a classical neural network can learn to correct qubit calibration errors"
+  },
+  {
+    "title": "Opik",
+    "url": "https://colab.research.google.com/github/comet-ml/opik/blob/main/apps/opik-documentation/documentation/docs/cookbook/quickstart_notebook.ipynb",
+    "date": "2024-12-30T16:25:54",
+    "author": "Jacques Verré",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "From RAG chatbots to code assistants to complex agentic pipelines and beyond, build LLM systems that run better, faster, and cheaper with tracing, evaluations, and dashboards"
+  },
+  {
+    "title": "LightAutoML",
+    "url": "https://colab.research.google.com/github/AILab-MLTools/LightAutoML/blob/master/examples/tutorials/Tutorial_1_basics.ipynb",
+    "date": "2024-12-22T11:36:43",
+    "author": "Alexander Ryzhkov",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Allows you create machine learning models using just a few lines of code, or build your own custom pipeline using ready blocks"
+  },
+  {
+    "title": "TorchGeo",
+    "url": "https://colab.research.google.com/github/microsoft/torchgeo/blob/main/docs/tutorials/indices.ipynb",
+    "date": "2024-12-19T18:40:19",
+    "author": "Adam Stewart",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "PyTorch domain library that provides datasets, transforms, samplers, and pre-trained models specific to geospatial data"
+  },
+  {
+    "title": "AutoGen",
+    "url": "https://colab.research.google.com/github/microsoft/autogen/blob/main/python/packages/autogen-core/docs/src/user-guide/core-user-guide/quickstart.ipynb",
+    "date": "2024-12-19T17:01:03",
+    "author": "microsoft",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Framework that enables development of LLM applications using multiple agents that can converse with each other to solve tasks"
+  },
+  {
+    "title": "Langfun",
+    "url": "https://colab.research.google.com/github/google/langfun/blob/main/docs/notebooks/langfun101.ipynb",
+    "date": "2024-12-16T20:38:19",
+    "author": "Daiyi Peng",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "PyGlove powered library that aims to make language models fun to work with"
+  },
+  {
+    "title": "ComfyUI",
+    "url": "https://colab.research.google.com/github/comfyanonymous/ComfyUI/blob/master/notebooks/comfyui_colab.ipynb",
+    "date": "2024-12-13T00:29:37",
+    "author": "comfyanonymous",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Powerful and modular stable diffusion GUI and backend"
+  },
+  {
+    "title": "TransformerLens",
+    "url": "https://colab.research.google.com/github/TransformerLensOrg/TransformerLens/blob/main/demos/Main_Demo.ipynb",
+    "date": "2024-12-09T20:49:52",
+    "author": "Neel Nanda",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Library for doing mechanistic interpretability of GPT-2 Style language models"
+  },
+  {
+    "title": "Supervision",
+    "url": "https://colab.research.google.com/github/roboflow/supervision/blob/main/demo.ipynb",
+    "date": "2024-12-05T15:23:05",
+    "author": "Roboflow",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Reusable computer vision tools"
+  },
+  {
+    "title": "XManager",
+    "url": "https://colab.research.google.com/github/google-deepmind/xmanager/blob/main/colab_codelab.ipynb",
+    "date": "2024-12-05T13:54:44",
+    "author": "Andrew Chen",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Framework for managing machine learning experiment"
+  },
+  {
+    "title": "Flax",
+    "url": "https://colab.research.google.com/github/google/flax/blob/main/docs/quick_start.ipynb",
+    "date": "2024-12-05T12:09:54",
+    "author": "Jonathan Heek",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Neural network library and ecosystem for JAX designed for flexibility"
+  },
+  {
+    "title": "Haiku",
+    "url": "https://colab.research.google.com/github/deepmind/dm-haiku/blob/main/examples/haiku_lstms.ipynb",
+    "date": "2024-12-05T12:02:47",
+    "author": "Tom Hennigan",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A library built on top of JAX designed to provide simple, composable abstractions for machine learning research"
+  },
+  {
+    "title": "SAE Lens",
+    "url": "https://colab.research.google.com/github/jbloomAus/SAELens/blob/main/tutorials/tutorial_2_0.ipynb",
+    "date": "2024-12-03T16:57:30",
+    "author": "Joseph Bloom",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Training Sparse Autoencoders on Language Models"
+  },
+  {
+    "title": "moondream",
+    "url": "https://colab.research.google.com/github/vikhyat/moondream/blob/main/notebooks/Finetuning.ipynb",
+    "date": "2024-11-30T13:50:01",
+    "author": "Vik Korrapati",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Tiny vision language model that kicks ass and runs anywhere"
+  },
+  {
+    "title": "Feast",
+    "url": "https://colab.research.google.com/github/feast-dev/feast/blob/master/examples/quickstart/quickstart.ipynb",
+    "date": "2024-11-22T10:58:30",
+    "author": "Willem Pienaar",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "An open source feature store for machine learning"
+  },
+  {
+    "title": "FiftyOne",
+    "url": "https://colab.research.google.com/github/voxel51/fiftyone-examples/blob/master/examples/quickstart.ipynb",
+    "date": "2024-11-21T17:45:56",
+    "author": "Brian Moore",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Open-source tool for building high-quality datasets and computer vision models"
+  },
+  {
+    "title": "CatBoost",
+    "url": "https://colab.research.google.com/github/catboost/tutorials/blob/master/python_tutorial.ipynb",
+    "date": "2024-11-17T23:32:26",
+    "author": "Anna Veronika Dorogush",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "High-performance open source library for gradient boosting on decision trees"
+  },
+  {
+    "title": "Gemma 2",
+    "url": "https://colab.research.google.com/drive/1vIrqH5uYDQwsJ4-OO3DErvuv4pBgVwk4",
+    "date": "2024-11-17T06:51:54.482000",
+    "author": "unsloth",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "New addition to the Gemma family of lightweight, state-of-the-art open models, ranging in scale from 2 billion to 27 billion parameters"
+  },
+  {
+    "title": "Llama 3.1",
+    "url": "https://colab.research.google.com/drive/1Ys44kVvmeZtnICzWz0xgpRnrIOjZAuxp",
+    "date": "2024-11-17T06:51:39.049000",
+    "author": "unsloth",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "First openly available model that rivals the top AI models when it comes to state-of-the-art capabilities in general knowledge, steerability, math, tool use, and multilingual translation"
+  },
+  {
+    "title": "Mistral Small",
+    "url": "https://colab.research.google.com/drive/1oCEHcED15DzL8xXGU1VTx5ZfOJM8WY01",
+    "date": "2024-11-17T06:51:15.510000",
+    "author": "unsloth",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Enterprise-grade small model"
+  },
+  {
+    "title": "DPO Zephyr",
+    "url": "https://colab.research.google.com/drive/15vttTpzzVXv_tJwEk-hIcQ0S9FcEWvwP",
+    "date": "2024-11-17T06:50:51.115000",
+    "author": "Lewis Tunstall",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Starting from a dataset of outputs ranked by a teacher model, we apply distilled direct preference optimization to learn a chat model with significantly improved intent alignment"
+  },
+  {
+    "title": "ORPO",
+    "url": "https://colab.research.google.com/drive/11t4njE3c4Lxl-07OD8lJSMKkfyJml3Tn",
+    "date": "2024-11-17T06:50:47.258000",
+    "author": "Jiwoo Hong",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Get up and running with large language models"
+  },
+  {
+    "title": "Phi-3.5",
+    "url": "https://colab.research.google.com/drive/1lN6hPQveB_mHSnTOYifygFcrO8C1bxq4",
+    "date": "2024-11-17T06:50:35.897000",
+    "author": "unsloth",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "3.8 billion parameter language model trained on 3.3 trillion tokens, whose overall performance, as measured by both academic benchmarks and internal testing, rivals that of models such as Mixtral 8x7B..."
+  },
+  {
+    "title": "Simple audio recognition",
+    "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/audio/simple_audio.ipynb",
+    "date": "2024-11-15T05:56:58",
+    "author": "Google",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial will show you how to build a basic speech recognition network that recognizes ten different words"
+  },
+  {
+    "title": "xFormers",
+    "url": "https://colab.research.google.com/github/facebookresearch/xformers/blob/main/docs/source/xformers_mingpt.ipynb",
+    "date": "2024-11-13T13:59:14",
+    "author": "Benjamin Lefaudeux",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Toolbox to Accelerate Research on Transformers"
+  },
+  {
+    "title": "High-performance simulations with TFF",
+    "url": "https://colab.research.google.com/github/tensorflow/federated/blob/master/docs/tutorials/simulations.ipynb",
+    "date": "2024-11-01T17:34:19",
+    "author": "Krzysztof Ostrowski",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial will describe how to setup high-performance simulations with TFF in a variety of common scenarios"
+  },
+  {
+    "title": "Autodistill",
+    "url": "https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/how-to-auto-train-yolov8-model-with-autodistill.ipynb",
+    "date": "2024-11-01T11:54:04",
+    "author": "autodistill",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Uses big, slower foundation models to train small, faster supervised models"
+  },
+  {
+    "title": "Crawl4AI",
+    "url": "https://colab.research.google.com/github/unclecode/crawl4ai/blob/main/docs/examples/quickstart.ipynb",
+    "date": "2024-10-30T12:39:35",
+    "author": "UncleCode",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "LLM Friendly Web Crawler & Scrapper"
+  },
+  {
+    "title": "XGBoost",
+    "url": "https://colab.research.google.com/github/comet-ml/comet-examples/blob/master/integrations/model-training/xgboost/notebooks/how_to_use_comet_with_xgboost_tutorial.ipynb",
+    "date": "2024-10-22T13:42:34",
+    "author": "Tianqi Chen",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Optimized distributed gradient boosting library designed to be highly efficient, flexible and portable"
+  },
+  {
+    "title": "YOLOv5",
+    "url": "https://colab.research.google.com/github/ultralytics/yolov5/blob/master/tutorial.ipynb",
+    "date": "2024-10-19T15:46:11",
+    "author": "Glenn Jocher",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "You Only Look Once"
+  },
+  {
+    "title": "YOLOv3",
+    "url": "https://colab.research.google.com/github/ultralytics/yolov3/blob/master/tutorial.ipynb",
+    "date": "2024-10-19T15:45:48",
+    "author": "Glenn Jocher",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "You Only Look Once"
+  },
+  {
+    "title": "Swarm",
+    "url": "https://colab.research.google.com/github/NirDiamant/GenAI_Agents/blob/main/all_agents_tutorials/blog_writer_swarm.ipynb",
+    "date": "2024-10-15T05:29:50",
+    "author": "Ilan Bigio",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Educational framework exploring ergonomic, lightweight multi-agent orchestration"
+  },
+  {
+    "title": "LM Evaluation Harness",
+    "url": "https://colab.research.google.com/github/EleutherAI/lm-evaluation-harness/blob/main/examples/lm-eval-overview.ipynb",
+    "date": "2024-10-04T15:44:32",
+    "author": "EleutherAI",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Framework for few-shot evaluation of language models."
+  },
+  {
+    "title": "CodeGemma",
+    "url": "https://colab.research.google.com/github/google-gemini/gemma-cookbook/blob/main/CodeGemma/CodeGemma_finetuned_on_SQL_with_HF.ipynb",
+    "date": "2024-09-27T03:16:48",
+    "author": "Carlo Fisicaro",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "How to load, fine-tune and deploy CodeGemma model on SQL by utilising Hugging Face"
+  },
+  {
+    "title": "Multimodal Maestro",
+    "url": "https://colab.research.google.com/github/roboflow/multimodal-maestro/blob/develop/cookbooks/multimodal_maestro_gpt_4_vision.ipynb",
+    "date": "2024-09-26T14:00:04",
+    "author": "Roboflow",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Gives you more control over large multimodal models to get the outputs you want"
+  },
+  {
+    "title": "TRL",
+    "url": "https://colab.research.google.com/github/huggingface/trl/blob/master/examples/notebooks/best_of_n.ipynb",
+    "date": "2024-09-24T14:05:55",
+    "author": "Leandro Werra",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Set of tools to train transformer language models with Reinforcement Learning, from the Supervised Fine-tuning step, Reward Modeling step to the Proximal Policy Optimization step"
+  },
+  {
+    "title": "PEFT",
+    "url": "https://colab.research.google.com/github/huggingface/peft/blob/master/examples/int8_training/Finetune_flan_t5_large_bnb_peft.ipynb",
+    "date": "2024-09-13T16:01:26",
+    "author": "Sourab Mangrulkar",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Parameter-Efficient Fine-Tuning methods enable efficient adaptation of pre-trained language models to various downstream applications without fine-tuning all the model's parameters"
+  },
+  {
+    "title": "SAA+",
+    "url": "https://colab.research.google.com/drive/12Sh0j92YYmTa0oIuSEWWpPBCpIwCSVhz",
+    "date": "2024-09-13T07:15:34.185000",
+    "author": "Yunkang Cao",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Framework, Segment Any Anomaly +, for zero-shot anomaly segmentation with hybrid prompt regularization to improve the adaptability of modern foundation models"
+  },
+  {
+    "title": "TensorRT",
+    "url": "https://colab.research.google.com/github/NVIDIA/TensorRT/blob/main/quickstart/IntroNotebooks/0.%20Running%20This%20Guide.ipynb",
+    "date": "2024-09-12T00:26:50",
+    "author": "nvidia",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "SDK for high-performance deep learning inference, includes a deep learning inference optimizer and runtime that delivers low latency and high throughput for inference applications"
+  },
+  {
+    "title": "DataChain",
+    "url": "https://colab.research.google.com/github/iterative/datachain-examples/blob/main/multimodal/clip_fine_tuning.ipynb",
+    "date": "2024-09-09T01:29:24",
+    "author": "Iterative",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "AI-dataframe to enrich, transform and analyze data from cloud storages for ML training and LLM apps"
+  },
+  {
+    "title": "TFF for Federated Learning Research: Model and Update Compression",
+    "url": "https://colab.research.google.com/github/tensorflow/federated/blob/master/docs/tutorials/tff_for_federated_learning_research_compression.ipynb",
+    "date": "2024-09-05T21:37:51",
+    "author": "Weikang Song",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "We use the EMNIST dataset to demonstrate how to enable lossy compression algorithms to reduce communication cost in the Federated Averaging algorithm"
+  },
+  {
+    "title": "LlamaIndex",
+    "url": "https://colab.research.google.com/github/run-llama/llama_index/blob/main/docs/docs/examples/cookbooks/oreilly_course_cookbooks/Module-2/Components_Of_LlamaIndex.ipynb",
+    "date": "2024-09-05T15:43:16",
+    "author": "Jerry Liu",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Data framework for your LLM application"
+  },
+  {
+    "title": "Deforum Stable Diffusion",
+    "url": "https://colab.research.google.com/github/deforum-art/deforum-stable-diffusion/blob/main/Deforum_Stable_Diffusion.ipynb",
+    "date": "2024-08-30T18:10:53",
+    "author": "EnzymeZoo",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Open source project is designed to be free to use and easy to modify for custom needs and pipelines"
+  },
+  {
+    "title": "Nerfstudio",
+    "url": "https://colab.research.google.com/github/nerfstudio-project/nerfstudio/blob/main/colab/demo.ipynb",
+    "date": "2024-08-19T15:23:14",
+    "author": "Matthew Tancik",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "API that allows for a simplified end-to-end process of creating, training, and testing NeRFs"
+  },
+  {
+    "title": "PyTerrier",
+    "url": "https://colab.research.google.com/github/terrier-org/pyterrier/blob/master/examples/notebooks/non_en_retrieval.ipynb",
+    "date": "2024-08-16T09:53:26",
+    "author": "Craig Macdonald",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A Python framework for performing information retrieval experiments"
+  },
+  {
+    "title": "highway-env",
+    "url": "https://colab.research.google.com/github/eleurent/highway-env/blob/master/scripts/parking_model_based.ipynb",
+    "date": "2024-08-09T16:38:54",
+    "author": "Edouard Leurent",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A collection of environments for autonomous driving and tactical decision-making tasks"
+  },
+  {
+    "title": "GNN",
+    "url": "https://colab.research.google.com/github/tensorflow/gnn/blob/master/examples/notebooks/graph_network_shortest_path.ipynb",
+    "date": "2024-08-09T11:08:19",
+    "author": "Oleksandr Ferludin",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Production-tested library for building GNNs at large scale"
+  },
+  {
+    "title": "Pix2Pix",
+    "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/pix2pix.ipynb",
+    "date": "2024-07-24T19:41:21",
+    "author": "Phillip Isola",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This notebook demonstrates image to image translation using conditional GAN's"
+  },
+  {
+    "title": "Image classification",
+    "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/images/classification.ipynb",
+    "date": "2024-07-24T19:41:21",
+    "author": "Billy Lamberta",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial shows how to classify images of flowers"
+  },
+  {
+    "title": "Kor",
+    "url": "https://colab.research.google.com/github/eyurtsev/kor/blob/main/docs/source/guidelines.ipynb",
+    "date": "2024-07-20T02:59:46",
+    "author": "Eugene Yurtsev",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Half-baked prototype that \"helps\" you extract structured data from text using LLMs"
+  },
+  {
+    "title": "Mistral Inference",
+    "url": "https://colab.research.google.com/github/mistralai/mistral-inference/blob/main/tutorials/getting_started.ipynb",
+    "date": "2024-07-16T10:16:39",
+    "author": "mistral",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Minimal code to run Mistral models"
+  },
+  {
+    "title": "XLand-MiniGrid",
+    "url": "https://colab.research.google.com/github/corl-team/xland-minigrid/blob/main/examples/walkthrough.ipynb",
+    "date": "2024-07-12T11:59:12",
+    "author": "Alexander Nikulin",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Suite of tools and grid-world environments for meta-reinforcement learning research"
+  },
+  {
+    "title": "PyTorch3D ",
+    "url": "https://colab.research.google.com/github/facebookresearch/pytorch3d/blob/master/docs/tutorials/implicitron_config_system.ipynb",
+    "date": "2024-07-11T11:35:38",
+    "author": "Nikhila Ravi",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Library for deep learning with 3D data"
+  },
+  {
+    "title": "Stable Diffusion Videos",
+    "url": "https://colab.research.google.com/github/nateraw/stable-diffusion-videos/blob/main/stable_diffusion_videos.ipynb",
+    "date": "2024-07-11T05:48:00",
+    "author": "Nathan Raw",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Create videos with Stable Diffusion by exploring the latent space and morphing between text prompts"
+  },
+  {
+    "title": "Transfer learning and fine-tuning",
+    "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/images/transfer_learning.ipynb",
+    "date": "2024-06-26T02:55:06",
+    "author": "François Chollet",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "You will learn how to classify images of cats and dogs by using transfer learning from a pre-trained network"
+  },
+  {
+    "title": "MARS5",
+    "url": "https://colab.research.google.com/github/Camb-ai/mars5-tts/blob/master/mars5_demo.ipynb",
+    "date": "2024-06-25T08:25:52",
+    "author": "CAMB.AI",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Speech model for insane prosody"
+  },
+  {
+    "title": "ToonCrafter",
+    "url": "https://colab.research.google.com/gist/0smboy/baef995b8f5974f19ac114ec20ac37d5/tooncrafter.ipynb",
+    "date": "2024-06-20T11:38:46",
+    "author": "Jinbo Xing",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Can interpolate two cartoon images by leveraging the pre-trained image-to-video diffusion priors"
+  },
+  {
+    "title": "Brax",
+    "url": "https://colab.research.google.com/github/google/brax/blob/main/notebooks/basics.ipynb",
+    "date": "2024-06-07T16:12:45",
+    "author": "Daniel Freeman",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A differentiable physics engine that simulates environments made up of rigid bodies, joints, and actuators"
+  },
+  {
+    "title": "DiffSynth",
+    "url": "https://colab.research.google.com/github/Artiprocher/DiffSynth-Studio/blob/main/examples/Diffutoon.ipynb",
+    "date": "2024-06-06T10:50:07",
+    "author": "Artiprocher",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Restructured architectures including Text Encoder, UNet, VAE, among others, maintaining compatibility with models from the open-source community while enhancing computational performance"
+  },
+  {
+    "title": "Transformer",
+    "url": "https://colab.research.google.com/github/tensorflow/text/blob/master/docs/tutorials/transformer.ipynb",
+    "date": "2024-05-30T23:40:39",
+    "author": "Ashish Vaswani",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial trains a Transformer model to translate Portuguese to English"
+  },
+  {
+    "title": "NeMo",
+    "url": "https://colab.research.google.com/github/NVIDIA/NeMo/blob/master/tutorials/00_NeMo_Primer.ipynb",
+    "date": "2024-05-25T04:18:43",
+    "author": "Oleksii Kuchaiev",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A conversational AI toolkit built for researchers working on automatic speech recognition, natural language processing, and text-to-speech synthesis"
+  },
+  {
+    "title": "SentencePiece",
+    "url": "https://colab.research.google.com/github/google/sentencepiece/blob/master/python/sentencepiece_python_module_example.ipynb",
+    "date": "2024-05-21T19:41:22",
+    "author": "Taku Kudo",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "An unsupervised text tokenizer and detokenizer mainly for Neural Network-based text generation systems where the vocabulary size is predetermined prior to the neural model training"
+  },
+  {
+    "title": "Llama3 from scratch",
+    "url": "https://colab.research.google.com/github/naklecha/llama3-from-scratch/blob/main/llama3-from-scratch.ipynb",
+    "date": "2024-05-19T16:25:22",
+    "author": "Nishant Aklecha",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Llama3 from scratch, one tensor and matrix multiplication at a time"
+  },
+  {
+    "title": "IC-Light",
+    "url": "https://colab.research.google.com/github/camenduru/IC-Light-jupyter/blob/main/IC_Light_jupyter.ipynb",
+    "date": "2024-05-09T02:23:08",
+    "author": "Lvmin Zhang",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Manipulate the illumination of images"
+  },
+  {
+    "title": "Neural style transfer",
+    "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/style_transfer.ipynb",
+    "date": "2024-05-06T21:18:54",
+    "author": "Leon Gatys",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial uses deep learning to compose one image in the style of another image"
+  },
+  {
+    "title": "Autoencoders",
+    "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/autoencoder.ipynb",
+    "date": "2024-04-15T20:54:29",
+    "author": "Billy Lamberta",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial introduces autoencoders with three examples: the basics, image denoising, and anomaly detection"
+  },
+  {
+    "title": "MagicTime",
+    "url": "https://colab.research.google.com/github/camenduru/MagicTime-jupyter/blob/main/MagicTime_jupyter.ipynb",
+    "date": "2024-04-14T12:30:06",
+    "author": "Shenghai Yuan",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Metamorphic time-lapse video generation model, which learns real-world physics knowledge from time-lapse videos and implements metamorphic generation"
+  },
+  {
+    "title": "SAGE",
+    "url": "https://colab.research.google.com/github/ai-forever/sage/blob/main/notebooks/text_correction_demo.ipynb",
+    "date": "2024-04-11T06:23:32",
+    "author": "Nikita Martynov",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Methodology for generative spelling correction, which was tested on English and Russian languages and potentially can be extended to any language with minor changes"
+  },
+  {
+    "title": "Image segmentation",
+    "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/images/segmentation.ipynb",
+    "date": "2024-04-09T16:26:04",
+    "author": "Olaf Ronneberger",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial focuses on the task of image segmentation, using a modified U-Net"
+  },
+  {
+    "title": "Open-Sora Plan",
+    "url": "https://colab.research.google.com/github/camenduru/Open-Sora-Plan-jupyter/blob/main/Open_Sora_Plan_jupyter.ipynb",
+    "date": "2024-04-07T13:41:16",
+    "author": "YUAN Lab at PKU",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Simple and efficient design along with remarkable performance in text-to-video generation"
+  },
+  {
+    "title": "Gorilla",
+    "url": "https://colab.research.google.com/drive/1DEBPsccVLF_aUnmD0FwPeHFrtdC0QIUP",
+    "date": "2024-04-06T02:10:47.967000",
+    "author": "Shishir Patil",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Finetuned LLaMA-based model that surpasses the performance of GPT-4 on writing API calls"
+  },
+  {
+    "title": "Cleanlab",
+    "url": "https://colab.research.google.com/github/cleanlab/cleanlab/blob/master/docs/source/tutorials/image.ipynb",
+    "date": "2024-03-30T01:29:39",
+    "author": "Curtis Northcutt",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Helps you clean data and labels by automatically detecting issues in a ML dataset"
+  },
+  {
+    "title": "AniPortrait",
+    "url": "https://colab.research.google.com/github/camenduru/AniPortrait-jupyter/blob/main/AniPortrait_vid2vid_jupyter.ipynb",
+    "date": "2024-03-27T12:26:53",
+    "author": "Zejun Yang",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Framework for generating high-quality animation driven by audio and a reference portrait image"
+  },
+  {
+    "title": "OpenVINO",
+    "url": "https://colab.research.google.com/github/openvinotoolkit/openvino_notebooks/blob/main/notebooks/001-hello-world/001-hello-world.ipynb",
+    "date": "2024-03-25T10:37:10",
+    "author": "intel",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Open-source toolkit for optimizing and deploying AI inference"
+  },
+  {
+    "title": "Gazelle",
+    "url": "https://colab.research.google.com/github/tincans-ai/gazelle/blob/master/examples/infer_quantized.ipynb",
+    "date": "2024-03-20T14:10:17",
+    "author": "Tincans",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Joint Speech Language Model"
+  },
+  {
+    "title": "Intel® Extension for Transformers",
+    "url": "https://colab.research.google.com/github/intel/intel-extension-for-transformers/blob/main/docs/tutorials/pytorch/text-classification/SetFit_model_compression_AGNews.ipynb",
+    "date": "2024-03-19T08:37:41",
+    "author": "intel",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Transformer-based Toolkit to Accelerate GenAI/LLM Everywhere"
+  },
+  {
+    "title": "Datasets",
+    "url": "https://colab.research.google.com/github/huggingface/notebooks/blob/main/datasets_doc/en/quickstart.ipynb",
+    "date": "2024-03-18T15:45:46",
+    "author": "Quentin Lhoest",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A Community Library for Natural Language Processing"
+  },
+  {
+    "title": "Evidently",
+    "url": "https://colab.research.google.com/github/evidentlyai/evidently/blob/main/examples/sample_notebooks/getting_started_tutorial.ipynb",
+    "date": "2024-03-15T13:07:07",
+    "author": "Elena Samuylova",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "An open-source framework to evaluate, test and monitor ML models in production"
+  },
+  {
+    "title": "Instructor",
+    "url": "https://colab.research.google.com/drive/1iBkrEh2G5U8yh8RmI8EkWxjLq6zIIuVm",
+    "date": "2024-03-13T15:12:05.811000",
+    "author": "Jason Liu",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Library that makes it a breeze to work with structured outputs from large language models"
+  },
+  {
+    "title": "MetaVoice",
+    "url": "https://colab.research.google.com/drive/1UmjE1mzfG4td0rCjJEaAWGQXpn_GuwwY",
+    "date": "2024-02-26T22:00:00.824000",
+    "author": "MetaVoice",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "1.2B parameter base model trained on 100K hours of speech for TTS"
+  },
+  {
+    "title": "OmegaConf",
+    "url": "https://colab.research.google.com/github/omry/omegaconf/blob/master/docs/notebook/Tutorial.ipynb",
+    "date": "2024-02-15T19:24:39",
+    "author": "Omry Yadan",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Hierarchical configuration system, with support for merging configurations from multiple sources providing a consistent API regardless of how the configuration was created"
+  },
+  {
+    "title": "Optuna",
+    "url": "https://colab.research.google.com/github/optuna/optuna-examples/blob/main/quickstart.ipynb",
+    "date": "2024-02-15T02:27:38",
+    "author": "Takuya Akiba",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "An automatic hyperparameter optimization software framework, particularly designed for machine learning"
+  },
+  {
+    "title": "Data augmentation",
+    "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/images/data_augmentation.ipynb",
+    "date": "2024-02-14T06:57:13",
+    "author": "Billy Lamberta",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial demonstrates data augmentation: a technique to increase the diversity of your training set by applying random transformations such as image rotation"
+  },
+  {
+    "title": "Stable Cascade",
+    "url": "https://colab.research.google.com/github/mkshing/notebooks/blob/main/stable_cascade.ipynb",
+    "date": "2024-02-14T01:28:07",
+    "author": "Stability AI",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Text to image model introduces an interesting three-stage approach, setting new benchmarks for quality, flexibility, fine-tuning, and efficiency with a focus on further eliminating hardware barriers"
+  },
+  {
+    "title": "CleanVision",
+    "url": "https://colab.research.google.com/github/cleanlab/cleanvision/blob/main/docs/source/tutorials/tutorial.ipynb",
+    "date": "2024-02-13T17:13:27",
+    "author": "cleanlab",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Automatically detects potential issues in image datasets like images that are: blurry, under/over-exposed, (near) duplicates, etc"
+  },
+  {
+    "title": "DynamiCrafter",
+    "url": "https://colab.research.google.com/github/camenduru/DynamiCrafter-colab/blob/main/DynamiCrafter_colab_576_1024.ipynb",
+    "date": "2024-02-12T08:48:45",
+    "author": "Jinbo Xing",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Animating Open-domain Images with Video Diffusion Priors"
+  },
+  {
+    "title": "XLA",
+    "url": "https://colab.research.google.com/github/openxla/xla/blob/main/docs/tf2xla/tutorials/jit_compile.ipynb",
+    "date": "2024-02-02T17:35:18",
+    "author": "OpenXLA",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Accelerated Linear Algebra is an open-source machine learning compiler for GPUs, CPUs, and ML accelerators"
+  },
+  {
+    "title": "Composer",
+    "url": "https://colab.research.google.com/github/mosaicml/composer/blob/dev/examples/getting_started.ipynb",
+    "date": "2024-02-01T22:17:22",
+    "author": "The Mosaic ML Team",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "PyTorch library that enables you to train neural networks faster, at lower cost, and to higher accuracy"
+  },
+  {
+    "title": "CycleGAN",
+    "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/cyclegan.ipynb",
+    "date": "2024-01-17T01:20:28",
+    "author": "Jun-Yan Zhu",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This notebook demonstrates unpaired image to image translation using conditional GAN's"
+  },
+  {
+    "title": "Integrated gradients",
+    "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/interpretability/integrated_gradients.ipynb",
+    "date": "2024-01-17T01:20:28",
+    "author": "Mukund Sundararajan",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial demonstrates how to implement Integrated Gradients, an Explainable AI technique"
+  },
+  {
+    "title": "MAGNeT",
+    "url": "https://colab.research.google.com/github/camenduru/MAGNeT-colab/blob/main/MAGNET_colab.ipynb",
+    "date": "2024-01-16T02:28:12",
+    "author": "Alon Ziv",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Masked generative sequence modeling method that operates directly over several streams of audio tokens"
+  },
+  {
+    "title": "AutoFaiss",
+    "url": "https://colab.research.google.com/github/criteo/autofaiss/blob/master/docs/notebooks/autofaiss_getting_started.ipynb",
+    "date": "2024-01-12T09:26:30",
+    "author": "Ctiteo",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Automatically create Faiss knn indices with the most optimal similarity search parameters"
+  },
+  {
+    "title": "Retrieval based Voice Conversion WebUI",
+    "url": "https://colab.research.google.com/github/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/main/Retrieval_based_Voice_Conversion_WebUI.ipynb",
+    "date": "2024-01-11T13:40:34",
+    "author": "RVC-Project",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "An easy-to-use Voice Conversion framework based on VITS"
+  },
+  {
+    "title": "Big Vision",
+    "url": "https://colab.research.google.com/github/google-research/big_vision/blob/main/big_vision/configs/proj/image_text/lit.ipynb",
+    "date": "2024-01-03T17:32:38",
+    "author": "Lucas Beyer",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This codebase is designed for training large-scale vision models using Cloud TPU VMs or GPU machines"
+  },
+  {
+    "title": "Open Interpreter",
+    "url": "https://colab.research.google.com/drive/1WKmRXZgsErej2xUriKzxrEAXdxMSgWbb",
+    "date": "2024-01-03T11:08:14.272000",
+    "author": "Killian Lucas",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "An open-source, locally running implementation of OpenAI's Code Interpreter"
+  },
+  {
+    "title": "Seamless Communication",
+    "url": "https://colab.research.google.com/github/facebookresearch/seamless_communication/blob/main/Seamless_Tutorial.ipynb",
+    "date": "2023-12-14T22:04:07",
+    "author": "Loïc Barrault",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Family of AI models that enable more natural and authentic communication across languages"
+  },
+  {
+    "title": "colab2pdf",
+    "url": "https://colab.research.google.com/drive/1zqrIYC0iQ_CZkRqGXgZggrwjtt_4BmpL",
+    "date": "2023-12-11T04:27:06.471000",
+    "author": "Drengskapur",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Convert your Colab notebook to a PDF"
+  },
+  {
+    "title": "Sentence Transformers",
+    "url": "https://colab.research.google.com/github/UKPLab/sentence-transformers/blob/master/examples/applications/retrieve_rerank/retrieve_rerank_simple_wikipedia.ipynb",
+    "date": "2023-12-07T13:36:25",
+    "author": "Nils Reimers",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Multilingual Sentence, Paragraph, and Image Embeddings using BERT & Co"
+  },
+  {
+    "title": "CleanRL",
+    "url": "https://colab.research.google.com/github/vwxyzjn/cleanrl/blob/master/docs/get-started/CleanRL_Huggingface_Integration_Demo.ipynb",
+    "date": "2023-11-28T01:32:11",
+    "author": "Shengyi Huang",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Deep Reinforcement Learning library that provides high-quality single-file implementation with research-friendly features"
+  },
+  {
+    "title": "Vocos",
+    "url": "https://colab.research.google.com/github/charactr-platform/vocos/blob/main/notebooks/Bark%2BVocos.ipynb",
+    "date": "2023-11-21T13:38:39",
+    "author": "Hubert Siuzdak",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Closing the gap between time-domain and Fourier-based neural vocoders for high-quality audio synthesis"
+  },
+  {
+    "title": "X—LLM",
+    "url": "https://colab.research.google.com/drive/1zsNmJFns1PKZy5VE5p5nsQL-mZF7SwHf?usp=sharing",
+    "date": "2023-11-15T11:12:07.032000",
+    "author": "Boris Zubarev",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Easy LLM Finetuning using the most advanced methods"
+  },
+  {
+    "title": "Distil-Whisper",
+    "url": "https://colab.research.google.com/github/sanchit-gandhi/notebooks/blob/main/Distil_Whisper_Benchmark.ipynb",
+    "date": "2023-11-08T14:59:02",
+    "author": "Sanchit Gandhi",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Maintains the robustness of the Whisper model to difficult acoustic conditions, while being less prone to hallucination errors on long-form audio"
+  },
+  {
+    "title": "AnimateDiff",
+    "url": "https://colab.research.google.com/github/camenduru/AnimateDiff-colab/blob/main/AnimateDiff_colab.ipynb",
+    "date": "2023-10-30T15:13:20",
+    "author": "Yuwei Guo",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Practical framework to animate most of the existing personalized text-to-image models once and for all, saving efforts in model-specific tuning"
+  },
+  {
+    "title": "Intel® Neural Compressor",
+    "url": "https://colab.research.google.com/github/intel/neural-compressor/blob/master/examples/notebook/onnxruntime/Quick_Started_Notebook_of_INC_for_ONNXRuntime.ipynb",
+    "date": "2023-10-27T03:00:26",
+    "author": "intel",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Aims to provide popular model compression techniques such as quantization, pruning (sparsity), distillation, and neural architecture search on mainstream frameworks such as TensorFlow, PyTorch, ONNX R..."
+  },
+  {
+    "title": "Bark",
+    "url": "https://colab.research.google.com/drive/1dWWkZzvu7L9Bunq9zvD-W02RFUXoW-Pd",
+    "date": "2023-10-25T10:05:06.166000",
+    "author": "suno",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Transformer-based text-to-audio model"
+  },
+  {
+    "title": "Mistral Transformer",
+    "url": "https://colab.research.google.com/github/camenduru/Mistral-colab/blob/main/Mistral_colab.ipynb",
+    "date": "2023-10-09T13:51:56",
+    "author": "Albert Jiang",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "The most powerful language model for its size to date"
+  },
+  {
+    "title": "Fooocus",
+    "url": "https://colab.research.google.com/github/lllyasviel/Fooocus/blob/main/colab.ipynb",
+    "date": "2023-10-03T17:36:42",
+    "author": "Lvmin Zhang",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Image generating software"
+  },
+  {
+    "title": "Actor-Critic",
+    "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/reinforcement_learning/actor_critic.ipynb",
+    "date": "2023-09-27T22:10:32",
+    "author": "Vijay Konda",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial demonstrates how to implement the Actor-Critic method using TensorFlow to train an agent on the Open AI Gym CartPole-V0 environment"
+  },
+  {
+    "title": "MMagic",
+    "url": "https://colab.research.google.com/github/open-mmlab/mmagic/blob/main/demo/mmagic_inference_tutorial.ipynb",
+    "date": "2023-09-11T07:45:30",
+    "author": "OpenMMLab",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "AIGC toolbox for professional AI researchers and machine learning engineers to explore image and video processing, editing and generation"
+  },
+  {
+    "title": "SeqIO",
+    "url": "https://colab.research.google.com/github/google/seqio/blob/main/seqio/notebooks/Evaluation.ipynb",
+    "date": "2023-09-08T21:09:57",
+    "author": "Adam Roberts",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Library for processing sequential data to be fed into downstream sequence models"
+  },
+  {
+    "title": "MMAction2",
+    "url": "https://colab.research.google.com/github/open-mmlab/mmaction2/blob/master/demo/mmaction2_tutorial.ipynb",
+    "date": "2023-09-06T13:22:28",
+    "author": "MMAction2 Contributors",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "An open-source toolbox for video understanding based on PyTorch"
+  },
+  {
+    "title": "Ray",
+    "url": "https://colab.research.google.com/github/ray-project/ray/blob/master/doc/source/tune/examples/optuna_example.ipynb",
+    "date": "2023-09-06T05:55:20",
+    "author": "Philipp Moritz",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Unified framework for scaling AI and Python applications"
+  },
+  {
+    "title": "Home Robot",
+    "url": "https://colab.research.google.com/github/facebookresearch/home-robot/blob/master/src/home_robot_sim/notebooks/velocity_control_sim.ipynb",
+    "date": "2023-08-30T20:43:49",
+    "author": "Chris Paxton",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Low-level API for controlling various home robots"
+  },
+  {
+    "title": "Neural Tangents",
+    "url": "https://colab.research.google.com/github/google/neural-tangents/blob/main/notebooks/neural_tangents_cookbook.ipynb",
+    "date": "2023-08-29T17:04:46",
+    "author": "Roman Novak",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Library designed to enable research into infinite-width neural networks"
+  },
+  {
+    "title": "Stable Diffusion 2",
+    "url": "https://colab.research.google.com/github/qunash/stable-diffusion-2-gui/blob/main/stable_diffusion_2_0.ipynb",
+    "date": "2023-08-26T19:35:56",
+    "author": "Robin Rombach",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "New stable diffusion model at 768x768 resolution. Same number of parameters in the U-Net as 1.5, but uses OpenCLIP-ViT/H as the text encoder and is trained from scratch"
+  },
+  {
+    "title": "DALL·E Mini",
+    "url": "https://colab.research.google.com/github/borisdayma/dalle-mini/blob/main/tools/inference/inference_pipeline.ipynb",
+    "date": "2023-08-22T04:06:28",
+    "author": "Boris Dayma",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Generate images from a text prompt"
+  },
+  {
+    "title": "Classify text with BERT",
+    "url": "https://colab.research.google.com/github/tensorflow/text/blob/master/docs/tutorials/classify_text_with_bert.ipynb",
+    "date": "2023-08-08T06:19:55",
+    "author": "Anirudh Dubey",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial contains complete code to fine-tune BERT to perform sentiment analysis on a dataset of plain-text IMDB movie reviews"
+  },
+  {
+    "title": "Kandinsky 2.1",
+    "url": "https://colab.research.google.com/drive/1xSbu-b-EwYd6GdaFPRVgvXBX_mciZ41e",
+    "date": "2023-08-07T08:32:09.987000",
+    "author": "Arseniy Shakhmatov",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "As text and image encoder it uses CLIP model and diffusion image prior between latent spaces of CLIP modalities"
+  },
+  {
+    "title": "SoftVC VITS",
+    "url": "https://colab.research.google.com/github/svc-develop-team/so-vits-svc/blob/4.1-Stable/sovits4_for_colab.ipynb",
+    "date": "2023-07-31T10:38:19",
+    "author": "svc develop team",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Singing Voice Conversion"
+  },
+  {
+    "title": "threestudio",
+    "url": "https://colab.research.google.com/github/threestudio-project/threestudio/blob/main/threestudio.ipynb",
+    "date": "2023-07-28T11:36:57",
+    "author": "Yuan-Chen Guo",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Unified framework for 3D content creation from text prompts, single images, and few-shot images, by lifting 2D text-to-image generation models"
+  },
+  {
+    "title": "Image captioning",
+    "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/text/image_captioning.ipynb",
+    "date": "2023-07-25T21:50:14",
+    "author": "Kelvin Xu",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Given an image our goal is to generate a caption"
+  },
+  {
+    "title": "Word2Vec",
+    "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/text/word2vec.ipynb",
+    "date": "2023-07-25T21:50:14",
+    "author": "Tomas Mikolov",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Word2Vec is not a singular algorithm, rather, it is a family of model architectures and optimizations that can be used to learn word embeddings from large datasets"
+  },
+  {
+    "title": "Word embeddings",
+    "url": "https://colab.research.google.com/github/tensorflow/text/blob/master/docs/tutorials/word_embeddings.ipynb",
+    "date": "2023-07-25T21:50:13",
+    "author": "Billy Lamberta",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial contains an introduction to word embeddings"
+  },
+  {
+    "title": "Tortoise",
+    "url": "https://colab.research.google.com/github/neonbjb/tortoise-tts/blob/main/tortoise_tts.ipynb",
+    "date": "2023-07-15T17:30:19",
+    "author": "James Betker",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A multi-voice TTS system trained with an emphasis on quality"
+  },
+  {
+    "title": "Petals",
+    "url": "https://colab.research.google.com/drive/1Ervk6HPNS6AYVr3xVdQnY5a-TjjmLCdQ",
+    "date": "2023-07-05T12:52:14.840000",
+    "author": "BigScience",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Run 100B+ language models at home, BitTorrent-style"
+  },
+  {
+    "title": "Epistemic Neural Networks",
+    "url": "https://colab.research.google.com/github/deepmind/enn/blob/master/enn/colabs/enn_demo.ipynb",
+    "date": "2023-06-26T22:45:50",
+    "author": "Ian Osband",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A library for neural networks that know what they don't know"
+  },
+  {
+    "title": "DeepFloyd IF",
+    "url": "https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/deepfloyd_if_free_tier_google_colab.ipynb",
+    "date": "2023-06-26T19:05:36",
+    "author": "Alex Shonenkov",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "State-of-the-art open-source text-to-image model with a high degree of photorealism and language understanding"
+  },
+  {
+    "title": "normflows",
+    "url": "https://colab.research.google.com/github/VincentStimper/normalizing-flows/blob/master/examples/paper_example_nsf_colab.ipynb",
+    "date": "2023-06-26T12:59:51",
+    "author": "Vincent Stimper",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "PyTorch implementation of discrete normalizing flows"
+  },
+  {
+    "title": "MMPose",
+    "url": "https://colab.research.google.com/github/open-mmlab/mmpose/blob/master/demo/MMPose_Tutorial.ipynb",
+    "date": "2023-06-19T02:11:30",
+    "author": "OpenMMLab",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Toolbox for pose estimation based on PyTorch"
+  },
+  {
+    "title": "MyoSuite",
+    "url": "https://colab.research.google.com/drive/1U6vo6Q_rPhDaq6oUMV7EAZRm6s0fD1wn",
+    "date": "2023-06-16T19:56:41.905000",
+    "author": "Vittorio Caggiano",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A collection of musculoskeletal environments and tasks simulated with the MuJoCo physics engine and wrapped in the OpenAI gym API to enable the application of Machine Learning to bio-mechanic control ..."
+  },
+  {
+    "title": "Audiocraft",
+    "url": "https://colab.research.google.com/drive/1fxGqfg96RBUvGxZ1XXN07s3DthrKUl4-",
+    "date": "2023-06-11T13:27:43.382000",
+    "author": "Jade Copet",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "PyTorch library for deep learning research on audio generation"
+  },
+  {
+    "title": "Detectron2",
+    "url": "https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5",
+    "date": "2023-05-26T02:47:19.579000",
+    "author": "Yuxin Wu",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "FAIR's next-generation platform for object detection and segmentation"
+  },
+  {
+    "title": "Reverb",
+    "url": "https://colab.research.google.com/github/deepmind/reverb/blob/master/examples/demo.ipynb",
+    "date": "2023-05-23T14:56:23",
+    "author": "Albin Cassirer",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Efficient and easy-to-use data storage and transport system designed for machine learning research"
+  },
+  {
+    "title": "MMDetection",
+    "url": "https://colab.research.google.com/github/open-mmlab/mmdetection/blob/main/demo/MMDet_Tutorial.ipynb",
+    "date": "2023-05-17T10:06:45",
+    "author": "OpenMMLab",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Open source object detection toolbox based on PyTorch"
+  },
+  {
+    "title": "ChatRWKV",
+    "url": "https://colab.research.google.com/github/resloved/RWKV-notebooks/blob/master/RWKV_ChatRWKV.ipynb",
+    "date": "2023-05-08T02:13:36",
+    "author": "Bo Peng",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Like ChatGPT but powered by RWKV (100% RNN) language model, which is the only RNN that can match transformers in quality and scaling, while being faster and saves VRAM"
+  },
+  {
+    "title": "PyGlove",
+    "url": "https://colab.research.google.com/github/google/pyglove/blob/main/docs/notebooks/ml/efficiently_exchange_ml_ideas_as_code.ipynb",
+    "date": "2023-05-06T00:51:34",
+    "author": "Daiyi Peng",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "General-purpose library for Python object manipulation"
+  },
+  {
+    "title": "Python Data Science Handbook",
+    "url": "https://colab.research.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/Index.ipynb",
+    "date": "2023-05-05T23:20:45",
+    "author": "Jake Vanderplas",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Jupyter notebook version of the Python Data Science Handbook by Jake VanderPlas"
+  },
+  {
+    "title": "PGMax",
+    "url": "https://colab.research.google.com/github/deepmind/PGMax/blob/main/examples/rcn.ipynb",
+    "date": "2023-05-05T16:38:30",
+    "author": "Guangyao Zhou",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "General factor graphs for discrete probabilistic graphical models, and hardware-accelerated differentiable loopy belief propagation in JAX"
+  },
+  {
+    "title": "StableLM",
+    "url": "https://colab.research.google.com/github/Stability-AI/StableLM/blob/main/notebooks/stablelm-alpha.ipynb",
+    "date": "2023-04-27T15:05:42",
+    "author": "Stability AI",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Stability AI Language Models"
+  },
+  {
+    "title": "TTS",
+    "url": "https://colab.research.google.com/github/coqui-ai/TTS/blob/dev/notebooks/Tutorial_2_train_your_first_TTS_model.ipynb",
+    "date": "2023-04-26T13:22:57",
+    "author": "Eren Gölge",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A library for advanced Text-to-Speech generation, built on the latest research, was designed to achieve the best trade-off among ease-of-training, speed and quality"
+  },
+  {
+    "title": "OpenCLIP",
+    "url": "https://colab.research.google.com/github/mlfoundations/open_clip/blob/master/docs/Interacting_with_open_clip.ipynb",
+    "date": "2023-04-16T17:13:02",
+    "author": "Ross Wightman",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "An open source implementation of CLIP"
+  },
+  {
+    "title": "Stable Baselines3",
+    "url": "https://colab.research.google.com/github/Stable-Baselines-Team/rl-colab-notebooks/blob/sb3/stable_baselines_getting_started.ipynb",
+    "date": "2023-04-14T11:07:18",
+    "author": "Antonin Raffin",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Set of reliable implementations of reinforcement learning algorithms in PyTorch"
+  },
+  {
+    "title": "RL Baselines3 Zoo",
+    "url": "https://colab.research.google.com/github/Stable-Baselines-Team/rl-colab-notebooks/blob/sb3/rl-baselines-zoo.ipynb",
+    "date": "2023-04-14T11:07:18",
+    "author": "Antonin Raffin",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Training Framework for Stable Baselines3 Reinforcement Learning Agents"
+  },
+  {
+    "title": "Grounded-SAM",
+    "url": "https://colab.research.google.com/github/betogaona7/Grounded-Segment-Anything/blob/main/grounded_sam_colab_demo.ipynb",
+    "date": "2023-04-12T04:57:18",
+    "author": "IDEA-Research",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Marrying Grounding DINO with Segment Anything & Stable Diffusion & Recognize Anything - Automatically Detect, Segment and Generate Anything"
+  },
+  {
+    "title": "TFDS",
+    "url": "https://colab.research.google.com/github/tensorflow/datasets/blob/master/docs/overview.ipynb",
+    "date": "2023-04-11T12:04:17",
+    "author": "Google",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Collection of ready-to-use datasets for use with TensorFlow, Jax, and other Machine Learning frameworks"
+  },
+  {
+    "title": "Optimum",
+    "url": "https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/question_answering_ort.ipynb",
+    "date": "2023-04-06T10:30:19",
+    "author": "Hugging Face",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Extension of Transformers and Diffusers, providing a set of optimization tools enabling maximum efficiency to train and run models on targeted hardware, while keeping things easy to use"
+  },
+  {
+    "title": "MMOCR",
+    "url": "https://colab.research.google.com/github/open-mmlab/mmocr/blob/master/demo/tutorial.ipynb",
+    "date": "2023-04-06T09:25:45",
+    "author": "Zhanghui Kuang",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Open source toolkit based on PyTorch and MMDetection, supporting numerous OCR-related models, including text detection, text recognition, and key information extraction"
+  },
+  {
+    "title": "MMSegmentation",
+    "url": "https://colab.research.google.com/github/open-mmlab/mmsegmentation/blob/main/demo/MMSegmentation_Tutorial.ipynb",
+    "date": "2023-03-31T08:26:30",
+    "author": "OpenMMLab",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Open source semantic segmentation toolbox based on PyTorch"
+  },
+  {
+    "title": "LAVIS",
+    "url": "https://colab.research.google.com/github/salesforce/LAVIS/blob/main/projects/img2llm-vqa/img2llm_vqa.ipynb",
+    "date": "2023-03-24T06:42:45",
+    "author": "Dongxu Li",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Python deep learning library for LAnguage-and-VISion intelligence research and applications"
+  },
+  {
+    "title": "AudioLM",
+    "url": "https://colab.research.google.com/github/lucidrains/audiolm-pytorch/blob/main/audiolm_pytorch_demo.ipynb",
+    "date": "2023-03-23T21:25:18",
+    "author": "Phil Wang",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Framework for high-quality audio generation with long-term consistency"
+  },
+  {
+    "title": "pymdp",
+    "url": "https://colab.research.google.com/github/infer-actively/pymdp/blob/master/docs/notebooks/active_inference_from_scratch.ipynb",
+    "date": "2023-03-19T11:38:18",
+    "author": "Conor Heins",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Package for simulating Active Inference agents in Markov Decision Process environments"
+  },
+  {
+    "title": "MMSelfSup",
+    "url": "https://colab.research.google.com/github/open-mmlab/mmselfsup/blob/master/demo/mmselfsup_colab_tutorial.ipynb",
+    "date": "2023-03-14T06:34:27",
+    "author": "Xiaohang Zhan",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Open-source framework for visual pre-training"
+  },
+  {
+    "title": "Tzer",
+    "url": "https://colab.research.google.com/github/ise-uiuc/tzer/blob/main/bug-report.ipynb",
+    "date": "2023-03-09T21:59:57",
+    "author": "Jiawei Liu",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Coverage-Guided Tensor Compiler Fuzzing with Joint IR-Pass Mutation"
+  },
+  {
+    "title": "ArtLine",
+    "url": "https://colab.research.google.com/github/vijishmadhavan/ArtLine/blob/main/ControlNet_%2BArtLine_.ipynb",
+    "date": "2023-03-03T12:25:17",
+    "author": "Vijish Madhavan",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A Deep Learning based project for creating line art portraits"
+  },
+  {
+    "title": "SAHI",
+    "url": "https://colab.research.google.com/github/obss/sahi/blob/main/demo/inference_for_yolov5.ipynb",
+    "date": "2023-02-23T22:26:41",
+    "author": "Fatih Cagatay Akyon",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A lightweight vision library for performing large scale object detection & instance segmentation"
+  },
+  {
+    "title": "AmpliGraph",
+    "url": "https://colab.research.google.com/github/Accenture/AmpliGraph/blob/main/docs/tutorials/AmpliGraphBasicsTutorial.ipynb",
+    "date": "2023-02-23T16:23:00",
+    "author": "Luca Costabello",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A suite of neural machine learning models for relational Learning, a branch of machine learning that deals with supervised learning on knowledge graphs"
+  },
+  {
+    "title": "NMT with attention",
+    "url": "https://colab.research.google.com/github/tensorflow/text/blob/master/docs/tutorials/nmt_with_attention.ipynb",
+    "date": "2023-02-15T22:29:16",
+    "author": "Minh-Thang Luong",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This notebook trains a seq2seq model for Spanish to English translation"
+  },
+  {
+    "title": "GLUE using BERT on TPU",
+    "url": "https://colab.research.google.com/github/tensorflow/text/blob/master/docs/tutorials/bert_glue.ipynb",
+    "date": "2023-02-15T22:29:16",
+    "author": "Anirudh Dubey",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial contains complete end-to-end code to train models on a TPU"
+  },
+  {
+    "title": "TensorBoard",
+    "url": "https://colab.research.google.com/github/tensorflow/tensorboard/blob/master/docs/scalars_and_keras.ipynb",
+    "date": "2023-02-10T15:27:35",
+    "author": "Yuan Tang",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Suite of web applications for inspecting and understanding your TensorFlow runs and graphs"
+  },
+  {
+    "title": "High-performance Simulation with Kubernetes",
+    "url": "https://colab.research.google.com/github/tensorflow/federated/blob/master/docs/tutorials/high_performance_simulation_with_kubernetes.ipynb",
+    "date": "2023-01-31T18:31:06",
+    "author": "Jason Roselander",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial will describe how to set up high-performance simulation using a TFF runtime running on Kubernetes"
+  },
+  {
+    "title": "Compel",
+    "url": "https://colab.research.google.com/github/damian0815/compel/blob/main/compel-demo.ipynb",
+    "date": "2023-01-26T09:35:51",
+    "author": "Damian Stewart",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Text prompt weighting and blending library for transformers-type text embedding systems"
+  },
+  {
+    "title": "DALL·E Flow",
+    "url": "https://colab.research.google.com/github/jina-ai/dalle-flow/blob/main/client.ipynb",
+    "date": "2023-01-26T09:12:13",
+    "author": "Han Xiao",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "An interactive workflow for generating high-definition images from text prompt"
+  },
+  {
+    "title": "Diffusers",
+    "url": "https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/diffusers_intro.ipynb",
+    "date": "2023-01-17T09:56:51",
+    "author": "Hugging Face",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Provides pretrained diffusion models across multiple modalities, such as vision and audio, and serves as a modular toolbox for inference and training of diffusion models"
+  },
+  {
+    "title": "Sample Factory",
+    "url": "https://colab.research.google.com/github/alex-petrenko/sample-factory/blob/master/sf_examples/notebooks/samplefactory_hub_example.ipynb",
+    "date": "2023-01-17T00:35:24",
+    "author": "Aleksei Petrenko",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "One of the fastest RL libraries focused on very efficient synchronous and asynchronous implementations of policy gradients"
+  },
+  {
+    "title": "Open-Assistant",
+    "url": "https://colab.research.google.com/github/LAION-AI/Open-Assistant/blob/main/notebooks/data-augmentation/stackexchange-builder/stackexchange-builder.ipynb",
+    "date": "2023-01-14T22:51:09",
+    "author": "Andreas Köpf",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Chat-based assistant that understands tasks, can interact with third-party systems, and retrieve information dynamically to do so"
+  },
+  {
+    "title": "panda-gym",
+    "url": "https://colab.research.google.com/github/qgallouedec/panda-gym/blob/master/examples/PickAndPlace.ipynb",
+    "date": "2023-01-02T15:38:55",
+    "author": "Quentin Gallouédec",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Set of robotic environments based on PyBullet physics engine and gymnasium"
+  },
+  {
+    "title": "BANMo",
+    "url": "https://colab.research.google.com/drive/1dQJn1vsuz0DkyRZbOA1SulkVQ0V1kMUP",
+    "date": "2022-12-30T04:10:22.190000",
+    "author": "Gengshan Yang",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Given multiple casual videos capturing a deformable object, BANMo reconstructs an animatable 3D model, including an implicit canonical 3D shape, appearance, skinning weights, and time-varying articula..."
+  },
+  {
+    "title": "tensor_parallel",
+    "url": "https://colab.research.google.com/github/BlackSamorez/tensor_parallel/blob/master/examples/training_flan-t5-xl.ipynb",
+    "date": "2022-12-29T22:21:07",
+    "author": "Andrei Panferov",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Run large PyTorch models on multiple GPUs in one line of code with potentially linear speedup"
+  },
+  {
+    "title": "TPU",
+    "url": "https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/keras_mnist_tpu.ipynb",
+    "date": "2022-12-20T16:56:20",
+    "author": "Google",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Reference models and tools for Cloud TPUs"
+  },
+  {
+    "title": "rliable",
+    "url": "https://colab.research.google.com/drive/1a0pSD-1tWhMmeJeeoyZM1A-HCW3yf1xR",
+    "date": "2022-12-19T13:52:53.221000",
+    "author": "Rishabh Agarwal",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Library for reliable evaluation, even with a handful of runs, on reinforcement learning and machine learnings benchmarks"
+  },
+  {
+    "title": "TF-Agents",
+    "url": "https://colab.research.google.com/github/tensorflow/agents/blob/master/docs/tutorials/0_intro_rl.ipynb",
+    "date": "2022-12-15T03:06:11",
+    "author": "Sergio Guadarrama",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A reliable, scalable and easy to use TensorFlow library for Contextual Bandits and Reinforcement Learning"
+  },
+  {
+    "title": "PyG",
+    "url": "https://colab.research.google.com/drive/1h3-vJGRVloF5zStxL5I0rSy4ZUPNsjy8",
+    "date": "2022-12-08T06:57:19.504000",
+    "author": "Matthias Fey",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Library built upon PyTorch to easily write and train Graph Neural Networks for a wide range of applications related to structured data"
+  },
+  {
+    "title": "ruGPT3",
+    "url": "https://colab.research.google.com/github/ai-forever/ru-gpts/blob/master/examples/ruGPT3XL_generation.ipynb",
+    "date": "2022-12-07T10:09:45",
+    "author": "Anton Emelyanov",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Example of inference of RuGPT3XL"
+  },
+  {
+    "title": "Mubert",
+    "url": "https://colab.research.google.com/github/ferluht/Mubert-Text-to-Music/blob/main/Mubert_Text_to_Music.ipynb",
+    "date": "2022-10-18T05:49:49",
+    "author": "Ilya Belikov",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Prompt-based music generation via Mubert API"
+  },
+  {
+    "title": "RuDOLPH",
+    "url": "https://colab.research.google.com/github/ai-forever/ru-dolph/blob/master/jupyters/RUDOLPH_tune_i2t_pl.ipynb",
+    "date": "2022-10-06T05:58:40",
+    "author": "Alex Shonenkov",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A fast and light text-image-text transformer designed for a quick and easy fine-tuning setup for the solution of various tasks: from generating images by text description and image classification to v..."
+  },
+  {
+    "title": "Batch RL",
+    "url": "https://colab.research.google.com/drive/1ktlNni_vwFpFtCgUez-RHW0OdGc2U_Wv",
+    "date": "2022-10-03T22:28:53.194000",
+    "author": "Rishabh Agarwal",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Offline RL using the DQN replay dataset comprising the entire replay experience of a DQN agent on 60 Atari 2600 games"
+  },
+  {
+    "title": "EfficientDet",
+    "url": "https://colab.research.google.com/github/google/automl/blob/master/efficientdet/tf2/tutorial.ipynb",
+    "date": "2022-09-27T17:35:24",
+    "author": "Mingxing Tan",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "New family of object detectors, called EfficientDet, which consistently achieve much better efficiency than prior art across a wide spectrum of resource constraints"
+  },
+  {
+    "title": "RL Games",
+    "url": "https://colab.research.google.com/github/Denys88/rl_games/blob/master/notebooks/brax_training.ipynb",
+    "date": "2022-09-27T01:46:11",
+    "author": "Denys Makoviichuk",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "High performance RL library"
+  },
+  {
+    "title": "ACME",
+    "url": "https://colab.research.google.com/github/deepmind/acme/blob/master/examples/tutorial.ipynb",
+    "date": "2022-09-26T11:36:17",
+    "author": "Matt Hoffman",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A library of reinforcement learning components and agents"
+  },
+  {
+    "title": "RWKV",
+    "url": "https://colab.research.google.com/drive/1F7tZoPZaWJf1fsCmZ5tjw6sYHiFOYVWM",
+    "date": "2022-09-21T06:59:47.297000",
+    "author": "Bo Peng",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Reinventing RNNs for the Transformer Era"
+  },
+  {
+    "title": "NetKet",
+    "url": "https://colab.research.google.com/github/PhilipVinc/Lectures/blob/main/2202_NetKet/01_intro.ipynb",
+    "date": "2022-09-15T10:19:32",
+    "author": "Filippo Vicentini",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Open-source project delivering cutting-edge methods for the study of many-body quantum systems with artificial neural networks and machine learning techniques"
+  },
+  {
+    "title": "Stable Diffusion",
+    "url": "https://colab.research.google.com/github/CompVis/stable-diffusion/blob/main/scripts/latent_imagenet_diffusion.ipynb",
+    "date": "2022-08-10T14:30:49",
+    "author": "Robin Rombach",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A latent text-to-image diffusion model"
+  },
+  {
+    "title": "Deep-MAC",
+    "url": "https://colab.research.google.com/github/tensorflow/models/blob/master/research/object_detection/colab_tutorials/deepmac_colab.ipynb",
+    "date": "2022-08-09T22:30:13",
+    "author": "Vighnesh Birodkar",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Welcome to the Novel class segmentation demo"
+  },
+  {
+    "title": "NL-Augmenter",
+    "url": "https://colab.research.google.com/github/GEM-benchmark/NL-Augmenter/blob/main/notebooks/Write_a_sample_transformation.ipynb",
+    "date": "2022-08-06T09:21:30",
+    "author": "Aadesh Gupta",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A collaborative effort intended to add transformations of datasets dealing with natural language"
+  },
+  {
+    "title": "Accelerate",
+    "url": "https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/accelerate/simple_nlp_example.ipynb",
+    "date": "2022-07-27T12:04:57",
+    "author": "Hugging Face",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A simple way to train and use PyTorch models with multi-GPU, TPU, mixed-precision"
+  },
+  {
+    "title": "YOLOv5 on Custom Objects",
+    "url": "https://colab.research.google.com/drive/1gDZ2xcTOgR39tGGs-EZ6i3RTs16wmzZQ",
+    "date": "2022-07-20T19:33:01.740000",
+    "author": "Jacob Solawetz",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This notebook shows training on your own custom objects"
+  },
+  {
+    "title": "MindsEye",
+    "url": "https://colab.research.google.com/drive/1cg0LZ5OfN9LAIB37Xq49as0fSJxcKtC5",
+    "date": "2022-07-06T09:59:55.331000",
+    "author": "multimodal.art",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Graphical user interface built to run multimodal ai art models for free from a Google Colab, without needing edit a single line of code or know any programming"
+  },
+  {
+    "title": "py-irt",
+    "url": "https://colab.research.google.com/github/nd-ball/py-irt/blob/master/examples/py-irt_example.ipynb",
+    "date": "2022-06-30T12:28:50",
+    "author": "John Lalor",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Fitting Item Response Theory models using variational inference"
+  },
+  {
+    "title": "BIG-bench",
+    "url": "https://colab.research.google.com/github/google/BIG-bench/blob/master/notebooks/colab_examples.ipynb",
+    "date": "2022-06-27T22:11:44",
+    "author": "Jaehoon Lee",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A collaborative benchmark intended to probe large language models and extrapolate their future capabilities"
+  },
+  {
+    "title": "HuggingArtists",
+    "url": "https://colab.research.google.com/github/AlekseyKorshuk/huggingartists/blob/master/huggingartists-demo.ipynb",
+    "date": "2022-06-25T14:54:18",
+    "author": "Aleksey Korshuk",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Choose your favorite Artist and train a language model to write new lyrics based on their unique voice"
+  },
+  {
+    "title": "Introduction to the TensorFlow Models NLP library",
+    "url": "https://colab.research.google.com/github/tensorflow/models/blob/master/official/colab/nlp/nlp_modeling_library_intro.ipynb",
+    "date": "2022-06-22T18:46:35",
+    "author": "Chen Chen",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "You will learn how to build transformer-based models for common NLP tasks including pretraining, span labelling and classification using the building blocks from NLP modeling library"
+  },
+  {
+    "title": "Cirq",
+    "url": "https://colab.research.google.com/github/quantumlib/Cirq/blob/master/docs/tutorials/basics.ipynb",
+    "date": "2022-06-21T21:38:39",
+    "author": "Balint Pato",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A python framework for creating, editing, and invoking Noisy Intermediate Scale Quantum circuits"
+  },
+  {
+    "title": "CLIP-as-service",
+    "url": "https://colab.research.google.com/github/jina-ai/clip-as-service/blob/main/docs/hosting/cas-on-colab.ipynb",
+    "date": "2022-06-19T21:42:49",
+    "author": "Han Xiao",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A low-latency high-scalability service for embedding images and text"
+  },
+  {
+    "title": "TPOT",
+    "url": "https://colab.research.google.com/github/EpistasisLab/tpot/blob/master/tutorials/Titanic_Kaggle.ipynb",
+    "date": "2022-06-15T18:28:30",
+    "author": "Jason Moore",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Automated Machine Learning tool that optimizes machine learning pipelines using genetic programming"
+  },
+  {
+    "title": "Jina",
+    "url": "https://colab.research.google.com/github/jina-ai/jina/blob/master/docs/Using_Jina_on_Colab.ipynb",
+    "date": "2022-06-11T21:00:20",
+    "author": "Han Xiao",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "MLOps framework that empowers anyone to build cross-modal and multi-modal applications on the cloud"
+  },
+  {
+    "title": "MMRotate",
+    "url": "https://colab.research.google.com/github/open-mmlab/mmrotate/blob/main/demo/MMRotate_Tutorial.ipynb",
+    "date": "2022-06-10T07:51:51",
+    "author": "Yue Zhou",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Toolbox for rotated object detection based on PyTorch"
+  },
+  {
+    "title": "Aesthetics Predictor",
+    "url": "https://colab.research.google.com/github/LAION-AI/aesthetic-predictor/blob/main/asthetics_predictor.ipynb",
+    "date": "2022-06-04T09:20:08",
+    "author": "LAION AI",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A linear estimator on top of clip to predict the aesthetic quality of pictures"
+  },
+  {
+    "title": "Flashlight",
+    "url": "https://colab.research.google.com/github/flashlight/flashlight/blob/master/flashlight/app/asr/tutorial/notebooks/FinetuneCTC.ipynb",
+    "date": "2022-06-01T21:58:40",
+    "author": "Jacob Kahn",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Fast, flexible machine learning library written entirely in C++"
+  },
+  {
+    "title": "RL Unplugged",
+    "url": "https://colab.research.google.com/github/deepmind/deepmind_research/blob/master/rl_unplugged/dmlab_r2d2.ipynb",
+    "date": "2022-05-26T16:42:33",
+    "author": "Caglar Gulcehre",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Suite of benchmarks for offline reinforcement learning"
+  },
+  {
+    "title": "Scenic",
+    "url": "https://colab.research.google.com/github/google-research/scenic/blob/main/scenic/common_lib/colabs/scenic_playground.ipynb",
+    "date": "2022-05-04T20:21:28",
+    "author": "Mostafa Dehghani",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Codebase with a focus on research around attention-based models for computer vision"
+  },
+  {
+    "title": "Text generation with RNN",
+    "url": "https://colab.research.google.com/github/tensorflow/text/blob/master/docs/tutorials/text_generation.ipynb",
+    "date": "2022-05-02T23:46:03",
+    "author": "Anirudh Dubey",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial demonstrates how to generate text using a character-based RNN"
+  },
+  {
+    "title": "CLIPDraw",
+    "url": "https://colab.research.google.com/github/kvfrans/clipdraw/blob/main/clipdraw.ipynb",
+    "date": "2022-04-28T22:36:39",
+    "author": "Kevin Frans",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Synthesize drawings to match a text prompt"
+  },
+  {
+    "title": "DeepLab2",
+    "url": "https://colab.research.google.com/github/google-research/deeplab2/blob/main/ViP_DeepLab_Demo.ipynb",
+    "date": "2022-04-27T19:04:35",
+    "author": "Mark Weber",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Library for deep labeling, aiming to provide a unified and state-of-the-art TensorFlow codebase for dense pixel labeling tasks, including, but not limited to semantic segmentation, instance segmentati..."
+  },
+  {
+    "title": "CodeGen",
+    "url": "https://colab.research.google.com/drive/1fQI8OgzMAR0bquCrvhlAtXSw6iMFbVgI",
+    "date": "2022-04-23T12:22:40.036000",
+    "author": "Erik Nijkamp",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Family of open-source model for program synthesis"
+  },
+  {
+    "title": "Jraph",
+    "url": "https://colab.research.google.com/github/google-deepmind/educational/blob/master/colabs/summer_schools/intro_to_graph_nets_tutorial_with_jraph.ipynb",
+    "date": "2022-04-14T23:12:40",
+    "author": "Jonathan Godwin",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "library for graph neural networks in jax"
+  },
+  {
+    "title": "deep-significance",
+    "url": "https://colab.research.google.com/github/Kaleidophon/deep-significance/blob/main/paper/deep-significance%20demo.ipynb",
+    "date": "2022-04-12T15:24:29",
+    "author": "Dennis Ulmer",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Easy-to-use package containing different significance tests and utility functions specifically tailored towards research needs and usability"
+  },
+  {
+    "title": "Text classification with RNN",
+    "url": "https://colab.research.google.com/github/tensorflow/text/blob/master/docs/tutorials/text_classification_rnn.ipynb",
+    "date": "2022-03-17T11:08:49",
+    "author": "Anirudh Dubey",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This text classification tutorial trains a recurrent neural network on the IMDB large movie review dataset for sentiment analysis"
+  },
+  {
+    "title": "TriMap",
+    "url": "https://colab.research.google.com/github/eamid/examples/blob/master/TriMap.ipynb#scrollTo=nSyGA-ymB-jN",
+    "date": "2022-03-17T06:35:50",
+    "author": "Ehsan Amid",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Dimensionality reduction technique based on triplet constraints, which preserves the global structure of the data better than the other commonly used methods such as t-SNE, LargeVis, and UMAP"
+  },
+  {
+    "title": "RLDS",
+    "url": "https://colab.research.google.com/github/google-research/rlds/blob/main/rlds/examples/rlds_tutorial.ipynb",
+    "date": "2022-03-16T19:24:25",
+    "author": "Sabela Ramos",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Reinforcement Learning Datasets and it is an ecosystem of tools to store, retrieve and manipulate episodic data in the context of Sequential Decision Making including RL, Learning for Demonstrations, ..."
+  },
+  {
+    "title": "Real-Time Voice Cloning",
+    "url": "https://colab.research.google.com/github/tugstugi/dl-colab-notebooks/blob/master/notebooks/RealTimeVoiceCloning.ipynb",
+    "date": "2022-03-07T23:03:44",
+    "author": "Corentin Jemine",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "SV2TTS with a vocoder that works in real-time"
+  },
+  {
+    "title": "BLIP",
+    "url": "https://colab.research.google.com/github/salesforce/BLIP/blob/main/demo.ipynb",
+    "date": "2022-03-02T23:59:09",
+    "author": "Junnan Li",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "VLP framework which transfers flexibly to both vision-language understanding and generation tasks"
+  },
+  {
+    "title": "VideoGPT",
+    "url": "https://colab.research.google.com/github/wilson1yan/VideoGPT/blob/master/notebooks/Using_VideoGPT.ipynb",
+    "date": "2022-03-02T18:08:47",
+    "author": "Wilson Yan",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A conceptually simple architecture for scaling likelihood based generative modeling to natural videos"
+  },
+  {
+    "title": "Silero Models",
+    "url": "https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples.ipynb",
+    "date": "2022-02-27T19:20:42",
+    "author": "Silero team",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Pre-trained speech-to-text, text-to-speech and text-enhancement models made embarrassingly simple"
+  },
+  {
+    "title": "Real-CUGAN",
+    "url": "https://colab.research.google.com/github/bilibili/ailab/blob/main/Real-CUGAN/colab-demo.ipynb",
+    "date": "2022-02-27T16:04:07",
+    "author": "bilibili",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "AI super resolution model for anime images, trained in a million scale anime dataset, using the same architecture as Waifu2x-CUNet"
+  },
+  {
+    "title": "ArcaneGAN",
+    "url": "https://colab.research.google.com/drive/1r1hhciakk5wHaUn1eJk7TP58fV9mjy_W",
+    "date": "2022-02-17T10:56:31.826000",
+    "author": "Alexander Spirin",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Process video in the style of the Arcane animated series"
+  },
+  {
+    "title": "textlesslib",
+    "url": "https://colab.research.google.com/github/facebookresearch/textlesslib/blob/main/examples/resynthesis_and_continuation.ipynb",
+    "date": "2022-02-15T16:27:49",
+    "author": "Eugene Kharitonov",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A library aimed to facilitate research in Textless NLP"
+  },
+  {
+    "title": "AV-HuBERT",
+    "url": "https://colab.research.google.com/drive/1bNXkfpHiVHzXQH8WjGhzQ-fsDxolpUjD",
+    "date": "2022-02-12T18:06:02.002000",
+    "author": "Bowen Shi",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Self-supervised representation learning framework for audio-visual speech"
+  },
+  {
+    "title": "Lingvo",
+    "url": "https://colab.research.google.com/github/tensorflow/lingvo/blob/master/codelabs/introduction.ipynb",
+    "date": "2022-01-28T21:20:28",
+    "author": "Jonathan Shen",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Framework for building neural networks in Tensorflow, particularly sequence models"
+  },
+  {
+    "title": "DeepDream",
+    "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/deepdream.ipynb",
+    "date": "2022-01-13T00:36:58",
+    "author": "Alexander Mordvintsev",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial contains a minimal implementation of DeepDream: an experiment that visualizes the patterns learned by a neural network"
+  },
+  {
+    "title": "FuseDream",
+    "url": "https://colab.research.google.com/drive/190tKQf0aFj-Hi8STUrLc2m4DeOviv7NO",
+    "date": "2022-01-02T18:56:38.191000",
+    "author": "Xingchao Liu",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Training-Free Text-to-Image Generation with Improved CLIP+GAN Space Optimization"
+  },
+  {
+    "title": "MLP",
+    "url": "https://colab.research.google.com/github/bentrevett/pytorch-image-classification/blob/master/1_mlp.ipynb",
+    "date": "2021-12-26T12:04:54",
+    "author": "Ben Trevett",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "The most basic neural network architectures, a multilayer perceptron, also known as a feedforward network"
+  },
+  {
+    "title": "AlexNet",
+    "url": "https://colab.research.google.com/github/bentrevett/pytorch-image-classification/blob/master/3_alexnet.ipynb",
+    "date": "2021-12-26T12:04:54",
+    "author": "Ben Trevett",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A neural network model that uses convolutional neural network layers and was designed for the ImageNet challenge"
+  },
+  {
+    "title": "VGG",
+    "url": "https://colab.research.google.com/github/bentrevett/pytorch-image-classification/blob/master/4_vgg.ipynb",
+    "date": "2021-12-26T12:04:54",
+    "author": "Ben Trevett",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Very Deep Convolutional Networks for Large-Scale Image Recognition"
+  },
+  {
+    "title": "LeNet",
+    "url": "https://colab.research.google.com/github/bentrevett/pytorch-image-classification/blob/master/2_lenet.ipynb",
+    "date": "2021-12-26T11:45:50",
+    "author": "Ben Trevett",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A neural network model that uses convolutional neural network layers and was designed for classifying handwritten characters"
+  },
+  {
+    "title": "Music Composer",
+    "url": "https://colab.research.google.com/github/ai-forever/music-composer/blob/master/src/Music_Composer_Demo_Colab_en.ipynb",
+    "date": "2021-12-20T10:00:20",
+    "author": "bazanovvanya",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Synthesizing symbolic music in MIDI format using the Music Transformer model"
+  },
+  {
+    "title": "FLAML",
+    "url": "https://colab.research.google.com/github/microsoft/FLAML/blob/master/notebook/flaml_automl.ipynb",
+    "date": "2021-12-17T01:11:33",
+    "author": "Chi Wang",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Lightweight Python library that finds accurate machine learning models automatically, efficiently and economically"
+  },
+  {
+    "title": "CompilerGym",
+    "url": "https://colab.research.google.com/github/facebookresearch/CompilerGym/blob/development/examples/getting-started.ipynb",
+    "date": "2021-11-16T11:09:44",
+    "author": "Chris Cummins",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A reinforcement learning toolkit for compiler optimizations"
+  },
+  {
+    "title": "Reformer",
+    "url": "https://colab.research.google.com/drive/1awNgXYtjvUeXl1gS-v1iyDXTJJ-fyJIK",
+    "date": "2021-11-06T23:17:34.930000",
+    "author": "Phil Wang",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Performs on par with Transformer models while being much more memory-efficient and much faster on long sequences"
+  },
+  {
+    "title": "ruDALL·E",
+    "url": "https://colab.research.google.com/github/ai-forever/ru-dalle/blob/master/jupyters/ruDALLE-example-generation-A100.ipynb",
+    "date": "2021-11-03T16:34:46",
+    "author": "Alex Shonenkov",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Generate images from texts in Russian"
+  },
+  {
+    "title": "DeepStyle",
+    "url": "https://colab.research.google.com/drive/14aJ7HQPbcP0sNRIY-FRO4u6lxtlyyxI_",
+    "date": "2021-10-01T20:36:39.161000",
+    "author": "Cameron Smith",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "The Neural Style algorithm synthesizes a pastiche by separating and combining the content of one image with the style of another image using convolutional neural networks"
+  },
+  {
+    "title": "Text2Animation",
+    "url": "https://colab.research.google.com/github/tg-bomze/collection-of-notebooks/blob/master/Text2Animation.ipynb",
+    "date": "2021-09-29T12:43:12",
+    "author": "Katherine Crowson",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Generate images from text phrases with VQGAN and CLIP with animation and keyframes"
+  },
+  {
+    "title": "EfficientNetV2",
+    "url": "https://colab.research.google.com/github/google/automl/blob/master/efficientnetv2/tutorial.ipynb",
+    "date": "2021-09-24T03:24:50",
+    "author": "Mingxing Tan",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A family of image classification models, which achieve better parameter efficiency and faster training speed than prior arts"
+  },
+  {
+    "title": "Clip retrieval",
+    "url": "https://colab.research.google.com/github/rom1504/clip-retrieval/blob/master/notebook/clip-retrieval-getting-started.ipynb",
+    "date": "2021-09-21T20:42:15",
+    "author": "Romain Beaumont",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Easily compute clip embeddings and build a clip retrieval system with them"
+  },
+  {
+    "title": "img2dataset",
+    "url": "https://colab.research.google.com/github/rom1504/img2dataset/blob/master/notebook/img2dataset_getting_started.ipynb",
+    "date": "2021-09-17T11:21:43",
+    "author": "Romain Beaumont",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Easily turn large sets of image urls to an image dataset"
+  },
+  {
+    "title": "Droidlet",
+    "url": "https://colab.research.google.com/github/facebookresearch/droidlet/blob/master/examples_and_tutorials/tutorials/droidlet_for_physical_robots.ipynb",
+    "date": "2021-09-15T18:42:04",
+    "author": "Anurag Pratik",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A modular embodied agent architecture and platform for building embodied agents"
+  },
+  {
+    "title": "GPT-J-6B",
+    "url": "https://colab.research.google.com/github/kingoflolz/mesh-transformer-jax/blob/master/colab_demo.ipynb",
+    "date": "2021-09-15T03:53:58",
+    "author": "Ben Wang",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A 6 billion parameter, autoregressive text generation model trained on The Pile"
+  },
+  {
+    "title": "Lucid Sonic Dreams",
+    "url": "https://colab.research.google.com/drive/1Y5i50xSFIuN3V4Md8TB30_GOAtts7RQD",
+    "date": "2021-08-24T06:03:50.562000",
+    "author": "Mikael Alafriz",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Syncs GAN-generated visuals to music"
+  },
+  {
+    "title": "textgenrnn",
+    "url": "https://colab.research.google.com/drive/1mMKGnVxirJnqDViH7BDJxFqWrsXlPSoK",
+    "date": "2021-07-13T02:50:10.804000",
+    "author": "Max Woolf",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Generate text using a pretrained neural network with a few lines of code, or easily train your own text-generating neural network of any size and complexity"
+  },
+  {
+    "title": "DDSP",
+    "url": "https://colab.research.google.com/github/magenta/ddsp/blob/main/ddsp/colab/tutorials/0_processor.ipynb",
+    "date": "2021-06-30T22:43:01",
+    "author": "Jesse Engel",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Differentiable Digital Signal Processing library, which enables direct integration of classic signal processing elements with deep learning methods"
+  },
+  {
+    "title": "BasicSR",
+    "url": "https://colab.research.google.com/drive/1JQScYICvEC3VqaabLu-lxvq9h7kSV1ML",
+    "date": "2021-06-07T14:23:20.789000",
+    "author": "Xintao Wang",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Open Source Image and Video Restoration Toolbox for Super-resolution, Denoise, Deblurring, etc."
+  },
+  {
+    "title": "TensorFlowTTS",
+    "url": "https://colab.research.google.com/github/TensorSpeech/TensorFlowTTS/blob/master/notebooks/TensorFlowTTS_FastSpeech_with_TFLite.ipynb",
+    "date": "2021-06-01T10:45:38",
+    "author": "Minh Nguyen Quan Anh",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Real-time state-of-the-art speech synthesis architectures such as Tacotron-2, Melgan, Multiband-Melgan, FastSpeech, FastSpeech2 based-on TensorFlow 2"
+  },
+  {
+    "title": "Hyperopt",
+    "url": "https://colab.research.google.com/github/hyperopt/hyperopt/blob/master/tutorial/01.BasicTutorial.ipynb",
+    "date": "2021-06-01T07:48:01",
+    "author": "James Bergstra",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Python library for serial and parallel optimization over awkward search spaces, which may include real-valued, discrete, and conditional dimensions"
+  },
+  {
+    "title": "CNN",
+    "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/images/cnn.ipynb",
+    "date": "2021-05-21T22:21:48",
+    "author": "Billy Lamberta",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial demonstrates training a simple Convolutional Neural Network to classify CIFAR images"
+  },
+  {
+    "title": "Custom GPT-2 + Tokenizer",
+    "url": "https://colab.research.google.com/drive/144MdX5aLqrQ3-YW-po81CQMrD6kpgpYh",
+    "date": "2021-05-17T03:34:24.690000",
+    "author": "Max Woolf",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Train a custom GPT-2 model for free on a GPU using aitextgen!"
+  },
+  {
+    "title": "Train a GPT-2 Text-Generating Model",
+    "url": "https://colab.research.google.com/drive/15qBZx5y9rdaQSyWpsreMDnTiZ5IlN0zD",
+    "date": "2021-05-17T03:34:00.007000",
+    "author": "Max Woolf",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Retrain an advanced text generating neural network on any text dataset for free on a GPU using Colaboratory using aitextgen!"
+  },
+  {
+    "title": "EasyNMT",
+    "url": "https://colab.research.google.com/drive/1X47vgSiOphpxS5w_LPtjQgJmiSTNfRNC",
+    "date": "2021-04-26T20:26:05.741000",
+    "author": "Nils Reimers",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Easy to use, state-of-the-art machine translation for more than 100+ languages"
+  },
+  {
+    "title": "SkinDeep",
+    "url": "https://colab.research.google.com/github/vijishmadhavan/SkinDeep/blob/master/SkinDeep_good.ipynb",
+    "date": "2021-04-24T15:45:23",
+    "author": "Vijish Madhavan",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Remove Body Tattoo Using Deep Learning"
+  },
+  {
+    "title": "PaddleHub",
+    "url": "https://colab.research.google.com/github/PaddlePaddle/PaddleHub/blob/develop/demo/serving/bentoml/cloud-native-model-serving-with-bentoml.ipynb",
+    "date": "2021-04-20T11:56:43",
+    "author": "Zeyu Chen",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Pre-trained models toolkit based on PaddlePaddle: 400+ models including Image, Text, Audio, Video and Cross-Modal with Easy Inference & Serving"
+  },
+  {
+    "title": "OCTIS",
+    "url": "https://colab.research.google.com/github/MIND-Lab/OCTIS/blob/master/examples/OCTIS_Optimizing_CTM.ipynb",
+    "date": "2021-04-19T13:32:45",
+    "author": "Silvia Terragni",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Framework for training, analyzing, and comparing Topic Models, whose optimal hyper-parameters are estimated using a Bayesian Optimization approach"
+  },
+  {
+    "title": "PyTorchVideo",
+    "url": "https://colab.research.google.com/github/facebookresearch/pytorchvideo/blob/main/tutorials/accelerator/Build_your_model_with_PytorchVideo_Accelerator.ipynb",
+    "date": "2021-04-13T18:02:31",
+    "author": "Haoqi Fan",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Deeplearning library with a focus on video understanding work"
+  },
+  {
+    "title": "NeuSpell",
+    "url": "https://colab.research.google.com/github/neuspell/neuspell/blob/master/scripts/english_baselines/2_jamspell.ipynb",
+    "date": "2021-04-03T19:10:43",
+    "author": "Sai Muralidhar Jayanthi",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Open-source toolkit for spelling correction in English"
+  },
+  {
+    "title": "GPT Neo",
+    "url": "https://colab.research.google.com/github/EleutherAI/GPTNeo/blob/master/GPTNeo_example_notebook.ipynb",
+    "date": "2021-03-28T16:19:16",
+    "author": "EleutherAI",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "An implementation of model & data parallel GPT2 & GPT3 -like models, with the ability to scale up to full GPT3 sizes (and possibly more!), using the mesh-tensorflow library"
+  },
+  {
+    "title": "CVAE",
+    "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/cvae.ipynb",
+    "date": "2021-03-22T17:45:23",
+    "author": "Diederik Kingma",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This notebook demonstrates how train a Variational Autoencoder on the MNIST dataset"
+  },
+  {
+    "title": "Big Sleep",
+    "url": "https://colab.research.google.com/drive/1MEWKbm-driRNF8PrU7ogS5o3se-ePyPb",
+    "date": "2021-03-17T02:50:21.123000",
+    "author": "Phil Wang",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Text to image generation, using OpenAI's CLIP and a BigGAN"
+  },
+  {
+    "title": "Deep Daze",
+    "url": "https://colab.research.google.com/drive/1_YOHdORb0Fg1Q7vWZ_KlrtFe9Ur3pmVj",
+    "date": "2021-03-17T02:49:40.476000",
+    "author": "Phil Wang",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Text to image generation using OpenAI's CLIP and Siren"
+  },
+  {
+    "title": "DCGAN",
+    "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/dcgan.ipynb",
+    "date": "2021-03-12T19:23:19",
+    "author": "Alec Radford",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial demonstrates how to generate images of handwritten digits using a Deep Convolutional Generative Adversarial Network"
+  },
+  {
+    "title": "Adversarial FGSM",
+    "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/adversarial_fgsm.ipynb",
+    "date": "2021-03-12T19:15:17",
+    "author": "Ian Goodfellow",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial creates an adversarial example using the Fast Gradient Signed Method attack. This was one of the first and most popular attacks to fool a neural network."
+  },
+  {
+    "title": "GAN steerability",
+    "url": "https://colab.research.google.com/drive/1kn6yG8PqD1U2bUcy32V1iAVjzlcQWcG3",
+    "date": "2021-03-04T21:50:16.124000",
+    "author": "Ali Jahanian",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "We will navigate in GAN latent space to simulate various camera transformations"
+  },
+  {
+    "title": "Trax",
+    "url": "https://colab.research.google.com/github/google/trax/blob/master/trax/intro.ipynb",
+    "date": "2021-02-17T23:17:16",
+    "author": "Google",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "End-to-end library for deep learning that focuses on clear code and speed"
+  },
+  {
+    "title": "bsuite",
+    "url": "https://colab.research.google.com/drive/1rU20zJ281sZuMD1DHbsODFr1DbASL0RH",
+    "date": "2021-02-12T23:59:26.054000",
+    "author": "Ian Osband",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A collection of carefully-designed experiments that investigate core capabilities of an RL agent with two main objectives"
+  },
+  {
+    "title": "TF-Ranking",
+    "url": "https://colab.research.google.com/github/tensorflow/ranking/blob/master/tensorflow_ranking/examples/handling_sparse_features.ipynb",
+    "date": "2021-02-04T05:28:28",
+    "author": "Rama Kumar",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "End-to-end walkthrough of training a TensorFlow Ranking neural network model which incorporates sparse textual features"
+  },
+  {
+    "title": "Toon-Me",
+    "url": "https://colab.research.google.com/github/vijishmadhavan/Light-Up/blob/master/Toon_Me_(Try_it_on_Colab).ipynb",
+    "date": "2021-01-22T10:24:34",
+    "author": "Vijish Madhavan",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A fun project to toon portrait images"
+  },
+  {
+    "title": "TensorNetwork",
+    "url": "https://colab.research.google.com/github/google/TensorNetwork/blob/master/colabs/Tensor_Networks_in_Neural_Networks.ipynb",
+    "date": "2021-01-21T01:24:37",
+    "author": "Chase Roberts",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "A library for easy and efficient manipulation of tensor networks"
+  },
+  {
+    "title": "Spleeter",
+    "url": "https://colab.research.google.com/github/deezer/spleeter/blob/master/spleeter.ipynb",
+    "date": "2021-01-10T22:44:22",
+    "author": "Romain Hennequin",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Deezer source separation library including pretrained models"
+  },
+  {
+    "title": "Bullet Physics SDK",
+    "url": "https://colab.research.google.com/github/bulletphysics/bullet3/blob/master/examples/pybullet/notebooks/HelloPyBullet.ipynb",
+    "date": "2020-10-13T22:34:33",
+    "author": "Erwin Coumans",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Real-time collision detection and multi-physics simulation for VR, games, visual effects, robotics, machine learning etc"
+  },
+  {
+    "title": "Person Remover",
+    "url": "https://colab.research.google.com/drive/1JDpH8MAjaKoekQ_H9ZaxYJ9_axiDtDGm",
+    "date": "2020-08-22T12:10:39.644000",
+    "author": "Javier Gamazo",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Project that combines Pix2Pix and YOLO arhitectures in order to remove people or other objects from photos"
+  },
+  {
+    "title": "Semantic Segmentation",
+    "url": "https://colab.research.google.com/github/CSAILVision/semantic-segmentation-pytorch/blob/master/notebooks/DemoSegmenter.ipynb",
+    "date": "2020-08-21T08:44:20",
+    "author": "Bolei Zhou",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Pytorch implementation for Semantic Segmentation/Scene Parsing on MIT ADE20K dataset"
+  },
+  {
+    "title": "Gin Config",
+    "url": "https://colab.research.google.com/github/google/gin-config/blob/master/gin/gin_intro.ipynb",
+    "date": "2020-08-13T07:12:24",
+    "author": "Dan Holtmann-Rice",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Lightweight configuration framework for Python, based on dependency injection"
+  },
+  {
+    "title": "Dopamine",
+    "url": "https://colab.research.google.com/github/google/dopamine/blob/master/dopamine/colab/jax_agent_visualizer.ipynb",
+    "date": "2020-08-03T23:51:03",
+    "author": "Pablo Castro",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Research framework for fast prototyping of reinforcement learning algorithms"
+  },
+  {
+    "title": "Analyzing Tennis Serve",
+    "url": "https://colab.research.google.com/github/google/making_with_ml/blob/master/sports_ai/Sports_AI_Analysis.ipynb",
+    "date": "2020-07-14T19:53:39",
+    "author": "Dale Markowitz",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "We'll use the Video Intelligence API to analyze a tennis serve, including the angle of the arms and legs during the serve"
+  },
+  {
+    "title": "YOLOv4",
+    "url": "https://colab.research.google.com/drive/1_GdoqCJWXsChrOiY8sZMr_zbr_fH-0Fg",
+    "date": "2020-06-25T01:33:44.334000",
+    "author": "Alexey Bochkovskiy",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This tutorial will help you build YOLOv4 easily in the cloud with GPU enabled so that you can run object detections in milliseconds!"
+  },
+  {
+    "title": "TensorFlow Graphics",
+    "url": "https://colab.research.google.com/github/tensorflow/graphics/blob/master/tensorflow_graphics/notebooks/6dof_alignment.ipynb",
+    "date": "2020-05-20T21:01:19",
+    "author": "Julien Valentin",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Differentiable computer graphics in tensorflow"
+  },
+  {
+    "title": "GAN Dissection",
+    "url": "https://colab.research.google.com/github/SIDN-IAP/global-model-repr/blob/master/notebooks/gandissect_solutions.ipynb",
+    "date": "2020-05-04T18:18:59",
+    "author": "David Bau",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Visualizing and Understanding Generative Adversarial Networks"
+  },
+  {
+    "title": "Sonnet",
+    "url": "https://colab.research.google.com/github/deepmind/sonnet/blob/v2/examples/little_gan_on_mnist.ipynb",
+    "date": "2020-04-17T08:19:41",
+    "author": "Malcolm Reynolds",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Library built on top of TensorFlow 2 designed to provide simple, composable abstractions for machine learning research"
+  },
+  {
+    "title": "Classification of chest vs. adominal X-rays",
+    "url": "https://colab.research.google.com/github/mdai/ml-lessons/blob/master/lesson1-xray-images-classification.ipynb",
+    "date": "2020-03-07T06:47:00",
+    "author": "tmoneyx01",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "The goal of this tutorial is to build a deep learning classifier to accurately differentiate between chest and abdominal X-rays"
+  },
+  {
+    "title": "Earth Engine Python API and Folium Interactive Mapping",
+    "url": "https://colab.research.google.com/github/giswqs/qgis-earthengine-examples/blob/master/Folium/ee-api-folium-setup.ipynb",
+    "date": "2020-01-20T15:22:51",
+    "author": "Qiusheng Wu",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This notebook demonstrates how to setup the Earth Engine and provides several examples for visualizing Earth Engine processed data interactively using the folium library"
+  },
+  {
+    "title": "Tensor2Tensor",
+    "url": "https://colab.research.google.com/github/tensorflow/tensor2tensor/blob/master/tensor2tensor/notebooks/Transformer_translate.ipynb",
+    "date": "2020-01-14T19:45:24",
+    "author": "Ashish Vaswani",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Library for deep learning models that is well-suited for neural machine translation and includes the reference implementation of the state-of-the-art Transformer model"
+  },
+  {
+    "title": "Traffic counting",
+    "url": "https://colab.research.google.com/drive/12N4m_RYKqrpozRzh9qe7nQE_sIqQH9U8",
+    "date": "2020-01-10T13:39:39.317000",
+    "author": "Andrey Nikishaev",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "Making Road Traffic Counting App based on Computer Vision and OpenCV"
+  },
+  {
+    "title": "Imagededup",
+    "url": "https://colab.research.google.com/github/idealo/imagededup/blob/master/examples/CIFAR10_duplicates.ipynb",
+    "date": "2019-10-03T15:27:35",
+    "author": "Tanuj Jain",
+    "tags": [
+      "Tutorial"
+    ],
+    "category": "tutorials",
+    "excerpt": "This package provides functionality to make use of hashing algorithms that are particularly good at finding exact duplicates as well as convolutional neural networks which are also adept at finding ne..."
+  }
+]

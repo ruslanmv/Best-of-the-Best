@@ -1,0 +1,120 @@
+{
+  "papers": [
+    {
+      "name": "Image segmentation",
+      "citations": 39528,
+      "url": "https://doi.org/10.1007/978-3-319-24574-4_28"
+    },
+    {
+      "name": "AlphaFold",
+      "citations": 26907,
+      "url": "https://doi.org/10.1038/s41586-021-03819-2"
+    },
+    {
+      "name": "XGBoost",
+      "citations": 25802,
+      "url": "https://doi.org/10.1145/2939672.2939785"
+    },
+    {
+      "name": "CycleGAN",
+      "citations": 13260,
+      "url": "https://doi.org/10.1109/ICCV.2017.244"
+    },
+    {
+      "name": "Pix2Pix",
+      "citations": 12472,
+      "url": "https://doi.org/10.1109/CVPR.2017.632"
+    },
+    {
+      "name": "MoCo",
+      "citations": 6586,
+      "url": "https://doi.org/10.1109/CVPR42600.2020.00975"
+    },
+    {
+      "name": "LDM",
+      "citations": 5432,
+      "url": "https://doi.org/10.1109/CVPR52688.2022.01042"
+    },
+    {
+      "name": "EfficientDet",
+      "citations": 4631,
+      "url": "https://doi.org/10.1109/CVPR42600.2020.01079"
+    },
+    {
+      "name": "ConvNeXt",
+      "citations": 3588,
+      "url": "https://doi.org/10.1109/CVPR52688.2022.01167"
+    },
+    {
+      "name": "DeepLabCut",
+      "citations": 3485,
+      "url": "https://doi.org/10.1038/s41593-018-0209-y"
+    },
+    {
+      "name": "StyleGAN 2",
+      "citations": 3450,
+      "url": "https://doi.org/10.1109/CVPR42600.2020.00813"
+    },
+    {
+      "name": "Fine-tuning a BERT",
+      "citations": 2816,
+      "url": "https://doi.org/10.18653/v1/N19-1423"
+    },
+    {
+      "name": "SwinIR",
+      "citations": 2182,
+      "url": "https://doi.org/10.1109/ICCVW54120.2021.00210"
+    },
+    {
+      "name": "Instant-NGP",
+      "citations": 1768,
+      "url": "https://doi.org/10.1145/3528223.3530127"
+    },
+    {
+      "name": "Mask2Former",
+      "citations": 1260,
+      "url": "https://doi.org/10.1109/CVPR52688.2022.00135"
+    },
+    {
+      "name": "HMR",
+      "citations": 1248,
+      "url": "https://doi.org/10.1109/CVPR.2018.00744"
+    },
+    {
+      "name": "Taming Transformers for High-Resolution Image Synthesis",
+      "citations": 1150,
+      "url": "https://doi.org/10.1109/CVPR46437.2021.01268"
+    },
+    {
+      "name": "Semantic Segmentation",
+      "citations": 944,
+      "url": "https://doi.org/10.1007/s11263-018-1140-0"
+    },
+    {
+      "name": "Gaussian Splatting",
+      "citations": 940,
+      "url": "https://doi.org/10.1145/3592433"
+    },
+    {
+      "name": "ByteTrack",
+      "citations": 897,
+      "url": "https://doi.org/10.1007/978-3-031-20047-2_1"
+    },
+    {
+      "name": "PIFu",
+      "citations": 837,
+      "url": "https://doi.org/10.1109/ICCV.2019.00239"
+    },
+    {
+      "name": "Neural Style Transfer",
+      "citations": 796,
+      "url": "https://doi.org/10.1167/16.12.326"
+    },
+    {
+      "name": "Real-ESRGAN",
+      "citations": 749,
+      "url": "https://doi.org/10.1109/ICCVW54120.2021.00217"
+    }
+  ],
+  "last_updated": "2025-11-29T21:10:36.133626"
+}
