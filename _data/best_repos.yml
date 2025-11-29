@@ -1,0 +1,6 @@
+- name: "ollama/ollama"
+  stars: 156686
+  url: "https://github.com/ollama/ollama"
+- name: "langchain-ai/langchain"
+  stars: 120655
+  url: "https://github.com/langchain-ai/langchain"

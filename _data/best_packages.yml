@@ -1,0 +1,4 @@
+- name: "xgboost"
+  downloads_month: 22589142
+  downloads_total: 148405359
+  url: "https://pypi.org/project/xgboost/"
