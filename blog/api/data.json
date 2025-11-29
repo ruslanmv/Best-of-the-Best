@@ -2,22 +2,22 @@
   "repositories": [
     {
       "name": "ollama/ollama",
-      "stars": 156686,
+      "stars": 156727,
       "url": "https://github.com/ollama/ollama"
     },
     {
       "name": "langchain-ai/langchain",
-      "stars": 120655,
+      "stars": 120712,
       "url": "https://github.com/langchain-ai/langchain"
     },
     {
       "name": "comfyanonymous/ComfyUI",
-      "stars": 94745,
+      "stars": 94858,
       "url": "https://github.com/comfyanonymous/ComfyUI"
     },
     {
       "name": "openai/whisper",
-      "stars": 91327,
+      "stars": 91359,
       "url": "https://github.com/openai/whisper"
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "name": "CompVis/stable-diffusion",
-      "stars": 71893,
+      "stars": 71903,
       "url": "https://github.com/CompVis/stable-diffusion"
     },
     {
@@ -37,17 +37,17 @@
     },
     {
       "name": "CorentinJ/Real-Time-Voice-Cloning",
-      "stars": 58924,
+      "stars": 58930,
       "url": "https://github.com/CorentinJ/Real-Time-Voice-Cloning"
     },
     {
       "name": "ultralytics/yolov5",
-      "stars": 56178,
+      "stars": 56189,
       "url": "https://github.com/ultralytics/yolov5"
     },
     {
       "name": "facebookresearch/segment-anything",
-      "stars": 52696,
+      "stars": 52706,
       "url": "https://github.com/facebookresearch/segment-anything"
     },
     {
@@ -373,5 +373,5 @@
       "url": "https://pypi.org/project/dopamine-rl/"
     }
   ],
-  "last_updated": "2025-11-29T01:45:11.214302"
+  "last_updated": "2025-11-29T05:35:29.613863"
 }
