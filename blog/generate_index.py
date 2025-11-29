@@ -1,672 +1,336 @@
 """
-Generate index.json and index.html for blog posts
+generate_api_data.py (or generate_index.py)
+
+Unified Data Generator for Best-of-the-Best Dashboard.
+1. Reads "Truth Data" from data/*.json.
+2. Reads "Content Data" from blog/posts/*.md.
+3. Merges, sorts, and normalizes them.
+4. Outputs standardized JSON APIs to blog/api/*.json.
 """
 
 import json
+import sys
 from pathlib import Path
 from datetime import datetime
-import re
 
-
-def extract_frontmatter(content: str) -> dict:
-    """Extract YAML frontmatter from markdown file"""
-    frontmatter = {}
-
-    # Check if file has frontmatter
-    if content.startswith('---'):
-        parts = content.split('---', 2)
-        if len(parts) >= 3:
-            frontmatter_text = parts[1].strip()
-
-            # Parse simple YAML
-            for line in frontmatter_text.split('\n'):
-                if ':' in line:
-                    key, value = line.split(':', 1)
-                    key = key.strip()
-                    value = value.strip().strip('"\'')
-
-                    # Handle tags (array)
-                    if key == 'tags':
-                        # Extract tags from ["tag1", "tag2"] format
-                        tags = re.findall(r'"([^"]*)"', value)
-                        frontmatter[key] = tags
-                    else:
-                        frontmatter[key] = value
-
-            # Get excerpt from content
-            content_body = parts[2].strip()
-            # Get first paragraph as excerpt
-            paragraphs = [p.strip() for p in content_body.split('\n\n') if p.strip() and not p.strip().startswith('#')]
-            if paragraphs:
-                excerpt = paragraphs[0][:200] + '...' if len(paragraphs[0]) > 200 else paragraphs[0]
-                frontmatter['excerpt'] = excerpt
-
-    return frontmatter
-
-
-def generate_html_index(posts: list):
-    """Generate index.html file for the blog"""
-
-    html_template = '''<!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily AI Package Highlights - Best of the Best</title>
-    <meta name="description" content="Discover the best AI packages with watsonx.ai and Watson Orchestrate integration insights">
-    <meta name="author" content="Ruslan Magana Vsevolodovna">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Daily AI Package Highlights">
-    <meta property="og:description" content="Discover the best AI packages with watsonx.ai and Watson Orchestrate integration insights">
-
-    <!-- Minimal Mistakes inspired CSS -->
-    <style>
-        /* Reset and Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary-color: #7a8288;
-            --link-color: #3273dc;
-            --link-hover-color: #0a0a0a;
-            --text-color: #3a3a3a;
-            --background-color: #fff;
-            --border-color: #bdc1c4;
-            --notice-bg: #f3f3f3;
-            --code-bg: #fafafa;
-            --masthead-bg: #fff;
-            --footer-bg: #000;
-            --font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-            --font-family-mono: Monaco, Consolas, "Lucida Console", monospace;
-        }
-
-        html {
-            font-size: 16px;
-            -webkit-text-size-adjust: 100%;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        body {
-            font-family: var(--font-family);
-            color: var(--text-color);
-            background-color: var(--background-color);
-            line-height: 1.5;
-        }
-
-        /* Masthead */
-        .masthead {
-            position: relative;
-            background-color: var(--masthead-bg);
-            border-bottom: 1px solid var(--border-color);
-            animation: intro 0.3s both;
-            animation-delay: 0.15s;
-            z-index: 20;
-        }
-
-        .masthead__inner-wrap {
-            max-width: 1280px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 1em;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .site-title {
-            font-size: 1.25rem;
-            font-weight: bold;
-            line-height: 1;
-            text-decoration: none;
-            color: var(--text-color);
-        }
-
-        .greedy-nav {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .greedy-nav a {
-            color: var(--text-color);
-            text-decoration: none;
-            padding: 0.5rem;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-        }
-
-        .greedy-nav a:hover {
-            background-color: var(--notice-bg);
-        }
-
-        /* Page Content */
-        .page__content {
-            max-width: 1024px;
-            margin: 0 auto;
-            padding: 2em 1em;
-        }
-
-        /* Hero */
-        .page__hero {
-            position: relative;
-            margin-bottom: 2em;
-            background-color: var(--notice-bg);
-            background-size: cover;
-            background-position: center;
-            animation: intro 0.3s both;
-            animation-delay: 0.25s;
-        }
-
-        .page__hero-overlay {
-            position: relative;
-            padding: 3em 1em;
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%);
-            color: #fff;
-        }
-
-        .page__title {
-            font-size: 2.5em;
-            line-height: 1.2;
-            margin-bottom: 0.5em;
-            color: #fff;
-        }
-
-        .page__lead {
-            font-size: 1.25em;
-            margin-bottom: 0;
-        }
-
-        /* Archive */
-        .archive {
-            margin-bottom: 2em;
-        }
-
-        .archive__item-title {
-            margin-bottom: 0.25em;
-            font-size: 1.5em;
-            line-height: 1.2;
-        }
-
-        .archive__item-title a {
-            color: var(--text-color);
-            text-decoration: none;
-        }
-
-        .archive__item-title a:hover {
-            color: var(--link-color);
-            text-decoration: underline;
-        }
-
-        .archive__item-excerpt {
-            margin-top: 0.5em;
-            font-size: 0.875em;
-            color: var(--primary-color);
-        }
-
-        .archive__item {
-            background: var(--background-color);
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            padding: 1.5em;
-            margin-bottom: 1.5em;
-            transition: box-shadow 0.2s;
-        }
-
-        .archive__item:hover {
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .page__meta {
-            margin-top: 0.5em;
-            color: var(--primary-color);
-            font-size: 0.875em;
-        }
-
-        .page__meta i {
-            margin-right: 0.25em;
-        }
-
-        /* Tags */
-        .page__taxonomy {
-            margin-top: 1em;
-        }
-
-        .page__taxonomy-item {
-            display: inline-block;
-            margin-right: 0.5em;
-            margin-bottom: 0.5em;
-            padding: 0.25em 0.75em;
-            background-color: var(--code-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            font-size: 0.75em;
-            text-decoration: none;
-            color: var(--text-color);
-        }
-
-        .page__taxonomy-item:hover {
-            background-color: var(--notice-bg);
-        }
-
-        /* Notice */
-        .notice {
-            margin: 2em 0;
-            padding: 1em;
-            background-color: var(--notice-bg);
-            border-left: 4px solid var(--link-color);
-            border-radius: 4px;
-        }
-
-        .notice h4 {
-            margin-bottom: 0.5em;
-            color: var(--text-color);
-        }
-
-        /* Features */
-        .feature__wrapper {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5em;
-            margin: 2em 0;
-        }
-
-        .feature__item {
-            background: var(--background-color);
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            padding: 1.5em;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .feature__item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .feature__item h3 {
-            font-size: 1.25em;
-            margin-bottom: 0.5em;
-            color: var(--text-color);
-        }
-
-        /* Footer */
-        .page__footer {
-            background-color: var(--footer-bg);
-            color: #fff;
-            margin-top: 3em;
-            animation: intro 0.3s both;
-            animation-delay: 0.45s;
-        }
-
-        .page__footer-inner {
-            max-width: 1024px;
-            margin: 0 auto;
-            padding: 2em 1em;
-        }
-
-        .page__footer-copyright {
-            text-align: center;
-            font-size: 0.875em;
-        }
-
-        .page__footer-follow {
-            text-align: center;
-            margin-bottom: 1em;
-        }
-
-        .page__footer a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 0.5em;
-        }
-
-        .page__footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Buttons */
-        .btn {
-            display: inline-block;
-            margin-bottom: 0.25em;
-            padding: 0.5em 1em;
-            font-family: var(--font-family);
-            font-size: 0.875em;
-            font-weight: bold;
-            text-align: center;
-            text-decoration: none;
-            border-width: 0;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-
-        .btn--primary {
-            background-color: var(--link-color);
-            color: #fff;
-        }
-
-        .btn--primary:hover {
-            background-color: #276cda;
-        }
-
-        /* Animations */
-        @keyframes intro {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .page__title {
-                font-size: 2em;
-            }
-
-            .page__lead {
-                font-size: 1em;
-            }
-
-            .archive__item-title {
-                font-size: 1.25em;
-            }
-
-            .masthead__inner-wrap {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .greedy-nav {
-                margin-top: 1em;
-                flex-wrap: wrap;
-            }
-        }
-
-        /* Loading state */
-        .loading {
-            text-align: center;
-            padding: 2em;
-            color: var(--primary-color);
-        }
-
-        .loading::after {
-            content: '...';
-            animation: loading 1.5s infinite;
-        }
-
-        @keyframes loading {
-            0% { content: '.'; }
-            33% { content: '..'; }
-            66% { content: '...'; }
-        }
-    </style>
-</head>
-<body>
-    <!-- Masthead -->
-    <div class="masthead">
-        <div class="masthead__inner-wrap">
-            <a class="site-title" href="/">Best of the Best</a>
-            <nav class="greedy-nav">
-                <a href="/">Home</a>
-                <a href="data.html">Data Dashboard</a>
-                <a href="api/data.json" target="_blank">API</a>
-                <a href="https://github.com/ruslanmv/Best-of-the-Best" target="_blank">GitHub</a>
-            </nav>
-        </div>
-    </div>
-
-    <!-- Hero -->
-    <div class="page__hero">
-        <div class="page__hero-overlay">
-            <div class="page__content">
-                <h1 class="page__title">Daily AI Package Highlights</h1>
-                <p class="page__lead">Discover the best AI packages with watsonx.ai and Watson Orchestrate integration insights</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Main Content -->
-    <div class="page__content">
-        <!-- Introduction -->
-        <div class="notice">
-            <h4>🤖 AI-Powered Daily Insights</h4>
-            <p>Every day, our multi-agent AI system powered by CrewAI and Ollama analyzes the most trending AI packages, evaluates their potential integration with IBM watsonx.ai and Watson Orchestrate, and creates comprehensive blog posts to help you stay ahead in the AI landscape.</p>
-        </div>
-
-        <!-- Features -->
-        <h2>Why This Blog?</h2>
-        <div class="feature__wrapper">
-            <div class="feature__item">
-                <h3>🔍 AI-Powered Research</h3>
-                <p>Our research agent analyzes thousands of AI packages daily to identify the most impactful and trending tools.</p>
-            </div>
-            <div class="feature__item">
-                <h3>🧠 watsonx.ai Integration</h3>
-                <p>Expert analysis on how each package can enhance your IBM watsonx.ai workflows and capabilities.</p>
-            </div>
-            <div class="feature__item">
-                <h3>⚙️ Watson Orchestrate Applications</h3>
-                <p>Discover how to leverage packages in Watson Orchestrate for automated business processes.</p>
-            </div>
-            <div class="feature__item">
-                <h3>📝 Daily Insights</h3>
-                <p>Fresh content every day, written by AI agents with deep technical knowledge and business acumen.</p>
-            </div>
-            <div class="feature__item">
-                <h3>🤖 Multi-Agent System</h3>
-                <p>Powered by CrewAI with specialized agents for research, analysis, and technical writing.</p>
-            </div>
-            <div class="feature__item">
-                <h3>💡 Practical Examples</h3>
-                <p>Each post includes code examples, use cases, and implementation strategies.</p>
-            </div>
-        </div>
-
-        <!-- Blog Posts -->
-        <h2>Latest Posts</h2>
-        <div id="posts-container" class="archive">
-            <div class="loading">Loading posts</div>
-        </div>
-
-        <!-- Call to Action -->
-        <div style="text-align: center; margin: 3em 0;">
-            <a href="https://github.com/ruslanmv/Best-of-the-Best" class="btn btn--primary">⭐ Star on GitHub</a>
-            <a href="api/feed.xml" class="btn btn--primary">📰 Subscribe to RSS</a>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="page__footer">
-        <div class="page__footer-inner">
-            <div class="page__footer-follow">
-                <a href="https://github.com/ruslanmv" target="_blank">GitHub</a>
-                <a href="https://ruslanmv.com" target="_blank">Personal Site</a>
-                <a href="api/feed.xml">RSS Feed</a>
-            </div>
-            <div class="page__footer-copyright">
-                &copy; 2025 <strong>Ruslan Magana Vsevolodovna</strong>. Powered by Jekyll & Minimal Mistakes.
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script>
-        // Load and display blog posts
-        async function loadPosts() {
-            const container = document.getElementById('posts-container');
-
-            try {
-                const response = await fetch('posts/index.json');
-                if (!response.ok) {
-                    throw new Error('Could not load posts index');
-                }
-
-                const posts = await response.json();
-
-                if (posts.length === 0) {
-                    container.innerHTML = `
-                        <div class="notice">
-                            <p>No posts available yet. Check back tomorrow for the first daily highlight!</p>
-                        </div>
-                    `;
-                    return;
-                }
-
-                // Sort posts by date (newest first)
-                posts.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-                // Generate HTML for each post
-                container.innerHTML = posts.map(post => {
-                    const date = new Date(post.date);
-                    const formattedDate = date.toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric'
-                    });
-
-                    return `
-                        <article class="archive__item">
-                            <h2 class="archive__item-title">
-                                <a href="posts/${post.filename}">${post.title}</a>
-                            </h2>
-                            <p class="page__meta">
-                                <i>📅</i> <time datetime="${post.date}">${formattedDate}</time>
-                                <span> • </span>
-                                <i>✍️</i> ${post.author || 'AI Multi-Agent System'}
-                            </p>
-                            <p class="archive__item-excerpt">${post.excerpt || 'Click to read more...'}</p>
-                            <div class="page__taxonomy">
-                                ${(post.tags || ['AI', 'Machine Learning']).map(tag =>
-                                    `<a href="#${tag}" class="page__taxonomy-item">${tag}</a>`
-                                ).join('')}
-                            </div>
-                        </article>
-                    `;
-                }).join('');
-
-            } catch (error) {
-                console.error('Error loading posts:', error);
-                container.innerHTML = `
-                    <div class="notice">
-                        <h4>Posts Coming Soon</h4>
-                        <p>Posts will appear here once the multi-agent system starts generating daily content.</p>
-                        <p>The system analyzes trending AI packages and creates insightful blog posts automatically!</p>
-                    </div>
-                `;
-            }
-        }
-
-        // Load posts when page loads
-        document.addEventListener('DOMContentLoaded', loadPosts);
-    </script>
-</body>
-</html>'''
-
-    # Write the HTML file
-    with open('blog/index.html', 'w', encoding='utf-8') as f:
-        f.write(html_template)
-
-    print(f"✅ Generated blog/index.html")
-
-
-def generate_posts_index_old():
-    """Generate index.json file for all blog posts"""
-    posts_dir = Path('blog/posts')
-    posts_dir.mkdir(parents=True, exist_ok=True)
-
+# --- Configuration ---
+# Detect root directory to ensure we find 'data/' correctly
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = BASE_DIR / "data"
+POSTS_DIR = BASE_DIR / "blog" / "posts"
+API_DIR = BASE_DIR / "blog" / "api"
+
+# Ensure output dir exists
+API_DIR.mkdir(parents=True, exist_ok=True)
+
+# --- Helper Functions ---
+
+def load_items_from_json(filepath):
+    """
+    Loads a JSON file and intelligently extracts a list of items.
+    Handles direct lists and wrapper dicts.
+    """
+    if not filepath.exists():
+        # Fallback: try relative to current working directory
+        filepath = Path("data") / filepath.name
+        if not filepath.exists():
+            return []
+
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        # Case 1: The file is directly a list [{}, {}]
+        if isinstance(data, list):
+            return data
+        
+        # Case 2: The file is a dictionary (wrapper) {"papers": [{}, {}]}
+        if isinstance(data, dict):
+            known_keys = [
+                "papers", "research", 
+                "courses", "cources", 
+                "tutorials", 
+                "notebooks", 
+                "repositories", "packages"
+            ]
+            for key in known_keys:
+                if key in data and isinstance(data[key], list):
+                    return data[key]
+                    
+        return []
+    except Exception as e:
+        print(f"⚠️  Warning: Could not parse {filepath}: {e}")
+        return []
+
+def load_citations_map(filepath):
+    """
+    Specific loader for data/citations.json: { "Title": ["url", count], ... }
+    """
+    if not filepath.exists():
+        filepath = Path("data") / filepath.name
+        if not filepath.exists():
+            return []
+            
+    items = []
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            if isinstance(data, dict):
+                for title, info in data.items():
+                    if isinstance(info, list) and len(info) >= 1:
+                        items.append({
+                            "title": title,
+                            "url": info[0],
+                            "citations": info[1] if len(info) > 1 else 0,
+                            "tags": ["Research", "Citation"]
+                        })
+    except Exception as e:
+        print(f"⚠️  Error loading citations {filepath}: {e}")
+    return items
+
+def normalize_item(item, default_category, default_tags):
+    """
+    Converts diverse raw data formats into the standard Dashboard Item Schema.
+    """
+    # CRITICAL FIX: Guard against non-dict items (strings/integers) in the list
+    if not isinstance(item, dict):
+        return None
+
+    # 1. Title
+    title = item.get("title") or item.get("name") or "Untitled Resource"
+    
+    # 2. URL Strategy
+    # Priority: Explicit URL -> Colab -> Parsed from 'links' list -> #
+    url = item.get("url") or item.get("link") or item.get("colab")
+    
+    if not url and "links" in item and isinstance(item["links"], list):
+        # links format: [["type", "url", ...], ["git", "url", ...]]
+        for link_entry in item["links"]:
+            if isinstance(link_entry, list) and len(link_entry) >= 2:
+                link_type = link_entry[0]
+                link_url = link_entry[1]
+                # Prioritize project/demo/arxiv links, fallback to git
+                if link_type in ["project", "demo", "arxiv", "paper", "pypi"]:
+                    url = link_url
+                    break
+                if not url: # Take the first one if nothing better found
+                    url = link_url
+
+    if not url:
+        url = "#"
+    
+    # 3. Date
+    raw_date = item.get("date") or item.get("published_at") or item.get("update")
+    if isinstance(raw_date, (int, float)):
+        date = datetime.fromtimestamp(raw_date).isoformat()
+    elif raw_date:
+        date = str(raw_date)
+    else:
+        date = datetime.now().isoformat()
+    
+    # 4. Author
+    raw_author = item.get("author") or item.get("provider") or item.get("publisher")
+    if isinstance(raw_author, list) and len(raw_author) > 0:
+        if isinstance(raw_author[0], list) and len(raw_author[0]) > 0:
+            author = raw_author[0][0] # [["Name", "Url"]] -> "Name"
+        elif isinstance(raw_author[0], str):
+            author = raw_author[0]
+        else:
+            author = "AI Agent"
+    elif isinstance(raw_author, str):
+        author = raw_author
+    else:
+        author = "AI Agent"
+    
+    # 5. Tags
+    raw_tags = item.get("tags", [])
+    if isinstance(raw_tags, str):
+        raw_tags = [raw_tags]
+    final_tags = list(set(raw_tags + default_tags))
+    
+    # 6. Excerpt
+    excerpt = item.get("excerpt") or item.get("description") or item.get("summary") or ""
+    if excerpt:
+        excerpt = excerpt[:200] + "..." if len(excerpt) > 200 else excerpt
+
+    return {
+        "title": title,
+        "url": url,
+        "date": date,
+        "author": author,
+        "tags": final_tags,
+        "category": default_category,
+        "excerpt": excerpt
+    }
+
+def process_markdown_posts():
+    """Scans blog/posts/*.md for manual content."""
     posts = []
-
-    # Scan all markdown files
-    for md_file in posts_dir.glob('*.md'):
+    if not POSTS_DIR.exists():
+        return posts
+        
+    for md_file in POSTS_DIR.glob("*.md"):
         try:
-            with open(md_file, 'r', encoding='utf-8') as f:
+            with open(md_file, "r", encoding="utf-8") as f:
                 content = f.read()
-
-            frontmatter = extract_frontmatter(content)
-
-            post_info = {
-                'filename': md_file.name,
-                'title': frontmatter.get('title', md_file.stem),
-                'date': frontmatter.get('date', datetime.now().isoformat()),
-                'author': frontmatter.get('author', 'AI Multi-Agent System'),
-                'tags': frontmatter.get('tags', ['AI', 'Machine Learning']),
-                'excerpt': frontmatter.get('excerpt', '')
-            }
-
-            posts.append(post_info)
-
-        except Exception as e:
-            print(f"Error processing {md_file}: {e}")
-
-    # Write index.json
-    index_file = posts_dir / 'index.json'
-    with open(index_file, 'w', encoding='utf-8') as f:
-        json.dump(posts, f, indent=2, ensure_ascii=False)
-
-    print(f"✅ Generated index with {len(posts)} posts")
-    print(f"📝 Index file: {index_file}")
-
-    return posts
-
-def generate_posts_index():
-    """Generate index.json file for all blog posts"""
-    posts_dir = Path('blog/posts')
-    posts_dir.mkdir(parents=True, exist_ok=True)
-
-    posts = []
-
-    # Scan all markdown files
-    for md_file in posts_dir.glob('*.md'):
-        try:
-            with open(md_file, 'r', encoding='utf-8') as f:
-                content = f.read()
-
-            frontmatter = extract_frontmatter(content)
-
-            # URL where Jekyll will serve the rendered post.
-            # We assume the final site URL will be:
-            #   {site.baseurl}/blog/posts/<name>.html
-            post_url = f"/blog/posts/{md_file.stem}.html"
-
-            post_info = {
-                "filename": md_file.name,
-                "url": post_url,
+            
+            frontmatter = {}
+            if content.startswith("---"):
+                parts = content.split("---", 2)
+                if len(parts) >= 3:
+                    yaml_block = parts[1]
+                    for line in yaml_block.split("\n"):
+                        if ":" in line:
+                            k, v = line.split(":", 1)
+                            frontmatter[k.strip()] = v.strip().strip('"\'')
+            
+            tags = frontmatter.get("tags", "general")
+            if isinstance(tags, str):
+                tags = [t.strip() for t in tags.replace("[", "").replace("]", "").split(",")]
+            
+            cat = "general"
+            lower_tags = [t.lower() for t in tags]
+            if any(x in lower_tags for x in ['course', 'education']): cat = "courses"
+            elif any(x in lower_tags for x in ['paper', 'research', 'arxiv']): cat = "research"
+            elif any(x in lower_tags for x in ['tutorial', 'guide', 'code']): cat = "tutorials"
+            elif any(x in lower_tags for x in ['notebook', 'jupyter', 'colab']): cat = "notebooks"
+            
+            posts.append({
                 "title": frontmatter.get("title", md_file.stem),
+                "url": f"posts/{md_file.stem}.html",
                 "date": frontmatter.get("date", datetime.now().isoformat()),
-                "author": frontmatter.get("author", "AI Multi-Agent System"),
-                "tags": frontmatter.get("tags", ["AI", "Machine Learning"]),
+                "author": frontmatter.get("author", "Editor"),
+                "tags": tags,
+                "category": cat,
                 "excerpt": frontmatter.get("excerpt", "")
-            }
-
-            posts.append(post_info)
-
+            })
         except Exception as e:
-            print(f"Error processing {md_file}: {e}")
-
-    # Write index.json
-    index_file = posts_dir / "index.json"
-    with open(index_file, "w", encoding="utf-8") as f:
-        json.dump(posts, f, indent=2, ensure_ascii=False)
-
-    print(f"✅ Generated index with {len(posts)} posts")
-    print(f"📝 Index file: {index_file}")
-
+            print(f"Skipping {md_file}: {e}")
     return posts
 
+# --- Main Logic ---
 
-if __name__ == '__main__':
-    # Generate JSON index
-    posts = generate_posts_index()
+def main():
+    print("🚀 Starting Data Feed Generation...")
+    
+    # 1. Load Raw Data
+    raw_courses   = load_items_from_json(DATA_DIR / "courses.json") 
+    raw_courses  += load_items_from_json(DATA_DIR / "cources.json") 
+    
+    raw_research  = load_items_from_json(DATA_DIR / "research.json")
+    raw_research += load_items_from_json(DATA_DIR / "papers.json")
+    raw_research += load_citations_map(DATA_DIR / "citations.json")
+    
+    raw_tutorials = load_items_from_json(DATA_DIR / "tutorials.json")
+    
+    # 2. Normalize Data
+    courses = [normalize_item(i, "courses", ["Course"]) for i in raw_courses if i]
+    research = [normalize_item(i, "research", ["Paper"]) for i in raw_research if i]
+    
+    # Normalize tutorials (keep them all as tutorials initially)
+    tutorials = [normalize_item(i, "tutorials", ["Tutorial"]) for i in raw_tutorials if i]
+    
+    # Filter None/invalid items
+    courses = [x for x in courses if x]
+    research = [x for x in research if x]
+    tutorials = [x for x in tutorials if x]
 
-    # HTML index is now handled by Jekyll (index.md using Minimal Mistakes).
-    # If you still want a standalone HTML blog index under /blog/,
-    # you can keep the next line; otherwise, comment it out.
-    # generate_html_index(posts)
+    # 3. Special Handling: Notebooks
+    # Strategy: 
+    # - If data/notebooks.json exists, use it.
+    # - PLUS: Identify notebooks hidden inside tutorials and COPY them to notebooks list.
+    #   (This fixes the issue where tutorials became 0 because they were moved)
+    
+    notebooks = []
+    
+    # Load explicit notebooks
+    raw_nb_file = load_items_from_json(DATA_DIR / "notebooks.json")
+    if raw_nb_file:
+        explicit_notebooks = [normalize_item(i, "notebooks", ["Notebook"]) for i in raw_nb_file if i]
+        notebooks.extend([x for x in explicit_notebooks if x])
+
+    # Extract implicit notebooks from tutorials (COPY, do not move)
+    for t in tutorials:
+        title_lower = t['title'].lower()
+        url_lower = t['url'].lower()
+        # Check if it looks like a notebook
+        if 'notebook' in title_lower or 'colab' in url_lower or 'jupyter' in title_lower:
+            # Create a copy for the notebook category
+            nb_copy = t.copy()
+            nb_copy['category'] = 'notebooks'
+            if 'Notebook' not in nb_copy['tags']:
+                nb_copy['tags'] = nb_copy['tags'] + ['Notebook']
+            notebooks.append(nb_copy)
+
+    # 4. Merge with Manual Blog Posts
+    blog_posts = process_markdown_posts()
+    for post in blog_posts:
+        if post['category'] == 'courses': courses.append(post)
+        elif post['category'] == 'research': research.append(post)
+        elif post['category'] == 'tutorials': tutorials.append(post)
+        elif post['category'] == 'notebooks': notebooks.append(post)
+    
+    # 5. Sort by Date
+    def sort_key(x): return x.get('date', '0000')
+    
+    courses.sort(key=sort_key, reverse=True)
+    research.sort(key=sort_key, reverse=True)
+    tutorials.sort(key=sort_key, reverse=True)
+    notebooks.sort(key=sort_key, reverse=True)
+    
+    # 6. Deduplicate Research
+    seen_urls = set()
+    unique_research = []
+    for r in research:
+        if r['url'] not in seen_urls and r['url'] != "#":
+            unique_research.append(r)
+            seen_urls.add(r['url'])
+    research = unique_research
+
+    # Deduplicate Notebooks (since we might have overlaps)
+    seen_nb_urls = set()
+    unique_notebooks = []
+    for n in notebooks:
+        if n['url'] not in seen_nb_urls and n['url'] != "#":
+            unique_notebooks.append(n)
+            seen_nb_urls.add(n['url'])
+    notebooks = unique_notebooks
+
+    dashboard_data = {
+        "stats": {
+            "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M"),
+            "total_courses": len(courses),
+            "total_papers": len(research),
+            "total_tutorials": len(tutorials)
+        },
+        "trending": (research[:2] + tutorials[:2] + courses[:1]),
+        "courses": courses,
+        "research": research,
+        "tutorials": tutorials,
+        "notebooks": notebooks,
+        "all_posts": blog_posts
+    }
+    
+    # 7. Write Files
+    def write_json(path, data):
+        with open(path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+        print(f"✅ Generated {path} ({len(data) if isinstance(data, list) else 'Object'})")
+
+    write_json(API_DIR / "courses.json", courses)
+    write_json(API_DIR / "research.json", research)
+    write_json(API_DIR / "tutorials.json", tutorials)
+    write_json(API_DIR / "notebooks.json", notebooks)
+    write_json(API_DIR / "dashboard.json", dashboard_data)
+
+    # 8. Call HTML Generator
+    try:
+        import generate_index_html
+        print("🌍 Running HTML Blog Index Generator...")
+        generate_index_html.main()
+    except ImportError:
+        print("⚠️  Warning: generate_index_html.py not found. Skipping HTML index generation.")
+
+
+if __name__ == "__main__":
+    main()
