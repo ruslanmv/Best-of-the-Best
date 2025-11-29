@@ -2,9 +2,9 @@
 ### Repositories
 | Repository | Stars | Link |
 |---|---|---|
-| ollama/ollama | 156761 | [GitHub](https://github.com/ollama/ollama) |
-| langchain-ai/langchain | 120738 | [GitHub](https://github.com/langchain-ai/langchain) |
-| comfyanonymous/ComfyUI | 94921 | [GitHub](https://github.com/comfyanonymous/ComfyUI) |
+| ollama/ollama | 156762 | [GitHub](https://github.com/ollama/ollama) |
+| langchain-ai/langchain | 120740 | [GitHub](https://github.com/langchain-ai/langchain) |
+| comfyanonymous/ComfyUI | 94923 | [GitHub](https://github.com/comfyanonymous/ComfyUI) |
 | openai/whisper | 91376 | [GitHub](https://github.com/openai/whisper) |
 | tensorflow/models | 77677 | [GitHub](https://github.com/tensorflow/models) |
 | CompVis/stable-diffusion | 71902 | [GitHub](https://github.com/CompVis/stable-diffusion) |
@@ -25,6 +25,7 @@
 | ray-project/ray | 35151 | [GitHub](https://github.com/ray-project/ray) |
 | google-research/google-research | 34801 | [GitHub](https://github.com/google-research/google-research) |
 | microsoft/visual-chatgpt | 34541 | [GitHub](https://github.com/microsoft/visual-chatgpt) |
+
 
 
 
