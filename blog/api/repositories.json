@@ -2,17 +2,17 @@
   "repositories": [
     {
       "name": "ollama/ollama",
-      "stars": 156761,
+      "stars": 156762,
       "url": "https://github.com/ollama/ollama"
     },
     {
       "name": "langchain-ai/langchain",
-      "stars": 120738,
+      "stars": 120740,
       "url": "https://github.com/langchain-ai/langchain"
     },
     {
       "name": "comfyanonymous/ComfyUI",
-      "stars": 94921,
+      "stars": 94923,
       "url": "https://github.com/comfyanonymous/ComfyUI"
     },
     {
@@ -116,5 +116,5 @@
       "url": "https://github.com/microsoft/visual-chatgpt"
     }
   ],
-  "last_updated": "2025-11-29T21:10:36.133626"
+  "last_updated": "2025-11-29T21:56:41.028859"
 }
