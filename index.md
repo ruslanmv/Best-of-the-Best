@@ -234,17 +234,29 @@ const stripMarkdown = (text) => {
 };
 
 /**
- * Build a post URL safely.
- * Accepts:
- *   - "posts/2024-11-22-example.html"
- *   - "blog/posts/2024-11-22-example.html"
- *   - "/blog/posts/...."
- * and always returns:  baseurl + "/blog/posts/..."
- * so we never get `/blog/blog/...` 404s.
+ * Build a URL safely.
+ *
+ * Cases:
+ *   - Absolute external URLs (https://..., http://...):
+ *       -> return as-is (no baseurl prefix).
+ *   - "blog/posts/2024-11-22-example.html":
+ *       -> baseurl + "/blog/posts/..."
+ *   - "posts/2024-11-22-example.html":
+ *       -> baseurl + "/blog/posts/..."
+ *   - "/blog/posts/....":
+ *       -> baseurl + "/blog/posts/..."
  */
 const buildPostUrl = (rawUrl) => {
   if (!rawUrl) return '#';
-  let path = String(rawUrl).replace(/^\/+/, ''); // strip leading '/'
+  const urlStr = String(rawUrl).trim();
+
+  // External links (Colab, DOI, GitHub, etc) – don't prefix with the site URL
+  if (/^https?:\/\//i.test(urlStr)) {
+    return urlStr;
+  }
+
+  // Internal relative paths
+  let path = urlStr.replace(/^\/+/, ''); // strip leading '/'
 
   // If it already starts with 'blog/', just attach baseurl
   if (path.startsWith('blog/')) {
@@ -257,7 +269,7 @@ const buildPostUrl = (rawUrl) => {
 
 /**
  * Render the "Top 4" snapshot cards (repos/papers/packages).
- * all cards themselves link to the full leaderboard page.
+ * All cards themselves link to the full leaderboard page.
  */
 const renderLeaders = (data) => {
   const reposList    = document.getElementById('botb-leader-repos');
