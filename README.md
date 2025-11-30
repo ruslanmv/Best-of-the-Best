@@ -2,14 +2,14 @@
 ### Repositories
 | Repository | Stars | Link |
 |---|---|---|
-| ollama/ollama | 156789 | [GitHub](https://github.com/ollama/ollama) |
-| langchain-ai/langchain | 120774 | [GitHub](https://github.com/langchain-ai/langchain) |
-| comfyanonymous/ComfyUI | 94977 | [GitHub](https://github.com/comfyanonymous/ComfyUI) |
-| openai/whisper | 91385 | [GitHub](https://github.com/openai/whisper) |
+| ollama/ollama | 156792 | [GitHub](https://github.com/ollama/ollama) |
+| langchain-ai/langchain | 120775 | [GitHub](https://github.com/langchain-ai/langchain) |
+| comfyanonymous/ComfyUI | 94983 | [GitHub](https://github.com/comfyanonymous/ComfyUI) |
+| openai/whisper | 91387 | [GitHub](https://github.com/openai/whisper) |
 | tensorflow/models | 77677 | [GitHub](https://github.com/tensorflow/models) |
 | CompVis/stable-diffusion | 71906 | [GitHub](https://github.com/CompVis/stable-diffusion) |
-| KillianLucas/open-interpreter | 60923 | [GitHub](https://github.com/KillianLucas/open-interpreter) |
-| CorentinJ/Real-Time-Voice-Cloning | 58937 | [GitHub](https://github.com/CorentinJ/Real-Time-Voice-Cloning) |
+| KillianLucas/open-interpreter | 60924 | [GitHub](https://github.com/KillianLucas/open-interpreter) |
+| CorentinJ/Real-Time-Voice-Cloning | 58938 | [GitHub](https://github.com/CorentinJ/Real-Time-Voice-Cloning) |
 | ultralytics/yolov5 | 56197 | [GitHub](https://github.com/ultralytics/yolov5) |
 | facebookresearch/segment-anything | 52717 | [GitHub](https://github.com/facebookresearch/segment-anything) |
 | jakevdp/PythonDataScienceHandbook | 43761 | [GitHub](https://github.com/jakevdp/PythonDataScienceHandbook) |
@@ -25,6 +25,7 @@
 | ray-project/ray | 35151 | [GitHub](https://github.com/ray-project/ray) |
 | google-research/google-research | 34801 | [GitHub](https://github.com/google-research/google-research) |
 | microsoft/visual-chatgpt | 34541 | [GitHub](https://github.com/microsoft/visual-chatgpt) |
+
 
 
 
