@@ -2,6 +2,8 @@
 # Navigation inside the Best-of-the-Best section
 
 main:
+  - title: "Blog"
+    url: https://ruslanmv.com
 
   - title: "The Best"
     url: /        # this site’s homepage => /Best-of-the-Best/
@@ -9,17 +11,3 @@ main:
   - title: "News"
     url: https://ruslanmv.com/news-and-trends/
 
-  - title: "Projects"
-    url: https://ruslanmv.com/projects/
-
-  - title: "Publications"
-    url: https://ruslanmv.com/publications
-
-  - title: "Talks"
-    url: https://ruslanmv.com/talks/
-
-  - title: "Certifications"
-    url: https://ruslanmv.com/certifications/
-
-  - title: "About"
-    url: https://ruslanmv.com/about/

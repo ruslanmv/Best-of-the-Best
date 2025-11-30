@@ -5,415 +5,8 @@ permalink: /
 author_profile: false
 ---
 
-<style>
-/* =========================================
-   Best of the Best (BOTB) Section Styles
-   ========================================= */
-
-:root {
-  --botb-primary:   #1d4ed8;  /* Deep blue */
-  --botb-secondary: #4f46e5;  /* Indigo accent */
-  --botb-dark:      #0f172a;  /* Slate 900 */
-  --botb-light:     #f8fafc;  /* Slate 50 */
-  --botb-border:    #e2e8f0;
-  --botb-card-bg:   #ffffff;
-  --botb-radius:    12px;
-}
-
-/* Page container */
-.botb-container {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: var(--botb-dark);
-  max-width: 1200px;
-  margin: 1.5rem auto 0;
-  padding-bottom: 4rem;
-}
-
-/* 1. HERO SECTION */
-.botb-hero {
-  position: relative;
-  background: linear-gradient(135deg, var(--botb-primary) 0%, var(--botb-secondary) 100%);
-  color: white;
-  padding: 3.5rem 2rem 5rem;
-  border-radius: var(--botb-radius);
-  text-align: center;
-  margin-bottom: 2rem;
-  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.25);
-}
-
-.botb-hero__badge {
-  display: inline-block;
-  background: rgba(15, 23, 42, 0.35);
-  padding: 0.25rem 1rem;
-  border-radius: 999px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 0.9rem;
-  border: 1px solid rgba(148, 163, 184, 0.5);
-}
-
-.botb-hero__title {
-  font-size: 2.7rem;
-  font-weight: 800;
-  margin: 0 0 0.9rem;
-  line-height: 1.1;
-  color: white;
-}
-
-.botb-hero__lead {
-  font-size: 1.1rem;
-  opacity: 0.95;
-  max-width: 640px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-/* 2. STATS BAR */
-.botb-stats-wrapper {
-  margin-top: -3.5rem;
-  padding: 0 1.5rem;
-  position: relative;
-  z-index: 10;
-}
-
-.botb-stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-  gap: 1.25rem;
-}
-
-.botb-stat-card {
-  background: var(--botb-card-bg);
-  padding: 1.35rem 1.25rem;
-  border-radius: var(--botb-radius);
-  box-shadow: 0 6px 12px rgba(15, 23, 42, 0.10);
-  text-align: center;
-  border: 1px solid var(--botb-border);
-  transition: transform 0.18s ease;
-}
-
-.botb-stat-card:hover { transform: translateY(-2px); }
-
-.botb-stat-value {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--botb-primary);
-  line-height: 1.1;
-  margin-bottom: 0.35rem;
-  word-break: break-word;
-}
-
-.botb-stat-label {
-  font-size: 0.8rem;
-  color: #64748b;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-/* 3. CONTROLS */
-.botb-controls {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2rem 1.5rem 1rem;
-  gap: 1rem;
-}
-
-.botb-meta-text {
-  font-size: 0.9rem;
-  color: #64748b;
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-}
-
-.botb-btn-group { display: flex; gap: 0.75rem; }
-
-.botb-btn {
-  padding: 0.55rem 1.2rem;
-  border-radius: 7px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  text-decoration: none !important;
-  transition: all 0.18s;
-  border: 1px solid transparent;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  white-space: nowrap;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-}
-
-.botb-btn-primary { background-color: var(--botb-dark); color: white !important; }
-.botb-btn-primary:hover { background-color: #1f2937; transform: translateY(-1px); }
-
-.botb-btn-outline { 
-  background-color: #ffffff; 
-  border: 1px solid #cbd5e1; 
-  color: #475569 !important; 
-}
-.botb-btn-outline:hover { 
-  background-color: #f8fafc; 
-  border-color: #94a3b8; 
-  transform: translateY(-1px);
-}
-
-/* 4. SECTIONS */
-.botb-section-title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin: 2.75rem 0 1.5rem;
-  padding-left: 1.5rem;
-  border-left: 4px solid var(--botb-secondary);
-  line-height: 1.2;
-  color: var(--botb-dark);
-}
-
-/* 5. FEATURED (Today) */
-.botb-featured {
-  background: #ffffff;
-  border-radius: var(--botb-radius);
-  padding: 1.8rem 1.75rem;
-  margin: 0 1.5rem;
-  border: 1px solid var(--botb-border);
-  box-shadow: 0 6px 12px rgba(15, 23, 42, 0.10);
-  margin-bottom: 3rem;
-}
-
-.botb-featured-header {
-  font-size: 0.85rem;
-  color: #6b7280;
-  margin-bottom: 0.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.botb-featured h3 { font-size: 1.6rem; margin: 0 0 0.8rem; }
-.botb-featured h3 a { color: var(--botb-dark); text-decoration: none; }
-.botb-featured h3 a:hover { color: var(--botb-primary); }
-
-.botb-featured p { color: #475569; line-height: 1.6; margin-bottom: 0.9rem; }
-
-.botb-tag {
-  display: inline-block;
-  background-color: #eff6ff;
-  color: var(--botb-primary);
-  padding: 0.2rem 0.6rem;
-  border-radius: 6px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  margin-right: 0.4rem;
-}
-
-/* 6. PREVIOUS HIGHLIGHTS GRID */
-.botb-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.4rem;
-  padding: 0 1.5rem;
-}
-
-.botb-card {
-  background: #ffffff;
-  border: 1px solid var(--botb-border);
-  border-radius: var(--botb-radius);
-  padding: 1.4rem 1.35rem;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.18s, box-shadow 0.18s;
-}
-
-.botb-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.12);
-}
-
-.botb-card-date {
-  font-size: 0.8rem;
-  color: #9ca3af;
-  margin-bottom: 0.4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
-.botb-card-title {
-  font-size: 1.05rem;
-  margin: 0 0 0.6rem;
-  font-weight: 600;
-  line-height: 1.4;
-}
-.botb-card-title a { color: var(--botb-dark); text-decoration: none; }
-.botb-card-title a:hover { color: var(--botb-primary); }
-
-.botb-card-excerpt {
-  font-size: 0.92rem;
-  color: #4b5563;
-  flex-grow: 1;
-  margin-bottom: 0.9rem;
-  line-height: 1.5;
-}
-
-.botb-card-footer { font-size: 0.8rem; color: #2563eb; font-weight: 600; }
-
-/* 7. DASHBOARD GRID & HEADERS */
-.botb-dash-intro {
-  padding: 0 1.5rem;
-  color: #64748b;
-  margin-top: -1rem;
-  margin-bottom: 1.5rem;
-  font-size: 0.95rem;
-}
-
-.botb-dash-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  padding: 0 1.5rem;
-}
-
-.botb-dash-column {
-  background: #ffffff;
-  border-radius: var(--botb-radius);
-  border: 1px solid var(--botb-border);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-}
-
-/* Enhanced Header "Button" */
-.botb-dash-header {
-  padding: 1rem 1.1rem;
-  border-bottom: 1px solid var(--botb-border);
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  background: #f9fafb;
-  transition: background-color 0.2s ease;
-  position: relative; /* For clickable area */
-}
-
-.botb-dash-header:hover {
-  background-color: #f1f5f9;
-  cursor: pointer;
-}
-
-.botb-dash-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-size: 0.9rem;
-}
-
-.botb-dash-icon--courses   { background: #10b981; }
-.botb-dash-icon--research  { background: #8b5cf6; }
-.botb-dash-icon--tutorials { background: #3b82f6; }
-.botb-dash-icon--notebooks { background: #f59e0b; }
-
-.botb-dash-title {
-  margin: 0;
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #1e293b;
-}
-
-/* Link styling inside header */
-.botb-dash-title a {
-  color: inherit;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-/* Arrow effect on hover */
-.botb-dash-title a::after {
-  content: '→';
-  font-size: 1rem;
-  opacity: 0;
-  transform: translateX(-5px);
-  transition: all 0.2s ease;
-  color: var(--botb-primary);
-}
-
-.botb-dash-header:hover .botb-dash-title a::after {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-/* Make the whole header clickable by expanding the link (optional UX trick) */
-.botb-dash-title a::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-}
-
-/* List Items */
-.botb-dash-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.botb-dash-item {
-  padding: 0.75rem 1.1rem;
-  border-bottom: 1px solid #e5e7eb;
-  transition: background 0.15s;
-}
-
-.botb-dash-item:last-child { border-bottom: none; }
-.botb-dash-item:hover { background: #f8fafc; }
-
-.botb-dash-item a {
-  display: block;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #334155;
-  text-decoration: none;
-  line-height: 1.4;
-  margin-bottom: 0.25rem;
-}
-
-.botb-dash-item a:hover { color: var(--botb-primary); }
-
-.botb-dash-meta {
-  font-size: 0.8rem;
-  color: #94a3b8;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.botb-dash-tag {
-  background: #eff6ff;
-  color: #2563eb;
-  padding: 1px 6px;
-  border-radius: 4px;
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .botb-hero__title { font-size: 2.1rem; }
-  .botb-hero__lead { font-size: 1rem; }
-  .botb-stats-wrapper { margin-top: -2.4rem; }
-  .botb-controls { justify-content: center; text-align: center; }
-  .botb-btn-group { justify-content: center; width: 100%; flex-wrap: wrap; }
-  .botb-dash-grid { grid-template-columns: 1fr; }
-}
-</style>
+<!-- Attach the BOTB CSS (served from assets/css/botb.css) -->
+<link rel="stylesheet" href="{{ '/assets/css/botb.css' | relative_url }}">
 
 <div class="botb-container">
 
@@ -461,10 +54,6 @@ author_profile: false
         <i class="fas fa-chart-bar" aria-hidden="true"></i>
         <span>Full leaderboard</span>
       </a>
-      <a class="botb-btn botb-btn-outline" href="{{ site.baseurl }}/blog/">
-        <i class="fas fa-table" aria-hidden="true"></i>
-        <span>Trending dashboard</span>
-      </a>
       <a class="botb-btn botb-btn-outline" href="{{ site.baseurl }}/blog/api/feed.xml">
         <i class="fas fa-rss" aria-hidden="true"></i>
         <span>RSS</span>
@@ -474,6 +63,63 @@ author_profile: false
         <span>Star repo</span>
       </a>
     </div>
+  </div>
+
+  <!-- QUICK RANKING SNAPSHOT: repos / papers / packages -->
+  <h2 class="botb-section-title">Today’s Rankings Snapshot</h2>
+  <div class="botb-leader-grid">
+
+    <!-- Repositories (primary card) -->
+    <a class="botb-leader-link" href="{{ site.baseurl }}/blog/data.html">
+      <div class="botb-leader-card botb-leader-card--primary">
+        <div class="botb-leader-header">
+          <span class="botb-leader-emoji">⭐</span>
+          <div>
+            <h3 class="botb-leader-title">Top GitHub Repositories</h3>
+            <p class="botb-leader-subtitle">Top 4 by ⭐</p>
+          </div>
+        </div>
+        <ul id="botb-leader-repos" class="botb-leader-list">
+          <li class="botb-leader-item botb-leader-loading">Loading…</li>
+        </ul>
+        <div class="botb-leader-footer">Open full leaderboard →</div>
+      </div>
+    </a>
+
+    <!-- Research papers -->
+    <a class="botb-leader-link" href="{{ site.baseurl }}/blog/data.html">
+      <div class="botb-leader-card">
+        <div class="botb-leader-header">
+          <span class="botb-leader-emoji">📄</span>
+          <div>
+            <h3 class="botb-leader-title">Most Cited Research Papers</h3>
+            <p class="botb-leader-subtitle">Top 4 by 📑</p>
+          </div>
+        </div>
+        <ul id="botb-leader-papers" class="botb-leader-list">
+          <li class="botb-leader-item botb-leader-loading">Loading…</li>
+        </ul>
+        <div class="botb-leader-footer">Open full leaderboard →</div>
+      </div>
+    </a>
+
+    <!-- Packages -->
+    <a class="botb-leader-link" href="{{ site.baseurl }}/blog/data.html">
+      <div class="botb-leader-card">
+        <div class="botb-leader-header">
+          <span class="botb-leader-emoji">📦</span>
+          <div>
+            <h3 class="botb-leader-title">Top PyPI Packages</h3>
+            <p class="botb-leader-subtitle">Top 4 by 📥</p>
+          </div>
+        </div>
+        <ul id="botb-leader-packages" class="botb-leader-list">
+          <li class="botb-leader-item botb-leader-loading">Loading…</li>
+        </ul>
+        <div class="botb-leader-footer">Open full leaderboard →</div>
+      </div>
+    </a>
+
   </div>
 
   <!-- TODAY'S PICK -->
@@ -491,7 +137,8 @@ author_profile: false
   <p class="botb-dash-intro">
     A compact view of the most relevant <strong>Courses</strong>, <strong>Research papers</strong>, 
     <strong>Tutorials</strong>, and <strong>Notebooks</strong> curated by the multi-agent system.
-    Explore more details in the full <a href="{{ site.baseurl }}/blog/data.html" style="color:#2563eb;text-decoration:none;font-weight:600;">Trending Dashboard</a>.
+    Explore more details in the full 
+    <a href="{{ site.baseurl }}/blog/data.html" class="botb-dash-intro-link">Trending Dashboard</a>.
   </p>
 
   <div class="botb-dash-grid">
@@ -507,7 +154,7 @@ author_profile: false
         </h3>
       </div>
       <ul id="botb-dash-courses" class="botb-dash-list">
-        <li class="botb-dash-item" style="text-align:center; color:#9ca3af;">Loading…</li>
+        <li class="botb-dash-item botb-dash-item-loading">Loading…</li>
       </ul>
     </div>
 
@@ -522,7 +169,7 @@ author_profile: false
         </h3>
       </div>
       <ul id="botb-dash-research" class="botb-dash-list">
-        <li class="botb-dash-item" style="text-align:center; color:#9ca3af;">Loading…</li>
+        <li class="botb-dash-item botb-dash-item-loading">Loading…</li>
       </ul>
     </div>
 
@@ -537,7 +184,7 @@ author_profile: false
         </h3>
       </div>
       <ul id="botb-dash-tutorials" class="botb-dash-list">
-        <li class="botb-dash-item" style="text-align:center; color:#9ca3af;">Loading…</li>
+        <li class="botb-dash-item botb-dash-item-loading">Loading…</li>
       </ul>
     </div>
 
@@ -552,7 +199,7 @@ author_profile: false
         </h3>
       </div>
       <ul id="botb-dash-notebooks" class="botb-dash-list">
-        <li class="botb-dash-item" style="text-align:center; color:#9ca3af;">Loading…</li>
+        <li class="botb-dash-item botb-dash-item-loading">Loading…</li>
       </ul>
     </div>
 
@@ -586,6 +233,65 @@ const stripMarkdown = (text) => {
     .replace(/#{1,6}\s/g, '');
 };
 
+/**
+ * Build a post URL safely.
+ * Accepts:
+ *   - "posts/2024-11-22-example.html"
+ *   - "blog/posts/2024-11-22-example.html"
+ *   - "/blog/posts/...."
+ * and always returns:  baseurl + "/blog/posts/..."
+ * so we never get `/blog/blog/...` 404s.
+ */
+const buildPostUrl = (rawUrl) => {
+  if (!rawUrl) return '#';
+  let path = String(rawUrl).replace(/^\/+/, ''); // strip leading '/'
+
+  // If it already starts with 'blog/', just attach baseurl
+  if (path.startsWith('blog/')) {
+    return `${baseurl}/${path}`;
+  }
+
+  // Otherwise treat it as "posts/..." under /blog
+  return `${baseurl}/blog/${path}`;
+};
+
+/**
+ * Render the "Top 4" snapshot cards (repos/papers/packages).
+ * all cards themselves link to the full leaderboard page.
+ */
+const renderLeaders = (data) => {
+  const reposList    = document.getElementById('botb-leader-repos');
+  const papersList   = document.getElementById('botb-leader-papers');
+  const packagesList = document.getElementById('botb-leader-packages');
+
+  if (!reposList || !papersList || !packagesList) return;
+
+  const repos    = Array.isArray(data.repositories) ? data.repositories.slice() : [];
+  const papers   = Array.isArray(data.papers) ? data.papers.slice() : [];
+  const packages = Array.isArray(data.packages) ? data.packages.slice() : [];
+
+  const topRepos    = repos.sort((a, b) => (b.stars || 0) - (a.stars || 0)).slice(0, 4);
+  const topPapers   = papers.sort((a, b) => (b.citations || 0) - (a.citations || 0)).slice(0, 4);
+  const topPackages = packages.sort((a, b) => (b.downloads_last_month || 0) - (a.downloads_last_month || 0)).slice(0, 4);
+
+  const makeLeaderHtml = (items, valueKey, suffix) => {
+    if (!items.length) {
+      return '<li class="botb-leader-item botb-leader-empty">No data yet.</li>';
+    }
+    return items.map((item, idx) => `
+      <li class="botb-leader-item">
+        <span class="botb-leader-rank">#${idx + 1}</span>
+        <span class="botb-leader-name">${item.name || 'Unknown'}</span>
+        ${valueKey ? `<span class="botb-leader-metric">${(item[valueKey] || 0).toLocaleString('en-US')}${suffix || ''}</span>` : ''}
+      </li>
+    `).join('');
+  };
+
+  reposList.innerHTML    = makeLeaderHtml(topRepos, 'stars', '★');
+  papersList.innerHTML   = makeLeaderHtml(topPapers, 'citations', ' 📑');
+  packagesList.innerHTML = makeLeaderHtml(topPackages, 'downloads_last_month', ' 📥');
+};
+
 // 1. Load live stats from API (repositories, papers, packages, stars)
 async function loadStats() {
   try {
@@ -608,6 +314,9 @@ async function loadStats() {
     document.getElementById('stat-updated').textContent =
       'Updated ' + date.toLocaleDateString() + ' ' +
       date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+    // Also populate the new "snapshot" cards
+    renderLeaders(data);
 
   } catch (err) {
     console.error('Stats error:', err);
@@ -638,7 +347,6 @@ async function loadHighlights() {
       `<span class="botb-tag">#${t}</span>`
     ).join('');
 
-    // today.url from generator is "posts/<name>.html" (relative to /blog/)
     todayContainer.innerHTML = `
       <article class="botb-featured">
         <div class="botb-featured-header">
@@ -647,7 +355,7 @@ async function loadHighlights() {
             weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
           })}</span>
         </div>
-        <h3><a href="${baseurl}/blog/${today.url}">${today.title}</a></h3>
+        <h3><a href="${buildPostUrl(today.url)}">${today.title}</a></h3>
         <p>${stripMarkdown(today.excerpt) || 'Daily highlight selected from the leaderboard.'}</p>
         <div class="botb-tag-container">${tagsHtml}</div>
       </article>
@@ -663,7 +371,7 @@ async function loadHighlights() {
             })}
           </div>
           <h4 class="botb-card-title">
-            <a href="${baseurl}/blog/${post.url}">${post.title}</a>
+            <a href="${buildPostUrl(post.url)}">${post.title}</a>
           </h4>
           <p class="botb-card-excerpt">
             ${stripMarkdown(post.excerpt || '').substring(0, 110)}…
@@ -673,7 +381,7 @@ async function loadHighlights() {
       `).join('');
     } else {
       recentContainer.innerHTML =
-        '<p style="padding-left:1.5rem; color:#64748b">No previous highlights yet.</p>';
+        '<p class="botb-no-highlights">No previous highlights yet.</p>';
     }
 
   } catch (err) {
@@ -695,13 +403,13 @@ async function loadDashboardSummary() {
       if (!el) return;
 
       if (!items || !items.length) {
-        el.innerHTML = '<li class="botb-dash-item" style="text-align:center; color:#9ca3af;">No items yet.</li>';
+        el.innerHTML = '<li class="botb-dash-item botb-dash-item-empty">No items yet.</li>';
         return;
       }
 
       const html = items.slice(0, 4).map(item => `
         <li class="botb-dash-item">
-          <a href="${baseurl}/blog/${item.url}">${item.title}</a>
+          <a href="${buildPostUrl(item.url)}">${item.title}</a>
           <div class="botb-dash-meta">
             <span>${new Date(item.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}</span>
             ${(item.tags && item.tags.length > 0)
@@ -725,7 +433,7 @@ async function loadDashboardSummary() {
       .forEach(id => {
         const el = document.getElementById(id);
         if (el) el.innerHTML =
-          '<li class="botb-dash-item" style="text-align:center; color:#9ca3af;">Dashboard offline.</li>';
+          '<li class="botb-dash-item botb-dash-item-empty">Dashboard offline.</li>';
       });
   }
 }
