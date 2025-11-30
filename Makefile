@@ -80,17 +80,17 @@ ifeq ($(OS),Darwin)
 	@chmod +x scripts/install_macos.sh
 	@./scripts/install_macos.sh
 else ifeq ($(OS),Linux)
-	@echo "🐧 Detected Linux..."
+	@echo "🐧 Detected Linux (Debian/Ubuntu assumed)..."
 	@if [ -f /etc/debian_version ]; then \
-		echo "➡️  Using scripts/install_ubuntu.sh"; \
-		chmod +x scripts/install_ubuntu.sh; \
-		./scripts/install_ubuntu.sh; \
+		echo "➡️  Installing Ruby + build tools via apt-get"; \
+		sudo apt-get update; \
+		sudo apt-get install -y ruby-full build-essential zlib1g-dev; \
 	elif [ -f /etc/redhat-release ]; then \
 		echo "🎩 Using scripts/install_fedora.sh"; \
 		chmod +x scripts/install_fedora.sh; \
 		./scripts/install_fedora.sh; \
 	else \
-		echo "⚠️  Linux distro not auto-detected. Please run the appropriate script in ./scripts manually."; \
+		echo "⚠️  Linux distro not auto-detected. Please install Ruby manually."; \
 	fi
 else
 	@echo "🪟 Detected Windows..."
