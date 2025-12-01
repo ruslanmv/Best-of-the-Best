@@ -1,4 +1,4 @@
-# The best for now November 2025:
+# The best for now December 2025:
 ### Repositories
 | Repository | Stars | Link |
 |---|---|---|
