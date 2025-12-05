@@ -30,7 +30,7 @@ JEKYLL_BASEURL ?= /Best-of-the-Best
         venv install install-python install-jekyll install-ruby \
         ollama ollama-model \
         backend blog-index export-data update-readme update-db \
-        backend-all \
+        backend-all update \
         serve serve-prod build clean \
         test
 
@@ -53,6 +53,7 @@ help:
 	@echo "  make blog-index      - Generate blog index"
 	@echo "  make export-data     - Export API data feeds"
 	@echo "  make backend-all     - Run full backend pipeline (like CI)"
+	@echo "  make update          - 🏆 Generate daily blog post with CrewAI + Ollama"
 	@echo "  make serve           - Serve Jekyll site locally at / (dev-friendly)"
 	@echo "  make serve-prod      - Serve Jekyll site locally with baseurl $(JEKYLL_BASEURL)"
 	@echo "  make build           - Build Jekyll site into ./_site (production baseurl)"
@@ -178,6 +179,19 @@ export-data: install-python
 # multi-agent -> README -> DB -> blog index -> API feeds
 backend-all: backend update-readme update-db blog-index export-data
 	@echo "Backend pipeline completed."
+
+# -------------------------------------------------------------------
+# Daily Blog Generation (CrewAI + Ollama)
+# -------------------------------------------------------------------
+
+# Generate daily blog post with CrewAI multi-agent system
+# This uses update_blog.sh which handles:
+#  - Ollama setup and model download
+#  - Blog post generation with CrewAI
+#  - Blog index and API feed updates
+update:
+	@echo "🏆 Generating daily blog post with CrewAI..."
+	@bash update_blog.sh
 
 # -------------------------------------------------------------------
 # Jekyll site (Minimal Mistakes)
