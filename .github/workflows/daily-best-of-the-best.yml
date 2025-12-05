@@ -1,0 +1,84 @@
+name: "🏆 Daily Best-of-the-Best Blog"
+
+on:
+  schedule:
+    - cron: "0 4 * * *"  # Every day at 04:00 UTC (05:00 CET)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  best-of-the-best:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r scripts/requirements.txt
+
+      - name: ⚙️ Install Ollama (Linux)
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+
+      - name: 🧠 Start Ollama & pull llama3 model
+        env:
+          OLLAMA_HOST: "127.0.0.1"
+          OLLAMA_PORT: "11434"
+        run: |
+          ollama serve >/tmp/ollama.log 2>&1 &
+          # wait for server to be ready
+          for i in {1..30}; do
+            if curl -fsS "http://127.0.0.1:11434/api/tags" >/dev/null 2>&1; then
+              echo "✅ Ollama is up"
+              break
+            fi
+            echo "⏳ Waiting for Ollama..."
+            sleep 2
+          done
+          echo "⬇️ Pulling llama3:8b..."
+          ollama pull llama3:8b
+
+      - name: 🏆 Generate daily Best-of-the-Best blog post
+        env:
+          # Tell llm_client to use Ollama llama3
+          NEWS_LLM_MODEL: "ollama/llama3:8b"
+          OLLAMA_HOST: "http://127.0.0.1:11434"
+
+          # Optional: other providers (if you ever switch away from Ollama)
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          WATSONX_APIKEY: ${{ secrets.WATSONX_APIKEY }}
+          WATSONX_URL: ${{ secrets.WATSONX_URL }}
+          WATSONX_PROJECT_ID: ${{ secrets.WATSONX_PROJECT_ID }}
+        run: |
+          python scripts/generate_daily_blog.py
+
+      - name: 🔁 Rebuild blog index & API feeds
+        run: |
+          python blog/generate_index.py
+          python export_data_feeds.py
+
+      - name: Commit new blog + updated feeds
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🏆 Daily Best-of-the-Best blog update"
+          file_pattern: |
+            blog/posts/*.md
+            blog/posts/index.json
+            blog/api/*.json
+            blog/api/*.xml
+            data/blog_coverage.json
+          commit_user_name: "BestOfTheBestBot"
+          commit_user_email: "actions@github.com"
