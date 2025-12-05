@@ -1,0 +1,22 @@
+# Core dependencies for daily blog generation with CrewAI
+crewai>=0.86.0
+crewai-tools>=0.17.0
+litellm>=1.0.0
+
+# LLM provider integrations
+ollama>=0.4.4
+langchain-openai
+anthropic
+ibm-watsonx-ai
+
+# Utility libraries
+requests
+python-dotenv
+pyyaml
+markdown
+jinja2
+beautifulsoup4
+
+# Data processing (if needed by existing scripts)
+pypistats
+matplotlib
