@@ -78,6 +78,9 @@ data/
 
 .github/workflows/
 └── daily-best-of-the-best.yml # Daily GitHub Action workflow
+
+update_blog.sh                 # Local testing script (recommended)
+Makefile                       # Updated with `make update` target
 ```
 
 ## LLM Provider Support
@@ -118,7 +121,30 @@ The workflow runs:
 
 ## Local Testing
 
-To test locally:
+### Quick Start (Recommended)
+
+The easiest way to test locally:
+
+```bash
+# Option 1: Using Make (recommended)
+make update
+
+# Option 2: Run script directly
+./update_blog.sh
+```
+
+The `update_blog.sh` script automatically:
+- ✅ Checks if Ollama is installed
+- ✅ Starts Ollama server if needed
+- ✅ Pulls llama3:8b model automatically
+- ✅ Verifies Python dependencies
+- ✅ Runs blog generation with timing
+- ✅ Updates blog index and API feeds
+- ✅ Shows generated post summary with stats
+
+### Manual Testing
+
+If you prefer manual control:
 
 ```bash
 # Install dependencies
