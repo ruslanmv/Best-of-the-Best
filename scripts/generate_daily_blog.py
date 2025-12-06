@@ -506,6 +506,97 @@ def clean_content(body: str) -> str:
     
     return body
 
+import re
+def clean_llm_output(text: str) -> str:
+    """
+    Clean LLM-generated Markdown for Jekyll / Minimal Mistakes.
+
+    - Safely unwraps a global ```markdown ... ``` or ``` ... ``` wrapper.
+    - Preserves YAML front matter (--- ... ---) exactly as-is.
+    - Converts bold-only headings (**Title**) to proper markdown headings (## Title)
+      in prose sections only (not inside code fences).
+    - Ensures bare 'Introduction' lines become '## Introduction' in prose.
+    """
+    if not text:
+        return ""
+
+    # Normalize BOM and surrounding whitespace
+    text = text.replace("\ufeff", "").strip()
+
+    # 0) Unwrap a single outer ```markdown ... ``` or ``` ... ``` wrapper, if it
+    #    covers the entire content.
+    outer = re.match(
+        r"^```(?:markdown)?\s*(.*?)\s*```$",
+        text.strip(),
+        flags=re.DOTALL | re.IGNORECASE,
+    )
+    if outer:
+        text = outer.group(1)
+
+    # 1) Extract Jekyll front matter if present at the very start of the file.
+    front_matter = ""
+    body = text
+
+    if text.startswith("---\n") or text.startswith("---\r\n"):
+        lines = text.splitlines(keepends=True)
+        end_idx = None
+
+        for i in range(1, len(lines)):
+            # The closing '---' line for front matter
+            if lines[i].startswith("---"):
+                end_idx = i
+                break
+
+        if end_idx is not None:
+            front_matter = "".join(lines[: end_idx + 1])
+            body = "".join(lines[end_idx + 1 :])
+
+    # 2) Helper to clean ONLY prose (no code fences).
+    def _clean_prose(prose: str) -> str:
+        # Convert lines like "**Introduction**" → "## Introduction"
+        prose = re.sub(
+            r"^\s*\*\*(.*?)\*\*\s*$",
+            r"## \1",
+            prose,
+            flags=re.MULTILINE,
+        )
+
+        # Ensure plain "Introduction" line becomes a heading too
+        prose = re.sub(
+            r"^Introduction\s*$",
+            r"## Introduction",
+            prose,
+            flags=re.MULTILINE | re.IGNORECASE,
+        )
+
+        return prose
+
+    # 3) Split body into prose and code fences, clean only prose parts.
+    code_fence_re = re.compile(r"```.*?```", re.DOTALL)
+    cleaned_body_parts = []
+    last_pos = 0
+
+    for m in code_fence_re.finditer(body):
+        # Prose before the code fence
+        prose_chunk = body[last_pos : m.start()]
+        cleaned_body_parts.append(_clean_prose(prose_chunk))
+
+        # Code fence itself (unchanged)
+        cleaned_body_parts.append(m.group(0))
+
+        last_pos = m.end()
+
+    # Trailing prose after the last code fence
+    prose_chunk = body[last_pos:]
+    cleaned_body_parts.append(_clean_prose(prose_chunk))
+
+    cleaned_body = "".join(cleaned_body_parts).strip()
+
+    # 4) Reassemble front matter + cleaned body
+    result = (front_matter + cleaned_body).rstrip() + "\n"
+    return result
+
+
 
 # ============================================================================
 # 11-AGENT ORCHESTRATED CREW - FIXED FOR OLLAMA
@@ -546,7 +637,8 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
     # AGENT 2: README ANALYST (HAS TOOLS)
     # ========================================================================
     readme_tools = []
-    #if README_TOOLS_AVAILABLE and scrape_readme and not using_ollama:
+    # OLD LINE: if README_TOOLS_AVAILABLE and scrape_readme and not using_ollama:
+    # NEW LINE:
     if README_TOOLS_AVAILABLE and scrape_readme:
         readme_tools = [scrape_readme]
 
@@ -602,9 +694,11 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
     # AGENT 3: PACKAGE HEALTH VALIDATOR (HAS TOOLS)
     # ========================================================================
     health_tools = []
-    #if README_TOOLS_AVAILABLE and get_package_health and not using_ollama:
+    # OLD LINE: if README_TOOLS_AVAILABLE and get_package_health and not using_ollama:
+    # NEW LINE:
     if README_TOOLS_AVAILABLE and get_package_health:
         health_tools = [get_package_health]
+
 
     package_health_validator = Agent(
         role="Package Health Validator",
@@ -654,11 +748,13 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
 
  
    
-    # ========================================================================
+   # ========================================================================
     # AGENT 4: WEB SEARCH RESEARCHER (HAS TOOLS - if not Ollama)
     # ========================================================================
     web_tools = []
-    if SEARCH_TOOLS_AVAILABLE and not using_ollama:
+    # OLD LINE: if SEARCH_TOOLS_AVAILABLE and not using_ollama:
+    # NEW LINE (Remove the restriction):
+    if SEARCH_TOOLS_AVAILABLE: 
         if search_web:
             web_tools.append(search_web)
         if scrape_webpage:
@@ -746,7 +842,7 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
     # ========================================================================
     # AGENT 6: CONTENT PLANNER (NO TOOLS)
     # ========================================================================
-    content_planner = Agent(
+    content_planner_old = Agent(
         role="Content Strategist",
         goal="Create structured, engaging blog outline",
         backstory="""You design blog structures that:
@@ -762,6 +858,35 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         max_iter=2,
     )
     
+    # ========================================================================
+    # AGENT 6: CONTENT PLANNER (NO TOOLS)
+    # ========================================================================
+    content_planner = Agent(
+        role="Content Strategist",
+        goal="Create structured, engaging blog outline from the research.",
+        backstory="""You design blog structures that:
+        • Start with clear introduction
+        • Progress logically through concepts
+        • Include 2-3 practical examples
+        • End with actionable next steps        
+Must:
+- Use the research context as the source of truth.
+- Do not remove links or key facts unless they are exact duplicates.
+
+Style:
+- Use Markdown headings (##, ###).
+- Produce an outline only, not the full article.
+
+Output:
+- You base outlines on validated research only.
+- Markdown outline ONLY, no commentary.""",
+        llm=llm,
+        verbose=True,
+        allow_delegation=False,
+        max_iter=2,
+    )
+
+
     # ========================================================================
     # AGENT 7: TECHNICAL WRITER (NO TOOLS) - FIXED
     # ========================================================================
@@ -828,7 +953,7 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
     
     # AGENT 10: CONTENT EDITOR (NO TOOLS)
     # ========================================================================
-    content_editor = Agent(
+    content_editor_old = Agent(
         role="Content Editor",
         goal="Polish article readability and enforce Markdown formatting",
         backstory="""Professional editor who:
@@ -848,7 +973,43 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         allow_delegation=False,
         max_iter=2,
     )
-    
+
+    # AGENT 10: CONTENT EDITOR (NO TOOLS)
+    # ========================================================================
+    content_editor = Agent(
+        role="Content Editor",
+        goal="Polish article readability, fix minor consistency issues, and enforce Markdown formatting.",
+        backstory="""You are a concise, precision-focused editor.
+
+Core job:
+- Improve sentence flow and clarity.
+- Remove buzzwords and unnecessary repetition.
+- Keep tone and terminology consistent.
+- Fix small contradictions using context (pick the clearest, most consistent version).
+
+Markdown rules:
+1) Every code block MUST have a language tag:
+   - ```python for Python
+   - ```bash for shell
+   - Use other tags when obvious (json, yaml, etc.).
+2) Never mix shell commands (e.g. pip install) with source code in the same block.
+3) Do NOT change imports, variable names, or logic inside code blocks.
+4) Use proper headings (##, ###). Do not use bold text as headings.
+5) Keep spacing clean (no >2 blank lines, blank line around headings and code blocks).
+6) If there are links or references, write them in full Markdown format.
+Constraints:
+- Act as a ghostwriter: no "I", "we", or editor commentary.
+- No meta text like "Note:", "I updated...", or describing changes.
+- Do not change the overall section structure or remove examples, unless something is clearly broken.
+
+Output:
+- Return ONLY the final Markdown article, starting directly with the content.""",
+        llm=llm,
+        verbose=True,
+        allow_delegation=False,
+        max_iter=2,
+    )
+
     # ========================================================================
     # AGENT 11: METADATA PUBLISHER (NO TOOLS)
     # ========================================================================
@@ -1038,7 +1199,7 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
 
     
     # TASK 5: Source Quality Validation
-    quality_task = Task(
+    quality_task_old = Task(
         description="""
         Validate research quality and assign confidence rating.
         
@@ -1076,7 +1237,60 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         agent=source_validator,
         context=[orchestration_task, readme_task, health_task, web_research_task],
     )
-    
+
+    # TASK 5: Source Quality Validation
+    quality_task = Task(
+        description="""
+        Validate research quality and assign a confidence rating.
+
+        Evaluate sources used:
+        - README / official docs → A+ (highest confidence)
+        - Package health report → A (high confidence)
+        - Web tutorials / blogs → B (medium confidence)
+        - Missing / incomplete → F (reject)
+
+        Check:
+        - Version information present?
+        - Code examples complete?
+        - Deprecation warnings noted?
+        - Sources cited (with URLs)?
+
+        CRITICAL URL RULES:
+        - If any URLs appear in the research context, you MUST copy them into the Resources section below.
+        - List them as Markdown links.
+        - NEVER write placeholders like "[Insert relevant URLs...]".
+
+        OUTPUT FORMAT (use this template exactly, keep the headings):
+
+        Quality Rating: [A+ / A / B / C / F]
+        Confidence: [High / Medium / Low]
+
+        Sources:
+        • Primary: [README / Web / None]
+        • Validation: [Package Health / None]
+
+        Completeness:
+        • Version info: [✓ / ✗]
+        • Code examples: [✓ / ✗] ([count] found)
+        • Deprecations: [✓ / ✗]
+
+        Resources:
+        - [Label 1](https://example.com/real-url-1)
+        - ...
+
+        (IMPORTANT: If any URLs appear in the research context,
+        you MUST list them here as Markdown links. Do NOT use
+        placeholders like "[Insert relevant URLs...]".)
+
+        Recommendations:
+        [How to use this research in blog]
+        """,
+        expected_output="Quality validation report with explicit Resources section",
+        agent=source_validator,
+        context=[orchestration_task, readme_task, health_task, web_research_task],
+    )
+
+
     # TASK 6: Content Planning
     planning_task = Task(
         description=f"""
@@ -1119,7 +1333,10 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         7. **Conclusion** (100 words)
             - Summary
             - Next steps
-            - Resources
+            - Resources:
+              - If the quality report contains a 'Resources' section with Markdown links,
+                copy those links, choose the top 1 reference if are provided otherwise skip.
+              - If there are NO URLs in the research context, omit the Resources subsection entirely.   
         
         CRITICAL:
         • Use version from validation ONLY
@@ -1147,6 +1364,8 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
             from the JSON input.
             • If your internal knowledge conflicts with the research context, prefer the
             research context.
+            • If real resource URLs are available and provided in the context, add maximum 2 references a final "Resources" section listing them as Markdown links (e.g. [Label](https://example.com)).
+            • Never leave placeholder text in the final article. If information is missing, omit that part entirely.
 
             MANDATORY REQUIREMENTS:
 
@@ -1622,6 +1841,10 @@ def main() -> None:
         logger.info(f"📄 Generated: {len(body)} chars, {len(body.split())} words")
         
         # Step 7: Clean
+        # ----- Ollama fix for extra formatting -----
+        body = clean_llm_output(body) 
+        # ---------------------
+
         body = clean_content(body)
         
         # Step 8: Final validation

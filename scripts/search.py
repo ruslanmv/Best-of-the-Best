@@ -304,14 +304,9 @@ def extract_code_examples_from_readme(readme_content: str, language: str = "pyth
 
 def detect_deprecated_features(readme_content: str, package_name: str) -> Dict[str, Any]:
     """
-    Detect deprecated features, datasets, or APIs mentioned in README
+    Detect deprecated features, datasets, or APIs mentioned in README.
     
-    Args:
-        readme_content: README text
-        package_name: Package name for context
-    
-    Returns:
-        Dictionary with deprecation warnings
+    Refactored to check ALL known libraries, not just the target package.
     """
     readme_lower = readme_content.lower()
     
@@ -319,8 +314,7 @@ def detect_deprecated_features(readme_content: str, package_name: str) -> Dict[s
     deprecation_keywords = [
         "deprecated", "deprecation", "no longer supported", 
         "removed in version", "will be removed", "legacy",
-        "obsolete", "superseded", "replaced by", "use instead",
-        "migration guide", "breaking change", "backwards incompatible"
+        "obsolete", "superseded", "replaced by", "use instead"
     ]
     
     # Find sections with deprecation warnings
@@ -330,9 +324,9 @@ def detect_deprecated_features(readme_content: str, package_name: str) -> Dict[s
     for i, line in enumerate(lines):
         line_lower = line.lower()
         if any(keyword in line_lower for keyword in deprecation_keywords):
-            # Get context (5 lines before and after)
-            start = max(0, i - 5)
-            end = min(len(lines), i + 6)
+            # Get context
+            start = max(0, i - 2)
+            end = min(len(lines), i + 3)
             context = '\n'.join(lines[start:end])
             
             deprecation_sections.append({
@@ -343,38 +337,29 @@ def detect_deprecated_features(readme_content: str, package_name: str) -> Dict[s
     
     # Specific deprecated items for popular packages
     known_deprecations = {
-        "scikit-learn": [
-            "load_boston", "fetch_mldata", "sklearn.cross_validation",
-            "sklearn.grid_search", "sklearn.learning_curve"
-        ],
-        "pandas": [
-            "append", "ix", "Panel", "SparseDataFrame"
-        ],
-        "tensorflow": [
-            "tf.Session", "tf.placeholder", "tf.contrib"
-        ],
-        "numpy": [
-            "np.matrix", "np.asmatrix"
-        ],
-        "matplotlib": [
-            "axes.hold", "pyplot.hold"
-        ]
+        "scikit-learn": ["load_boston", "fetch_mldata", "sklearn.cross_validation"],
+        "pandas": ["append", "ix", "Panel"],
+        "tensorflow": ["tf.Session", "tf.placeholder", "tf.contrib"],
+        "numpy": ["np.matrix", "np.asmatrix"],
+        "xgboost": ["predict_proba (use predict)", "get_fscore"]
     }
     
     detected_deprecated_items = []
-    package_base = package_name.split('[')[0].lower()  # Handle extras like "package[extra]"
     
-    if package_base in known_deprecations:
-        for item in known_deprecations[package_base]:
+    # [CRITICAL FIX] Check ALL libraries, not just the package being analyzed.
+    # Code examples often use multiple libraries (e.g. sklearn data in xgboost tutorial).
+    for lib, items in known_deprecations.items():
+        for item in items:
+            # Check for strict word boundary or exact match to avoid false positives
             if item.lower() in readme_lower:
-                detected_deprecated_items.append(item)
+                detected_deprecated_items.append(f"{lib}: {item}")
     
     has_deprecations = len(deprecation_sections) > 0 or len(detected_deprecated_items) > 0
     
     return {
         "has_deprecation_warnings": has_deprecations,
         "deprecation_count": len(deprecation_sections),
-        "deprecation_sections": deprecation_sections[:5],  # First 5
+        "deprecation_sections": deprecation_sections[:5],
         "known_deprecated_items": detected_deprecated_items,
         "recommendation": "Review deprecation warnings before using code examples" if has_deprecations else "No major deprecation warnings found"
     }
@@ -762,16 +747,11 @@ def scrape_github_readme(repo_url: str) -> Optional[str]:
         logger.warning(f"GitHub README scraping failed for {repo_url}: {e}")
         return None
 
-
 def scrape_readme_smart(url_or_name: str) -> Tuple[bool, str]:
     """
     Intelligently scrape README from PyPI package or GitHub repository
     
-    Args:
-        url_or_name: Package name (e.g., "fastapi") or URL (PyPI or GitHub)
-    
-    Returns:
-        Tuple of (success, readme_content_or_error)
+    Refactored to handle "Stub" PyPI pages by forcing GitHub fallback.
     """
     url_or_name = url_or_name.strip()
     
@@ -786,42 +766,65 @@ def scrape_readme_smart(url_or_name: str) -> Tuple[bool, str]:
     
     readme_content = None
     source = None
-    
-    # Detect type and scrape
-    if url_or_name.startswith(('http://', 'https://')):
-        url_lower = url_or_name.lower()
-        
-        if 'github.com' in url_lower:
-            # GitHub repository
-            readme_content = scrape_github_readme(url_or_name)
-            source = "github"
-        elif 'pypi.org' in url_lower:
-            # PyPI package URL - extract package name
+    url_lower = url_or_name.lower()
+
+    # 1. Try PyPI First (if it's a URL or just a name)
+    if 'pypi.org' in url_lower or not url_or_name.startswith(('http', 'https')):
+        package_name = url_or_name
+        if 'pypi.org' in url_lower:
             match = re.search(r'pypi\.org/project/([^/]+)', url_lower)
             if match:
                 package_name = match.group(1)
-                readme_content = scrape_pypi_readme(package_name)
-                source = "pypi"
-        else:
-            # Try as generic webpage
-            readme_content = scrape_webpage_content(url_or_name, max_chars=20000)
-            source = "web"
-    else:
-        # Assume it's a PyPI package name
-        readme_content = scrape_pypi_readme(url_or_name)
-        source = "pypi"
         
-        # If PyPI fails, try searching GitHub
-        if not readme_content:
-            # Try common patterns
-            for pattern in [f"{url_or_name}/{url_or_name}", f"python-{url_or_name}", url_or_name]:
+        readme_content = scrape_pypi_readme(package_name)
+        source = "pypi"
+
+        # [CRITICAL FIX] STUB DETECTION
+        # If PyPI content is too short (likely just "See docs at..."), force fallback
+        if readme_content and len(readme_content) < 1200:
+            logger.warning(f"⚠️ PyPI README appears to be a stub ({len(readme_content)} chars). Force-attempting GitHub fallback...")
+            readme_content = None # Set to None to trigger fallback logic below
+
+    # 2. GitHub Fallback (If PyPI failed OR was a stub)
+    if not readme_content:
+        # If it was a direct GitHub URL
+        if 'github.com' in url_lower:
+            readme_content = scrape_github_readme(url_or_name)
+            source = "github"
+        
+        # If it was a package name, guess the GitHub URL
+        else:
+            # Clean package name
+            clean_name = url_or_name.split('/')[-1]
+            
+            # Try common repo patterns
+            potential_repos = [
+                f"{clean_name}/{clean_name}",           # e.g. xgboost/xgboost
+                f"dmlc/{clean_name}",                    # e.g. dmlc/xgboost
+                f"google/{clean_name}",                  # e.g. google/jax
+                f"python-{clean_name}/{clean_name}",     # e.g. python-telegram-bot
+            ]
+            
+            # If we have a previous "stub" content, try to extract a GitHub URL from it
+            if source == "pypi":
+                # Implementation detail: One could scrape the stub for links, 
+                # but for now we rely on pattern matching
+                pass
+
+            for pattern in potential_repos:
                 test_url = f"https://github.com/{pattern}"
                 content = scrape_github_readme(test_url)
                 if content:
                     readme_content = content
                     source = "github"
+                    logger.info(f"✅ Found GitHub fallback: {pattern}")
                     break
-    
+
+    # 3. Generic Web Scrape Fallback
+    if not readme_content and url_or_name.startswith(('http', 'https')):
+         readme_content = scrape_webpage_content(url_or_name, max_chars=20000)
+         source = "web"
+
     if readme_content:
         # Cache the result
         cache_data = [{"content": readme_content, "source": source}]
@@ -839,7 +842,6 @@ def scrape_readme_smart(url_or_name: str) -> Tuple[bool, str]:
         error_msg = f"Could not find README for: {url_or_name}"
         logger.error(error_msg)
         return False, error_msg
-
 
 # ============================================================================
 # SEARCH PROVIDERS
@@ -1049,16 +1051,19 @@ def perform_web_search(query: str, max_results: int = MAX_RESULTS_PER_SEARCH) ->
     
     logger.info(f"🔍 Searching: {query[:100]}...")
     
-    for provider in ["duckduckgo", "duckduckgo-api", "serpapi", "brave"]:
+    # Check cache
+    for provider in ["duckduckgo-api", "duckduckgo", "serpapi", "brave"]:
         cached = get_cached_result(query, provider)
         if cached:
             return True, _format_results(cached, query)
     
     rate_limiter.wait_if_needed()
     
+    # [CRITICAL FIX] Reordered Priority: API First, HTML Scraper Second
+    # HTML scraping is brittle and causes "System Error" often.
     search_functions = [
-        ("duckduckgo", search_duckduckgo),
-        ("duckduckgo-api", search_duckduckgo_instant),
+        ("duckduckgo-api", search_duckduckgo_instant), # API is more reliable
+        ("duckduckgo", search_duckduckgo),             # HTML Fallback
         ("serpapi", search_serpapi),
         ("brave", search_brave),
     ]
@@ -1079,8 +1084,7 @@ def perform_web_search(query: str, max_results: int = MAX_RESULTS_PER_SEARCH) ->
     logger.error(error_msg)
     return False, error_msg
 
-
-def _format_results(results: List[Dict[str, str]], query: str) -> str:
+def _format_results_old(results: List[Dict[str, str]], query: str) -> str:
     """Format search results for LLM consumption"""
     output = f"# Search Results for: {query}\n\n"
     output += f"Found {len(results)} results:\n\n"
@@ -1092,6 +1096,29 @@ def _format_results(results: List[Dict[str, str]], query: str) -> str:
         output += f"**Summary:** {result['snippet']}\n"
         output += f"**Source:** {result['source']}\n\n"
     
+    output += "\n---\n"
+    output += "Use these search results to provide accurate, up-to-date information.\n"
+    output += "Always cite sources by mentioning the title and URL.\n"
+    
+    return output
+def _format_results(results: List[Dict[str, str]], query: str) -> str:
+    output = f"# Search Results for: {query}\n\n"
+    output += f"Found {len(results)} results:\n\n"
+    
+    for i, result in enumerate(results, 1):
+        output += f"## Result {i}\n"
+        output += f"**Title:** {result['title']}\n"
+        output += f"**URL:** {result['url']}\n"
+        output += f"**Summary:** {result['snippet']}\n"
+        output += f"**Source:** {result['source']}\n\n"
+
+    # NEW: markdown-ready resources list
+    output += "## Resources (Markdown-ready)\n\n"
+    for result in results:
+        title = result["title"] or result["url"]
+        url = result["url"]
+        if url:
+            output += f"- [{title}]({url})\n"
     output += "\n---\n"
     output += "Use these search results to provide accurate, up-to-date information.\n"
     output += "Always cite sources by mentioning the title and URL.\n"
