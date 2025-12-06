@@ -564,28 +564,28 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
 
         TOOL CALLING FORMAT (CRITICAL)
 
-        You have access to the tool: scrape_readme
+        You have access to the tool: Get README from PyPI package or GitHub repository
 
         When you respond:
 
         1) If you NEED to use a tool:
-        You MUST respond EXACTLY in this format, and nothing else:
+           You MUST respond EXACTLY in this format, and nothing else:
 
-        Thought: <very brief reasoning about why you are calling the tool>
-        Action: scrape_readme
-        Action Input: "<identifier or URL for the project>"
+           Thought: <very brief reasoning about why you are calling the tool>
+           Action: Get README from PyPI package or GitHub repository
+           Action Input: "<identifier or URL for the project>"
 
-        • Do not add extra text before or after these three lines.
-        • Do not include JSON or markdown fences around this.
+           • Do not add extra text before or after these three lines.
+           • Do not include JSON or markdown fences around this.
 
         2) If you do NOT need to use any more tools and can give your final answer:
-        You MUST respond EXACTLY in this format:
+           You MUST respond EXACTLY in this format:
 
-        Thought: I now can give a great answer
-        Final Answer: <your best complete answer, following the Task's OUTPUT instructions>
+           Thought: I now can give a great answer
+           Final Answer: <your best complete answer, following the Task's OUTPUT instructions>
 
-        • The Final Answer must be the structured README analysis the Task asks for.
-        • Do not mention tools, Thought, or meta-commentary inside the Final Answer content itself.
+           • The Final Answer must be the structured README analysis the Task asks for.
+           • Do not mention tools, Thought, or meta-commentary inside the Final Answer content itself.
 
         Never write 'Action:' if you are not actually calling a tool.
         Never mix multiple Actions in a single response.
@@ -619,28 +619,28 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
 
         TOOL CALLING FORMAT (CRITICAL)
 
-        You have access to the tool: get_package_health
+        You have access to the tool: Get comprehensive package health report with validation
 
         When you respond:
 
         1) If you NEED to use a tool:
-        You MUST respond EXACTLY in this format, and nothing else:
+           You MUST respond EXACTLY in this format, and nothing else:
 
-        Thought: <very brief reasoning about why you are calling the tool>
-        Action: get_package_health
-        Action Input: "<package name or identifier>"
+           Thought: <very brief reasoning about why you are calling the tool>
+           Action: Get comprehensive package health report with validation
+           Action Input: "<package name or identifier>"
 
-        • Do not add extra text before or after these three lines.
-        • Do not wrap this in JSON or markdown fences.
+           • Do not add extra text before or after these three lines.
+           • Do not wrap this in JSON or markdown fences.
 
         2) If you do NOT need to use any more tools and can give your final answer:
-        You MUST respond EXACTLY in this format:
+           You MUST respond EXACTLY in this format:
 
-        Thought: I now can give a great answer
-        Final Answer: <your best complete package health report, following the Task's OUTPUT instructions>
+           Thought: I now can give a great answer
+           Final Answer: <your best complete package health report, following the Task's OUTPUT instructions>
 
-        • The Final Answer should summarize version, deprecations, maintenance, and example quality.
-        • Do not talk about tools or your reasoning inside the Final Answer content.
+           • The Final Answer should summarize version, deprecations, maintenance, and example quality.
+           • Do not talk about tools or your reasoning inside the Final Answer content.
 
         Never output 'Action:' unless you are actually calling a tool.
         Never mix multiple tools or multiple Actions in a single response.
@@ -652,6 +652,7 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         max_iter=3,
     )
 
+ 
    
     # ========================================================================
     # AGENT 4: WEB SEARCH RESEARCHER (HAS TOOLS - if not Ollama)
@@ -668,7 +669,7 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         goal="Find accurate information through web search (fallback only)",
         backstory="""You search the web when official docs and package health data are insufficient:
         • Search for official documentation first
-        • Find recent tutorials (e.g., 2024–2025)
+        • Find recent tutorials and blog posts.
         • Extract working code examples
         • Prefer official sites, reputable documentation, and high-quality blogs
 
@@ -677,38 +678,38 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         TOOL CALLING FORMAT (CRITICAL)
 
         You have access to these tools (depending on configuration):
-        • search_web
-        • scrape_webpage
+        • Search the web for information
+        • Scrape and extract content from a specific webpage
 
         When you respond:
 
         1) If you NEED to use a tool:
-        You MUST respond EXACTLY in this format, and nothing else:
+           You MUST respond EXACTLY in this format, and nothing else:
 
-        Thought: <very brief reasoning about why you are calling a tool and which one>
-        Action: <tool_name>
-        Action Input: "<query or URL>"
+           Thought: <very brief reasoning about why you are calling a tool and which one>
+           Action: <tool_name>
+           Action Input: "<query or URL>"
 
-        Examples of valid outputs:
-        Thought: I need to find the official documentation site.
-        Action: search_web
-        Action Input: "PACKAGE_NAME official documentation"
+           Examples of valid outputs:
+           Thought: I need to find the official documentation site.
+           Action: Search the web for information
+           Action Input: "PACKAGE_NAME official documentation"
 
-        Thought: I found a promising URL and want to extract details.
-        Action: scrape_webpage
-        Action Input: "https://example.com/docs/page"
+           Thought: I found a promising URL and want to extract details.
+           Action: Scrape and extract content from a specific webpage
+           Action Input: "https://example.com/docs/page"
 
-        • Do not include extra text before or after these three lines.
-        • Do not wrap this in JSON or markdown fences.
+           • Do not include extra text before or after these three lines.
+           • Do not wrap this in JSON or markdown fences.
 
         2) If you do NOT need to use any more tools and can give your final answer:
-        You MUST respond EXACTLY in this format:
+           You MUST respond EXACTLY in this format:
 
-        Thought: I now can give a great answer
-        Final Answer: <your best complete web research report, following the Task's OUTPUT instructions>
+           Thought: I now can give a great answer
+           Final Answer: <your best complete web research report, following the Task's OUTPUT instructions>
 
-        • The Final Answer should summarize sources, URLs, reliability, and key findings.
-        • Do not mention tools or your internal chain-of-thought inside the Final Answer content.
+           • The Final Answer should summarize sources, URLs, reliability, and key findings.
+           • Do not mention tools or your internal chain-of-thought inside the Final Answer content.
 
         RULES:
         • Never output 'Action:' unless you are actually calling a tool.
@@ -920,7 +921,8 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         description=f"""
         Extract complete information from README for: {identifier}
         
-        USE: scrape_readme("{identifier}")
+        USE the tool: "Get README from PyPI package or GitHub repository" 
+        with input "{identifier}"
         
         Extract:
         1. **Version Information**
@@ -954,13 +956,16 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         expected_output="Complete README analysis (500+ words)",
         agent=readme_analyst,
     )
-    
+
+
+
     # TASK 3: Package Health Validation
     health_task = Task(
         description=f"""
         Validate package health for: {identifier}
         
-        USE: get_package_health("{identifier}")
+        USE the tool: "Get comprehensive package health report with validation"
+        with input "{identifier}"
         
         The tool provides:
         • Latest version number
@@ -994,37 +999,43 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         agent=package_health_validator,
         context=[readme_task],
     )
+
     
     # TASK 4: Web Research (fallback)
     web_research_task = Task(
         description=f"""
         Research {topic.title} using web search (fallback mode).
-        
+
         SEARCH STRATEGY:
-        
-        1. Official documentation
-           search_web("{topic.title} official documentation")
-        
-        2. Recent tutorials
-           search_web("{topic.title} tutorial 2024")
-        
-        3. Working examples
-           search_web("{topic.title} complete example code")
-        
-        4. Current version
-           search_web("{topic.title} latest version")
-        
+
+        1. Official documentation  
+           Use the tool "Search the web for information"  
+           with query "{topic.title} official documentation"
+
+        2. Recent tutorials  
+           Use the tool "Search the web for information"  
+           with query "{topic.title} tutorial latest"
+
+        3. Working examples  
+           Use the tool "Search the web for information"  
+           with query "{topic.title} complete example code"
+
+        4. Current version  
+           Use the tool "Search the web for information"  
+           with query "{topic.title} latest version"
+
         For each result:
-        • Extract key information
-        • Note source URL
-        • Assess reliability
+        • Extract key information  
+        • Note source URL  
+        • Assess reliability  
         • Flag incomplete examples
-        
+
         OUTPUT: Web research report with sources cited
         """,
         expected_output="Web research report with URLs",
         agent=web_researcher,
     )
+
     
     # TASK 5: Source Quality Validation
     quality_task = Task(
