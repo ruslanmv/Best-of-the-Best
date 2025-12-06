@@ -2,7 +2,13 @@
 """
 scripts/generate_blog_advanced_orchestrated.py
 
-PRODUCTION v4.0 - Advanced Multi-Agent Orchestration with Precise Data Retrieval
+PRODUCTION v4.1 - Fixed Ollama Compatibility
+
+Key Fixes:
+- Removed tools from agents that don't need them
+- Fixed max_iter for better completion
+- Resolved LiteLLM message list conflicts
+- Cleaned up agent instructions
 
 Features:
 - 11-agent orchestrated pipeline with dynamic routing
@@ -13,27 +19,6 @@ Features:
 - Topic-specific images
 - Ollama compatible
 - Production error handling
-
-Agents:
-1. Orchestrator - Routes research strategy
-2. README Analyst - Extracts official documentation
-3. Package Health Validator - Checks versions/deprecations
-4. Web Search Researcher - Fallback information gathering
-5. Source Quality Validator - Rates information quality
-6. Content Planner - Creates structured outline
-7. Technical Writer - Writes article
-8. Code Validator - Checks all code blocks
-9. Code Fixer - Fixes issues
-10. Content Editor - Polishes prose
-11. Metadata Publisher - Creates SEO metadata
-
-Usage:
-    python scripts/generate_blog_advanced_orchestrated.py
-
-Requirements:
-    - blog/api/packages.json, repositories.json, papers.json, tutorials.json
-    - .env file with PEXELS_API_KEY (optional), GITHUB_TOKEN (optional)
-    - Ollama running (if using Ollama)
 """
 
 import ast
@@ -455,8 +440,22 @@ def validate_python_code(code: str) -> Tuple[bool, List[str]]:
 
 
 def validate_all_code_blocks(content: str) -> Tuple[bool, List[str], List[str]]:
-    """Validate all Python code blocks"""
-    code_blocks = re.findall(r'```python\n(.*?)```', content, re.DOTALL)
+    """
+    Validate all Python code blocks.
+    
+    Fix: Uses a robust regex to capture blocks marked as 'python', 'py', 
+    or blocks with no language tag (assumed Python). Ignores explicit 
+    non-Python blocks (like 'bash', 'json') to avoid false syntax errors.
+    """
+    # Regex Explanation:
+    # ```             : Match opening backticks
+    # (?:python|py)?  : Non-capturing group. Matches 'python', 'py', or Nothing (optional)
+    # [ \t]* : Matches optional spaces/tabs after the tag (but before newline)
+    # \n              : Match the newline
+    # (.*?)           : Capture the code content (non-greedy)
+    # ```             : Match closing backticks
+    
+    code_blocks = re.findall(r'```(?:python|py)?[ \t]*\n(.*?)```', content, re.DOTALL | re.IGNORECASE)
     
     if not code_blocks:
         return True, [], []
@@ -465,6 +464,10 @@ def validate_all_code_blocks(content: str) -> Tuple[bool, List[str], List[str]]:
     all_valid = True
     
     for i, code in enumerate(code_blocks, 1):
+        # Skip empty blocks which might happen with double newlines
+        if not code.strip():
+            continue
+            
         is_valid, errors = validate_python_code(code)
         if not is_valid:
             all_valid = False
@@ -472,7 +475,6 @@ def validate_all_code_blocks(content: str) -> Tuple[bool, List[str], List[str]]:
             all_issues.extend([f"  • {err}" for err in errors])
     
     return all_valid, all_issues, code_blocks
-
 
 # ============================================================================
 # CONTENT CLEANING
@@ -506,31 +508,24 @@ def clean_content(body: str) -> str:
 
 
 # ============================================================================
-# 11-AGENT ORCHESTRATED CREW - PRODUCTION READY
+# 11-AGENT ORCHESTRATED CREW - FIXED FOR OLLAMA
 # ============================================================================
 def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
     """
-    Build 11-agent orchestrated pipeline with precise data retrieval.
+    Build 11-agent orchestrated pipeline - FIXED FOR OLLAMA
     
-    Agent Flow:
-    1. Orchestrator decides strategy
-    2. README Analyst extracts official docs (if available)
-    3. Package Health Validator checks version/deprecations (if package)
-    4. Web Researcher searches web (if no README)
-    5. Source Validator rates quality
-    6. Content Planner creates outline
-    7. Technical Writer writes article
-    8. Code Validator checks code
-    9. Code Fixer fixes issues
-    10. Content Editor polishes
-    11. Metadata Publisher creates SEO data
+    KEY FIXES:
+    - Removed tools from agents that don't need them
+    - Increased max_iter for better completion
+    - Simplified agent instructions
+    - Fixed allow_delegation conflicts
     """
     
     using_ollama = is_ollama_llm()
     topic_type, identifier = detect_topic_type(topic)
     
     # ========================================================================
-    # AGENT 1: ORCHESTRATOR
+    # AGENT 1: ORCHESTRATOR (NO TOOLS)
     # ========================================================================
     orchestrator = Agent(
         role="Research Orchestrator",
@@ -543,61 +538,123 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         You coordinate specialized agents and ensure quality.""",
         llm=llm,
         verbose=True,
-        allow_delegation=True,
-        max_iter=2,
+        allow_delegation=False,  
+        max_iter=3,
     )
     
     # ========================================================================
-    # AGENT 2: README ANALYST
+    # AGENT 2: README ANALYST (HAS TOOLS)
     # ========================================================================
     readme_tools = []
+    #if README_TOOLS_AVAILABLE and scrape_readme and not using_ollama:
     if README_TOOLS_AVAILABLE and scrape_readme:
         readme_tools = [scrape_readme]
-    
+
     readme_analyst = Agent(
         role="README Documentation Analyst",
         goal="Extract complete information from official README",
-        backstory="""Expert at reading README files and extracting:
+        backstory="""You are an expert at reading README files for software projects and extracting:
         • Current version numbers
         • Installation instructions
         • COMPLETE working code examples (with ALL imports)
         • API documentation
         • Feature descriptions
-        
-        You ONLY use information from README - no assumptions.""",
+
+        You ONLY use information from the README and other trusted project documentation – no assumptions.
+
+        TOOL CALLING FORMAT (CRITICAL)
+
+        You have access to the tool: scrape_readme
+
+        When you respond:
+
+        1) If you NEED to use a tool:
+        You MUST respond EXACTLY in this format, and nothing else:
+
+        Thought: <very brief reasoning about why you are calling the tool>
+        Action: scrape_readme
+        Action Input: "<identifier or URL for the project>"
+
+        • Do not add extra text before or after these three lines.
+        • Do not include JSON or markdown fences around this.
+
+        2) If you do NOT need to use any more tools and can give your final answer:
+        You MUST respond EXACTLY in this format:
+
+        Thought: I now can give a great answer
+        Final Answer: <your best complete answer, following the Task's OUTPUT instructions>
+
+        • The Final Answer must be the structured README analysis the Task asks for.
+        • Do not mention tools, Thought, or meta-commentary inside the Final Answer content itself.
+
+        Never write 'Action:' if you are not actually calling a tool.
+        Never mix multiple Actions in a single response.
+        """,
         llm=llm,
         tools=readme_tools,
         verbose=True,
         allow_delegation=False,
-        max_iter=2,
+        max_iter=3,
     )
+
     
     # ========================================================================
-    # AGENT 3: PACKAGE HEALTH VALIDATOR
+    # AGENT 3: PACKAGE HEALTH VALIDATOR (HAS TOOLS)
     # ========================================================================
     health_tools = []
+    #if README_TOOLS_AVAILABLE and get_package_health and not using_ollama:
     if README_TOOLS_AVAILABLE and get_package_health:
         health_tools = [get_package_health]
-    
+
     package_health_validator = Agent(
         role="Package Health Validator",
         goal="Validate package versions and check for deprecations",
-        backstory="""You validate Python packages:
-        • Check current version (prevent using outdated versions like 1.5.2 when 2.x exists)
-        • Detect deprecated features (e.g., load_boston, sklearn.cross_validation)
+        backstory="""You validate Python packages based on trusted metadata and documentation:
+        • Check current version (prevent using outdated versions)
+        • Detect deprecated or removed features
         • Verify package maintenance status
-        • Extract working code examples from README
-        
-        You prevent critical errors like using removed datasets.""",
+        • Extract working code examples from README or official docs
+
+        You prevent critical errors like using removed datasets or deprecated APIs.
+
+        TOOL CALLING FORMAT (CRITICAL)
+
+        You have access to the tool: get_package_health
+
+        When you respond:
+
+        1) If you NEED to use a tool:
+        You MUST respond EXACTLY in this format, and nothing else:
+
+        Thought: <very brief reasoning about why you are calling the tool>
+        Action: get_package_health
+        Action Input: "<package name or identifier>"
+
+        • Do not add extra text before or after these three lines.
+        • Do not wrap this in JSON or markdown fences.
+
+        2) If you do NOT need to use any more tools and can give your final answer:
+        You MUST respond EXACTLY in this format:
+
+        Thought: I now can give a great answer
+        Final Answer: <your best complete package health report, following the Task's OUTPUT instructions>
+
+        • The Final Answer should summarize version, deprecations, maintenance, and example quality.
+        • Do not talk about tools or your reasoning inside the Final Answer content.
+
+        Never output 'Action:' unless you are actually calling a tool.
+        Never mix multiple tools or multiple Actions in a single response.
+        """,
         llm=llm,
         tools=health_tools,
         verbose=True,
         allow_delegation=False,
-        max_iter=2,
+        max_iter=3,
     )
-    
+
+   
     # ========================================================================
-    # AGENT 4: WEB SEARCH RESEARCHER
+    # AGENT 4: WEB SEARCH RESEARCHER (HAS TOOLS - if not Ollama)
     # ========================================================================
     web_tools = []
     if SEARCH_TOOLS_AVAILABLE and not using_ollama:
@@ -605,27 +662,69 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
             web_tools.append(search_web)
         if scrape_webpage:
             web_tools.append(scrape_webpage)
-    
+
     web_researcher = Agent(
         role="Web Research Specialist",
         goal="Find accurate information through web search (fallback only)",
-        backstory="""You search the web when official docs are unavailable:
+        backstory="""You search the web when official docs and package health data are insufficient:
         • Search for official documentation first
-        • Find recent tutorials (2024-2025)
+        • Find recent tutorials (e.g., 2024–2025)
         • Extract working code examples
-        • Prefer .org sites and official blogs
-        • Note: Your findings need verification
-        
-        You only activate when README/package health fails.""",
+        • Prefer official sites, reputable documentation, and high-quality blogs
+
+        You activate ONLY when README analysis and package health validation did not provide enough information.
+
+        TOOL CALLING FORMAT (CRITICAL)
+
+        You have access to these tools (depending on configuration):
+        • search_web
+        • scrape_webpage
+
+        When you respond:
+
+        1) If you NEED to use a tool:
+        You MUST respond EXACTLY in this format, and nothing else:
+
+        Thought: <very brief reasoning about why you are calling a tool and which one>
+        Action: <tool_name>
+        Action Input: "<query or URL>"
+
+        Examples of valid outputs:
+        Thought: I need to find the official documentation site.
+        Action: search_web
+        Action Input: "PACKAGE_NAME official documentation"
+
+        Thought: I found a promising URL and want to extract details.
+        Action: scrape_webpage
+        Action Input: "https://example.com/docs/page"
+
+        • Do not include extra text before or after these three lines.
+        • Do not wrap this in JSON or markdown fences.
+
+        2) If you do NOT need to use any more tools and can give your final answer:
+        You MUST respond EXACTLY in this format:
+
+        Thought: I now can give a great answer
+        Final Answer: <your best complete web research report, following the Task's OUTPUT instructions>
+
+        • The Final Answer should summarize sources, URLs, reliability, and key findings.
+        • Do not mention tools or your internal chain-of-thought inside the Final Answer content.
+
+        RULES:
+        • Never output 'Action:' unless you are actually calling a tool.
+        • Never output more than one Action per response.
+        • Never include markdown fences around Thought/Action blocks.
+        """,
         llm=llm,
         tools=web_tools,
         verbose=True,
         allow_delegation=False,
-        max_iter=3,
+        max_iter=4,
     )
+
     
     # ========================================================================
-    # AGENT 5: SOURCE QUALITY VALIDATOR
+    # AGENT 5: SOURCE QUALITY VALIDATOR (NO TOOLS)
     # ========================================================================
     source_validator = Agent(
         role="Source Quality Validator",
@@ -640,11 +739,11 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         llm=llm,
         verbose=True,
         allow_delegation=False,
-        max_iter=1,
+        max_iter=2,
     )
     
     # ========================================================================
-    # AGENT 6: CONTENT PLANNER
+    # AGENT 6: CONTENT PLANNER (NO TOOLS)
     # ========================================================================
     content_planner = Agent(
         role="Content Strategist",
@@ -659,11 +758,11 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         llm=llm,
         verbose=True,
         allow_delegation=False,
-        max_iter=1,
+        max_iter=2,
     )
     
     # ========================================================================
-    # AGENT 7: TECHNICAL WRITER
+    # AGENT 7: TECHNICAL WRITER (NO TOOLS) - FIXED
     # ========================================================================
     technical_writer = Agent(
         role="Technical Content Writer",
@@ -674,19 +773,20 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
           - ALL imports at top
           - ALL variables defined
           - NO placeholders (TODO, ..., your_X)
-          - REAL datasets (NOT load_boston)
         • Use EXACT code from README when available
         • Adapt tone to source quality
         
-        DO NOT use tools. Write based on research provided.""",
+        OUTPUT INSTRUCTION:
+        You output the Markdown content ONLY. 
+        Do NOT wrap in conversation.""",
         llm=llm,
         verbose=True,
         allow_delegation=False,
-        max_iter=1,
+        max_iter=3,  # Increased for better completion
     )
     
     # ========================================================================
-    # AGENT 8: CODE VALIDATOR
+    # AGENT 8: CODE VALIDATOR (NO TOOLS)
     # ========================================================================
     code_validator = Agent(
         role="Code Quality Validator",
@@ -696,18 +796,17 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         • All imports present
         • All variables defined before use
         • No placeholders or TODOs
-        • No deprecated features (based on validation report)
+        • No deprecated features
         
-        You report PASS or detailed issues.
-        DO NOT use tools.""",
+        You report PASS or detailed issues.""",
         llm=llm,
         verbose=True,
         allow_delegation=False,
-        max_iter=1,
+        max_iter=2,
     )
     
     # ========================================================================
-    # AGENT 9: CODE FIXER
+    # AGENT 9: CODE FIXER (NO TOOLS)
     # ========================================================================
     code_fixer = Agent(
         role="Code Issue Resolver",
@@ -717,38 +816,40 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         • Define undefined variables
         • Remove placeholders
         • Fix syntax errors
-        • Replace deprecated features with current alternatives
+        • Replace deprecated features
         
-        You return COMPLETE corrected article.
-        DO NOT use tools.""",
+        OUTPUT: The FIXED ARTICLE ONLY (raw Markdown).""",
         llm=llm,
         verbose=True,
         allow_delegation=False,
-        max_iter=1,
+        max_iter=2,
     )
     
-    # ========================================================================
-    # AGENT 10: CONTENT EDITOR
+    # AGENT 10: CONTENT EDITOR (NO TOOLS)
     # ========================================================================
     content_editor = Agent(
         role="Content Editor",
-        goal="Polish article readability and flow",
+        goal="Polish article readability and enforce Markdown formatting",
         backstory="""Professional editor who:
-        • Improves sentence flow
-        • Removes buzzwords and jargon
-        • Ensures consistent tone
-        • NEVER changes code blocks
+        • Improves sentence flow and removes buzzwords (e.g., "game-changing").
+        • Ensures consistent tone.
+        • ACTS AS A GHOSTWRITER: Your personal voice/opinion must NEVER appear in the text.
         
-        You make content more engaging.
-        DO NOT use tools.""",
+        CRITICAL FORMATTING RULES (DO NOT IGNORE):
+        1. EVERY code block MUST have a language tag. Use ```python for code and ```bash for terminal commands.
+        2. NEVER mix Bash commands (pip install) with Python code in the same block. Separate them into two blocks.
+        3. Do not remove imports or change variable names inside code blocks.
+        4. NO META-COMMENTARY: Do not add "Note:", "I have updated...", or any final thoughts.
+        
+        OUTPUT: Finalized Markdown content ONLY. Start immediately with the content.""",        
         llm=llm,
         verbose=True,
         allow_delegation=False,
-        max_iter=1,
+        max_iter=2,
     )
     
     # ========================================================================
-    # AGENT 11: METADATA PUBLISHER
+    # AGENT 11: METADATA PUBLISHER (NO TOOLS)
     # ========================================================================
     metadata_publisher = Agent(
         role="SEO Metadata Creator",
@@ -757,9 +858,7 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         • Compelling title (≤70 chars)
         • Engaging excerpt (≤200 chars)
         • Relevant tags (4-8)
-        • JSON format only
-        
-        DO NOT use tools.""",
+        • JSON format only""",
         llm=llm,
         verbose=True,
         allow_delegation=False,
@@ -767,7 +866,7 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
     )
     
     # ========================================================================
-    # TASKS
+    # TASKS - keeping original task definitions...
     # ========================================================================
     
     # TASK 1: Orchestration
@@ -816,7 +915,7 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         agent=orchestrator,
     )
     
-    # TASK 2: README Analysis (conditional)
+    # TASK 2: README Analysis
     readme_task = Task(
         description=f"""
         Extract complete information from README for: {identifier}
@@ -972,43 +1071,47 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         description=f"""
         Create detailed blog outline for: {topic.title}
         
+        CRITICAL INSTRUCTION: 
+        You MUST use the EXACT version number found by the 'Package Health Validator' in the context. 
+        If the validator reports version 3.x, DO NOT use version 1.x or outdated data.
+        
         Based on validated research, create structure:
         
         1. **Introduction** (150 words)
-           - What is {topic.title}?
-           - Why it matters
-           - What readers will learn
+            - What is {topic.title}?
+            - Why it matters
+            - What readers will learn
         
         2. **Overview** (200 words)
-           - Key features
-           - Use cases
-           - Current version: [from validation]
+            - Key features
+            - Use cases
+            - Current version: [MUST MATCH VALIDATION REPORT]
         
         3. **Getting Started** (250 words)
-           - Installation
-           - Quick example (complete code)
+            - Installation
+            - Quick example (complete code)
         
         4. **Core Concepts** (300 words)
-           - Main functionality
-           - API overview
-           - Example usage
+            - Main functionality
+            - API overview
+            - Example usage
         
         5. **Practical Examples** (400 words)
-           - Example 1: [specific use case]
-           - Example 2: [another use case]
-           - Each with COMPLETE code
+            - Example 1: [specific use case]
+            - Example 2: [another use case]
+            - Each with COMPLETE code
         
         6. **Best Practices** (150 words)
-           - Tips and recommendations
-           - Common pitfalls
+            - Tips and recommendations
+            - Common pitfalls
         
         7. **Conclusion** (100 words)
-           - Summary
-           - Next steps
-           - Resources
+            - Summary
+            - Next steps
+            - Resources
         
         CRITICAL:
-        • Use version from validation
+        • Use version from validation ONLY
         • Note deprecated features to AVOID
         • Mark web-sourced content for verification
         """,
@@ -1020,146 +1123,180 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
     # TASK 7: Writing
     writing_task = Task(
         description=f"""
-        Write complete blog article about: {topic.title}
-        
-        Based on research and outline, write 1200+ word article.
-        
-        MANDATORY REQUIREMENTS:
-        
-        **Code Quality:**
-        • ALL imports at top of code blocks
-        • ALL variables defined before use
-        • NO placeholders (TODO, ..., your_X)
-        • Use REAL datasets (fetch_california_housing, load_iris)
-        • NEVER use deprecated features from validation report
-        
-        **Code Fidelity:**
-        • If README examples available → Use EXACTLY as written
-        • If web sources → Add note: "Example from tutorial - verify with your version"
-        • Always show complete, runnable code
-        
-        **Structure:**
-        • Follow outline from planner
-        • Clear section headings
-        • Progressive complexity
-        • Practical examples
-        
-        **Tone:**
-        • Professional but approachable
-        • Explain concepts clearly
-        • No buzzwords or hype
-        
-        DO NOT use tools. Write based on research provided.
-        
-        OUTPUT: Complete article in Markdown (1200+ words)
-        """,
+            Write a complete blog article about: {topic.title}
+            
+            Based on the validated research and the outline, write a 1200+ word article.
+            
+            SOURCE OF TRUTH:
+            • Use ONLY the information, version numbers, APIs, and deprecation warnings
+            coming from the research context (README analysis, package health report,
+            and any validated metadata loaded from the JSON files).
+            • Do NOT invent new libraries, frameworks, or datasets. The article must stay
+            consistent with the specific package / project / topic that was selected
+            from the JSON input.
+            • If your internal knowledge conflicts with the research context, prefer the
+            research context.
+
+            MANDATORY REQUIREMENTS:
+
+            **Code Quality:**
+            • ALL imports must appear at the top of each code block.
+            • ALL variables must be defined before use.
+            • NO placeholders (TODO, ..., your_X, or similar).
+            • Use REAL, appropriate datasets, functions, and APIs that belong to the
+            topic/library described in the research (or standard examples mentioned
+            in the official docs for this topic).
+            • NEVER use deprecated features listed in the validation / health reports.
+
+            **Code Fidelity:**
+            • If README / official documentation examples are available:
+            - Use them as the primary reference.
+            - You may adapt them slightly (e.g. comments, minor restructuring),
+                but keep the logic and APIs accurate.
+            • If you need to write new examples:
+            - Base them on the APIs, functions, and data sources confirmed in
+                the research context or JSON input.
+            - Do NOT introduce unrelated libraries or external datasets.
+            • Always show complete, runnable code blocks:
+            - All necessary imports
+            - Any required data-loading or configuration steps
+
+            **Structure:**
+            • Follow the outline provided by the Content Planner.
+            • Use clear section headings (##, ###).
+            • Introduce concepts gradually (from basic to advanced).
+            • Include at least 2 practical, end-to-end examples that are relevant
+            to the topic as defined by the JSON and research context.
+
+            **Topical Consistency:**
+            • The article must remain focused on the selected topic (from the JSON).
+            • Do NOT switch to competing frameworks, packages, or tools unless the
+            outline explicitly calls for a brief comparison section — and even
+            there, comparisons should remain high-level and textual, not code-based.
+            • All code examples must use the same main library / package that
+            the article is about.
+
+            **Tone:**
+            • Professional but approachable.
+            • Explain concepts clearly and concretely.
+            • Avoid empty buzzwords and hype.
+            • No first-person commentary, no meta-comments about being an AI.
+
+            OUTPUT:
+            • A complete article in Markdown (1200+ words).
+            • Start directly with the article content (no preamble, no explanations).
+            """,
         expected_output="Complete blog article (1200+ words)",
         agent=technical_writer,
         context=[planning_task, quality_task],
     )
+
     
     # TASK 8: Code Validation
     validation_task = Task(
         description="""
-        Validate ALL Python code blocks in article.
-        
-        For EACH code block, check:
-        
-        1. **Syntax** 
-           - Parse with Python AST
-           - Report line numbers for errors
-        
-        2. **Imports**
-           - All used modules imported?
-           - Standard library vs third-party clear?
-        
-        3. **Variables**
-           - All variables defined before use?
-           - No undefined: train_X, test_y, etc.
-        
-        4. **Deprecations**
-           - Check against validation report
-           - Flag: load_boston, sklearn.cross_validation, etc.
-        
-        5. **Completeness**
-           - No placeholders (TODO, ..., your_X)
-           - No truncated code (...)
-        
-        OUTPUT:
-```
-        Validation Result: [PASS / FAIL]
-        
-        Code Blocks Checked: [count]
-        
-        Issues Found:
-        [If FAIL, list all issues with block numbers]
-        
-        Block 1:
-        • Missing import: sklearn.model_selection.train_test_split
-        • Undefined variable: train_X
-        
-        Block 2:
-        • Deprecated: load_boston (use fetch_california_housing)
-```
-        
-        DO NOT use tools.
-        """,
+            Validate ALL Python code blocks in the article.
+
+            For EACH code block, check:
+
+            1. **Syntax**
+            - Parse with Python AST.
+            - Report any syntax errors with line numbers, if possible.
+
+            2. **Imports**
+            - Are all used modules imported?
+            - Are imports consistent with the topic and libraries used in the article?
+            - Distinguish clearly between standard library and third-party imports.
+
+            3. **Variables**
+            - Are all variables defined before use?
+            - No obviously undefined names (e.g., train_X, test_y, model, etc.).
+            - Check for accidental reuse of variables in a way that breaks the example.
+
+            4. **Deprecations**
+            - Check against the package health / validation report and research context.
+            - Flag any APIs, functions, or classes that are known to be deprecated or removed.
+            - When possible, mention that a replacement should be used, but do NOT invent replacements.
+
+            5. **Completeness**
+            - No placeholders (TODO, ..., your_X, pass where code is expected).
+            - No truncated code indicated by "..." or similar.
+            - Each code block should be self-contained and runnable in a realistic context
+                (e.g., all necessary imports and data loading steps are present or clearly explained).
+
+            6. **Topical Consistency**
+            - Verify that the code uses the same main library/topic as the article.
+            - If the article is about a specific package, code examples should not silently switch
+                to a different, competing library unless the outline explicitly includes a comparison.
+            
+            OUTPUT FORMAT (plain text):
+
+            Validation Result: [PASS / FAIL]
+
+            Code Blocks Checked: [count]
+
+            Issues Found:
+            [If FAIL, list all issues with block numbers]
+
+            Block 1:
+            • [Issue 1]
+            • [Issue 2]
+
+            Block 2:
+            • [Issue 1]
+            • [Issue 2]
+
+            If there are no issues, state clearly that all code blocks passed validation.
+            """,
         expected_output="Code validation report",
         agent=code_validator,
         context=[writing_task, health_task],
     )
+
     
     # TASK 9: Code Fixing
     fixing_task = Task(
         description="""
-        Fix ALL code issues found by validator.
-        
-        For each issue:
-        
-        **Missing imports** → Add at top of block:
-```python
-        import xgboost as xgb
-        from sklearn.model_selection import train_test_split
-        from sklearn.datasets import fetch_california_housing
-```
-        
-        **Undefined variables** → Add definitions:
-```python
-        # Load data
-        X, y = fetch_california_housing(return_X_y=True)
-        
-        # Split data
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-```
-        
-        **Deprecated features** → Replace:
-```python
-        # OLD (deprecated):
-        from sklearn.datasets import load_boston
-        
-        # NEW (current):
-        from sklearn.datasets import fetch_california_housing
-```
-        
-        **Placeholders** → Replace with real code:
-```python
-        # OLD:
-        # ... rest of code
-        
-        # NEW:
-        predictions = model.predict(X_test)
-        score = model.score(X_test, y_test)
-```
-        
-        Return COMPLETE corrected article with ALL fixes applied.
-        
-        DO NOT use tools.
-        """,
+            Fix ALL code issues found by the validator.
+
+            For each issue:
+
+            **Missing imports** → Add the appropriate imports for the libraries that are
+            ACTUALLY used in the current article. Do NOT introduce new or unrelated
+            libraries. If the article is about a specific package or ML library, all
+            examples must consistently use that same library.
+
+            **Undefined variables** → Add minimal, sensible definitions that are
+            consistent with the surrounding code. Reuse the same datasets, variable
+            names, and conventions already present in the article instead of inventing
+            new ones.
+
+            **Deprecated features** → Replace them with the recommended alternatives
+            from the validation context or from the official documentation for this
+            topic. Do NOT copy replacements from other, unrelated libraries or domains.
+
+            **Placeholders** → Replace any placeholders (such as "...", "TODO",
+            "your_X") with fully working code, or remove the example if you cannot
+            make it complete without guessing.
+
+            GLOBAL CONSTRAINTS:
+            • Never switch to a different framework or library than the one the
+            article is about.
+            • Do not add example code that changes the main topic (for example, do
+            not bring in competing ML frameworks without an explicit comparison
+            section in the outline).
+            • Keep all code blocks self-contained, runnable, and consistent with the
+            article’s narrative and research context.
+            • Preserve the overall structure and intent of each example; only change
+            what is necessary to make it correct and complete.
+
+            Return the COMPLETE corrected article with ALL fixes applied, in raw Markdown.
+            """,
         expected_output="Complete corrected article (1200+ words)",
         agent=code_fixer,
         context=[writing_task, validation_task],
     )
-    
+
     # TASK 10: Editing
     editing_task = Task(
         description="""
@@ -1177,47 +1314,54 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         • Technical accuracy
         • Structure/headings
         
-        Return COMPLETE polished article.
+        NEGATIVE CONSTRAINTS (CRITICAL):
+        • DO NOT add personal opinions, notes, or explanations (e.g., "Note: I kept the code...").
+        • DO NOT output preambles (e.g., "Here is the polished version...").
+        • The output must be the pure Article content ONLY.
         
-        DO NOT use tools.
+        Return COMPLETE polished article.
         """,
-        expected_output="Polished article (1200+ words)",
+        expected_output="Polished article (1200+ words) without meta-commentary",
         agent=content_editor,
         context=[fixing_task],
     )
-    
     # TASK 11: Metadata
     metadata_task = Task(
         description=f"""
-        Create SEO metadata for blog about: {topic.title}
-        
-        Generate JSON:
-        {{
-          "title": "Engaging title (≤70 chars)",
-          "excerpt": "Compelling description (≤200 chars)",
-          "tags": ["tag1", "tag2", "tag3", "tag4"]
-        }}
-        
-        Requirements:
-        • Title: Clear, specific, includes main keyword
-        • Excerpt: Summarizes value, calls to action
-        • Tags: 4-8 relevant tags (lowercase, hyphenated)
-        
-        Example:
-        {{
-          "title": "XGBoost 2.0: Complete Guide with Python Examples",
-          "excerpt": "Learn XGBoost 2.0 with complete code examples, best practices, and real-world use cases. Includes gradient boosting fundamentals and performance tuning.",
-          "tags": ["python", "machine-learning", "xgboost", "data-science", "gradient-boosting"]
-        }}
-        
-        Output ONLY valid JSON. No preamble.
-        
-        DO NOT use tools.
-        """,
+            Create SEO metadata for blog about: {topic.title}
+            
+            Generate JSON:
+            {{
+            "title": "Engaging title (≤70 chars)",
+            "excerpt": "Compelling description (≤200 chars)",
+            "tags": ["tag1", "tag2", "tag3", "tag4"]
+            }}
+            
+            Requirements:
+            • Title: Clear, specific, includes the main keyword from "{topic.title}"
+            • Excerpt: Summarizes the value of the article and can optionally include a light call to action
+            • Tags: 4-8 relevant tags (lowercase, hyphenated, no spaces)
+            
+            Example (generic):
+            {{
+            "title": "{topic.title}: Complete Guide with Python Examples",
+            "excerpt": "Learn {topic.title} with complete code examples, best practices, and real-world use cases.",
+            "tags": ["python", "machine-learning", "gradient-boosting", "data-science"]
+            }}
+            
+            IMPORTANT CONSTRAINTS:
+            • Do NOT mention unrelated libraries, frameworks, or tools that are not part of the article topic.
+            • Keep the title concise (≤70 characters) and focused on the main topic.
+            • Keep the excerpt ≤200 characters and avoid marketing fluff.
+            • Tags must be directly relevant to the topic and its ecosystem.
+            
+            Output ONLY valid JSON. No preamble, no explanation, no extra text.
+            """,
         expected_output="JSON metadata object",
         agent=metadata_publisher,
         context=[planning_task, editing_task],
     )
+
     
     # ========================================================================
     # ASSEMBLE CREW
@@ -1270,7 +1414,7 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
 
 
 # ============================================================================
-# JEKYLL POST BUILDING
+# JEKYLL POST BUILDING (keeping original)
 # ============================================================================
 def build_jekyll_post(date: datetime, topic: Topic, body: str, meta: Dict, blog_assets_dir: Path) -> Tuple[str, str]:
     """Build Jekyll post with per-blog asset paths"""
@@ -1364,7 +1508,7 @@ def main() -> None:
     """Main entry point"""
     
     logger.info("="*70)
-    logger.info("Advanced Orchestrated Blog Generator v4.0")
+    logger.info("Advanced Orchestrated Blog Generator v4.1 - Ollama Fixed")
     logger.info("11-Agent Pipeline with Precise Data Retrieval")
     logger.info("="*70)
     logger.info(f"Base: {BASE_DIR}")
@@ -1386,7 +1530,7 @@ def main() -> None:
     logger.info(f"LLM: {llm_model}")
     
     if is_ollama_llm():
-        logger.info("✅ Ollama mode - Format optimized")
+        logger.info("✅ Ollama mode - Fixed for compatibility")
     
     logger.info("")
     

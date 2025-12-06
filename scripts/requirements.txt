@@ -1,7 +1,7 @@
 # Core dependencies for daily blog generation with CrewAI
 crewai>=0.86.0
 crewai-tools>=0.17.0
-litellm>=1.0.0
+litellm>=1.80.7
 
 # LLM provider integrations
 ollama>=0.4.4
