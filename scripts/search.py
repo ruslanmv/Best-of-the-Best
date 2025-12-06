@@ -1084,23 +1084,6 @@ def perform_web_search(query: str, max_results: int = MAX_RESULTS_PER_SEARCH) ->
     logger.error(error_msg)
     return False, error_msg
 
-def _format_results_old(results: List[Dict[str, str]], query: str) -> str:
-    """Format search results for LLM consumption"""
-    output = f"# Search Results for: {query}\n\n"
-    output += f"Found {len(results)} results:\n\n"
-    
-    for i, result in enumerate(results, 1):
-        output += f"## Result {i}\n"
-        output += f"**Title:** {result['title']}\n"
-        output += f"**URL:** {result['url']}\n"
-        output += f"**Summary:** {result['snippet']}\n"
-        output += f"**Source:** {result['source']}\n\n"
-    
-    output += "\n---\n"
-    output += "Use these search results to provide accurate, up-to-date information.\n"
-    output += "Always cite sources by mentioning the title and URL.\n"
-    
-    return output
 def _format_results(results: List[Dict[str, str]], query: str) -> str:
     output = f"# Search Results for: {query}\n\n"
     output += f"Found {len(results)} results:\n\n"

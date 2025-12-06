@@ -839,25 +839,7 @@ def build_orchestrated_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         max_iter=2,
     )
     
-    # ========================================================================
-    # AGENT 6: CONTENT PLANNER (NO TOOLS)
-    # ========================================================================
-    content_planner_old = Agent(
-        role="Content Strategist",
-        goal="Create structured, engaging blog outline",
-        backstory="""You design blog structures that:
-        • Start with clear introduction
-        • Progress logically through concepts
-        • Include 2-3 practical examples
-        • End with actionable next steps
-        
-        You base outlines on validated research only.""",
-        llm=llm,
-        verbose=True,
-        allow_delegation=False,
-        max_iter=2,
-    )
-    
+
     # ========================================================================
     # AGENT 6: CONTENT PLANNER (NO TOOLS)
     # ========================================================================
@@ -951,29 +933,7 @@ Output:
         max_iter=2,
     )
     
-    # AGENT 10: CONTENT EDITOR (NO TOOLS)
     # ========================================================================
-    content_editor_old = Agent(
-        role="Content Editor",
-        goal="Polish article readability and enforce Markdown formatting",
-        backstory="""Professional editor who:
-        • Improves sentence flow and removes buzzwords (e.g., "game-changing").
-        • Ensures consistent tone.
-        • ACTS AS A GHOSTWRITER: Your personal voice/opinion must NEVER appear in the text.
-        
-        CRITICAL FORMATTING RULES (DO NOT IGNORE):
-        1. EVERY code block MUST have a language tag. Use ```python for code and ```bash for terminal commands.
-        2. NEVER mix Bash commands (pip install) with Python code in the same block. Separate them into two blocks.
-        3. Do not remove imports or change variable names inside code blocks.
-        4. NO META-COMMENTARY: Do not add "Note:", "I have updated...", or any final thoughts.
-        
-        OUTPUT: Finalized Markdown content ONLY. Start immediately with the content.""",        
-        llm=llm,
-        verbose=True,
-        allow_delegation=False,
-        max_iter=2,
-    )
-
     # AGENT 10: CONTENT EDITOR (NO TOOLS)
     # ========================================================================
     content_editor = Agent(
@@ -1197,46 +1157,6 @@ Output:
         agent=web_researcher,
     )
 
-    
-    # TASK 5: Source Quality Validation
-    quality_task_old = Task(
-        description="""
-        Validate research quality and assign confidence rating.
-        
-        Evaluate sources used:
-        • README/Official docs → A+ (highest confidence)
-        • Package health report → A (high confidence)
-        • Web tutorials → B (medium confidence)
-        • Missing/incomplete → F (reject)
-        
-        Check for:
-        • Version information present?
-        • Code examples complete?
-        • Deprecation warnings noted?
-        • Sources cited?
-        
-        OUTPUT:
-```
-        Quality Rating: [A+ / A / B / C / F]
-        Confidence: [High / Medium / Low]
-        
-        Sources:
-        • Primary: [README / Web / None]
-        • Validation: [Package Health / None]
-        
-        Completeness:
-        • Version info: [✓ / ✗]
-        • Code examples: [✓ / ✗] ([count] found)
-        • Deprecations: [✓ / ✗]
-        
-        Recommendations:
-        [How to use this research in blog]
-```
-        """,
-        expected_output="Quality validation report",
-        agent=source_validator,
-        context=[orchestration_task, readme_task, health_task, web_research_task],
-    )
 
     # TASK 5: Source Quality Validation
     quality_task = Task(
