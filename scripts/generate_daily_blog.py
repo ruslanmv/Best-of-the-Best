@@ -1353,10 +1353,10 @@ OUTPUT:
     - No first-person and no comments about being an AI.
 
     Output:
-    - One Markdown article (~1500 words).
+    - One Markdown article (~1200 words).
     - Start directly with a heading (e.g. ## Introduction). No preamble or explanation.
     """,
-        expected_output="Complete blog article (1500+ words)",
+        expected_output="Complete blog article (1200+ words)",
         agent=technical_writer,
         context=[planning_task, quality_task],
     )
@@ -1423,7 +1423,7 @@ OUTPUT:
 
             Return the COMPLETE corrected article with ALL fixes applied, in raw Markdown.
             """,
-        expected_output="Complete corrected article (1500+ words)",
+        expected_output="Complete corrected article (1200+ words)",
         agent=code_fixer,
         context=[writing_task, validation_task],
     )
