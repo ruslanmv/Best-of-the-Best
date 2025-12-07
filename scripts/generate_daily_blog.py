@@ -1226,11 +1226,12 @@ OUTPUT:
         - Version information present?
         - Code examples complete?
         - Deprecation warnings noted?
-        - Sources cited (with URLs)?
+        - Top 1 Source cited (with URLs)?
 
         CRITICAL URL RULES:
-        - If any URLs appear in the research context, you MUST copy them into the Resources section below.
+        - If any URLs appear in the research context, you MUST copy the top 1 into the Resources section below.
         - List them as Markdown links.
+        - Max 2 URLs only.
         - NEVER write placeholders like "[Insert relevant URLs...]".
 
         OUTPUT FORMAT (use this template exactly, keep the headings):
@@ -1352,10 +1353,10 @@ OUTPUT:
     - No first-person and no comments about being an AI.
 
     Output:
-    - One Markdown article (~1200 words).
+    - One Markdown article (~1500 words).
     - Start directly with a heading (e.g. ## Introduction). No preamble or explanation.
     """,
-        expected_output="Complete blog article (1200+ words)",
+        expected_output="Complete blog article (1500+ words)",
         agent=technical_writer,
         context=[planning_task, quality_task],
     )
@@ -1422,7 +1423,7 @@ OUTPUT:
 
             Return the COMPLETE corrected article with ALL fixes applied, in raw Markdown.
             """,
-        expected_output="Complete corrected article (1200+ words)",
+        expected_output="Complete corrected article (1500+ words)",
         agent=code_fixer,
         context=[writing_task, validation_task],
     )
