@@ -479,7 +479,7 @@ def validate_all_code_blocks(content: str) -> Tuple[bool, List[str], List[str]]:
 # ============================================================================
 # CONTENT CLEANING
 # ============================================================================
-def clean_content(body: str) -> str:
+def clean_content_old(body: str) -> str:
     """Clean and normalize content"""
     patterns = [
         (r'^\s*(Here is|Here\'s).*?[:.]?\s*\n+', '', re.IGNORECASE),
@@ -505,6 +505,38 @@ def clean_content(body: str) -> str:
     body = re.sub(r'\n{4,}', '\n\n\n', body).strip()
     
     return body
+
+import re
+
+def clean_content(body: str) -> str:
+    """
+    Clean and normalize content by only performing structural fixes,
+    removing destructive actions (filler removal and deduplication).
+    """
+    if not body:
+        return ""
+    
+    # --- NON-DESTRUCTIVE STRUCTURAL FIXES ---
+    
+    # 1. Skip the filler phrase removal (the 'patterns' list and loop)
+    #    This preserves introductory and conversational text.
+
+    # 2. Skip the paragraph deduplication logic (the 'paragraphs', 'seen', 'unique' loop)
+    #    This preserves all paragraphs, including repetitions.
+    
+    # 3. Join the body back (since we skipped the split, we use the original body)
+    
+    # 4. Normalize excessive vertical spacing and trim
+    #    This is a structural fix, not content removal.
+    
+    # Replace four or more newlines with exactly three newlines
+    body = re.sub(r'\n{4,}', '\n\n\n', body)
+    
+    # Strip surrounding whitespace and ensure a single trailing newline
+    body = body.strip() + "\n"
+    
+    return body
+
 
 import re
 def clean_llm_output(text: str) -> str:
@@ -872,7 +904,7 @@ Output:
     # ========================================================================
     # AGENT 7: TECHNICAL WRITER (NO TOOLS) - FIXED
     # ========================================================================
-    technical_writer = Agent(
+    technical_writer_old = Agent(
         role="Technical Content Writer",
         goal="Write complete, accurate technical articles",
         backstory="""You write professional technical content:
@@ -893,6 +925,81 @@ Output:
         max_iter=3,  # Increased for better completion
     )
     
+    # ========================================================================
+    # AGENT 7: TECHNICAL WRITER (NO TOOLS) - SAFE FOR OLLAMA LLAMA3:8B
+    # ========================================================================
+    technical_writer_old = Agent(
+        role="Technical Content Writer",
+        goal="Write a complete, accurate technical article in clean Markdown.",
+        backstory="""
+    You write professional technical articles based on the provided research and outline.
+
+    HARD FORMAT RULES (MUST FOLLOW):
+    - Output ONLY the article body in Markdown.
+    - Do NOT start with text like "Here is", "Final Answer", etc.
+    - NEVER wrap the entire article in a single ``` code block.
+    - Use ONLY ATX headings: ##, ### (no ===, --- or bold-only headings).
+    - The first non-empty line should be a heading, e.g. "## Introduction".
+
+    CODE RULES (CRITICAL):
+    - Use fenced code blocks ONLY for code, e.g. ```python ... ```.
+    - Do NOT put prose, comments about the article, or explanations outside the code inside these fences.
+    - Each code block must be self-contained and runnable:
+    - All imports at the top of the block.
+    - All variables defined before use.
+    - NO placeholders (TODO, ..., your_X, pass where real code is needed).
+    - Do NOT invent APIs or datasets that are not in the research/context.
+    - Respect the package version and deprecation information from the context.
+
+    CONTENT RULES:
+    - Follow the outline from the Content Strategist.
+    - Explain concepts clearly and step-by-step.
+    - Include at least two end-to-end examples relevant to the topic.
+    - Stay focused on the main library/topic (no switching to other frameworks).
+
+    TONE:
+    - Professional but approachable.
+    - No first-person ("I", "we") and no meta-comments about being an AI.
+    """,
+        llm=llm,
+        verbose=False,        # lighter for low-end PC
+        allow_delegation=False,
+        max_iter=2,           # keep it cheap and deterministic
+    )
+
+    # AGENT 7: TECHNICAL WRITER (FIXED - GENERIC)
+    technical_writer = Agent(
+        role="Technical Content Writer",
+        goal="Write a complete, accurate technical article in clean Markdown.",
+        backstory="""
+    You write professional technical articles based on the provided research and outline.
+
+    HARD FORMAT RULES (MUST FOLLOW):
+    - Output ONLY the article body in Markdown.
+    - Use ONLY ATX headings: ##, ###.
+    - The first non-empty line should be a heading.
+
+    CODE RULES (CRITICAL):
+    - Use fenced code blocks ONLY for code, e.g. ```python ... ```.
+    - Each code block must be self-contained and runnable (imports, variables defined).
+    - **ANTI-HALLUCINATION PROTOCOL:** If the research context suggests using classes or methods that do not actually exist in the library (e.g., `Library.ImaginaryClass`), **DISCARD THEM**. 
+      Instead, rely on your internal knowledge to provide the correct, canonical pattern for that library.
+    - Do NOT invent APIs that do not exist.
+
+    CONTENT RULES:
+    - Follow the outline but prioritize TECHNICAL ACCURACY over strict adherence to flawed outline examples.
+    - Explain concepts clearly and step-by-step.
+    - Stay focused on the main library/topic.
+
+    TONE:
+    - Professional but approachable. No meta-comments.
+    """,
+        llm=llm,
+        verbose=False,
+        allow_delegation=False,
+        max_iter=2,
+    )
+
     # ========================================================================
     # AGENT 8: CODE VALIDATOR (NO TOOLS)
     # ========================================================================
@@ -916,7 +1023,7 @@ Output:
     # ========================================================================
     # AGENT 9: CODE FIXER (NO TOOLS)
     # ========================================================================
-    code_fixer = Agent(
+    code_fixer_old = Agent(
         role="Code Issue Resolver",
         goal="Fix all code errors and issues",
         backstory="""You fix code problems:
@@ -932,11 +1039,58 @@ Output:
         allow_delegation=False,
         max_iter=2,
     )
-    
+
+    code_fixer = Agent(
+        role="Code Issue Resolver",
+        goal="Fix all code errors and issues",
+        backstory="""You fix code problems in the article ONLY when the validator reports issues.
+
+Core rules:
+
+1) Use the validation report:
+   - If the validation report says:
+       Validation Result: PASS
+       Issues Found:
+       (i.e. no issues listed)
+     → Do NOT modify anything.
+     → Simply return the article from the writer EXACTLY as-is, as raw Markdown.
+     → Do NOT add any preamble or commentary.
+
+   - If the validation report says FAIL or lists issues:
+     → Fix ONLY the reported problems in the existing article.
+
+2) Allowed fixes when there ARE issues:
+   • Add missing imports for modules that are already used.
+   • Define undefined variables in the simplest way consistent with nearby code.
+   • Remove or replace placeholders (TODO, ..., your_X) with working code.
+   • Fix syntax errors.
+   • Replace deprecated features using the package health / research context.
+
+3) Global constraints:
+   • Never switch to a different framework or library.
+   • Do not add examples that change the main topic.
+   • Keep the structure and narrative the same; only change what is necessary.
+   • Never touch the YAML front matter.
+
+4) Output format (CRITICAL):
+   • Output MUST be the complete article body as raw Markdown.
+   • Do NOT wrap the entire article in ``` or any other code fence.
+   • Only use fenced code blocks (```python, ```bash, etc.) for individual code examples inside the article.
+   • Do NOT add preambles like "Here is..." or "Final Answer:".
+   • Do NOT add any notes or comments after the article.
+""",
+        llm=llm,
+        verbose=True,
+        allow_delegation=False,
+        max_iter=2,
+    )
+
+
+
     # ========================================================================
     # AGENT 10: CONTENT EDITOR (NO TOOLS)
     # ========================================================================
-    content_editor = Agent(
+    content_editor_old = Agent(
         role="Content Editor",
         goal="Polish article readability, fix minor consistency issues, and enforce Markdown formatting.",
         backstory="""You are a concise, precision-focused editor.
@@ -969,6 +1123,138 @@ Output:
         allow_delegation=False,
         max_iter=2,
     )
+
+    content_editor_old2 = Agent(
+        role="Content Editor",
+        goal="Polish article readability, fix minor consistency issues, and enforce Markdown formatting.",
+        backstory="""You are a concise, precision-focused editor.
+
+    Core job:
+    - Improve sentence flow and clarity.
+    - Remove buzzwords and unnecessary repetition.
+    - Keep tone and terminology consistent.
+    - Fix small contradictions using context (pick the clearest, most consistent version).
+
+    Markdown rules:
+    1) Every code block MUST have a language tag:
+    - ```python for Python
+    - ```bash for shell
+    - Use other tags when obvious (json, yaml, etc.).
+    2) Never mix shell commands (e.g. pip install) with source code in the same block.
+    3) Do NOT change imports, variable names, or logic inside code blocks.
+    4) Use proper headings (##, ###). Do not use bold text as headings.
+    5) Keep spacing clean (no >2 blank lines, blank line around headings and code blocks).
+    6) If there are links or references, write them in full Markdown format.
+    7) Never wrap the entire article in a single ``` code block. Only fence individual code examples.
+
+    Constraints:
+    - Act as a ghostwriter: no "I", "we", or editor commentary.
+    - No meta text like "Note:", "I updated...", or describing changes.
+    - Do not change the overall section structure or remove examples, unless something is clearly broken.
+
+    Output:
+    - Return ONLY the final Markdown article, starting directly with the content (a heading or paragraph).
+    - Do NOT add any text before or after the article.
+    - The answer must NOT start with ``` and the whole article must NOT be inside a single code block.""",
+        llm=llm,
+        verbose=True,
+        allow_delegation=False,
+        max_iter=2,
+    )
+
+    content_editor_old3 = Agent(
+        role="Content Editor",
+        goal="Polish article readability, fix minor consistency issues, and enforce Markdown formatting.",
+        backstory="""HARD CONSTRAINTS (MUST FOLLOW):
+
+    1) NEVER start the answer with:
+       - "Here is", "Here’s", "Here is the polished version", "Final Answer", or similar.
+       The answer MUST start directly with a Markdown heading or paragraph.
+
+    2) NEVER wrap the entire article in a single code fence:
+       - The FIRST character of the answer must NOT be ` (backtick).
+       - The LAST character of the answer must NOT be ` (backtick).
+       - Only use fenced code blocks like ```python, ```bash, etc. INSIDE the article body
+         for individual code examples.
+
+    3) Do NOT remove or change any code inside fenced code blocks.
+       - No changes to imports, variable names, or logic.
+       - Do not merge or split code blocks.
+
+    Your core job:
+    - Improve sentence flow and clarity.
+    - Remove buzzwords and unnecessary repetition.
+    - Keep tone and terminology consistent.
+    - Fix small contradictions using context (pick the clearest, most consistent version).
+    - Keep spacing clean (no >2 blank lines, blank line around headings and code blocks).
+    - Ensure every code block has a language tag (python, bash, json, yaml, etc.).
+    - Never mix shell commands (pip install, etc.) with source code in the same block.
+    - Use proper headings (##, ###). Do not use bold-only headings.
+
+    Constraints:
+    - Act as a ghostwriter: no "I", "we", or editor commentary.
+    - No meta text like "Note:", "I updated...", "Here is the polished version...", etc.
+    - Do not change the overall section structure or remove examples, unless something is clearly broken.
+
+    Output:
+    - Return ONLY the final Markdown article, starting directly with the content (a heading or paragraph).
+    - Do NOT add any text before or after the article.
+    - The answer must NOT start with ``` and the whole article must NOT be inside a single code block.""",
+        llm=llm,
+        verbose=True,
+        allow_delegation=False,
+        max_iter=2,
+    )
+
+    # ========================================================================
+    # AGENT 10: CONTENT EDITOR (SAFE, STYLE-ONLY, NO REWRITES)
+    # ========================================================================
+    content_editor = Agent(
+        role="Minimal Markdown Formatter",
+        goal="Normalize Markdown spacing and headings WITHOUT changing any wording or code.",
+        backstory="""You are a hyper-conservative formatter.
+Your ONLY job is to tidy Markdown formatting WITHOUT changing the meaning or wording.
+
+HARD RULES – CONTENT YOU MUST NOT TOUCH:
+- Do NOT delete any sentences, paragraphs, bullet points, or sections.
+- Do NOT add new explanations, examples, or text.
+- Do NOT paraphrase, rewrite, or shorten sentences.
+- Do NOT change numbers, version strings, function names, variable names, or URLs.
+- Do NOT edit or reformat text inside code fences.
+- Do NOT change the order of sections, paragraphs, or bullet points.
+
+ALLOWED CHANGES (STYLE ONLY):
+- Add or remove blank lines to improve readability:
+  - Ensure one blank line before and after headings.
+  - Ensure one blank line before and after code blocks.
+  - Remove excessive empty lines (>2 in a row).
+- Normalize headings to ATX style without changing the heading text:
+  - e.g. "**Introduction**" → "## Introduction"
+  - Keep the same words, only adjust the Markdown syntax.
+- Ensure fenced code blocks have a language tag when obvious:
+  - ```python for Python
+  - ```bash for shell
+  - Do NOT modify the code content itself.
+- Ensure list markers and indentation are consistent, but keep the same list items.
+
+ABSOLUTE FORMAT RULES:
+- NEVER start the answer with "Here is", "Here’s", "This is", or "Final Answer".
+  The first non-blank line MUST be a heading (## ...) or a normal paragraph from the original article.
+- NEVER wrap the entire article in a single ``` code fence.
+  Only use fenced code blocks around individual code examples.
+- NEVER add any text before or after the article (no preamble, no commentary, no summary).
+
+OUTPUT:
+- Return ONLY the full article body, with the SAME text and code as the input,
+  only with improved spacing / headings / code fences.
+""",
+        llm=llm,
+        verbose=True,
+        allow_delegation=False,
+        max_iter=1,  # keep it cheap & deterministic for llama3:8b
+    )
+
+
 
     # ========================================================================
     # AGENT 11: METADATA PUBLISHER (NO TOOLS)
@@ -1038,7 +1324,7 @@ Output:
     )
     
     # TASK 2: README Analysis
-    readme_task = Task(
+    readme_task_old = Task(
         description=f"""
         Extract complete information from README for: {identifier}
         
@@ -1078,6 +1364,38 @@ Output:
         agent=readme_analyst,
     )
 
+    # TASK 2: README Analysis
+    readme_task = Task(
+        description=f"""
+        Extract complete information from README for: {identifier}
+        
+        USE the tool: "Get README from PyPI package or GitHub repository" 
+        with input "{identifier}"
+        
+        Extract:
+        1. **Version Information**
+           - Current version, Python requirements, dependencies
+        
+        2. **Installation**
+           - Exact pip install command
+        
+        3. **Code Examples** (STRICT REALITY CHECK)
+           - Extract code blocks ONLY if they literally exist in the README text.
+           - Copy them EXACTLY as written.
+           - If the README contains no code, output: "NO_CODE_EXAMPLES_FOUND".
+           - DO NOT INVENT, SIMULATE, OR WRITE YOUR OWN CODE EXAMPLES.
+        
+        4. **Features**
+           - Main capabilities and Use cases
+        
+        5. **Warnings**
+           - Deprecation notices or known issues
+        
+        OUTPUT: Structured README analysis. If no code is in the source, explicitly state that.
+        """,
+        expected_output="Accurate README analysis based ONLY on provided text",
+        agent=readme_analyst,
+    )
 
 
     # TASK 3: Package Health Validation
@@ -1267,9 +1585,9 @@ Output:
         agent=content_planner,
         context=[quality_task],
     )
-    
+
     # TASK 7: Writing
-    writing_task = Task(
+    writing_task_old = Task(
         description=f"""
             Write a complete blog article about: {topic.title}
             
@@ -1341,9 +1659,123 @@ Output:
         context=[planning_task, quality_task],
     )
 
+    writing_task_old2 = Task(
+        description=f"""
+            Write a complete blog article about: {topic.title}
+            
+            Based on the validated research and the outline, write a 1200+ word article.
+            
+            SOURCE OF TRUTH:
+            • Use ONLY the information, version numbers, APIs, and deprecation warnings
+            coming from the research context (README analysis, package health report,
+            and any validated metadata loaded from the JSON files).
+            • Do NOT invent new libraries, frameworks, or datasets. The article must stay
+            consistent with the specific package / project / topic that was selected
+            from the JSON input.
+            • If your internal knowledge conflicts with the research context, prefer the
+            research context.
+            • If real resource URLs are available and provided in the context, add maximum 2 references a final "Resources" section listing them as Markdown links (e.g. [Label](https://example.com)).
+            • Never leave placeholder text in the final article. If information is missing, omit that part entirely.
+
+            MANDATORY REQUIREMENTS:
+
+            **Code Quality:**
+            • ALL imports must appear at the top of each code block.
+            • ALL variables must be defined before use.
+            • NO placeholders (TODO, ..., your_X, or similar).
+            • Use REAL, appropriate datasets, functions, and APIs that belong to the
+            topic/library described in the research (or standard examples mentioned
+            in the official docs for this topic).
+            • NEVER use deprecated features listed in the validation / health reports.
+
+            **Code Fidelity:**
+            • If README / official documentation examples are available:
+            - Use them as the primary reference.
+            - You may adapt them slightly (e.g. comments, minor restructuring),
+            but keep the logic and APIs accurate.
+            • If you need to write new examples:
+            - Base them on the APIs, functions, and data sources confirmed in
+            the research context or JSON input.
+            - Do NOT introduce unrelated libraries or external datasets.
+            • Always show complete, runnable code blocks:
+            - All necessary imports
+            - Any required data-loading or configuration steps
+
+            **Structure:**
+            • Follow the outline provided by the Content Planner.
+            • Use clear section headings with ATX syntax (##, ### only).
+            • Do NOT use underline headings (===, ---) or bold-only headings.
+            • Introduce concepts gradually (from basic to advanced).
+            • Include at least 2 practical, end-to-end examples that are relevant
+            to the topic as defined by the JSON and research context.
+
+            **Topical Consistency:**
+            • The article must remain focused on the selected topic (from the JSON).
+            • Do NOT switch to competing frameworks, packages, or tools unless the
+            outline explicitly calls for a brief comparison section — and even
+            there, comparisons should remain high-level and textual, not code-based.
+            • All code examples must use the same main library / package that
+            the article is about.
+
+            **Tone:**
+            • Professional but approachable.
+            • Explain concepts clearly and concretely.
+            • Avoid empty buzzwords and hype.
+            • No first-person commentary, no meta-comments about being an AI.
+
+            OUTPUT:
+            • A complete article in Markdown (1200+ words).
+            • Start directly with the article content (no preamble, no explanations).
+            • The answer must NOT start with ``` and the entire article must NOT be enclosed in a single code block.
+            """,
+        expected_output="Complete blog article (1200+ words)",
+        agent=technical_writer,
+        context=[planning_task, quality_task],
+    )
+
+
+    writing_task = Task(
+        description=f"""
+    Write a Markdown blog article about: {topic.title}
+
+    Use ONLY the information from the context (README analysis, package health report, outline).
+    Do NOT invent new libraries, versions, datasets, or APIs.
+
+    Formatting:
+    - Use headings with ## and ### only.
+    - Do NOT use ===, --- or bold-only headings.
+    - Do NOT wrap the whole article in a single ``` code block.
+    - Use ```python only around Python code examples.
+
+    Code:
+    - Each code block must be complete and runnable.
+    - Put all imports at the top of the code block.
+    - Define all variables before use.
+    - No placeholders like TODO, ..., your_X.
+    - Use the library and version from the context, avoid deprecated features.
+
+    Structure:
+    - Follow the outline: Introduction, Overview, Getting Started, Core Concepts,
+    Practical Examples, Best Practices, Conclusion.
+    - Include at least 2 end-to-end practical code examples.
+
+    Tone:
+    - Professional and clear.
+    - No first-person and no comments about being an AI.
+
+    Output:
+    - One Markdown article (~1200 words).
+    - Start directly with a heading (e.g. ## Introduction). No preamble or explanation.
+    """,
+        expected_output="Complete blog article (1200+ words)",
+        agent=technical_writer,
+        context=[planning_task, quality_task],
+    )
+
+
     
     # TASK 8: Code Validation
-    validation_task = Task(
+    validation_task_old = Task(
         description="""
             Validate ALL Python code blocks in the article.
 
@@ -1403,9 +1835,52 @@ Output:
         context=[writing_task, health_task],
     )
 
+    # TASK 8: Code Validation
+    validation_task = Task(
+        description="""
+            Validate ALL Python code blocks in the article.
+
+            For EACH code block, check:
+
+            1. **Syntax**
+            - Parse with Python AST (check for basic syntax errors).
+
+            2. **Semantic Reality Check (CRITICAL)**
+            - Do the imported classes and functions *actually exist* in the library?
+            - **FAIL** any code that invents convenient but non-existent APIs (e.g., `langchain.Chatbot`, `pandas.read_brain`).
+            - Compare code symbols against the README/Health Report in the context.
+
+            3. **Imports**
+            - Are all used modules imported?
+            - Are imports consistent with the topic?
+
+            4. **Variables**
+            - Are all variables defined before use?
+            - No placeholders (TODO, ..., your_X).
+
+            5. **Deprecations**
+            - Flag any APIs known to be deprecated or removed based on the package health report.
+
+            OUTPUT FORMAT (plain text):
+
+            Validation Result: [PASS / FAIL]
+            Code Blocks Checked: [count]
+            
+            Issues Found:
+            [If FAIL, list specific issues]
+            Block X:
+            • [Issue description]
+            
+            If no issues, state clearly that all blocks passed.
+            """,
+        expected_output="Code validation report",
+        agent=code_validator,
+        context=[writing_task, health_task],
+    )
+
     
     # TASK 9: Code Fixing
-    fixing_task = Task(
+    fixing_task_old = Task(
         description="""
             Fix ALL code issues found by the validator.
 
@@ -1447,8 +1922,79 @@ Output:
         context=[writing_task, validation_task],
     )
 
+    fixing_task_old2 = Task(
+        description="""
+            Fix ALL code issues found by the validator.
+
+            For each issue:
+
+            **Missing imports** → Add the appropriate imports for the libraries that are
+            ACTUALLY used in the current article. Do NOT introduce new or unrelated
+            libraries. If the article is about a specific package or ML library, all
+            examples must consistently use that same library.
+
+            **Undefined variables** → Add minimal, sensible definitions that are
+            consistent with the surrounding code. Reuse the same datasets, variable
+            names, and conventions already present in the article instead of inventing
+            new ones.
+
+            **Deprecated features** → Replace them with the recommended alternatives
+            from the validation context or from the official documentation for this
+            topic. Do NOT copy replacements from other, unrelated libraries or domains.
+
+            **Placeholders** → Replace any placeholders (such as "...", "TODO",
+            "your_X") with fully working code, or remove the example if you cannot
+            make it complete without guessing.
+
+            GLOBAL CONSTRAINTS:
+            • Never switch to a different framework or library than the one the
+            article is about.
+            • Do not add example code that changes the main topic (for example, do
+            not bring in competing ML frameworks without an explicit comparison
+            section in the outline).
+            • Keep all code blocks self-contained, runnable, and consistent with the
+            article’s narrative and research context.
+            • Preserve the overall structure and intent of each example; only change
+            what is necessary to make it correct and complete.
+
+            STRICT OUTPUT RULES:
+            • Return ONLY the complete corrected article body as Markdown.
+            • Do NOT wrap the entire answer in ``` or any other code fences.
+            • Only use ```python (or other languages) around individual code examples.
+            • Do NOT add preambles like "Here is..." or "Final Answer:".
+            • Do NOT add comments or notes after the article.
+
+            Return the COMPLETE corrected article with ALL fixes applied, in raw Markdown.
+            """,
+        expected_output="Complete corrected article (1200+ words)",
+        agent=code_fixer,
+        context=[writing_task, validation_task],
+    )
+
+    fixing_task = Task(
+        description="""
+            Fix ALL code issues found by the validator.
+
+            For each issue:
+            ...
+            STRICT OUTPUT RULES:
+            • Return ONLY the complete corrected article body as Markdown.
+            • Do NOT wrap the entire answer in ``` or any other code fences.
+            • Only use ```python (or other languages) around individual code examples.
+            • Do NOT add preambles like "Here is..." or "Final Answer:".
+            • Do NOT add comments or notes after the article.
+
+            Return the COMPLETE corrected article with ALL fixes applied, in raw Markdown.
+            """,
+        expected_output="Complete corrected article (1200+ words)",
+        agent=code_fixer,
+        context=[writing_task, validation_task],
+    )
+
+
+
     # TASK 10: Editing
-    editing_task = Task(
+    editing_task_old = Task(
         description="""
         Polish article for readability and flow.
         
@@ -1475,6 +2021,89 @@ Output:
         agent=content_editor,
         context=[fixing_task],
     )
+
+    # TASK 10: Editing
+    editing_task_old = Task(
+        description="""
+        Polish article for readability and flow.
+
+        ABSOLUTE FORMAT RULES (CRITICAL, DO NOT BREAK):
+        • NEVER start the answer with phrases like "Here is", "Here’s", "This is", or "Final Answer".
+          The first non-blank line MUST be a Markdown heading (## ...) or a normal paragraph.
+        • NEVER begin or end the entire answer with ``` or any other code fence.
+          The answer must NOT be wrapped in a single code block.
+        • ONLY use fenced code blocks (```python, ```bash, etc.) around individual code examples
+          inside the article body.
+
+        Improvements:
+        • Remove buzzwords: "revolutionary", "game-changing", "cutting-edge"
+        • Improve sentence flow
+        • Fix awkward phrasing
+        • Ensure consistent tone
+        • Check transitions between sections
+
+        NEVER change:
+        • Code blocks (keep code exactly as-is)
+        • Technical accuracy
+        • Structure/headings
+
+        NEGATIVE CONSTRAINTS (CRITICAL):
+        • DO NOT add personal opinions, notes, or explanations (e.g., "Note: I kept the code...").
+        • DO NOT output preambles (e.g., "Here is the polished version...", "Final Answer:", etc.).
+        • The output must be the pure Article content ONLY.
+
+        Return COMPLETE polished article.
+        """,
+        expected_output="Polished article (1200+ words) without meta-commentary",
+        agent=content_editor,
+        context=[fixing_task],
+    )
+
+    # TASK 10: Editing (STYLE-ONLY, NO CONTENT CHANGE)
+    editing_task = Task(
+        description="""
+        Take the article from the Code Issue Resolver and ONLY apply minimal Markdown formatting.
+
+        GOAL:
+        - Improve readability by adjusting SPACING and MARKDOWN SYNTAX ONLY.
+        - The informational content (words, sentences, sections, code) must remain EXACTLY the same.
+
+        YOU MUST NOT:
+        - Do NOT delete any text (no sentences, bullets, or sections).
+        - Do NOT add any new sentences, explanations, or comments.
+        - Do NOT paraphrase or rewrite existing sentences.
+        - Do NOT change numbers, version strings, function names, variable names, or URLs.
+        - Do NOT change code inside ``` fences in any way.
+        - Do NOT change the order of paragraphs, lists, or sections.
+
+        YOU MAY:
+        - Normalize spacing:
+          • Ensure exactly one blank line before and after headings.
+          • Ensure exactly one blank line before and after code blocks.
+          • Remove extra empty lines (more than 2 in a row).
+        - Normalize headings:
+          • Convert bold-only headings like "**Introduction**" into "## Introduction"
+            without changing the words.
+        - Normalize fenced code blocks:
+          • Add a language tag (```python, ```bash, etc.) when it is obvious.
+          • Do NOT modify or reindent the code itself.
+
+        ABSOLUTE FORMAT RULES:
+        - The first non-empty line of your answer MUST be a heading or paragraph
+          from the original article (no "Here is...", no "Final Answer:").
+        - The answer MUST NOT begin or end with ``` or any other code fence.
+          Do NOT wrap the whole article in a single code block.
+        - The output must be ONLY the article body. No notes, no explanations, no comments.
+
+        Return the COMPLETE article, with the same content, only with cleaner Markdown formatting.
+        """,
+        expected_output="Same article content with only spacing/Markdown formatting improved.",
+        agent=content_editor,
+        context=[fixing_task],
+    )
+
+
+
     # TASK 11: Metadata
     metadata_task = Task(
         description=f"""
@@ -1527,7 +2156,7 @@ Output:
             technical_writer,
             code_validator,
             code_fixer,
-            content_editor,
+          #  content_editor,
             metadata_publisher,
         ],
         tasks=[
@@ -1540,7 +2169,7 @@ Output:
             writing_task,
             validation_task,
             fixing_task,
-            editing_task,
+          #  editing_task,
             metadata_task,
         ],
         process=Process.sequential,
@@ -1744,28 +2373,44 @@ def main() -> None:
          fixing_task, editing_task, metadata_task) = tasks
         
         # Step 6: Extract body (try in order of refinement)
-        body = extract_task_output(editing_task, "editor")
-        
+        # Step 6: Extract body (try in order of refinement)
+
+        # --- OLD LOGIC (DISABLED) ---
+        # body = extract_task_output(editing_task, "editor")
+        #
+        # if not body or len(body) < 800:
+        #     logger.warning("⚠️  Trying fixer...")
+        #     body = extract_task_output(fixing_task, "fixer")
+        #
+        # if not body or len(body) < 800:
+        #     logger.warning("⚠️  Trying writer...")
+        #     body = extract_task_output(writing_task, "writer")
+        #
+        # if not body or len(body) < 800:
+        #     logger.error("❌ Insufficient output")
+        #     raise RuntimeError(f"Too short: {len(body)} chars")
+        # ----------------------------
+
+        # NEW LOGIC: use Code Fixer first, then fall back to Writer
+        body = extract_task_output(fixing_task, "fixer")
+
         if not body or len(body) < 800:
-            logger.warning("⚠️  Trying fixer...")
-            body = extract_task_output(fixing_task, "fixer")
-        
-        if not body or len(body) < 800:
-            logger.warning("⚠️  Trying writer...")
+            logger.warning("⚠️  Fixer output too short, trying writer...")
             body = extract_task_output(writing_task, "writer")
-        
+
         if not body or len(body) < 800:
-            logger.error("❌ Insufficient output")
-            raise RuntimeError(f"Too short: {len(body)} chars")
-        
+            logger.error("❌ Insufficient output from writer")
+            raise RuntimeError(f"Too short: {len(body)} chars" if body else "Empty body")
+
         logger.info(f"📄 Generated: {len(body)} chars, {len(body.split())} words")
-        
+
+
         # Step 7: Clean
         # ----- Ollama fix for extra formatting -----
-        body = clean_llm_output(body) 
+        #body = clean_llm_output(body) 
         # ---------------------
 
-        body = clean_content(body)
+        #body = clean_content(body)
         
         # Step 8: Final validation
         all_valid, issues, code_blocks = validate_all_code_blocks(body)
