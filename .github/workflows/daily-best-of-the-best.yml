@@ -13,6 +13,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # ------------------------------------------------------------------
+      # 🛠️ MEMORY HACK: Enable 4GB Swap Space
+      # This prevents the 7GB RAM limit from killing the Ollama + CrewAI process.
+      # ------------------------------------------------------------------
+      - name: 💾 Enable Swap Space
+        run: |
+          sudo fallocate -l 4G /swapfile
+          sudo chmod 600 /swapfile
+          sudo mkswap /swapfile
+          sudo swapon /swapfile
+          echo "✅ Swap enabled. Memory stats:"
+          free -h
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -39,16 +52,19 @@ jobs:
           OLLAMA_HOST: "127.0.0.1"
           OLLAMA_PORT: "11434"
         run: |
+          # Start server in background
           ollama serve >/tmp/ollama.log 2>&1 &
+          
           # Wait for server to be ready
+          echo "⏳ Waiting for Ollama startup..."
           for i in {1..30}; do
             if curl -fsS "http://127.0.0.1:11434/api/tags" >/dev/null 2>&1; then
               echo "✅ Ollama is up"
               break
             fi
-            echo "⏳ Waiting for Ollama..."
             sleep 2
           done
+          
           echo "⬇️ Pulling llama3:8b..."
           ollama pull llama3:8b
           echo "✅ Model ready"
@@ -78,6 +94,7 @@ jobs:
           WATSONX_PROJECT_ID: ${{ secrets.WATSONX_PROJECT_ID }}
         run: |
           echo "🚀 Starting blog generation with v3.6..."
+          # Run the generation script
           python scripts/generate_daily_blog.py
           echo "✅ Blog generation complete"
 
@@ -96,7 +113,8 @@ jobs:
             fi
           else
             echo "❌ No blog posts found!"
-            exit 1
+            # We don't exit 1 here to allow logs to upload, but we can't commit
+            echo "FAILURE_DETECTED=true" >> $GITHUB_ENV
           fi
           
           # Check if assets were created
@@ -108,11 +126,13 @@ jobs:
           fi
 
       - name: 🔁 Rebuild blog index & API feeds
+        if: env.FAILURE_DETECTED != 'true'
         run: |
           python blog/generate_index.py
           python export_data_feeds.py
 
       - name: Commit new blog + assets + updated feeds
+        if: env.FAILURE_DETECTED != 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "🏆 Daily Best-of-the-Best blog with topic-specific images"
@@ -129,7 +149,7 @@ jobs:
           commit_options: '--no-verify'
 
       - name: 📊 Upload logs (on failure)
-        if: failure()
+        if: failure() || env.FAILURE_DETECTED == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: blog-generation-logs
