@@ -370,7 +370,7 @@ Quality assessment: [comprehensive/minimal/stub/TOOL_FAILED]""",
     )
 
 
-def create_package_health_validator(package_identifier: str) -> Agent:
+def create_package_health_validator_working(package_identifier: str) -> Agent:
     """Agent 3: Package Health Validator - Simplified"""
     health_tools = []
     if get_package_health:
@@ -401,6 +401,58 @@ Code example quality: [count or "NO_CODE_EXAMPLES_FOUND"]""",
         verbose=True,
         allow_delegation=False,
         max_iter=3,
+    )
+
+
+def create_package_health_validator(package_identifier: str) -> Agent:
+    """Agent 3: Package Health Validator – concise + schema-safe."""
+    health_tools = []
+    if get_package_health:
+        health_tools = [get_package_health]
+
+    return Agent(
+        role="Package Health Validator",
+        goal=f"Get a clean health report for the package '{package_identifier}'.",
+        backstory=f"""
+You check the health of the Python package "{package_identifier}".
+
+TOOL:
+- get_package_health
+
+HOW TO CALL THE TOOL (CRITICAL):
+- Action must be: get_package_health
+- Action Input must be ONE Python-style dictionary:
+
+  Action: get_package_health
+  Action Input: {{
+    "package_or_url": "{package_identifier}"
+  }}
+
+DO NOT:
+- Do NOT wrap the whole dict in quotes (no JSON string like "{{\"package_or_url\": \"{package_identifier}\"}}").
+- Do NOT send an empty dict: {{}}
+- Do NOT add extra keys like "description" or "type".
+- Do NOT retry the same call if the tool returns a schema/validation error.
+  If it fails once, stop calling the tool and treat it as TOOL_FAILED.
+
+INTERPRETATION RULES:
+- If the report contains "Total Blocks Found: 0" → code examples = 0.
+- If the tool fails or returns an error → set code example quality = "TOOL_FAILED" and version = "unknown".
+- Never invent versions or deprecations; use only what the tool returns.
+
+FINAL OUTPUT YOU WRITE (plain text summary):
+Package: {package_identifier}
+Exact current version: [version or "unknown"]
+Python requirements: [version range or "not specified"]
+Deprecation warnings: [list or "none found"]
+Maintenance status: [active/unmaintained/unknown]
+Code example quality: [count, "NO_CODE_EXAMPLES_FOUND", or "TOOL_FAILED"]
+""",
+        llm=llm,
+        tools=health_tools,
+        verbose=True,
+        allow_delegation=False,
+        max_iter=2,  # keeps it from looping on bad calls
     )
 
 
