@@ -544,9 +544,9 @@ END OF RESEARCH CONTEXT
         logger.info(f"📄 Generated: {len(body)} chars, {len(body.split())} words")
         
         # Add quality disclaimer if needed
-        if quality_disclaimer:
-            body = quality_disclaimer + "\n\n" + body
-            logger.info("   ✓ Added quality disclaimer to post")
+        #if quality_disclaimer:
+        #    body = quality_disclaimer + "\n\n" + body
+        #    logger.info("   ✓ Added quality disclaimer to post")
         
         # Final validation
         all_valid, issues, code_blocks = validate_all_code_blocks(body)

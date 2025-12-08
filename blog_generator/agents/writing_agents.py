@@ -374,7 +374,7 @@ CORE RULES:
    • Replace deprecated features
    • If code uses wrong library API:
      * Try to convert to correct {topic_title} API using research context
-     * If uncertain, replace with conceptual pseudo-code + disclaimer
+     * If uncertain, replace with conceptual pseudo-code noting limitations.
 
 3) **Global constraints:**
    • Never switch framework or library
