@@ -1,5 +1,11 @@
 """
-Crew Builder - Standard and Memory-Optimized Architectures
+Crew Builder - Standard and Memory-Optimized Architectures - PRODUCTION v4.3
+
+CRITICAL FIXES:
+- Dynamic agent prompts (no hardcoded package names)
+- Pass package_identifier and topic_title to agent factories
+- Validation gates for research quality
+- Memory-optimized split-crew architecture
 
 This module provides two ways to build CrewAI crews:
 
@@ -329,6 +335,8 @@ def build_standard_crew(topic: Topic) -> Tuple[Crew, Tuple]:
     """
     Build standard monolithic crew with all 11 agents.
     
+    PRODUCTION v4.3: Dynamic agent prompts with package_identifier and topic_title.
+    
     This creates a single crew that runs all agents sequentially.
     Memory usage: ~9GB peak during execution.
     
@@ -350,18 +358,24 @@ def build_standard_crew(topic: Topic) -> Tuple[Crew, Tuple]:
         >>> crew, tasks = build_standard_crew(topic)
         >>> result = crew.kickoff()
     """
+    # Detect topic type and extract identifier
     topic_type, identifier = detect_topic_type(topic)
     
     logger.info("🔧 Building standard crew (11 agents)...")
+    logger.info(f"   Topic type: {topic_type}")
+    logger.info(f"   Identifier: {identifier}")
     
     # ========================================================================
-    # Create All Agents
+    # Create All Agents with Dynamic Parameters (v4.3 FIX)
     # ========================================================================
+    # Research agents (1-5)
     orchestrator = create_orchestrator(topic.title)
-    readme_analyst = create_readme_analyst()
-    package_health_validator = create_package_health_validator()
-    web_researcher = create_web_researcher()
+    readme_analyst = create_readme_analyst(identifier)  # ✅ Dynamic
+    package_health_validator = create_package_health_validator(identifier)  # ✅ Dynamic
+    web_researcher = create_web_researcher(topic.title)  # ✅ Dynamic
     source_validator = create_source_quality_validator()
+    
+    # Writing agents (6-11)
     content_planner = create_content_planner()
     technical_writer = create_technical_writer()
     code_validator = create_code_validator()
@@ -437,6 +451,8 @@ def build_research_crew_optimized(topic: Topic) -> Tuple[Crew, Dict[str, Task]]:
     """
     Build Phase 1: Research Crew (Agents 1-5).
     
+    PRODUCTION v4.3: Dynamic agent prompts with package_identifier and topic_title.
+    
     Memory-optimized architecture for GitHub workflows.
     This crew handles all research and data gathering.
     
@@ -463,17 +479,20 @@ def build_research_crew_optimized(topic: Topic) -> Tuple[Crew, Dict[str, Task]]:
         >>> result = crew.kickoff()
         >>> research_context = extract_research_data(tasks)
     """
+    # Detect topic type and extract identifier
     topic_type, identifier = detect_topic_type(topic)
     
     logger.info("🔧 Building research crew (5 agents)...")
+    logger.info(f"   Topic type: {topic_type}")
+    logger.info(f"   Identifier: {identifier}")
     
     # ========================================================================
-    # Create Research Agents Only
+    # Create Research Agents with Dynamic Parameters (v4.3 FIX)
     # ========================================================================
     orchestrator = create_orchestrator(topic.title)
-    readme_analyst = create_readme_analyst()
-    package_health_validator = create_package_health_validator()
-    web_researcher = create_web_researcher()
+    readme_analyst = create_readme_analyst(identifier)  # ✅ Dynamic
+    package_health_validator = create_package_health_validator(identifier)  # ✅ Dynamic
+    web_researcher = create_web_researcher(topic.title)  # ✅ Dynamic
     source_validator = create_source_quality_validator()
     
     logger.info("   ✓ Created 5 research agents")
@@ -525,7 +544,7 @@ def build_research_crew_optimized(topic: Topic) -> Tuple[Crew, Dict[str, Task]]:
     }
 
 
-def build_writing_crew_optimized(
+def build_writing_crew_optimized_old(
     topic: Topic,
     research_context: str
 ) -> Tuple[Crew, Dict[str, Task]]:
@@ -611,6 +630,119 @@ def build_writing_crew_optimized(
     )
     
     logger.info("   ✓ Assembled writing crew")
+    logger.info("")
+    
+    return crew, {
+        "planning": planning_task,
+        "writing": writing_task,
+        "validation": validation_task,
+        "fixing": fixing_task,
+        "editing": editing_task,
+        "metadata": metadata_task,
+    }
+
+
+def build_writing_crew_optimized(
+    topic: Topic,
+    research_context: str
+) -> Tuple[Crew, Dict[str, Task]]:
+    """
+    Build Phase 2: Writing Crew (Agents 6-11) with dynamic prompts.
+    
+    PRODUCTION v4.4.2: Enhanced with topic-specific prompts and quality awareness.
+    
+    Memory-optimized architecture for GitHub workflows.
+    This crew handles content generation using research context string.
+    
+    Memory usage: ~5GB peak during execution.
+    
+    Agents:
+    6. Content Planner - Create outline (topic-aware)
+    7. Technical Writer - Write article (topic + quality aware)
+    8. Code Validator - Check code quality (topic + API verification)
+    9. Code Fixer - Fix issues (topic-aware)
+    10. Content Editor - Polish formatting (topic-aware)
+    11. Metadata Publisher - Generate SEO data (topic-aware)
+    
+    Args:
+        topic: Topic metadata (includes title, tags, summary)
+        research_context: Research data as string (from Phase 1)
+    
+    Returns:
+        Tuple of (crew, tasks_dict)
+        - crew: Writing crew with 6 agents
+        - tasks_dict: Dict mapping task names to Task objects
+    
+    Example:
+        >>> topic = select_next_topic()
+        >>> research_context = "# RESEARCH CONTEXT: pandas..."
+        >>> crew, tasks = build_writing_crew_optimized(topic, research_context)
+        >>> result = crew.kickoff()
+        >>> body = extract_task_output(tasks["fixing"], "fixer")
+    """
+    logger.info("🔧 Building writing crew (6 agents)...")
+    
+    # ========================================================================
+    # Extract Quality Score from Research Context
+    # ========================================================================
+    import re
+    quality_match = re.search(r'Quality Score[:\s]+([A-F])', research_context)
+    quality_score = quality_match.group(1) if quality_match else "B"
+    
+    logger.info(f"   Quality Score: {quality_score}")
+    logger.info(f"   Topic: {topic.title}")
+    
+    # ========================================================================
+    # Create Writing Agents with Dynamic Parameters (v4.4.2)
+    # ========================================================================
+    content_planner = create_content_planner(topic.title)  # ✅ Dynamic
+    technical_writer = create_technical_writer(topic.title, quality_score)  # ✅ Dynamic + Quality-aware
+    code_validator = create_code_validator(topic.title)  # ✅ Dynamic + API verification
+    code_fixer = create_code_fixer(topic.title)  # ✅ Dynamic
+    content_editor = create_content_editor(topic.title)  # ✅ Dynamic
+    metadata_publisher = create_metadata_publisher(topic.title)  # ✅ Dynamic
+    
+    logger.info("   ✓ Created 6 writing agents (dynamic prompts)")
+    
+    # ========================================================================
+    # Build Writing Tasks with Injected Research Context
+    # ========================================================================
+    (planning_task, writing_task, validation_task,
+     fixing_task, editing_task, metadata_task) = build_writing_tasks(
+        topic, research_context,
+        content_planner, technical_writer, code_validator,
+        code_fixer, content_editor, metadata_publisher
+    )
+    
+    logger.info("   ✓ Created 6 writing tasks (topic-specific)")
+    
+    # ========================================================================
+    # Assemble Writing Crew
+    # ========================================================================
+    crew = Crew(
+        agents=[
+            content_planner,
+            technical_writer,
+            code_validator,
+            code_fixer,
+            # content_editor,  # Optional: uncomment to enable editing
+            metadata_publisher,
+        ],
+        tasks=[
+            planning_task,
+            writing_task,
+            validation_task,
+            fixing_task,
+            # editing_task,  # Optional: uncomment to enable editing
+            metadata_task,
+        ],
+        process=Process.sequential,
+        verbose=True,
+        max_rpm=15,
+    )
+    
+    logger.info("   ✓ Assembled writing crew")
+    logger.info(f"   ✓ Configuration: {topic.title} @ Quality {quality_score}")
     logger.info("")
     
     return crew, {
