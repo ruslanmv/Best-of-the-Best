@@ -1,13 +1,11 @@
 """
-Writing Phase Tasks (Tasks 6-11) - Phase 2 of Split-Crew Architecture
+Writing Phase Tasks (Tasks 6-11) - Phase 2 of Split-Crew Architecture - PRODUCTION v4.4.2
 
-These tasks handle the writing phase:
-6. Content Planning - Create outline
-7. Technical Writing - Write article
-8. Code Validation - Check code quality
-9. Code Fixing - Fix issues
-10. Content Editing - Polish formatting
-11. Metadata Publishing - Generate SEO data
+IMPROVEMENTS:
+- Dynamic prompts with topic name
+- Enhanced API verification
+- Code duplication prevention
+- Low-quality content handling
 """
 from typing import Tuple
 from crewai import Task, Agent  # type: ignore
@@ -26,246 +24,422 @@ def build_writing_tasks(
     metadata_publisher: Agent,
 ) -> Tuple[Task, Task, Task, Task, Task, Task]:
     """
-    Build all writing phase tasks (Tasks 6-11)
+    Build all writing phase tasks (Tasks 6-11) with dynamic prompts
     
-    Args:
-        topic: Topic metadata
-        research_context: Research data from Phase 1 as string
-        content_planner: Agent 6
-        technical_writer: Agent 7
-        code_validator: Agent 8
-        code_fixer: Agent 9
-        content_editor: Agent 10
-        metadata_publisher: Agent 11
-    
-    Returns:
-        Tuple of 6 tasks
+    CHANGES v4.4.2:
+    - All prompts use topic.title dynamically
+    - Enhanced validation for API correctness
+    - Code duplication detection
+    - Low-quality content protocols
     """
+    
+    # Extract quality score from research context if available
+    import re
+    quality_match = re.search(r'Quality Score[:\s]+([A-F])', research_context)
+    quality_score = quality_match.group(1) if quality_match else "B"
     
     # Task 6: Content Planning
     planning_task = Task(
         description=f"""
         Create detailed blog outline for: {topic.title}
         
-        CRITICAL INSTRUCTION: 
-        You MUST use the EXACT version number found by the 'Package Health Validator' in the context. 
-        If the validator reports version 3.x, DO NOT use version 1.x or outdated data.
+        CRITICAL INSTRUCTIONS:
+        1. Use EXACT version from 'Package Health Validator' in context
+        2. If validator reports version 3.x, DO NOT use 1.x or outdated data
+        3. Mark which sections have actual code examples available
+        4. Ensure each code example demonstrates DIFFERENT functionality
         
         RESEARCH CONTEXT (from Phase 1):
         {research_context}
         
-        Based on validated research, create structure:
+        OUTLINE STRUCTURE:
         
         1. **Introduction** (150 words)
             - What is {topic.title}?
-            - Why it matters
-            - What readers will learn
+            - Why {topic.title} matters
+            - What readers will learn about {topic.title}
         
         2. **Overview** (200 words)
-            - Key features
-            - Use cases
-            - Current version: [MUST MATCH VALIDATION REPORT]
+            - Key features of {topic.title}
+            - Use cases for {topic.title}
+            - Current version: [EXACT from validation]
         
         3. **Getting Started** (250 words)
-            - Installation
-            - Quick example (complete code)
+            - Installation for {topic.title}
+            - Quick example (complete, runnable code)
+            - Mark if example available in research: [YES/NO]
         
         4. **Core Concepts** (300 words)
-            - Main functionality
-            - API overview
-            - Example usage
+            - Main functionality of {topic.title}
+            - API overview for {topic.title}
+            - Example usage patterns
         
         5. **Practical Examples** (400 words)
-            - Example 1: [specific use case]
-            - Example 2: [another use case]
-            - Each with COMPLETE code
+            - Example 1: [Specific use case #1]
+              * Mark if available: [YES/NO]
+              * If YES: Note what it demonstrates
+            - Example 2: [Different use case #2]
+              * Mark if available: [YES/NO]
+              * If YES: Note what it demonstrates differently
+            - Each with COMPLETE, DISTINCT code
         
         6. **Best Practices** (150 words)
-            - Tips and recommendations
-            - Common pitfalls
+            - Tips for using {topic.title}
+            - Recommendations for {topic.title}
+            - Common pitfalls with {topic.title}
         
         7. **Conclusion** (100 words)
-            - Summary
-            - Next steps
+            - Summary of {topic.title} key points
+            - Next steps for {topic.title} users
             - Resources:
-              - If the quality report contains a 'Resources' section with Markdown links,
-                copy those links, choose the top 1 reference if are provided otherwise skip.
-              - If there are NO URLs in the research context, omit the Resources subsection entirely.   
+              * If quality report has Markdown links with URLs:
+                → Format as [Descriptive Name](URL)
+                → Include top 1-2 most relevant
+              * If NO URLs in research:
+                → Omit Resources subsection entirely
         
-        CRITICAL:
-        • Use version from validation ONLY
-        • Note deprecated features to AVOID
-        • Mark web-sourced content for verification
+        QUALITY-BASED INSTRUCTIONS:
+        - If code examples limited: Note which sections need conceptual explanations
+        - If version unclear: Mark for writer to add disclaimer
+        - Mark deprecated features to AVOID
+        
+        OUTPUT:
+        - Detailed Markdown outline
+        - Clear markers for available vs. needed content
+        - No commentary
         """,
-        expected_output="Detailed blog outline (300+ words)",
+        expected_output=(
+            f"Detailed blog outline in Markdown for {topic.title} with:\n"
+            "• Section 1: Introduction (150 words outline)\n"
+            "• Section 2: Overview with version info (200 words outline)\n"
+            "• Section 3: Getting Started with code availability marked (250 words outline)\n"
+            "• Section 4: Core Concepts (300 words outline)\n"
+            "• Section 5: Practical Examples with 2 DISTINCT use cases marked (400 words outline)\n"
+            "• Section 6: Best Practices (150 words outline)\n"
+            "• Section 7: Conclusion with conditional Resources (100 words outline)\n"
+            "Total outline: 300+ words minimum"
+        ),
         agent=content_planner,
     )
     
     # Task 7: Technical Writing
     writing_task = Task(
         description=f"""
-        Write a Markdown blog article about: {topic.title}
+        Write a complete Markdown blog article about: {topic.title}
 
-        Use ONLY the information from the research context and outline.
-        Do NOT invent new libraries, versions, datasets, or APIs.
+        ⚠️ CRITICAL OUTPUT REQUIREMENT:
+        You MUST output ACTUAL ARTICLE CONTENT starting with "## Introduction".
+        DO NOT output meta-comments like "Your final answer must be..." or "Here is the article...".
+        The FIRST LINE of your output must be: ## Introduction
 
         RESEARCH CONTEXT (from Phase 1):
         {research_context}
 
-        Formatting:
-        - Use headings with ## and ### only.
-        - Do NOT use ===, --- or bold-only headings.
-        - Do NOT wrap the whole article in a single ``` code block.
-        - Use ```python only around Python code examples.
+        CONTENT RULES:
+        - Topic focus: {topic.title} ONLY
+        - Use ONLY information from research context and outline
+        - Do NOT invent libraries, versions, datasets, or APIs
+        - If code examples limited, use conceptual explanations with disclaimers
+        - Quality level: {quality_score} (check context for specific instructions)
 
-        Code:
-        - Each code block must be complete and runnable.
-        - Put all imports at the top of the code block.
-        - Define all variables before use.
-        - No placeholders like TODO, ..., your_X.
-        - Use the library and version from the context, avoid deprecated features.
+        STRUCTURE REQUIREMENTS (exact sections):
+        
+        1. ## Introduction
+           - Explain what {topic.title} is
+           - Why {topic.title} matters
+           - What readers learn about {topic.title}
+           - Target: 150-200 words
+        
+        2. ## Overview
+           - Key features of {topic.title} (bullet points)
+           - Use cases for {topic.title}
+           - Current version of {topic.title} (from research)
+           - Target: 200-250 words
+        
+        3. ## Getting Started
+           - Installation for {topic.title}
+           - One complete, runnable code example for {topic.title}
+           - If no code available: installation + disclaimer
+           - Target: 250-300 words
+        
+        4. ## Core Concepts
+           - Main functionality of {topic.title}
+           - API overview of {topic.title}
+           - How {topic.title} works conceptually
+           - Target: 300-350 words
+        
+        5. ## Practical Examples
+           - Example 1: [Use case] with {topic.title}
+           - Example 2: [Different use case] with {topic.title}
+           - Each must be SELF-CONTAINED and DISTINCT
+           - Each must demonstrate DIFFERENT functionality
+           - Target: 400-500 words
+        
+        6. ## Best Practices
+           - Tips for {topic.title}
+           - Recommendations for {topic.title}
+           - Common pitfalls with {topic.title}
+           - Target: 150-200 words
+        
+        7. ## Conclusion
+           - Summary of {topic.title} key points
+           - Next steps for learning {topic.title}
+           - Resources (only if URLs in research context)
+           - Target: 100-150 words
 
-        Structure:
-        - Follow the outline: Introduction, Overview, Getting Started, Core Concepts,
-        Practical Examples, Best Practices, Conclusion.
-        - Include at least 2 end-to-end practical code examples.
+        FORMATTING RULES:
+        - ## for main sections, ### for subsections
+        - NO ===, --- or **bold** for headings
+        - NO wrapping entire article in ``` code block
+        - ```python for Python code
+        - ```bash for shell commands
 
-        Tone:
-        - Professional and clear.
-        - No first-person and no comments about being an AI.
+        CODE REQUIREMENTS (ANTI-HALLUCINATION):
+        - Article about: {topic.title}
+        - Code MUST use {topic.title} API or related official modules
+        - Each code block: complete, runnable, self-contained
+        - All imports at top of each block
+        - All variables defined before use
+        - NO placeholders (TODO, ..., your_X, YOUR_API_KEY)
+        - **CRITICAL**: Use ONLY code patterns from research context
+        - If uncertain about API: Use conceptual pseudo-code with disclaimer:
+```python
+          # Conceptual example for {topic.title} - verify with official docs
+          from {topic.title} import main_function
+          # ...
+```
+          > **Note**: Verify API with official documentation.
 
-        Output:
-        - One Markdown article (~1200 words).
-        - Start directly with a heading (e.g. ## Introduction). No preamble or explanation.
+        CODE EXAMPLE DIFFERENTIATION:
+        - Example 1 and Example 2 must be >75% different
+        - Vary: use cases, inputs, parameters, processing, outputs
+        - ❌ Same code with only comments changed
+        - ✅ Distinct scenarios showing different features of {topic.title}
+
+        TONE:
+        - Professional and clear about {topic.title}
+        - No first-person ("I", "we", "let's")
+        - No AI meta-comments
+        - No commentary like "This article will..."
+
+        OUTPUT FORMAT (CRITICAL):
+        - Start immediately with: ## Introduction
+        - NO preamble before article
+        - NO "Here is the article..." or similar
+        - NO "Final Answer:" or meta-text
+        - ONLY the article content in raw Markdown
+        - Minimum 1200 words total about {topic.title}
         """,
-        expected_output="Complete blog article (1200+ words)",
+        expected_output=(
+            f"Complete Markdown blog article about {topic.title} with:\n"
+            "1. ## Introduction (150-200 words)\n"
+            "2. ## Overview (200-250 words with bullet points)\n"
+            "3. ## Getting Started (250-300 words with installation + 1 code example)\n"
+            "4. ## Core Concepts (300-350 words)\n"
+            "5. ## Practical Examples (400-500 words with 2 DISTINCT, COMPLETE code examples)\n"
+            "6. ## Best Practices (150-200 words)\n"
+            "7. ## Conclusion (100-150 words with conditional Resources)\n\n"
+            f"CRITICAL: Article MUST start with '## Introduction' as first line.\n"
+            "No preamble, no meta-text, no 'Here is...'. Just article content."
+        ),
         agent=technical_writer,
         context=[planning_task],
     )
     
     # Task 8: Code Validation
     validation_task = Task(
-        description="""
-        Validate ALL Python code blocks in the article.
+        description=f"""
+        Validate ALL Python code blocks in the {topic.title} article.
+
+        ARTICLE TOPIC: {topic.title}
 
         For EACH code block, check:
 
-        1. **Syntax**
-        - Parse with Python AST (check for basic syntax errors).
+        1. **Library API Verification (CRITICAL)**
+        - Article is about: {topic.title}
+        - Code MUST import from {topic.title} or related official modules
+        - **FAIL** if code uses a DIFFERENT library's API
+        
+        Example checks:
+        ✅ Article: "{topic.title}", Code: `from {topic.title} import ...` → PASS
+        ❌ Article: "bert-score", Code: `from transformers import BertModel` → FAIL
+        
+        If wrong library detected, report:
+        "Block X: Uses [wrong_library] but article is about {topic.title}.
+         Must use actual {topic.title} API."
 
-        2. **Semantic Reality Check (CRITICAL)**
-        - Do the imported classes and functions *actually exist* in the library?
-        - **FAIL** any code that invents convenient but non-existent APIs (e.g., `langchain.Chatbot`, `pandas.read_brain`).
-        - Compare code symbols against the README/Health Report in the context.
+        2. **Syntax Check**
+        - Parse with Python AST for syntax errors
 
-        3. **Imports**
-        - Are all used modules imported?
-        - Are imports consistent with the topic?
+        3. **Semantic Reality Check**
+        - Do imported classes/functions *actually exist* in {topic.title}?
+        - **FAIL** invented APIs (e.g., `{topic.title}.ImaginaryClass`)
+        - Compare against README/Health Report in research context
 
-        4. **Variables**
-        - Are all variables defined before use?
-        - No placeholders (TODO, ..., your_X).
+        4. **Imports Check**
+        - All used modules imported?
+        - Imports consistent with {topic.title}?
 
-        5. **Deprecations**
-        - Flag any APIs known to be deprecated or removed based on the package health report.
+        5. **Variables Check**
+        - All variables defined before use?
+        - No placeholders (TODO, ..., your_X)?
+
+        6. **Deprecation Check**
+        - Flag deprecated APIs from package health report
+
+        7. **Code Duplication Check**
+        - Compare code blocks pairwise
+        - If 2+ blocks are >90% identical:
+          "Blocks X and Y are nearly identical (>90% similar).
+           Each example should demonstrate DIFFERENT {topic.title} functionality:
+           • Different use cases
+           • Different parameters or configurations
+           • Different features of {topic.title}
+           Not just different comments or variable names."
 
         OUTPUT FORMAT (plain text):
 
         Validation Result: [PASS / FAIL]
         Code Blocks Checked: [count]
+        Article Topic: {topic.title}
         
         Issues Found:
         [If FAIL, list specific issues]
-        Block X:
-        • [Issue description]
+        Block 1:
+        • [Issue description with fix suggestion]
         
-        If no issues, state clearly that all blocks passed.
+        Block 2:
+        • [Issue description with fix suggestion]
+        
+        If no issues: "All blocks passed validation for {topic.title} article."
         """,
-        expected_output="Code validation report",
+        expected_output=(
+            f"Code validation report for {topic.title} with:\n"
+            "• Validation Result: PASS or FAIL\n"
+            "• Code Blocks Checked: [number]\n"
+            f"• Library API verification for {topic.title}\n"
+            "• Duplication check between examples\n"
+            "• Issues Found: [detailed list if FAIL, or 'None' if PASS]\n"
+            "Format: Plain text report, not Markdown"
+        ),
         agent=code_validator,
         context=[writing_task],
     )
     
     # Task 9: Code Fixing
     fixing_task = Task(
-        description="""
-        Fix ALL code issues found by the validator.
+        description=f"""
+        Fix ALL code issues in the {topic.title} article found by validator.
 
-        For each issue reported in the validation report:
-        • Add missing imports for modules that are already used
-        • Define undefined variables in the simplest way consistent with nearby code
-        • Remove or replace placeholders (TODO, ..., your_X) with working code
+        ARTICLE TOPIC: {topic.title}
+
+        For each issue reported:
+        • Add missing imports for {topic.title}
+        • Define undefined variables
+        • Remove placeholders (TODO, ..., your_X)
         • Fix syntax errors
-        • Replace deprecated features using the research context
+        • Replace deprecated {topic.title} features
+        • If wrong library API used:
+          * Convert to correct {topic.title} API using research context
+          * If uncertain, use conceptual pseudo-code with disclaimer
 
         CRITICAL RULES:
 
         1) If validation report says PASS:
-           → Return the article from the writer EXACTLY as-is
+           → Return article EXACTLY as-is
            → Do NOT modify anything
-           → Do NOT add preamble or commentary
+           → Do NOT add preamble
 
-        2) If validation report lists issues:
-           → Fix ONLY the reported problems
+        2) If validation lists issues:
+           → Fix ONLY reported problems
            → Keep all other content unchanged
 
-        3) Never switch to a different framework or library
-        4) Never add examples that change the main topic
-        5) Keep structure and narrative the same
+        3) Topic constraints:
+           • Never switch from {topic.title} to different library
+           • Never change main topic from {topic.title}
+           • Keep structure and narrative same
 
         STRICT OUTPUT RULES:
-        • Return ONLY the complete corrected article body as Markdown.
-        • Do NOT wrap the entire answer in ``` or any other code fences.
-        • Only use ```python (or other languages) around individual code examples.
-        • Do NOT add preambles like "Here is..." or "Final Answer:".
-        • Do NOT add comments or notes after the article.
+        • Return ONLY complete corrected article body as Markdown
+        • Do NOT wrap entire answer in ``` fences
+        • Only use ```python for individual code examples
+        • Do NOT add preambles like "Here is..."
+        • Do NOT add comments after article
 
-        Return the COMPLETE corrected article with ALL fixes applied, in raw Markdown.
+        Return COMPLETE corrected {topic.title} article in raw Markdown.
         """,
-        expected_output="Complete corrected article (1200+ words)",
+        expected_output=(
+            f"Complete corrected article about {topic.title} in raw Markdown:\n"
+            "• If validation PASSED: Exact copy of original article\n"
+            "• If validation FAILED: Article with ONLY reported issues fixed\n"
+            "• Must start with '## Introduction'\n"
+            "• Must contain all 7 sections\n"
+            "• Minimum 1200 words\n"
+            "• NO preamble, NO meta-text, NO code fences wrapping entire article"
+        ),
         agent=code_fixer,
         context=[writing_task, validation_task],
     )
     
     # Task 10: Content Editing
     editing_task = Task(
-        description="""
-        Take the article from the Code Issue Resolver and ONLY apply minimal Markdown formatting.
+        description=f"""
+        Apply minimal Markdown formatting to the {topic.title} article.
 
         GOAL:
-        - Improve readability by adjusting SPACING and MARKDOWN SYNTAX ONLY.
-        - The informational content (words, sentences, sections, code) must remain EXACTLY the same.
+        - Improve readability by adjusting SPACING and MARKDOWN SYNTAX ONLY
+        - Content about {topic.title} must remain EXACTLY the same
 
         YOU MUST NOT:
-        - Do NOT delete any text (no sentences, bullets, or sections).
-        - Do NOT add any new sentences, explanations, or comments.
-        - Do NOT paraphrase or rewrite existing sentences.
-        - Do NOT change numbers, version strings, function names, variable names, or URLs.
-        - Do NOT change code inside ``` fences in any way.
-        - Do NOT change the order of paragraphs, lists, or sections.
+        - Delete text (sentences, bullets, sections)
+        - Add new explanations or text
+        - Paraphrase or rewrite
+        - Change numbers, versions, function names, URLs
+        - Change code inside ``` fences
+        - Change order of paragraphs or sections
 
         YOU MAY:
         - Normalize spacing:
-          • Ensure exactly one blank line before and after headings.
-          • Ensure exactly one blank line before and after code blocks.
-          • Remove extra empty lines (more than 2 in a row).
+          * One blank line before/after headings
+          * One blank line before/after code blocks
+          * Remove excessive empty lines (>2 in a row)
+        
         - Normalize headings:
-          • Convert bold-only headings like "**Introduction**" into "## Introduction"
-            without changing the words.
-        - Normalize fenced code blocks:
-          • Add a language tag (```python, ```bash, etc.) when it is obvious.
-          • Do NOT modify or reindent the code itself.
+          * Main sections MUST use ## (level 2):
+            ## Introduction
+            ## Overview
+            ## Getting Started
+            ## Core Concepts
+            ## Practical Examples
+            ## Best Practices
+            ## Conclusion
+          * Subsections use ### (level 3)
+          * Convert **bold headings** to ## ATX style
+          * Keep same words, adjust syntax only
+        
+        - Normalize code blocks:
+          * Add language tags (```python, ```bash)
+          * Do NOT modify code content itself
 
         ABSOLUTE FORMAT RULES:
-        - The first non-empty line of your answer MUST be a heading or paragraph
-          from the original article (no "Here is...", no "Final Answer:").
-        - The answer MUST NOT begin or end with ``` or any other code fence.
-          Do NOT wrap the whole article in a single code block.
-        - The output must be ONLY the article body. No notes, no explanations, no comments.
+        - First line MUST be heading or paragraph from original
+          (no "Here is...", no "Final Answer:")
+        - NEVER wrap entire article in ``` fence
+        - Only use fenced blocks for individual code
+        - NEVER add text before or after article
 
-        Return the COMPLETE article, with the same content, only with cleaner Markdown formatting.
+        Return COMPLETE {topic.title} article with same content, cleaner formatting.
         """,
-        expected_output="Same article content with only spacing/Markdown formatting improved.",
+        expected_output=(
+            f"Article about {topic.title} with improved formatting:\n"
+            "• Same content, words, and structure as input\n"
+            "• Normalized spacing (1 line before/after headings and code blocks)\n"
+            "• Consistent ATX headings (## for main sections, ### for subsections)\n"
+            "• Code blocks with language tags\n"
+            "• NO content changes, NO rewriting, NO deletions\n"
+            "• Must start with '## Introduction'\n"
+            "• NO preamble, NO meta-text"
+        ),
         agent=content_editor,
         context=[fixing_task],
     )
@@ -282,27 +456,34 @@ def build_writing_tasks(
         "tags": ["tag1", "tag2", "tag3", "tag4"]
         }}
         
-        Requirements:
-        • Title: Clear, specific, includes the main keyword from "{topic.title}"
-        • Excerpt: Summarizes the value of the article and can optionally include a light call to action
-        • Tags: 4-8 relevant tags (lowercase, hyphenated, no spaces)
+        REQUIREMENTS:
+        • Title: Must include "{topic.title}" keyword, ≤70 characters
+        • Excerpt: Summarize value of {topic.title} content, ≤200 characters
+        • Tags: 4-8 relevant tags for {topic.title} ecosystem (lowercase, hyphenated)
         
-        Example (generic):
+        Example formats:
         {{
         "title": "{topic.title}: Complete Guide with Python Examples",
         "excerpt": "Learn {topic.title} with complete code examples, best practices, and real-world use cases.",
-        "tags": ["python", "machine-learning", "gradient-boosting", "data-science"]
+        "tags": ["python", "{topic.title.lower().replace(' ', '-')}", "data-science", "tutorial"]
         }}
         
-        IMPORTANT CONSTRAINTS:
-        • Do NOT mention unrelated libraries, frameworks, or tools that are not part of the article topic.
-        • Keep the title concise (≤70 characters) and focused on the main topic.
-        • Keep the excerpt ≤200 characters and avoid marketing fluff.
-        • Tags must be directly relevant to the topic and its ecosystem.
+        CONSTRAINTS:
+        • Focus ONLY on {topic.title} - no unrelated libraries/frameworks
+        • Keep title concise (≤70 characters) focused on {topic.title}
+        • Keep excerpt ≤200 characters, avoid marketing fluff
+        • Tags must be directly relevant to {topic.title} and its ecosystem
         
         Output ONLY valid JSON. No preamble, no explanation, no extra text.
         """,
-        expected_output="JSON metadata object",
+        expected_output=(
+            f"Valid JSON object for {topic.title} with exactly 3 keys:\n"
+            '{"title": "...", "excerpt": "...", "tags": [...]}\n'
+            f"• title: Includes '{topic.title}', ≤70 characters\n"
+            "• excerpt: ≤200 characters\n"
+            f"• tags: 4-8 lowercase-hyphenated strings relevant to {topic.title}\n"
+            "• NO preamble, NO explanation, ONLY JSON"
+        ),
         agent=metadata_publisher,
         context=[planning_task, editing_task],
     )

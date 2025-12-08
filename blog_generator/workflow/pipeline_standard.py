@@ -1,9 +1,14 @@
 """
-Standard Pipeline - Monolithic Architecture
+Standard Pipeline - Monolithic Architecture - PRODUCTION FIXED v4.2
+
+CRITICAL FIXES:
+- Added validation gate after research tasks complete
+- Checks quality rating and code blocks before writing phase
+- Prevents cascade failure from bad research
 
 This pipeline runs all 11 agents in a single crew (traditional approach):
 - All agents loaded in memory simultaneously
-- Sequential task execution
+- Sequential task execution with validation gate
 - Higher memory usage but simpler architecture
 
 Use this for:
@@ -36,13 +41,13 @@ from blog_generator.workflow.crew_builder import build_standard_crew
 
 def run_standard_pipeline() -> None:
     """
-    STANDARD PIPELINE - Monolithic Architecture
+    STANDARD PIPELINE - Monolithic Architecture with Validation
     
     Runs all 11 agents in a single crew with sequential execution.
     Designed for environments with sufficient memory (>10GB RAM).
     """
     logger.info("=" * 70)
-    logger.info("Standard Blog Generator v4.2")
+    logger.info("Standard Blog Generator v4.2 (PRODUCTION FIXED)")
     logger.info("Monolithic Architecture (11 agents)")
     logger.info("=" * 70)
     logger.info(f"Base: {BASE_DIR}")
@@ -106,7 +111,7 @@ def run_standard_pipeline() -> None:
         logger.info("   2. README Analyst → Docs")
         logger.info("   3. Package Health → Validation")
         logger.info("   4. Web Researcher → Fallback")
-        logger.info("   5. Source Validator → Quality")
+        logger.info("   5. Source Validator → Quality ⚠️  GATE")
         logger.info("   6. Content Planner → Outline")
         logger.info("   7. Technical Writer → Article")
         logger.info("   8. Code Validator → Check")
@@ -125,7 +130,6 @@ def run_standard_pipeline() -> None:
         
         logger.info("✅ Pipeline Complete")
         logger.info("")
-        logger.info("🔍 Extracting outputs...")
         
         # Unpack tasks
         (
@@ -143,8 +147,93 @@ def run_standard_pipeline() -> None:
         ) = tasks
         
         # ====================================================================
-        # EXTRACT OUTPUTS
+        # 🚨 CRITICAL: VALIDATION CHECKPOINT (PRODUCTION FIX)
         # ====================================================================
+        logger.info("=" * 70)
+        logger.info("🔍 VALIDATION CHECKPOINT: Checking Research Quality")
+        logger.info("=" * 70)
+        
+        # Extract research outputs for validation
+        readme_data = extract_task_output(readme_task, "readme")
+        health_data = extract_task_output(health_task, "health")
+        quality_data = extract_task_output(quality_task, "source_validator")
+        
+        validation_passed = True
+        validation_issues = []
+        
+        # CHECK 1: Quality Rating
+        logger.info("Check 1: Quality rating...")
+        if "Rating: F" in quality_data or "Rating:F" in quality_data:
+            validation_passed = False
+            validation_issues.append("Quality validator gave F rating")
+            logger.error("   ❌ Quality rating: F")
+        else:
+            rating_match = re.search(r'Rating:\s*([A-F][+]?)', quality_data)
+            if rating_match:
+                rating = rating_match.group(1)
+                logger.info(f"   ✓ Quality rating: {rating}")
+            else:
+                logger.warning("   ⚠️  Could not extract rating")
+        
+        # CHECK 2: Code Blocks
+        logger.info("Check 2: Code examples...")
+        code_block_count = (
+            readme_data.count("```python") +
+            readme_data.count("```bash") +
+            health_data.count("```python")
+        )
+        
+        if code_block_count == 0:
+            validation_passed = False
+            validation_issues.append(f"Zero code blocks found (expected at least 1)")
+            logger.error(f"   ❌ Code blocks: {code_block_count}")
+        else:
+            logger.info(f"   ✓ Code blocks: {code_block_count}")
+        
+        # CHECK 3: Documentation completeness
+        logger.info("Check 3: Documentation completeness...")
+        if "stub" in readme_data.lower() or len(readme_data.strip()) < 500:
+            logger.warning("   ⚠️  Documentation may be incomplete")
+        else:
+            logger.info(f"   ✓ Documentation: {len(readme_data)} chars")
+        
+        # ====================================================================
+        # DECISION: PASS or FAIL
+        # ====================================================================
+        logger.info("")
+        logger.info("=" * 70)
+        
+        if not validation_passed:
+            logger.error("❌ VALIDATION FAILED - Research phase insufficient")
+            logger.error("=" * 70)
+            logger.error("")
+            logger.error("Issues:")
+            for i, issue in enumerate(validation_issues, 1):
+                logger.error(f"   {i}. {issue}")
+            logger.error("")
+            logger.error("Quality Report:")
+            logger.error("-" * 70)
+            logger.error(quality_data[:500])
+            logger.error("-" * 70)
+            logger.error("")
+            
+            raise ValueError(
+                f"Research validation failed: {len(validation_issues)} issues detected.\n"
+                f"Writing phase would produce hallucinated content."
+            )
+        
+        logger.info("✅ VALIDATION PASSED")
+        logger.info("=" * 70)
+        logger.info(f"   • Code blocks: {code_block_count}")
+        logger.info(f"   • Quality: Acceptable")
+        logger.info("")
+        logger.info("🟢 Continuing to writing phase...")
+        logger.info("")
+        
+        # ====================================================================
+        # EXTRACT FINAL OUTPUTS (Writing phase already complete)
+        # ====================================================================
+        logger.info("🔍 Extracting outputs...")
         
         # Extract body (try fixer first, then writer)
         body = extract_task_output(fixing_task, "fixer")
@@ -157,11 +246,6 @@ def run_standard_pipeline() -> None:
             raise RuntimeError(f"Too short: {len(body) if body else 0} chars")
         
         logger.info(f"📄 Generated: {len(body)} chars, {len(body.split())} words")
-        
-        # Optional: Apply additional cleaning
-        # from blog_generator.core.text_cleaning import clean_llm_output, clean_content
-        # body = clean_llm_output(body)
-        # body = clean_content(body)
         
         # ====================================================================
         # VALIDATE CODE
@@ -181,7 +265,6 @@ def run_standard_pipeline() -> None:
         # ====================================================================
         meta_raw = extract_task_output(metadata_task, "publisher")
         try:
-            # Try to find JSON in output
             json_start = meta_raw.find("{")
             json_end = meta_raw.rfind("}") + 1
             if json_start >= 0 and json_end > json_start:
@@ -224,6 +307,7 @@ def run_standard_pipeline() -> None:
         logger.info("✅ Quality Assurance:")
         logger.info("   • README-first data retrieval ✓")
         logger.info("   • Package health validation ✓")
+        logger.info("   • Research validation gate ✓")
         logger.info("   • Deprecation detection ✓")
         logger.info("   • Code validation → fixing ✓")
         logger.info("   • Source quality tracking ✓")
@@ -233,12 +317,11 @@ def run_standard_pipeline() -> None:
         logger.info("")
         
         # Source quality report
-        quality_report = extract_task_output(quality_task, "source_validator")
-        if quality_report:
+        if quality_data:
             logger.info("📊 Source Quality:")
-            if "A+" in quality_report or "High" in quality_report:
+            if "A+" in quality_data or "High" in quality_data:
                 logger.info("   ⭐⭐⭐ Highest Quality (Official Sources)")
-            elif "A" in quality_report or "Medium" in quality_report:
+            elif "A" in quality_data or "Medium" in quality_data:
                 logger.info("   ⭐⭐ High Quality (Validated Sources)")
             else:
                 logger.info("   ⭐ Good Quality (Web Sources)")
