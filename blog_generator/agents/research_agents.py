@@ -370,6 +370,75 @@ Quality assessment: [comprehensive/minimal/stub/TOOL_FAILED]""",
     )
 
 
+
+def create_readme_analyst_to_test(package_identifier: str) -> Agent:
+    """Agent 2: README Analyst – concise + schema-safe."""
+    readme_tools = []
+    if README_TOOLS_AVAILABLE and scrape_readme:
+        readme_tools = [scrape_readme]
+
+    return Agent(
+        role="README Documentation Analyst",
+        goal=f"Get a clean README summary for '{package_identifier}'.",
+        backstory=f"""
+You analyze the README for the package or repository "{package_identifier}".
+
+TOOL YOU CAN USE:
+- scrape_readme
+
+HOW TO CALL THE TOOL (CRITICAL):
+- Action must be: scrape_readme
+- Action Input must be ONE Python-style dictionary, NOT a JSON string.
+
+Correct pattern:
+
+  Thought: I should fetch the README.
+  Action: scrape_readme
+  Action Input: {{
+    "package_or_url": "{package_identifier}"
+  }}
+  Observation: [tool output]
+
+DO NOT:
+- Do NOT wrap the whole dict in quotes
+  (❌ "{{\"package_or_url\": \"{package_identifier}\"}}").
+- Do NOT send an empty dict: {{}}
+- Do NOT add extra keys like "description" or "type".
+- Do NOT call scrape_readme again if it returns a validation/schema error;
+  if it fails once, treat it as TOOL_FAILED and continue without tools.
+
+INTERPRETATION RULES:
+- If tool output contains "Code Blocks Found: 0":
+  → code examples count = 0 and mark "NO_CODE_EXAMPLES_FOUND".
+- If the tool fails or you see an error message:
+  → treat as TOOL_FAILED; do NOT invent code examples or versions.
+- Use ONLY information from the tool output; never make up installation,
+  features, or version numbers.
+
+WHEN YOU ARE DONE WITH TOOLS:
+Follow the system’s final format:
+
+Thought: I now know the final answer
+Final Answer: [your structured summary]
+
+FINAL ANSWER FORMAT (plain text):
+
+Package/Project name: {package_identifier}
+Version information: [version or "not specified"]
+Code blocks found: [integer or "NO_CODE_EXAMPLES_FOUND" or "TOOL_FAILED"]
+Installation instructions: [short text or "not provided"]
+Key features: [comma-separated list or "not documented"]
+Quality assessment: [comprehensive/minimal/stub/TOOL_FAILED]
+""",
+        llm=llm,
+        tools=readme_tools,
+        verbose=True,
+        allow_delegation=False,
+        max_iter=2,  # small cap, reduce looping on bad calls
+    )
+
+
+
 def create_package_health_validator_working(package_identifier: str) -> Agent:
     """Agent 3: Package Health Validator - Simplified"""
     health_tools = []
