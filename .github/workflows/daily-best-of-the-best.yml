@@ -121,7 +121,7 @@ jobs:
             blog/posts/index.json
             blog/api/*.json
             blog/api/*.xml
-            data/blog_coverage.json
+            data/blog_coverage.json*
             assets/images/**/*.jpg
             assets/images/**/*.png
           commit_user_name: "BestOfTheBestBot"
