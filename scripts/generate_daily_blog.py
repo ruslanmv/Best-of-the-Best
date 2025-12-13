@@ -291,6 +291,18 @@ def slugify(text: str) -> str:
     return text or "topic"
 
 
+def _norm_id(kind: str, id_: str) -> str:
+    """Normalize topic ID for consistent coverage tracking"""
+    if kind == "package":
+        return id_.lower().strip()
+    elif kind == "repo":
+        return id_.lower().strip()
+    elif kind == "tutorial":
+        return slugify(id_)
+    else:
+        return id_.lower().strip()
+
+
 def load_json(path: Path) -> Optional[Any]:
     """Load JSON file safely"""
     if not path.exists():
@@ -310,19 +322,113 @@ def load_coverage() -> List[Dict[str, Any]]:
     try:
         with COVERAGE_FILE.open("r", encoding="utf-8") as f:
             return json.load(f)
-    except Exception:
+    except json.JSONDecodeError as e:
+        # If this file is corrupted/truncated, the old behavior returned []
+        # which makes the generator repeat the first package forever.
+        logger.error(f"❌ Coverage file is not valid JSON: {COVERAGE_FILE} ({e})")
+        try:
+            ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+            backup = COVERAGE_FILE.with_suffix(f".corrupt-{ts}.json")
+            COVERAGE_FILE.replace(backup)
+            logger.error(f"📦 Moved corrupt coverage file to: {backup}")
+        except Exception as move_err:
+            logger.error(f"⚠️  Failed to move corrupt coverage file: {move_err}")
+
+        recovered = recover_coverage_from_posts()
+        if recovered:
+            logger.error(f"🛟 Recovered {len(recovered)} coverage entries by scanning blog posts")
+            try:
+                save_coverage(recovered)
+            except Exception as save_err:
+                logger.error(f"⚠️  Failed to persist recovered coverage: {save_err}")
+            return recovered
+        return []
+    except Exception as e:
+        logger.error(f"❌ Failed to load coverage file {COVERAGE_FILE}: {e}")
         return []
 
 
+def recover_coverage_from_posts() -> List[Dict[str, Any]]:
+    """Rebuild blog_coverage.json by scanning existing posts."""
+    entries: List[Dict[str, Any]] = []
+
+    if not BLOG_POSTS_DIR.exists():
+        return entries
+
+    kind_re = re.compile(r'^topic_kind:\s*"?(.*?)"?\s*$')
+    id_re = re.compile(r'^topic_id:\s*"?(.*?)"?\s*$')
+    ver_re = re.compile(r'^topic_version:\s*(\d+)\s*$')
+    date_re = re.compile(r'^date:\s*(\S+)')
+
+    seen = set()
+    for path in sorted(BLOG_POSTS_DIR.glob("*.md")):
+        try:
+            head = path.read_text(encoding="utf-8", errors="ignore").splitlines()[:80]
+        except Exception:
+            continue
+
+        if not head or head[0].strip() != "---":
+            continue
+
+        fm_lines = []
+        for line in head[1:]:
+            if line.strip() == "---":
+                break
+            fm_lines.append(line)
+
+        kind = tid = date_str = None
+        version = None
+
+        for line in fm_lines:
+            m = kind_re.match(line)
+            if m:
+                kind = m.group(1).strip()
+                continue
+            m = id_re.match(line)
+            if m:
+                tid = m.group(1).strip()
+                continue
+            m = ver_re.match(line)
+            if m:
+                version = int(m.group(1))
+                continue
+            m = date_re.match(line)
+            if m:
+                date_str = m.group(1).strip()[:10]
+
+        if not (kind and tid and version):
+            continue
+
+        norm_kind = (kind or "").strip()
+        norm_id = _norm_id(norm_kind, tid)
+        key = (norm_kind, norm_id, int(version))
+        if key in seen:
+            continue
+        seen.add(key)
+
+        entries.append({
+            "kind": norm_kind,
+            "id": norm_id,
+            "version": int(version),
+            "date": date_str or "",
+            "filename": path.name,
+        })
+
+    return entries
+
+
 def save_coverage(entries: List[Dict[str, Any]]) -> None:
-    """Save blog coverage history"""
-    with COVERAGE_FILE.open("w", encoding="utf-8") as f:
+    """Save blog coverage history (atomic-ish write)."""
+    tmp = COVERAGE_FILE.with_suffix(".tmp")
+    with tmp.open("w", encoding="utf-8") as f:
         json.dump(entries, f, indent=2)
+    tmp.replace(COVERAGE_FILE)
 
 
 def max_version_for(coverage: List[Dict[str, Any]], kind: str, id_: str) -> int:
     """Get maximum version number for a topic"""
-    versions = [e["version"] for e in coverage if e["kind"] == kind and e["id"] == id_]
+    norm_id = _norm_id(kind, id_)
+    versions = [e["version"] for e in coverage if e["kind"] == kind and e["id"] == norm_id]
     return max(versions) if versions else 0
 
 
@@ -2224,6 +2330,9 @@ def build_jekyll_post(date: datetime, topic: Topic, body: str, meta: Dict, blog_
 title: "{title}"
 date: {date_iso}
 last_modified_at: {date_iso}
+topic_kind: "{topic.kind}"
+topic_id: "{topic.id}"
+topic_version: {topic.version}
 categories:
   - Engineering
   - AI
@@ -2271,8 +2380,8 @@ def record_coverage(topic: Topic, filename: str) -> None:
     """Record coverage"""
     coverage = load_coverage()
     coverage.append({
-        "kind": topic.kind,
-        "id": topic.id,
+        "kind": (topic.kind or "").strip(),
+        "id": _norm_id(topic.kind, topic.id),
         "version": topic.version,
         "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         "filename": filename,
