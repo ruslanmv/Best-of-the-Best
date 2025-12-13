@@ -9,6 +9,15 @@
     "excerpt": "```\n## Introduction\nWhat is XGBoost?\nXGBoost is an open-source gradient boosting library that provides a simple and efficient way to train and evaluate machine learning models. With its high-performan..."
   },
   {
+    "filename": "2025-12-13-package-xgboost.md",
+    "url": "/blog/posts/2025-12-13-package-xgboost.html",
+    "title": "Xgboost",
+    "date": "2025-12-13T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "* Gradient boosting algorithm with various tree learning methods\n* Support for categorical variables and sparse matrices\n* Automatic hyperparameter tuning through Bayesian optimization"
+  },
+  {
     "filename": "2025-12-11-package-xgboost.md",
     "url": "/blog/posts/2025-12-11-package-xgboost.html",
     "title": "Unlock XGBoost's Power: A Comprehensive Guide",
