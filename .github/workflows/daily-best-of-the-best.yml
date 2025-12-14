@@ -23,12 +23,22 @@ jobs:
         with:
           python-version: "3.10"
 
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y graphviz fonts-dejavu-core
+          echo "✅ System dependencies installed (graphviz, fonts)"
+
       - name: Install Python deps
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r scripts/requirements.txt
-          # Ensure image generation dependencies
-          python -m pip install Pillow requests python-dotenv
+          echo "✅ Python dependencies installed"
+
+      - name: Install Playwright browsers
+        run: |
+          python -m playwright install chromium
+          echo "✅ Playwright browser installed"
 
       - name: ⚙️ Install Ollama (Linux)
         run: |
@@ -83,34 +93,118 @@ jobs:
 
       - name: Verify blog post was created
         run: |
-          # Check if any new blog post exists
-          if ls blog/posts/*.md 1> /dev/null 2>&1; then
-            echo "✅ Blog post files found"
-            LATEST_POST=$(ls -t blog/posts/*.md | head -1)
-            echo "📄 Latest post: $LATEST_POST"
-            # Check word count
-            WORD_COUNT=$(wc -w < "$LATEST_POST")
-            echo "📊 Word count: $WORD_COUNT"
-            if [ "$WORD_COUNT" -lt 800 ]; then
-              echo "⚠️ Warning: Post seems short (< 800 words)"
-            fi
-          else
+          echo "🔍 Verifying blog post output..."
+
+          # Check if any new blog post exists (excluding index.md)
+          LATEST_POST=$(ls -t blog/posts/*.md 2>/dev/null | grep -v index | head -1)
+
+          if [ -z "$LATEST_POST" ]; then
             echo "❌ No blog posts found!"
+            echo "   Expected format: blog/posts/YYYY-MM-DD-*.md"
+            ls -la blog/posts/ || true
             exit 1
           fi
-          
-          # Check if assets were created
-          if ls assets/images/20*/header-*.jpg 1> /dev/null 2>&1; then
-            echo "✅ Topic-specific images created"
-            ls -lh assets/images/20*/
-          else
-            echo "⚠️ No images found (placeholders should exist)"
+
+          echo "✅ Blog post found: $(basename "$LATEST_POST")"
+
+          # Validate Jekyll front matter
+          if ! head -1 "$LATEST_POST" | grep -q "^---$"; then
+            echo "❌ Invalid Jekyll front matter"
+            head -5 "$LATEST_POST"
+            exit 1
           fi
+
+          # Check word count
+          WORD_COUNT=$(grep -v "^---" "$LATEST_POST" | wc -w | xargs)
+          echo "   Words: $WORD_COUNT"
+
+          if [ "$WORD_COUNT" -lt 100 ]; then
+            echo "❌ Post too short: $WORD_COUNT words"
+            exit 1
+          fi
+
+          if [ "$WORD_COUNT" -lt 800 ]; then
+            echo "⚠️  Warning: Post seems short (< 800 words, has $WORD_COUNT)"
+          fi
+
+          # Check for code blocks
+          CODE_BLOCKS=$(grep -c '```python' "$LATEST_POST" || echo "0")
+          echo "   Code blocks: $CODE_BLOCKS"
+
+          # Check for friendly intro/outro (v3.0 feature)
+          if grep -q "Hello everyone!" "$LATEST_POST"; then
+            echo "   Friendly intro: ✓"
+          fi
+
+          if grep -q "Congratulations!" "$LATEST_POST"; then
+            echo "   Motivating outro: ✓"
+          fi
+
+          echo ""
+          echo "🖼️  Checking generated assets..."
+
+          # Check for topic-specific images
+          if ls assets/images/20*/header-*.jpg 1> /dev/null 2>&1; then
+            NEW_IMAGES=$(find assets/images/20*/ -type f 2>/dev/null | wc -l)
+            echo "✅ Generated $NEW_IMAGES topic-specific images"
+            find assets/images/20*/ -type f -exec basename {} \; | sed 's/^/   • /'
+          else
+            echo "⚠️  No topic-specific images found (placeholders may be used)"
+          fi
+
+          echo ""
+          echo "✅ Post validation passed"
 
       - name: 🔁 Rebuild blog index & API feeds
         run: |
           python blog/generate_index.py
           python export_data_feeds.py
+
+      - name: 📊 Quality report & coverage check
+        run: |
+          echo "📊 Quality report..."
+
+          LATEST_POST=$(ls -t blog/posts/*.md 2>/dev/null | grep -v index | head -1)
+
+          if [ -n "$LATEST_POST" ]; then
+            # Check for potential issues
+            ISSUES=0
+
+            if ! grep -q '```python' "$LATEST_POST"; then
+              echo "⚠️  No code examples found"
+              ISSUES=$((ISSUES + 1))
+            fi
+
+            if grep -qi "rapidly evolving" "$LATEST_POST"; then
+              echo "⚠️  AI buzzwords detected"
+              ISSUES=$((ISSUES + 1))
+            fi
+
+            WORD_COUNT=$(grep -v "^---" "$LATEST_POST" | wc -w | xargs)
+            if [ "$WORD_COUNT" -lt 500 ]; then
+              echo "⚠️  Short post (< 500 words)"
+              ISSUES=$((ISSUES + 1))
+            fi
+
+            if [ "$ISSUES" -eq 0 ]; then
+              echo "✅ No quality issues detected"
+            fi
+          fi
+
+          # Coverage stats
+          if [ -f "data/blog_coverage.json" ]; then
+            COVERAGE_COUNT=$(python -c "import json; print(len(json.load(open('data/blog_coverage.json'))))" 2>/dev/null || echo "?")
+            echo ""
+            echo "📈 Coverage Stats:"
+            echo "   Total posts: $COVERAGE_COUNT"
+            echo "   Coverage file: data/blog_coverage.json"
+          else
+            echo "⚠️  No coverage file found at data/blog_coverage.json"
+            echo "   This may cause topic repetition!"
+          fi
+
+          echo ""
+          echo "✅ Quality check complete"
 
       - name: Commit new blog + assets + updated feeds
         uses: stefanzweifel/git-auto-commit-action@v5
