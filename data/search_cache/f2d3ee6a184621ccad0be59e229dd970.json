@@ -1,0 +1,37 @@
+{
+  "query": "Xgboost official documentation",
+  "provider": "duckduckgo",
+  "timestamp": "2025-12-14T10:28:52.713839",
+  "results": [
+    {
+      "title": "XGBoost",
+      "snippet": "XGBoost",
+      "url": "https://xgboost.ai/",
+      "source": "duckduckgo"
+    },
+    {
+      "title": "XGBoost Documentation \u2014 xgboost 0.4 documentation",
+      "snippet": "XGBoost Documentation \u2014 xgboost 0.4 documentation",
+      "url": "http://xgboost-clone.readthedocs.io/",
+      "source": "duckduckgo"
+    },
+    {
+      "title": "GitHub - dmlc/xgboost: Scalable, Portable and Distributed Gradient ...",
+      "snippet": "GitHub - dmlc/xgboost: Scalable, Portable and Distributed Gradient ...",
+      "url": "https://github.com/dmlc/xgboost",
+      "source": "duckduckgo"
+    },
+    {
+      "title": "PDFxgboost - Read the Docs",
+      "snippet": "PDFxgboost - Read the Docs",
+      "url": "https://media.readthedocs.org/pdf/xgboost/latest/xgboost.pdf",
+      "source": "duckduckgo"
+    },
+    {
+      "title": "XGBoost API | XGBoosting",
+      "snippet": "XGBoost API | XGBoosting",
+      "url": "https://xgboosting.com/xgboost-api/",
+      "source": "duckduckgo"
+    }
+  ]
+}

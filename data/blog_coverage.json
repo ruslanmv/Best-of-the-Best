@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "kind": "package",
+    "id": "xgboost",
+    "version": 1,
+    "date": "2025-12-14",
+    "filename": "2025-12-14-package-xgboost.md"
+  }
+]
