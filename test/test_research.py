@@ -158,41 +158,51 @@ class TestAgentPrompts:
     """Test agent backstory prompts have required content"""
     
     def test_validator_has_hard_f_rules(self):
-        """Source Quality Validator must have zero-code => F logic"""
+        """
+        Source Quality Validator must encode the '0 code examples => F' logic
+        in its narrative hints (advisory, not hard ABORT logic anymore).
+        """
         agent = create_source_quality_validator()
         backstory = agent.backstory
 
-        # FIXED: Updated assertions to match current prompts
+        # Must expose the rating field
         assert "Quality Rating:" in backstory
-        # Allow either old or new wording
-        assert any(x in backstory for x in ["HARD REJECTION", "CRITICAL RULE", "Hard Rejection"])
-        assert "total_code == 0" in backstory or "IF total_code == 0" in backstory
-        assert "ABORT" in backstory
+
+        # New prompt explicitly describes zero-code => F behaviour in hints:
+        # "- If all sources clearly show 0 code examples → likely Rating: F, Confidence: Low."
+        assert "0 code examples" in backstory
+        assert "Rating: F" in backstory
+
+        # We no longer require explicit 'HARD REJECTION' / 'ABORT' text here,
+        # because the hard gating is implemented in the Python pipeline, not this agent.
     
     def test_validator_output_template(self):
         """Validator must have parsable output template"""
         agent = create_source_quality_validator()
         backstory = agent.backstory
 
+        # Match the current backstory headings exactly
         required_fields = [
             "Quality Rating:",
             "Confidence:",
             "Completeness",
-            "Recommendation:",
+            "Recommendations:",  # plural in the new prompt
         ]
         
         for field in required_fields:
             assert field in backstory, f"Missing required field: {field}"
     
     def test_orchestrator_mentions_strategy(self):
-        """Orchestrator must mention multi-source strategy"""
+        """Orchestrator must mention strategy and multi-source research"""
         agent = create_orchestrator("xgboost")
         backstory = agent.backstory
 
-        # FIXED: Updated assertions to match current prompts
-        assert any(x in backstory for x in ["MULTI-SOURCE", "Multi-source", "WORKFLOW", "Coordinator"])
+        # The new orchestrator prompt defines a final "Strategy:" field
+        # and "Sources Used:", plus references to README / Web.
+        assert "Strategy:" in backstory
+        assert "Sources Used:" in backstory
         assert "README" in backstory
-        assert "Web" in backstory or "web" in backstory
+        assert ("Web" in backstory or "web" in backstory)
 
 
 # ============================================================================
@@ -364,9 +374,6 @@ class TestCompleteREADMEScraping:
         # Use a real package, but cache key logic relies on input string
         # We can simulate this by mocking, but using a fresh package name is safer
         package = "requests" 
-        
-        # Force a fresh fetch by clearing potential cache or ensuring key is new-ish
-        # Actually, let's just use the timing check but be lenient if network is super fast.
         
         # First call
         start1 = time.time()
