@@ -7,5 +7,23 @@
     "author": "Ruslanmv",
     "tags": [],
     "excerpt": "* High-performance gradient boosting\n* Scalable and efficient algorithms\n* Wide range of applications (classification, regression, ranking)\n* Support for multiple types of learning tasks (binary class..."
+  },
+  {
+    "filename": "2025-12-15-package-langchain.md",
+    "url": "/blog/posts/2025-12-15-package-langchain.html",
+    "title": "Langchain",
+    "date": "2025-12-15T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "What is Langchain? Langchain is a powerful tool that enables developers to build and train language models. It matters because Langchain provides an easy-to-use API for natural language processing (NL..."
+  },
+  {
+    "filename": "2025-12-16-package-langchain.md",
+    "url": "/blog/posts/2025-12-16-package-langchain.html",
+    "title": "Langchain",
+    "date": "2025-12-16T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "Another example is chatbot integration, which can be achieved using the following code:\n```\n### Chatbot Integration Example\n```python\nfrom langchain_core import LangChain"
   }
 ]
