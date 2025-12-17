@@ -9,6 +9,15 @@
     "excerpt": "* High-performance gradient boosting\n* Scalable and efficient algorithms\n* Wide range of applications (classification, regression, ranking)\n* Support for multiple types of learning tasks (binary class..."
   },
   {
+    "filename": "2025-12-17-package-langchain.md",
+    "url": "/blog/posts/2025-12-17-package-langchain.html",
+    "title": "Langchain",
+    "date": "2025-12-17T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "To get started with Langchain, you will need to install the library using pip:\n```python\npip install langchain==1.2.0\n```\nOnce installed, you can import Langchain in your Python script:\n```python\nimpo..."
+  },
+  {
     "filename": "2025-12-15-package-langchain.md",
     "url": "/blog/posts/2025-12-15-package-langchain.html",
     "title": "Langchain",

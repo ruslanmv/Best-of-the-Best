@@ -2,16 +2,16 @@
 ### Repositories
 | Repository | Stars | Link |
 |---|---|---|
-| ollama/ollama | 157689 | [GitHub](https://github.com/ollama/ollama) |
-| langchain-ai/langchain | 121995 | [GitHub](https://github.com/langchain-ai/langchain) |
-| comfyanonymous/ComfyUI | 96964 | [GitHub](https://github.com/comfyanonymous/ComfyUI) |
-| openai/whisper | 92041 | [GitHub](https://github.com/openai/whisper) |
+| ollama/ollama | 157761 | [GitHub](https://github.com/ollama/ollama) |
+| langchain-ai/langchain | 122064 | [GitHub](https://github.com/langchain-ai/langchain) |
+| comfyanonymous/ComfyUI | 97107 | [GitHub](https://github.com/comfyanonymous/ComfyUI) |
+| openai/whisper | 92077 | [GitHub](https://github.com/openai/whisper) |
 | tensorflow/models | 77681 | [GitHub](https://github.com/tensorflow/models) |
-| CompVis/stable-diffusion | 72006 | [GitHub](https://github.com/CompVis/stable-diffusion) |
-| KillianLucas/open-interpreter | 61087 | [GitHub](https://github.com/KillianLucas/open-interpreter) |
-| CorentinJ/Real-Time-Voice-Cloning | 59017 | [GitHub](https://github.com/CorentinJ/Real-Time-Voice-Cloning) |
-| ultralytics/yolov5 | 56367 | [GitHub](https://github.com/ultralytics/yolov5) |
-| facebookresearch/segment-anything | 52904 | [GitHub](https://github.com/facebookresearch/segment-anything) |
+| CompVis/stable-diffusion | 72014 | [GitHub](https://github.com/CompVis/stable-diffusion) |
+| KillianLucas/open-interpreter | 61103 | [GitHub](https://github.com/KillianLucas/open-interpreter) |
+| CorentinJ/Real-Time-Voice-Cloning | 59023 | [GitHub](https://github.com/CorentinJ/Real-Time-Voice-Cloning) |
+| ultralytics/yolov5 | 56380 | [GitHub](https://github.com/ultralytics/yolov5) |
+| facebookresearch/segment-anything | 52922 | [GitHub](https://github.com/facebookresearch/segment-anything) |
 | jakevdp/PythonDataScienceHandbook | 43761 | [GitHub](https://github.com/jakevdp/PythonDataScienceHandbook) |
 | lllyasviel/Fooocus | 42965 | [GitHub](https://github.com/lllyasviel/Fooocus) |
 | Stability-AI/stablediffusion | 39935 | [GitHub](https://github.com/Stability-AI/stablediffusion) |
@@ -25,6 +25,7 @@
 | ray-project/ray | 35151 | [GitHub](https://github.com/ray-project/ray) |
 | google-research/google-research | 34801 | [GitHub](https://github.com/google-research/google-research) |
 | microsoft/visual-chatgpt | 34541 | [GitHub](https://github.com/microsoft/visual-chatgpt) |
+
 
 
 
