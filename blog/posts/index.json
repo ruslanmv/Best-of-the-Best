@@ -36,6 +36,15 @@
     "excerpt": "To get started with Langchain, you will need to install the library using pip:\n```python\npip install langchain==1.2.0\n```\nOnce installed, you can import Langchain in your Python script:\n```python\nimpo..."
   },
   {
+    "filename": "2025-12-21-package-langchain.md",
+    "url": "/blog/posts/2025-12-21-package-langchain.html",
+    "title": "Langchain: Unlocking Reliable Agent Technology",
+    "date": "2025-12-21T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "I now can give a great answer"
+  },
+  {
     "filename": "2025-12-15-package-langchain.md",
     "url": "/blog/posts/2025-12-15-package-langchain.html",
     "title": "Langchain",
