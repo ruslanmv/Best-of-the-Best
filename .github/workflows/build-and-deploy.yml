@@ -71,12 +71,12 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add README.md data/tracking.db blog/posts/*.md blog/posts/index.json blog/api/*.json blog/api/*.xml blog/api/README.md blog/*.html || true
+          git add README.md data/tracking.db data/blog_coverage.json* blog/posts/*.md blog/posts/index.json blog/api/*.json blog/api/*.xml blog/api/README.md blog/*.html || true
           git diff --staged --quiet || git commit -m "📝 Daily update: blog post + README tables - $(date +'%Y-%m-%d')"
-          
+
           # Fix: Pull latest changes (rebase) to avoid "fetch first" errors
           git pull --rebase origin main
-          
+
           git push
 
       # -----------------------------------------------------------
