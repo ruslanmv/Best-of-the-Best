@@ -316,36 +316,49 @@ def load_json(path: Path) -> Optional[Any]:
 
 
 def load_coverage() -> List[Dict[str, Any]]:
-    """Load blog coverage history"""
+    """Load blog coverage history (with auto-recovery from posts)"""
+
+    # ALWAYS recover from posts first (robust fix for missing commits)
+    recovered = recover_coverage_from_posts()
+
+    # If coverage file doesn't exist, use recovered data
     if not COVERAGE_FILE.exists():
-        return []
+        logger.info(f"📝 No coverage file found, recovered {len(recovered)} entries from posts")
+        if recovered:
+            save_coverage(recovered)
+        return recovered
+
+    # Try to load existing coverage file
     try:
         with COVERAGE_FILE.open("r", encoding="utf-8") as f:
-            return json.load(f)
+            existing = json.load(f)
     except json.JSONDecodeError as e:
-        # If this file is corrupted/truncated, the old behavior returned []
-        # which makes the generator repeat the first package forever.
-        logger.error(f"❌ Coverage file is not valid JSON: {COVERAGE_FILE} ({e})")
+        logger.error(f"❌ Coverage file corrupt: {COVERAGE_FILE} ({e})")
+        # Move corrupt file to backup
         try:
             ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
             backup = COVERAGE_FILE.with_suffix(f".corrupt-{ts}.json")
             COVERAGE_FILE.replace(backup)
-            logger.error(f"📦 Moved corrupt coverage file to: {backup}")
+            logger.error(f"📦 Moved to: {backup}")
         except Exception as move_err:
-            logger.error(f"⚠️  Failed to move corrupt coverage file: {move_err}")
-
-        recovered = recover_coverage_from_posts()
-        if recovered:
-            logger.error(f"🛟 Recovered {len(recovered)} coverage entries by scanning blog posts")
-            try:
-                save_coverage(recovered)
-            except Exception as save_err:
-                logger.error(f"⚠️  Failed to persist recovered coverage: {save_err}")
-            return recovered
-        return []
+            logger.error(f"⚠️  Backup failed: {move_err}")
+        existing = []
     except Exception as e:
-        logger.error(f"❌ Failed to load coverage file {COVERAGE_FILE}: {e}")
-        return []
+        logger.error(f"❌ Failed to load coverage: {e}")
+        existing = []
+
+    # Merge recovered + existing, dedupe by (kind, id, version)
+    merged = _merge_and_dedupe_coverage(existing, recovered)
+
+    # If merged has more entries, save it back
+    if len(merged) > len(existing):
+        logger.info(f"🔄 Merged coverage: {len(existing)} → {len(merged)} entries")
+        try:
+            save_coverage(merged)
+        except Exception as save_err:
+            logger.error(f"⚠️  Failed to save merged coverage: {save_err}")
+
+    return merged
 
 
 def recover_coverage_from_posts() -> List[Dict[str, Any]]:
@@ -415,6 +428,33 @@ def recover_coverage_from_posts() -> List[Dict[str, Any]]:
         })
 
     return entries
+
+
+def _merge_and_dedupe_coverage(list1: List[Dict], list2: List[Dict]) -> List[Dict]:
+    """Merge two coverage lists and remove duplicates"""
+    seen = {}  # key: (kind, id, version) -> entry
+
+    for entry in list1 + list2:
+        kind = (entry.get("kind") or "").strip()
+        id_ = entry.get("id", "")
+        version = entry.get("version", 1)
+
+        # Normalize ID
+        norm_id = _norm_id(kind, id_)
+        key = (kind, norm_id, version)
+
+        # Keep first occurrence
+        if key not in seen:
+            seen[key] = {
+                "kind": kind,
+                "id": norm_id,
+                "version": version,
+                "date": entry.get("date", ""),
+                "filename": entry.get("filename", ""),
+            }
+
+    # Sort by date
+    return sorted(seen.values(), key=lambda x: x.get("date", ""))
 
 
 def save_coverage(entries: List[Dict[str, Any]]) -> None:
