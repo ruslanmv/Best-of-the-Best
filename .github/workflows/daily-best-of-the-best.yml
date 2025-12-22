@@ -91,6 +91,32 @@ jobs:
           python scripts/generate_daily_blog.py
           echo "✅ Blog generation complete"
 
+      - name: 🛡️ Check for duplicate topics
+        run: |
+          # Get the newest post
+          LATEST_POST=$(ls -t blog/posts/*.md 2>/dev/null | grep -v index | head -1)
+          if [ -z "$LATEST_POST" ]; then
+            echo "⚠️  No post found, skipping duplicate check"
+            exit 0
+          fi
+
+          # Extract topic_id
+          TOPIC_ID=$(grep "^topic_id:" "$LATEST_POST" | head -1 | sed 's/topic_id: *"\?\([^"]*\)"\?/\1/')
+
+          # Check last 5 posts for same topic_id
+          PREV_POSTS=$(ls -t blog/posts/*.md 2>/dev/null | grep -v index | tail -n +2 | head -5)
+          for post in $PREV_POSTS; do
+            PREV_ID=$(grep "^topic_id:" "$post" | head -1 | sed 's/topic_id: *"\?\([^"]*\)"\?/\1/')
+            if [ "$PREV_ID" = "$TOPIC_ID" ]; then
+              echo "❌ DUPLICATE TOPIC DETECTED: $TOPIC_ID"
+              echo "   Latest: $(basename "$LATEST_POST")"
+              echo "   Previous: $(basename "$post")"
+              exit 1
+            fi
+          done
+
+          echo "✅ No duplicate topics found (current topic: $TOPIC_ID)"
+
       - name: Verify blog post was created
         run: |
           echo "🔍 Verifying blog post output..."

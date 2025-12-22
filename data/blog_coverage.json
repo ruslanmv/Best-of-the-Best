@@ -5,5 +5,12 @@
     "version": 1,
     "date": "2025-12-14",
     "filename": "2025-12-14-package-xgboost.md"
+  },
+  {
+    "kind": "package",
+    "id": "langchain",
+    "version": 1,
+    "date": "2025-12-15",
+    "filename": "2025-12-15-package-langchain.md"
   }
 ]
