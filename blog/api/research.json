@@ -2,12 +2,12 @@
   {
     "title": "TPOT",
     "url": "https://doi.org/10.1007/978-3-030-05318-5_8",
-    "date": "2025-12-23T05:58:03.447562",
+    "date": "2025-12-23T13:21:08.501410",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -15,12 +15,12 @@
   {
     "title": "NeuSpell",
     "url": "https://doi.org/10.18653/v1/2020.emnlp-demos.21",
-    "date": "2025-12-23T05:58:03.447560",
+    "date": "2025-12-23T13:21:08.501409",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -28,12 +28,12 @@
   {
     "title": "Contextualized Topic Models",
     "url": "https://doi.org/10.18653/v1/2021.eacl-main.143",
-    "date": "2025-12-23T05:58:03.447558",
+    "date": "2025-12-23T13:21:08.501408",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -41,12 +41,12 @@
   {
     "title": "XGBoost",
     "url": "https://doi.org/10.1145/2939672.2939785",
-    "date": "2025-12-23T05:58:03.447554",
+    "date": "2025-12-23T13:21:08.501407",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -54,25 +54,12 @@
   {
     "title": "Cleanlab",
     "url": "https://doi.org/10.1613/jair.1.12125",
-    "date": "2025-12-23T05:58:03.447552",
+    "date": "2025-12-23T13:21:08.501406",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
-    ],
-    "category": "research",
-    "excerpt": ""
-  },
-  {
-    "title": "PyTerrier",
-    "url": "https://doi.org/10.1145/3459637.3482013",
-    "date": "2025-12-23T05:58:03.447550",
-    "author": "AI Agent",
-    "tags": [
-      "Research",
-      "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -80,12 +67,25 @@
   {
     "title": "deep-significance",
     "url": "https://doi.org/10.18653/v1/p19-1266",
-    "date": "2025-12-23T05:58:03.447548",
+    "date": "2025-12-23T13:21:08.501405",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "PyTerrier",
+    "url": "https://doi.org/10.1145/3459637.3482013",
+    "date": "2025-12-23T13:21:08.501405",
+    "author": "AI Agent",
+    "tags": [
+      "Citation",
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -93,12 +93,12 @@
   {
     "title": "Kornia",
     "url": "https://doi.org/10.1109/WACV45572.2020.9093363",
-    "date": "2025-12-23T05:58:03.447546",
+    "date": "2025-12-23T13:21:08.501404",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -106,12 +106,12 @@
   {
     "title": "SAHI",
     "url": "https://doi.org/10.1109/ICIP46576.2022.9897990",
-    "date": "2025-12-23T05:58:03.447544",
+    "date": "2025-12-23T13:21:08.501403",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -119,12 +119,12 @@
   {
     "title": "py-irt",
     "url": "https://doi.org/10.18653/v1/2021.acl-long.346",
-    "date": "2025-12-23T05:58:03.447542",
+    "date": "2025-12-23T13:21:08.501402",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -132,12 +132,12 @@
   {
     "title": "MMOCR",
     "url": "https://doi.org/10.1145/3474085.3478328",
-    "date": "2025-12-23T05:58:03.447540",
+    "date": "2025-12-23T13:21:08.501401",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -145,12 +145,12 @@
   {
     "title": "MMRotate",
     "url": "https://doi.org/10.1145/3503161.3548541",
-    "date": "2025-12-23T05:58:03.447538",
+    "date": "2025-12-23T13:21:08.501400",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -158,12 +158,12 @@
   {
     "title": "PyTorchVideo",
     "url": "https://doi.org/10.1145/3474085.3478329",
-    "date": "2025-12-23T05:58:03.447536",
+    "date": "2025-12-23T13:21:08.501399",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -171,12 +171,12 @@
   {
     "title": "Scenic",
     "url": "https://doi.org/10.1109/CVPR52688.2022.02070",
-    "date": "2025-12-23T05:58:03.447534",
+    "date": "2025-12-23T13:21:08.501398",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -184,12 +184,12 @@
   {
     "title": "EfficientDet",
     "url": "https://doi.org/10.1109/CVPR42600.2020.01079",
-    "date": "2025-12-23T05:58:03.447532",
+    "date": "2025-12-23T13:21:08.501397",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -197,12 +197,12 @@
   {
     "title": "TensorFlow Graphics",
     "url": "https://doi.org/10.1145/3450508.3464595",
-    "date": "2025-12-23T05:58:03.447530",
+    "date": "2025-12-23T13:21:08.501395",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -210,12 +210,12 @@
   {
     "title": "Classify text with BERT",
     "url": "https://doi.org/10.18653/v1/N19-1423",
-    "date": "2025-12-23T05:58:03.447528",
+    "date": "2025-12-23T13:21:08.501394",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -223,12 +223,12 @@
   {
     "title": "Image segmentation",
     "url": "http://doi.org/10.1007/978-3-319-24574-4_28",
-    "date": "2025-12-23T05:58:03.447526",
+    "date": "2025-12-23T13:21:08.501392",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -236,12 +236,12 @@
   {
     "title": "Pix2Pix",
     "url": "https://doi.org/10.1109/CVPR.2017.632",
-    "date": "2025-12-23T05:58:03.447524",
+    "date": "2025-12-23T13:21:08.501391",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -249,12 +249,12 @@
   {
     "title": "CycleGAN",
     "url": "https://doi.org/10.1109/ICCV.2017.244",
-    "date": "2025-12-23T05:58:03.447522",
+    "date": "2025-12-23T13:21:08.501390",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -262,12 +262,12 @@
   {
     "title": "AudioLM",
     "url": "https://doi.org/10.1109/TASLP.2023.3288409",
-    "date": "2025-12-23T05:58:03.447518",
+    "date": "2025-12-23T13:21:08.501389",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -275,12 +275,12 @@
   {
     "title": "FELIX",
     "url": "https://doi.org/10.1007/978-3-031-70359-1_14",
-    "date": "2025-12-23T05:58:03.447516",
+    "date": "2025-12-23T13:21:08.501387",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -288,25 +288,12 @@
   {
     "title": "Score Jacobian Chaining",
     "url": "https://doi.org/10.1109/CVPR52729.2023.01214",
-    "date": "2025-12-23T05:58:03.447512",
+    "date": "2025-12-23T13:21:08.501386",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
-    ],
-    "category": "research",
-    "excerpt": ""
-  },
-  {
-    "title": "CodeTalker",
-    "url": "https://doi.org/10.1109/CVPR52729.2023.01229",
-    "date": "2025-12-23T05:58:03.447510",
-    "author": "AI Agent",
-    "tags": [
-      "Research",
-      "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -314,12 +301,25 @@
   {
     "title": "DifFace",
     "url": "https://doi.org/10.1109/TPAMI.2024.3432651",
-    "date": "2025-12-23T05:58:03.447508",
+    "date": "2025-12-23T13:21:08.501385",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "CodeTalker",
+    "url": "https://doi.org/10.1109/CVPR52729.2023.01229",
+    "date": "2025-12-23T13:21:08.501385",
+    "author": "AI Agent",
+    "tags": [
+      "Citation",
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -327,12 +327,12 @@
   {
     "title": "BiRefNet",
     "url": "https://doi.org/10.26599/AIR.2024.9150038",
-    "date": "2025-12-23T05:58:03.447506",
+    "date": "2025-12-23T13:21:08.501384",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -340,12 +340,12 @@
   {
     "title": "BasicVSR++",
     "url": "https://doi.org/10.1109/CVPR52688.2022.00588",
-    "date": "2025-12-23T05:58:03.447503",
+    "date": "2025-12-23T13:21:08.501383",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -353,12 +353,12 @@
   {
     "title": "RealBasicVSR",
     "url": "https://doi.org/10.1109/CVPR52688.2022.00587",
-    "date": "2025-12-23T05:58:03.447500",
+    "date": "2025-12-23T13:21:08.501382",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -366,12 +366,12 @@
   {
     "title": "ROMP",
     "url": "https://doi.org/10.1109/ICCV48922.2021.01099",
-    "date": "2025-12-23T05:58:03.447498",
+    "date": "2025-12-23T13:21:08.501381",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -379,12 +379,12 @@
   {
     "title": "FateZero",
     "url": "https://doi.org/10.1109/ICCV51070.2023.01460",
-    "date": "2025-12-23T05:58:03.447496",
+    "date": "2025-12-23T13:21:08.501380",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -392,12 +392,12 @@
   {
     "title": "HMR",
     "url": "https://doi.org/10.1109/CVPR.2018.00744",
-    "date": "2025-12-23T05:58:03.447494",
+    "date": "2025-12-23T13:21:08.501379",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -405,12 +405,12 @@
   {
     "title": "FollowYourPose",
     "url": "https://doi.org/10.1609/aaai.v38i5.28206",
-    "date": "2025-12-23T05:58:03.447492",
+    "date": "2025-12-23T13:21:08.501378",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -418,12 +418,12 @@
   {
     "title": "SCALE",
     "url": "https://doi.org/10.1109/CVPR46437.2021.01582",
-    "date": "2025-12-23T05:58:03.447490",
+    "date": "2025-12-23T13:21:08.501377",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -431,12 +431,12 @@
   {
     "title": "CAPE",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00650",
-    "date": "2025-12-23T05:58:03.447488",
+    "date": "2025-12-23T13:21:08.501376",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -444,12 +444,12 @@
   {
     "title": "SPIN",
     "url": "https://doi.org/10.1109/ICCV.2019.00234",
-    "date": "2025-12-23T05:58:03.447486",
+    "date": "2025-12-23T13:21:08.501375",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -457,12 +457,12 @@
   {
     "title": "AlphaPose",
     "url": "https://doi.org/10.1109/TPAMI.2022.3222784",
-    "date": "2025-12-23T05:58:03.447484",
+    "date": "2025-12-23T13:21:08.501374",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -470,12 +470,12 @@
   {
     "title": "VIBE",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00530",
-    "date": "2025-12-23T05:58:03.447482",
+    "date": "2025-12-23T13:21:08.501373",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -483,12 +483,12 @@
   {
     "title": "Background Matting V2",
     "url": "https://doi.org/10.1109/CVPR46437.2021.00865",
-    "date": "2025-12-23T05:58:03.447480",
+    "date": "2025-12-23T13:21:08.501372",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -496,12 +496,12 @@
   {
     "title": "RITM",
     "url": "https://doi.org/10.1109/ICIP46576.2022.9897365",
-    "date": "2025-12-23T05:58:03.447478",
+    "date": "2025-12-23T13:21:08.501371",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -509,12 +509,12 @@
   {
     "title": "f-BRS",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00865",
-    "date": "2025-12-23T05:58:03.447476",
+    "date": "2025-12-23T13:21:08.501370",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -522,12 +522,12 @@
   {
     "title": "DeepLabCut",
     "url": "https://doi.org/10.1038/s41593-018-0209-y",
-    "date": "2025-12-23T05:58:03.447474",
+    "date": "2025-12-23T13:21:08.501369",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -535,12 +535,12 @@
   {
     "title": "T2M-GPT",
     "url": "https://doi.org/10.1109/CVPR52729.2023.01415",
-    "date": "2025-12-23T05:58:03.447472",
+    "date": "2025-12-23T13:21:08.501368",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -548,12 +548,12 @@
   {
     "title": "VideoReTalking",
     "url": "https://doi.org/10.1145/3550469.3555399",
-    "date": "2025-12-23T05:58:03.447468",
+    "date": "2025-12-23T13:21:08.501367",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -561,12 +561,12 @@
   {
     "title": "SadTalker",
     "url": "https://doi.org/10.1109/CVPR52729.2023.00836",
-    "date": "2025-12-23T05:58:03.447466",
+    "date": "2025-12-23T13:21:08.501366",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -574,12 +574,12 @@
   {
     "title": "Gaussian Splatting",
     "url": "https://doi.org/10.1145/3592433",
-    "date": "2025-12-23T05:58:03.447464",
+    "date": "2025-12-23T13:21:08.501365",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -587,25 +587,12 @@
   {
     "title": "Tune-A-Video",
     "url": "https://doi.org/10.1109/ICCV51070.2023.00701",
-    "date": "2025-12-23T05:58:03.447462",
+    "date": "2025-12-23T13:21:08.501364",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
-    ],
-    "category": "research",
-    "excerpt": ""
-  },
-  {
-    "title": "Text2Video-Zero",
-    "url": "https://doi.org/10.1109/ICCV51070.2023.01462",
-    "date": "2025-12-23T05:58:03.447460",
-    "author": "AI Agent",
-    "tags": [
-      "Research",
-      "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -613,12 +600,25 @@
   {
     "title": "NAFNet",
     "url": "https://doi.org/10.1007/978-3-031-20071-7_2",
-    "date": "2025-12-23T05:58:03.447458",
+    "date": "2025-12-23T13:21:08.501363",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "Text2Video-Zero",
+    "url": "https://doi.org/10.1109/ICCV51070.2023.01462",
+    "date": "2025-12-23T13:21:08.501363",
+    "author": "AI Agent",
+    "tags": [
+      "Citation",
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -626,12 +626,12 @@
   {
     "title": "PyMAF-X",
     "url": "https://doi.org/10.1109/TPAMI.2023.3271691",
-    "date": "2025-12-23T05:58:03.447456",
+    "date": "2025-12-23T13:21:08.501362",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -639,12 +639,12 @@
   {
     "title": "HybrIK",
     "url": "https://doi.org/10.1109/CVPR46437.2021.00339",
-    "date": "2025-12-23T05:58:03.447454",
+    "date": "2025-12-23T13:21:08.501360",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -652,12 +652,12 @@
   {
     "title": "IDE-3D",
     "url": "https://doi.org/10.1145/3550454.3555506",
-    "date": "2025-12-23T05:58:03.447452",
+    "date": "2025-12-23T13:21:08.501359",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -665,12 +665,12 @@
   {
     "title": "StyleSDF",
     "url": "https://doi.org/10.1109/CVPR52688.2022.01314",
-    "date": "2025-12-23T05:58:03.447450",
+    "date": "2025-12-23T13:21:08.501358",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -678,12 +678,12 @@
   {
     "title": "EPro-PnP",
     "url": "https://doi.org/10.1109/TPAMI.2024.3354997",
-    "date": "2025-12-23T05:58:03.447446",
+    "date": "2025-12-23T13:21:08.501357",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -691,12 +691,12 @@
   {
     "title": "UniFormerV2",
     "url": "https://doi.org/10.1109/ICCV51070.2023.00157",
-    "date": "2025-12-23T05:58:03.447445",
+    "date": "2025-12-23T13:21:08.501356",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -704,12 +704,12 @@
   {
     "title": "Panini-Net",
     "url": "https://doi.org/10.1609/aaai.v36i3.20159",
-    "date": "2025-12-23T05:58:03.447443",
+    "date": "2025-12-23T13:21:08.501355",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -717,12 +717,12 @@
   {
     "title": "Thin-Plate Spline Motion Model",
     "url": "https://doi.org/10.1109/CVPR52688.2022.00364",
-    "date": "2025-12-23T05:58:03.447441",
+    "date": "2025-12-23T13:21:08.501354",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -730,12 +730,12 @@
   {
     "title": "E2FGVI",
     "url": "https://doi.org/10.1109/CVPR52688.2022.01704",
-    "date": "2025-12-23T05:58:03.447439",
+    "date": "2025-12-23T13:21:08.501353",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -743,12 +743,12 @@
   {
     "title": "PTI",
     "url": "https://doi.org/10.1145/3544777",
-    "date": "2025-12-23T05:58:03.447437",
+    "date": "2025-12-23T13:21:08.501352",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -756,12 +756,12 @@
   {
     "title": "PoolFormer",
     "url": "https://doi.org/10.1109/CVPR52688.2022.01055",
-    "date": "2025-12-23T05:58:03.447434",
+    "date": "2025-12-23T13:21:08.501351",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -769,12 +769,12 @@
   {
     "title": "ECON",
     "url": "https://doi.org/10.1109/CVPR52729.2023.00057",
-    "date": "2025-12-23T05:58:03.447432",
+    "date": "2025-12-23T13:21:08.501350",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -782,12 +782,12 @@
   {
     "title": "ICON",
     "url": "https://doi.org/10.1109/CVPR52688.2022.01294",
-    "date": "2025-12-23T05:58:03.447430",
+    "date": "2025-12-23T13:21:08.501349",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -795,12 +795,12 @@
   {
     "title": "LIDA",
     "url": "https://doi.org/10.18653/v1/2023.acl-demo.11",
-    "date": "2025-12-23T05:58:03.447427",
+    "date": "2025-12-23T13:21:08.501348",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -808,12 +808,12 @@
   {
     "title": "GLIP",
     "url": "https://doi.org/10.1109/CVPR52688.2022.01069",
-    "date": "2025-12-23T05:58:03.447425",
+    "date": "2025-12-23T13:21:08.501347",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -821,12 +821,12 @@
   {
     "title": "VQ-Diffusion",
     "url": "https://doi.org/10.1109/CVPR52688.2022.01043",
-    "date": "2025-12-23T05:58:03.447423",
+    "date": "2025-12-23T13:21:08.501346",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -834,12 +834,12 @@
   {
     "title": "Bringing Old Photo Back to Life",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00282",
-    "date": "2025-12-23T05:58:03.447421",
+    "date": "2025-12-23T13:21:08.501345",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -847,12 +847,12 @@
   {
     "title": "MTTR",
     "url": "https://doi.org/10.1109/CVPR52688.2022.00493",
-    "date": "2025-12-23T05:58:03.447419",
+    "date": "2025-12-23T13:21:08.501344",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -860,12 +860,12 @@
   {
     "title": "Swin2SR",
     "url": "https://doi.org/10.1007/978-3-031-25063-7_42",
-    "date": "2025-12-23T05:58:03.447417",
+    "date": "2025-12-23T13:21:08.501343",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -873,12 +873,12 @@
   {
     "title": "VRT",
     "url": "https://doi.org/10.1109/TIP.2024.3372454",
-    "date": "2025-12-23T05:58:03.447415",
+    "date": "2025-12-23T13:21:08.501342",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -886,12 +886,12 @@
   {
     "title": "SwinIR",
     "url": "https://doi.org/10.1109/ICCVW54120.2021.00210",
-    "date": "2025-12-23T05:58:03.447413",
+    "date": "2025-12-23T13:21:08.501341",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -899,12 +899,12 @@
   {
     "title": "JoJoGAN",
     "url": "https://doi.org/10.1007/978-3-031-19787-1_8",
-    "date": "2025-12-23T05:58:03.447411",
+    "date": "2025-12-23T13:21:08.501340",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -912,12 +912,12 @@
   {
     "title": "RVM",
     "url": "https://doi.org/10.1109/WACV51458.2022.00319",
-    "date": "2025-12-23T05:58:03.447409",
+    "date": "2025-12-23T13:21:08.501339",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -925,12 +925,12 @@
   {
     "title": "LaMa",
     "url": "https://doi.org/10.1109/WACV51458.2022.00323",
-    "date": "2025-12-23T05:58:03.447407",
+    "date": "2025-12-23T13:21:08.501338",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -938,12 +938,12 @@
   {
     "title": "Instant-NGP",
     "url": "https://doi.org/10.1145/3528223.3530127",
-    "date": "2025-12-23T05:58:03.447405",
+    "date": "2025-12-23T13:21:08.501337",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -951,12 +951,12 @@
   {
     "title": "StyleCariGAN",
     "url": "https://doi.org/10.1145/3450626.3459860",
-    "date": "2025-12-23T05:58:03.447403",
+    "date": "2025-12-23T13:21:08.501336",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -964,25 +964,12 @@
   {
     "title": "Live Speech Portraits",
     "url": "https://doi.org/10.1145/3478513.3480484",
-    "date": "2025-12-23T05:58:03.447401",
+    "date": "2025-12-23T13:21:08.501334",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
-    ],
-    "category": "research",
-    "excerpt": ""
-  },
-  {
-    "title": "GFPGAN",
-    "url": "https://doi.org/10.1109/CVPR46437.2021.00905",
-    "date": "2025-12-23T05:58:03.447398",
-    "author": "AI Agent",
-    "tags": [
-      "Research",
-      "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -990,12 +977,25 @@
   {
     "title": "Real-ESRGAN",
     "url": "https://doi.org/10.1109/ICCVW54120.2021.00217",
-    "date": "2025-12-23T05:58:03.447395",
+    "date": "2025-12-23T13:21:08.501333",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "GFPGAN",
+    "url": "https://doi.org/10.1109/CVPR46437.2021.00905",
+    "date": "2025-12-23T13:21:08.501333",
+    "author": "AI Agent",
+    "tags": [
+      "Citation",
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1003,12 +1003,12 @@
   {
     "title": "Lifespan Age Transformation Synthesis",
     "url": "https://doi.org/10.1007/978-3-030-58539-6_44",
-    "date": "2025-12-23T05:58:03.447393",
+    "date": "2025-12-23T13:21:08.501331",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1016,25 +1016,12 @@
   {
     "title": "InterFaceGAN",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00926",
-    "date": "2025-12-23T05:58:03.447391",
+    "date": "2025-12-23T13:21:08.501330",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
-    ],
-    "category": "research",
-    "excerpt": ""
-  },
-  {
-    "title": "HiGAN",
-    "url": "https://doi.org/10.1007/s11263-020-01429-5",
-    "date": "2025-12-23T05:58:03.447389",
-    "author": "AI Agent",
-    "tags": [
-      "Research",
-      "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1042,12 +1029,25 @@
   {
     "title": "SeFa",
     "url": "https://doi.org/10.1109/CVPR46437.2021.00158",
-    "date": "2025-12-23T05:58:03.447387",
+    "date": "2025-12-23T13:21:08.501329",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "HiGAN",
+    "url": "https://doi.org/10.1007/s11263-020-01429-5",
+    "date": "2025-12-23T13:21:08.501329",
+    "author": "AI Agent",
+    "tags": [
+      "Citation",
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1055,12 +1055,12 @@
   {
     "title": "Rewriting a Deep Generative Model",
     "url": "https://doi.org/10.1007/978-3-030-58452-8_21",
-    "date": "2025-12-23T05:58:03.447383",
+    "date": "2025-12-23T13:21:08.501327",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1068,12 +1068,12 @@
   {
     "title": "Anycost GAN",
     "url": "https://doi.org/10.1109/CVPR46437.2021.01474",
-    "date": "2025-12-23T05:58:03.447381",
+    "date": "2025-12-23T13:21:08.501326",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1081,12 +1081,12 @@
   {
     "title": "NeX",
     "url": "https://doi.org/10.1109/CVPR46437.2021.00843",
-    "date": "2025-12-23T05:58:03.447379",
+    "date": "2025-12-23T13:21:08.501325",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1094,25 +1094,12 @@
   {
     "title": "TediGAN",
     "url": "https://doi.org/10.1109/CVPR46437.2021.00229",
-    "date": "2025-12-23T05:58:03.447375",
+    "date": "2025-12-23T13:21:08.501324",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
-    ],
-    "category": "research",
-    "excerpt": ""
-  },
-  {
-    "title": "SimSwap",
-    "url": "https://doi.org/10.1145/3394171.3413630",
-    "date": "2025-12-23T05:58:03.447373",
-    "author": "AI Agent",
-    "tags": [
-      "Research",
-      "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1120,12 +1107,25 @@
   {
     "title": "Parallel WaveGAN",
     "url": "https://doi.org/10.1109/ICASSP40776.2020.9053795",
-    "date": "2025-12-23T05:58:03.447371",
+    "date": "2025-12-23T13:21:08.501323",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "SimSwap",
+    "url": "https://doi.org/10.1145/3394171.3413630",
+    "date": "2025-12-23T13:21:08.501323",
+    "author": "AI Agent",
+    "tags": [
+      "Citation",
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1133,12 +1133,12 @@
   {
     "title": "StyleCLIP",
     "url": "https://doi.org/10.1109/ICCV48922.2021.00209",
-    "date": "2025-12-23T05:58:03.447369",
+    "date": "2025-12-23T13:21:08.501322",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1146,12 +1146,12 @@
   {
     "title": "StyleGAN-NADA",
     "url": "https://doi.org/10.1145/3528223.3530164",
-    "date": "2025-12-23T05:58:03.447367",
+    "date": "2025-12-23T13:21:08.501321",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1159,12 +1159,12 @@
   {
     "title": "NeRViS",
     "url": "https://doi.org/10.1109/ICCV48922.2021.00230",
-    "date": "2025-12-23T05:58:03.447365",
+    "date": "2025-12-23T13:21:08.501320",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1172,12 +1172,12 @@
   {
     "title": "AnimeGANv3",
     "url": "http://doi.org/10.1587/transinf.2023EDP7061",
-    "date": "2025-12-23T05:58:03.447363",
+    "date": "2025-12-23T13:21:08.501319",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1185,12 +1185,12 @@
   {
     "title": "AnimeGANv2",
     "url": "https://doi.org/10.1007/978-981-15-5577-0_18",
-    "date": "2025-12-23T05:58:03.447361",
+    "date": "2025-12-23T13:21:08.501318",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1198,12 +1198,12 @@
   {
     "title": "HyperStyle",
     "url": "https://doi.org/10.1109/CVPR52688.2022.01796",
-    "date": "2025-12-23T05:58:03.447357",
+    "date": "2025-12-23T13:21:08.501317",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1211,12 +1211,12 @@
   {
     "title": "SAM",
     "url": "https://doi.org/10.1145/3450626.3459805",
-    "date": "2025-12-23T05:58:03.447355",
+    "date": "2025-12-23T13:21:08.501316",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1224,12 +1224,12 @@
   {
     "title": "encoder4editing",
     "url": "https://doi.org/10.1145/3450626.3459838",
-    "date": "2025-12-23T05:58:03.447353",
+    "date": "2025-12-23T13:21:08.501314",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1237,12 +1237,12 @@
   {
     "title": "ReStyle",
     "url": "https://doi.org/10.1109/ICCV48922.2021.00664",
-    "date": "2025-12-23T05:58:03.447351",
+    "date": "2025-12-23T13:21:08.501313",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1250,25 +1250,12 @@
   {
     "title": "Pixel2Style2Pixel",
     "url": "https://doi.org/10.1109/CVPR46437.2021.00232",
-    "date": "2025-12-23T05:58:03.447349",
+    "date": "2025-12-23T13:21:08.501312",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
-    ],
-    "category": "research",
-    "excerpt": ""
-  },
-  {
-    "title": "SVG VAE",
-    "url": "https://doi.org/10.1109/ICCV.2019.00802",
-    "date": "2025-12-23T05:58:03.447347",
-    "author": "AI Agent",
-    "tags": [
-      "Research",
-      "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1276,12 +1263,25 @@
   {
     "title": "Stylized Neural Painting",
     "url": "https://doi.org/10.1109/CVPR46437.2021.01543",
-    "date": "2025-12-23T05:58:03.447345",
+    "date": "2025-12-23T13:21:08.501311",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "SVG VAE",
+    "url": "https://doi.org/10.1109/ICCV.2019.00802",
+    "date": "2025-12-23T13:21:08.501311",
+    "author": "AI Agent",
+    "tags": [
+      "Citation",
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1289,12 +1289,12 @@
   {
     "title": "SkyAR",
     "url": "https://doi.org/10.1109/TIP.2022.3192717",
-    "date": "2025-12-23T05:58:03.447343",
+    "date": "2025-12-23T13:21:08.501310",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1302,12 +1302,12 @@
   {
     "title": "MSG-Net",
     "url": "https://doi.org/10.1007/978-3-030-11018-5_32",
-    "date": "2025-12-23T05:58:03.447339",
+    "date": "2025-12-23T13:21:08.501309",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1315,12 +1315,12 @@
   {
     "title": "Wav2Lip",
     "url": "https://doi.org/10.1145/3394171.3413532",
-    "date": "2025-12-23T05:58:03.447337",
+    "date": "2025-12-23T13:21:08.501308",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1328,12 +1328,12 @@
   {
     "title": "HiDT",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00751",
-    "date": "2025-12-23T05:58:03.447335",
+    "date": "2025-12-23T13:21:08.501307",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1341,12 +1341,12 @@
   {
     "title": "AvatarCLIP",
     "url": "https://doi.org/10.1145/3528223.3530094",
-    "date": "2025-12-23T05:58:03.447333",
+    "date": "2025-12-23T13:21:08.501306",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1354,12 +1354,12 @@
   {
     "title": "LaSAFT",
     "url": "https://doi.org/10.1109/ICASSP39728.2021.9413896",
-    "date": "2025-12-23T05:58:03.447331",
+    "date": "2025-12-23T13:21:08.501305",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1367,12 +1367,12 @@
   {
     "title": "Open-Unmix",
     "url": "https://doi.org/10.21105/joss.01667",
-    "date": "2025-12-23T05:58:03.447329",
+    "date": "2025-12-23T13:21:08.501304",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1380,12 +1380,12 @@
   {
     "title": "Neural Style Transfer",
     "url": "https://doi.org/10.1167/16.12.326",
-    "date": "2025-12-23T05:58:03.447327",
+    "date": "2025-12-23T13:21:08.501303",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1393,25 +1393,12 @@
   {
     "title": "Ithaca",
     "url": "https://doi.org/10.1038/s41586-022-04448-z",
-    "date": "2025-12-23T05:58:03.447325",
+    "date": "2025-12-23T13:21:08.501302",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
-    ],
-    "category": "research",
-    "excerpt": ""
-  },
-  {
-    "title": "GraphCast",
-    "url": "https://doi.org/10.1126/science.adi2336",
-    "date": "2025-12-23T05:58:03.447323",
-    "author": "AI Agent",
-    "tags": [
-      "Research",
-      "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1419,12 +1406,25 @@
   {
     "title": "AlphaTensor",
     "url": "https://doi.org/10.1038/s41586-022-05172-4",
-    "date": "2025-12-23T05:58:03.447321",
+    "date": "2025-12-23T13:21:08.501301",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "GraphCast",
+    "url": "https://doi.org/10.1126/science.adi2336",
+    "date": "2025-12-23T13:21:08.501301",
+    "author": "AI Agent",
+    "tags": [
+      "Citation",
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1432,12 +1432,12 @@
   {
     "title": "AlphaFold",
     "url": "https://doi.org/10.1038/s41586-021-03819-2",
-    "date": "2025-12-23T05:58:03.447319",
+    "date": "2025-12-23T13:21:08.501300",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1445,12 +1445,12 @@
   {
     "title": "Skillful Precipitation Nowcasting Using Deep Generative Models of Radar",
     "url": "https://doi.org/10.1038/s41586-021-03854-z",
-    "date": "2025-12-23T05:58:03.447317",
+    "date": "2025-12-23T13:21:08.501299",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1458,12 +1458,12 @@
   {
     "title": "LDM",
     "url": "https://doi.org/10.1109/CVPR52688.2022.01042",
-    "date": "2025-12-23T05:58:03.447315",
+    "date": "2025-12-23T13:21:08.501298",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1471,12 +1471,12 @@
   {
     "title": "Rethinking Style Transfer: From Pixels to Parameterized Brushstrokes",
     "url": "https://doi.org/10.1109/CVPR46437.2021.01202",
-    "date": "2025-12-23T05:58:03.447313",
+    "date": "2025-12-23T13:21:08.501295",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1484,12 +1484,12 @@
   {
     "title": "Geometry-Free View Synthesis",
     "url": "https://doi.org/10.1109/ICCV48922.2021.01409",
-    "date": "2025-12-23T05:58:03.447311",
+    "date": "2025-12-23T13:21:08.501294",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1497,12 +1497,12 @@
   {
     "title": "Taming Transformers for High-Resolution Image Synthesis",
     "url": "https://doi.org/10.1109/CVPR46437.2021.01268",
-    "date": "2025-12-23T05:58:03.447307",
+    "date": "2025-12-23T13:21:08.501293",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1510,12 +1510,12 @@
   {
     "title": "MakeItTalk",
     "url": "https://doi.org/10.1145/3414685.3417774",
-    "date": "2025-12-23T05:58:03.447305",
+    "date": "2025-12-23T13:21:08.501292",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1523,25 +1523,12 @@
   {
     "title": "Instance-aware Image Colorization",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00799",
-    "date": "2025-12-23T05:58:03.447303",
+    "date": "2025-12-23T13:21:08.501291",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
-    ],
-    "category": "research",
-    "excerpt": ""
-  },
-  {
-    "title": "FGVC",
-    "url": "https://doi.org/10.1007/978-3-030-58610-2_42",
-    "date": "2025-12-23T05:58:03.447301",
-    "author": "AI Agent",
-    "tags": [
-      "Research",
-      "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1549,12 +1536,25 @@
   {
     "title": "3D Photo Inpainting",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00805",
-    "date": "2025-12-23T05:58:03.447299",
+    "date": "2025-12-23T13:21:08.501289",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
+    ],
+    "category": "research",
+    "excerpt": ""
+  },
+  {
+    "title": "FGVC",
+    "url": "https://doi.org/10.1007/978-3-030-58610-2_42",
+    "date": "2025-12-23T13:21:08.501289",
+    "author": "AI Agent",
+    "tags": [
+      "Citation",
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1562,12 +1562,12 @@
   {
     "title": "ByteTrack",
     "url": "https://doi.org/10.1007/978-3-031-20047-2_1",
-    "date": "2025-12-23T05:58:03.447295",
+    "date": "2025-12-23T13:21:08.501288",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1575,12 +1575,12 @@
   {
     "title": "DualStyleGAN",
     "url": "https://doi.org/10.1109/CVPR52688.2022.00754",
-    "date": "2025-12-23T05:58:03.447293",
+    "date": "2025-12-23T13:21:08.501287",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1588,12 +1588,12 @@
   {
     "title": "VToonify",
     "url": "https://doi.org/10.1145/3550454.3555437",
-    "date": "2025-12-23T05:58:03.447291",
+    "date": "2025-12-23T13:21:08.501286",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1601,12 +1601,12 @@
   {
     "title": "CartoonGAN",
     "url": "https://doi.org/10.1109/CVPR.2018.00986",
-    "date": "2025-12-23T05:58:03.447289",
+    "date": "2025-12-23T13:21:08.501285",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1614,12 +1614,12 @@
   {
     "title": "MoCo",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00975",
-    "date": "2025-12-23T05:58:03.447287",
+    "date": "2025-12-23T13:21:08.501284",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1627,12 +1627,12 @@
   {
     "title": "ESM",
     "url": "https://doi.org/10.1101/622803",
-    "date": "2025-12-23T05:58:03.447285",
+    "date": "2025-12-23T13:21:08.501283",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1640,12 +1640,12 @@
   {
     "title": "Omnivore",
     "url": "https://doi.org/10.1109/CVPR52688.2022.01563",
-    "date": "2025-12-23T05:58:03.447283",
+    "date": "2025-12-23T13:21:08.501282",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1653,12 +1653,12 @@
   {
     "title": "ConvNeXt",
     "url": "https://doi.org/10.1109/CVPR52688.2022.01167",
-    "date": "2025-12-23T05:58:03.447281",
+    "date": "2025-12-23T13:21:08.501281",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1666,12 +1666,12 @@
   {
     "title": "Mask2Former",
     "url": "https://doi.org/10.1109/CVPR52688.2022.00135",
-    "date": "2025-12-23T05:58:03.447277",
+    "date": "2025-12-23T13:21:08.501280",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1679,12 +1679,12 @@
   {
     "title": "Detic",
     "url": "https://doi.org/10.1007/978-3-031-20077-9_21",
-    "date": "2025-12-23T05:58:03.447275",
+    "date": "2025-12-23T13:21:08.501279",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1692,12 +1692,12 @@
   {
     "title": "PIFuHD",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00016",
-    "date": "2025-12-23T05:58:03.447273",
+    "date": "2025-12-23T13:21:08.501278",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1705,12 +1705,12 @@
   {
     "title": "PIFu",
     "url": "https://doi.org/10.1109/ICCV.2019.00239",
-    "date": "2025-12-23T05:58:03.447271",
+    "date": "2025-12-23T13:21:08.501277",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1718,12 +1718,12 @@
   {
     "title": "Nerfies",
     "url": "https://doi.org/10.1109/ICCV48922.2021.00581",
-    "date": "2025-12-23T05:58:03.447269",
+    "date": "2025-12-23T13:21:08.501276",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1731,12 +1731,12 @@
   {
     "title": "StylEx",
     "url": "https://doi.org/10.1109/ICCV48922.2021.00073",
-    "date": "2025-12-23T05:58:03.447267",
+    "date": "2025-12-23T13:21:08.501275",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1744,12 +1744,12 @@
   {
     "title": "BiT",
     "url": "https://doi.org/10.1007/978-3-030-58558-7_29",
-    "date": "2025-12-23T05:58:03.447265",
+    "date": "2025-12-23T13:21:08.501274",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1757,12 +1757,12 @@
   {
     "title": "OWL-ViT",
     "url": "https://doi.org/10.1007/978-3-031-20080-9_42",
-    "date": "2025-12-23T05:58:03.447263",
+    "date": "2025-12-23T13:21:08.501273",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1770,12 +1770,12 @@
   {
     "title": "FILM",
     "url": "https://doi.org/10.1007/978-3-031-20071-7_15",
-    "date": "2025-12-23T05:58:03.447261",
+    "date": "2025-12-23T13:21:08.501272",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1783,12 +1783,12 @@
   {
     "title": "Dream Fields",
     "url": "https://doi.org/10.1109/CVPR52688.2022.00094",
-    "date": "2025-12-23T05:58:03.447259",
+    "date": "2025-12-23T13:21:08.501271",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1796,12 +1796,12 @@
   {
     "title": "Motion Representations for Articulated Animation",
     "url": "https://doi.org/10.1109/CVPR46437.2021.01344",
-    "date": "2025-12-23T05:58:03.447257",
+    "date": "2025-12-23T13:21:08.501270",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1809,12 +1809,12 @@
   {
     "title": "Motion Supervised co-part Segmentation",
     "url": "https://doi.org/10.1109/ICPR48806.2021.9412520",
-    "date": "2025-12-23T05:58:03.447253",
+    "date": "2025-12-23T13:21:08.501269",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1822,12 +1822,12 @@
   {
     "title": "Text2Human",
     "url": "https://doi.org/10.1145/3528223.3530104",
-    "date": "2025-12-23T05:58:03.447249",
+    "date": "2025-12-23T13:21:08.501256",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1835,12 +1835,12 @@
   {
     "title": "StyleGAN-Human",
     "url": "https://doi.org/10.1007/978-3-031-19787-1_1",
-    "date": "2025-12-23T05:58:03.447247",
+    "date": "2025-12-23T13:21:08.501255",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1848,12 +1848,12 @@
   {
     "title": "StyleGAN 2",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00813",
-    "date": "2025-12-23T05:58:03.447245",
+    "date": "2025-12-23T13:21:08.501253",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1861,12 +1861,12 @@
   {
     "title": "Learning to Paint",
     "url": "https://doi.org/10.1109/ICCV.2019.00880",
-    "date": "2025-12-23T05:58:03.447242",
+    "date": "2025-12-23T13:21:08.501252",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1874,12 +1874,12 @@
   {
     "title": "3D Ken Burns",
     "url": "https://doi.org/10.1145/3355089.3356528",
-    "date": "2025-12-23T05:58:03.447238",
+    "date": "2025-12-23T13:21:08.501249",
     "author": "AI Agent",
     "tags": [
-      "Research",
       "Citation",
-      "Paper"
+      "Paper",
+      "Research"
     ],
     "category": "research",
     "excerpt": ""
@@ -1887,7 +1887,7 @@
   {
     "title": "AlphaFold",
     "url": "https://colab.research.google.com/github/deepmind/alphafold/blob/master/notebooks/AlphaFold.ipynb",
-    "date": "2025-01-29T14:32:24",
+    "date": "2025-01-29T15:32:24",
     "author": "John Jumper",
     "tags": [
       "Paper"
@@ -1898,7 +1898,7 @@
   {
     "title": "DeepLabCut",
     "url": "https://colab.research.google.com/github/DeepLabCut/DeepLabCut/blob/master/examples/COLAB/COLAB_maDLC_TrainNetwork_VideoAnalysis.ipynb",
-    "date": "2025-01-27T13:31:47",
+    "date": "2025-01-27T14:31:47",
     "author": "Alexander Mathis",
     "tags": [
       "Paper"
@@ -1909,7 +1909,7 @@
   {
     "title": "STAR",
     "url": "https://colab.research.google.com/drive/1K8A1U_BNpAteRhhW9A8pAYs6LWjItQs_",
-    "date": "2025-01-22T17:41:10.828000",
+    "date": "2025-01-22T18:41:10.828000",
     "author": "Rui Xie",
     "tags": [
       "Paper"
@@ -1920,7 +1920,7 @@
   {
     "title": "InvSR",
     "url": "https://colab.research.google.com/drive/1hjgCFnAU4oUUhh9VRfTwsFN1AiIjdcSR",
-    "date": "2025-01-21T13:03:14.067000",
+    "date": "2025-01-21T14:03:14.067000",
     "author": "Zongsheng Yue",
     "tags": [
       "Paper"
@@ -1931,7 +1931,7 @@
   {
     "title": "ModernBERT",
     "url": "https://colab.research.google.com/github/AnswerDotAI/ModernBERT/blob/master/examples/finetune_modernbert_on_glue.ipynb",
-    "date": "2024-12-21T23:06:25",
+    "date": "2024-12-22T00:06:25",
     "author": "Benjamin Warner",
     "tags": [
       "Paper"
@@ -1942,7 +1942,7 @@
   {
     "title": "GraphCast",
     "url": "https://colab.research.google.com/github/deepmind/graphcast/blob/master/graphcast_demo.ipynb",
-    "date": "2024-12-04T14:19:21",
+    "date": "2024-12-04T15:19:21",
     "author": "Rémi Lam",
     "tags": [
       "Paper"
@@ -1953,7 +1953,7 @@
   {
     "title": "TAPIR",
     "url": "https://colab.research.google.com/github/deepmind/tapnet/blob/master/colabs/causal_tapir_demo.ipynb",
-    "date": "2024-11-30T10:12:02",
+    "date": "2024-11-30T11:12:02",
     "author": "Carl Doersch",
     "tags": [
       "Paper"
@@ -1964,7 +1964,7 @@
   {
     "title": "T2M-GPT",
     "url": "https://colab.research.google.com/drive/1Vy69w2q2d-Hg19F-KibqG0FRdpSj3L4O",
-    "date": "2024-11-24T08:08:28.161000",
+    "date": "2024-11-24T09:08:28.161000",
     "author": "Jianrong Zhang",
     "tags": [
       "Paper"
@@ -1975,7 +1975,7 @@
   {
     "title": "PuLID",
     "url": "https://colab.research.google.com/github/camenduru/PuLID-jupyter/blob/main/PuLID_jupyter.ipynb",
-    "date": "2024-11-09T22:31:43",
+    "date": "2024-11-09T23:31:43",
     "author": "Zinan Guo",
     "tags": [
       "Paper"
@@ -1986,7 +1986,7 @@
   {
     "title": "CoTracker",
     "url": "https://colab.research.google.com/github/facebookresearch/co-tracker/blob/main/notebooks/demo.ipynb",
-    "date": "2024-10-16T11:32:52",
+    "date": "2024-10-16T13:32:52",
     "author": "Nikita Karaev",
     "tags": [
       "Paper"
@@ -1997,7 +1997,7 @@
   {
     "title": "PIFu",
     "url": "https://colab.research.google.com/drive/1GFSsqP2BWz4gtq0e-nki00ZHSirXwFyY",
-    "date": "2024-10-07T22:41:51.739000",
+    "date": "2024-10-08T00:41:51.739000",
     "author": "Ryota Natsume",
     "tags": [
       "Paper"
@@ -2008,7 +2008,7 @@
   {
     "title": "DifFace",
     "url": "https://colab.research.google.com/drive/1BNtoPPRuJwNDvqfwDOOmD9XJyF05Zh4m",
-    "date": "2024-10-05T15:28:48.404000",
+    "date": "2024-10-05T17:28:48.404000",
     "author": "Zongsheng Yue",
     "tags": [
       "Paper"
@@ -2019,7 +2019,7 @@
   {
     "title": "Segment Anything 2",
     "url": "https://colab.research.google.com/github/facebookresearch/segment-anything-2/blob/main/notebooks/image_predictor_example.ipynb",
-    "date": "2024-10-01T03:27:44",
+    "date": "2024-10-01T05:27:44",
     "author": "Nikhila Ravi",
     "tags": [
       "Paper"
@@ -2030,7 +2030,7 @@
   {
     "title": "Open-Unmix",
     "url": "https://colab.research.google.com/drive/1mijF0zGWxN-KaxTnd0q6hayAlrID5fEQ",
-    "date": "2024-09-25T09:48:06.773000",
+    "date": "2024-09-25T11:48:06.773000",
     "author": "Fabian-Robert Stöter",
     "tags": [
       "Paper"
@@ -2041,7 +2041,7 @@
   {
     "title": "Deep Painterly Harmonization",
     "url": "https://colab.research.google.com/gist/eyaler/5303782669fb43510d398bd346c6e3e6/deep-painterly-harmonization.ipynb",
-    "date": "2024-09-23T17:14:34",
+    "date": "2024-09-23T19:14:34",
     "author": "Fujun Luan",
     "tags": [
       "Paper"
@@ -2052,7 +2052,7 @@
   {
     "title": "audio2photoreal",
     "url": "https://colab.research.google.com/drive/1A6EwKM3PeX7dcKV66zxQWuP-v_dKlX_0",
-    "date": "2024-09-13T01:25:24.769000",
+    "date": "2024-09-13T03:25:24.769000",
     "author": "Evonne Ng",
     "tags": [
       "Paper"
@@ -2063,7 +2063,7 @@
   {
     "title": "Fast Segment Anything",
     "url": "https://colab.research.google.com/drive/1oX14f6IneGGw612WgVlAiy91UHwFAvr9",
-    "date": "2024-09-10T02:42:15.776000",
+    "date": "2024-09-10T04:42:15.776000",
     "author": "Xu Zhao",
     "tags": [
       "Paper"
@@ -2074,7 +2074,7 @@
   {
     "title": "Neuralangelo",
     "url": "https://colab.research.google.com/drive/1i16s8W_OV0Hd3-PIuo64JKDwwdOesgXQ",
-    "date": "2024-09-02T14:41:36.999000",
+    "date": "2024-09-02T16:41:36.999000",
     "author": "Zhaoshuo Li",
     "tags": [
       "Paper"
@@ -2085,7 +2085,7 @@
   {
     "title": "BiRefNet",
     "url": "https://colab.research.google.com/drive/1B6aKZ3ekcvKMkSBn0N5mCASLUYMp0whK",
-    "date": "2024-08-23T13:36:30.230000",
+    "date": "2024-08-23T15:36:30.230000",
     "author": "Peng Zheng",
     "tags": [
       "Paper"
@@ -2096,7 +2096,7 @@
   {
     "title": "SPIN",
     "url": "https://colab.research.google.com/drive/1uH2JtavOtDrFl6RsipyIncCSr19GWW4x",
-    "date": "2024-08-21T08:14:19.290000",
+    "date": "2024-08-21T10:14:19.290000",
     "author": "Nikos Kolotouros",
     "tags": [
       "Paper"
@@ -2107,7 +2107,7 @@
   {
     "title": "YOLOv10",
     "url": "https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/train-yolov10-object-detection-on-custom-dataset.ipynb",
-    "date": "2024-08-20T18:30:45",
+    "date": "2024-08-20T20:30:45",
     "author": "Ao Wang",
     "tags": [
       "Paper"
@@ -2118,7 +2118,7 @@
   {
     "title": "SpecVQGAN",
     "url": "https://colab.research.google.com/drive/1pxTIMweAKApJZ3ZFqyBee3HtMqFpnwQ0",
-    "date": "2024-07-12T09:14:53.365000",
+    "date": "2024-07-12T11:14:53.365000",
     "author": "Vladimir Iashin",
     "tags": [
       "Paper"
@@ -2129,7 +2129,7 @@
   {
     "title": "LivePortrait",
     "url": "https://colab.research.google.com/github/camenduru/LivePortrait-jupyter/blob/main/LivePortrait_jupyter.ipynb",
-    "date": "2024-07-10T19:49:14",
+    "date": "2024-07-10T21:49:14",
     "author": "Jianzhu Guo",
     "tags": [
       "Paper"
@@ -2140,7 +2140,7 @@
   {
     "title": "Wav2Lip",
     "url": "https://colab.research.google.com/github/eyaler/avatars4all/blob/master/melaflefon.ipynb",
-    "date": "2024-06-27T16:23:41",
+    "date": "2024-06-27T18:23:41",
     "author": "Prajwal Renukanand",
     "tags": [
       "Paper"
@@ -2151,7 +2151,7 @@
   {
     "title": "FELIX",
     "url": "https://colab.research.google.com/github/simonmalberg/felix/blob/main/Paper/FELIX.ipynb",
-    "date": "2024-06-13T06:57:50",
+    "date": "2024-06-13T08:57:50",
     "author": "Simon Malberg",
     "tags": [
       "Paper"
@@ -2162,7 +2162,7 @@
   {
     "title": "PoolFormer",
     "url": "https://colab.research.google.com/github/sail-sg/poolformer/blob/main/misc/poolformer_demo.ipynb",
-    "date": "2024-06-01T15:09:09",
+    "date": "2024-06-01T17:09:09",
     "author": "Weihao Yu",
     "tags": [
       "Paper"
@@ -2173,7 +2173,7 @@
   {
     "title": "StoryDiffusion",
     "url": "https://colab.research.google.com/github/HVision-NKU/StoryDiffusion/blob/main/Comic_Generation.ipynb",
-    "date": "2024-05-04T21:42:04",
+    "date": "2024-05-04T23:42:04",
     "author": "Yupeng Zhou",
     "tags": [
       "Paper"
@@ -2184,7 +2184,7 @@
   {
     "title": "FILM",
     "url": "https://colab.research.google.com/drive/1sK0uc-GJxmdnaxHhYqD2afRknakpdTNZ",
-    "date": "2024-05-03T01:32:56.070000",
+    "date": "2024-05-03T03:32:56.070000",
     "author": "Fitsum Reda",
     "tags": [
       "Paper"
@@ -2195,7 +2195,7 @@
   {
     "title": "VoiceCraft",
     "url": "https://colab.research.google.com/github/jasonppy/VoiceCraft/blob/master/voicecraft-gradio-colab.ipynb",
-    "date": "2024-04-21T16:38:09",
+    "date": "2024-04-21T18:38:09",
     "author": "Puyuan Peng",
     "tags": [
       "Paper"
@@ -2206,7 +2206,7 @@
   {
     "title": "ZeST",
     "url": "https://colab.research.google.com/github/camenduru/zest-jupyter/blob/main/zest_jupyter.ipynb",
-    "date": "2024-04-16T12:40:56",
+    "date": "2024-04-16T14:40:56",
     "author": "Ta-Ying Cheng",
     "tags": [
       "Paper"
@@ -2217,7 +2217,7 @@
   {
     "title": "InstantMesh",
     "url": "https://colab.research.google.com/github/camenduru/InstantMesh-jupyter/blob/main/InstantMesh_jupyter.ipynb",
-    "date": "2024-04-16T09:51:43",
+    "date": "2024-04-16T11:51:43",
     "author": "Jiale Xu",
     "tags": [
       "Paper"
@@ -2228,7 +2228,7 @@
   {
     "title": "Würstchen",
     "url": "https://colab.research.google.com/github/dome272/Wuerstchen/blob/main/w%C3%BCrstchen-stage-C.ipynb",
-    "date": "2024-04-06T09:19:58",
+    "date": "2024-04-06T11:19:58",
     "author": "Pablo Pernias",
     "tags": [
       "Paper"
@@ -2239,7 +2239,7 @@
   {
     "title": "AudioSep",
     "url": "https://colab.research.google.com/github/Audio-AGI/AudioSep/blob/main/AudioSep_Colab.ipynb",
-    "date": "2024-03-15T15:03:36",
+    "date": "2024-03-15T16:03:36",
     "author": "Xubo Liu",
     "tags": [
       "Paper"
@@ -2250,7 +2250,7 @@
   {
     "title": "AQLM",
     "url": "https://colab.research.google.com/github/Vahe1994/AQLM/blob/main/notebooks/colab_example.ipynb",
-    "date": "2024-03-08T10:39:01",
+    "date": "2024-03-08T11:39:01",
     "author": "Vage Egiazarian",
     "tags": [
       "Paper"
@@ -2261,7 +2261,7 @@
   {
     "title": "YOLOv9",
     "url": "https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/train-yolov9-object-detection-on-custom-dataset.ipynb",
-    "date": "2024-03-05T09:54:57",
+    "date": "2024-03-05T10:54:57",
     "author": "Chien-Yao Wang",
     "tags": [
       "Paper"
@@ -2272,7 +2272,7 @@
   {
     "title": "Multi-LoRA Composition",
     "url": "https://colab.research.google.com/drive/1eSTj6qGOtSY5NaazwwN3meXOzEZxgaZq",
-    "date": "2024-03-03T14:57:02.515000",
+    "date": "2024-03-03T15:57:02.515000",
     "author": "Ming Zhong",
     "tags": [
       "Paper"
@@ -2283,7 +2283,7 @@
   {
     "title": "AMARETTO",
     "url": "https://colab.research.google.com/drive/1JfnRoNgTVX_7VEGAAmjGjwP_yX2tdDxs",
-    "date": "2024-02-28T13:28:19.230000",
+    "date": "2024-02-28T14:28:19.230000",
     "author": "Nathalie Pochet",
     "tags": [
       "Paper"
@@ -2294,7 +2294,7 @@
   {
     "title": "LIDA",
     "url": "https://colab.research.google.com/github/microsoft/lida/blob/main/notebooks/tutorial.ipynb",
-    "date": "2024-02-06T22:59:36",
+    "date": "2024-02-06T23:59:36",
     "author": "Victor Dibia",
     "tags": [
       "Paper"
@@ -2305,7 +2305,7 @@
   {
     "title": "ViT",
     "url": "https://colab.research.google.com/github/google-research/vision_transformer/blob/main/vit_jax.ipynb",
-    "date": "2024-02-06T11:27:41",
+    "date": "2024-02-06T12:27:41",
     "author": "Alexey Dosovitskiy",
     "tags": [
       "Paper"
@@ -2316,7 +2316,7 @@
   {
     "title": "Qwen",
     "url": "https://colab.research.google.com/github/QwenLM/Qwen/blob/master/recipes/quickstart/qwen.ipynb",
-    "date": "2024-01-30T07:57:09",
+    "date": "2024-01-30T08:57:09",
     "author": "qwenlm",
     "tags": [
       "Paper"
@@ -2327,7 +2327,7 @@
   {
     "title": "3D Ken Burns",
     "url": "https://colab.research.google.com/github/mrm8488/shared_colab_notebooks/blob/master/3D_Ken_Burns.ipynb",
-    "date": "2024-01-24T21:03:03",
+    "date": "2024-01-24T22:03:03",
     "author": "Manuel Romero",
     "tags": [
       "Paper"
@@ -2338,7 +2338,7 @@
   {
     "title": "VALL-E X",
     "url": "https://colab.research.google.com/drive/1yyD_sz531QntLKowMHo-XxorsFBCfKul",
-    "date": "2024-01-19T01:37:11.536000",
+    "date": "2024-01-19T02:37:11.536000",
     "author": "Ziqiang Zhang",
     "tags": [
       "Paper"
@@ -2349,7 +2349,7 @@
   {
     "title": "PhotoMaker",
     "url": "https://colab.research.google.com/github/TencentARC/PhotoMaker/blob/main/photomaker_demo.ipynb",
-    "date": "2024-01-18T08:30:02",
+    "date": "2024-01-18T09:30:02",
     "author": "Zhen Li",
     "tags": [
       "Paper"
@@ -2360,7 +2360,7 @@
   {
     "title": "DDColor",
     "url": "https://colab.research.google.com/github/camenduru/DDColor-colab/blob/main/DDColor_colab.ipynb",
-    "date": "2024-01-15T10:18:08",
+    "date": "2024-01-15T11:18:08",
     "author": "Xiaoyang Kang",
     "tags": [
       "Paper"
@@ -2371,7 +2371,7 @@
   {
     "title": "PASD",
     "url": "https://colab.research.google.com/drive/1lZ_-rSGcmreLCiRniVT973x6JLjFiC-b",
-    "date": "2024-01-12T19:40:31.844000",
+    "date": "2024-01-12T20:40:31.844000",
     "author": "Tao Yang",
     "tags": [
       "Paper"
@@ -2382,7 +2382,7 @@
   {
     "title": "HandRefiner",
     "url": "https://colab.research.google.com/github/camenduru/HandRefiner-colab/blob/main/HandRefiner_colab.ipynb",
-    "date": "2024-01-08T22:16:35",
+    "date": "2024-01-08T23:16:35",
     "author": "Wenquan Lu",
     "tags": [
       "Paper"
@@ -2393,7 +2393,7 @@
   {
     "title": "ESM",
     "url": "https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/ESMFold.ipynb",
-    "date": "2023-12-28T19:18:56",
+    "date": "2023-12-28T20:18:56",
     "author": "Zeming Lin",
     "tags": [
       "Paper"
@@ -2404,7 +2404,7 @@
   {
     "title": "LLaVA",
     "url": "https://colab.research.google.com/github/camenduru/LLaVA-colab/blob/main/LLaVA_13b_4bit_vanilla_colab.ipynb",
-    "date": "2023-12-22T19:26:44",
+    "date": "2023-12-22T20:26:44",
     "author": "Haotian Liu",
     "tags": [
       "Paper"
@@ -2415,7 +2415,7 @@
   {
     "title": "Background Matting V2",
     "url": "https://colab.research.google.com/drive/1cTxFq1YuoJ5QPqaTcnskwlHDolnjBkB9",
-    "date": "2023-12-21T23:00:00",
+    "date": "2023-12-22T00:00:00",
     "author": "Shanchuan Lin",
     "tags": [
       "Paper"
@@ -2426,7 +2426,7 @@
   {
     "title": "Gaussian Splatting",
     "url": "https://colab.research.google.com/github/camenduru/gaussian-splatting-colab/blob/main/gaussian_splatting_colab.ipynb",
-    "date": "2023-12-19T00:53:28",
+    "date": "2023-12-19T01:53:28",
     "author": "Bernhard Kerbl",
     "tags": [
       "Paper"
@@ -2437,7 +2437,7 @@
   {
     "title": "SMPLer-X",
     "url": "https://colab.research.google.com/github/camenduru/SMPLer-X-colab/blob/main/SMPLer_X_colab.ipynb",
-    "date": "2023-12-18T19:57:59",
+    "date": "2023-12-18T20:57:59",
     "author": "Zhongang Cai",
     "tags": [
       "Paper"
@@ -2448,7 +2448,7 @@
   {
     "title": "DeepCache",
     "url": "https://colab.research.google.com/github/camenduru/DeepCache-colab/blob/main/DeepCache_colab.ipynb",
-    "date": "2023-12-18T13:03:52",
+    "date": "2023-12-18T14:03:52",
     "author": "Xinyin Ma",
     "tags": [
       "Paper"
@@ -2459,7 +2459,7 @@
   {
     "title": "MagicAnimate",
     "url": "https://colab.research.google.com/github/camenduru/MagicAnimate-colab/blob/main/MagicAnimate_colab.ipynb",
-    "date": "2023-12-18T12:27:21",
+    "date": "2023-12-18T13:27:21",
     "author": "Zhongcong Xu",
     "tags": [
       "Paper"
@@ -2470,7 +2470,7 @@
   {
     "title": "DiffBIR",
     "url": "https://colab.research.google.com/github/camenduru/DiffBIR-colab/blob/main/DiffBIR_colab.ipynb",
-    "date": "2023-12-18T12:26:33",
+    "date": "2023-12-18T13:26:33",
     "author": "Xinqi Lin",
     "tags": [
       "Paper"
@@ -2481,7 +2481,7 @@
   {
     "title": "AudioLDM",
     "url": "https://colab.research.google.com/github/olaviinha/NeuralTextToAudio/blob/main/AudioLDM_pub.ipynb",
-    "date": "2023-12-02T15:19:33",
+    "date": "2023-12-02T16:19:33",
     "author": "Haohe Liu",
     "tags": [
       "Paper"
@@ -2492,7 +2492,7 @@
   {
     "title": "TabPFN",
     "url": "https://colab.research.google.com/drive/194mCs6SEPEW6C0rcP7xWzcEtt1RBc8jJ",
-    "date": "2023-11-29T11:48:36.460000",
+    "date": "2023-11-29T12:48:36.460000",
     "author": "Noah Hollmann",
     "tags": [
       "Paper"
@@ -2503,7 +2503,7 @@
   {
     "title": "Concept Sliders",
     "url": "https://colab.research.google.com/github/rohitgandikota/sliders/blob/main/demo_concept_sliders.ipynb",
-    "date": "2023-11-26T05:10:03",
+    "date": "2023-11-26T06:10:03",
     "author": "Rohit Gandikota",
     "tags": [
       "Paper"
@@ -2514,7 +2514,7 @@
   {
     "title": "Qwen-VL",
     "url": "https://colab.research.google.com/github/camenduru/Qwen-VL-Chat-colab/blob/main/Qwen_VL_Chat_colab.ipynb",
-    "date": "2023-11-24T07:15:00",
+    "date": "2023-11-24T08:15:00",
     "author": "Jinze Bai",
     "tags": [
       "Paper"
@@ -2525,7 +2525,7 @@
   {
     "title": "AnimeGANv3",
     "url": "https://colab.research.google.com/drive/1XYNWwM8Xq-U7KaTOqNap6A-Yq1f-V-FB",
-    "date": "2023-11-23T06:27:02.566000",
+    "date": "2023-11-23T07:27:02.566000",
     "author": "Gang Liu",
     "tags": [
       "Paper"
@@ -2536,7 +2536,7 @@
   {
     "title": "Ithaca",
     "url": "https://colab.research.google.com/github/deepmind/ithaca/blob/master/colabs/ithaca_inference.ipynb",
-    "date": "2023-11-21T18:56:11",
+    "date": "2023-11-21T19:56:11",
     "author": "Yannis Assael",
     "tags": [
       "Paper"
@@ -2547,7 +2547,7 @@
   {
     "title": "PixArt-Σ",
     "url": "https://colab.research.google.com/drive/1jZ5UZXk7tcpTfVwnX33dDuefNMcnW9ME",
-    "date": "2023-11-07T06:14:49.896000",
+    "date": "2023-11-07T07:14:49.896000",
     "author": "Junsong Chen",
     "tags": [
       "Paper"
@@ -2558,7 +2558,7 @@
   {
     "title": "Zero123++",
     "url": "https://colab.research.google.com/drive/1_5ECnTOosRuAsm2tUp0zvBG0DppL-F3V",
-    "date": "2023-10-26T01:34:05.894000",
+    "date": "2023-10-26T03:34:05.894000",
     "author": "Ruoxi Shi",
     "tags": [
       "Paper"
@@ -2569,7 +2569,7 @@
   {
     "title": "UniFormerV2",
     "url": "https://colab.research.google.com/drive/1Z6RzLcno_eLGD_E96mlWoyGieGbKxPQr",
-    "date": "2023-10-20T10:39:19.344000",
+    "date": "2023-10-20T12:39:19.344000",
     "author": "Kunchang Li",
     "tags": [
       "Paper"
@@ -2580,7 +2580,7 @@
   {
     "title": "Show-1",
     "url": "https://colab.research.google.com/github/camenduru/Show-1-colab/blob/main/Show_1_steps_colab.ipynb",
-    "date": "2023-10-15T19:15:54",
+    "date": "2023-10-15T21:15:54",
     "author": "David Junhao Zhang",
     "tags": [
       "Paper"
@@ -2591,7 +2591,7 @@
   {
     "title": "DA-CLIP",
     "url": "https://colab.research.google.com/github/camenduru/daclip-uir-colab/blob/main/daclip_uir_gradio_colab.ipynb",
-    "date": "2023-10-11T20:12:03",
+    "date": "2023-10-11T22:12:03",
     "author": "Ziwei Luo",
     "tags": [
       "Paper"
@@ -2602,7 +2602,7 @@
   {
     "title": "SadTalker",
     "url": "https://colab.research.google.com/github/OpenTalker/SadTalker/blob/main/quick_demo.ipynb",
-    "date": "2023-10-10T16:10:21",
+    "date": "2023-10-10T18:10:21",
     "author": "Wenxuan Zhang",
     "tags": [
       "Paper"
@@ -2613,7 +2613,7 @@
   {
     "title": "Musika",
     "url": "https://colab.research.google.com/drive/1PowSw3doBURwLE-OTCiWkO8HVbS5paRb",
-    "date": "2023-10-09T10:11:32.266000",
+    "date": "2023-10-09T12:11:32.266000",
     "author": "Marco Pasini",
     "tags": [
       "Paper"
@@ -2624,7 +2624,7 @@
   {
     "title": "YOLOv6",
     "url": "https://colab.research.google.com/github/meituan/YOLOv6/blob/master/turtorial.ipynb",
-    "date": "2023-10-08T07:57:06",
+    "date": "2023-10-08T09:57:06",
     "author": "Kaiheng Weng",
     "tags": [
       "Paper"
@@ -2635,7 +2635,7 @@
   {
     "title": "DreamGaussian",
     "url": "https://colab.research.google.com/drive/1sLpYmmLS209-e5eHgcuqdryFRRO6ZhFS",
-    "date": "2023-10-04T14:04:06.492000",
+    "date": "2023-10-04T16:04:06.492000",
     "author": "Jiaxiang Tang",
     "tags": [
       "Paper"
@@ -2646,7 +2646,7 @@
   {
     "title": "ICON",
     "url": "https://colab.research.google.com/drive/1-AWeWhPvCTBX0KfMtgtMk10uPU05ihoA",
-    "date": "2023-08-31T20:52:15.028000",
+    "date": "2023-08-31T22:52:15.028000",
     "author": "Yuliang Xiu",
     "tags": [
       "Paper"
@@ -2657,7 +2657,7 @@
   {
     "title": "DINOv2",
     "url": "https://colab.research.google.com/github/facebookresearch/dinov2/blob/main/notebooks/semantic_segmentation.ipynb",
-    "date": "2023-08-31T16:43:55",
+    "date": "2023-08-31T18:43:55",
     "author": "Maxime Oquab",
     "tags": [
       "Paper"
@@ -2668,7 +2668,7 @@
   {
     "title": "OWL-ViT",
     "url": "https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/zeroshot_object_detection_with_owlvit.ipynb",
-    "date": "2023-08-21T14:35:01",
+    "date": "2023-08-21T16:35:01",
     "author": "Matthias Minderer",
     "tags": [
       "Paper"
@@ -2679,7 +2679,7 @@
   {
     "title": "StyleGAN3",
     "url": "https://colab.research.google.com/drive/1BXNHZBai-pXtP-ncliouXo_kUiG1Pq7M",
-    "date": "2023-08-13T02:21:37.850000",
+    "date": "2023-08-13T04:21:37.850000",
     "author": "Tero Karras",
     "tags": [
       "Paper"
@@ -2690,7 +2690,7 @@
   {
     "title": "FateZero",
     "url": "https://colab.research.google.com/github/ChenyangQiQi/FateZero/blob/main/colab_fatezero.ipynb",
-    "date": "2023-08-12T22:38:36",
+    "date": "2023-08-13T00:38:36",
     "author": "Chenyang Qi",
     "tags": [
       "Paper"
@@ -2701,7 +2701,7 @@
   {
     "title": "Big GAN",
     "url": "https://colab.research.google.com/github/tensorflow/hub/blob/master/examples/colab/biggan_generation_with_tf_hub.ipynb",
-    "date": "2023-08-03T21:30:25",
+    "date": "2023-08-03T23:30:25",
     "author": "Andrew Brock",
     "tags": [
       "Paper"
@@ -2712,7 +2712,7 @@
   {
     "title": "LaMa",
     "url": "https://colab.research.google.com/github/saic-mdal/lama/blob/master/colab/LaMa_inpainting.ipynb",
-    "date": "2023-08-01T23:58:45",
+    "date": "2023-08-02T01:58:45",
     "author": "Roman Suvorov",
     "tags": [
       "Paper"
@@ -2723,7 +2723,7 @@
   {
     "title": "MakeItTalk",
     "url": "https://colab.research.google.com/github/iboyles/makeittalknow/blob/main/working_quick_demo_of_makeittalk_07_2023.ipynb",
-    "date": "2023-07-27T12:56:20",
+    "date": "2023-07-27T14:56:20",
     "author": "Yang Zhou",
     "tags": [
       "Paper"
@@ -2734,7 +2734,7 @@
   {
     "title": "HiDT",
     "url": "https://colab.research.google.com/github/saic-mdal/hidt/blob/master/notebooks/HighResolutionDaytimeTranslation.ipynb",
-    "date": "2023-07-24T08:43:10",
+    "date": "2023-07-24T10:43:10",
     "author": "Denis Korzhenkov",
     "tags": [
       "Paper"
@@ -2745,7 +2745,7 @@
   {
     "title": "CutLER",
     "url": "https://colab.research.google.com/drive/1NgEyFHvOfuA2MZZnfNPWg1w5gSr3HOBb",
-    "date": "2023-07-24T04:19:17.240000",
+    "date": "2023-07-24T06:19:17.240000",
     "author": "Xudong Wang",
     "tags": [
       "Paper"
@@ -2756,7 +2756,7 @@
   {
     "title": "Recognize Anything & Tag2Text",
     "url": "https://colab.research.google.com/github/mhd-medfa/recognize-anything/blob/main/recognize_anything_demo.ipynb",
-    "date": "2023-07-09T16:04:49",
+    "date": "2023-07-09T18:04:49",
     "author": "Xinyu Huang",
     "tags": [
       "Paper"
@@ -2767,7 +2767,7 @@
   {
     "title": "Thin-Plate Spline Motion Model",
     "url": "https://colab.research.google.com/drive/1DREfdpnaBhqISg0fuQlAAIwyGVn1loH_",
-    "date": "2023-07-07T18:04:56.148000",
+    "date": "2023-07-07T20:04:56.148000",
     "author": "Jian Zhao",
     "tags": [
       "Paper"
@@ -2778,7 +2778,7 @@
   {
     "title": "MobileSAM",
     "url": "https://colab.research.google.com/github/ChaoningZhang/MobileSAM/blob/master/notebooks/predictor_example.ipynb",
-    "date": "2023-06-30T02:57:32",
+    "date": "2023-06-30T04:57:32",
     "author": "Chaoning Zhang",
     "tags": [
       "Paper"
@@ -2789,7 +2789,7 @@
   {
     "title": "Grounding DINO",
     "url": "https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/zero-shot-object-detection-with-grounding-dino.ipynb",
-    "date": "2023-06-28T12:03:48",
+    "date": "2023-06-28T14:03:48",
     "author": "Shilong Liu",
     "tags": [
       "Paper"
@@ -2800,7 +2800,7 @@
   {
     "title": "T5X",
     "url": "https://colab.research.google.com/github/google-research/t5x/blob/main/t5x/notebooks/introduction.ipynb",
-    "date": "2023-06-27T01:43:41",
+    "date": "2023-06-27T03:43:41",
     "author": "Adam Roberts",
     "tags": [
       "Paper"
@@ -2811,7 +2811,7 @@
   {
     "title": "CodeTalker",
     "url": "https://colab.research.google.com/github/Doubiiu/CodeTalker/blob/main/demo.ipynb",
-    "date": "2023-06-16T08:24:45",
+    "date": "2023-06-16T10:24:45",
     "author": "Jinbo Xing",
     "tags": [
       "Paper"
@@ -2822,7 +2822,7 @@
   {
     "title": "First Order Motion Model for Image Animation",
     "url": "https://colab.research.google.com/github/AliaksandrSiarohin/first-order-model/blob/master/demo.ipynb",
-    "date": "2023-06-04T04:36:53",
+    "date": "2023-06-04T06:36:53",
     "author": "Aliaksandr Siarohin",
     "tags": [
       "Paper"
@@ -2833,7 +2833,7 @@
   {
     "title": "Parallel WaveGAN",
     "url": "https://colab.research.google.com/github/espnet/notebook/blob/master/espnet2_tts_realtime_demo.ipynb",
-    "date": "2023-06-01T06:24:19",
+    "date": "2023-06-01T08:24:19",
     "author": "Tomoki Hayashi",
     "tags": [
       "Paper"
@@ -2844,7 +2844,7 @@
   {
     "title": "ECON",
     "url": "https://colab.research.google.com/drive/1YRgwoRCZIrSB2e7auEWFyG10Xzjbrbno",
-    "date": "2023-05-31T02:19:27.318000",
+    "date": "2023-05-31T04:19:27.318000",
     "author": "Yuliang Xiu",
     "tags": [
       "Paper"
@@ -2855,7 +2855,7 @@
   {
     "title": "MMS",
     "url": "https://colab.research.google.com/github/facebookresearch/fairseq/blob/main/examples/mms/asr/tutorial/MMS_ASR_Inference_Colab.ipynb",
-    "date": "2023-05-26T01:50:46",
+    "date": "2023-05-26T03:50:46",
     "author": "Vineel Pratap",
     "tags": [
       "Paper"
@@ -2866,7 +2866,7 @@
   {
     "title": "FAB",
     "url": "https://colab.research.google.com/github/lollcat/fab-torch/blob/master/experiments/gmm/fab_gmm.ipynb",
-    "date": "2023-04-29T07:23:11",
+    "date": "2023-04-29T09:23:11",
     "author": "Laurence Midgley",
     "tags": [
       "Paper"
@@ -2877,7 +2877,7 @@
   {
     "title": "CodeFormer",
     "url": "https://colab.research.google.com/drive/1m52PNveE4PBhYrecj34cnpEeiHcC5LTb",
-    "date": "2023-04-21T01:10:02.390000",
+    "date": "2023-04-21T03:10:02.390000",
     "author": "Shangchen Zhou",
     "tags": [
       "Paper"
@@ -2888,7 +2888,7 @@
   {
     "title": "Text2Video-Zero",
     "url": "https://colab.research.google.com/github/camenduru/text2video-zero-colab/blob/main/text2video_all.ipynb",
-    "date": "2023-04-11T12:17:41",
+    "date": "2023-04-11T14:17:41",
     "author": "Levon Khachatryan",
     "tags": [
       "Paper"
@@ -2899,7 +2899,7 @@
   {
     "title": "Segment Anything",
     "url": "https://colab.research.google.com/github/facebookresearch/segment-anything/blob/main/notebooks/predictor_example.ipynb",
-    "date": "2023-04-10T17:50:17",
+    "date": "2023-04-10T19:50:17",
     "author": "Alexander Kirillov",
     "tags": [
       "Paper"
@@ -2910,7 +2910,7 @@
   {
     "title": "FollowYourPose",
     "url": "https://colab.research.google.com/github/mayuelala/FollowYourPose/blob/main/quick_demo.ipynb",
-    "date": "2023-04-07T08:54:10",
+    "date": "2023-04-07T10:54:10",
     "author": "Yue Ma",
     "tags": [
       "Paper"
@@ -2921,7 +2921,7 @@
   {
     "title": "EVA3D",
     "url": "https://colab.research.google.com/github/hongfz16/EVA3D/blob/main/notebook/EVA3D_Demo.ipynb",
-    "date": "2023-04-06T12:21:51",
+    "date": "2023-04-06T14:21:51",
     "author": "Fangzhou Hong",
     "tags": [
       "Paper"
@@ -2932,7 +2932,7 @@
   {
     "title": "Stable Dreamfusion",
     "url": "https://colab.research.google.com/drive/1MXT3yfOFvO0ooKEfiUUvTKwUkrrlCHpF",
-    "date": "2023-04-04T02:35:48.565000",
+    "date": "2023-04-04T04:35:48.565000",
     "author": "Jiaxiang Tang",
     "tags": [
       "Paper"
@@ -2943,7 +2943,7 @@
   {
     "title": "PIFuHD",
     "url": "https://colab.research.google.com/drive/11z58bl3meSzo6kFqkahMa35G5jmh2Wgt",
-    "date": "2023-03-26T15:12:39.379000",
+    "date": "2023-03-26T17:12:39.379000",
     "author": "Shunsuke Saito",
     "tags": [
       "Paper"
@@ -2954,7 +2954,7 @@
   {
     "title": "VideoReTalking",
     "url": "https://colab.research.google.com/github/vinthony/video-retalking/blob/main/quick_demo.ipynb",
-    "date": "2023-03-19T05:19:16",
+    "date": "2023-03-19T06:19:16",
     "author": "Kun Cheng",
     "tags": [
       "Paper"
@@ -2965,7 +2965,7 @@
   {
     "title": "Visual ChatGPT",
     "url": "https://colab.research.google.com/drive/11BtP3h-w0dZjA-X8JsS9_eo8OeGYvxXB",
-    "date": "2023-03-15T02:16:16.322000",
+    "date": "2023-03-15T03:16:16.322000",
     "author": "Chenfei Wu",
     "tags": [
       "Paper"
@@ -2976,7 +2976,7 @@
   {
     "title": "Tune-A-Video",
     "url": "https://colab.research.google.com/github/showlab/Tune-A-Video/blob/main/notebooks/Tune-A-Video.ipynb",
-    "date": "2023-02-23T01:35:29",
+    "date": "2023-02-23T02:35:29",
     "author": "Jay Zhangjie Wu",
     "tags": [
       "Paper"
@@ -2987,7 +2987,7 @@
   {
     "title": "GPEN",
     "url": "https://colab.research.google.com/github/yangxy/GPEN/blob/main/GPEN.ipynb",
-    "date": "2023-02-15T03:20:43",
+    "date": "2023-02-15T04:20:43",
     "author": "Tao Yang",
     "tags": [
       "Paper"
@@ -2998,7 +2998,7 @@
   {
     "title": "PyMAF-X",
     "url": "https://colab.research.google.com/drive/13Iytx1Hb0ZryEwbJdpXBW9ggDxs2Y-tL",
-    "date": "2023-02-14T09:36:10.460000",
+    "date": "2023-02-14T10:36:10.460000",
     "author": "Hongwen Zhang",
     "tags": [
       "Paper"
@@ -3009,7 +3009,7 @@
   {
     "title": "Disco Diffusion",
     "url": "https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb",
-    "date": "2023-02-11T11:53:37",
+    "date": "2023-02-11T12:53:37",
     "author": "Max Ingham",
     "tags": [
       "Paper"
@@ -3020,7 +3020,7 @@
   {
     "title": "GrooVAE",
     "url": "https://colab.research.google.com/github/tensorflow/magenta-demos/blob/master/colab-notebooks/GrooVAE.ipynb",
-    "date": "2023-02-01T23:40:30",
+    "date": "2023-02-02T00:40:30",
     "author": "Jon Gillick",
     "tags": [
       "Paper"
@@ -3031,7 +3031,7 @@
   {
     "title": "Multitrack MusicVAE",
     "url": "https://colab.research.google.com/github/magenta/magenta-demos/blob/master/colab-notebooks/Multitrack_MusicVAE.ipynb",
-    "date": "2023-02-01T23:40:30",
+    "date": "2023-02-02T00:40:30",
     "author": "Ian Simon",
     "tags": [
       "Paper"
@@ -3042,7 +3042,7 @@
   {
     "title": "MusicVAE",
     "url": "https://colab.research.google.com/github/magenta/magenta-demos/blob/master/colab-notebooks/MusicVAE.ipynb",
-    "date": "2023-02-01T23:40:30",
+    "date": "2023-02-02T00:40:30",
     "author": "Adam Roberts",
     "tags": [
       "Paper"
@@ -3053,7 +3053,7 @@
   {
     "title": "Learning to Paint",
     "url": "https://colab.research.google.com/github/mrm8488/shared_colab_notebooks/blob/master/custom_learningtopaint.ipynb",
-    "date": "2023-02-01T09:32:28",
+    "date": "2023-02-01T10:32:28",
     "author": "Manuel Romero",
     "tags": [
       "Paper"
@@ -3064,7 +3064,7 @@
   {
     "title": "Instant-NGP",
     "url": "https://colab.research.google.com/github/NVlabs/instant-ngp/blob/master/notebooks/instant_ngp.ipynb",
-    "date": "2023-01-18T09:39:50",
+    "date": "2023-01-18T10:39:50",
     "author": "Thomas Müller",
     "tags": [
       "Paper"
@@ -3075,7 +3075,7 @@
   {
     "title": "Fourier Feature Networks",
     "url": "https://colab.research.google.com/github/tancik/fourier-feature-networks/blob/master/Demo.ipynb",
-    "date": "2023-01-17T19:51:09",
+    "date": "2023-01-17T20:51:09",
     "author": "Matthew Tancik",
     "tags": [
       "Paper"
@@ -3086,7 +3086,7 @@
   {
     "title": "AlphaPose",
     "url": "https://colab.research.google.com/drive/1_3Wxi4H3QGVC28snL3rHIoeMAwI2otMR",
-    "date": "2023-01-07T16:54:26.930000",
+    "date": "2023-01-07T17:54:26.930000",
     "author": "Hao-Shu Fang",
     "tags": [
       "Paper"
@@ -3097,7 +3097,7 @@
   {
     "title": "HybrIK",
     "url": "https://colab.research.google.com/drive/1n41l7I2NxWseuruVQEU8he2XqzSXhu2f",
-    "date": "2023-01-01T07:21:31.190000",
+    "date": "2023-01-01T08:21:31.190000",
     "author": "Jiefeng Li",
     "tags": [
       "Paper"
@@ -3108,7 +3108,7 @@
   {
     "title": "Score Jacobian Chaining",
     "url": "https://colab.research.google.com/drive/1zixo66UYGl70VOPy053o7IV_YkQt5lCZ",
-    "date": "2022-12-05T18:19:39.865000",
+    "date": "2022-12-05T19:19:39.865000",
     "author": "Haochen Wang",
     "tags": [
       "Paper"
@@ -3119,7 +3119,7 @@
   {
     "title": "Demucs",
     "url": "https://colab.research.google.com/drive/1dC9nVxk3V_VPjUADsnFu8EiT-xnU1tGH",
-    "date": "2022-11-21T15:12:31.684000",
+    "date": "2022-11-21T16:12:31.684000",
     "author": "Alexandre Défossez",
     "tags": [
       "Paper"
@@ -3130,7 +3130,7 @@
   {
     "title": "StyleCLIP",
     "url": "https://colab.research.google.com/github/orpatashnik/StyleCLIP/blob/main/notebooks/StyleCLIP_global_torch.ipynb",
-    "date": "2022-10-30T22:56:27",
+    "date": "2022-10-30T23:56:27",
     "author": "Or Patashnik",
     "tags": [
       "Paper"
@@ -3141,7 +3141,7 @@
   {
     "title": "MotionDiffuse",
     "url": "https://colab.research.google.com/drive/1Dp6VsZp2ozKuu9ccMmsDjyij_vXfCYb3",
-    "date": "2022-10-13T15:43:54.251000",
+    "date": "2022-10-13T17:43:54.251000",
     "author": "Mingyuan Zhang",
     "tags": [
       "Paper"
@@ -3152,7 +3152,7 @@
   {
     "title": "VToonify",
     "url": "http://colab.research.google.com/github/williamyang1991/VToonify/blob/master/notebooks/inference_playground.ipynb",
-    "date": "2022-10-07T02:51:58",
+    "date": "2022-10-07T04:51:58",
     "author": "Shuai Yang",
     "tags": [
       "Paper"
@@ -3163,7 +3163,7 @@
   {
     "title": "PyMAF",
     "url": "https://colab.research.google.com/drive/11RXLsH9BdoSCwY6G-IX7KgqDxVoImu6K",
-    "date": "2022-10-06T15:32:20.200000",
+    "date": "2022-10-06T17:32:20.200000",
     "author": "Hongwen Zhang",
     "tags": [
       "Paper"
@@ -3174,7 +3174,7 @@
   {
     "title": "AlphaTensor",
     "url": "https://colab.research.google.com/github/deepmind/alphatensor/blob/master/nonequivalence/inspect_factorizations_notebook.ipynb",
-    "date": "2022-10-04T10:05:48",
+    "date": "2022-10-04T12:05:48",
     "author": "Alhussein Fawzi",
     "tags": [
       "Paper"
@@ -3185,7 +3185,7 @@
   {
     "title": "Swin2SR",
     "url": "https://colab.research.google.com/drive/1paPrt62ydwLv2U2eZqfcFsePI4X4WRR1",
-    "date": "2022-10-03T11:06:46.185000",
+    "date": "2022-10-03T13:06:46.185000",
     "author": "Marcos Conde",
     "tags": [
       "Paper"
@@ -3196,7 +3196,7 @@
   {
     "title": "Functa",
     "url": "https://colab.research.google.com/github/deepmind/functa/blob/main/modulation_visualization_colab.ipynb",
-    "date": "2022-09-24T09:06:46",
+    "date": "2022-09-24T11:06:46",
     "author": "Emilien Dupont",
     "tags": [
       "Paper"
@@ -3207,7 +3207,7 @@
   {
     "title": "Whisper",
     "url": "https://colab.research.google.com/github/openai/whisper/blob/master/notebooks/LibriSpeech.ipynb",
-    "date": "2022-09-21T16:09:43",
+    "date": "2022-09-21T18:09:43",
     "author": "Alec Radford",
     "tags": [
       "Paper"
@@ -3218,7 +3218,7 @@
   {
     "title": "DeOldify (video)",
     "url": "https://colab.research.google.com/github/jantic/DeOldify/blob/master/VideoColorizerColab.ipynb",
-    "date": "2022-09-19T09:34:29",
+    "date": "2022-09-19T11:34:29",
     "author": "Jason Antic",
     "tags": [
       "Paper"
@@ -3229,7 +3229,7 @@
   {
     "title": "DeOldify (photo)",
     "url": "https://colab.research.google.com/github/jantic/DeOldify/blob/master/ImageColorizerColab.ipynb",
-    "date": "2022-09-19T09:34:29",
+    "date": "2022-09-19T11:34:29",
     "author": "Jason Antic",
     "tags": [
       "Paper"
@@ -3240,7 +3240,7 @@
   {
     "title": "Real-ESRGAN",
     "url": "https://colab.research.google.com/drive/1k2Zod6kSHEvraybHl50Lys0LerhyTMCo",
-    "date": "2022-09-18T18:02:24.647000",
+    "date": "2022-09-18T20:02:24.647000",
     "author": "Xintao Wang",
     "tags": [
       "Paper"
@@ -3251,7 +3251,7 @@
   {
     "title": "IDE-3D",
     "url": "https://colab.research.google.com/github/MrTornado24/IDE-3D/blob/main/inversion/notebooks/inference_playground.ipynb",
-    "date": "2022-09-08T17:20:57",
+    "date": "2022-09-08T19:20:57",
     "author": "Jingxiang Sun",
     "tags": [
       "Paper"
@@ -3262,7 +3262,7 @@
   {
     "title": "Decision Transformers",
     "url": "https://colab.research.google.com/drive/1K3UuajwoPY1MzRKNkONNRS3gS5DxZ-qF",
-    "date": "2022-09-06T12:34:27.684000",
+    "date": "2022-09-06T14:34:27.684000",
     "author": "Lili Chen",
     "tags": [
       "Paper"
@@ -3273,7 +3273,7 @@
   {
     "title": "textual-inversion",
     "url": "https://colab.research.google.com/github/rinongal/textual_inversion/blob/master/scripts/latent_imagenet_diffusion.ipynb",
-    "date": "2022-08-21T20:05:43",
+    "date": "2022-08-21T22:05:43",
     "author": "Rinon Gal",
     "tags": [
       "Paper"
@@ -3284,7 +3284,7 @@
   {
     "title": "StyleGAN-Human",
     "url": "https://colab.research.google.com/drive/1sgxoDM55iM07FS54vz9ALg1XckiYA2On",
-    "date": "2022-08-19T04:35:51.060000",
+    "date": "2022-08-19T06:35:51.060000",
     "author": "Jianglin Fu",
     "tags": [
       "Paper"
@@ -3295,7 +3295,7 @@
   {
     "title": "Make-A-Scene",
     "url": "https://colab.research.google.com/drive/1SPyQ-epTsAOAu8BEohUokN4-b5RM_TnE",
-    "date": "2022-08-12T03:44:40.152000",
+    "date": "2022-08-12T05:44:40.152000",
     "author": "Oran Gafni",
     "tags": [
       "Paper"
@@ -3306,7 +3306,7 @@
   {
     "title": "StyleGAN-NADA",
     "url": "https://colab.research.google.com/github/rinongal/stylegan-nada/blob/main/stylegan_nada.ipynb",
-    "date": "2022-08-09T19:12:34",
+    "date": "2022-08-09T21:12:34",
     "author": "Rinon Gal",
     "tags": [
       "Paper"
@@ -3317,7 +3317,7 @@
   {
     "title": "YOLOv7",
     "url": "https://colab.research.google.com/github/WongKinYiu/yolov7/blob/main/tools/compare_YOLOv7_vs_YOLOv5m6_half.ipynb",
-    "date": "2022-08-09T04:46:47",
+    "date": "2022-08-09T06:46:47",
     "author": "Chien-Yao Wang",
     "tags": [
       "Paper"
@@ -3328,7 +3328,7 @@
   {
     "title": "GLIP",
     "url": "https://colab.research.google.com/drive/12x7v-_miN7-SRiziK3Cx4ffJzstBJNqb",
-    "date": "2022-07-30T01:40:03.250000",
+    "date": "2022-07-30T03:40:03.250000",
     "author": "Liunian Harold Li",
     "tags": [
       "Paper"
@@ -3339,7 +3339,7 @@
   {
     "title": "Anycost GAN",
     "url": "https://colab.research.google.com/github/mit-han-lab/anycost-gan/blob/master/notebooks/intro_colab.ipynb",
-    "date": "2022-07-20T21:41:44",
+    "date": "2022-07-20T23:41:44",
     "author": "Ji Lin",
     "tags": [
       "Paper"
@@ -3350,7 +3350,7 @@
   {
     "title": "GFPGAN",
     "url": "https://colab.research.google.com/drive/1sVsoBd9AjckIXThgtZhGrHRfFI6UUYOo",
-    "date": "2022-07-13T02:13:32.056000",
+    "date": "2022-07-13T04:13:32.056000",
     "author": "Xintao Wang",
     "tags": [
       "Paper"
@@ -3361,7 +3361,7 @@
   {
     "title": "EPro-PnP",
     "url": "https://colab.research.google.com/github/tjiiv-cprg/EPro-PnP/blob/main/demo/fit_identity.ipynb",
-    "date": "2022-07-12T13:02:32",
+    "date": "2022-07-12T15:02:32",
     "author": "Hansheng Chen",
     "tags": [
       "Paper"
@@ -3372,7 +3372,7 @@
   {
     "title": "Text2Human",
     "url": "https://colab.research.google.com/drive/1AVwbqLwMp_Gz3KTCgBTtnGVtXIlCZDPk",
-    "date": "2022-07-04T20:58:38.321000",
+    "date": "2022-07-04T22:58:38.321000",
     "author": "Yuming Jiang",
     "tags": [
       "Paper"
@@ -3383,7 +3383,7 @@
   {
     "title": "VQ-Diffusion",
     "url": "https://colab.research.google.com/drive/1Ws0_wK2cnsWEnfB7HtmPT4bjCPElb40C",
-    "date": "2022-06-30T19:38:19.730000",
+    "date": "2022-06-30T21:38:19.730000",
     "author": "Shuyang Gu",
     "tags": [
       "Paper"
@@ -3394,7 +3394,7 @@
   {
     "title": "OPT",
     "url": "https://colab.research.google.com/drive/14wnxMvD9zsiBQo2FtTpxn6w2cpXCcb-7",
-    "date": "2022-06-29T08:56:33.669000",
+    "date": "2022-06-29T10:56:33.669000",
     "author": "Susan Zhang",
     "tags": [
       "Paper"
@@ -3405,7 +3405,7 @@
   {
     "title": "Customizing a Transformer Encoder",
     "url": "https://colab.research.google.com/github/tensorflow/models/blob/master/official/colab/nlp/customize_encoder.ipynb",
-    "date": "2022-06-22T18:46:35",
+    "date": "2022-06-22T20:46:35",
     "author": "Chen Chen",
     "tags": [
       "Paper"
@@ -3416,7 +3416,7 @@
   {
     "title": "MTTR",
     "url": "https://colab.research.google.com/drive/12p0jpSx3pJNfZk-y_L44yeHZlhsKVra-",
-    "date": "2022-06-20T20:38:57.613000",
+    "date": "2022-06-20T22:38:57.613000",
     "author": "Adam Botach",
     "tags": [
       "Paper"
@@ -3427,7 +3427,7 @@
   {
     "title": "SwinIR",
     "url": "https://colab.research.google.com/gist/JingyunLiang/a5e3e54bc9ef8d7bf594f6fee8208533/swinir-demo-on-real-world-image-sr.ipynb",
-    "date": "2022-06-17T19:51:46",
+    "date": "2022-06-17T21:51:46",
     "author": "Jingyun Liang",
     "tags": [
       "Paper"
@@ -3438,7 +3438,7 @@
   {
     "title": "VRT",
     "url": "https://colab.research.google.com/gist/JingyunLiang/deb335792768ad9eb73854a8efca4fe0/vrt-demo-on-video-restoration.ipynb",
-    "date": "2022-06-15T17:43:11",
+    "date": "2022-06-15T19:43:11",
     "author": "Jingyun Liang",
     "tags": [
       "Paper"
@@ -3449,7 +3449,7 @@
   {
     "title": "Omnivore",
     "url": "https://colab.research.google.com/github/facebookresearch/omnivore/blob/main/inference_tutorial.ipynb",
-    "date": "2022-06-14T13:16:34",
+    "date": "2022-06-14T15:16:34",
     "author": "Rohit Girdhar",
     "tags": [
       "Paper"
@@ -3460,7 +3460,7 @@
   {
     "title": "Dream Fields",
     "url": "https://colab.research.google.com/drive/17GtPqdUCbG5CsmTnQFecPpoq_zpNKX7A",
-    "date": "2022-06-10T15:41:04.270000",
+    "date": "2022-06-10T17:41:04.270000",
     "author": "Ajay Jain",
     "tags": [
       "Paper"
@@ -3471,7 +3471,7 @@
   {
     "title": "Detic",
     "url": "https://colab.research.google.com/drive/1QtTW9-ukX2HKZGvt0QvVGqjuqEykoZKI",
-    "date": "2022-06-07T05:49:20.311000",
+    "date": "2022-06-07T07:49:20.311000",
     "author": "Xingyi Zhou",
     "tags": [
       "Paper"
@@ -3482,7 +3482,7 @@
   {
     "title": "SimCTG",
     "url": "https://colab.research.google.com/drive/1ImvR-ldHf9rJyFzOCMJ_zjAGK8n1iTW7",
-    "date": "2022-06-04T21:09:16.572000",
+    "date": "2022-06-04T23:09:16.572000",
     "author": "Yixuan Su",
     "tags": [
       "Paper"
@@ -3493,7 +3493,7 @@
   {
     "title": "T0",
     "url": "https://colab.research.google.com/drive/1xx7SgdLaAu23YFBirXmaQViDr8caowX_",
-    "date": "2022-05-29T09:12:30.845000",
+    "date": "2022-05-29T11:12:30.845000",
     "author": "Victor Sanh",
     "tags": [
       "Paper"
@@ -3504,7 +3504,7 @@
   {
     "title": "AvatarCLIP",
     "url": "https://colab.research.google.com/drive/1dfaecX7xF3nP6fyXc8XBljV5QY1lc1TR",
-    "date": "2022-05-15T14:40:09.406000",
+    "date": "2022-05-15T16:40:09.406000",
     "author": "Fangzhou Hong",
     "tags": [
       "Paper"
@@ -3515,7 +3515,7 @@
   {
     "title": "Text2Mesh",
     "url": "https://colab.research.google.com/github/threedle/text2mesh/blob/master/colab_demo.ipynb",
-    "date": "2022-05-14T14:57:20",
+    "date": "2022-05-14T16:57:20",
     "author": "Oscar Michel",
     "tags": [
       "Paper"
@@ -3526,7 +3526,7 @@
   {
     "title": "T5",
     "url": "https://colab.research.google.com/github/google-research/text-to-text-transfer-transformer/blob/main/notebooks/t5-trivia.ipynb",
-    "date": "2022-05-11T20:41:01",
+    "date": "2022-05-11T22:41:01",
     "author": "Colin Raffel",
     "tags": [
       "Paper"
@@ -3537,7 +3537,7 @@
   {
     "title": "XLS-R",
     "url": "https://colab.research.google.com/github/patrickvonplaten/notebooks/blob/master/Fine_Tune_XLS_R_on_Common_Voice.ipynb",
-    "date": "2022-05-10T09:23:22",
+    "date": "2022-05-10T11:23:22",
     "author": "Arun Babu",
     "tags": [
       "Paper"
@@ -3548,7 +3548,7 @@
   {
     "title": "MAGIC",
     "url": "https://colab.research.google.com/drive/1NDVkKpanbsaUwecHoRp_2kIpMztOFW25",
-    "date": "2022-05-02T15:13:52.142000",
+    "date": "2022-05-02T17:13:52.142000",
     "author": "Yixuan Su",
     "tags": [
       "Paper"
@@ -3559,7 +3559,7 @@
   {
     "title": "DiffCSE",
     "url": "https://colab.research.google.com/github/voidism/DiffCSE/blob/master/diffcse_evaluation.ipynb",
-    "date": "2022-04-24T01:05:46",
+    "date": "2022-04-24T03:05:46",
     "author": "Yung-Sung Chuang",
     "tags": [
       "Paper"
@@ -3570,7 +3570,7 @@
   {
     "title": "ViDT+",
     "url": "https://colab.research.google.com/github/EherSenaw/ViDT_colab/blob/main/vidt_colab.ipynb",
-    "date": "2022-04-20T07:26:02",
+    "date": "2022-04-20T09:26:02",
     "author": "Hwanjun Song",
     "tags": [
       "Paper"
@@ -3581,7 +3581,7 @@
   {
     "title": "BasicVSR++",
     "url": "https://colab.research.google.com/drive/1I0kZMM0DQyb4ueHZw5si8fMnRCJ_eUX3",
-    "date": "2022-04-18T03:51:26.730000",
+    "date": "2022-04-18T05:51:26.730000",
     "author": "Kelvin Chan",
     "tags": [
       "Paper"
@@ -3592,7 +3592,7 @@
   {
     "title": "NAFNet",
     "url": "https://colab.research.google.com/drive/1dkO5AyktmBoWwxBwoKFUurIDn0m4qDXT",
-    "date": "2022-04-15T05:35:08.624000",
+    "date": "2022-04-15T07:35:08.624000",
     "author": "Liangyu Chen",
     "tags": [
       "Paper"
@@ -3603,7 +3603,7 @@
   {
     "title": "Panini-Net",
     "url": "https://colab.research.google.com/github/GeeveGeorge/Panini-Net-Colab/blob/main/PaniniNet_Working.ipynb",
-    "date": "2022-04-13T03:49:29",
+    "date": "2022-04-13T05:49:29",
     "author": "Yinhuai Wang",
     "tags": [
       "Paper"
@@ -3614,7 +3614,7 @@
   {
     "title": "E2FGVI",
     "url": "https://colab.research.google.com/drive/12rwY2gtG8jVWlNx9pjmmM8uGmh5ue18G",
-    "date": "2022-04-06T15:30:11.212000",
+    "date": "2022-04-06T17:30:11.212000",
     "author": "Zhen Li",
     "tags": [
       "Paper"
@@ -3625,7 +3625,7 @@
   {
     "title": "LDM",
     "url": "https://colab.research.google.com/github/CompVis/latent-diffusion/blob/master/scripts/latent_imagenet_diffusion.ipynb",
-    "date": "2022-04-04T14:17:48",
+    "date": "2022-04-04T16:17:48",
     "author": "Robin Rombach",
     "tags": [
       "Paper"
@@ -3636,7 +3636,7 @@
   {
     "title": "GP-UNIT",
     "url": "https://colab.research.google.com/github/williamyang1991/GP-UNIT/blob/main/notebooks/inference_playground.ipynb",
-    "date": "2022-04-02T12:58:30",
+    "date": "2022-04-02T14:58:30",
     "author": "Shuai Yang",
     "tags": [
       "Paper"
@@ -3647,7 +3647,7 @@
   {
     "title": "DualStyleGAN",
     "url": "https://colab.research.google.com/github/williamyang1991/DualStyleGAN/blob/master/notebooks/inference_playground.ipynb",
-    "date": "2022-03-24T07:53:35",
+    "date": "2022-03-24T08:53:35",
     "author": "Shuai Yang",
     "tags": [
       "Paper"
@@ -3658,7 +3658,7 @@
   {
     "title": "CLIPasso",
     "url": "https://colab.research.google.com/github/yael-vinker/CLIPasso/blob/main/CLIPasso.ipynb",
-    "date": "2022-03-21T14:55:24",
+    "date": "2022-03-21T15:55:24",
     "author": "Yael Vinker",
     "tags": [
       "Paper"
@@ -3669,7 +3669,7 @@
   {
     "title": "StyleSDF",
     "url": "https://colab.research.google.com/github/royorel/StyleSDF/blob/main/StyleSDF_demo.ipynb",
-    "date": "2022-03-05T01:25:25",
+    "date": "2022-03-05T02:25:25",
     "author": "Roy Or-El",
     "tags": [
       "Paper"
@@ -3680,7 +3680,7 @@
   {
     "title": "Disentangled Lifespan Face Synthesis",
     "url": "https://colab.research.google.com/drive/1fgVAoxCSaqPkj0rUK4RmBh7GTQRqLNpE",
-    "date": "2022-02-22T15:41:01.162000",
+    "date": "2022-02-22T16:41:01.162000",
     "author": "Sen He",
     "tags": [
       "Paper"
@@ -3691,7 +3691,7 @@
   {
     "title": "ClipCap",
     "url": "https://colab.research.google.com/github/rmokady/CLIP_prefix_caption/blob/main/notebooks/clip_prefix_captioning_inference.ipynb#scrollTo=glBzYsgIwhwF",
-    "date": "2022-02-15T08:19:32",
+    "date": "2022-02-15T09:19:32",
     "author": "Ron Mokady",
     "tags": [
       "Paper"
@@ -3702,7 +3702,7 @@
   {
     "title": "ROMP",
     "url": "https://colab.research.google.com/drive/1oz9E6uIbj4udOPZvA1Zi9pFx0SWH_UXg",
-    "date": "2022-02-11T07:38:05.103000",
+    "date": "2022-02-11T08:38:05.103000",
     "author": "Yu Sun",
     "tags": [
       "Paper"
@@ -3713,7 +3713,7 @@
   {
     "title": "Mask2Former",
     "url": "https://colab.research.google.com/drive/1uIWE5KbGFSjrxey2aRd5pWkKNY1_SaNq",
-    "date": "2022-02-09T15:44:44.286000",
+    "date": "2022-02-09T16:44:44.286000",
     "author": "Bowen Cheng",
     "tags": [
       "Paper"
@@ -3724,7 +3724,7 @@
   {
     "title": "JoJoGAN",
     "url": "https://colab.research.google.com/github/mchong6/JoJoGAN/blob/master/stylize.ipynb",
-    "date": "2022-02-02T21:49:40",
+    "date": "2022-02-02T22:49:40",
     "author": "Min Jin Chong",
     "tags": [
       "Paper"
@@ -3735,7 +3735,7 @@
   {
     "title": "Pose with Style",
     "url": "https://colab.research.google.com/github/tg-bomze/collection-of-notebooks/blob/master/HomeStylist.ipynb",
-    "date": "2022-01-19T15:44:04",
+    "date": "2022-01-19T16:44:04",
     "author": "Badour AlBahar",
     "tags": [
       "Paper"
@@ -3746,7 +3746,7 @@
   {
     "title": "ConvNeXt",
     "url": "https://colab.research.google.com/drive/1CBYTIZ4tBMsVL5cqu9N_-Q3TBprqsfEO",
-    "date": "2022-01-19T02:26:21.197000",
+    "date": "2022-01-19T03:26:21.197000",
     "author": "Zhuang Liu",
     "tags": [
       "Paper"
@@ -3757,7 +3757,7 @@
   {
     "title": "diffsort",
     "url": "https://colab.research.google.com/drive/1q0TZFFYB9FlOJYWKt0_7ZaXQT190anhm",
-    "date": "2022-01-17T00:51:15.757000",
+    "date": "2022-01-17T01:51:15.757000",
     "author": "Felix Petersen",
     "tags": [
       "Paper"
@@ -3768,7 +3768,7 @@
   {
     "title": "Taming Transformers for High-Resolution Image Synthesis",
     "url": "https://colab.research.google.com/github/CompVis/taming-transformers/blob/master/scripts/taming-transformers.ipynb",
-    "date": "2022-01-13T17:50:07",
+    "date": "2022-01-13T18:50:07",
     "author": "Patrick Esser",
     "tags": [
       "Paper"
@@ -3779,7 +3779,7 @@
   {
     "title": "RealBasicVSR",
     "url": "https://colab.research.google.com/drive/1JzWRUR34hpKvtCHm84IGx6nv35LCv20J",
-    "date": "2021-12-25T13:00:09.976000",
+    "date": "2021-12-25T14:00:09.976000",
     "author": "Kelvin Chan",
     "tags": [
       "Paper"
@@ -3790,7 +3790,7 @@
   {
     "title": "GLIDE",
     "url": "https://colab.research.google.com/github/openai/glide-text2im/blob/master/notebooks/inpaint.ipynb",
-    "date": "2021-12-22T01:46:19",
+    "date": "2021-12-22T02:46:19",
     "author": "Alex Nichol",
     "tags": [
       "Paper"
@@ -3801,7 +3801,7 @@
   {
     "title": "Nerfies",
     "url": "https://colab.research.google.com/github/google/nerfies/blob/main/notebooks/Nerfies_Capture_Processing.ipynb",
-    "date": "2021-12-06T00:39:18",
+    "date": "2021-12-06T01:39:18",
     "author": "Keunhong Park",
     "tags": [
       "Paper"
@@ -3812,7 +3812,7 @@
   {
     "title": "HyperStyle",
     "url": "https://colab.research.google.com/github/yuval-alaluf/hyperstyle/blob/master/notebooks/inference_playground.ipynb",
-    "date": "2021-12-03T07:28:13",
+    "date": "2021-12-03T08:28:13",
     "author": "Yuval Alaluf",
     "tags": [
       "Paper"
@@ -3823,7 +3823,7 @@
   {
     "title": "encoder4editing",
     "url": "https://colab.research.google.com/github/omertov/encoder4editing/blob/master/notebooks/inference_playground.ipynb",
-    "date": "2021-12-02T16:20:49",
+    "date": "2021-12-02T17:20:49",
     "author": "Omer Tov",
     "tags": [
       "Paper"
@@ -3834,7 +3834,7 @@
   {
     "title": "StyleCariGAN",
     "url": "https://colab.research.google.com/drive/1HDRQGm7pvC9mAb6Lktoft_SmY9sCq_Qg",
-    "date": "2021-11-30T20:36:44.158000",
+    "date": "2021-11-30T21:36:44.158000",
     "author": "Wonjong Jang",
     "tags": [
       "Paper"
@@ -3845,7 +3845,7 @@
   {
     "title": "CartoonGAN",
     "url": "https://colab.research.google.com/github/TobiasSunderdiek/cartoon-gan/blob/master/CartoonGAN.ipynb",
-    "date": "2021-11-24T15:32:22",
+    "date": "2021-11-24T16:32:22",
     "author": "Tobias Sunderdiek",
     "tags": [
       "Paper"
@@ -3856,7 +3856,7 @@
   {
     "title": "SimSwap",
     "url": "https://colab.research.google.com/github/neuralchen/SimSwap/blob/master/SimSwap%20colab.ipynb",
-    "date": "2021-11-24T11:19:04",
+    "date": "2021-11-24T12:19:04",
     "author": "Xuanhong Chen",
     "tags": [
       "Paper"
@@ -3867,7 +3867,7 @@
   {
     "title": "RVM",
     "url": "https://colab.research.google.com/drive/10z-pNKRnVNsp0Lq9tH1J_XPZ7CBC_uHm",
-    "date": "2021-11-24T08:29:04.201000",
+    "date": "2021-11-24T09:29:04.201000",
     "author": "Shanchuan Lin",
     "tags": [
       "Paper"
@@ -3878,7 +3878,7 @@
   {
     "title": "AnimeGANv2",
     "url": "https://colab.research.google.com/github/bryandlee/animegan2-pytorch/blob/master/colab_demo.ipynb",
-    "date": "2021-11-17T02:09:01",
+    "date": "2021-11-17T03:09:01",
     "author": "Xin Chen",
     "tags": [
       "Paper"
@@ -3889,7 +3889,7 @@
   {
     "title": "SOAT",
     "url": "https://colab.research.google.com/github/mchong6/SOAT/blob/master/infinity.ipynb",
-    "date": "2021-11-13T15:38:04",
+    "date": "2021-11-13T16:38:04",
     "author": "Min Jin Chong",
     "tags": [
       "Paper"
@@ -3900,7 +3900,7 @@
   {
     "title": "Arnheim",
     "url": "https://colab.research.google.com/github/deepmind/arnheim/blob/master/arnheim_2.ipynb",
-    "date": "2021-11-11T12:50:16",
+    "date": "2021-11-11T13:50:16",
     "author": "Chrisantha Fernando",
     "tags": [
       "Paper"
@@ -3911,7 +3911,7 @@
   {
     "title": "StyleGAN 2",
     "url": "https://colab.research.google.com/drive/1ShgW6wohEFQtqs_znMna3dzrcVoABKIH",
-    "date": "2021-11-05T20:08:23.170000",
+    "date": "2021-11-05T21:08:23.170000",
     "author": "Mikael Christensen",
     "tags": [
       "Paper"
@@ -3922,7 +3922,7 @@
   {
     "title": "ByteTrack",
     "url": "https://colab.research.google.com/drive/1bDilg4cmXFa8HCKHbsZ_p16p0vrhLyu0",
-    "date": "2021-10-30T04:01:57.748000",
+    "date": "2021-10-30T06:01:57.748000",
     "author": "Yifu Zhang",
     "tags": [
       "Paper"
@@ -3933,7 +3933,7 @@
   {
     "title": "GPT-2",
     "url": "https://colab.research.google.com/drive/1VLG8e7YSEwypxU-noRNhsv5dW4NfTGce",
-    "date": "2021-10-18T02:29:42.040000",
+    "date": "2021-10-18T04:29:42.040000",
     "author": "Max Woolf",
     "tags": [
       "Paper"
@@ -3944,7 +3944,7 @@
   {
     "title": "ConvMixer",
     "url": "https://colab.research.google.com/github/locuslab/convmixer/blob/main/pytorch-image-models/notebooks/EffResNetComparison.ipynb",
-    "date": "2021-10-05T22:33:30",
+    "date": "2021-10-06T00:33:30",
     "author": "Asher Trockman",
     "tags": [
       "Paper"
@@ -3955,7 +3955,7 @@
   {
     "title": "IC-GAN",
     "url": "https://colab.research.google.com/github/facebookresearch/ic_gan/blob/master/inference/icgan_colab.ipynb",
-    "date": "2021-10-01T13:32:30",
+    "date": "2021-10-01T15:32:30",
     "author": "Arantxa Casanova",
     "tags": [
       "Paper"
@@ -3966,7 +3966,7 @@
   {
     "title": "Skillful Precipitation Nowcasting Using Deep Generative Models of Radar",
     "url": "https://colab.research.google.com/github/deepmind/deepmind-research/blob/master/nowcasting/Open_sourced_dataset_and_model_snapshot_for_precipitation_nowcasting.ipynb",
-    "date": "2021-09-29T15:00:30",
+    "date": "2021-09-29T17:00:30",
     "author": "Suman Ravuri",
     "tags": [
       "Paper"
@@ -3977,7 +3977,7 @@
   {
     "title": "Live Speech Portraits",
     "url": "https://colab.research.google.com/drive/1tKvi-9kY3GkEK8lgtfTSM70rMFo_TY50",
-    "date": "2021-09-26T19:42:40.817000",
+    "date": "2021-09-26T21:42:40.817000",
     "author": "Yuanxun Lu",
     "tags": [
       "Paper"
@@ -3988,7 +3988,7 @@
   {
     "title": "StylEx",
     "url": "https://colab.research.google.com/github/google/explaining-in-style/blob/main/Explaining_in_Style_AttFind.ipynb",
-    "date": "2021-08-25T17:59:26",
+    "date": "2021-08-25T19:59:26",
     "author": "Oran Lang",
     "tags": [
       "Paper"
@@ -3999,7 +3999,7 @@
   {
     "title": "VITS",
     "url": "https://colab.research.google.com/drive/1CO61pZizDj7en71NQG_aqqKdGaA_SaBf",
-    "date": "2021-08-23T05:10:29.206000",
+    "date": "2021-08-23T07:10:29.206000",
     "author": "Jaehyeon Kim",
     "tags": [
       "Paper"
@@ -4010,7 +4010,7 @@
   {
     "title": "Bringing Old Photo Back to Life",
     "url": "https://colab.research.google.com/drive/1NEm6AsybIiC5TwTU_4DqDkQO0nFRB-uA",
-    "date": "2021-07-13T10:28:12.191000",
+    "date": "2021-07-13T12:28:12.191000",
     "author": "Ziyu Wan",
     "tags": [
       "Paper"
@@ -4021,7 +4021,7 @@
   {
     "title": "PTI",
     "url": "https://colab.research.google.com/github/danielroich/PTI/blob/main/notebooks/inference_playground.ipynb",
-    "date": "2021-07-01T07:05:31",
+    "date": "2021-07-01T09:05:31",
     "author": "Daniel Roich",
     "tags": [
       "Paper"
@@ -4032,7 +4032,7 @@
   {
     "title": "TediGAN",
     "url": "http://colab.research.google.com/github/weihaox/TediGAN/blob/master/playground.ipynb",
-    "date": "2021-06-30T14:28:25",
+    "date": "2021-06-30T16:28:25",
     "author": "Weihao Xia",
     "tags": [
       "Paper"
@@ -4043,7 +4043,7 @@
   {
     "title": "SCALE",
     "url": "https://colab.research.google.com/drive/1lp6r-A-s1kBorIvg6rLD4Ja3o6JOvu3G",
-    "date": "2021-06-26T09:32:50.138000",
+    "date": "2021-06-26T11:32:50.138000",
     "author": "Qianli Ma",
     "tags": [
       "Paper"
@@ -4054,7 +4054,7 @@
   {
     "title": "CogView",
     "url": "https://colab.research.google.com/drive/1Bi2TnSUp2vNiSUhamsNuC4HqkZ2J4WwZ",
-    "date": "2021-06-21T15:38:37.456000",
+    "date": "2021-06-21T17:38:37.456000",
     "author": "Ming Ding",
     "tags": [
       "Paper"
@@ -4065,7 +4065,7 @@
   {
     "title": "GANs N' Roses",
     "url": "https://colab.research.google.com/github/mchong6/GANsNRoses/blob/master/inference_colab.ipynb",
-    "date": "2021-06-19T16:21:22",
+    "date": "2021-06-19T18:21:22",
     "author": "Min Jin Chong",
     "tags": [
       "Paper"
@@ -4076,7 +4076,7 @@
   {
     "title": "Rethinking Style Transfer: From Pixels to Parameterized Brushstrokes",
     "url": "https://colab.research.google.com/github/CompVis/brushstroke-parameterized-style-transfer/blob/tensorflow_v2/notebooks/BrushstrokeStyleTransfer_TF2.ipynb",
-    "date": "2021-06-02T09:15:01",
+    "date": "2021-06-02T11:15:01",
     "author": "Dmytro Kotovenko",
     "tags": [
       "Paper"
@@ -4087,7 +4087,7 @@
   {
     "title": "Pixel2Style2Pixel",
     "url": "https://colab.research.google.com/github/eladrich/pixel2style2pixel/blob/master/notebooks/inference_playground.ipynb",
-    "date": "2021-06-01T16:24:44",
+    "date": "2021-06-01T18:24:44",
     "author": "Elad Richardson",
     "tags": [
       "Paper"
@@ -4098,7 +4098,7 @@
   {
     "title": "Fine-tuning a BERT",
     "url": "https://colab.research.google.com/github/tensorflow/models/blob/master/official/colab/fine_tuning_bert.ipynb",
-    "date": "2021-05-24T23:33:57",
+    "date": "2021-05-25T01:33:57",
     "author": "Chen Chen",
     "tags": [
       "Paper"
@@ -4109,7 +4109,7 @@
   {
     "title": "ReStyle",
     "url": "https://colab.research.google.com/github/yuval-alaluf/restyle-encoder/blob/master/notebooks/inference_playground.ipynb",
-    "date": "2021-05-21T19:23:27",
+    "date": "2021-05-21T21:23:27",
     "author": "Yuval Alaluf",
     "tags": [
       "Paper"
@@ -4120,7 +4120,7 @@
   {
     "title": "Motion Representations for Articulated Animation",
     "url": "https://colab.research.google.com/github/AliaksandrSiarohin/articulated-animation/blob/master/demo.ipynb",
-    "date": "2021-04-29T18:21:00",
+    "date": "2021-04-29T20:21:00",
     "author": "Aliaksandr Siarohin",
     "tags": [
       "Paper"
@@ -4131,7 +4131,7 @@
   {
     "title": "SAM",
     "url": "http://colab.research.google.com/github/yuval-alaluf/SAM/blob/master/notebooks/animation_inference_playground.ipynb",
-    "date": "2021-04-26T07:16:09",
+    "date": "2021-04-26T09:16:09",
     "author": "Yuval Alaluf",
     "tags": [
       "Paper"
@@ -4142,7 +4142,7 @@
   {
     "title": "Geometry-Free View Synthesis",
     "url": "https://colab.research.google.com/github/CompVis/geometry-free-view-synthesis/blob/master/scripts/braindance.ipynb",
-    "date": "2021-04-22T12:41:13",
+    "date": "2021-04-22T14:41:13",
     "author": "Robin Rombach",
     "tags": [
       "Paper"
@@ -4153,7 +4153,7 @@
   {
     "title": "NeRViS",
     "url": "https://colab.research.google.com/drive/1l-fUzyM38KJMZyKMBWw_vu7ZUyDwgdYH",
-    "date": "2021-04-11T07:22:06.731000",
+    "date": "2021-04-11T09:22:06.731000",
     "author": "Yu-Lun Liu",
     "tags": [
       "Paper"
@@ -4164,7 +4164,7 @@
   {
     "title": "NeX",
     "url": "https://colab.research.google.com/drive/1hXVvYdAwLA0EFg2zrafJUE0bFgB_F7PU",
-    "date": "2021-03-25T17:18:48.707000",
+    "date": "2021-03-25T18:18:48.707000",
     "author": "Suttisak Wizadwongsa",
     "tags": [
       "Paper"
@@ -4175,7 +4175,7 @@
   {
     "title": "Score SDE",
     "url": "https://colab.research.google.com/github/yang-song/score_sde/blob/main/Score_SDE_demo.ipynb",
-    "date": "2021-03-18T20:01:09",
+    "date": "2021-03-18T21:01:09",
     "author": "Yang Song",
     "tags": [
       "Paper"
@@ -4186,7 +4186,7 @@
   {
     "title": "Talking Head Anime from a Single Image",
     "url": "https://colab.research.google.com/github/pkhungurn/talking-head-anime-demo/blob/master/tha_colab.ipynb",
-    "date": "2021-02-23T21:38:27",
+    "date": "2021-02-23T22:38:27",
     "author": "Pramook Khungurn",
     "tags": [
       "Paper"
@@ -4197,7 +4197,7 @@
   {
     "title": "NFNet",
     "url": "https://colab.research.google.com/github/deepmind/deepmind-research/blob/master/nfnets/nfnet_demo_colab.ipynb",
-    "date": "2021-02-17T17:42:56",
+    "date": "2021-02-17T18:42:56",
     "author": "Andrew Brock",
     "tags": [
       "Paper"
@@ -4208,7 +4208,7 @@
   {
     "title": "RITM",
     "url": "https://colab.research.google.com/github/SamsungLabs/ritm_interactive_segmentation/blob/master/notebooks/colab_test_any_model.ipynb",
-    "date": "2021-02-13T16:57:27",
+    "date": "2021-02-13T17:57:27",
     "author": "Konstantin Sofiiuk",
     "tags": [
       "Paper"
@@ -4219,7 +4219,7 @@
   {
     "title": "CLIP",
     "url": "https://colab.research.google.com/github/openai/clip/blob/master/Interacting_with_CLIP.ipynb",
-    "date": "2021-01-29T15:22:03",
+    "date": "2021-01-29T16:22:03",
     "author": "Jong Wook Kim",
     "tags": [
       "Paper"
@@ -4230,7 +4230,7 @@
   {
     "title": "Adversarial Patch",
     "url": "https://colab.research.google.com/github/cleverhans-lab/cleverhans/blob/master/examples/adversarial_patch/AdversarialPatch.ipynb",
-    "date": "2021-01-27T14:10:06",
+    "date": "2021-01-27T15:10:06",
     "author": "Tom Brown",
     "tags": [
       "Paper"
@@ -4241,7 +4241,7 @@
   {
     "title": "MSG-Net",
     "url": "https://colab.research.google.com/github/zhanghang1989/PyTorch-Multi-Style-Transfer/blob/master/msgnet.ipynb",
-    "date": "2021-01-25T20:38:41",
+    "date": "2021-01-25T21:38:41",
     "author": "Hang Zhang",
     "tags": [
       "Paper"
@@ -4252,7 +4252,7 @@
   {
     "title": "f-BRS",
     "url": "https://colab.research.google.com/github/SamsungLabs/fbrs_interactive_segmentation/blob/master/notebooks/colab_test_any_model.ipynb",
-    "date": "2021-01-25T13:18:33",
+    "date": "2021-01-25T14:18:33",
     "author": "Konstantin Sofiiuk",
     "tags": [
       "Paper"
@@ -4263,7 +4263,7 @@
   {
     "title": "Neural Style Transfer",
     "url": "https://colab.research.google.com/github/titu1994/Neural-Style-Transfer/blob/master/NeuralStyleTransfer.ipynb",
-    "date": "2021-01-22T09:40:06",
+    "date": "2021-01-22T10:40:06",
     "author": "Somshubra Majumdar",
     "tags": [
       "Paper"
@@ -4274,7 +4274,7 @@
   {
     "title": "SkyAR",
     "url": "https://colab.research.google.com/github/jiupinjia/SkyAR/blob/master/colab_demo.ipynb",
-    "date": "2021-01-18T13:42:47",
+    "date": "2021-01-18T14:42:47",
     "author": "Zhengxia Zou",
     "tags": [
       "Paper"
@@ -4285,7 +4285,7 @@
   {
     "title": "MusicXML Documentation",
     "url": "https://colab.research.google.com/github/magenta/magenta-demos/blob/master/colab-notebooks/MusicXML_Document_Structure_Documentation.ipynb",
-    "date": "2021-01-08T16:06:37",
+    "date": "2021-01-08T17:06:37",
     "author": "Prakruti Joshi",
     "tags": [
       "Paper"
@@ -4296,7 +4296,7 @@
   {
     "title": "SVG VAE",
     "url": "https://colab.research.google.com/github/magenta/magenta-demos/blob/master/colab-notebooks/vae_svg_decoding.ipynb",
-    "date": "2021-01-08T16:06:37",
+    "date": "2021-01-08T17:06:37",
     "author": "Raphael Gontijo Lopes",
     "tags": [
       "Paper"
@@ -4307,7 +4307,7 @@
   {
     "title": "Neural Magic Eye",
     "url": "https://colab.research.google.com/drive/1f59dFLJ748i2TleE54RkbUZSMo9Hyx7l",
-    "date": "2021-01-01T01:52:23.743000",
+    "date": "2021-01-01T02:52:23.743000",
     "author": "Zhengxia Zou",
     "tags": [
       "Paper"
@@ -4318,7 +4318,7 @@
   {
     "title": "FGVC",
     "url": "https://colab.research.google.com/drive/1pb6FjWdwq_q445rG2NP0dubw7LKNUkqc",
-    "date": "2020-12-30T20:57:05.432000",
+    "date": "2020-12-30T21:57:05.432000",
     "author": "Chen Gao",
     "tags": [
       "Paper"
@@ -4329,7 +4329,7 @@
   {
     "title": "VIBE",
     "url": "https://colab.research.google.com/drive/1dFfwxZ52MN86FA6uFNypMEdFShd2euQA",
-    "date": "2020-12-23T08:00:27.317000",
+    "date": "2020-12-23T09:00:27.317000",
     "author": "Muhammed Kocabas",
     "tags": [
       "Paper"
@@ -4340,7 +4340,7 @@
   {
     "title": "SeFa",
     "url": "https://colab.research.google.com/github/genforce/sefa/blob/master/docs/SeFa.ipynb",
-    "date": "2020-12-06T02:04:02",
+    "date": "2020-12-06T03:04:02",
     "author": "Yujun Shen",
     "tags": [
       "Paper"
@@ -4351,7 +4351,7 @@
   {
     "title": "Stylized Neural Painting",
     "url": "https://colab.research.google.com/drive/1ch_41GtcQNQT1NLOA21vQJ_rQOjjv9D8",
-    "date": "2020-12-01T15:10:03.466000",
+    "date": "2020-12-01T16:10:03.466000",
     "author": "Zhengxia Zou",
     "tags": [
       "Paper"
@@ -4362,7 +4362,7 @@
   {
     "title": "BiT",
     "url": "https://colab.research.google.com/github/google-research/big_transfer/blob/master/colabs/big_transfer_tf2.ipynb",
-    "date": "2020-11-12T15:04:10",
+    "date": "2020-11-12T16:04:10",
     "author": "Alexander Kolesnikov",
     "tags": [
       "Paper"
@@ -4373,7 +4373,7 @@
   {
     "title": "LaSAFT",
     "url": "https://colab.research.google.com/github/ws-choi/Conditioned-Source-Separation-LaSAFT/blob/master/colab_demo/LaSAFT_with_GPoCM_Stella_Jang_Example.ipynb",
-    "date": "2020-11-01T16:16:56",
+    "date": "2020-11-01T17:16:56",
     "author": "Woosung Choi",
     "tags": [
       "Paper"
@@ -4384,7 +4384,7 @@
   {
     "title": "Lifespan Age Transformation Synthesis",
     "url": "https://colab.research.google.com/github/royorel/Lifespan_Age_Transformation_Synthesis/blob/master/LATS_demo.ipynb",
-    "date": "2020-10-31T19:20:28",
+    "date": "2020-10-31T20:20:28",
     "author": "Roy Or-El",
     "tags": [
       "Paper"
@@ -4395,7 +4395,7 @@
   {
     "title": "HiGAN",
     "url": "https://colab.research.google.com/github/genforce/higan/blob/master/docs/HiGAN_Bedroom.ipynb",
-    "date": "2020-10-14T05:06:02",
+    "date": "2020-10-14T07:06:02",
     "author": "Ceyuan Yang",
     "tags": [
       "Paper"
@@ -4406,7 +4406,7 @@
   {
     "title": "InterFaceGAN",
     "url": "https://colab.research.google.com/github/genforce/interfacegan/blob/master/docs/InterFaceGAN.ipynb",
-    "date": "2020-10-13T06:38:16",
+    "date": "2020-10-13T08:38:16",
     "author": "Yujun Shen",
     "tags": [
       "Paper"
@@ -4417,7 +4417,7 @@
   {
     "title": "Instance-aware Image Colorization",
     "url": "https://colab.research.google.com/github/ericsujw/InstColorization/blob/master/InstColorization.ipynb",
-    "date": "2020-08-30T10:15:00",
+    "date": "2020-08-30T12:15:00",
     "author": "Jheng-Wei Su",
     "tags": [
       "Paper"
@@ -4428,7 +4428,7 @@
   {
     "title": "MoCo",
     "url": "https://colab.research.google.com/github/facebookresearch/moco/blob/colab-notebook/colab/moco_cifar10_demo.ipynb",
-    "date": "2020-08-20T16:56:18",
+    "date": "2020-08-20T18:56:18",
     "author": "Kaiming He",
     "tags": [
       "Paper"
@@ -4439,7 +4439,7 @@
   {
     "title": "CAPE",
     "url": "https://colab.research.google.com/drive/1DCNo2OyyTNi1xDG-7j32FZQ9sBA6i9Ys",
-    "date": "2020-08-05T16:42:16.414000",
+    "date": "2020-08-05T18:42:16.414000",
     "author": "Qianli Ma",
     "tags": [
       "Paper"
@@ -4450,7 +4450,7 @@
   {
     "title": "Rewriting a Deep Generative Model",
     "url": "https://colab.research.google.com/github/davidbau/rewriting/blob/master/notebooks/rewriting-interface.ipynb",
-    "date": "2020-07-31T22:02:12",
+    "date": "2020-08-01T00:02:12",
     "author": "David Bau",
     "tags": [
       "Paper"
@@ -4461,7 +4461,7 @@
   {
     "title": "SIREN",
     "url": "https://colab.research.google.com/github/vsitzmann/siren/blob/master/explore_siren.ipynb",
-    "date": "2020-06-24T22:40:01",
+    "date": "2020-06-25T00:40:01",
     "author": "Vincent Sitzmann",
     "tags": [
       "Paper"
@@ -4472,7 +4472,7 @@
   {
     "title": "3D Photo Inpainting",
     "url": "https://colab.research.google.com/drive/1706ToQrkIZshRSJSHvZ1RuCiM__YX3Bz",
-    "date": "2020-05-04T08:04:18.042000",
+    "date": "2020-05-04T10:04:18.042000",
     "author": "Meng-Li Shih",
     "tags": [
       "Paper"
@@ -4483,7 +4483,7 @@
   {
     "title": "Motion Supervised co-part Segmentation",
     "url": "https://colab.research.google.com/github/AliaksandrSiarohin/motion-cosegmentation/blob/master/part_swap.ipynb",
-    "date": "2020-04-07T18:55:32",
+    "date": "2020-04-07T20:55:32",
     "author": "Aliaksandr Siarohin",
     "tags": [
       "Paper"
@@ -4494,7 +4494,7 @@
   {
     "title": "Onsets and Frames",
     "url": "https://colab.research.google.com/notebooks/magenta/onsets_frames_transcription/onsets_frames_transcription.ipynb",
-    "date": "2020-04-01T22:00:00",
+    "date": "2020-04-02T00:00:00",
     "author": "Curtis Hawthorne",
     "tags": [
       "Paper"
@@ -4505,7 +4505,7 @@
   {
     "title": "FBA Matting",
     "url": "https://colab.research.google.com/drive/1Ut2szLBTxPejGHt_GYUkua21yUVWseOE",
-    "date": "2020-03-19T00:17:20.529000",
+    "date": "2020-03-19T01:17:20.529000",
     "author": "Marco Forte",
     "tags": [
       "Paper"
@@ -4516,7 +4516,7 @@
   {
     "title": "BERT score",
     "url": "https://colab.research.google.com/github/Tiiiger/bert_score/blob/master/example/Demo.ipynb",
-    "date": "2020-03-05T19:02:20",
+    "date": "2020-03-05T20:02:20",
     "author": "Tianyi Zhang",
     "tags": [
       "Paper"
@@ -4527,7 +4527,7 @@
   {
     "title": "ProxylessNAS",
     "url": "https://colab.research.google.com/github/pytorch/pytorch.github.io/blob/master/assets/hub/pytorch_vision_proxylessnas.ipynb",
-    "date": "2019-10-29T03:43:32",
+    "date": "2019-10-29T04:43:32",
     "author": "Han Cai",
     "tags": [
       "Paper"
@@ -4538,7 +4538,7 @@
   {
     "title": "Generating Piano Music with Transformer",
     "url": "https://colab.research.google.com/notebooks/magenta/piano_transformer/piano_transformer.ipynb",
-    "date": "2019-09-15T22:00:00",
+    "date": "2019-09-16T00:00:00",
     "author": "Ian Simon",
     "tags": [
       "Paper"
@@ -4549,7 +4549,7 @@
   {
     "title": "HMR",
     "url": "https://colab.research.google.com/github/Dene33/video_to_bvh/blob/master/video_to_bvh.ipynb",
-    "date": "2019-03-15T20:13:23",
+    "date": "2019-03-15T21:13:23",
     "author": "Angjoo Kanazawa",
     "tags": [
       "Paper"
@@ -4560,7 +4560,7 @@
   {
     "title": "GANSynth",
     "url": "https://colab.research.google.com/notebooks/magenta/gansynth/gansynth_demo.ipynb",
-    "date": "2019-02-24T23:00:00",
+    "date": "2019-02-25T00:00:00",
     "author": "Jesse Engel",
     "tags": [
       "Paper"
@@ -4571,7 +4571,7 @@
   {
     "title": "Latent Constraints",
     "url": "https://colab.research.google.com/notebooks/latent_constraints/latentconstraints.ipynb",
-    "date": "2017-11-26T23:00:00",
+    "date": "2017-11-27T00:00:00",
     "author": "Jesse Engel",
     "tags": [
       "Paper"
@@ -4582,7 +4582,7 @@
   {
     "title": "Performance RNN",
     "url": "https://colab.research.google.com/notebooks/magenta/performance_rnn/performance_rnn.ipynb",
-    "date": "2017-07-10T22:00:00",
+    "date": "2017-07-11T00:00:00",
     "author": "Ian Simon",
     "tags": [
       "Paper"
@@ -4593,7 +4593,7 @@
   {
     "title": "NSynth",
     "url": "https://colab.research.google.com/notebooks/magenta/nsynth/nsynth.ipynb",
-    "date": "2017-04-05T22:00:00",
+    "date": "2017-04-06T00:00:00",
     "author": "Jesse Engel",
     "tags": [
       "Paper"
