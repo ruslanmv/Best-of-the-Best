@@ -1,0 +1,30 @@
+[
+  {
+    "kind": "package",
+    "id": "xgboost",
+    "version": 1,
+    "date": "2025-12-23",
+    "filename": "2025-12-23-package-xgboost.md"
+  },
+  {
+    "kind": "package",
+    "id": "langchain",
+    "version": 1,
+    "date": "2025-12-23",
+    "filename": "2025-12-23-package-langchain.md"
+  },
+  {
+    "kind": "package",
+    "id": "catboost",
+    "version": 1,
+    "date": "2025-12-23",
+    "filename": "2025-12-23-package-catboost.md"
+  },
+  {
+    "kind": "package",
+    "id": "catboost",
+    "version": 1,
+    "date": "2025-12-23",
+    "filename": "2025-12-23-package-catboost.md"
+  }
+]
