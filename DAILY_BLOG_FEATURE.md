@@ -107,7 +107,7 @@ export ANTHROPIC_API_KEY="sk-ant-..."
 
 ### IBM watsonx.ai
 ```bash
-export NEWS_LLM_MODEL="watsonx/meta-llama/llama-3-1-70b-instruct"
+export NEWS_LLM_MODEL="watsonx/meta-llama/llama-3-3-70b-instruct"
 export WATSONX_APIKEY="..."
 export WATSONX_URL="https://api.watsonx.ai/v1"
 export WATSONX_PROJECT_ID="..."

@@ -2,7 +2,7 @@
   {
     "title": "LangGraph",
     "url": "https://colab.research.google.com/github/langchain-ai/langgraph/blob/main/docs/docs/tutorials/introduction.ipynb",
-    "date": "2025-02-03T20:13:58",
+    "date": "2025-02-03T21:13:58",
     "author": "LangChain",
     "tags": [
       "Tutorial"
@@ -13,7 +13,7 @@
   {
     "title": "VC",
     "url": "https://colab.research.google.com/github/hinabl/voice-changer-colab/blob/master/Hina_Modified_Realtime_Voice_Changer_on_Colab.ipynb",
-    "date": "2025-01-30T12:05:50",
+    "date": "2025-01-30T13:05:50",
     "author": "w-okada",
     "tags": [
       "Tutorial"
@@ -24,7 +24,7 @@
   {
     "title": "YOLOv8",
     "url": "https://colab.research.google.com/github/ultralytics/ultralytics/blob/main/examples/tutorial.ipynb",
-    "date": "2025-01-30T11:28:19",
+    "date": "2025-01-30T12:28:19",
     "author": "Glenn Jocher",
     "tags": [
       "Tutorial"
@@ -35,7 +35,7 @@
   {
     "title": "Building Your Own Federated Learning Algorithm",
     "url": "https://colab.research.google.com/github/tensorflow/federated/blob/master/docs/tutorials/building_your_own_federated_learning_algorithm.ipynb",
-    "date": "2025-01-29T19:01:31",
+    "date": "2025-01-29T20:01:31",
     "author": "Zachary Charles",
     "tags": [
       "Tutorial"
@@ -46,7 +46,7 @@
   {
     "title": "Federated Learning for Image Classification",
     "url": "https://colab.research.google.com/github/tensorflow/federated/blob/master/docs/tutorials/federated_learning_for_image_classification.ipynb",
-    "date": "2025-01-29T19:01:31",
+    "date": "2025-01-29T20:01:31",
     "author": "Krzysztof Ostrowski",
     "tags": [
       "Tutorial"
@@ -57,7 +57,7 @@
   {
     "title": "Federated Learning for Text Generation",
     "url": "https://colab.research.google.com/github/tensorflow/federated/blob/master/docs/tutorials/federated_learning_for_text_generation.ipynb",
-    "date": "2025-01-29T19:01:31",
+    "date": "2025-01-29T20:01:31",
     "author": "Krzysztof Ostrowski",
     "tags": [
       "Tutorial"
@@ -68,7 +68,7 @@
   {
     "title": "Custom Federated Algorithms, Part 1: Introduction to the Federated Core",
     "url": "https://colab.research.google.com/github/tensorflow/federated/blob/master/docs/tutorials/custom_federated_algorithms_1.ipynb",
-    "date": "2025-01-29T19:01:31",
+    "date": "2025-01-29T20:01:31",
     "author": "Krzysztof Ostrowski",
     "tags": [
       "Tutorial"
@@ -79,7 +79,7 @@
   {
     "title": "Custom Federated Algorithms, Part 2: Implementing Federated Averaging",
     "url": "https://colab.research.google.com/github/tensorflow/federated/blob/master/docs/tutorials/custom_federated_algorithms_2.ipynb",
-    "date": "2025-01-29T19:01:31",
+    "date": "2025-01-29T20:01:31",
     "author": "Krzysztof Ostrowski",
     "tags": [
       "Tutorial"
@@ -90,7 +90,7 @@
   {
     "title": "Kornia",
     "url": "https://colab.research.google.com/github/kornia/kornia/blob/master/examples/augmentation/kornia_augmentation.ipynb",
-    "date": "2025-01-27T21:58:10",
+    "date": "2025-01-27T22:58:10",
     "author": "Edgar Riba",
     "tags": [
       "Tutorial"
@@ -101,7 +101,7 @@
   {
     "title": "Contextualized Topic Models",
     "url": "https://colab.research.google.com/drive/1fXJjr_rwqvpp1IdNQ4dxqN4Dp88cxO97",
-    "date": "2025-01-16T14:27:56.264000",
+    "date": "2025-01-16T15:27:56.264000",
     "author": "Federico Bianchi",
     "tags": [
       "Tutorial"
@@ -112,7 +112,7 @@
   {
     "title": "dm_control",
     "url": "https://colab.research.google.com/github/deepmind/dm_control/blob/master/tutorial.ipynb",
-    "date": "2025-01-15T17:32:09",
+    "date": "2025-01-15T18:32:09",
     "author": "Saran Tunyasuvunakool",
     "tags": [
       "Tutorial"
@@ -123,7 +123,7 @@
   {
     "title": "MuJoCo",
     "url": "https://colab.research.google.com/github/deepmind/dm_control/blob/master/dm_control/mujoco/tutorial.ipynb",
-    "date": "2025-01-15T17:32:09",
+    "date": "2025-01-15T18:32:09",
     "author": "Emo Todorov",
     "tags": [
       "Tutorial"
@@ -134,7 +134,7 @@
   {
     "title": "Ollama",
     "url": "https://colab.research.google.com/github/ollama/ollama/blob/master/examples/jupyter-notebook/ollama.ipynb",
-    "date": "2025-01-13T19:26:22",
+    "date": "2025-01-13T20:26:22",
     "author": "Michael Yang",
     "tags": [
       "Tutorial"
@@ -145,7 +145,7 @@
   {
     "title": "LangChain",
     "url": "https://colab.research.google.com/github/langchain-ai/langchain/blob/master/docs/docs/tutorials/qa_chat_history.ipynb",
-    "date": "2025-01-11T01:24:40",
+    "date": "2025-01-11T02:24:40",
     "author": "LangChain",
     "tags": [
       "Tutorial"
@@ -156,7 +156,7 @@
   {
     "title": "NotebookLlama",
     "url": "https://colab.research.google.com/github/meta-llama/llama-recipes/blob/main/recipes/quickstart/NotebookLlama/Step-1%20PDF-Pre-Processing-Logic.ipynb",
-    "date": "2025-01-09T17:06:53",
+    "date": "2025-01-09T18:06:53",
     "author": "Meta",
     "tags": [
       "Tutorial"
@@ -167,7 +167,7 @@
   {
     "title": "Anomalib",
     "url": "https://colab.research.google.com/github/openvinotoolkit/anomalib/blob/main/notebooks/000_getting_started/001_getting_started.ipynb",
-    "date": "2025-01-08T14:06:03",
+    "date": "2025-01-08T15:06:03",
     "author": "Samet Akcay",
     "tags": [
       "Tutorial"
@@ -178,7 +178,7 @@
   {
     "title": "Hello, many worlds",
     "url": "https://colab.research.google.com/github/tensorflow/quantum/blob/master/docs/tutorials/hello_many_worlds.ipynb",
-    "date": "2025-01-04T19:25:48",
+    "date": "2025-01-04T20:25:48",
     "author": "Michael Broughton",
     "tags": [
       "Tutorial"
@@ -189,7 +189,7 @@
   {
     "title": "Opik",
     "url": "https://colab.research.google.com/github/comet-ml/opik/blob/main/apps/opik-documentation/documentation/docs/cookbook/quickstart_notebook.ipynb",
-    "date": "2024-12-30T16:25:54",
+    "date": "2024-12-30T17:25:54",
     "author": "Jacques Verré",
     "tags": [
       "Tutorial"
@@ -200,7 +200,7 @@
   {
     "title": "LightAutoML",
     "url": "https://colab.research.google.com/github/AILab-MLTools/LightAutoML/blob/master/examples/tutorials/Tutorial_1_basics.ipynb",
-    "date": "2024-12-22T11:36:43",
+    "date": "2024-12-22T12:36:43",
     "author": "Alexander Ryzhkov",
     "tags": [
       "Tutorial"
@@ -211,7 +211,7 @@
   {
     "title": "TorchGeo",
     "url": "https://colab.research.google.com/github/microsoft/torchgeo/blob/main/docs/tutorials/indices.ipynb",
-    "date": "2024-12-19T18:40:19",
+    "date": "2024-12-19T19:40:19",
     "author": "Adam Stewart",
     "tags": [
       "Tutorial"
@@ -222,7 +222,7 @@
   {
     "title": "AutoGen",
     "url": "https://colab.research.google.com/github/microsoft/autogen/blob/main/python/packages/autogen-core/docs/src/user-guide/core-user-guide/quickstart.ipynb",
-    "date": "2024-12-19T17:01:03",
+    "date": "2024-12-19T18:01:03",
     "author": "microsoft",
     "tags": [
       "Tutorial"
@@ -233,7 +233,7 @@
   {
     "title": "Langfun",
     "url": "https://colab.research.google.com/github/google/langfun/blob/main/docs/notebooks/langfun101.ipynb",
-    "date": "2024-12-16T20:38:19",
+    "date": "2024-12-16T21:38:19",
     "author": "Daiyi Peng",
     "tags": [
       "Tutorial"
@@ -244,7 +244,7 @@
   {
     "title": "ComfyUI",
     "url": "https://colab.research.google.com/github/comfyanonymous/ComfyUI/blob/master/notebooks/comfyui_colab.ipynb",
-    "date": "2024-12-13T00:29:37",
+    "date": "2024-12-13T01:29:37",
     "author": "comfyanonymous",
     "tags": [
       "Tutorial"
@@ -255,7 +255,7 @@
   {
     "title": "TransformerLens",
     "url": "https://colab.research.google.com/github/TransformerLensOrg/TransformerLens/blob/main/demos/Main_Demo.ipynb",
-    "date": "2024-12-09T20:49:52",
+    "date": "2024-12-09T21:49:52",
     "author": "Neel Nanda",
     "tags": [
       "Tutorial"
@@ -266,7 +266,7 @@
   {
     "title": "Supervision",
     "url": "https://colab.research.google.com/github/roboflow/supervision/blob/main/demo.ipynb",
-    "date": "2024-12-05T15:23:05",
+    "date": "2024-12-05T16:23:05",
     "author": "Roboflow",
     "tags": [
       "Tutorial"
@@ -277,7 +277,7 @@
   {
     "title": "XManager",
     "url": "https://colab.research.google.com/github/google-deepmind/xmanager/blob/main/colab_codelab.ipynb",
-    "date": "2024-12-05T13:54:44",
+    "date": "2024-12-05T14:54:44",
     "author": "Andrew Chen",
     "tags": [
       "Tutorial"
@@ -288,7 +288,7 @@
   {
     "title": "Flax",
     "url": "https://colab.research.google.com/github/google/flax/blob/main/docs/quick_start.ipynb",
-    "date": "2024-12-05T12:09:54",
+    "date": "2024-12-05T13:09:54",
     "author": "Jonathan Heek",
     "tags": [
       "Tutorial"
@@ -299,7 +299,7 @@
   {
     "title": "Haiku",
     "url": "https://colab.research.google.com/github/deepmind/dm-haiku/blob/main/examples/haiku_lstms.ipynb",
-    "date": "2024-12-05T12:02:47",
+    "date": "2024-12-05T13:02:47",
     "author": "Tom Hennigan",
     "tags": [
       "Tutorial"
@@ -310,7 +310,7 @@
   {
     "title": "SAE Lens",
     "url": "https://colab.research.google.com/github/jbloomAus/SAELens/blob/main/tutorials/tutorial_2_0.ipynb",
-    "date": "2024-12-03T16:57:30",
+    "date": "2024-12-03T17:57:30",
     "author": "Joseph Bloom",
     "tags": [
       "Tutorial"
@@ -321,7 +321,7 @@
   {
     "title": "moondream",
     "url": "https://colab.research.google.com/github/vikhyat/moondream/blob/main/notebooks/Finetuning.ipynb",
-    "date": "2024-11-30T13:50:01",
+    "date": "2024-11-30T14:50:01",
     "author": "Vik Korrapati",
     "tags": [
       "Tutorial"
@@ -332,7 +332,7 @@
   {
     "title": "Feast",
     "url": "https://colab.research.google.com/github/feast-dev/feast/blob/master/examples/quickstart/quickstart.ipynb",
-    "date": "2024-11-22T10:58:30",
+    "date": "2024-11-22T11:58:30",
     "author": "Willem Pienaar",
     "tags": [
       "Tutorial"
@@ -343,7 +343,7 @@
   {
     "title": "FiftyOne",
     "url": "https://colab.research.google.com/github/voxel51/fiftyone-examples/blob/master/examples/quickstart.ipynb",
-    "date": "2024-11-21T17:45:56",
+    "date": "2024-11-21T18:45:56",
     "author": "Brian Moore",
     "tags": [
       "Tutorial"
@@ -354,7 +354,7 @@
   {
     "title": "CatBoost",
     "url": "https://colab.research.google.com/github/catboost/tutorials/blob/master/python_tutorial.ipynb",
-    "date": "2024-11-17T23:32:26",
+    "date": "2024-11-18T00:32:26",
     "author": "Anna Veronika Dorogush",
     "tags": [
       "Tutorial"
@@ -365,7 +365,7 @@
   {
     "title": "Gemma 2",
     "url": "https://colab.research.google.com/drive/1vIrqH5uYDQwsJ4-OO3DErvuv4pBgVwk4",
-    "date": "2024-11-17T06:51:54.482000",
+    "date": "2024-11-17T07:51:54.482000",
     "author": "unsloth",
     "tags": [
       "Tutorial"
@@ -376,7 +376,7 @@
   {
     "title": "Llama 3.1",
     "url": "https://colab.research.google.com/drive/1Ys44kVvmeZtnICzWz0xgpRnrIOjZAuxp",
-    "date": "2024-11-17T06:51:39.049000",
+    "date": "2024-11-17T07:51:39.049000",
     "author": "unsloth",
     "tags": [
       "Tutorial"
@@ -387,7 +387,7 @@
   {
     "title": "Mistral Small",
     "url": "https://colab.research.google.com/drive/1oCEHcED15DzL8xXGU1VTx5ZfOJM8WY01",
-    "date": "2024-11-17T06:51:15.510000",
+    "date": "2024-11-17T07:51:15.510000",
     "author": "unsloth",
     "tags": [
       "Tutorial"
@@ -398,7 +398,7 @@
   {
     "title": "DPO Zephyr",
     "url": "https://colab.research.google.com/drive/15vttTpzzVXv_tJwEk-hIcQ0S9FcEWvwP",
-    "date": "2024-11-17T06:50:51.115000",
+    "date": "2024-11-17T07:50:51.115000",
     "author": "Lewis Tunstall",
     "tags": [
       "Tutorial"
@@ -409,7 +409,7 @@
   {
     "title": "ORPO",
     "url": "https://colab.research.google.com/drive/11t4njE3c4Lxl-07OD8lJSMKkfyJml3Tn",
-    "date": "2024-11-17T06:50:47.258000",
+    "date": "2024-11-17T07:50:47.258000",
     "author": "Jiwoo Hong",
     "tags": [
       "Tutorial"
@@ -420,7 +420,7 @@
   {
     "title": "Phi-3.5",
     "url": "https://colab.research.google.com/drive/1lN6hPQveB_mHSnTOYifygFcrO8C1bxq4",
-    "date": "2024-11-17T06:50:35.897000",
+    "date": "2024-11-17T07:50:35.897000",
     "author": "unsloth",
     "tags": [
       "Tutorial"
@@ -431,7 +431,7 @@
   {
     "title": "Simple audio recognition",
     "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/audio/simple_audio.ipynb",
-    "date": "2024-11-15T05:56:58",
+    "date": "2024-11-15T06:56:58",
     "author": "Google",
     "tags": [
       "Tutorial"
@@ -442,7 +442,7 @@
   {
     "title": "xFormers",
     "url": "https://colab.research.google.com/github/facebookresearch/xformers/blob/main/docs/source/xformers_mingpt.ipynb",
-    "date": "2024-11-13T13:59:14",
+    "date": "2024-11-13T14:59:14",
     "author": "Benjamin Lefaudeux",
     "tags": [
       "Tutorial"
@@ -453,7 +453,7 @@
   {
     "title": "High-performance simulations with TFF",
     "url": "https://colab.research.google.com/github/tensorflow/federated/blob/master/docs/tutorials/simulations.ipynb",
-    "date": "2024-11-01T17:34:19",
+    "date": "2024-11-01T18:34:19",
     "author": "Krzysztof Ostrowski",
     "tags": [
       "Tutorial"
@@ -464,7 +464,7 @@
   {
     "title": "Autodistill",
     "url": "https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/how-to-auto-train-yolov8-model-with-autodistill.ipynb",
-    "date": "2024-11-01T11:54:04",
+    "date": "2024-11-01T12:54:04",
     "author": "autodistill",
     "tags": [
       "Tutorial"
@@ -475,7 +475,7 @@
   {
     "title": "Crawl4AI",
     "url": "https://colab.research.google.com/github/unclecode/crawl4ai/blob/main/docs/examples/quickstart.ipynb",
-    "date": "2024-10-30T12:39:35",
+    "date": "2024-10-30T13:39:35",
     "author": "UncleCode",
     "tags": [
       "Tutorial"
@@ -486,7 +486,7 @@
   {
     "title": "XGBoost",
     "url": "https://colab.research.google.com/github/comet-ml/comet-examples/blob/master/integrations/model-training/xgboost/notebooks/how_to_use_comet_with_xgboost_tutorial.ipynb",
-    "date": "2024-10-22T13:42:34",
+    "date": "2024-10-22T15:42:34",
     "author": "Tianqi Chen",
     "tags": [
       "Tutorial"
@@ -497,7 +497,7 @@
   {
     "title": "YOLOv5",
     "url": "https://colab.research.google.com/github/ultralytics/yolov5/blob/master/tutorial.ipynb",
-    "date": "2024-10-19T15:46:11",
+    "date": "2024-10-19T17:46:11",
     "author": "Glenn Jocher",
     "tags": [
       "Tutorial"
@@ -508,7 +508,7 @@
   {
     "title": "YOLOv3",
     "url": "https://colab.research.google.com/github/ultralytics/yolov3/blob/master/tutorial.ipynb",
-    "date": "2024-10-19T15:45:48",
+    "date": "2024-10-19T17:45:48",
     "author": "Glenn Jocher",
     "tags": [
       "Tutorial"
@@ -519,7 +519,7 @@
   {
     "title": "Swarm",
     "url": "https://colab.research.google.com/github/NirDiamant/GenAI_Agents/blob/main/all_agents_tutorials/blog_writer_swarm.ipynb",
-    "date": "2024-10-15T05:29:50",
+    "date": "2024-10-15T07:29:50",
     "author": "Ilan Bigio",
     "tags": [
       "Tutorial"
@@ -530,7 +530,7 @@
   {
     "title": "LM Evaluation Harness",
     "url": "https://colab.research.google.com/github/EleutherAI/lm-evaluation-harness/blob/main/examples/lm-eval-overview.ipynb",
-    "date": "2024-10-04T15:44:32",
+    "date": "2024-10-04T17:44:32",
     "author": "EleutherAI",
     "tags": [
       "Tutorial"
@@ -541,7 +541,7 @@
   {
     "title": "CodeGemma",
     "url": "https://colab.research.google.com/github/google-gemini/gemma-cookbook/blob/main/CodeGemma/CodeGemma_finetuned_on_SQL_with_HF.ipynb",
-    "date": "2024-09-27T03:16:48",
+    "date": "2024-09-27T05:16:48",
     "author": "Carlo Fisicaro",
     "tags": [
       "Tutorial"
@@ -552,7 +552,7 @@
   {
     "title": "Multimodal Maestro",
     "url": "https://colab.research.google.com/github/roboflow/multimodal-maestro/blob/develop/cookbooks/multimodal_maestro_gpt_4_vision.ipynb",
-    "date": "2024-09-26T14:00:04",
+    "date": "2024-09-26T16:00:04",
     "author": "Roboflow",
     "tags": [
       "Tutorial"
@@ -563,7 +563,7 @@
   {
     "title": "TRL",
     "url": "https://colab.research.google.com/github/huggingface/trl/blob/master/examples/notebooks/best_of_n.ipynb",
-    "date": "2024-09-24T14:05:55",
+    "date": "2024-09-24T16:05:55",
     "author": "Leandro Werra",
     "tags": [
       "Tutorial"
@@ -574,7 +574,7 @@
   {
     "title": "PEFT",
     "url": "https://colab.research.google.com/github/huggingface/peft/blob/master/examples/int8_training/Finetune_flan_t5_large_bnb_peft.ipynb",
-    "date": "2024-09-13T16:01:26",
+    "date": "2024-09-13T18:01:26",
     "author": "Sourab Mangrulkar",
     "tags": [
       "Tutorial"
@@ -585,7 +585,7 @@
   {
     "title": "SAA+",
     "url": "https://colab.research.google.com/drive/12Sh0j92YYmTa0oIuSEWWpPBCpIwCSVhz",
-    "date": "2024-09-13T07:15:34.185000",
+    "date": "2024-09-13T09:15:34.185000",
     "author": "Yunkang Cao",
     "tags": [
       "Tutorial"
@@ -596,7 +596,7 @@
   {
     "title": "TensorRT",
     "url": "https://colab.research.google.com/github/NVIDIA/TensorRT/blob/main/quickstart/IntroNotebooks/0.%20Running%20This%20Guide.ipynb",
-    "date": "2024-09-12T00:26:50",
+    "date": "2024-09-12T02:26:50",
     "author": "nvidia",
     "tags": [
       "Tutorial"
@@ -607,7 +607,7 @@
   {
     "title": "DataChain",
     "url": "https://colab.research.google.com/github/iterative/datachain-examples/blob/main/multimodal/clip_fine_tuning.ipynb",
-    "date": "2024-09-09T01:29:24",
+    "date": "2024-09-09T03:29:24",
     "author": "Iterative",
     "tags": [
       "Tutorial"
@@ -618,7 +618,7 @@
   {
     "title": "TFF for Federated Learning Research: Model and Update Compression",
     "url": "https://colab.research.google.com/github/tensorflow/federated/blob/master/docs/tutorials/tff_for_federated_learning_research_compression.ipynb",
-    "date": "2024-09-05T21:37:51",
+    "date": "2024-09-05T23:37:51",
     "author": "Weikang Song",
     "tags": [
       "Tutorial"
@@ -629,7 +629,7 @@
   {
     "title": "LlamaIndex",
     "url": "https://colab.research.google.com/github/run-llama/llama_index/blob/main/docs/docs/examples/cookbooks/oreilly_course_cookbooks/Module-2/Components_Of_LlamaIndex.ipynb",
-    "date": "2024-09-05T15:43:16",
+    "date": "2024-09-05T17:43:16",
     "author": "Jerry Liu",
     "tags": [
       "Tutorial"
@@ -640,7 +640,7 @@
   {
     "title": "Deforum Stable Diffusion",
     "url": "https://colab.research.google.com/github/deforum-art/deforum-stable-diffusion/blob/main/Deforum_Stable_Diffusion.ipynb",
-    "date": "2024-08-30T18:10:53",
+    "date": "2024-08-30T20:10:53",
     "author": "EnzymeZoo",
     "tags": [
       "Tutorial"
@@ -651,7 +651,7 @@
   {
     "title": "Nerfstudio",
     "url": "https://colab.research.google.com/github/nerfstudio-project/nerfstudio/blob/main/colab/demo.ipynb",
-    "date": "2024-08-19T15:23:14",
+    "date": "2024-08-19T17:23:14",
     "author": "Matthew Tancik",
     "tags": [
       "Tutorial"
@@ -662,7 +662,7 @@
   {
     "title": "PyTerrier",
     "url": "https://colab.research.google.com/github/terrier-org/pyterrier/blob/master/examples/notebooks/non_en_retrieval.ipynb",
-    "date": "2024-08-16T09:53:26",
+    "date": "2024-08-16T11:53:26",
     "author": "Craig Macdonald",
     "tags": [
       "Tutorial"
@@ -673,7 +673,7 @@
   {
     "title": "highway-env",
     "url": "https://colab.research.google.com/github/eleurent/highway-env/blob/master/scripts/parking_model_based.ipynb",
-    "date": "2024-08-09T16:38:54",
+    "date": "2024-08-09T18:38:54",
     "author": "Edouard Leurent",
     "tags": [
       "Tutorial"
@@ -684,7 +684,7 @@
   {
     "title": "GNN",
     "url": "https://colab.research.google.com/github/tensorflow/gnn/blob/master/examples/notebooks/graph_network_shortest_path.ipynb",
-    "date": "2024-08-09T11:08:19",
+    "date": "2024-08-09T13:08:19",
     "author": "Oleksandr Ferludin",
     "tags": [
       "Tutorial"
@@ -695,7 +695,7 @@
   {
     "title": "Pix2Pix",
     "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/pix2pix.ipynb",
-    "date": "2024-07-24T19:41:21",
+    "date": "2024-07-24T21:41:21",
     "author": "Phillip Isola",
     "tags": [
       "Tutorial"
@@ -706,7 +706,7 @@
   {
     "title": "Image classification",
     "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/images/classification.ipynb",
-    "date": "2024-07-24T19:41:21",
+    "date": "2024-07-24T21:41:21",
     "author": "Billy Lamberta",
     "tags": [
       "Tutorial"
@@ -717,7 +717,7 @@
   {
     "title": "Kor",
     "url": "https://colab.research.google.com/github/eyurtsev/kor/blob/main/docs/source/guidelines.ipynb",
-    "date": "2024-07-20T02:59:46",
+    "date": "2024-07-20T04:59:46",
     "author": "Eugene Yurtsev",
     "tags": [
       "Tutorial"
@@ -728,7 +728,7 @@
   {
     "title": "Mistral Inference",
     "url": "https://colab.research.google.com/github/mistralai/mistral-inference/blob/main/tutorials/getting_started.ipynb",
-    "date": "2024-07-16T10:16:39",
+    "date": "2024-07-16T12:16:39",
     "author": "mistral",
     "tags": [
       "Tutorial"
@@ -739,7 +739,7 @@
   {
     "title": "XLand-MiniGrid",
     "url": "https://colab.research.google.com/github/corl-team/xland-minigrid/blob/main/examples/walkthrough.ipynb",
-    "date": "2024-07-12T11:59:12",
+    "date": "2024-07-12T13:59:12",
     "author": "Alexander Nikulin",
     "tags": [
       "Tutorial"
@@ -750,7 +750,7 @@
   {
     "title": "PyTorch3D ",
     "url": "https://colab.research.google.com/github/facebookresearch/pytorch3d/blob/master/docs/tutorials/implicitron_config_system.ipynb",
-    "date": "2024-07-11T11:35:38",
+    "date": "2024-07-11T13:35:38",
     "author": "Nikhila Ravi",
     "tags": [
       "Tutorial"
@@ -761,7 +761,7 @@
   {
     "title": "Stable Diffusion Videos",
     "url": "https://colab.research.google.com/github/nateraw/stable-diffusion-videos/blob/main/stable_diffusion_videos.ipynb",
-    "date": "2024-07-11T05:48:00",
+    "date": "2024-07-11T07:48:00",
     "author": "Nathan Raw",
     "tags": [
       "Tutorial"
@@ -772,7 +772,7 @@
   {
     "title": "Transfer learning and fine-tuning",
     "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/images/transfer_learning.ipynb",
-    "date": "2024-06-26T02:55:06",
+    "date": "2024-06-26T04:55:06",
     "author": "François Chollet",
     "tags": [
       "Tutorial"
@@ -783,7 +783,7 @@
   {
     "title": "MARS5",
     "url": "https://colab.research.google.com/github/Camb-ai/mars5-tts/blob/master/mars5_demo.ipynb",
-    "date": "2024-06-25T08:25:52",
+    "date": "2024-06-25T10:25:52",
     "author": "CAMB.AI",
     "tags": [
       "Tutorial"
@@ -794,7 +794,7 @@
   {
     "title": "ToonCrafter",
     "url": "https://colab.research.google.com/gist/0smboy/baef995b8f5974f19ac114ec20ac37d5/tooncrafter.ipynb",
-    "date": "2024-06-20T11:38:46",
+    "date": "2024-06-20T13:38:46",
     "author": "Jinbo Xing",
     "tags": [
       "Tutorial"
@@ -805,7 +805,7 @@
   {
     "title": "Brax",
     "url": "https://colab.research.google.com/github/google/brax/blob/main/notebooks/basics.ipynb",
-    "date": "2024-06-07T16:12:45",
+    "date": "2024-06-07T18:12:45",
     "author": "Daniel Freeman",
     "tags": [
       "Tutorial"
@@ -816,7 +816,7 @@
   {
     "title": "DiffSynth",
     "url": "https://colab.research.google.com/github/Artiprocher/DiffSynth-Studio/blob/main/examples/Diffutoon.ipynb",
-    "date": "2024-06-06T10:50:07",
+    "date": "2024-06-06T12:50:07",
     "author": "Artiprocher",
     "tags": [
       "Tutorial"
@@ -827,7 +827,7 @@
   {
     "title": "Transformer",
     "url": "https://colab.research.google.com/github/tensorflow/text/blob/master/docs/tutorials/transformer.ipynb",
-    "date": "2024-05-30T23:40:39",
+    "date": "2024-05-31T01:40:39",
     "author": "Ashish Vaswani",
     "tags": [
       "Tutorial"
@@ -838,7 +838,7 @@
   {
     "title": "NeMo",
     "url": "https://colab.research.google.com/github/NVIDIA/NeMo/blob/master/tutorials/00_NeMo_Primer.ipynb",
-    "date": "2024-05-25T04:18:43",
+    "date": "2024-05-25T06:18:43",
     "author": "Oleksii Kuchaiev",
     "tags": [
       "Tutorial"
@@ -849,7 +849,7 @@
   {
     "title": "SentencePiece",
     "url": "https://colab.research.google.com/github/google/sentencepiece/blob/master/python/sentencepiece_python_module_example.ipynb",
-    "date": "2024-05-21T19:41:22",
+    "date": "2024-05-21T21:41:22",
     "author": "Taku Kudo",
     "tags": [
       "Tutorial"
@@ -860,7 +860,7 @@
   {
     "title": "Llama3 from scratch",
     "url": "https://colab.research.google.com/github/naklecha/llama3-from-scratch/blob/main/llama3-from-scratch.ipynb",
-    "date": "2024-05-19T16:25:22",
+    "date": "2024-05-19T18:25:22",
     "author": "Nishant Aklecha",
     "tags": [
       "Tutorial"
@@ -871,7 +871,7 @@
   {
     "title": "IC-Light",
     "url": "https://colab.research.google.com/github/camenduru/IC-Light-jupyter/blob/main/IC_Light_jupyter.ipynb",
-    "date": "2024-05-09T02:23:08",
+    "date": "2024-05-09T04:23:08",
     "author": "Lvmin Zhang",
     "tags": [
       "Tutorial"
@@ -882,7 +882,7 @@
   {
     "title": "Neural style transfer",
     "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/style_transfer.ipynb",
-    "date": "2024-05-06T21:18:54",
+    "date": "2024-05-06T23:18:54",
     "author": "Leon Gatys",
     "tags": [
       "Tutorial"
@@ -893,7 +893,7 @@
   {
     "title": "Autoencoders",
     "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/autoencoder.ipynb",
-    "date": "2024-04-15T20:54:29",
+    "date": "2024-04-15T22:54:29",
     "author": "Billy Lamberta",
     "tags": [
       "Tutorial"
@@ -904,7 +904,7 @@
   {
     "title": "MagicTime",
     "url": "https://colab.research.google.com/github/camenduru/MagicTime-jupyter/blob/main/MagicTime_jupyter.ipynb",
-    "date": "2024-04-14T12:30:06",
+    "date": "2024-04-14T14:30:06",
     "author": "Shenghai Yuan",
     "tags": [
       "Tutorial"
@@ -915,7 +915,7 @@
   {
     "title": "SAGE",
     "url": "https://colab.research.google.com/github/ai-forever/sage/blob/main/notebooks/text_correction_demo.ipynb",
-    "date": "2024-04-11T06:23:32",
+    "date": "2024-04-11T08:23:32",
     "author": "Nikita Martynov",
     "tags": [
       "Tutorial"
@@ -926,7 +926,7 @@
   {
     "title": "Image segmentation",
     "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/images/segmentation.ipynb",
-    "date": "2024-04-09T16:26:04",
+    "date": "2024-04-09T18:26:04",
     "author": "Olaf Ronneberger",
     "tags": [
       "Tutorial"
@@ -937,7 +937,7 @@
   {
     "title": "Open-Sora Plan",
     "url": "https://colab.research.google.com/github/camenduru/Open-Sora-Plan-jupyter/blob/main/Open_Sora_Plan_jupyter.ipynb",
-    "date": "2024-04-07T13:41:16",
+    "date": "2024-04-07T15:41:16",
     "author": "YUAN Lab at PKU",
     "tags": [
       "Tutorial"
@@ -948,7 +948,7 @@
   {
     "title": "Gorilla",
     "url": "https://colab.research.google.com/drive/1DEBPsccVLF_aUnmD0FwPeHFrtdC0QIUP",
-    "date": "2024-04-06T02:10:47.967000",
+    "date": "2024-04-06T04:10:47.967000",
     "author": "Shishir Patil",
     "tags": [
       "Tutorial"
@@ -959,7 +959,7 @@
   {
     "title": "Cleanlab",
     "url": "https://colab.research.google.com/github/cleanlab/cleanlab/blob/master/docs/source/tutorials/image.ipynb",
-    "date": "2024-03-30T01:29:39",
+    "date": "2024-03-30T02:29:39",
     "author": "Curtis Northcutt",
     "tags": [
       "Tutorial"
@@ -970,7 +970,7 @@
   {
     "title": "AniPortrait",
     "url": "https://colab.research.google.com/github/camenduru/AniPortrait-jupyter/blob/main/AniPortrait_vid2vid_jupyter.ipynb",
-    "date": "2024-03-27T12:26:53",
+    "date": "2024-03-27T13:26:53",
     "author": "Zejun Yang",
     "tags": [
       "Tutorial"
@@ -981,7 +981,7 @@
   {
     "title": "OpenVINO",
     "url": "https://colab.research.google.com/github/openvinotoolkit/openvino_notebooks/blob/main/notebooks/001-hello-world/001-hello-world.ipynb",
-    "date": "2024-03-25T10:37:10",
+    "date": "2024-03-25T11:37:10",
     "author": "intel",
     "tags": [
       "Tutorial"
@@ -992,7 +992,7 @@
   {
     "title": "Gazelle",
     "url": "https://colab.research.google.com/github/tincans-ai/gazelle/blob/master/examples/infer_quantized.ipynb",
-    "date": "2024-03-20T14:10:17",
+    "date": "2024-03-20T15:10:17",
     "author": "Tincans",
     "tags": [
       "Tutorial"
@@ -1003,7 +1003,7 @@
   {
     "title": "Intel® Extension for Transformers",
     "url": "https://colab.research.google.com/github/intel/intel-extension-for-transformers/blob/main/docs/tutorials/pytorch/text-classification/SetFit_model_compression_AGNews.ipynb",
-    "date": "2024-03-19T08:37:41",
+    "date": "2024-03-19T09:37:41",
     "author": "intel",
     "tags": [
       "Tutorial"
@@ -1014,7 +1014,7 @@
   {
     "title": "Datasets",
     "url": "https://colab.research.google.com/github/huggingface/notebooks/blob/main/datasets_doc/en/quickstart.ipynb",
-    "date": "2024-03-18T15:45:46",
+    "date": "2024-03-18T16:45:46",
     "author": "Quentin Lhoest",
     "tags": [
       "Tutorial"
@@ -1025,7 +1025,7 @@
   {
     "title": "Evidently",
     "url": "https://colab.research.google.com/github/evidentlyai/evidently/blob/main/examples/sample_notebooks/getting_started_tutorial.ipynb",
-    "date": "2024-03-15T13:07:07",
+    "date": "2024-03-15T14:07:07",
     "author": "Elena Samuylova",
     "tags": [
       "Tutorial"
@@ -1036,7 +1036,7 @@
   {
     "title": "Instructor",
     "url": "https://colab.research.google.com/drive/1iBkrEh2G5U8yh8RmI8EkWxjLq6zIIuVm",
-    "date": "2024-03-13T15:12:05.811000",
+    "date": "2024-03-13T16:12:05.811000",
     "author": "Jason Liu",
     "tags": [
       "Tutorial"
@@ -1047,7 +1047,7 @@
   {
     "title": "MetaVoice",
     "url": "https://colab.research.google.com/drive/1UmjE1mzfG4td0rCjJEaAWGQXpn_GuwwY",
-    "date": "2024-02-26T22:00:00.824000",
+    "date": "2024-02-26T23:00:00.824000",
     "author": "MetaVoice",
     "tags": [
       "Tutorial"
@@ -1058,7 +1058,7 @@
   {
     "title": "OmegaConf",
     "url": "https://colab.research.google.com/github/omry/omegaconf/blob/master/docs/notebook/Tutorial.ipynb",
-    "date": "2024-02-15T19:24:39",
+    "date": "2024-02-15T20:24:39",
     "author": "Omry Yadan",
     "tags": [
       "Tutorial"
@@ -1069,7 +1069,7 @@
   {
     "title": "Optuna",
     "url": "https://colab.research.google.com/github/optuna/optuna-examples/blob/main/quickstart.ipynb",
-    "date": "2024-02-15T02:27:38",
+    "date": "2024-02-15T03:27:38",
     "author": "Takuya Akiba",
     "tags": [
       "Tutorial"
@@ -1080,7 +1080,7 @@
   {
     "title": "Data augmentation",
     "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/images/data_augmentation.ipynb",
-    "date": "2024-02-14T06:57:13",
+    "date": "2024-02-14T07:57:13",
     "author": "Billy Lamberta",
     "tags": [
       "Tutorial"
@@ -1091,7 +1091,7 @@
   {
     "title": "Stable Cascade",
     "url": "https://colab.research.google.com/github/mkshing/notebooks/blob/main/stable_cascade.ipynb",
-    "date": "2024-02-14T01:28:07",
+    "date": "2024-02-14T02:28:07",
     "author": "Stability AI",
     "tags": [
       "Tutorial"
@@ -1102,7 +1102,7 @@
   {
     "title": "CleanVision",
     "url": "https://colab.research.google.com/github/cleanlab/cleanvision/blob/main/docs/source/tutorials/tutorial.ipynb",
-    "date": "2024-02-13T17:13:27",
+    "date": "2024-02-13T18:13:27",
     "author": "cleanlab",
     "tags": [
       "Tutorial"
@@ -1113,7 +1113,7 @@
   {
     "title": "DynamiCrafter",
     "url": "https://colab.research.google.com/github/camenduru/DynamiCrafter-colab/blob/main/DynamiCrafter_colab_576_1024.ipynb",
-    "date": "2024-02-12T08:48:45",
+    "date": "2024-02-12T09:48:45",
     "author": "Jinbo Xing",
     "tags": [
       "Tutorial"
@@ -1124,7 +1124,7 @@
   {
     "title": "XLA",
     "url": "https://colab.research.google.com/github/openxla/xla/blob/main/docs/tf2xla/tutorials/jit_compile.ipynb",
-    "date": "2024-02-02T17:35:18",
+    "date": "2024-02-02T18:35:18",
     "author": "OpenXLA",
     "tags": [
       "Tutorial"
@@ -1135,7 +1135,7 @@
   {
     "title": "Composer",
     "url": "https://colab.research.google.com/github/mosaicml/composer/blob/dev/examples/getting_started.ipynb",
-    "date": "2024-02-01T22:17:22",
+    "date": "2024-02-01T23:17:22",
     "author": "The Mosaic ML Team",
     "tags": [
       "Tutorial"
@@ -1146,7 +1146,7 @@
   {
     "title": "CycleGAN",
     "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/cyclegan.ipynb",
-    "date": "2024-01-17T01:20:28",
+    "date": "2024-01-17T02:20:28",
     "author": "Jun-Yan Zhu",
     "tags": [
       "Tutorial"
@@ -1157,7 +1157,7 @@
   {
     "title": "Integrated gradients",
     "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/interpretability/integrated_gradients.ipynb",
-    "date": "2024-01-17T01:20:28",
+    "date": "2024-01-17T02:20:28",
     "author": "Mukund Sundararajan",
     "tags": [
       "Tutorial"
@@ -1168,7 +1168,7 @@
   {
     "title": "MAGNeT",
     "url": "https://colab.research.google.com/github/camenduru/MAGNeT-colab/blob/main/MAGNET_colab.ipynb",
-    "date": "2024-01-16T02:28:12",
+    "date": "2024-01-16T03:28:12",
     "author": "Alon Ziv",
     "tags": [
       "Tutorial"
@@ -1179,7 +1179,7 @@
   {
     "title": "AutoFaiss",
     "url": "https://colab.research.google.com/github/criteo/autofaiss/blob/master/docs/notebooks/autofaiss_getting_started.ipynb",
-    "date": "2024-01-12T09:26:30",
+    "date": "2024-01-12T10:26:30",
     "author": "Ctiteo",
     "tags": [
       "Tutorial"
@@ -1190,7 +1190,7 @@
   {
     "title": "Retrieval based Voice Conversion WebUI",
     "url": "https://colab.research.google.com/github/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/main/Retrieval_based_Voice_Conversion_WebUI.ipynb",
-    "date": "2024-01-11T13:40:34",
+    "date": "2024-01-11T14:40:34",
     "author": "RVC-Project",
     "tags": [
       "Tutorial"
@@ -1201,7 +1201,7 @@
   {
     "title": "Big Vision",
     "url": "https://colab.research.google.com/github/google-research/big_vision/blob/main/big_vision/configs/proj/image_text/lit.ipynb",
-    "date": "2024-01-03T17:32:38",
+    "date": "2024-01-03T18:32:38",
     "author": "Lucas Beyer",
     "tags": [
       "Tutorial"
@@ -1212,7 +1212,7 @@
   {
     "title": "Open Interpreter",
     "url": "https://colab.research.google.com/drive/1WKmRXZgsErej2xUriKzxrEAXdxMSgWbb",
-    "date": "2024-01-03T11:08:14.272000",
+    "date": "2024-01-03T12:08:14.272000",
     "author": "Killian Lucas",
     "tags": [
       "Tutorial"
@@ -1223,7 +1223,7 @@
   {
     "title": "Seamless Communication",
     "url": "https://colab.research.google.com/github/facebookresearch/seamless_communication/blob/main/Seamless_Tutorial.ipynb",
-    "date": "2023-12-14T22:04:07",
+    "date": "2023-12-14T23:04:07",
     "author": "Loïc Barrault",
     "tags": [
       "Tutorial"
@@ -1234,7 +1234,7 @@
   {
     "title": "colab2pdf",
     "url": "https://colab.research.google.com/drive/1zqrIYC0iQ_CZkRqGXgZggrwjtt_4BmpL",
-    "date": "2023-12-11T04:27:06.471000",
+    "date": "2023-12-11T05:27:06.471000",
     "author": "Drengskapur",
     "tags": [
       "Tutorial"
@@ -1245,7 +1245,7 @@
   {
     "title": "Sentence Transformers",
     "url": "https://colab.research.google.com/github/UKPLab/sentence-transformers/blob/master/examples/applications/retrieve_rerank/retrieve_rerank_simple_wikipedia.ipynb",
-    "date": "2023-12-07T13:36:25",
+    "date": "2023-12-07T14:36:25",
     "author": "Nils Reimers",
     "tags": [
       "Tutorial"
@@ -1256,7 +1256,7 @@
   {
     "title": "CleanRL",
     "url": "https://colab.research.google.com/github/vwxyzjn/cleanrl/blob/master/docs/get-started/CleanRL_Huggingface_Integration_Demo.ipynb",
-    "date": "2023-11-28T01:32:11",
+    "date": "2023-11-28T02:32:11",
     "author": "Shengyi Huang",
     "tags": [
       "Tutorial"
@@ -1267,7 +1267,7 @@
   {
     "title": "Vocos",
     "url": "https://colab.research.google.com/github/charactr-platform/vocos/blob/main/notebooks/Bark%2BVocos.ipynb",
-    "date": "2023-11-21T13:38:39",
+    "date": "2023-11-21T14:38:39",
     "author": "Hubert Siuzdak",
     "tags": [
       "Tutorial"
@@ -1278,7 +1278,7 @@
   {
     "title": "X—LLM",
     "url": "https://colab.research.google.com/drive/1zsNmJFns1PKZy5VE5p5nsQL-mZF7SwHf?usp=sharing",
-    "date": "2023-11-15T11:12:07.032000",
+    "date": "2023-11-15T12:12:07.032000",
     "author": "Boris Zubarev",
     "tags": [
       "Tutorial"
@@ -1289,7 +1289,7 @@
   {
     "title": "Distil-Whisper",
     "url": "https://colab.research.google.com/github/sanchit-gandhi/notebooks/blob/main/Distil_Whisper_Benchmark.ipynb",
-    "date": "2023-11-08T14:59:02",
+    "date": "2023-11-08T15:59:02",
     "author": "Sanchit Gandhi",
     "tags": [
       "Tutorial"
@@ -1300,7 +1300,7 @@
   {
     "title": "AnimateDiff",
     "url": "https://colab.research.google.com/github/camenduru/AnimateDiff-colab/blob/main/AnimateDiff_colab.ipynb",
-    "date": "2023-10-30T15:13:20",
+    "date": "2023-10-30T16:13:20",
     "author": "Yuwei Guo",
     "tags": [
       "Tutorial"
@@ -1311,7 +1311,7 @@
   {
     "title": "Intel® Neural Compressor",
     "url": "https://colab.research.google.com/github/intel/neural-compressor/blob/master/examples/notebook/onnxruntime/Quick_Started_Notebook_of_INC_for_ONNXRuntime.ipynb",
-    "date": "2023-10-27T03:00:26",
+    "date": "2023-10-27T05:00:26",
     "author": "intel",
     "tags": [
       "Tutorial"
@@ -1322,7 +1322,7 @@
   {
     "title": "Bark",
     "url": "https://colab.research.google.com/drive/1dWWkZzvu7L9Bunq9zvD-W02RFUXoW-Pd",
-    "date": "2023-10-25T10:05:06.166000",
+    "date": "2023-10-25T12:05:06.166000",
     "author": "suno",
     "tags": [
       "Tutorial"
@@ -1333,7 +1333,7 @@
   {
     "title": "Mistral Transformer",
     "url": "https://colab.research.google.com/github/camenduru/Mistral-colab/blob/main/Mistral_colab.ipynb",
-    "date": "2023-10-09T13:51:56",
+    "date": "2023-10-09T15:51:56",
     "author": "Albert Jiang",
     "tags": [
       "Tutorial"
@@ -1344,7 +1344,7 @@
   {
     "title": "Fooocus",
     "url": "https://colab.research.google.com/github/lllyasviel/Fooocus/blob/main/colab.ipynb",
-    "date": "2023-10-03T17:36:42",
+    "date": "2023-10-03T19:36:42",
     "author": "Lvmin Zhang",
     "tags": [
       "Tutorial"
@@ -1355,7 +1355,7 @@
   {
     "title": "Actor-Critic",
     "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/reinforcement_learning/actor_critic.ipynb",
-    "date": "2023-09-27T22:10:32",
+    "date": "2023-09-28T00:10:32",
     "author": "Vijay Konda",
     "tags": [
       "Tutorial"
@@ -1366,7 +1366,7 @@
   {
     "title": "MMagic",
     "url": "https://colab.research.google.com/github/open-mmlab/mmagic/blob/main/demo/mmagic_inference_tutorial.ipynb",
-    "date": "2023-09-11T07:45:30",
+    "date": "2023-09-11T09:45:30",
     "author": "OpenMMLab",
     "tags": [
       "Tutorial"
@@ -1377,7 +1377,7 @@
   {
     "title": "SeqIO",
     "url": "https://colab.research.google.com/github/google/seqio/blob/main/seqio/notebooks/Evaluation.ipynb",
-    "date": "2023-09-08T21:09:57",
+    "date": "2023-09-08T23:09:57",
     "author": "Adam Roberts",
     "tags": [
       "Tutorial"
@@ -1388,7 +1388,7 @@
   {
     "title": "MMAction2",
     "url": "https://colab.research.google.com/github/open-mmlab/mmaction2/blob/master/demo/mmaction2_tutorial.ipynb",
-    "date": "2023-09-06T13:22:28",
+    "date": "2023-09-06T15:22:28",
     "author": "MMAction2 Contributors",
     "tags": [
       "Tutorial"
@@ -1399,7 +1399,7 @@
   {
     "title": "Ray",
     "url": "https://colab.research.google.com/github/ray-project/ray/blob/master/doc/source/tune/examples/optuna_example.ipynb",
-    "date": "2023-09-06T05:55:20",
+    "date": "2023-09-06T07:55:20",
     "author": "Philipp Moritz",
     "tags": [
       "Tutorial"
@@ -1410,7 +1410,7 @@
   {
     "title": "Home Robot",
     "url": "https://colab.research.google.com/github/facebookresearch/home-robot/blob/master/src/home_robot_sim/notebooks/velocity_control_sim.ipynb",
-    "date": "2023-08-30T20:43:49",
+    "date": "2023-08-30T22:43:49",
     "author": "Chris Paxton",
     "tags": [
       "Tutorial"
@@ -1421,7 +1421,7 @@
   {
     "title": "Neural Tangents",
     "url": "https://colab.research.google.com/github/google/neural-tangents/blob/main/notebooks/neural_tangents_cookbook.ipynb",
-    "date": "2023-08-29T17:04:46",
+    "date": "2023-08-29T19:04:46",
     "author": "Roman Novak",
     "tags": [
       "Tutorial"
@@ -1432,7 +1432,7 @@
   {
     "title": "Stable Diffusion 2",
     "url": "https://colab.research.google.com/github/qunash/stable-diffusion-2-gui/blob/main/stable_diffusion_2_0.ipynb",
-    "date": "2023-08-26T19:35:56",
+    "date": "2023-08-26T21:35:56",
     "author": "Robin Rombach",
     "tags": [
       "Tutorial"
@@ -1443,7 +1443,7 @@
   {
     "title": "DALL·E Mini",
     "url": "https://colab.research.google.com/github/borisdayma/dalle-mini/blob/main/tools/inference/inference_pipeline.ipynb",
-    "date": "2023-08-22T04:06:28",
+    "date": "2023-08-22T06:06:28",
     "author": "Boris Dayma",
     "tags": [
       "Tutorial"
@@ -1454,7 +1454,7 @@
   {
     "title": "Classify text with BERT",
     "url": "https://colab.research.google.com/github/tensorflow/text/blob/master/docs/tutorials/classify_text_with_bert.ipynb",
-    "date": "2023-08-08T06:19:55",
+    "date": "2023-08-08T08:19:55",
     "author": "Anirudh Dubey",
     "tags": [
       "Tutorial"
@@ -1465,7 +1465,7 @@
   {
     "title": "Kandinsky 2.1",
     "url": "https://colab.research.google.com/drive/1xSbu-b-EwYd6GdaFPRVgvXBX_mciZ41e",
-    "date": "2023-08-07T08:32:09.987000",
+    "date": "2023-08-07T10:32:09.987000",
     "author": "Arseniy Shakhmatov",
     "tags": [
       "Tutorial"
@@ -1476,7 +1476,7 @@
   {
     "title": "SoftVC VITS",
     "url": "https://colab.research.google.com/github/svc-develop-team/so-vits-svc/blob/4.1-Stable/sovits4_for_colab.ipynb",
-    "date": "2023-07-31T10:38:19",
+    "date": "2023-07-31T12:38:19",
     "author": "svc develop team",
     "tags": [
       "Tutorial"
@@ -1487,7 +1487,7 @@
   {
     "title": "threestudio",
     "url": "https://colab.research.google.com/github/threestudio-project/threestudio/blob/main/threestudio.ipynb",
-    "date": "2023-07-28T11:36:57",
+    "date": "2023-07-28T13:36:57",
     "author": "Yuan-Chen Guo",
     "tags": [
       "Tutorial"
@@ -1498,7 +1498,7 @@
   {
     "title": "Image captioning",
     "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/text/image_captioning.ipynb",
-    "date": "2023-07-25T21:50:14",
+    "date": "2023-07-25T23:50:14",
     "author": "Kelvin Xu",
     "tags": [
       "Tutorial"
@@ -1509,7 +1509,7 @@
   {
     "title": "Word2Vec",
     "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/text/word2vec.ipynb",
-    "date": "2023-07-25T21:50:14",
+    "date": "2023-07-25T23:50:14",
     "author": "Tomas Mikolov",
     "tags": [
       "Tutorial"
@@ -1520,7 +1520,7 @@
   {
     "title": "Word embeddings",
     "url": "https://colab.research.google.com/github/tensorflow/text/blob/master/docs/tutorials/word_embeddings.ipynb",
-    "date": "2023-07-25T21:50:13",
+    "date": "2023-07-25T23:50:13",
     "author": "Billy Lamberta",
     "tags": [
       "Tutorial"
@@ -1531,7 +1531,7 @@
   {
     "title": "Tortoise",
     "url": "https://colab.research.google.com/github/neonbjb/tortoise-tts/blob/main/tortoise_tts.ipynb",
-    "date": "2023-07-15T17:30:19",
+    "date": "2023-07-15T19:30:19",
     "author": "James Betker",
     "tags": [
       "Tutorial"
@@ -1542,7 +1542,7 @@
   {
     "title": "Petals",
     "url": "https://colab.research.google.com/drive/1Ervk6HPNS6AYVr3xVdQnY5a-TjjmLCdQ",
-    "date": "2023-07-05T12:52:14.840000",
+    "date": "2023-07-05T14:52:14.840000",
     "author": "BigScience",
     "tags": [
       "Tutorial"
@@ -1553,7 +1553,7 @@
   {
     "title": "Epistemic Neural Networks",
     "url": "https://colab.research.google.com/github/deepmind/enn/blob/master/enn/colabs/enn_demo.ipynb",
-    "date": "2023-06-26T22:45:50",
+    "date": "2023-06-27T00:45:50",
     "author": "Ian Osband",
     "tags": [
       "Tutorial"
@@ -1564,7 +1564,7 @@
   {
     "title": "DeepFloyd IF",
     "url": "https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/deepfloyd_if_free_tier_google_colab.ipynb",
-    "date": "2023-06-26T19:05:36",
+    "date": "2023-06-26T21:05:36",
     "author": "Alex Shonenkov",
     "tags": [
       "Tutorial"
@@ -1575,7 +1575,7 @@
   {
     "title": "normflows",
     "url": "https://colab.research.google.com/github/VincentStimper/normalizing-flows/blob/master/examples/paper_example_nsf_colab.ipynb",
-    "date": "2023-06-26T12:59:51",
+    "date": "2023-06-26T14:59:51",
     "author": "Vincent Stimper",
     "tags": [
       "Tutorial"
@@ -1586,7 +1586,7 @@
   {
     "title": "MMPose",
     "url": "https://colab.research.google.com/github/open-mmlab/mmpose/blob/master/demo/MMPose_Tutorial.ipynb",
-    "date": "2023-06-19T02:11:30",
+    "date": "2023-06-19T04:11:30",
     "author": "OpenMMLab",
     "tags": [
       "Tutorial"
@@ -1597,7 +1597,7 @@
   {
     "title": "MyoSuite",
     "url": "https://colab.research.google.com/drive/1U6vo6Q_rPhDaq6oUMV7EAZRm6s0fD1wn",
-    "date": "2023-06-16T19:56:41.905000",
+    "date": "2023-06-16T21:56:41.905000",
     "author": "Vittorio Caggiano",
     "tags": [
       "Tutorial"
@@ -1608,7 +1608,7 @@
   {
     "title": "Audiocraft",
     "url": "https://colab.research.google.com/drive/1fxGqfg96RBUvGxZ1XXN07s3DthrKUl4-",
-    "date": "2023-06-11T13:27:43.382000",
+    "date": "2023-06-11T15:27:43.382000",
     "author": "Jade Copet",
     "tags": [
       "Tutorial"
@@ -1619,7 +1619,7 @@
   {
     "title": "Detectron2",
     "url": "https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5",
-    "date": "2023-05-26T02:47:19.579000",
+    "date": "2023-05-26T04:47:19.579000",
     "author": "Yuxin Wu",
     "tags": [
       "Tutorial"
@@ -1630,7 +1630,7 @@
   {
     "title": "Reverb",
     "url": "https://colab.research.google.com/github/deepmind/reverb/blob/master/examples/demo.ipynb",
-    "date": "2023-05-23T14:56:23",
+    "date": "2023-05-23T16:56:23",
     "author": "Albin Cassirer",
     "tags": [
       "Tutorial"
@@ -1641,7 +1641,7 @@
   {
     "title": "MMDetection",
     "url": "https://colab.research.google.com/github/open-mmlab/mmdetection/blob/main/demo/MMDet_Tutorial.ipynb",
-    "date": "2023-05-17T10:06:45",
+    "date": "2023-05-17T12:06:45",
     "author": "OpenMMLab",
     "tags": [
       "Tutorial"
@@ -1652,7 +1652,7 @@
   {
     "title": "ChatRWKV",
     "url": "https://colab.research.google.com/github/resloved/RWKV-notebooks/blob/master/RWKV_ChatRWKV.ipynb",
-    "date": "2023-05-08T02:13:36",
+    "date": "2023-05-08T04:13:36",
     "author": "Bo Peng",
     "tags": [
       "Tutorial"
@@ -1663,7 +1663,7 @@
   {
     "title": "PyGlove",
     "url": "https://colab.research.google.com/github/google/pyglove/blob/main/docs/notebooks/ml/efficiently_exchange_ml_ideas_as_code.ipynb",
-    "date": "2023-05-06T00:51:34",
+    "date": "2023-05-06T02:51:34",
     "author": "Daiyi Peng",
     "tags": [
       "Tutorial"
@@ -1674,7 +1674,7 @@
   {
     "title": "Python Data Science Handbook",
     "url": "https://colab.research.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/Index.ipynb",
-    "date": "2023-05-05T23:20:45",
+    "date": "2023-05-06T01:20:45",
     "author": "Jake Vanderplas",
     "tags": [
       "Tutorial"
@@ -1685,7 +1685,7 @@
   {
     "title": "PGMax",
     "url": "https://colab.research.google.com/github/deepmind/PGMax/blob/main/examples/rcn.ipynb",
-    "date": "2023-05-05T16:38:30",
+    "date": "2023-05-05T18:38:30",
     "author": "Guangyao Zhou",
     "tags": [
       "Tutorial"
@@ -1696,7 +1696,7 @@
   {
     "title": "StableLM",
     "url": "https://colab.research.google.com/github/Stability-AI/StableLM/blob/main/notebooks/stablelm-alpha.ipynb",
-    "date": "2023-04-27T15:05:42",
+    "date": "2023-04-27T17:05:42",
     "author": "Stability AI",
     "tags": [
       "Tutorial"
@@ -1707,7 +1707,7 @@
   {
     "title": "TTS",
     "url": "https://colab.research.google.com/github/coqui-ai/TTS/blob/dev/notebooks/Tutorial_2_train_your_first_TTS_model.ipynb",
-    "date": "2023-04-26T13:22:57",
+    "date": "2023-04-26T15:22:57",
     "author": "Eren Gölge",
     "tags": [
       "Tutorial"
@@ -1718,7 +1718,7 @@
   {
     "title": "OpenCLIP",
     "url": "https://colab.research.google.com/github/mlfoundations/open_clip/blob/master/docs/Interacting_with_open_clip.ipynb",
-    "date": "2023-04-16T17:13:02",
+    "date": "2023-04-16T19:13:02",
     "author": "Ross Wightman",
     "tags": [
       "Tutorial"
@@ -1729,7 +1729,7 @@
   {
     "title": "Stable Baselines3",
     "url": "https://colab.research.google.com/github/Stable-Baselines-Team/rl-colab-notebooks/blob/sb3/stable_baselines_getting_started.ipynb",
-    "date": "2023-04-14T11:07:18",
+    "date": "2023-04-14T13:07:18",
     "author": "Antonin Raffin",
     "tags": [
       "Tutorial"
@@ -1740,7 +1740,7 @@
   {
     "title": "RL Baselines3 Zoo",
     "url": "https://colab.research.google.com/github/Stable-Baselines-Team/rl-colab-notebooks/blob/sb3/rl-baselines-zoo.ipynb",
-    "date": "2023-04-14T11:07:18",
+    "date": "2023-04-14T13:07:18",
     "author": "Antonin Raffin",
     "tags": [
       "Tutorial"
@@ -1751,7 +1751,7 @@
   {
     "title": "Grounded-SAM",
     "url": "https://colab.research.google.com/github/betogaona7/Grounded-Segment-Anything/blob/main/grounded_sam_colab_demo.ipynb",
-    "date": "2023-04-12T04:57:18",
+    "date": "2023-04-12T06:57:18",
     "author": "IDEA-Research",
     "tags": [
       "Tutorial"
@@ -1762,7 +1762,7 @@
   {
     "title": "TFDS",
     "url": "https://colab.research.google.com/github/tensorflow/datasets/blob/master/docs/overview.ipynb",
-    "date": "2023-04-11T12:04:17",
+    "date": "2023-04-11T14:04:17",
     "author": "Google",
     "tags": [
       "Tutorial"
@@ -1773,7 +1773,7 @@
   {
     "title": "Optimum",
     "url": "https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/question_answering_ort.ipynb",
-    "date": "2023-04-06T10:30:19",
+    "date": "2023-04-06T12:30:19",
     "author": "Hugging Face",
     "tags": [
       "Tutorial"
@@ -1784,7 +1784,7 @@
   {
     "title": "MMOCR",
     "url": "https://colab.research.google.com/github/open-mmlab/mmocr/blob/master/demo/tutorial.ipynb",
-    "date": "2023-04-06T09:25:45",
+    "date": "2023-04-06T11:25:45",
     "author": "Zhanghui Kuang",
     "tags": [
       "Tutorial"
@@ -1795,7 +1795,7 @@
   {
     "title": "MMSegmentation",
     "url": "https://colab.research.google.com/github/open-mmlab/mmsegmentation/blob/main/demo/MMSegmentation_Tutorial.ipynb",
-    "date": "2023-03-31T08:26:30",
+    "date": "2023-03-31T10:26:30",
     "author": "OpenMMLab",
     "tags": [
       "Tutorial"
@@ -1806,7 +1806,7 @@
   {
     "title": "LAVIS",
     "url": "https://colab.research.google.com/github/salesforce/LAVIS/blob/main/projects/img2llm-vqa/img2llm_vqa.ipynb",
-    "date": "2023-03-24T06:42:45",
+    "date": "2023-03-24T07:42:45",
     "author": "Dongxu Li",
     "tags": [
       "Tutorial"
@@ -1817,7 +1817,7 @@
   {
     "title": "AudioLM",
     "url": "https://colab.research.google.com/github/lucidrains/audiolm-pytorch/blob/main/audiolm_pytorch_demo.ipynb",
-    "date": "2023-03-23T21:25:18",
+    "date": "2023-03-23T22:25:18",
     "author": "Phil Wang",
     "tags": [
       "Tutorial"
@@ -1828,7 +1828,7 @@
   {
     "title": "pymdp",
     "url": "https://colab.research.google.com/github/infer-actively/pymdp/blob/master/docs/notebooks/active_inference_from_scratch.ipynb",
-    "date": "2023-03-19T11:38:18",
+    "date": "2023-03-19T12:38:18",
     "author": "Conor Heins",
     "tags": [
       "Tutorial"
@@ -1839,7 +1839,7 @@
   {
     "title": "MMSelfSup",
     "url": "https://colab.research.google.com/github/open-mmlab/mmselfsup/blob/master/demo/mmselfsup_colab_tutorial.ipynb",
-    "date": "2023-03-14T06:34:27",
+    "date": "2023-03-14T07:34:27",
     "author": "Xiaohang Zhan",
     "tags": [
       "Tutorial"
@@ -1850,7 +1850,7 @@
   {
     "title": "Tzer",
     "url": "https://colab.research.google.com/github/ise-uiuc/tzer/blob/main/bug-report.ipynb",
-    "date": "2023-03-09T21:59:57",
+    "date": "2023-03-09T22:59:57",
     "author": "Jiawei Liu",
     "tags": [
       "Tutorial"
@@ -1861,7 +1861,7 @@
   {
     "title": "ArtLine",
     "url": "https://colab.research.google.com/github/vijishmadhavan/ArtLine/blob/main/ControlNet_%2BArtLine_.ipynb",
-    "date": "2023-03-03T12:25:17",
+    "date": "2023-03-03T13:25:17",
     "author": "Vijish Madhavan",
     "tags": [
       "Tutorial"
@@ -1872,7 +1872,7 @@
   {
     "title": "SAHI",
     "url": "https://colab.research.google.com/github/obss/sahi/blob/main/demo/inference_for_yolov5.ipynb",
-    "date": "2023-02-23T22:26:41",
+    "date": "2023-02-23T23:26:41",
     "author": "Fatih Cagatay Akyon",
     "tags": [
       "Tutorial"
@@ -1883,7 +1883,7 @@
   {
     "title": "AmpliGraph",
     "url": "https://colab.research.google.com/github/Accenture/AmpliGraph/blob/main/docs/tutorials/AmpliGraphBasicsTutorial.ipynb",
-    "date": "2023-02-23T16:23:00",
+    "date": "2023-02-23T17:23:00",
     "author": "Luca Costabello",
     "tags": [
       "Tutorial"
@@ -1894,7 +1894,7 @@
   {
     "title": "NMT with attention",
     "url": "https://colab.research.google.com/github/tensorflow/text/blob/master/docs/tutorials/nmt_with_attention.ipynb",
-    "date": "2023-02-15T22:29:16",
+    "date": "2023-02-15T23:29:16",
     "author": "Minh-Thang Luong",
     "tags": [
       "Tutorial"
@@ -1905,7 +1905,7 @@
   {
     "title": "GLUE using BERT on TPU",
     "url": "https://colab.research.google.com/github/tensorflow/text/blob/master/docs/tutorials/bert_glue.ipynb",
-    "date": "2023-02-15T22:29:16",
+    "date": "2023-02-15T23:29:16",
     "author": "Anirudh Dubey",
     "tags": [
       "Tutorial"
@@ -1916,7 +1916,7 @@
   {
     "title": "TensorBoard",
     "url": "https://colab.research.google.com/github/tensorflow/tensorboard/blob/master/docs/scalars_and_keras.ipynb",
-    "date": "2023-02-10T15:27:35",
+    "date": "2023-02-10T16:27:35",
     "author": "Yuan Tang",
     "tags": [
       "Tutorial"
@@ -1927,7 +1927,7 @@
   {
     "title": "High-performance Simulation with Kubernetes",
     "url": "https://colab.research.google.com/github/tensorflow/federated/blob/master/docs/tutorials/high_performance_simulation_with_kubernetes.ipynb",
-    "date": "2023-01-31T18:31:06",
+    "date": "2023-01-31T19:31:06",
     "author": "Jason Roselander",
     "tags": [
       "Tutorial"
@@ -1938,7 +1938,7 @@
   {
     "title": "Compel",
     "url": "https://colab.research.google.com/github/damian0815/compel/blob/main/compel-demo.ipynb",
-    "date": "2023-01-26T09:35:51",
+    "date": "2023-01-26T10:35:51",
     "author": "Damian Stewart",
     "tags": [
       "Tutorial"
@@ -1949,7 +1949,7 @@
   {
     "title": "DALL·E Flow",
     "url": "https://colab.research.google.com/github/jina-ai/dalle-flow/blob/main/client.ipynb",
-    "date": "2023-01-26T09:12:13",
+    "date": "2023-01-26T10:12:13",
     "author": "Han Xiao",
     "tags": [
       "Tutorial"
@@ -1960,7 +1960,7 @@
   {
     "title": "Diffusers",
     "url": "https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/diffusers_intro.ipynb",
-    "date": "2023-01-17T09:56:51",
+    "date": "2023-01-17T10:56:51",
     "author": "Hugging Face",
     "tags": [
       "Tutorial"
@@ -1971,7 +1971,7 @@
   {
     "title": "Sample Factory",
     "url": "https://colab.research.google.com/github/alex-petrenko/sample-factory/blob/master/sf_examples/notebooks/samplefactory_hub_example.ipynb",
-    "date": "2023-01-17T00:35:24",
+    "date": "2023-01-17T01:35:24",
     "author": "Aleksei Petrenko",
     "tags": [
       "Tutorial"
@@ -1982,7 +1982,7 @@
   {
     "title": "Open-Assistant",
     "url": "https://colab.research.google.com/github/LAION-AI/Open-Assistant/blob/main/notebooks/data-augmentation/stackexchange-builder/stackexchange-builder.ipynb",
-    "date": "2023-01-14T22:51:09",
+    "date": "2023-01-14T23:51:09",
     "author": "Andreas Köpf",
     "tags": [
       "Tutorial"
@@ -1993,7 +1993,7 @@
   {
     "title": "panda-gym",
     "url": "https://colab.research.google.com/github/qgallouedec/panda-gym/blob/master/examples/PickAndPlace.ipynb",
-    "date": "2023-01-02T15:38:55",
+    "date": "2023-01-02T16:38:55",
     "author": "Quentin Gallouédec",
     "tags": [
       "Tutorial"
@@ -2004,7 +2004,7 @@
   {
     "title": "BANMo",
     "url": "https://colab.research.google.com/drive/1dQJn1vsuz0DkyRZbOA1SulkVQ0V1kMUP",
-    "date": "2022-12-30T04:10:22.190000",
+    "date": "2022-12-30T05:10:22.190000",
     "author": "Gengshan Yang",
     "tags": [
       "Tutorial"
@@ -2015,7 +2015,7 @@
   {
     "title": "tensor_parallel",
     "url": "https://colab.research.google.com/github/BlackSamorez/tensor_parallel/blob/master/examples/training_flan-t5-xl.ipynb",
-    "date": "2022-12-29T22:21:07",
+    "date": "2022-12-29T23:21:07",
     "author": "Andrei Panferov",
     "tags": [
       "Tutorial"
@@ -2026,7 +2026,7 @@
   {
     "title": "TPU",
     "url": "https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/keras_mnist_tpu.ipynb",
-    "date": "2022-12-20T16:56:20",
+    "date": "2022-12-20T17:56:20",
     "author": "Google",
     "tags": [
       "Tutorial"
@@ -2037,7 +2037,7 @@
   {
     "title": "rliable",
     "url": "https://colab.research.google.com/drive/1a0pSD-1tWhMmeJeeoyZM1A-HCW3yf1xR",
-    "date": "2022-12-19T13:52:53.221000",
+    "date": "2022-12-19T14:52:53.221000",
     "author": "Rishabh Agarwal",
     "tags": [
       "Tutorial"
@@ -2048,7 +2048,7 @@
   {
     "title": "TF-Agents",
     "url": "https://colab.research.google.com/github/tensorflow/agents/blob/master/docs/tutorials/0_intro_rl.ipynb",
-    "date": "2022-12-15T03:06:11",
+    "date": "2022-12-15T04:06:11",
     "author": "Sergio Guadarrama",
     "tags": [
       "Tutorial"
@@ -2059,7 +2059,7 @@
   {
     "title": "PyG",
     "url": "https://colab.research.google.com/drive/1h3-vJGRVloF5zStxL5I0rSy4ZUPNsjy8",
-    "date": "2022-12-08T06:57:19.504000",
+    "date": "2022-12-08T07:57:19.504000",
     "author": "Matthias Fey",
     "tags": [
       "Tutorial"
@@ -2070,7 +2070,7 @@
   {
     "title": "ruGPT3",
     "url": "https://colab.research.google.com/github/ai-forever/ru-gpts/blob/master/examples/ruGPT3XL_generation.ipynb",
-    "date": "2022-12-07T10:09:45",
+    "date": "2022-12-07T11:09:45",
     "author": "Anton Emelyanov",
     "tags": [
       "Tutorial"
@@ -2081,7 +2081,7 @@
   {
     "title": "Mubert",
     "url": "https://colab.research.google.com/github/ferluht/Mubert-Text-to-Music/blob/main/Mubert_Text_to_Music.ipynb",
-    "date": "2022-10-18T05:49:49",
+    "date": "2022-10-18T07:49:49",
     "author": "Ilya Belikov",
     "tags": [
       "Tutorial"
@@ -2092,7 +2092,7 @@
   {
     "title": "RuDOLPH",
     "url": "https://colab.research.google.com/github/ai-forever/ru-dolph/blob/master/jupyters/RUDOLPH_tune_i2t_pl.ipynb",
-    "date": "2022-10-06T05:58:40",
+    "date": "2022-10-06T07:58:40",
     "author": "Alex Shonenkov",
     "tags": [
       "Tutorial"
@@ -2103,7 +2103,7 @@
   {
     "title": "Batch RL",
     "url": "https://colab.research.google.com/drive/1ktlNni_vwFpFtCgUez-RHW0OdGc2U_Wv",
-    "date": "2022-10-03T22:28:53.194000",
+    "date": "2022-10-04T00:28:53.194000",
     "author": "Rishabh Agarwal",
     "tags": [
       "Tutorial"
@@ -2114,7 +2114,7 @@
   {
     "title": "EfficientDet",
     "url": "https://colab.research.google.com/github/google/automl/blob/master/efficientdet/tf2/tutorial.ipynb",
-    "date": "2022-09-27T17:35:24",
+    "date": "2022-09-27T19:35:24",
     "author": "Mingxing Tan",
     "tags": [
       "Tutorial"
@@ -2125,7 +2125,7 @@
   {
     "title": "RL Games",
     "url": "https://colab.research.google.com/github/Denys88/rl_games/blob/master/notebooks/brax_training.ipynb",
-    "date": "2022-09-27T01:46:11",
+    "date": "2022-09-27T03:46:11",
     "author": "Denys Makoviichuk",
     "tags": [
       "Tutorial"
@@ -2136,7 +2136,7 @@
   {
     "title": "ACME",
     "url": "https://colab.research.google.com/github/deepmind/acme/blob/master/examples/tutorial.ipynb",
-    "date": "2022-09-26T11:36:17",
+    "date": "2022-09-26T13:36:17",
     "author": "Matt Hoffman",
     "tags": [
       "Tutorial"
@@ -2147,7 +2147,7 @@
   {
     "title": "RWKV",
     "url": "https://colab.research.google.com/drive/1F7tZoPZaWJf1fsCmZ5tjw6sYHiFOYVWM",
-    "date": "2022-09-21T06:59:47.297000",
+    "date": "2022-09-21T08:59:47.297000",
     "author": "Bo Peng",
     "tags": [
       "Tutorial"
@@ -2158,7 +2158,7 @@
   {
     "title": "NetKet",
     "url": "https://colab.research.google.com/github/PhilipVinc/Lectures/blob/main/2202_NetKet/01_intro.ipynb",
-    "date": "2022-09-15T10:19:32",
+    "date": "2022-09-15T12:19:32",
     "author": "Filippo Vicentini",
     "tags": [
       "Tutorial"
@@ -2169,7 +2169,7 @@
   {
     "title": "Stable Diffusion",
     "url": "https://colab.research.google.com/github/CompVis/stable-diffusion/blob/main/scripts/latent_imagenet_diffusion.ipynb",
-    "date": "2022-08-10T14:30:49",
+    "date": "2022-08-10T16:30:49",
     "author": "Robin Rombach",
     "tags": [
       "Tutorial"
@@ -2180,7 +2180,7 @@
   {
     "title": "Deep-MAC",
     "url": "https://colab.research.google.com/github/tensorflow/models/blob/master/research/object_detection/colab_tutorials/deepmac_colab.ipynb",
-    "date": "2022-08-09T22:30:13",
+    "date": "2022-08-10T00:30:13",
     "author": "Vighnesh Birodkar",
     "tags": [
       "Tutorial"
@@ -2191,7 +2191,7 @@
   {
     "title": "NL-Augmenter",
     "url": "https://colab.research.google.com/github/GEM-benchmark/NL-Augmenter/blob/main/notebooks/Write_a_sample_transformation.ipynb",
-    "date": "2022-08-06T09:21:30",
+    "date": "2022-08-06T11:21:30",
     "author": "Aadesh Gupta",
     "tags": [
       "Tutorial"
@@ -2202,7 +2202,7 @@
   {
     "title": "Accelerate",
     "url": "https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/accelerate/simple_nlp_example.ipynb",
-    "date": "2022-07-27T12:04:57",
+    "date": "2022-07-27T14:04:57",
     "author": "Hugging Face",
     "tags": [
       "Tutorial"
@@ -2213,7 +2213,7 @@
   {
     "title": "YOLOv5 on Custom Objects",
     "url": "https://colab.research.google.com/drive/1gDZ2xcTOgR39tGGs-EZ6i3RTs16wmzZQ",
-    "date": "2022-07-20T19:33:01.740000",
+    "date": "2022-07-20T21:33:01.740000",
     "author": "Jacob Solawetz",
     "tags": [
       "Tutorial"
@@ -2224,7 +2224,7 @@
   {
     "title": "MindsEye",
     "url": "https://colab.research.google.com/drive/1cg0LZ5OfN9LAIB37Xq49as0fSJxcKtC5",
-    "date": "2022-07-06T09:59:55.331000",
+    "date": "2022-07-06T11:59:55.331000",
     "author": "multimodal.art",
     "tags": [
       "Tutorial"
@@ -2235,7 +2235,7 @@
   {
     "title": "py-irt",
     "url": "https://colab.research.google.com/github/nd-ball/py-irt/blob/master/examples/py-irt_example.ipynb",
-    "date": "2022-06-30T12:28:50",
+    "date": "2022-06-30T14:28:50",
     "author": "John Lalor",
     "tags": [
       "Tutorial"
@@ -2246,7 +2246,7 @@
   {
     "title": "BIG-bench",
     "url": "https://colab.research.google.com/github/google/BIG-bench/blob/master/notebooks/colab_examples.ipynb",
-    "date": "2022-06-27T22:11:44",
+    "date": "2022-06-28T00:11:44",
     "author": "Jaehoon Lee",
     "tags": [
       "Tutorial"
@@ -2257,7 +2257,7 @@
   {
     "title": "HuggingArtists",
     "url": "https://colab.research.google.com/github/AlekseyKorshuk/huggingartists/blob/master/huggingartists-demo.ipynb",
-    "date": "2022-06-25T14:54:18",
+    "date": "2022-06-25T16:54:18",
     "author": "Aleksey Korshuk",
     "tags": [
       "Tutorial"
@@ -2268,7 +2268,7 @@
   {
     "title": "Introduction to the TensorFlow Models NLP library",
     "url": "https://colab.research.google.com/github/tensorflow/models/blob/master/official/colab/nlp/nlp_modeling_library_intro.ipynb",
-    "date": "2022-06-22T18:46:35",
+    "date": "2022-06-22T20:46:35",
     "author": "Chen Chen",
     "tags": [
       "Tutorial"
@@ -2279,7 +2279,7 @@
   {
     "title": "Cirq",
     "url": "https://colab.research.google.com/github/quantumlib/Cirq/blob/master/docs/tutorials/basics.ipynb",
-    "date": "2022-06-21T21:38:39",
+    "date": "2022-06-21T23:38:39",
     "author": "Balint Pato",
     "tags": [
       "Tutorial"
@@ -2290,7 +2290,7 @@
   {
     "title": "CLIP-as-service",
     "url": "https://colab.research.google.com/github/jina-ai/clip-as-service/blob/main/docs/hosting/cas-on-colab.ipynb",
-    "date": "2022-06-19T21:42:49",
+    "date": "2022-06-19T23:42:49",
     "author": "Han Xiao",
     "tags": [
       "Tutorial"
@@ -2301,7 +2301,7 @@
   {
     "title": "TPOT",
     "url": "https://colab.research.google.com/github/EpistasisLab/tpot/blob/master/tutorials/Titanic_Kaggle.ipynb",
-    "date": "2022-06-15T18:28:30",
+    "date": "2022-06-15T20:28:30",
     "author": "Jason Moore",
     "tags": [
       "Tutorial"
@@ -2312,7 +2312,7 @@
   {
     "title": "Jina",
     "url": "https://colab.research.google.com/github/jina-ai/jina/blob/master/docs/Using_Jina_on_Colab.ipynb",
-    "date": "2022-06-11T21:00:20",
+    "date": "2022-06-11T23:00:20",
     "author": "Han Xiao",
     "tags": [
       "Tutorial"
@@ -2323,7 +2323,7 @@
   {
     "title": "MMRotate",
     "url": "https://colab.research.google.com/github/open-mmlab/mmrotate/blob/main/demo/MMRotate_Tutorial.ipynb",
-    "date": "2022-06-10T07:51:51",
+    "date": "2022-06-10T09:51:51",
     "author": "Yue Zhou",
     "tags": [
       "Tutorial"
@@ -2334,7 +2334,7 @@
   {
     "title": "Aesthetics Predictor",
     "url": "https://colab.research.google.com/github/LAION-AI/aesthetic-predictor/blob/main/asthetics_predictor.ipynb",
-    "date": "2022-06-04T09:20:08",
+    "date": "2022-06-04T11:20:08",
     "author": "LAION AI",
     "tags": [
       "Tutorial"
@@ -2345,7 +2345,7 @@
   {
     "title": "Flashlight",
     "url": "https://colab.research.google.com/github/flashlight/flashlight/blob/master/flashlight/app/asr/tutorial/notebooks/FinetuneCTC.ipynb",
-    "date": "2022-06-01T21:58:40",
+    "date": "2022-06-01T23:58:40",
     "author": "Jacob Kahn",
     "tags": [
       "Tutorial"
@@ -2356,7 +2356,7 @@
   {
     "title": "RL Unplugged",
     "url": "https://colab.research.google.com/github/deepmind/deepmind_research/blob/master/rl_unplugged/dmlab_r2d2.ipynb",
-    "date": "2022-05-26T16:42:33",
+    "date": "2022-05-26T18:42:33",
     "author": "Caglar Gulcehre",
     "tags": [
       "Tutorial"
@@ -2367,7 +2367,7 @@
   {
     "title": "Scenic",
     "url": "https://colab.research.google.com/github/google-research/scenic/blob/main/scenic/common_lib/colabs/scenic_playground.ipynb",
-    "date": "2022-05-04T20:21:28",
+    "date": "2022-05-04T22:21:28",
     "author": "Mostafa Dehghani",
     "tags": [
       "Tutorial"
@@ -2378,7 +2378,7 @@
   {
     "title": "Text generation with RNN",
     "url": "https://colab.research.google.com/github/tensorflow/text/blob/master/docs/tutorials/text_generation.ipynb",
-    "date": "2022-05-02T23:46:03",
+    "date": "2022-05-03T01:46:03",
     "author": "Anirudh Dubey",
     "tags": [
       "Tutorial"
@@ -2389,7 +2389,7 @@
   {
     "title": "CLIPDraw",
     "url": "https://colab.research.google.com/github/kvfrans/clipdraw/blob/main/clipdraw.ipynb",
-    "date": "2022-04-28T22:36:39",
+    "date": "2022-04-29T00:36:39",
     "author": "Kevin Frans",
     "tags": [
       "Tutorial"
@@ -2400,7 +2400,7 @@
   {
     "title": "DeepLab2",
     "url": "https://colab.research.google.com/github/google-research/deeplab2/blob/main/ViP_DeepLab_Demo.ipynb",
-    "date": "2022-04-27T19:04:35",
+    "date": "2022-04-27T21:04:35",
     "author": "Mark Weber",
     "tags": [
       "Tutorial"
@@ -2411,7 +2411,7 @@
   {
     "title": "CodeGen",
     "url": "https://colab.research.google.com/drive/1fQI8OgzMAR0bquCrvhlAtXSw6iMFbVgI",
-    "date": "2022-04-23T12:22:40.036000",
+    "date": "2022-04-23T14:22:40.036000",
     "author": "Erik Nijkamp",
     "tags": [
       "Tutorial"
@@ -2422,7 +2422,7 @@
   {
     "title": "Jraph",
     "url": "https://colab.research.google.com/github/google-deepmind/educational/blob/master/colabs/summer_schools/intro_to_graph_nets_tutorial_with_jraph.ipynb",
-    "date": "2022-04-14T23:12:40",
+    "date": "2022-04-15T01:12:40",
     "author": "Jonathan Godwin",
     "tags": [
       "Tutorial"
@@ -2433,7 +2433,7 @@
   {
     "title": "deep-significance",
     "url": "https://colab.research.google.com/github/Kaleidophon/deep-significance/blob/main/paper/deep-significance%20demo.ipynb",
-    "date": "2022-04-12T15:24:29",
+    "date": "2022-04-12T17:24:29",
     "author": "Dennis Ulmer",
     "tags": [
       "Tutorial"
@@ -2444,7 +2444,7 @@
   {
     "title": "Text classification with RNN",
     "url": "https://colab.research.google.com/github/tensorflow/text/blob/master/docs/tutorials/text_classification_rnn.ipynb",
-    "date": "2022-03-17T11:08:49",
+    "date": "2022-03-17T12:08:49",
     "author": "Anirudh Dubey",
     "tags": [
       "Tutorial"
@@ -2455,7 +2455,7 @@
   {
     "title": "TriMap",
     "url": "https://colab.research.google.com/github/eamid/examples/blob/master/TriMap.ipynb#scrollTo=nSyGA-ymB-jN",
-    "date": "2022-03-17T06:35:50",
+    "date": "2022-03-17T07:35:50",
     "author": "Ehsan Amid",
     "tags": [
       "Tutorial"
@@ -2466,7 +2466,7 @@
   {
     "title": "RLDS",
     "url": "https://colab.research.google.com/github/google-research/rlds/blob/main/rlds/examples/rlds_tutorial.ipynb",
-    "date": "2022-03-16T19:24:25",
+    "date": "2022-03-16T20:24:25",
     "author": "Sabela Ramos",
     "tags": [
       "Tutorial"
@@ -2477,7 +2477,7 @@
   {
     "title": "Real-Time Voice Cloning",
     "url": "https://colab.research.google.com/github/tugstugi/dl-colab-notebooks/blob/master/notebooks/RealTimeVoiceCloning.ipynb",
-    "date": "2022-03-07T23:03:44",
+    "date": "2022-03-08T00:03:44",
     "author": "Corentin Jemine",
     "tags": [
       "Tutorial"
@@ -2488,7 +2488,7 @@
   {
     "title": "BLIP",
     "url": "https://colab.research.google.com/github/salesforce/BLIP/blob/main/demo.ipynb",
-    "date": "2022-03-02T23:59:09",
+    "date": "2022-03-03T00:59:09",
     "author": "Junnan Li",
     "tags": [
       "Tutorial"
@@ -2499,7 +2499,7 @@
   {
     "title": "VideoGPT",
     "url": "https://colab.research.google.com/github/wilson1yan/VideoGPT/blob/master/notebooks/Using_VideoGPT.ipynb",
-    "date": "2022-03-02T18:08:47",
+    "date": "2022-03-02T19:08:47",
     "author": "Wilson Yan",
     "tags": [
       "Tutorial"
@@ -2510,7 +2510,7 @@
   {
     "title": "Silero Models",
     "url": "https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples.ipynb",
-    "date": "2022-02-27T19:20:42",
+    "date": "2022-02-27T20:20:42",
     "author": "Silero team",
     "tags": [
       "Tutorial"
@@ -2521,7 +2521,7 @@
   {
     "title": "Real-CUGAN",
     "url": "https://colab.research.google.com/github/bilibili/ailab/blob/main/Real-CUGAN/colab-demo.ipynb",
-    "date": "2022-02-27T16:04:07",
+    "date": "2022-02-27T17:04:07",
     "author": "bilibili",
     "tags": [
       "Tutorial"
@@ -2532,7 +2532,7 @@
   {
     "title": "ArcaneGAN",
     "url": "https://colab.research.google.com/drive/1r1hhciakk5wHaUn1eJk7TP58fV9mjy_W",
-    "date": "2022-02-17T10:56:31.826000",
+    "date": "2022-02-17T11:56:31.826000",
     "author": "Alexander Spirin",
     "tags": [
       "Tutorial"
@@ -2543,7 +2543,7 @@
   {
     "title": "textlesslib",
     "url": "https://colab.research.google.com/github/facebookresearch/textlesslib/blob/main/examples/resynthesis_and_continuation.ipynb",
-    "date": "2022-02-15T16:27:49",
+    "date": "2022-02-15T17:27:49",
     "author": "Eugene Kharitonov",
     "tags": [
       "Tutorial"
@@ -2554,7 +2554,7 @@
   {
     "title": "AV-HuBERT",
     "url": "https://colab.research.google.com/drive/1bNXkfpHiVHzXQH8WjGhzQ-fsDxolpUjD",
-    "date": "2022-02-12T18:06:02.002000",
+    "date": "2022-02-12T19:06:02.002000",
     "author": "Bowen Shi",
     "tags": [
       "Tutorial"
@@ -2565,7 +2565,7 @@
   {
     "title": "Lingvo",
     "url": "https://colab.research.google.com/github/tensorflow/lingvo/blob/master/codelabs/introduction.ipynb",
-    "date": "2022-01-28T21:20:28",
+    "date": "2022-01-28T22:20:28",
     "author": "Jonathan Shen",
     "tags": [
       "Tutorial"
@@ -2576,7 +2576,7 @@
   {
     "title": "DeepDream",
     "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/deepdream.ipynb",
-    "date": "2022-01-13T00:36:58",
+    "date": "2022-01-13T01:36:58",
     "author": "Alexander Mordvintsev",
     "tags": [
       "Tutorial"
@@ -2587,7 +2587,7 @@
   {
     "title": "FuseDream",
     "url": "https://colab.research.google.com/drive/190tKQf0aFj-Hi8STUrLc2m4DeOviv7NO",
-    "date": "2022-01-02T18:56:38.191000",
+    "date": "2022-01-02T19:56:38.191000",
     "author": "Xingchao Liu",
     "tags": [
       "Tutorial"
@@ -2598,7 +2598,7 @@
   {
     "title": "MLP",
     "url": "https://colab.research.google.com/github/bentrevett/pytorch-image-classification/blob/master/1_mlp.ipynb",
-    "date": "2021-12-26T12:04:54",
+    "date": "2021-12-26T13:04:54",
     "author": "Ben Trevett",
     "tags": [
       "Tutorial"
@@ -2609,7 +2609,7 @@
   {
     "title": "AlexNet",
     "url": "https://colab.research.google.com/github/bentrevett/pytorch-image-classification/blob/master/3_alexnet.ipynb",
-    "date": "2021-12-26T12:04:54",
+    "date": "2021-12-26T13:04:54",
     "author": "Ben Trevett",
     "tags": [
       "Tutorial"
@@ -2620,7 +2620,7 @@
   {
     "title": "VGG",
     "url": "https://colab.research.google.com/github/bentrevett/pytorch-image-classification/blob/master/4_vgg.ipynb",
-    "date": "2021-12-26T12:04:54",
+    "date": "2021-12-26T13:04:54",
     "author": "Ben Trevett",
     "tags": [
       "Tutorial"
@@ -2631,7 +2631,7 @@
   {
     "title": "LeNet",
     "url": "https://colab.research.google.com/github/bentrevett/pytorch-image-classification/blob/master/2_lenet.ipynb",
-    "date": "2021-12-26T11:45:50",
+    "date": "2021-12-26T12:45:50",
     "author": "Ben Trevett",
     "tags": [
       "Tutorial"
@@ -2642,7 +2642,7 @@
   {
     "title": "Music Composer",
     "url": "https://colab.research.google.com/github/ai-forever/music-composer/blob/master/src/Music_Composer_Demo_Colab_en.ipynb",
-    "date": "2021-12-20T10:00:20",
+    "date": "2021-12-20T11:00:20",
     "author": "bazanovvanya",
     "tags": [
       "Tutorial"
@@ -2653,7 +2653,7 @@
   {
     "title": "FLAML",
     "url": "https://colab.research.google.com/github/microsoft/FLAML/blob/master/notebook/flaml_automl.ipynb",
-    "date": "2021-12-17T01:11:33",
+    "date": "2021-12-17T02:11:33",
     "author": "Chi Wang",
     "tags": [
       "Tutorial"
@@ -2664,7 +2664,7 @@
   {
     "title": "CompilerGym",
     "url": "https://colab.research.google.com/github/facebookresearch/CompilerGym/blob/development/examples/getting-started.ipynb",
-    "date": "2021-11-16T11:09:44",
+    "date": "2021-11-16T12:09:44",
     "author": "Chris Cummins",
     "tags": [
       "Tutorial"
@@ -2675,7 +2675,7 @@
   {
     "title": "Reformer",
     "url": "https://colab.research.google.com/drive/1awNgXYtjvUeXl1gS-v1iyDXTJJ-fyJIK",
-    "date": "2021-11-06T23:17:34.930000",
+    "date": "2021-11-07T00:17:34.930000",
     "author": "Phil Wang",
     "tags": [
       "Tutorial"
@@ -2686,7 +2686,7 @@
   {
     "title": "ruDALL·E",
     "url": "https://colab.research.google.com/github/ai-forever/ru-dalle/blob/master/jupyters/ruDALLE-example-generation-A100.ipynb",
-    "date": "2021-11-03T16:34:46",
+    "date": "2021-11-03T17:34:46",
     "author": "Alex Shonenkov",
     "tags": [
       "Tutorial"
@@ -2697,7 +2697,7 @@
   {
     "title": "DeepStyle",
     "url": "https://colab.research.google.com/drive/14aJ7HQPbcP0sNRIY-FRO4u6lxtlyyxI_",
-    "date": "2021-10-01T20:36:39.161000",
+    "date": "2021-10-01T22:36:39.161000",
     "author": "Cameron Smith",
     "tags": [
       "Tutorial"
@@ -2708,7 +2708,7 @@
   {
     "title": "Text2Animation",
     "url": "https://colab.research.google.com/github/tg-bomze/collection-of-notebooks/blob/master/Text2Animation.ipynb",
-    "date": "2021-09-29T12:43:12",
+    "date": "2021-09-29T14:43:12",
     "author": "Katherine Crowson",
     "tags": [
       "Tutorial"
@@ -2719,7 +2719,7 @@
   {
     "title": "EfficientNetV2",
     "url": "https://colab.research.google.com/github/google/automl/blob/master/efficientnetv2/tutorial.ipynb",
-    "date": "2021-09-24T03:24:50",
+    "date": "2021-09-24T05:24:50",
     "author": "Mingxing Tan",
     "tags": [
       "Tutorial"
@@ -2730,7 +2730,7 @@
   {
     "title": "Clip retrieval",
     "url": "https://colab.research.google.com/github/rom1504/clip-retrieval/blob/master/notebook/clip-retrieval-getting-started.ipynb",
-    "date": "2021-09-21T20:42:15",
+    "date": "2021-09-21T22:42:15",
     "author": "Romain Beaumont",
     "tags": [
       "Tutorial"
@@ -2741,7 +2741,7 @@
   {
     "title": "img2dataset",
     "url": "https://colab.research.google.com/github/rom1504/img2dataset/blob/master/notebook/img2dataset_getting_started.ipynb",
-    "date": "2021-09-17T11:21:43",
+    "date": "2021-09-17T13:21:43",
     "author": "Romain Beaumont",
     "tags": [
       "Tutorial"
@@ -2752,7 +2752,7 @@
   {
     "title": "Droidlet",
     "url": "https://colab.research.google.com/github/facebookresearch/droidlet/blob/master/examples_and_tutorials/tutorials/droidlet_for_physical_robots.ipynb",
-    "date": "2021-09-15T18:42:04",
+    "date": "2021-09-15T20:42:04",
     "author": "Anurag Pratik",
     "tags": [
       "Tutorial"
@@ -2763,7 +2763,7 @@
   {
     "title": "GPT-J-6B",
     "url": "https://colab.research.google.com/github/kingoflolz/mesh-transformer-jax/blob/master/colab_demo.ipynb",
-    "date": "2021-09-15T03:53:58",
+    "date": "2021-09-15T05:53:58",
     "author": "Ben Wang",
     "tags": [
       "Tutorial"
@@ -2774,7 +2774,7 @@
   {
     "title": "Lucid Sonic Dreams",
     "url": "https://colab.research.google.com/drive/1Y5i50xSFIuN3V4Md8TB30_GOAtts7RQD",
-    "date": "2021-08-24T06:03:50.562000",
+    "date": "2021-08-24T08:03:50.562000",
     "author": "Mikael Alafriz",
     "tags": [
       "Tutorial"
@@ -2785,7 +2785,7 @@
   {
     "title": "textgenrnn",
     "url": "https://colab.research.google.com/drive/1mMKGnVxirJnqDViH7BDJxFqWrsXlPSoK",
-    "date": "2021-07-13T02:50:10.804000",
+    "date": "2021-07-13T04:50:10.804000",
     "author": "Max Woolf",
     "tags": [
       "Tutorial"
@@ -2796,7 +2796,7 @@
   {
     "title": "DDSP",
     "url": "https://colab.research.google.com/github/magenta/ddsp/blob/main/ddsp/colab/tutorials/0_processor.ipynb",
-    "date": "2021-06-30T22:43:01",
+    "date": "2021-07-01T00:43:01",
     "author": "Jesse Engel",
     "tags": [
       "Tutorial"
@@ -2807,7 +2807,7 @@
   {
     "title": "BasicSR",
     "url": "https://colab.research.google.com/drive/1JQScYICvEC3VqaabLu-lxvq9h7kSV1ML",
-    "date": "2021-06-07T14:23:20.789000",
+    "date": "2021-06-07T16:23:20.789000",
     "author": "Xintao Wang",
     "tags": [
       "Tutorial"
@@ -2818,7 +2818,7 @@
   {
     "title": "TensorFlowTTS",
     "url": "https://colab.research.google.com/github/TensorSpeech/TensorFlowTTS/blob/master/notebooks/TensorFlowTTS_FastSpeech_with_TFLite.ipynb",
-    "date": "2021-06-01T10:45:38",
+    "date": "2021-06-01T12:45:38",
     "author": "Minh Nguyen Quan Anh",
     "tags": [
       "Tutorial"
@@ -2829,7 +2829,7 @@
   {
     "title": "Hyperopt",
     "url": "https://colab.research.google.com/github/hyperopt/hyperopt/blob/master/tutorial/01.BasicTutorial.ipynb",
-    "date": "2021-06-01T07:48:01",
+    "date": "2021-06-01T09:48:01",
     "author": "James Bergstra",
     "tags": [
       "Tutorial"
@@ -2840,7 +2840,7 @@
   {
     "title": "CNN",
     "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/images/cnn.ipynb",
-    "date": "2021-05-21T22:21:48",
+    "date": "2021-05-22T00:21:48",
     "author": "Billy Lamberta",
     "tags": [
       "Tutorial"
@@ -2851,7 +2851,7 @@
   {
     "title": "Custom GPT-2 + Tokenizer",
     "url": "https://colab.research.google.com/drive/144MdX5aLqrQ3-YW-po81CQMrD6kpgpYh",
-    "date": "2021-05-17T03:34:24.690000",
+    "date": "2021-05-17T05:34:24.690000",
     "author": "Max Woolf",
     "tags": [
       "Tutorial"
@@ -2862,7 +2862,7 @@
   {
     "title": "Train a GPT-2 Text-Generating Model",
     "url": "https://colab.research.google.com/drive/15qBZx5y9rdaQSyWpsreMDnTiZ5IlN0zD",
-    "date": "2021-05-17T03:34:00.007000",
+    "date": "2021-05-17T05:34:00.007000",
     "author": "Max Woolf",
     "tags": [
       "Tutorial"
@@ -2873,7 +2873,7 @@
   {
     "title": "EasyNMT",
     "url": "https://colab.research.google.com/drive/1X47vgSiOphpxS5w_LPtjQgJmiSTNfRNC",
-    "date": "2021-04-26T20:26:05.741000",
+    "date": "2021-04-26T22:26:05.741000",
     "author": "Nils Reimers",
     "tags": [
       "Tutorial"
@@ -2884,7 +2884,7 @@
   {
     "title": "SkinDeep",
     "url": "https://colab.research.google.com/github/vijishmadhavan/SkinDeep/blob/master/SkinDeep_good.ipynb",
-    "date": "2021-04-24T15:45:23",
+    "date": "2021-04-24T17:45:23",
     "author": "Vijish Madhavan",
     "tags": [
       "Tutorial"
@@ -2895,7 +2895,7 @@
   {
     "title": "PaddleHub",
     "url": "https://colab.research.google.com/github/PaddlePaddle/PaddleHub/blob/develop/demo/serving/bentoml/cloud-native-model-serving-with-bentoml.ipynb",
-    "date": "2021-04-20T11:56:43",
+    "date": "2021-04-20T13:56:43",
     "author": "Zeyu Chen",
     "tags": [
       "Tutorial"
@@ -2906,7 +2906,7 @@
   {
     "title": "OCTIS",
     "url": "https://colab.research.google.com/github/MIND-Lab/OCTIS/blob/master/examples/OCTIS_Optimizing_CTM.ipynb",
-    "date": "2021-04-19T13:32:45",
+    "date": "2021-04-19T15:32:45",
     "author": "Silvia Terragni",
     "tags": [
       "Tutorial"
@@ -2917,7 +2917,7 @@
   {
     "title": "PyTorchVideo",
     "url": "https://colab.research.google.com/github/facebookresearch/pytorchvideo/blob/main/tutorials/accelerator/Build_your_model_with_PytorchVideo_Accelerator.ipynb",
-    "date": "2021-04-13T18:02:31",
+    "date": "2021-04-13T20:02:31",
     "author": "Haoqi Fan",
     "tags": [
       "Tutorial"
@@ -2928,7 +2928,7 @@
   {
     "title": "NeuSpell",
     "url": "https://colab.research.google.com/github/neuspell/neuspell/blob/master/scripts/english_baselines/2_jamspell.ipynb",
-    "date": "2021-04-03T19:10:43",
+    "date": "2021-04-03T21:10:43",
     "author": "Sai Muralidhar Jayanthi",
     "tags": [
       "Tutorial"
@@ -2939,7 +2939,7 @@
   {
     "title": "GPT Neo",
     "url": "https://colab.research.google.com/github/EleutherAI/GPTNeo/blob/master/GPTNeo_example_notebook.ipynb",
-    "date": "2021-03-28T16:19:16",
+    "date": "2021-03-28T18:19:16",
     "author": "EleutherAI",
     "tags": [
       "Tutorial"
@@ -2950,7 +2950,7 @@
   {
     "title": "CVAE",
     "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/cvae.ipynb",
-    "date": "2021-03-22T17:45:23",
+    "date": "2021-03-22T18:45:23",
     "author": "Diederik Kingma",
     "tags": [
       "Tutorial"
@@ -2961,7 +2961,7 @@
   {
     "title": "Big Sleep",
     "url": "https://colab.research.google.com/drive/1MEWKbm-driRNF8PrU7ogS5o3se-ePyPb",
-    "date": "2021-03-17T02:50:21.123000",
+    "date": "2021-03-17T03:50:21.123000",
     "author": "Phil Wang",
     "tags": [
       "Tutorial"
@@ -2972,7 +2972,7 @@
   {
     "title": "Deep Daze",
     "url": "https://colab.research.google.com/drive/1_YOHdORb0Fg1Q7vWZ_KlrtFe9Ur3pmVj",
-    "date": "2021-03-17T02:49:40.476000",
+    "date": "2021-03-17T03:49:40.476000",
     "author": "Phil Wang",
     "tags": [
       "Tutorial"
@@ -2983,7 +2983,7 @@
   {
     "title": "DCGAN",
     "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/dcgan.ipynb",
-    "date": "2021-03-12T19:23:19",
+    "date": "2021-03-12T20:23:19",
     "author": "Alec Radford",
     "tags": [
       "Tutorial"
@@ -2994,7 +2994,7 @@
   {
     "title": "Adversarial FGSM",
     "url": "https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/adversarial_fgsm.ipynb",
-    "date": "2021-03-12T19:15:17",
+    "date": "2021-03-12T20:15:17",
     "author": "Ian Goodfellow",
     "tags": [
       "Tutorial"
@@ -3005,7 +3005,7 @@
   {
     "title": "GAN steerability",
     "url": "https://colab.research.google.com/drive/1kn6yG8PqD1U2bUcy32V1iAVjzlcQWcG3",
-    "date": "2021-03-04T21:50:16.124000",
+    "date": "2021-03-04T22:50:16.124000",
     "author": "Ali Jahanian",
     "tags": [
       "Tutorial"
@@ -3016,7 +3016,7 @@
   {
     "title": "Trax",
     "url": "https://colab.research.google.com/github/google/trax/blob/master/trax/intro.ipynb",
-    "date": "2021-02-17T23:17:16",
+    "date": "2021-02-18T00:17:16",
     "author": "Google",
     "tags": [
       "Tutorial"
@@ -3027,7 +3027,7 @@
   {
     "title": "bsuite",
     "url": "https://colab.research.google.com/drive/1rU20zJ281sZuMD1DHbsODFr1DbASL0RH",
-    "date": "2021-02-12T23:59:26.054000",
+    "date": "2021-02-13T00:59:26.054000",
     "author": "Ian Osband",
     "tags": [
       "Tutorial"
@@ -3038,7 +3038,7 @@
   {
     "title": "TF-Ranking",
     "url": "https://colab.research.google.com/github/tensorflow/ranking/blob/master/tensorflow_ranking/examples/handling_sparse_features.ipynb",
-    "date": "2021-02-04T05:28:28",
+    "date": "2021-02-04T06:28:28",
     "author": "Rama Kumar",
     "tags": [
       "Tutorial"
@@ -3049,7 +3049,7 @@
   {
     "title": "Toon-Me",
     "url": "https://colab.research.google.com/github/vijishmadhavan/Light-Up/blob/master/Toon_Me_(Try_it_on_Colab).ipynb",
-    "date": "2021-01-22T10:24:34",
+    "date": "2021-01-22T11:24:34",
     "author": "Vijish Madhavan",
     "tags": [
       "Tutorial"
@@ -3060,7 +3060,7 @@
   {
     "title": "TensorNetwork",
     "url": "https://colab.research.google.com/github/google/TensorNetwork/blob/master/colabs/Tensor_Networks_in_Neural_Networks.ipynb",
-    "date": "2021-01-21T01:24:37",
+    "date": "2021-01-21T02:24:37",
     "author": "Chase Roberts",
     "tags": [
       "Tutorial"
@@ -3071,7 +3071,7 @@
   {
     "title": "Spleeter",
     "url": "https://colab.research.google.com/github/deezer/spleeter/blob/master/spleeter.ipynb",
-    "date": "2021-01-10T22:44:22",
+    "date": "2021-01-10T23:44:22",
     "author": "Romain Hennequin",
     "tags": [
       "Tutorial"
@@ -3082,7 +3082,7 @@
   {
     "title": "Bullet Physics SDK",
     "url": "https://colab.research.google.com/github/bulletphysics/bullet3/blob/master/examples/pybullet/notebooks/HelloPyBullet.ipynb",
-    "date": "2020-10-13T22:34:33",
+    "date": "2020-10-14T00:34:33",
     "author": "Erwin Coumans",
     "tags": [
       "Tutorial"
@@ -3093,7 +3093,7 @@
   {
     "title": "Person Remover",
     "url": "https://colab.research.google.com/drive/1JDpH8MAjaKoekQ_H9ZaxYJ9_axiDtDGm",
-    "date": "2020-08-22T12:10:39.644000",
+    "date": "2020-08-22T14:10:39.644000",
     "author": "Javier Gamazo",
     "tags": [
       "Tutorial"
@@ -3104,7 +3104,7 @@
   {
     "title": "Semantic Segmentation",
     "url": "https://colab.research.google.com/github/CSAILVision/semantic-segmentation-pytorch/blob/master/notebooks/DemoSegmenter.ipynb",
-    "date": "2020-08-21T08:44:20",
+    "date": "2020-08-21T10:44:20",
     "author": "Bolei Zhou",
     "tags": [
       "Tutorial"
@@ -3115,7 +3115,7 @@
   {
     "title": "Gin Config",
     "url": "https://colab.research.google.com/github/google/gin-config/blob/master/gin/gin_intro.ipynb",
-    "date": "2020-08-13T07:12:24",
+    "date": "2020-08-13T09:12:24",
     "author": "Dan Holtmann-Rice",
     "tags": [
       "Tutorial"
@@ -3126,7 +3126,7 @@
   {
     "title": "Dopamine",
     "url": "https://colab.research.google.com/github/google/dopamine/blob/master/dopamine/colab/jax_agent_visualizer.ipynb",
-    "date": "2020-08-03T23:51:03",
+    "date": "2020-08-04T01:51:03",
     "author": "Pablo Castro",
     "tags": [
       "Tutorial"
@@ -3137,7 +3137,7 @@
   {
     "title": "Analyzing Tennis Serve",
     "url": "https://colab.research.google.com/github/google/making_with_ml/blob/master/sports_ai/Sports_AI_Analysis.ipynb",
-    "date": "2020-07-14T19:53:39",
+    "date": "2020-07-14T21:53:39",
     "author": "Dale Markowitz",
     "tags": [
       "Tutorial"
@@ -3148,7 +3148,7 @@
   {
     "title": "YOLOv4",
     "url": "https://colab.research.google.com/drive/1_GdoqCJWXsChrOiY8sZMr_zbr_fH-0Fg",
-    "date": "2020-06-25T01:33:44.334000",
+    "date": "2020-06-25T03:33:44.334000",
     "author": "Alexey Bochkovskiy",
     "tags": [
       "Tutorial"
@@ -3159,7 +3159,7 @@
   {
     "title": "TensorFlow Graphics",
     "url": "https://colab.research.google.com/github/tensorflow/graphics/blob/master/tensorflow_graphics/notebooks/6dof_alignment.ipynb",
-    "date": "2020-05-20T21:01:19",
+    "date": "2020-05-20T23:01:19",
     "author": "Julien Valentin",
     "tags": [
       "Tutorial"
@@ -3170,7 +3170,7 @@
   {
     "title": "GAN Dissection",
     "url": "https://colab.research.google.com/github/SIDN-IAP/global-model-repr/blob/master/notebooks/gandissect_solutions.ipynb",
-    "date": "2020-05-04T18:18:59",
+    "date": "2020-05-04T20:18:59",
     "author": "David Bau",
     "tags": [
       "Tutorial"
@@ -3181,7 +3181,7 @@
   {
     "title": "Sonnet",
     "url": "https://colab.research.google.com/github/deepmind/sonnet/blob/v2/examples/little_gan_on_mnist.ipynb",
-    "date": "2020-04-17T08:19:41",
+    "date": "2020-04-17T10:19:41",
     "author": "Malcolm Reynolds",
     "tags": [
       "Tutorial"
@@ -3192,7 +3192,7 @@
   {
     "title": "Classification of chest vs. adominal X-rays",
     "url": "https://colab.research.google.com/github/mdai/ml-lessons/blob/master/lesson1-xray-images-classification.ipynb",
-    "date": "2020-03-07T06:47:00",
+    "date": "2020-03-07T07:47:00",
     "author": "tmoneyx01",
     "tags": [
       "Tutorial"
@@ -3203,7 +3203,7 @@
   {
     "title": "Earth Engine Python API and Folium Interactive Mapping",
     "url": "https://colab.research.google.com/github/giswqs/qgis-earthengine-examples/blob/master/Folium/ee-api-folium-setup.ipynb",
-    "date": "2020-01-20T15:22:51",
+    "date": "2020-01-20T16:22:51",
     "author": "Qiusheng Wu",
     "tags": [
       "Tutorial"
@@ -3214,7 +3214,7 @@
   {
     "title": "Tensor2Tensor",
     "url": "https://colab.research.google.com/github/tensorflow/tensor2tensor/blob/master/tensor2tensor/notebooks/Transformer_translate.ipynb",
-    "date": "2020-01-14T19:45:24",
+    "date": "2020-01-14T20:45:24",
     "author": "Ashish Vaswani",
     "tags": [
       "Tutorial"
@@ -3225,7 +3225,7 @@
   {
     "title": "Traffic counting",
     "url": "https://colab.research.google.com/drive/12N4m_RYKqrpozRzh9qe7nQE_sIqQH9U8",
-    "date": "2020-01-10T13:39:39.317000",
+    "date": "2020-01-10T14:39:39.317000",
     "author": "Andrey Nikishaev",
     "tags": [
       "Tutorial"
@@ -3236,7 +3236,7 @@
   {
     "title": "Imagededup",
     "url": "https://colab.research.google.com/github/idealo/imagededup/blob/master/examples/CIFAR10_duplicates.ipynb",
-    "date": "2019-10-03T15:27:35",
+    "date": "2019-10-03T17:27:35",
     "author": "Tanuj Jain",
     "tags": [
       "Tutorial"

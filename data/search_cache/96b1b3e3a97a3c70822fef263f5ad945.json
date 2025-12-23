@@ -1,0 +1,37 @@
+{
+  "query": "Catboost official documentation",
+  "provider": "duckduckgo",
+  "timestamp": "2025-12-23T14:44:03.831666",
+  "results": [
+    {
+      "title": "CatBoost",
+      "snippet": "CatBoost",
+      "url": "https://catboost.ai/docs/en/",
+      "source": "duckduckgo"
+    },
+    {
+      "title": "GitHub - catboost/catboost: A fast, scalable, high performance Gradient ...",
+      "snippet": "GitHub - catboost/catboost: A fast, scalable, high performance Gradient ...",
+      "url": "https://github.com/catboost/catboost",
+      "source": "duckduckgo"
+    },
+    {
+      "title": "CatBoost - open-source gradient boosting library",
+      "snippet": "CatBoost - open-source gradient boosting library",
+      "url": "https://catboost.ai/",
+      "source": "duckduckgo"
+    },
+    {
+      "title": "CatBoost - Wikipedia",
+      "snippet": "CatBoost - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Catboost",
+      "source": "duckduckgo"
+    },
+    {
+      "title": "CatBoost in Machine Learning: A Detailed Guide - DataCamp",
+      "snippet": "CatBoost in Machine Learning: A Detailed Guide - DataCamp",
+      "url": "https://www.datacamp.com/tutorial/catboost",
+      "source": "duckduckgo"
+    }
+  ]
+}
