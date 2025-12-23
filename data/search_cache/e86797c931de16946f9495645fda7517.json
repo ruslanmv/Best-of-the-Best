@@ -1,0 +1,37 @@
+{
+  "query": "Catboost tutorial latest",
+  "provider": "duckduckgo",
+  "timestamp": "2025-12-23T14:44:06.304517",
+  "results": [
+    {
+      "title": "Tutorials - CatBoost",
+      "snippet": "Tutorials - CatBoost",
+      "url": "https://catboost.ai/docs/en/concepts/tutorials",
+      "source": "duckduckgo"
+    },
+    {
+      "title": "GitHub - catboost/tutorials: CatBoost tutorials repository",
+      "snippet": "GitHub - catboost/tutorials: CatBoost tutorials repository",
+      "url": "https://github.com/catboost/tutorials",
+      "source": "duckduckgo"
+    },
+    {
+      "title": "Introduction to CatBoost: The Best Gradient Boosting Method?",
+      "snippet": "Introduction to CatBoost: The Best Gradient Boosting Method?",
+      "url": "https://www.youtube.com/watch?v=iTvw3LfI3xU",
+      "source": "duckduckgo"
+    },
+    {
+      "title": "CatBoost in Machine Learning: A Detailed Guide - DataCamp",
+      "snippet": "CatBoost in Machine Learning: A Detailed Guide - DataCamp",
+      "url": "https://www.datacamp.com/tutorial/catboost",
+      "source": "duckduckgo"
+    },
+    {
+      "title": "catboost Python Guide [2025] | PyPI Tutorial",
+      "snippet": "catboost Python Guide [2025] | PyPI Tutorial",
+      "url": "https://generalistprogrammer.com/tutorials/catboost-python-package-guide",
+      "source": "duckduckgo"
+    }
+  ]
+}

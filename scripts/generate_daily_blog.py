@@ -34,15 +34,32 @@ from typing import Any, Dict, List, Optional, Tuple
 
 # Setup paths
 CURRENT_DIR = Path(__file__).resolve().parent
+BASE_DIR = CURRENT_DIR.parent
 sys.path.insert(0, str(CURRENT_DIR))
 
-# Load environment variables
+# Load environment variables (production-safe)
 try:
     from dotenv import load_dotenv
-    load_dotenv(dotenv_path=CURRENT_DIR.parent / '.env', override=False)
-    print("✅ Loaded environment variables from .env")
+
+    candidates = [
+        BASE_DIR / ".env",           # repo root/.env (typical)
+        Path.cwd() / ".env",         # if launched from repo root
+    ]
+
+    loaded = False
+    for env_path in candidates:
+        if env_path.exists():
+            load_dotenv(dotenv_path=env_path, override=False)
+            print(f"✅ Loaded environment variables from: {env_path}")
+            loaded = True
+            break
+
+    if not loaded:
+        print("⚠️  No .env file found. Using system environment variables.")
+
 except ImportError:
     print("⚠️  python-dotenv not installed. Using system environment variables.")
+
 
 from crewai import Agent, Task, Crew, Process  # type: ignore
 from llm_client import llm
