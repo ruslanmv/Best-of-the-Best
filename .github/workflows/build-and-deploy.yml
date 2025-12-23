@@ -71,13 +71,34 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add README.md data/tracking.db data/blog_coverage.json* blog/posts/*.md blog/posts/index.json blog/api/*.json blog/api/*.xml blog/api/README.md blog/*.html || true
-          git diff --staged --quiet || git commit -m "📝 Daily update: blog post + README tables - $(date +'%Y-%m-%d')"
 
-          # Fix: Pull latest changes (rebase) to avoid "fetch first" errors
-          git pull --rebase origin main
+          # Pull latest changes first to avoid conflicts
+          git pull --rebase origin main || {
+            echo "No remote changes to pull or already up to date"
+          }
 
-          git push
+          # Add files and directories (using safer directory-based approach)
+          git add README.md || true
+          git add data/ || true
+          git add blog/posts/ || true
+          git add blog/api/ || true
+          git add blog/ || true
+
+          # Check if there are any changes to commit
+          if git diff --staged --quiet; then
+            echo "✓ No changes to commit"
+            exit 0
+          fi
+
+          # Commit changes
+          git commit -m "📝 Daily update: blog post + README tables - $(date +'%Y-%m-%d')"
+
+          # Push changes with retry logic
+          git push || {
+            echo "Push failed, trying to pull and push again..."
+            git pull --rebase origin main
+            git push
+          }
 
       # -----------------------------------------------------------
       # 4) Jekyll Build (Manual Build)
