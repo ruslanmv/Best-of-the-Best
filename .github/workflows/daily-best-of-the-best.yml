@@ -77,6 +77,10 @@ jobs:
           NEWS_LLM_MODEL: "ollama/llama3:8b"
           OLLAMA_HOST: "http://127.0.0.1:11434"
 
+          # LiteLLM timeout settings (prevent long hangs, enable fast retries)
+          LITELLM_REQUEST_TIMEOUT: "120"
+          LITELLM_NUM_RETRIES: "2"
+
           # Image generation (optional - will create placeholders if not set)
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
 
