@@ -107,6 +107,56 @@ rate_limiter = RateLimiter()
 
 
 # ============================================================================
+# README SANITIZATION FOR LLM SAFETY
+# ============================================================================
+
+# Pattern to match inline base64-encoded images (SVG badges, etc.)
+_INLINE_BASE64_RE = re.compile(r"data:image\/[^;\)]+;base64,[A-Za-z0-9+/=]+", re.IGNORECASE)
+
+
+def sanitize_readme_for_llm(text: str, max_chars: int = 20000) -> str:
+    """
+    Sanitize README content to prevent LLM timeouts from massive base64 images.
+
+    This function:
+    - Removes inline base64-encoded images (especially SVG badges)
+    - Drops very long lines that likely contain minified/encoded content
+    - Caps total length to prevent memory issues
+
+    Args:
+        text: Raw README content
+        max_chars: Maximum characters to return (default: 20000)
+
+    Returns:
+        Sanitized README content safe for LLM processing
+    """
+    if not text:
+        return text
+
+    # Remove inline base64 images (common in badges)
+    cleaned = _INLINE_BASE64_RE.sub("data:image/<stripped>;base64,<stripped>", text)
+
+    # Remove extremely long lines (likely base64 or minified content)
+    lines: List[str] = []
+    for line in cleaned.splitlines():
+        # Skip lines with base64 that are very long
+        if len(line) > 2000 and ("base64" in line.lower() or "data:image" in line.lower()):
+            continue
+        # Skip any pathologically long lines
+        if len(line) > 6000:
+            continue
+        lines.append(line)
+
+    cleaned = "\n".join(lines)
+
+    # Cap total length
+    if len(cleaned) > max_chars:
+        cleaned = cleaned[:max_chars - 400] + "\n\n[...truncated for LLM safety...]\n"
+
+    return cleaned
+
+
+# ============================================================================
 # CACHING
 # ============================================================================
 
@@ -826,6 +876,9 @@ def scrape_readme_smart(url_or_name: str) -> Tuple[bool, str]:
          source = "web"
 
     if readme_content:
+        # Sanitize README content to prevent LLM timeouts from massive base64 images
+        readme_content = sanitize_readme_for_llm(readme_content)
+
         # Cache the result
         cache_data = [{"content": readme_content, "source": source}]
         cache_result(cache_key, "readme", cache_data)
