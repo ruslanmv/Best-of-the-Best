@@ -7,5 +7,23 @@
     "author": "Ruslanmv",
     "tags": [],
     "excerpt": "**"
+  },
+  {
+    "filename": "2025-12-23-package-catboost.md",
+    "url": "/blog/posts/2025-12-23-package-catboost.html",
+    "title": "Catboost Guide",
+    "date": "2025-12-23T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "---"
+  },
+  {
+    "filename": "2025-12-23-package-langchain.md",
+    "url": "/blog/posts/2025-12-23-package-langchain.html",
+    "title": "Langchain Guide",
+    "date": "2025-12-23T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "template = PromptTemplate(\n    input_variables=[\"name\"],\n    template=\"Hello, {name}!\",\n)"
   }
 ]

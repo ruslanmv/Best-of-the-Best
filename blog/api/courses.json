@@ -2,7 +2,7 @@
   {
     "title": "ARENA",
     "url": "https://colab.research.google.com/drive/1vuQOB2Gd7OcfzH2y9djXm9OdZA_DcxYz",
-    "date": "2024-12-30T09:43:08.970000",
+    "date": "2024-12-30T08:43:08.970000",
     "author": "Callum McDougall",
     "tags": [
       "Course"
@@ -13,7 +13,7 @@
   {
     "title": "The Autodiff Cookbook",
     "url": "https://colab.research.google.com/github/google/jax/blob/main/docs/notebooks/autodiff_cookbook.ipynb",
-    "date": "2024-09-20T16:52:33",
+    "date": "2024-09-20T14:52:33",
     "author": "Alex Wiltschko",
     "tags": [
       "Course"
@@ -24,7 +24,7 @@
   {
     "title": "Machine Learning Simplified",
     "url": "https://colab.research.google.com/github/5x12/themlsbook/blob/master/chapter2/knn.ipynb",
-    "date": "2024-08-29T21:35:56",
+    "date": "2024-08-29T19:35:56",
     "author": "Andrew Wolf",
     "tags": [
       "Course"
@@ -35,7 +35,7 @@
   {
     "title": "Anthropic courses",
     "url": "https://colab.research.google.com/github/anthropics/courses/blob/master/anthropic_api_fundamentals/01_getting_started.ipynb",
-    "date": "2024-08-22T20:27:24",
+    "date": "2024-08-22T18:27:24",
     "author": "Anthropic",
     "tags": [
       "Course"
@@ -46,7 +46,7 @@
   {
     "title": "mlcourse.ai",
     "url": "https://colab.research.google.com/github/Yorko/mlcourse.ai/blob/main/jupyter_english/topic01_pandas_data_analysis/topic1_pandas_data_analysis.ipynb",
-    "date": "2024-08-19T17:09:13",
+    "date": "2024-08-19T15:09:13",
     "author": "Yury Kashnitsky",
     "tags": [
       "Course"
@@ -57,7 +57,7 @@
   {
     "title": "Deep RL Course",
     "url": "https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit1/unit1.ipynb",
-    "date": "2024-06-24T23:48:28",
+    "date": "2024-06-24T21:48:28",
     "author": "Thomas Simonini",
     "tags": [
       "Course"
@@ -68,7 +68,7 @@
   {
     "title": "Generative AI for Beginners - A Course",
     "url": "https://colab.research.google.com/github/microsoft/generative-ai-for-beginners/blob/main/06-text-generation-apps/notebook-azure-openai.ipynb",
-    "date": "2024-02-22T10:42:12",
+    "date": "2024-02-22T09:42:12",
     "author": "microsoft",
     "tags": [
       "Course"
@@ -79,7 +79,7 @@
   {
     "title": "DSP theory",
     "url": "https://colab.research.google.com/github/hukenovs/dsp-theory/blob/master/src/dsp_theory_1_signals.ipynb",
-    "date": "2022-10-18T12:34:16",
+    "date": "2022-10-18T10:34:16",
     "author": "Alexander Kapitanov",
     "tags": [
       "Course"
@@ -90,7 +90,7 @@
   {
     "title": "Machine learning course",
     "url": "https://colab.research.google.com/github/fbeilstein/machine_learning/blob/master/lecture_01_introduction.ipynb",
-    "date": "2021-09-02T17:07:24",
+    "date": "2021-09-02T15:07:24",
     "author": "Тимчишин Віталій",
     "tags": [
       "Course"
@@ -101,7 +101,7 @@
   {
     "title": "NYU-DLSP20",
     "url": "https://colab.research.google.com/github/Atcold/NYU-DLSP20/blob/master/00-logic_neuron_programming.ipynb",
-    "date": "2019-10-30T06:52:10",
+    "date": "2019-10-30T05:52:10",
     "author": "Yann LeCun",
     "tags": [
       "Course"
