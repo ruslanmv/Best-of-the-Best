@@ -33,5 +33,12 @@
     "version": 1,
     "date": "2025-12-24",
     "filename": "2025-12-24-package-featured.md"
+  },
+  {
+    "kind": "package",
+    "id": "tensorflow",
+    "version": 1,
+    "date": "2025-12-25",
+    "filename": "2025-12-25-package-tensorflow.md"
   }
 ]
