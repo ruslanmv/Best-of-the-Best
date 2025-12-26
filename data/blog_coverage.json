@@ -40,5 +40,12 @@
     "version": 1,
     "date": "2025-12-25",
     "filename": "2025-12-25-package-tensorflow.md"
+  },
+  {
+    "kind": "package",
+    "id": "transformers",
+    "version": 1,
+    "date": "2025-12-26",
+    "filename": "2025-12-26-package-transformers.md"
   }
 ]
