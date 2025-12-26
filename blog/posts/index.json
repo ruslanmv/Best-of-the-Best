@@ -18,6 +18,15 @@
     "excerpt": "**"
   },
   {
+    "filename": "2025-12-25-package-langgraph.md",
+    "url": "/blog/posts/2025-12-25-package-langgraph.html",
+    "title": "Langgraph",
+    "date": "2025-12-25T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "```\npip install langgraph\n```"
+  },
+  {
     "filename": "2025-12-23-package-catboost.md",
     "url": "/blog/posts/2025-12-23-package-catboost.html",
     "title": "Catboost Guide",
