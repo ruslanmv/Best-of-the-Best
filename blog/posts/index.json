@@ -52,5 +52,14 @@
     "author": "Ruslanmv",
     "tags": [],
     "excerpt": "template = PromptTemplate(\n    input_variables=[\"name\"],\n    template=\"Hello, {name}!\",\n)"
+  },
+  {
+    "filename": "2025-12-27-package-ollama.md",
+    "url": "/blog/posts/2025-12-27-package-ollama.html",
+    "title": "Mastering Ollama: A Comprehensive Guide",
+    "date": "2025-12-27T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "* Natural Language Processing (NLP) capabilities\n* Support for multiple programming languages\n* Integration with popular frameworks and libraries"
   }
 ]

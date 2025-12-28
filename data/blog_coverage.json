@@ -54,5 +54,12 @@
     "version": 1,
     "date": "2025-12-27",
     "filename": "2025-12-27-package-transformers.md"
+  },
+  {
+    "kind": "package",
+    "id": "transformers",
+    "version": 1,
+    "date": "2025-12-28",
+    "filename": "2025-12-28-package-transformers.md"
   }
 ]
