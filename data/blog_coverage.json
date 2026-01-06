@@ -117,5 +117,12 @@
     "version": 1,
     "date": "2026-01-05",
     "filename": "2026-01-05-package-transformers.md"
+  },
+  {
+    "kind": "package",
+    "id": "torch",
+    "version": 1,
+    "date": "2026-01-06",
+    "filename": "2026-01-06-package-torch.md"
   }
 ]
