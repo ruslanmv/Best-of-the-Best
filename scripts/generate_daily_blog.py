@@ -31,6 +31,14 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
+# ============================================================================
+# 🚨 CRITICAL FIX: TIMEOUT CONFIGURATION (must be set BEFORE importing llm_client)
+# ============================================================================
+# Increase timeout for slow local LLM generations (Ollama on limited hardware)
+os.environ.setdefault("LITELLM_REQUEST_TIMEOUT", "1800")  # 30 minutes
+os.environ.setdefault("CREWAI_REQUEST_TIMEOUT", "1800")   # 30 minutes
+# ============================================================================
+
 
 # Setup paths
 CURRENT_DIR = Path(__file__).resolve().parent
@@ -153,32 +161,78 @@ def is_ollama_llm() -> bool:
 
 
 # ============================================================================
-# OUTPUT EXTRACTION
+# OUTPUT EXTRACTION (ROBUST)
 # ============================================================================
+import json
+import re
+
 def extract_task_output(task: Task, task_name: str) -> str:
-    """Extract output from CrewAI task with fallback methods"""
-    if not task or not hasattr(task, 'output') or task.output is None:
+    """Extract output from CrewAI task with multiple fallbacks.
+    Returns a non-empty string whenever possible.
+    """
+    if not task or not hasattr(task, "output") or task.output is None:
         logger.warning(f"⚠️  Task {task_name} has no output")
         return ""
-    
+
     output = task.output
-    
-    methods = [
-        ('raw', lambda: getattr(output, 'raw', None)),
-        ('result', lambda: getattr(output, 'result', None)),
-        ('direct', lambda: output if isinstance(output, str) else None),
-        ('str()', lambda: str(output)),
-    ]
-    
-    for method_name, method_func in methods:
+
+    def _as_text(x):
+        if x is None:
+            return None
+
+        # If tool/agent returned structured data, serialize it.
+        if isinstance(x, (dict, list)):
+            try:
+                return json.dumps(x, ensure_ascii=False)
+            except Exception:
+                return str(x)
+
+        # Normal string
+        if isinstance(x, str):
+            return x
+
+        # Some CrewAI versions store the text in .content
+        content = getattr(x, "content", None)
+        if isinstance(content, str) and content.strip():
+            return content
+
+        # Fallback
         try:
-            result = method_func()
-            if result and isinstance(result, str) and len(result) > 50:
-                logger.debug(f"✓ Extracted from {task_name}.output.{method_name}: {len(result)} chars")
-                return result.strip()
+            return str(x)
+        except Exception:
+            return None
+
+    # Try likely fields first
+    candidates = [
+        ("raw", getattr(output, "raw", None)),
+        ("result", getattr(output, "result", None)),
+        ("text", getattr(output, "text", None)),
+        ("content", getattr(output, "content", None)),
+        ("output(str)", output),
+    ]
+
+    for method_name, candidate in candidates:
+        try:
+            text = _as_text(candidate)
+            if not text or not isinstance(text, str):
+                continue
+
+            text = text.strip()
+            if not text:
+                continue
+
+            # Remove fenced code wrappers if agent returned ```json ... ```
+            text = re.sub(r"^\s*```[a-zA-Z0-9_-]*\s*\n", "", text)
+            text = re.sub(r"\n```\s*$", "", text)
+            text = text.strip()
+
+            if text:
+                logger.debug(f"✓ Extracted from {task_name}.output.{method_name}: {len(text)} chars")
+                return text
+
         except Exception:
             continue
-    
+
     logger.warning(f"⚠️  Failed to extract output from {task_name}")
     return ""
 
@@ -1206,42 +1260,35 @@ Output:
     code_fixer = Agent(
         role="Code Issue Resolver",
         goal="Fix all code errors and issues",
-        backstory="""You fix code problems in the article ONLY when the validator reports issues.
+        backstory="""
+    You are a silent code fixer for a Markdown article.
 
-Core rules:
+    INPUTS YOU RECEIVE:
+    - The full Markdown article from the writer
+    - A validation report (PASS/FAIL + issues)
 
-1) Use the validation report:
-   - If the validation report says:
-       Validation Result: PASS
-       Issues Found:
-       (i.e. no issues listed)
-     → Do NOT modify anything.
-     → Simply return the article from the writer EXACTLY as-is, as raw Markdown.
-     → Do NOT add any preamble or commentary.
+    YOUR JOB:
+    - If the validation report is PASS (no issues listed):
+    - Return the article EXACTLY as-is.
+    - Output ONLY the article Markdown.
+    - ABSOLUTELY NO preamble, no explanation, no headings like "Final Answer", no "Since...", nothing.
 
-   - If the validation report says FAIL or lists issues:
-     → Fix ONLY the reported problems in the existing article.
+    - If the validation report is FAIL (issues listed):
+    - Fix ONLY the issues mentioned.
+    - Keep the narrative and structure the same.
+    - Do NOT add new sections or new examples.
 
-2) Allowed fixes when there ARE issues:
-   • Add missing imports for modules that are already used.
-   • Define undefined variables in the simplest way consistent with nearby code.
-   • Remove or replace placeholders (TODO, ..., your_X) with working code.
-   • Fix syntax errors.
-   • Replace deprecated features using the package health / research context.
+    HARD OUTPUT RULES (MUST FOLLOW):
+    - Output MUST be ONLY the complete Markdown article body.
+    - The first non-empty line MUST be part of the article (e.g., "## Introduction").
+    - NEVER output meta text like:
+    "Since there are no issues...", "I will not modify...", "Here is...", "Final Answer", etc.
+    - NEVER wrap the entire article in a single code fence.
+    - Only fenced blocks like ```python are allowed around code examples inside the article.
+    - Do NOT modify content inside existing code blocks except to fix the reported issue.
 
-3) Global constraints:
-   • Never switch to a different framework or library.
-   • Do not add examples that change the main topic.
-   • Keep the structure and narrative the same; only change what is necessary.
-   • Never touch the YAML front matter.
-
-4) Output format (CRITICAL):
-   • Output MUST be the complete article body as raw Markdown.
-   • Do NOT wrap the entire article in ``` or any other code fence.
-   • Only use fenced code blocks (```python, ```bash, etc.) for individual code examples inside the article.
-   • Do NOT add preambles like "Here is..." or "Final Answer:".
-   • Do NOT add any notes or comments after the article.
-""",
+    Return ONLY the article Markdown. Nothing else.
+    """,
         llm=llm,
         verbose=True,
         allow_delegation=False,
@@ -2268,38 +2315,41 @@ OUTPUT:
 
 
     # TASK 11: Metadata
+  # TASK 11: Metadata (STRICT JSON ONLY)
     metadata_task = Task(
         description=f"""
-            Create SEO metadata for blog about: {topic.title}
-            
-            Generate JSON:
-            {{
-            "title": "Engaging title (≤70 chars)",
-            "excerpt": "Compelling description (≤200 chars)",
-            "tags": ["tag1", "tag2", "tag3", "tag4"]
-            }}
-            
-            Requirements:
-            • Title: Clear, specific, includes the main keyword from "{topic.title}"
-            • Excerpt: Summarizes the value of the article and can optionally include a light call to action
-            • Tags: 4-8 relevant tags (lowercase, hyphenated, no spaces)
-            
-            Example (generic):
-            {{
-            "title": "{topic.title}: Complete Guide with Python Examples",
-            "excerpt": "Learn {topic.title} with complete code examples, best practices, and real-world use cases.",
-            "tags": ["python", "machine-learning", "gradient-boosting", "data-science"]
-            }}
-            
-            IMPORTANT CONSTRAINTS:
-            • Do NOT mention unrelated libraries, frameworks, or tools that are not part of the article topic.
-            • Keep the title concise (≤70 characters) and focused on the main topic.
-            • Keep the excerpt ≤200 characters and avoid marketing fluff.
-            • Tags must be directly relevant to the topic and its ecosystem.
-            
-            Output ONLY valid JSON. No preamble, no explanation, no extra text.
-            """,
-        expected_output="JSON metadata object",
+    You are generating SEO metadata for a blog post about: {topic.title}
+
+    RETURN ONLY VALID JSON.
+    - Output must be a SINGLE LINE.
+    - The FIRST character must be '{{' and the LAST character must be '}}'.
+    - Do NOT wrap in markdown. Do NOT use ``` fences. Do NOT add commentary.
+
+    Schema (must match exactly):
+    {{
+    "title": "string (<= 70 chars)",
+    "excerpt": "string (<= 200 chars)",
+    "tags": ["string", "string", "string", "string"]
+    }}
+
+    Rules:
+    - title: must include the main keyword "{topic.title}" (or its canonical spelling)
+    - excerpt: plain English sentence(s), no code, no markdown, no quotes from the article, <= 200 chars
+    - tags: 4 to 8 tags total
+    - lowercase only
+    - hyphenated (use '-' instead of spaces)
+    - no punctuation besides hyphen
+    - directly relevant to "{topic.title}" and its ecosystem
+
+    Bad outputs (DO NOT DO THESE):
+    - Any text before/after the JSON
+    - Markdown formatting
+    - Code snippets in excerpt
+    - Tags with spaces, uppercase, or unrelated tools
+
+    Now produce the JSON for: {topic.title}
+    """,
+        expected_output="A single-line JSON object with title, excerpt, and tags.",
         agent=metadata_publisher,
         context=[planning_task, editing_task],
     )

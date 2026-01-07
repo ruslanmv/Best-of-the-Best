@@ -114,7 +114,7 @@ rate_limiter = RateLimiter()
 _INLINE_BASE64_RE = re.compile(r"data:image\/[^;\)]+;base64,[A-Za-z0-9+/=]+", re.IGNORECASE)
 
 
-def sanitize_readme_for_llm(text: str, max_chars: int = 20000) -> str:
+def sanitize_readme_for_llm(text: str, max_chars: int = 12000) -> str:
     """
     Sanitize README content to prevent LLM timeouts from massive base64 images.
 
@@ -125,7 +125,7 @@ def sanitize_readme_for_llm(text: str, max_chars: int = 20000) -> str:
 
     Args:
         text: Raw README content
-        max_chars: Maximum characters to return (default: 20000)
+        max_chars: Maximum characters to return (default: 12000)
 
     Returns:
         Sanitized README content safe for LLM processing
@@ -154,6 +154,114 @@ def sanitize_readme_for_llm(text: str, max_chars: int = 20000) -> str:
         cleaned = cleaned[:max_chars - 400] + "\n\n[...truncated for LLM safety...]\n"
 
     return cleaned
+
+
+# ==========================================================================
+# README FOCUSING (REDUCE CONTEXT FOR SMALL / LOCAL LLMs)
+# ==========================================================================
+
+_FENCE_RE = re.compile(r"```.*?```", re.DOTALL)
+
+
+def _pick_relevant_readme_sections(text: str) -> str:
+    """Heuristically extract high-signal README sections.
+
+    Goal: keep local models responsive by removing low-signal parts (badges,
+    long changelogs, contributor lists, etc.) while preserving installation,
+    usage, and examples.
+
+    This is intentionally simple and deterministic (no LLM required).
+    """
+    if not text:
+        return text
+
+    lines = text.splitlines()
+    out: List[str] = []
+    capture = False
+
+    # Headings/keywords we want to keep.
+    keep_markers = (
+        "install",
+        "quickstart",
+        "getting started",
+        "usage",
+        "example",
+        "api",
+        "reference",
+        "cli",
+        "parameters",
+        "evaluation",
+    )
+
+    # Headings/keywords we want to skip if they explode context.
+    skip_markers = (
+        "changelog",
+        "release",
+        "news",
+        "contributors",
+        "contributing",
+        "license",
+        "citation",
+        "acknowled",
+    )
+
+    for ln in lines:
+        l = ln.strip()
+        low = l.lower()
+
+        # Always keep code fences (they're handled later too, but this helps).
+        if l.startswith("```"):
+            capture = True
+            out.append(ln)
+            continue
+        if capture:
+            out.append(ln)
+            if l.startswith("```") and ln != out[-1]:
+                # (defensive) end fence
+                capture = False
+            if l.startswith("```"):
+                capture = False
+            continue
+
+        # Start capturing at a relevant heading.
+        if low.startswith("#"):
+            if any(k in low for k in keep_markers) and not any(s in low for s in skip_markers):
+                capture = True
+                out.append(ln)
+            else:
+                capture = False
+            continue
+
+        # If we're inside a relevant section, keep normal lines.
+        if capture:
+            out.append(ln)
+
+    # Fallback: if heuristics produced too little, keep the beginning.
+    focused = "\n".join(out).strip()
+    if len(focused) < 1500:
+        focused = "\n".join(lines[:300])
+
+    return focused
+
+
+def summarize_readme_for_llm(text: str, max_chars: int = 7000, max_code_blocks: int = 8) -> str:
+    """Reduce README size aggressively while preserving key sections + examples."""
+    if not text:
+        return text
+
+    focused = _pick_relevant_readme_sections(text)
+
+    # Extract code fences separately (helps when headings heuristic misses them).
+    code_blocks = _FENCE_RE.findall(text)
+    if code_blocks:
+        code_blocks = code_blocks[:max_code_blocks]
+        focused += "\n\n# Extracted code blocks (top examples)\n\n" + "\n\n".join(code_blocks)
+
+    # Final hard cap.
+    if len(focused) > max_chars:
+        focused = focused[: max_chars - 400] + "\n\n[...truncated for local-LLM safety...]\n"
+
+    return focused
 
 
 # ============================================================================
@@ -876,8 +984,22 @@ def scrape_readme_smart(url_or_name: str) -> Tuple[bool, str]:
          source = "web"
 
     if readme_content:
-        # Sanitize README content to prevent LLM timeouts from massive base64 images
+        # 1) Sanitize obvious token/latency killers (inline base64, extreme lines)
         readme_content = sanitize_readme_for_llm(readme_content)
+
+        # 2) Aggressively focus the README for small/local LLMs.
+        #    This is the primary fix for Ollama timeouts when READMEs are long.
+        #    You can tune via env vars if you want more/less context.
+        try:
+            max_chars = int(os.getenv("README_LLM_MAX_CHARS", "7000"))
+        except Exception:
+            max_chars = 7000
+        try:
+            max_blocks = int(os.getenv("README_LLM_MAX_CODE_BLOCKS", "8"))
+        except Exception:
+            max_blocks = 8
+
+        readme_content = summarize_readme_for_llm(readme_content, max_chars=max_chars, max_code_blocks=max_blocks)
 
         # Cache the result
         cache_data = [{"content": readme_content, "source": source}]
