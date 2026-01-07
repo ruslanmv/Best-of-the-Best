@@ -124,5 +124,12 @@
     "version": 1,
     "date": "2026-01-06",
     "filename": "2026-01-06-package-torch.md"
+  },
+  {
+    "kind": "package",
+    "id": "pre-trained",
+    "version": 1,
+    "date": "2026-01-07",
+    "filename": "2026-01-07-package-pre-trained.md"
   }
 ]
