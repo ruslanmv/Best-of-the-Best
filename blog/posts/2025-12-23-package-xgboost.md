@@ -25,8 +25,6 @@ sidebar:
   nav: "blog"
 ---
 
-**
-
 ## Introduction
 XGboost is an open-source gradient boosting library that provides a simple and efficient way to train and deploy machine learning models. Its scalability, ease of use, and high accuracy have made it a popular choice among data scientists.
 
