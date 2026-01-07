@@ -113,6 +113,12 @@ def get_llm() -> LLM:
 
     temperature = _safe_float("NEWS_LLM_TEMPERATURE", 0.7)
 
+    # Optional knobs for local / slow models
+    # - NEWS_LLM_TIMEOUT: seconds (LiteLLM request timeout)
+    # - NEWS_LLM_MAX_TOKENS: cap output tokens to avoid runaway generations
+    timeout_raw = os.environ.get("NEWS_LLM_TIMEOUT")
+    max_tokens_raw = os.environ.get("NEWS_LLM_MAX_TOKENS")
+
     kwargs: Dict[str, object] = {}
     inferred_provider = _infer_provider(model)
 
@@ -159,6 +165,18 @@ def get_llm() -> LLM:
     else:
         # For openai/*, anthropic/*, etc.
         print(f"[llm_client] 🤖 Provider={inferred_provider or 'auto'}  model={model!r} (LiteLLM)")
+
+    if timeout_raw:
+        try:
+            kwargs["timeout"] = float(timeout_raw)
+        except (TypeError, ValueError):
+            print(f"[llm_client] ⚠️  Invalid NEWS_LLM_TIMEOUT={timeout_raw!r}; ignoring", file=sys.stderr)
+
+    if max_tokens_raw:
+        try:
+            kwargs["max_tokens"] = int(max_tokens_raw)
+        except (TypeError, ValueError):
+            print(f"[llm_client] ⚠️  Invalid NEWS_LLM_MAX_TOKENS={max_tokens_raw!r}; ignoring", file=sys.stderr)
 
     return LLM(
         model=model,
