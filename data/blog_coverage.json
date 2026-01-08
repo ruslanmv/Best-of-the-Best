@@ -131,5 +131,12 @@
     "version": 1,
     "date": "2026-01-07",
     "filename": "2026-01-07-package-pre-trained.md"
+  },
+  {
+    "kind": "package",
+    "id": "introduction",
+    "version": 1,
+    "date": "2026-01-08",
+    "filename": "2026-01-08-package-introduction.md"
   }
 ]

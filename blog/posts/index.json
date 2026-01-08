@@ -15,7 +15,7 @@
     "date": "2025-12-23T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [],
-    "excerpt": "**"
+    "excerpt": "Use Cases:\n- Classification\n- Regression\n- Ranking\n- Time series forecasting"
   },
   {
     "filename": "2025-12-25-package-langgraph.md",
@@ -61,5 +61,14 @@
     "author": "Ruslanmv",
     "tags": [],
     "excerpt": "* Natural Language Processing (NLP) capabilities\n* Support for multiple programming languages\n* Integration with popular frameworks and libraries"
+  },
+  {
+    "filename": "2026-01-07-package-bert-score.md",
+    "url": "/blog/posts/2026-01-07-package-bert-score.html",
+    "title": "Bert Score",
+    "date": "2026-01-07T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "What is Bert Score?\nBert Score is a metric used to evaluate the similarity between two text sequences, such as sentences or paragraphs. This score can be applied in various natural language processing..."
   }
 ]
