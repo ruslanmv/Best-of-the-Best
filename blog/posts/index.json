@@ -45,6 +45,15 @@
     "excerpt": "---"
   },
   {
+    "filename": "2026-01-08-package-gin-config.md",
+    "url": "/blog/posts/2026-01-08-package-gin-config.html",
+    "title": "Gin Config",
+    "date": "2026-01-08T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "Current version: 3.1\nGin Config has a strong track record of stability and reliability, making it an excellent choice for production-ready applications."
+  },
+  {
     "filename": "2025-12-23-package-langchain.md",
     "url": "/blog/posts/2025-12-23-package-langchain.html",
     "title": "Langchain Guide",
