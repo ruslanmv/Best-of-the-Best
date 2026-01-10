@@ -9,6 +9,15 @@
     "excerpt": "from llama_index import create_index, search"
   },
   {
+    "filename": "2026-01-09-package-autofaiss.md",
+    "url": "/blog/posts/2026-01-09-package-autofaiss.html",
+    "title": "Unlock Efficient Approximate Nearest Neighbor Search with Autofaiss",
+    "date": "2026-01-09T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "Readers will learn about the key features, use cases, and installation procedures, as well as practical examples of using Autofaiss in their projects."
+  },
+  {
     "filename": "2025-12-23-package-xgboost.md",
     "url": "/blog/posts/2025-12-23-package-xgboost.html",
     "title": "Xgboost",
@@ -25,6 +34,15 @@
     "author": "Ruslanmv",
     "tags": [],
     "excerpt": "```\npip install langgraph\n```"
+  },
+  {
+    "filename": "2026-01-10-package-pyglove.md",
+    "url": "/blog/posts/2026-01-10-package-pyglove.html",
+    "title": "Pyglove",
+    "date": "2026-01-10T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "For further learning, we recommend checking out the official documentation and tutorials provided by the Pyglove community:"
   },
   {
     "filename": "2025-12-26-package-folium.md",
