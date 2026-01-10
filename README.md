@@ -2,16 +2,16 @@
 ### Repositories
 | Repository | Stars | Link |
 |---|---|---|
-| ollama/ollama | 159055 | [GitHub](https://github.com/ollama/ollama) |
-| langchain-ai/langchain | 123780 | [GitHub](https://github.com/langchain-ai/langchain) |
-| comfyanonymous/ComfyUI | 99538 | [GitHub](https://github.com/comfyanonymous/ComfyUI) |
-| openai/whisper | 92934 | [GitHub](https://github.com/openai/whisper) |
-| tensorflow/models | 77697 | [GitHub](https://github.com/tensorflow/models) |
-| CompVis/stable-diffusion | 72146 | [GitHub](https://github.com/CompVis/stable-diffusion) |
-| KillianLucas/open-interpreter | 61518 | [GitHub](https://github.com/KillianLucas/open-interpreter) |
-| CorentinJ/Real-Time-Voice-Cloning | 59172 | [GitHub](https://github.com/CorentinJ/Real-Time-Voice-Cloning) |
-| ultralytics/yolov5 | 56577 | [GitHub](https://github.com/ultralytics/yolov5) |
-| facebookresearch/segment-anything | 53121 | [GitHub](https://github.com/facebookresearch/segment-anything) |
+| ollama/ollama | 159095 | [GitHub](https://github.com/ollama/ollama) |
+| langchain-ai/langchain | 123847 | [GitHub](https://github.com/langchain-ai/langchain) |
+| comfyanonymous/ComfyUI | 99648 | [GitHub](https://github.com/comfyanonymous/ComfyUI) |
+| openai/whisper | 92967 | [GitHub](https://github.com/openai/whisper) |
+| tensorflow/models | 77695 | [GitHub](https://github.com/tensorflow/models) |
+| CompVis/stable-diffusion | 72154 | [GitHub](https://github.com/CompVis/stable-diffusion) |
+| KillianLucas/open-interpreter | 61522 | [GitHub](https://github.com/KillianLucas/open-interpreter) |
+| CorentinJ/Real-Time-Voice-Cloning | 59175 | [GitHub](https://github.com/CorentinJ/Real-Time-Voice-Cloning) |
+| ultralytics/yolov5 | 56596 | [GitHub](https://github.com/ultralytics/yolov5) |
+| facebookresearch/segment-anything | 53127 | [GitHub](https://github.com/facebookresearch/segment-anything) |
 | jakevdp/PythonDataScienceHandbook | 43761 | [GitHub](https://github.com/jakevdp/PythonDataScienceHandbook) |
 | lllyasviel/Fooocus | 42965 | [GitHub](https://github.com/lllyasviel/Fooocus) |
 | Stability-AI/stablediffusion | 39935 | [GitHub](https://github.com/Stability-AI/stablediffusion) |
@@ -25,6 +25,7 @@
 | ray-project/ray | 35151 | [GitHub](https://github.com/ray-project/ray) |
 | google-research/google-research | 34801 | [GitHub](https://github.com/google-research/google-research) |
 | microsoft/visual-chatgpt | 34541 | [GitHub](https://github.com/microsoft/visual-chatgpt) |
+
 
 
 
