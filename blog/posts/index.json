@@ -72,6 +72,15 @@
     "excerpt": "Current version: 3.1\nGin Config has a strong track record of stability and reliability, making it an excellent choice for production-ready applications."
   },
   {
+    "filename": "2026-01-11-package-mmdet.md",
+    "url": "/blog/posts/2026-01-11-package-mmdet.html",
+    "title": "Mmdet",
+    "date": "2026-01-11T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "print(results)  # Output: [(class_id, confidence, x1, y1, x2, y2), ...]\n```"
+  },
+  {
     "filename": "2025-12-23-package-langchain.md",
     "url": "/blog/posts/2025-12-23-package-langchain.html",
     "title": "Langchain Guide",
