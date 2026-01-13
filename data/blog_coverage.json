@@ -166,5 +166,12 @@
     "version": 1,
     "date": "2026-01-12",
     "filename": "2026-01-12-package-introduction.md"
+  },
+  {
+    "kind": "package",
+    "id": "unlocking",
+    "version": 1,
+    "date": "2026-01-13",
+    "filename": "2026-01-13-package-unlocking.md"
   }
 ]
