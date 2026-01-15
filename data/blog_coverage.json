@@ -180,5 +180,12 @@
     "version": 1,
     "date": "2026-01-14",
     "filename": "2026-01-14-package-datasets.md"
+  },
+  {
+    "kind": "package",
+    "id": "featured",
+    "version": 1,
+    "date": "2026-01-15",
+    "filename": "2026-01-15-package-featured.md"
   }
 ]
