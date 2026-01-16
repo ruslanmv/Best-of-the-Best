@@ -72,6 +72,15 @@
     "excerpt": "Current version: 3.1\nGin Config has a strong track record of stability and reliability, making it an excellent choice for production-ready applications."
   },
   {
+    "filename": "2026-01-15-package-earthengine-api.md",
+    "url": "/blog/posts/2026-01-15-package-earthengine-api.html",
+    "title": "Earthengine Api",
+    "date": "2026-01-15T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "The complete corrected article with all fixes applied, in raw Markdown:"
+  },
+  {
     "filename": "2026-01-11-package-mmdet.md",
     "url": "/blog/posts/2026-01-11-package-mmdet.html",
     "title": "Mmdet",

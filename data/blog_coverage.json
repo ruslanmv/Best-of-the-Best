@@ -187,5 +187,12 @@
     "version": 1,
     "date": "2026-01-15",
     "filename": "2026-01-15-package-featured.md"
+  },
+  {
+    "kind": "package",
+    "id": "featured",
+    "version": 1,
+    "date": "2026-01-16",
+    "filename": "2026-01-16-package-featured.md"
   }
 ]
