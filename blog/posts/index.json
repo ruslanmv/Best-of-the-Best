@@ -90,6 +90,15 @@
     "excerpt": "print(results)  # Output: [(class_id, confidence, x1, y1, x2, y2), ...]\n```"
   },
   {
+    "filename": "2026-01-16-package-unsloth.md",
+    "url": "/blog/posts/2026-01-16-package-unsloth.html",
+    "title": "Unsloth",
+    "date": "2026-01-16T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "text = unsloth.generate_text('This is a sample paragraph')\nprint(text)\n```"
+  },
+  {
     "filename": "2025-12-23-package-langchain.md",
     "url": "/blog/posts/2025-12-23-package-langchain.html",
     "title": "Langchain Guide",

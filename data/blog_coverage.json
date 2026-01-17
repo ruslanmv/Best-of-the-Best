@@ -194,5 +194,12 @@
     "version": 1,
     "date": "2026-01-16",
     "filename": "2026-01-16-package-featured.md"
+  },
+  {
+    "kind": "package",
+    "id": "transformers",
+    "version": 1,
+    "date": "2026-01-17",
+    "filename": "2026-01-17-package-transformers.md"
   }
 ]
