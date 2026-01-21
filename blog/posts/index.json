@@ -36,6 +36,15 @@
     "excerpt": "```\npip install langgraph\n```"
   },
   {
+    "filename": "2026-01-20-package-pybullet.md",
+    "url": "/blog/posts/2026-01-20-package-pybullet.html",
+    "title": "Pybullet",
+    "date": "2026-01-20T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "Use cases:\n* Robotics research\n* Game development\n* Computer vision applications"
+  },
+  {
     "filename": "2026-01-10-package-pyglove.md",
     "url": "/blog/posts/2026-01-10-package-pyglove.html",
     "title": "Pyglove",
