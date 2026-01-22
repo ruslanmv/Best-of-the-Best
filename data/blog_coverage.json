@@ -229,5 +229,12 @@
     "version": 1,
     "date": "2026-01-21",
     "filename": "2026-01-21-package-pre-trained.md"
+  },
+  {
+    "kind": "package",
+    "id": "transformers",
+    "version": 1,
+    "date": "2026-01-22",
+    "filename": "2026-01-22-package-transformers.md"
   }
 ]
