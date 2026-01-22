@@ -90,6 +90,15 @@
     "excerpt": "The complete corrected article with all fixes applied, in raw Markdown:"
   },
   {
+    "filename": "2026-01-21-package-scikit-video.md",
+    "url": "/blog/posts/2026-01-21-package-scikit-video.html",
+    "title": "Scikit Video",
+    "date": "2026-01-21T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "---"
+  },
+  {
     "filename": "2026-01-11-package-mmdet.md",
     "url": "/blog/posts/2026-01-11-package-mmdet.html",
     "title": "Mmdet",
