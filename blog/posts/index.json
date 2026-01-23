@@ -36,6 +36,15 @@
     "excerpt": "```\npip install langgraph\n```"
   },
   {
+    "filename": "2026-01-22-package-crawl4ai.md",
+    "url": "/blog/posts/2026-01-22-package-crawl4ai.html",
+    "title": "Crawl4Ai",
+    "date": "2026-01-22T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "* **Version:** 3.5.x (Package Health Report validation report)\n* API-driven architecture\n* Real-time data processing"
+  },
+  {
     "filename": "2026-01-20-package-pybullet.md",
     "url": "/blog/posts/2026-01-20-package-pybullet.html",
     "title": "Pybullet",
