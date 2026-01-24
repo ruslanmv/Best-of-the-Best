@@ -243,5 +243,12 @@
     "version": 1,
     "date": "2026-01-23",
     "filename": "2026-01-23-package-transformers-xl.md"
+  },
+  {
+    "kind": "package",
+    "id": "featured",
+    "version": 1,
+    "date": "2026-01-24",
+    "filename": "2026-01-24-package-featured.md"
   }
 ]
