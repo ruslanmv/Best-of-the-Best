@@ -250,5 +250,12 @@
     "version": 1,
     "date": "2026-01-24",
     "filename": "2026-01-24-package-featured.md"
+  },
+  {
+    "kind": "package",
+    "id": "harnessing",
+    "version": 1,
+    "date": "2026-01-25",
+    "filename": "2026-01-25-package-harnessing.md"
   }
 ]
