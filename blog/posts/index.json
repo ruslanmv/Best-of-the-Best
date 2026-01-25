@@ -63,6 +63,15 @@
     "excerpt": "For further learning, we recommend checking out the official documentation and tutorials provided by the Pyglove community:"
   },
   {
+    "filename": "2026-01-24-package-mmsegmentation.md",
+    "url": "/blog/posts/2026-01-24-package-mmsegmentation.html",
+    "title": "Mastering Mmsegmentation: A Comprehensive Guide",
+    "date": "2026-01-24T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "Mmsegmentation is an open-source library for semantic segmentation tasks. It provides a set of tools and techniques to segment images into meaningful regions based on their visual features. In this ar..."
+  },
+  {
     "filename": "2025-12-26-package-folium.md",
     "url": "/blog/posts/2025-12-26-package-folium.html",
     "title": "Folium",
