@@ -257,5 +257,12 @@
     "version": 1,
     "date": "2026-01-25",
     "filename": "2026-01-25-package-harnessing.md"
+  },
+  {
+    "kind": "package",
+    "id": "hugging",
+    "version": 1,
+    "date": "2026-01-26",
+    "filename": "2026-01-26-package-hugging.md"
   }
 ]
