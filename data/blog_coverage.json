@@ -264,5 +264,12 @@
     "version": 1,
     "date": "2026-01-26",
     "filename": "2026-01-26-package-hugging.md"
+  },
+  {
+    "kind": "package",
+    "id": "detractor",
+    "version": 1,
+    "date": "2026-01-27",
+    "filename": "2026-01-27-package-detractor.md"
   }
 ]
