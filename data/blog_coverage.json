@@ -271,5 +271,12 @@
     "version": 1,
     "date": "2026-01-27",
     "filename": "2026-01-27-package-detractor.md"
+  },
+  {
+    "kind": "package",
+    "id": "package",
+    "version": 1,
+    "date": "2026-01-28",
+    "filename": "2026-01-28-package-package.md"
   }
 ]
