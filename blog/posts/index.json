@@ -108,6 +108,15 @@
     "excerpt": "The complete corrected article with all fixes applied, in raw Markdown:"
   },
   {
+    "filename": "2026-01-27-package-tpot.md",
+    "url": "/blog/posts/2026-01-27-package-tpot.html",
+    "title": "Unlocking Tpot's Power: A Comprehensive Guide",
+    "date": "2026-01-27T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "Tpot is an open-source Python package for automating machine learning tasks. With the rise of machine learning, automating processes can save time and increase efficiency. By the end of this article, ..."
+  },
+  {
     "filename": "2026-01-21-package-scikit-video.md",
     "url": "/blog/posts/2026-01-21-package-scikit-video.html",
     "title": "Scikit Video",
