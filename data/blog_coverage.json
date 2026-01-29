@@ -278,5 +278,12 @@
     "version": 1,
     "date": "2026-01-28",
     "filename": "2026-01-28-package-package.md"
+  },
+  {
+    "kind": "package",
+    "id": "featured",
+    "version": 1,
+    "date": "2026-01-29",
+    "filename": "2026-01-29-package-featured.md"
   }
 ]
