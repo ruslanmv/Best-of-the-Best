@@ -117,6 +117,15 @@
     "excerpt": "Tpot is an open-source Python package for automating machine learning tasks. With the rise of machine learning, automating processes can save time and increase efficiency. By the end of this article, ..."
   },
   {
+    "filename": "2026-01-29-package-tensorflow-graphics.md",
+    "url": "/blog/posts/2026-01-29-package-tensorflow-graphics.html",
+    "title": "Unlocking Visual Intelligence with TensorFlow Graphics",
+    "date": "2026-01-29T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "```python\nimport tensorflow as tf\nfrom tensorflow_graphics.graphics import ImageProcessing"
+  },
+  {
     "filename": "2026-01-21-package-scikit-video.md",
     "url": "/blog/posts/2026-01-21-package-scikit-video.html",
     "title": "Scikit Video",
