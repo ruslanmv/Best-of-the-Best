@@ -299,5 +299,12 @@
     "version": 1,
     "date": "2026-01-31",
     "filename": "2026-01-31-package-transformers.md"
+  },
+  {
+    "kind": "package",
+    "id": "hugging",
+    "version": 1,
+    "date": "2026-02-01",
+    "filename": "2026-02-01-package-hugging.md"
   }
 ]
