@@ -153,6 +153,15 @@
     "excerpt": "text = unsloth.generate_text('This is a sample paragraph')\nprint(text)\n```"
   },
   {
+    "filename": "2026-02-04-package-tensorflow-federated.md",
+    "url": "/blog/posts/2026-02-04-package-tensorflow-federated.html",
+    "title": "Unlocking TensorFlow Federated's Potential",
+    "date": "2026-02-04T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "I now can give a great answer"
+  },
+  {
     "filename": "2025-12-23-package-langchain.md",
     "url": "/blog/posts/2025-12-23-package-langchain.html",
     "title": "Langchain Guide",
