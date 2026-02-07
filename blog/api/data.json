@@ -2,22 +2,22 @@
   "repositories": [
     {
       "name": "ollama/ollama",
-      "stars": 161882,
+      "stars": 161998,
       "url": "https://github.com/ollama/ollama"
     },
     {
       "name": "langchain-ai/langchain",
-      "stars": 126059,
+      "stars": 126125,
       "url": "https://github.com/langchain-ai/langchain"
     },
     {
       "name": "comfyanonymous/ComfyUI",
-      "stars": 102576,
+      "stars": 102648,
       "url": "https://github.com/comfyanonymous/ComfyUI"
     },
     {
       "name": "openai/whisper",
-      "stars": 94243,
+      "stars": 94284,
       "url": "https://github.com/openai/whisper"
     },
     {
@@ -27,12 +27,12 @@
     },
     {
       "name": "CompVis/stable-diffusion",
-      "stars": 72347,
+      "stars": 72350,
       "url": "https://github.com/CompVis/stable-diffusion"
     },
     {
       "name": "KillianLucas/open-interpreter",
-      "stars": 62024,
+      "stars": 62040,
       "url": "https://github.com/KillianLucas/open-interpreter"
     },
     {
@@ -42,7 +42,7 @@
     },
     {
       "name": "ultralytics/yolov5",
-      "stars": 56789,
+      "stars": 56790,
       "url": "https://github.com/ultralytics/yolov5"
     },
     {
@@ -373,5 +373,5 @@
       "url": "https://pypi.org/project/dopamine-rl/"
     }
   ],
-  "last_updated": "2026-02-07T02:21:16.578924"
+  "last_updated": "2026-02-07T05:51:57.248227"
 }
