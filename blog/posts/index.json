@@ -189,6 +189,15 @@
     "excerpt": "* Natural Language Processing (NLP) capabilities\n* Support for multiple programming languages\n* Integration with popular frameworks and libraries"
   },
   {
+    "filename": "2026-02-10-package-dopamine-rl.md",
+    "url": "/blog/posts/2026-02-10-package-dopamine-rl.html",
+    "title": "Mastering Dopamine Rl for Reinforcement Learning",
+    "date": "2026-02-10T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "env = rl.make_env('CartPole-v1')\nagent = rl.Agent(env, episodes=1000)"
+  },
+  {
     "filename": "2026-01-07-package-bert-score.md",
     "url": "/blog/posts/2026-01-07-package-bert-score.html",
     "title": "Bert Score",
