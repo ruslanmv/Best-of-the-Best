@@ -72,6 +72,15 @@
     "excerpt": "For further learning, we recommend checking out the official documentation and tutorials provided by the Pyglove community:"
   },
   {
+    "filename": "2026-02-12-repo-ollama.md",
+    "url": "/blog/posts/2026-02-12-repo-ollama.html",
+    "title": "Ollama",
+    "date": "2026-02-12T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "text = \"Hello, world!\"\nresult = ollama.process_text(text)\nprint(result)  # Output: Hello, World!\n```\n## Core Concepts\nAt its core, Ollama is designed to handle natural language processing tasks. Its A..."
+  },
+  {
     "filename": "2026-01-24-package-mmsegmentation.md",
     "url": "/blog/posts/2026-01-24-package-mmsegmentation.html",
     "title": "Mastering Mmsegmentation: A Comprehensive Guide",
