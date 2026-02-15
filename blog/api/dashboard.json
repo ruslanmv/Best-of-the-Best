@@ -1,6 +1,6 @@
 {
   "stats": {
-    "last_updated": "2026-02-14 05:52",
+    "last_updated": "2026-02-15 06:04",
     "total_courses": 10,
     "total_papers": 392,
     "total_tutorials": 295
@@ -9,7 +9,7 @@
     {
       "title": "TPOT",
       "url": "https://doi.org/10.1007/978-3-030-05318-5_8",
-      "date": "2026-02-14T05:52:17.029562",
+      "date": "2026-02-15T06:04:30.319498",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -22,7 +22,7 @@
     {
       "title": "NeuSpell",
       "url": "https://doi.org/10.18653/v1/2020.emnlp-demos.21",
-      "date": "2026-02-14T05:52:17.029560",
+      "date": "2026-02-15T06:04:30.319496",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -182,7 +182,7 @@
     {
       "title": "TPOT",
       "url": "https://doi.org/10.1007/978-3-030-05318-5_8",
-      "date": "2026-02-14T05:52:17.029562",
+      "date": "2026-02-15T06:04:30.319498",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -195,7 +195,7 @@
     {
       "title": "NeuSpell",
       "url": "https://doi.org/10.18653/v1/2020.emnlp-demos.21",
-      "date": "2026-02-14T05:52:17.029560",
+      "date": "2026-02-15T06:04:30.319496",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -208,7 +208,7 @@
     {
       "title": "Contextualized Topic Models",
       "url": "https://doi.org/10.18653/v1/2021.eacl-main.143",
-      "date": "2026-02-14T05:52:17.029558",
+      "date": "2026-02-15T06:04:30.319493",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -221,7 +221,7 @@
     {
       "title": "XGBoost",
       "url": "https://doi.org/10.1145/2939672.2939785",
-      "date": "2026-02-14T05:52:17.029554",
+      "date": "2026-02-15T06:04:30.319490",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -234,7 +234,7 @@
     {
       "title": "Cleanlab",
       "url": "https://doi.org/10.1613/jair.1.12125",
-      "date": "2026-02-14T05:52:17.029552",
+      "date": "2026-02-15T06:04:30.319488",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -247,7 +247,7 @@
     {
       "title": "PyTerrier",
       "url": "https://doi.org/10.1145/3459637.3482013",
-      "date": "2026-02-14T05:52:17.029550",
+      "date": "2026-02-15T06:04:30.319486",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -260,7 +260,7 @@
     {
       "title": "deep-significance",
       "url": "https://doi.org/10.18653/v1/p19-1266",
-      "date": "2026-02-14T05:52:17.029548",
+      "date": "2026-02-15T06:04:30.319483",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -273,7 +273,7 @@
     {
       "title": "Kornia",
       "url": "https://doi.org/10.1109/WACV45572.2020.9093363",
-      "date": "2026-02-14T05:52:17.029544",
+      "date": "2026-02-15T06:04:30.319479",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -286,7 +286,7 @@
     {
       "title": "SAHI",
       "url": "https://doi.org/10.1109/ICIP46576.2022.9897990",
-      "date": "2026-02-14T05:52:17.029540",
+      "date": "2026-02-15T06:04:30.319476",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -299,7 +299,7 @@
     {
       "title": "py-irt",
       "url": "https://doi.org/10.18653/v1/2021.acl-long.346",
-      "date": "2026-02-14T05:52:17.029538",
+      "date": "2026-02-15T06:04:30.319474",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -312,7 +312,7 @@
     {
       "title": "MMOCR",
       "url": "https://doi.org/10.1145/3474085.3478328",
-      "date": "2026-02-14T05:52:17.029536",
+      "date": "2026-02-15T06:04:30.319471",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -325,7 +325,7 @@
     {
       "title": "MMRotate",
       "url": "https://doi.org/10.1145/3503161.3548541",
-      "date": "2026-02-14T05:52:17.029534",
+      "date": "2026-02-15T06:04:30.319469",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -338,7 +338,7 @@
     {
       "title": "PyTorchVideo",
       "url": "https://doi.org/10.1145/3474085.3478329",
-      "date": "2026-02-14T05:52:17.029532",
+      "date": "2026-02-15T06:04:30.319467",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -351,7 +351,7 @@
     {
       "title": "Scenic",
       "url": "https://doi.org/10.1109/CVPR52688.2022.02070",
-      "date": "2026-02-14T05:52:17.029530",
+      "date": "2026-02-15T06:04:30.319465",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -364,7 +364,7 @@
     {
       "title": "EfficientDet",
       "url": "https://doi.org/10.1109/CVPR42600.2020.01079",
-      "date": "2026-02-14T05:52:17.029528",
+      "date": "2026-02-15T06:04:30.319463",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -377,7 +377,7 @@
     {
       "title": "TensorFlow Graphics",
       "url": "https://doi.org/10.1145/3450508.3464595",
-      "date": "2026-02-14T05:52:17.029526",
+      "date": "2026-02-15T06:04:30.319461",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -390,7 +390,7 @@
     {
       "title": "Classify text with BERT",
       "url": "https://doi.org/10.18653/v1/N19-1423",
-      "date": "2026-02-14T05:52:17.029524",
+      "date": "2026-02-15T06:04:30.319459",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -403,7 +403,7 @@
     {
       "title": "Image segmentation",
       "url": "http://doi.org/10.1007/978-3-319-24574-4_28",
-      "date": "2026-02-14T05:52:17.029522",
+      "date": "2026-02-15T06:04:30.319457",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -416,7 +416,7 @@
     {
       "title": "Pix2Pix",
       "url": "https://doi.org/10.1109/CVPR.2017.632",
-      "date": "2026-02-14T05:52:17.029520",
+      "date": "2026-02-15T06:04:30.319455",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -429,7 +429,7 @@
     {
       "title": "CycleGAN",
       "url": "https://doi.org/10.1109/ICCV.2017.244",
-      "date": "2026-02-14T05:52:17.029517",
+      "date": "2026-02-15T06:04:30.319453",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -442,7 +442,7 @@
     {
       "title": "AudioLM",
       "url": "https://doi.org/10.1109/TASLP.2023.3288409",
-      "date": "2026-02-14T05:52:17.029515",
+      "date": "2026-02-15T06:04:30.319451",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -455,7 +455,7 @@
     {
       "title": "FELIX",
       "url": "https://doi.org/10.1007/978-3-031-70359-1_14",
-      "date": "2026-02-14T05:52:17.029513",
+      "date": "2026-02-15T06:04:30.319449",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -468,7 +468,7 @@
     {
       "title": "Score Jacobian Chaining",
       "url": "https://doi.org/10.1109/CVPR52729.2023.01214",
-      "date": "2026-02-14T05:52:17.029509",
+      "date": "2026-02-15T06:04:30.319445",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -481,7 +481,7 @@
     {
       "title": "CodeTalker",
       "url": "https://doi.org/10.1109/CVPR52729.2023.01229",
-      "date": "2026-02-14T05:52:17.029507",
+      "date": "2026-02-15T06:04:30.319443",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -494,7 +494,7 @@
     {
       "title": "DifFace",
       "url": "https://doi.org/10.1109/TPAMI.2024.3432651",
-      "date": "2026-02-14T05:52:17.029505",
+      "date": "2026-02-15T06:04:30.319441",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -507,7 +507,7 @@
     {
       "title": "BiRefNet",
       "url": "https://doi.org/10.26599/AIR.2024.9150038",
-      "date": "2026-02-14T05:52:17.029503",
+      "date": "2026-02-15T06:04:30.319439",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -520,7 +520,7 @@
     {
       "title": "BasicVSR++",
       "url": "https://doi.org/10.1109/CVPR52688.2022.00588",
-      "date": "2026-02-14T05:52:17.029501",
+      "date": "2026-02-15T06:04:30.319437",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -533,7 +533,7 @@
     {
       "title": "RealBasicVSR",
       "url": "https://doi.org/10.1109/CVPR52688.2022.00587",
-      "date": "2026-02-14T05:52:17.029499",
+      "date": "2026-02-15T06:04:30.319435",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -546,7 +546,7 @@
     {
       "title": "ROMP",
       "url": "https://doi.org/10.1109/ICCV48922.2021.01099",
-      "date": "2026-02-14T05:52:17.029497",
+      "date": "2026-02-15T06:04:30.319433",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -559,7 +559,7 @@
     {
       "title": "FateZero",
       "url": "https://doi.org/10.1109/ICCV51070.2023.01460",
-      "date": "2026-02-14T05:52:17.029495",
+      "date": "2026-02-15T06:04:30.319431",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -572,7 +572,7 @@
     {
       "title": "HMR",
       "url": "https://doi.org/10.1109/CVPR.2018.00744",
-      "date": "2026-02-14T05:52:17.029493",
+      "date": "2026-02-15T06:04:30.319429",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -585,7 +585,7 @@
     {
       "title": "FollowYourPose",
       "url": "https://doi.org/10.1609/aaai.v38i5.28206",
-      "date": "2026-02-14T05:52:17.029491",
+      "date": "2026-02-15T06:04:30.319427",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -598,7 +598,7 @@
     {
       "title": "SCALE",
       "url": "https://doi.org/10.1109/CVPR46437.2021.01582",
-      "date": "2026-02-14T05:52:17.029489",
+      "date": "2026-02-15T06:04:30.319425",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -611,7 +611,7 @@
     {
       "title": "CAPE",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00650",
-      "date": "2026-02-14T05:52:17.029487",
+      "date": "2026-02-15T06:04:30.319423",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -624,7 +624,7 @@
     {
       "title": "SPIN",
       "url": "https://doi.org/10.1109/ICCV.2019.00234",
-      "date": "2026-02-14T05:52:17.029485",
+      "date": "2026-02-15T06:04:30.319421",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -637,7 +637,7 @@
     {
       "title": "AlphaPose",
       "url": "https://doi.org/10.1109/TPAMI.2022.3222784",
-      "date": "2026-02-14T05:52:17.029483",
+      "date": "2026-02-15T06:04:30.319419",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -650,7 +650,7 @@
     {
       "title": "VIBE",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00530",
-      "date": "2026-02-14T05:52:17.029481",
+      "date": "2026-02-15T06:04:30.319417",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -663,7 +663,7 @@
     {
       "title": "Background Matting V2",
       "url": "https://doi.org/10.1109/CVPR46437.2021.00865",
-      "date": "2026-02-14T05:52:17.029479",
+      "date": "2026-02-15T06:04:30.319415",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -676,7 +676,7 @@
     {
       "title": "RITM",
       "url": "https://doi.org/10.1109/ICIP46576.2022.9897365",
-      "date": "2026-02-14T05:52:17.029477",
+      "date": "2026-02-15T06:04:30.319413",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -689,7 +689,7 @@
     {
       "title": "f-BRS",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00865",
-      "date": "2026-02-14T05:52:17.029473",
+      "date": "2026-02-15T06:04:30.319409",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -702,7 +702,7 @@
     {
       "title": "DeepLabCut",
       "url": "https://doi.org/10.1038/s41593-018-0209-y",
-      "date": "2026-02-14T05:52:17.029471",
+      "date": "2026-02-15T06:04:30.319407",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -715,7 +715,7 @@
     {
       "title": "T2M-GPT",
       "url": "https://doi.org/10.1109/CVPR52729.2023.01415",
-      "date": "2026-02-14T05:52:17.029469",
+      "date": "2026-02-15T06:04:30.319404",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -728,7 +728,7 @@
     {
       "title": "VideoReTalking",
       "url": "https://doi.org/10.1145/3550469.3555399",
-      "date": "2026-02-14T05:52:17.029465",
+      "date": "2026-02-15T06:04:30.319401",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -741,7 +741,7 @@
     {
       "title": "SadTalker",
       "url": "https://doi.org/10.1109/CVPR52729.2023.00836",
-      "date": "2026-02-14T05:52:17.029463",
+      "date": "2026-02-15T06:04:30.319398",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -754,7 +754,7 @@
     {
       "title": "Gaussian Splatting",
       "url": "https://doi.org/10.1145/3592433",
-      "date": "2026-02-14T05:52:17.029461",
+      "date": "2026-02-15T06:04:30.319396",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -767,7 +767,7 @@
     {
       "title": "Tune-A-Video",
       "url": "https://doi.org/10.1109/ICCV51070.2023.00701",
-      "date": "2026-02-14T05:52:17.029458",
+      "date": "2026-02-15T06:04:30.319394",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -780,7 +780,7 @@
     {
       "title": "Text2Video-Zero",
       "url": "https://doi.org/10.1109/ICCV51070.2023.01462",
-      "date": "2026-02-14T05:52:17.029456",
+      "date": "2026-02-15T06:04:30.319392",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -793,7 +793,7 @@
     {
       "title": "NAFNet",
       "url": "https://doi.org/10.1007/978-3-031-20071-7_2",
-      "date": "2026-02-14T05:52:17.029454",
+      "date": "2026-02-15T06:04:30.319390",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -806,7 +806,7 @@
     {
       "title": "PyMAF-X",
       "url": "https://doi.org/10.1109/TPAMI.2023.3271691",
-      "date": "2026-02-14T05:52:17.029452",
+      "date": "2026-02-15T06:04:30.319388",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -819,7 +819,7 @@
     {
       "title": "HybrIK",
       "url": "https://doi.org/10.1109/CVPR46437.2021.00339",
-      "date": "2026-02-14T05:52:17.029450",
+      "date": "2026-02-15T06:04:30.319386",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -832,7 +832,7 @@
     {
       "title": "IDE-3D",
       "url": "https://doi.org/10.1145/3550454.3555506",
-      "date": "2026-02-14T05:52:17.029448",
+      "date": "2026-02-15T06:04:30.319384",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -845,7 +845,7 @@
     {
       "title": "StyleSDF",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01314",
-      "date": "2026-02-14T05:52:17.029446",
+      "date": "2026-02-15T06:04:30.319382",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -858,7 +858,7 @@
     {
       "title": "EPro-PnP",
       "url": "https://doi.org/10.1109/TPAMI.2024.3354997",
-      "date": "2026-02-14T05:52:17.029444",
+      "date": "2026-02-15T06:04:30.319380",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -871,7 +871,7 @@
     {
       "title": "UniFormerV2",
       "url": "https://doi.org/10.1109/ICCV51070.2023.00157",
-      "date": "2026-02-14T05:52:17.029442",
+      "date": "2026-02-15T06:04:30.319378",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -884,7 +884,7 @@
     {
       "title": "Panini-Net",
       "url": "https://doi.org/10.1609/aaai.v36i3.20159",
-      "date": "2026-02-14T05:52:17.029440",
+      "date": "2026-02-15T06:04:30.319376",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -897,7 +897,7 @@
     {
       "title": "Thin-Plate Spline Motion Model",
       "url": "https://doi.org/10.1109/CVPR52688.2022.00364",
-      "date": "2026-02-14T05:52:17.029438",
+      "date": "2026-02-15T06:04:30.319374",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -910,7 +910,7 @@
     {
       "title": "E2FGVI",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01704",
-      "date": "2026-02-14T05:52:17.029436",
+      "date": "2026-02-15T06:04:30.319372",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -923,7 +923,7 @@
     {
       "title": "PTI",
       "url": "https://doi.org/10.1145/3544777",
-      "date": "2026-02-14T05:52:17.029434",
+      "date": "2026-02-15T06:04:30.319370",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -936,7 +936,7 @@
     {
       "title": "PoolFormer",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01055",
-      "date": "2026-02-14T05:52:17.029430",
+      "date": "2026-02-15T06:04:30.319366",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -949,7 +949,7 @@
     {
       "title": "ECON",
       "url": "https://doi.org/10.1109/CVPR52729.2023.00057",
-      "date": "2026-02-14T05:52:17.029428",
+      "date": "2026-02-15T06:04:30.319364",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -962,7 +962,7 @@
     {
       "title": "ICON",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01294",
-      "date": "2026-02-14T05:52:17.029425",
+      "date": "2026-02-15T06:04:30.319362",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -975,7 +975,7 @@
     {
       "title": "LIDA",
       "url": "https://doi.org/10.18653/v1/2023.acl-demo.11",
-      "date": "2026-02-14T05:52:17.029421",
+      "date": "2026-02-15T06:04:30.319358",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -988,7 +988,7 @@
     {
       "title": "GLIP",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01069",
-      "date": "2026-02-14T05:52:17.029419",
+      "date": "2026-02-15T06:04:30.319356",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1001,7 +1001,7 @@
     {
       "title": "VQ-Diffusion",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01043",
-      "date": "2026-02-14T05:52:17.029417",
+      "date": "2026-02-15T06:04:30.319354",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1014,7 +1014,7 @@
     {
       "title": "Bringing Old Photo Back to Life",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00282",
-      "date": "2026-02-14T05:52:17.029415",
+      "date": "2026-02-15T06:04:30.319352",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1027,7 +1027,7 @@
     {
       "title": "MTTR",
       "url": "https://doi.org/10.1109/CVPR52688.2022.00493",
-      "date": "2026-02-14T05:52:17.029413",
+      "date": "2026-02-15T06:04:30.319350",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1040,7 +1040,7 @@
     {
       "title": "Swin2SR",
       "url": "https://doi.org/10.1007/978-3-031-25063-7_42",
-      "date": "2026-02-14T05:52:17.029411",
+      "date": "2026-02-15T06:04:30.319348",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1053,7 +1053,7 @@
     {
       "title": "VRT",
       "url": "https://doi.org/10.1109/TIP.2024.3372454",
-      "date": "2026-02-14T05:52:17.029409",
+      "date": "2026-02-15T06:04:30.319346",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1066,7 +1066,7 @@
     {
       "title": "SwinIR",
       "url": "https://doi.org/10.1109/ICCVW54120.2021.00210",
-      "date": "2026-02-14T05:52:17.029407",
+      "date": "2026-02-15T06:04:30.319344",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1079,7 +1079,7 @@
     {
       "title": "JoJoGAN",
       "url": "https://doi.org/10.1007/978-3-031-19787-1_8",
-      "date": "2026-02-14T05:52:17.029405",
+      "date": "2026-02-15T06:04:30.319342",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1092,7 +1092,7 @@
     {
       "title": "RVM",
       "url": "https://doi.org/10.1109/WACV51458.2022.00319",
-      "date": "2026-02-14T05:52:17.029403",
+      "date": "2026-02-15T06:04:30.319340",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1105,7 +1105,7 @@
     {
       "title": "LaMa",
       "url": "https://doi.org/10.1109/WACV51458.2022.00323",
-      "date": "2026-02-14T05:52:17.029396",
+      "date": "2026-02-15T06:04:30.319333",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1118,7 +1118,7 @@
     {
       "title": "Instant-NGP",
       "url": "https://doi.org/10.1145/3528223.3530127",
-      "date": "2026-02-14T05:52:17.029394",
+      "date": "2026-02-15T06:04:30.319330",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1131,7 +1131,7 @@
     {
       "title": "StyleCariGAN",
       "url": "https://doi.org/10.1145/3450626.3459860",
-      "date": "2026-02-14T05:52:17.029392",
+      "date": "2026-02-15T06:04:30.319328",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1144,7 +1144,7 @@
     {
       "title": "Live Speech Portraits",
       "url": "https://doi.org/10.1145/3478513.3480484",
-      "date": "2026-02-14T05:52:17.029390",
+      "date": "2026-02-15T06:04:30.319326",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1157,7 +1157,7 @@
     {
       "title": "GFPGAN",
       "url": "https://doi.org/10.1109/CVPR46437.2021.00905",
-      "date": "2026-02-14T05:52:17.029388",
+      "date": "2026-02-15T06:04:30.319324",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1170,7 +1170,7 @@
     {
       "title": "Real-ESRGAN",
       "url": "https://doi.org/10.1109/ICCVW54120.2021.00217",
-      "date": "2026-02-14T05:52:17.029386",
+      "date": "2026-02-15T06:04:30.319322",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1183,7 +1183,7 @@
     {
       "title": "Lifespan Age Transformation Synthesis",
       "url": "https://doi.org/10.1007/978-3-030-58539-6_44",
-      "date": "2026-02-14T05:52:17.029384",
+      "date": "2026-02-15T06:04:30.319320",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1196,7 +1196,7 @@
     {
       "title": "InterFaceGAN",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00926",
-      "date": "2026-02-14T05:52:17.029382",
+      "date": "2026-02-15T06:04:30.319318",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1209,7 +1209,7 @@
     {
       "title": "HiGAN",
       "url": "https://doi.org/10.1007/s11263-020-01429-5",
-      "date": "2026-02-14T05:52:17.029380",
+      "date": "2026-02-15T06:04:30.319316",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1222,7 +1222,7 @@
     {
       "title": "SeFa",
       "url": "https://doi.org/10.1109/CVPR46437.2021.00158",
-      "date": "2026-02-14T05:52:17.029378",
+      "date": "2026-02-15T06:04:30.319314",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1235,7 +1235,7 @@
     {
       "title": "Rewriting a Deep Generative Model",
       "url": "https://doi.org/10.1007/978-3-030-58452-8_21",
-      "date": "2026-02-14T05:52:17.029374",
+      "date": "2026-02-15T06:04:30.319310",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1248,7 +1248,7 @@
     {
       "title": "Anycost GAN",
       "url": "https://doi.org/10.1109/CVPR46437.2021.01474",
-      "date": "2026-02-14T05:52:17.029372",
+      "date": "2026-02-15T06:04:30.319308",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1261,7 +1261,7 @@
     {
       "title": "NeX",
       "url": "https://doi.org/10.1109/CVPR46437.2021.00843",
-      "date": "2026-02-14T05:52:17.029370",
+      "date": "2026-02-15T06:04:30.319306",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1274,7 +1274,7 @@
     {
       "title": "TediGAN",
       "url": "https://doi.org/10.1109/CVPR46437.2021.00229",
-      "date": "2026-02-14T05:52:17.029368",
+      "date": "2026-02-15T06:04:30.319304",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1287,7 +1287,7 @@
     {
       "title": "SimSwap",
       "url": "https://doi.org/10.1145/3394171.3413630",
-      "date": "2026-02-14T05:52:17.029365",
+      "date": "2026-02-15T06:04:30.319302",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1300,7 +1300,7 @@
     {
       "title": "Parallel WaveGAN",
       "url": "https://doi.org/10.1109/ICASSP40776.2020.9053795",
-      "date": "2026-02-14T05:52:17.029363",
+      "date": "2026-02-15T06:04:30.319300",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1313,7 +1313,7 @@
     {
       "title": "StyleCLIP",
       "url": "https://doi.org/10.1109/ICCV48922.2021.00209",
-      "date": "2026-02-14T05:52:17.029361",
+      "date": "2026-02-15T06:04:30.319298",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1326,7 +1326,7 @@
     {
       "title": "StyleGAN-NADA",
       "url": "https://doi.org/10.1145/3528223.3530164",
-      "date": "2026-02-14T05:52:17.029359",
+      "date": "2026-02-15T06:04:30.319296",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1339,7 +1339,7 @@
     {
       "title": "NeRViS",
       "url": "https://doi.org/10.1109/ICCV48922.2021.00230",
-      "date": "2026-02-14T05:52:17.029357",
+      "date": "2026-02-15T06:04:30.319294",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1352,7 +1352,7 @@
     {
       "title": "AnimeGANv3",
       "url": "http://doi.org/10.1587/transinf.2023EDP7061",
-      "date": "2026-02-14T05:52:17.029355",
+      "date": "2026-02-15T06:04:30.319292",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1365,7 +1365,7 @@
     {
       "title": "AnimeGANv2",
       "url": "https://doi.org/10.1007/978-981-15-5577-0_18",
-      "date": "2026-02-14T05:52:17.029353",
+      "date": "2026-02-15T06:04:30.319290",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1378,7 +1378,7 @@
     {
       "title": "HyperStyle",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01796",
-      "date": "2026-02-14T05:52:17.029349",
+      "date": "2026-02-15T06:04:30.319286",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1391,7 +1391,7 @@
     {
       "title": "SAM",
       "url": "https://doi.org/10.1145/3450626.3459805",
-      "date": "2026-02-14T05:52:17.029347",
+      "date": "2026-02-15T06:04:30.319284",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1404,7 +1404,7 @@
     {
       "title": "encoder4editing",
       "url": "https://doi.org/10.1145/3450626.3459838",
-      "date": "2026-02-14T05:52:17.029345",
+      "date": "2026-02-15T06:04:30.319282",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1417,7 +1417,7 @@
     {
       "title": "ReStyle",
       "url": "https://doi.org/10.1109/ICCV48922.2021.00664",
-      "date": "2026-02-14T05:52:17.029343",
+      "date": "2026-02-15T06:04:30.319280",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1430,7 +1430,7 @@
     {
       "title": "Pixel2Style2Pixel",
       "url": "https://doi.org/10.1109/CVPR46437.2021.00232",
-      "date": "2026-02-14T05:52:17.029341",
+      "date": "2026-02-15T06:04:30.319278",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1443,7 +1443,7 @@
     {
       "title": "SVG VAE",
       "url": "https://doi.org/10.1109/ICCV.2019.00802",
-      "date": "2026-02-14T05:52:17.029339",
+      "date": "2026-02-15T06:04:30.319276",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1456,7 +1456,7 @@
     {
       "title": "Stylized Neural Painting",
       "url": "https://doi.org/10.1109/CVPR46437.2021.01543",
-      "date": "2026-02-14T05:52:17.029337",
+      "date": "2026-02-15T06:04:30.319274",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1469,7 +1469,7 @@
     {
       "title": "SkyAR",
       "url": "https://doi.org/10.1109/TIP.2022.3192717",
-      "date": "2026-02-14T05:52:17.029335",
+      "date": "2026-02-15T06:04:30.319272",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1482,7 +1482,7 @@
     {
       "title": "MSG-Net",
       "url": "https://doi.org/10.1007/978-3-030-11018-5_32",
-      "date": "2026-02-14T05:52:17.029331",
+      "date": "2026-02-15T06:04:30.319268",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1495,7 +1495,7 @@
     {
       "title": "Wav2Lip",
       "url": "https://doi.org/10.1145/3394171.3413532",
-      "date": "2026-02-14T05:52:17.029329",
+      "date": "2026-02-15T06:04:30.319266",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1508,7 +1508,7 @@
     {
       "title": "HiDT",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00751",
-      "date": "2026-02-14T05:52:17.029327",
+      "date": "2026-02-15T06:04:30.319264",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1521,7 +1521,7 @@
     {
       "title": "AvatarCLIP",
       "url": "https://doi.org/10.1145/3528223.3530094",
-      "date": "2026-02-14T05:52:17.029323",
+      "date": "2026-02-15T06:04:30.319260",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1534,7 +1534,7 @@
     {
       "title": "LaSAFT",
       "url": "https://doi.org/10.1109/ICASSP39728.2021.9413896",
-      "date": "2026-02-14T05:52:17.029321",
+      "date": "2026-02-15T06:04:30.319258",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1547,7 +1547,7 @@
     {
       "title": "Open-Unmix",
       "url": "https://doi.org/10.21105/joss.01667",
-      "date": "2026-02-14T05:52:17.029319",
+      "date": "2026-02-15T06:04:30.319256",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1560,7 +1560,7 @@
     {
       "title": "Neural Style Transfer",
       "url": "https://doi.org/10.1167/16.12.326",
-      "date": "2026-02-14T05:52:17.029317",
+      "date": "2026-02-15T06:04:30.319254",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1573,7 +1573,7 @@
     {
       "title": "Ithaca",
       "url": "https://doi.org/10.1038/s41586-022-04448-z",
-      "date": "2026-02-14T05:52:17.029314",
+      "date": "2026-02-15T06:04:30.319252",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1586,7 +1586,7 @@
     {
       "title": "GraphCast",
       "url": "https://doi.org/10.1126/science.adi2336",
-      "date": "2026-02-14T05:52:17.029312",
+      "date": "2026-02-15T06:04:30.319250",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1599,7 +1599,7 @@
     {
       "title": "AlphaTensor",
       "url": "https://doi.org/10.1038/s41586-022-05172-4",
-      "date": "2026-02-14T05:52:17.029310",
+      "date": "2026-02-15T06:04:30.319247",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1612,7 +1612,7 @@
     {
       "title": "AlphaFold",
       "url": "https://doi.org/10.1038/s41586-021-03819-2",
-      "date": "2026-02-14T05:52:17.029306",
+      "date": "2026-02-15T06:04:30.319243",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1625,7 +1625,7 @@
     {
       "title": "Skillful Precipitation Nowcasting Using Deep Generative Models of Radar",
       "url": "https://doi.org/10.1038/s41586-021-03854-z",
-      "date": "2026-02-14T05:52:17.029304",
+      "date": "2026-02-15T06:04:30.319241",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1638,7 +1638,7 @@
     {
       "title": "LDM",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01042",
-      "date": "2026-02-14T05:52:17.029302",
+      "date": "2026-02-15T06:04:30.319239",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1651,7 +1651,7 @@
     {
       "title": "Rethinking Style Transfer: From Pixels to Parameterized Brushstrokes",
       "url": "https://doi.org/10.1109/CVPR46437.2021.01202",
-      "date": "2026-02-14T05:52:17.029300",
+      "date": "2026-02-15T06:04:30.319237",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1664,7 +1664,7 @@
     {
       "title": "Geometry-Free View Synthesis",
       "url": "https://doi.org/10.1109/ICCV48922.2021.01409",
-      "date": "2026-02-14T05:52:17.029298",
+      "date": "2026-02-15T06:04:30.319235",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1677,7 +1677,7 @@
     {
       "title": "Taming Transformers for High-Resolution Image Synthesis",
       "url": "https://doi.org/10.1109/CVPR46437.2021.01268",
-      "date": "2026-02-14T05:52:17.029296",
+      "date": "2026-02-15T06:04:30.319233",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1690,7 +1690,7 @@
     {
       "title": "MakeItTalk",
       "url": "https://doi.org/10.1145/3414685.3417774",
-      "date": "2026-02-14T05:52:17.029294",
+      "date": "2026-02-15T06:04:30.319231",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1703,7 +1703,7 @@
     {
       "title": "Instance-aware Image Colorization",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00799",
-      "date": "2026-02-14T05:52:17.029292",
+      "date": "2026-02-15T06:04:30.319229",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1716,7 +1716,7 @@
     {
       "title": "FGVC",
       "url": "https://doi.org/10.1007/978-3-030-58610-2_42",
-      "date": "2026-02-14T05:52:17.029290",
+      "date": "2026-02-15T06:04:30.319227",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1729,7 +1729,7 @@
     {
       "title": "3D Photo Inpainting",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00805",
-      "date": "2026-02-14T05:52:17.029288",
+      "date": "2026-02-15T06:04:30.319225",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1742,7 +1742,7 @@
     {
       "title": "ByteTrack",
       "url": "https://doi.org/10.1007/978-3-031-20047-2_1",
-      "date": "2026-02-14T05:52:17.029284",
+      "date": "2026-02-15T06:04:30.319221",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1755,7 +1755,7 @@
     {
       "title": "DualStyleGAN",
       "url": "https://doi.org/10.1109/CVPR52688.2022.00754",
-      "date": "2026-02-14T05:52:17.029282",
+      "date": "2026-02-15T06:04:30.319219",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1768,7 +1768,7 @@
     {
       "title": "VToonify",
       "url": "https://doi.org/10.1145/3550454.3555437",
-      "date": "2026-02-14T05:52:17.029280",
+      "date": "2026-02-15T06:04:30.319217",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1781,7 +1781,7 @@
     {
       "title": "CartoonGAN",
       "url": "https://doi.org/10.1109/CVPR.2018.00986",
-      "date": "2026-02-14T05:52:17.029278",
+      "date": "2026-02-15T06:04:30.319215",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1794,7 +1794,7 @@
     {
       "title": "MoCo",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00975",
-      "date": "2026-02-14T05:52:17.029276",
+      "date": "2026-02-15T06:04:30.319213",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1807,7 +1807,7 @@
     {
       "title": "ESM",
       "url": "https://doi.org/10.1101/622803",
-      "date": "2026-02-14T05:52:17.029274",
+      "date": "2026-02-15T06:04:30.319211",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1820,7 +1820,7 @@
     {
       "title": "Omnivore",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01563",
-      "date": "2026-02-14T05:52:17.029272",
+      "date": "2026-02-15T06:04:30.319209",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1833,7 +1833,7 @@
     {
       "title": "ConvNeXt",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01167",
-      "date": "2026-02-14T05:52:17.029270",
+      "date": "2026-02-15T06:04:30.319207",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1846,7 +1846,7 @@
     {
       "title": "Mask2Former",
       "url": "https://doi.org/10.1109/CVPR52688.2022.00135",
-      "date": "2026-02-14T05:52:17.029268",
+      "date": "2026-02-15T06:04:30.319205",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1859,7 +1859,7 @@
     {
       "title": "Detic",
       "url": "https://doi.org/10.1007/978-3-031-20077-9_21",
-      "date": "2026-02-14T05:52:17.029266",
+      "date": "2026-02-15T06:04:30.319203",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1872,7 +1872,7 @@
     {
       "title": "PIFuHD",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00016",
-      "date": "2026-02-14T05:52:17.029263",
+      "date": "2026-02-15T06:04:30.319201",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1885,7 +1885,7 @@
     {
       "title": "PIFu",
       "url": "https://doi.org/10.1109/ICCV.2019.00239",
-      "date": "2026-02-14T05:52:17.029261",
+      "date": "2026-02-15T06:04:30.319199",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1898,7 +1898,7 @@
     {
       "title": "Nerfies",
       "url": "https://doi.org/10.1109/ICCV48922.2021.00581",
-      "date": "2026-02-14T05:52:17.029259",
+      "date": "2026-02-15T06:04:30.319197",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1911,7 +1911,7 @@
     {
       "title": "StylEx",
       "url": "https://doi.org/10.1109/ICCV48922.2021.00073",
-      "date": "2026-02-14T05:52:17.029257",
+      "date": "2026-02-15T06:04:30.319195",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1924,7 +1924,7 @@
     {
       "title": "BiT",
       "url": "https://doi.org/10.1007/978-3-030-58558-7_29",
-      "date": "2026-02-14T05:52:17.029255",
+      "date": "2026-02-15T06:04:30.319193",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1937,7 +1937,7 @@
     {
       "title": "OWL-ViT",
       "url": "https://doi.org/10.1007/978-3-031-20080-9_42",
-      "date": "2026-02-14T05:52:17.029251",
+      "date": "2026-02-15T06:04:30.319189",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1950,7 +1950,7 @@
     {
       "title": "FILM",
       "url": "https://doi.org/10.1007/978-3-031-20071-7_15",
-      "date": "2026-02-14T05:52:17.029249",
+      "date": "2026-02-15T06:04:30.319187",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1963,7 +1963,7 @@
     {
       "title": "Dream Fields",
       "url": "https://doi.org/10.1109/CVPR52688.2022.00094",
-      "date": "2026-02-14T05:52:17.029233",
+      "date": "2026-02-15T06:04:30.319185",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1976,7 +1976,7 @@
     {
       "title": "Motion Representations for Articulated Animation",
       "url": "https://doi.org/10.1109/CVPR46437.2021.01344",
-      "date": "2026-02-14T05:52:17.029231",
+      "date": "2026-02-15T06:04:30.319182",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -1989,7 +1989,7 @@
     {
       "title": "Motion Supervised co-part Segmentation",
       "url": "https://doi.org/10.1109/ICPR48806.2021.9412520",
-      "date": "2026-02-14T05:52:17.029227",
+      "date": "2026-02-15T06:04:30.319178",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -2002,7 +2002,7 @@
     {
       "title": "Text2Human",
       "url": "https://doi.org/10.1145/3528223.3530104",
-      "date": "2026-02-14T05:52:17.029223",
+      "date": "2026-02-15T06:04:30.319174",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -2015,7 +2015,7 @@
     {
       "title": "StyleGAN-Human",
       "url": "https://doi.org/10.1007/978-3-031-19787-1_1",
-      "date": "2026-02-14T05:52:17.029220",
+      "date": "2026-02-15T06:04:30.319172",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -2028,7 +2028,7 @@
     {
       "title": "StyleGAN 2",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00813",
-      "date": "2026-02-14T05:52:17.029218",
+      "date": "2026-02-15T06:04:30.319170",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -2041,7 +2041,7 @@
     {
       "title": "Learning to Paint",
       "url": "https://doi.org/10.1109/ICCV.2019.00880",
-      "date": "2026-02-14T05:52:17.029216",
+      "date": "2026-02-15T06:04:30.319167",
       "author": "AI Agent",
       "tags": [
         "Paper",
@@ -2054,7 +2054,7 @@
     {
       "title": "3D Ken Burns",
       "url": "https://doi.org/10.1145/3355089.3356528",
-      "date": "2026-02-14T05:52:17.029211",
+      "date": "2026-02-15T06:04:30.319163",
       "author": "AI Agent",
       "tags": [
         "Paper",
