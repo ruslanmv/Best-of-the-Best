@@ -27,6 +27,15 @@
     "excerpt": "env = rl.make_env('CartPole-v1')\nagent = rl.Agent(env, episodes=1000)"
   },
   {
+    "filename": "2026-02-15-repo-langchain.md",
+    "url": "/blog/posts/2026-02-15-repo-langchain.html",
+    "title": "Langchain",
+    "date": "2026-02-15T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "**Introduction**\n= 2019-01-29 14:30:00 ="
+  },
+  {
     "filename": "2025-12-23-package-catboost.md",
     "url": "/blog/posts/2025-12-23-package-catboost.html",
     "title": "Catboost Guide",

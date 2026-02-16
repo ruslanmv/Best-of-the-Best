@@ -2,37 +2,37 @@
   "repositories": [
     {
       "name": "ollama/ollama",
-      "stars": 162626,
+      "stars": 162669,
       "url": "https://github.com/ollama/ollama"
     },
     {
       "name": "langchain-ai/langchain",
-      "stars": 126679,
+      "stars": 126721,
       "url": "https://github.com/langchain-ai/langchain"
     },
     {
       "name": "comfyanonymous/ComfyUI",
-      "stars": 103236,
+      "stars": 103307,
       "url": "https://github.com/comfyanonymous/ComfyUI"
     },
     {
       "name": "openai/whisper",
-      "stars": 94629,
+      "stars": 94669,
       "url": "https://github.com/openai/whisper"
     },
     {
       "name": "tensorflow/models",
-      "stars": 77687,
+      "stars": 77686,
       "url": "https://github.com/tensorflow/models"
     },
     {
       "name": "CompVis/stable-diffusion",
-      "stars": 72356,
+      "stars": 72357,
       "url": "https://github.com/CompVis/stable-diffusion"
     },
     {
       "name": "KillianLucas/open-interpreter",
-      "stars": 62149,
+      "stars": 62150,
       "url": "https://github.com/KillianLucas/open-interpreter"
     },
     {
@@ -42,12 +42,12 @@
     },
     {
       "name": "ultralytics/yolov5",
-      "stars": 56820,
+      "stars": 56822,
       "url": "https://github.com/ultralytics/yolov5"
     },
     {
       "name": "facebookresearch/segment-anything",
-      "stars": 53412,
+      "stars": 53417,
       "url": "https://github.com/facebookresearch/segment-anything"
     },
     {
@@ -116,5 +116,5 @@
       "url": "https://github.com/microsoft/visual-chatgpt"
     }
   ],
-  "last_updated": "2026-02-16T02:30:50.305099"
+  "last_updated": "2026-02-16T06:15:30.051243"
 }
