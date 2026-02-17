@@ -411,5 +411,12 @@
     "version": 1,
     "date": "2026-02-16",
     "filename": "2026-02-16-package-catchy.md"
+  },
+  {
+    "kind": "package",
+    "id": "transformers",
+    "version": 1,
+    "date": "2026-02-17",
+    "filename": "2026-02-17-package-transformers.md"
   }
 ]
