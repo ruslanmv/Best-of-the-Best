@@ -432,5 +432,12 @@
     "version": 1,
     "date": "2026-02-19",
     "filename": "2026-02-19-package-hugging.md"
+  },
+  {
+    "kind": "package",
+    "id": "featured",
+    "version": 1,
+    "date": "2026-02-20",
+    "filename": "2026-02-20-package-featured.md"
   }
 ]
