@@ -467,5 +467,12 @@
     "version": 1,
     "date": "2026-02-24",
     "filename": "2026-02-24-package-pytorch-lightning.md"
+  },
+  {
+    "kind": "package",
+    "id": "unlocking",
+    "version": 1,
+    "date": "2026-02-25",
+    "filename": "2026-02-25-package-unlocking.md"
   }
 ]
