@@ -474,5 +474,12 @@
     "version": 1,
     "date": "2026-02-25",
     "filename": "2026-02-25-package-unlocking.md"
+  },
+  {
+    "kind": "package",
+    "id": "datasets",
+    "version": 1,
+    "date": "2026-02-26",
+    "filename": "2026-02-26-package-datasets.md"
   }
 ]

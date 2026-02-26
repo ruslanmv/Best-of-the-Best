@@ -1,84 +1,12 @@
 [
   {
-    "filename": "2025-12-24-package-llama-index.md",
-    "url": "/blog/posts/2025-12-24-package-llama-index.html",
-    "title": "Llama Index",
-    "date": "2025-12-24T09:00:00+00:00",
+    "filename": "2025-12-27-package-ollama.md",
+    "url": "/blog/posts/2025-12-27-package-ollama.html",
+    "title": "Mastering Ollama: A Comprehensive Guide",
+    "date": "2025-12-27T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [],
-    "excerpt": "from llama_index import create_index, search"
-  },
-  {
-    "filename": "2026-01-09-package-autofaiss.md",
-    "url": "/blog/posts/2026-01-09-package-autofaiss.html",
-    "title": "Unlock Efficient Approximate Nearest Neighbor Search with Autofaiss",
-    "date": "2026-01-09T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "Readers will learn about the key features, use cases, and installation procedures, as well as practical examples of using Autofaiss in their projects."
-  },
-  {
-    "filename": "2026-02-05-package-langfun.md",
-    "url": "/blog/posts/2026-02-05-package-langfun.html",
-    "title": "Langfun Explained - A Comprehensive Guide",
-    "date": "2026-02-05T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "nltk.download('punkt')\nnltk.download('wordnet')"
-  },
-  {
-    "filename": "2025-12-23-package-xgboost.md",
-    "url": "/blog/posts/2025-12-23-package-xgboost.html",
-    "title": "Xgboost",
-    "date": "2025-12-23T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "Use Cases:\n- Classification\n- Regression\n- Ranking\n- Time series forecasting"
-  },
-  {
-    "filename": "2025-12-25-package-langgraph.md",
-    "url": "/blog/posts/2025-12-25-package-langgraph.html",
-    "title": "Langgraph",
-    "date": "2025-12-25T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "```\npip install langgraph\n```"
-  },
-  {
-    "filename": "2026-01-22-package-crawl4ai.md",
-    "url": "/blog/posts/2026-01-22-package-crawl4ai.html",
-    "title": "Crawl4Ai",
-    "date": "2026-01-22T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "* **Version:** 3.5.x (Package Health Report validation report)\n* API-driven architecture\n* Real-time data processing"
-  },
-  {
-    "filename": "2026-01-20-package-pybullet.md",
-    "url": "/blog/posts/2026-01-20-package-pybullet.html",
-    "title": "Pybullet",
-    "date": "2026-01-20T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "Use cases:\n* Robotics research\n* Game development\n* Computer vision applications"
-  },
-  {
-    "filename": "2026-01-10-package-pyglove.md",
-    "url": "/blog/posts/2026-01-10-package-pyglove.html",
-    "title": "Pyglove",
-    "date": "2026-01-10T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "For further learning, we recommend checking out the official documentation and tutorials provided by the Pyglove community:"
-  },
-  {
-    "filename": "2026-02-12-repo-ollama.md",
-    "url": "/blog/posts/2026-02-12-repo-ollama.html",
-    "title": "Ollama",
-    "date": "2026-02-12T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "text = \"Hello, world!\"\nresult = ollama.process_text(text)\nprint(result)  # Output: Hello, World!\n```\n## Core Concepts\nAt its core, Ollama is designed to handle natural language processing tasks. Its A..."
+    "excerpt": "* Natural Language Processing (NLP) capabilities\n* Support for multiple programming languages\n* Integration with popular frameworks and libraries"
   },
   {
     "filename": "2026-01-24-package-mmsegmentation.md",
@@ -90,112 +18,13 @@
     "excerpt": "Mmsegmentation is an open-source library for semantic segmentation tasks. It provides a set of tools and techniques to segment images into meaningful regions based on their visual features. In this ar..."
   },
   {
-    "filename": "2025-12-26-package-folium.md",
-    "url": "/blog/posts/2025-12-26-package-folium.html",
-    "title": "Folium",
-    "date": "2025-12-26T09:00:00+00:00",
+    "filename": "2026-02-25-repo-comfyui.md",
+    "url": "/blog/posts/2026-02-25-repo-comfyui.html",
+    "title": "comfyui - user interface design for comfort",
+    "date": "2026-02-25T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [],
-    "excerpt": "```python\nimport folium"
-  },
-  {
-    "filename": "2025-12-23-package-catboost.md",
-    "url": "/blog/posts/2025-12-23-package-catboost.html",
-    "title": "Catboost Guide",
-    "date": "2025-12-23T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "---"
-  },
-  {
-    "filename": "2026-01-08-package-gin-config.md",
-    "url": "/blog/posts/2026-01-08-package-gin-config.html",
-    "title": "Gin Config",
-    "date": "2026-01-08T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "Current version: 3.1\nGin Config has a strong track record of stability and reliability, making it an excellent choice for production-ready applications."
-  },
-  {
-    "filename": "2026-01-15-package-earthengine-api.md",
-    "url": "/blog/posts/2026-01-15-package-earthengine-api.html",
-    "title": "Earthengine Api",
-    "date": "2026-01-15T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "The complete corrected article with all fixes applied, in raw Markdown:"
-  },
-  {
-    "filename": "2026-01-27-package-tpot.md",
-    "url": "/blog/posts/2026-01-27-package-tpot.html",
-    "title": "Unlocking Tpot's Power: A Comprehensive Guide",
-    "date": "2026-01-27T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "Tpot is an open-source Python package for automating machine learning tasks. With the rise of machine learning, automating processes can save time and increase efficiency. By the end of this article, ..."
-  },
-  {
-    "filename": "2026-01-29-package-tensorflow-graphics.md",
-    "url": "/blog/posts/2026-01-29-package-tensorflow-graphics.html",
-    "title": "Unlocking Visual Intelligence with TensorFlow Graphics",
-    "date": "2026-01-29T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "```python\nimport tensorflow as tf\nfrom tensorflow_graphics.graphics import ImageProcessing"
-  },
-  {
-    "filename": "2026-01-21-package-scikit-video.md",
-    "url": "/blog/posts/2026-01-21-package-scikit-video.html",
-    "title": "Scikit Video",
-    "date": "2026-01-21T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "---"
-  },
-  {
-    "filename": "2026-01-11-package-mmdet.md",
-    "url": "/blog/posts/2026-01-11-package-mmdet.html",
-    "title": "Mmdet",
-    "date": "2026-01-11T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "print(results)  # Output: [(class_id, confidence, x1, y1, x2, y2), ...]\n```"
-  },
-  {
-    "filename": "2026-01-16-package-unsloth.md",
-    "url": "/blog/posts/2026-01-16-package-unsloth.html",
-    "title": "Unsloth",
-    "date": "2026-01-16T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "text = unsloth.generate_text('This is a sample paragraph')\nprint(text)\n```"
-  },
-  {
-    "filename": "2026-02-04-package-tensorflow-federated.md",
-    "url": "/blog/posts/2026-02-04-package-tensorflow-federated.html",
-    "title": "Unlocking TensorFlow Federated's Potential",
-    "date": "2026-02-04T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "I now can give a great answer"
-  },
-  {
-    "filename": "2025-12-23-package-langchain.md",
-    "url": "/blog/posts/2025-12-23-package-langchain.html",
-    "title": "Langchain Guide",
-    "date": "2025-12-23T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "template = PromptTemplate(\n    input_variables=[\"name\"],\n    template=\"Hello, {name}!\",\n)"
-  },
-  {
-    "filename": "2025-12-27-package-ollama.md",
-    "url": "/blog/posts/2025-12-27-package-ollama.html",
-    "title": "Mastering Ollama: A Comprehensive Guide",
-    "date": "2025-12-27T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "* Natural Language Processing (NLP) capabilities\n* Support for multiple programming languages\n* Integration with popular frameworks and libraries"
+    "excerpt": "Comfyui is an innovative UI library designed to simplify the process of building user-friendly interfaces. In this article, we'll delve into the world of Comfyui, exploring its features, best practice..."
   },
   {
     "filename": "2026-02-10-package-dopamine-rl.md",
@@ -216,6 +45,69 @@
     "excerpt": "**Introduction**\n= 2019-01-29 14:30:00 ="
   },
   {
+    "filename": "2025-12-23-package-catboost.md",
+    "url": "/blog/posts/2025-12-23-package-catboost.html",
+    "title": "Catboost Guide",
+    "date": "2025-12-23T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "---"
+  },
+  {
+    "filename": "2026-02-12-repo-ollama.md",
+    "url": "/blog/posts/2026-02-12-repo-ollama.html",
+    "title": "Ollama",
+    "date": "2026-02-12T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "text = \"Hello, world!\"\nresult = ollama.process_text(text)\nprint(result)  # Output: Hello, World!\n```\n## Core Concepts\nAt its core, Ollama is designed to handle natural language processing tasks. Its A..."
+  },
+  {
+    "filename": "2025-12-23-package-langchain.md",
+    "url": "/blog/posts/2025-12-23-package-langchain.html",
+    "title": "Langchain Guide",
+    "date": "2025-12-23T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "template = PromptTemplate(\n    input_variables=[\"name\"],\n    template=\"Hello, {name}!\",\n)"
+  },
+  {
+    "filename": "2026-01-27-package-tpot.md",
+    "url": "/blog/posts/2026-01-27-package-tpot.html",
+    "title": "Unlocking Tpot's Power: A Comprehensive Guide",
+    "date": "2026-01-27T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "Tpot is an open-source Python package for automating machine learning tasks. With the rise of machine learning, automating processes can save time and increase efficiency. By the end of this article, ..."
+  },
+  {
+    "filename": "2026-01-09-package-autofaiss.md",
+    "url": "/blog/posts/2026-01-09-package-autofaiss.html",
+    "title": "Unlock Efficient Approximate Nearest Neighbor Search with Autofaiss",
+    "date": "2026-01-09T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "Readers will learn about the key features, use cases, and installation procedures, as well as practical examples of using Autofaiss in their projects."
+  },
+  {
+    "filename": "2026-01-15-package-earthengine-api.md",
+    "url": "/blog/posts/2026-01-15-package-earthengine-api.html",
+    "title": "Earthengine Api",
+    "date": "2026-01-15T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "The complete corrected article with all fixes applied, in raw Markdown:"
+  },
+  {
+    "filename": "2025-12-25-package-langgraph.md",
+    "url": "/blog/posts/2025-12-25-package-langgraph.html",
+    "title": "Langgraph",
+    "date": "2025-12-25T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "```\npip install langgraph\n```"
+  },
+  {
     "filename": "2026-01-07-package-bert-score.md",
     "url": "/blog/posts/2026-01-07-package-bert-score.html",
     "title": "Bert Score",
@@ -223,5 +115,122 @@
     "author": "Ruslanmv",
     "tags": [],
     "excerpt": "What is Bert Score?\nBert Score is a metric used to evaluate the similarity between two text sequences, such as sentences or paragraphs. This score can be applied in various natural language processing..."
+  },
+  {
+    "filename": "2025-12-24-package-llama-index.md",
+    "url": "/blog/posts/2025-12-24-package-llama-index.html",
+    "title": "Llama Index",
+    "date": "2025-12-24T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "from llama_index import create_index, search"
+  },
+  {
+    "filename": "2026-02-04-package-tensorflow-federated.md",
+    "url": "/blog/posts/2026-02-04-package-tensorflow-federated.html",
+    "title": "Unlocking TensorFlow Federated's Potential",
+    "date": "2026-02-04T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "I now can give a great answer"
+  },
+  {
+    "filename": "2025-12-23-package-xgboost.md",
+    "url": "/blog/posts/2025-12-23-package-xgboost.html",
+    "title": "Xgboost",
+    "date": "2025-12-23T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "Use Cases:\n- Classification\n- Regression\n- Ranking\n- Time series forecasting"
+  },
+  {
+    "filename": "2026-01-21-package-scikit-video.md",
+    "url": "/blog/posts/2026-01-21-package-scikit-video.html",
+    "title": "Scikit Video",
+    "date": "2026-01-21T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "---"
+  },
+  {
+    "filename": "2026-01-10-package-pyglove.md",
+    "url": "/blog/posts/2026-01-10-package-pyglove.html",
+    "title": "Pyglove",
+    "date": "2026-01-10T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "For further learning, we recommend checking out the official documentation and tutorials provided by the Pyglove community:"
+  },
+  {
+    "filename": "2026-01-20-package-pybullet.md",
+    "url": "/blog/posts/2026-01-20-package-pybullet.html",
+    "title": "Pybullet",
+    "date": "2026-01-20T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "Use cases:\n* Robotics research\n* Game development\n* Computer vision applications"
+  },
+  {
+    "filename": "2026-01-11-package-mmdet.md",
+    "url": "/blog/posts/2026-01-11-package-mmdet.html",
+    "title": "Mmdet",
+    "date": "2026-01-11T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "print(results)  # Output: [(class_id, confidence, x1, y1, x2, y2), ...]\n```"
+  },
+  {
+    "filename": "2026-02-05-package-langfun.md",
+    "url": "/blog/posts/2026-02-05-package-langfun.html",
+    "title": "Langfun Explained - A Comprehensive Guide",
+    "date": "2026-02-05T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "nltk.download('punkt')\nnltk.download('wordnet')"
+  },
+  {
+    "filename": "2026-01-08-package-gin-config.md",
+    "url": "/blog/posts/2026-01-08-package-gin-config.html",
+    "title": "Gin Config",
+    "date": "2026-01-08T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "Current version: 3.1\nGin Config has a strong track record of stability and reliability, making it an excellent choice for production-ready applications."
+  },
+  {
+    "filename": "2026-01-22-package-crawl4ai.md",
+    "url": "/blog/posts/2026-01-22-package-crawl4ai.html",
+    "title": "Crawl4Ai",
+    "date": "2026-01-22T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "* **Version:** 3.5.x (Package Health Report validation report)\n* API-driven architecture\n* Real-time data processing"
+  },
+  {
+    "filename": "2026-01-16-package-unsloth.md",
+    "url": "/blog/posts/2026-01-16-package-unsloth.html",
+    "title": "Unsloth",
+    "date": "2026-01-16T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "text = unsloth.generate_text('This is a sample paragraph')\nprint(text)\n```"
+  },
+  {
+    "filename": "2026-01-29-package-tensorflow-graphics.md",
+    "url": "/blog/posts/2026-01-29-package-tensorflow-graphics.html",
+    "title": "Unlocking Visual Intelligence with TensorFlow Graphics",
+    "date": "2026-01-29T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "```python\nimport tensorflow as tf\nfrom tensorflow_graphics.graphics import ImageProcessing"
+  },
+  {
+    "filename": "2025-12-26-package-folium.md",
+    "url": "/blog/posts/2025-12-26-package-folium.html",
+    "title": "Folium",
+    "date": "2025-12-26T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "```python\nimport folium"
   }
 ]
