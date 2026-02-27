@@ -481,5 +481,12 @@
     "version": 1,
     "date": "2026-02-26",
     "filename": "2026-02-26-package-datasets.md"
+  },
+  {
+    "kind": "package",
+    "id": "hugging",
+    "version": 1,
+    "date": "2026-02-27",
+    "filename": "2026-02-27-package-hugging.md"
   }
 ]
