@@ -81,6 +81,15 @@
     "excerpt": "Tpot is an open-source Python package for automating machine learning tasks. With the rise of machine learning, automating processes can save time and increase efficiency. By the end of this article, ..."
   },
   {
+    "filename": "2026-02-26-repo-whisper.md",
+    "url": "/blog/posts/2026-02-26-repo-whisper.html",
+    "title": "Whisper",
+    "date": "2026-02-26T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [],
+    "excerpt": "\".\n            • Do NOT add comments or notes after the article."
+  },
+  {
     "filename": "2026-01-09-package-autofaiss.md",
     "url": "/blog/posts/2026-01-09-package-autofaiss.html",
     "title": "Unlock Efficient Approximate Nearest Neighbor Search with Autofaiss",
