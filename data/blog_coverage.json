@@ -488,5 +488,12 @@
     "version": 1,
     "date": "2026-02-27",
     "filename": "2026-02-27-package-hugging.md"
+  },
+  {
+    "kind": "package",
+    "id": "featured",
+    "version": 1,
+    "date": "2026-02-28",
+    "filename": "2026-02-28-package-featured.md"
   }
 ]
