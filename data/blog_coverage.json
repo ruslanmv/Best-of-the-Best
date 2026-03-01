@@ -495,5 +495,12 @@
     "version": 1,
     "date": "2026-02-28",
     "filename": "2026-02-28-package-featured.md"
+  },
+  {
+    "kind": "package",
+    "id": "load",
+    "version": 1,
+    "date": "2026-03-01",
+    "filename": "2026-03-01-package-load.md"
   }
 ]
