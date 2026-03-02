@@ -502,5 +502,12 @@
     "version": 1,
     "date": "2026-03-01",
     "filename": "2026-03-01-package-load.md"
+  },
+  {
+    "kind": "package",
+    "id": "transformers",
+    "version": 1,
+    "date": "2026-03-02",
+    "filename": "2026-03-02-package-transformers.md"
   }
 ]
