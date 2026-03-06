@@ -530,5 +530,12 @@
     "version": 1,
     "date": "2026-03-05",
     "filename": "2026-03-05-package-hugging.md"
+  },
+  {
+    "kind": "package",
+    "id": "overview",
+    "version": 1,
+    "date": "2026-03-06",
+    "filename": "2026-03-06-package-overview.md"
   }
 ]
