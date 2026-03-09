@@ -551,5 +551,12 @@
     "version": 1,
     "date": "2026-03-08",
     "filename": "2026-03-08-package-featured.md"
+  },
+  {
+    "kind": "package",
+    "id": "overview",
+    "version": 1,
+    "date": "2026-03-09",
+    "filename": "2026-03-09-package-overview.md"
   }
 ]
