@@ -579,5 +579,12 @@
     "version": 1,
     "date": "2026-03-12",
     "filename": "2026-03-12-package-transformers.md"
+  },
+  {
+    "kind": "package",
+    "id": "hugging",
+    "version": 1,
+    "date": "2026-03-13",
+    "filename": "2026-03-13-package-hugging.md"
   }
 ]
