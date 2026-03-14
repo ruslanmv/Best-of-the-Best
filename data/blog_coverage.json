@@ -586,5 +586,12 @@
     "version": 1,
     "date": "2026-03-13",
     "filename": "2026-03-13-package-hugging.md"
+  },
+  {
+    "kind": "package",
+    "id": "pre-trained",
+    "version": 1,
+    "date": "2026-03-14",
+    "filename": "2026-03-14-package-pre-trained.md"
   }
 ]
