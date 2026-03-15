@@ -593,5 +593,12 @@
     "version": 1,
     "date": "2026-03-14",
     "filename": "2026-03-14-package-pre-trained.md"
+  },
+  {
+    "kind": "package",
+    "id": "catchy",
+    "version": 1,
+    "date": "2026-03-15",
+    "filename": "2026-03-15-package-catchy.md"
   }
 ]
