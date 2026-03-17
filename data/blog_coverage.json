@@ -607,5 +607,12 @@
     "version": 1,
     "date": "2026-03-16",
     "filename": "2026-03-16-package-fine-tuning.md"
+  },
+  {
+    "kind": "package",
+    "id": "featured",
+    "version": 1,
+    "date": "2026-03-17",
+    "filename": "2026-03-17-package-featured.md"
   }
 ]
