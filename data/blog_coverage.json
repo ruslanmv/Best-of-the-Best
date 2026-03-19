@@ -621,5 +621,12 @@
     "version": 1,
     "date": "2026-03-18",
     "filename": "2026-03-18-package-transformers.md"
+  },
+  {
+    "kind": "package",
+    "id": "transformers",
+    "version": 1,
+    "date": "2026-03-19",
+    "filename": "2026-03-19-package-transformers.md"
   }
 ]
