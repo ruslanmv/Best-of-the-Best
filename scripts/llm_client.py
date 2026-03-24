@@ -5,20 +5,25 @@ scripts/llm_client.py
 Multi-provider LLM client for Best-of-the-Best blog generation.
 
 Providers:
-  - Local Ollama:      model="ollama/<model>"
   - OpenAI:            model="openai/<model>"
   - Anthropic:         model="anthropic/<model>"
   - IBM watsonx.ai:    model="watsonx/<model>"
+  - Groq:              model="groq/<model>"
+  - Local Ollama:      model="ollama/<model>"
 
 Selection (in order):
   1) NEWS_LLM_MODEL  (recommended)  e.g. "watsonx/meta-llama/llama-3-3-70b-instruct"
   2) LLM_MODEL
   3) NEWS_LLM_PROVIDER + NEWS_LLM_MODEL (if you prefer splitting provider/model)
-  4) default: "ollama/gemma:2b"
+  4) Auto-detect: pick the best provider based on available API keys
+  5) Fallback: "ollama/gemma:2b" (for local development only)
+
+Auto-detection priority (when no model is explicitly set):
+  OpenAI > Anthropic > WatsonX > Groq > Ollama
 
 Environment variables:
   - NEWS_LLM_MODEL
-  - NEWS_LLM_PROVIDER   (optional: ollama|openai|anthropic|watsonx)
+  - NEWS_LLM_PROVIDER   (optional: ollama|openai|anthropic|watsonx|groq)
   - NEWS_LLM_TEMPERATURE (optional, float)
 
 Ollama:
@@ -52,7 +57,7 @@ def _safe_float(env_name: str, default: float) -> float:
         return float(raw)
     except (TypeError, ValueError):
         print(
-            f"[llm_client] ⚠️  Invalid value for {env_name}={raw!r}; using {default}",
+            f"[llm_client] \u26a0\ufe0f  Invalid value for {env_name}={raw!r}; using {default}",
             file=sys.stderr,
         )
         return default
@@ -71,10 +76,10 @@ def _normalize_model(provider: Optional[str], model: str) -> str:
         return ""
 
     # already prefixed like "ollama/...", "openai/...", etc.
-    if "/" in model and model.split("/", 1)[0] in {"ollama", "openai", "anthropic", "watsonx"}:
+    if "/" in model and model.split("/", 1)[0] in {"ollama", "openai", "anthropic", "watsonx", "groq"}:
         return model
 
-    if provider in {"ollama", "openai", "anthropic", "watsonx"}:
+    if provider in {"ollama", "openai", "anthropic", "watsonx", "groq"}:
         return f"{provider}/{model}"
 
     return model
@@ -100,6 +105,45 @@ def _watsonx_env() -> Tuple[Optional[str], Optional[str], Optional[str]]:
     return api_key, url, project_id
 
 
+def _auto_detect_model() -> str:
+    """
+    Auto-detect the best available LLM based on which API keys are set.
+    Prefers fast cloud providers over slow local Ollama.
+    """
+    # 1. OpenAI - most reliable, fast, cheap with gpt-4o-mini
+    if os.environ.get("OPENAI_API_KEY"):
+        model = "openai/gpt-4o-mini"
+        print(f"[llm_client] \U0001f50d Auto-detected OPENAI_API_KEY -> {model}")
+        return model
+
+    # 2. Anthropic - excellent quality
+    if os.environ.get("ANTHROPIC_API_KEY"):
+        model = "anthropic/claude-haiku-4-5-20251001"
+        print(f"[llm_client] \U0001f50d Auto-detected ANTHROPIC_API_KEY -> {model}")
+        return model
+
+    # 3. WatsonX - enterprise grade
+    wx_key, wx_url, wx_proj = _watsonx_env()
+    if wx_key and wx_proj:
+        model = "watsonx/meta-llama/llama-3-3-70b-instruct"
+        print(f"[llm_client] \U0001f50d Auto-detected WATSONX credentials -> {model}")
+        return model
+
+    # 4. Groq - free tier, very fast inference
+    if os.environ.get("GROQ_API_KEY"):
+        model = "groq/llama3-8b-8192"
+        print(f"[llm_client] \U0001f50d Auto-detected GROQ_API_KEY -> {model}")
+        return model
+
+    # 5. Fallback: local Ollama (only suitable for local dev, NOT CI)
+    print(
+        "[llm_client] \u26a0\ufe0f  No cloud API keys found. Falling back to ollama/gemma:2b.\n"
+        "  Set OPENAI_API_KEY, ANTHROPIC_API_KEY, or WATSONX_APIKEY for reliable CI runs.",
+        file=sys.stderr,
+    )
+    return "ollama/gemma:2b"
+
+
 def get_llm() -> LLM:
     # Preferred: single variable with provider prefix
     raw_model = os.environ.get("NEWS_LLM_MODEL") or os.environ.get("LLM_MODEL") or ""
@@ -109,7 +153,7 @@ def get_llm() -> LLM:
 
     model = _normalize_model(provider, raw_model) if (provider or raw_model) else ""
     if not model:
-        model = "ollama/gemma:2b"
+        model = _auto_detect_model()
 
     temperature = _safe_float("NEWS_LLM_TEMPERATURE", 0.7)
 
@@ -130,7 +174,7 @@ def get_llm() -> LLM:
             or "http://127.0.0.1:11434"
         )
         kwargs["base_url"] = base_url
-        print(f"[llm_client] 🤖 Provider=Ollama  model={model!r}  base_url={base_url}")
+        print(f"[llm_client] \U0001f916 Provider=Ollama  model={model!r}  base_url={base_url}")
 
     # --- IBM watsonx.ai (remote)
     elif inferred_provider == "watsonx":
@@ -154,29 +198,28 @@ def get_llm() -> LLM:
             missing.append("WATSONX_PROJECT_ID")
         if missing:
             print(
-                f"[llm_client] ⚠️  Provider=watsonx selected but missing: {', '.join(missing)}. "
+                f"[llm_client] \u26a0\ufe0f  Provider=watsonx selected but missing: {', '.join(missing)}. "
                 f"Set them in .env or environment.",
                 file=sys.stderr,
             )
 
-        print(f"[llm_client] 🤖 Provider=watsonx  model={model!r}  base_url={base_url}")
+        print(f"[llm_client] \U0001f916 Provider=watsonx  model={model!r}  base_url={base_url}")
 
-    # --- Hosted providers via LiteLLM (OpenAI, Anthropic, etc.)
+    # --- Hosted providers via LiteLLM (OpenAI, Anthropic, Groq, etc.)
     else:
-        # For openai/*, anthropic/*, etc.
-        print(f"[llm_client] 🤖 Provider={inferred_provider or 'auto'}  model={model!r} (LiteLLM)")
+        print(f"[llm_client] \U0001f916 Provider={inferred_provider or 'auto'}  model={model!r} (LiteLLM)")
 
     if timeout_raw:
         try:
             kwargs["timeout"] = float(timeout_raw)
         except (TypeError, ValueError):
-            print(f"[llm_client] ⚠️  Invalid NEWS_LLM_TIMEOUT={timeout_raw!r}; ignoring", file=sys.stderr)
+            print(f"[llm_client] \u26a0\ufe0f  Invalid NEWS_LLM_TIMEOUT={timeout_raw!r}; ignoring", file=sys.stderr)
 
     if max_tokens_raw:
         try:
             kwargs["max_tokens"] = int(max_tokens_raw)
         except (TypeError, ValueError):
-            print(f"[llm_client] ⚠️  Invalid NEWS_LLM_MAX_TOKENS={max_tokens_raw!r}; ignoring", file=sys.stderr)
+            print(f"[llm_client] \u26a0\ufe0f  Invalid NEWS_LLM_MAX_TOKENS={max_tokens_raw!r}; ignoring", file=sys.stderr)
 
     return LLM(
         model=model,

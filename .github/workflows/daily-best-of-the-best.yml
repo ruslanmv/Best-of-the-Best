@@ -1,4 +1,4 @@
-name: "🏆 Daily Best-of-the-Best Blog"
+name: "\U0001f3c6 Daily Best-of-the-Best Blog"
 
 on:
   schedule:
@@ -11,12 +11,13 @@ permissions:
 jobs:
   best-of-the-best:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -27,41 +28,18 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y graphviz fonts-dejavu-core
-          echo "✅ System dependencies installed (graphviz, fonts)"
+          echo "\u2705 System dependencies installed (graphviz, fonts)"
 
       - name: Install Python deps
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r scripts/requirements.txt
-          echo "✅ Python dependencies installed"
+          echo "\u2705 Python dependencies installed"
 
       - name: Install Playwright browsers
         run: |
           python -m playwright install chromium
-          echo "✅ Playwright browser installed"
-
-      - name: ⚙️ Install Ollama (Linux)
-        run: |
-          curl -fsSL https://ollama.com/install.sh | sh
-
-      - name: 🧠 Start Ollama & pull llama3 model
-        env:
-          OLLAMA_HOST: "127.0.0.1"
-          OLLAMA_PORT: "11434"
-        run: |
-          ollama serve >/tmp/ollama.log 2>&1 &
-          # Wait for server to be ready
-          for i in {1..30}; do
-            if curl -fsS "http://127.0.0.1:11434/api/tags" >/dev/null 2>&1; then
-              echo "✅ Ollama is up"
-              break
-            fi
-            echo "⏳ Waiting for Ollama..."
-            sleep 2
-          done
-          echo "⬇️ Pulling llama3:8b..."
-          ollama pull llama3:8b
-          echo "✅ Model ready"
+          echo "\u2705 Playwright browser installed"
 
       - name: Create required directories
         run: |
@@ -71,36 +49,41 @@ jobs:
           mkdir -p assets/images
           mkdir -p logs
 
-      - name: 🏆 Generate daily Best-of-the-Best blog post
+      - name: "\U0001f3c6 Generate daily Best-of-the-Best blog post"
         env:
-          # Ollama configuration
-          NEWS_LLM_MODEL: "ollama/llama3:8b"
-          OLLAMA_HOST: "http://127.0.0.1:11434"
+          # LLM auto-detection: llm_client.py will pick the best available
+          # provider based on which API keys are set.
+          # Priority: OpenAI > Anthropic > WatsonX > Groq > Ollama
+          # To override, set NEWS_LLM_MODEL explicitly, e.g.:
+          #   NEWS_LLM_MODEL: "openai/gpt-4o-mini"
+          #   NEWS_LLM_MODEL: "anthropic/claude-haiku-4-5-20251001"
+          #   NEWS_LLM_MODEL: "watsonx/meta-llama/llama-3-3-70b-instruct"
 
-          # LiteLLM timeout settings (prevent long hangs, enable fast retries)
+          # LiteLLM timeout settings
           LITELLM_REQUEST_TIMEOUT: "120"
-          LITELLM_NUM_RETRIES: "2"
+          LITELLM_NUM_RETRIES: "3"
 
           # Image generation (optional - will create placeholders if not set)
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
 
-          # Optional: other LLM providers (if you switch from Ollama)
+          # LLM providers (auto-detected by llm_client.py)
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           WATSONX_APIKEY: ${{ secrets.WATSONX_APIKEY }}
           WATSONX_URL: ${{ secrets.WATSONX_URL }}
           WATSONX_PROJECT_ID: ${{ secrets.WATSONX_PROJECT_ID }}
         run: |
-          echo "🚀 Starting blog generation with v3.6..."
+          echo "\U0001f680 Starting blog generation..."
           python scripts/generate_daily_blog.py
-          echo "✅ Blog generation complete"
+          echo "\u2705 Blog generation complete"
 
-      - name: 🛡️ Check for duplicate topics
+      - name: "\U0001f6e1\ufe0f Check for duplicate topics"
         run: |
           # Get the newest post
           LATEST_POST=$(ls -t blog/posts/*.md 2>/dev/null | grep -v index | head -1)
           if [ -z "$LATEST_POST" ]; then
-            echo "⚠️  No post found, skipping duplicate check"
+            echo "\u26a0\ufe0f  No post found, skipping duplicate check"
             exit 0
           fi
 
@@ -112,34 +95,34 @@ jobs:
           for post in $PREV_POSTS; do
             PREV_ID=$(grep "^topic_id:" "$post" | head -1 | sed 's/topic_id: *"\?\([^"]*\)"\?/\1/')
             if [ "$PREV_ID" = "$TOPIC_ID" ]; then
-              echo "❌ DUPLICATE TOPIC DETECTED: $TOPIC_ID"
+              echo "\u274c DUPLICATE TOPIC DETECTED: $TOPIC_ID"
               echo "   Latest: $(basename "$LATEST_POST")"
               echo "   Previous: $(basename "$post")"
               exit 1
             fi
           done
 
-          echo "✅ No duplicate topics found (current topic: $TOPIC_ID)"
+          echo "\u2705 No duplicate topics found (current topic: $TOPIC_ID)"
 
       - name: Verify blog post was created
         run: |
-          echo "🔍 Verifying blog post output..."
+          echo "\U0001f50d Verifying blog post output..."
 
           # Check if any new blog post exists (excluding index.md)
           LATEST_POST=$(ls -t blog/posts/*.md 2>/dev/null | grep -v index | head -1)
 
           if [ -z "$LATEST_POST" ]; then
-            echo "❌ No blog posts found!"
+            echo "\u274c No blog posts found!"
             echo "   Expected format: blog/posts/YYYY-MM-DD-*.md"
             ls -la blog/posts/ || true
             exit 1
           fi
 
-          echo "✅ Blog post found: $(basename "$LATEST_POST")"
+          echo "\u2705 Blog post found: $(basename "$LATEST_POST")"
 
           # Validate Jekyll front matter
           if ! head -1 "$LATEST_POST" | grep -q "^---$"; then
-            echo "❌ Invalid Jekyll front matter"
+            echo "\u274c Invalid Jekyll front matter"
             head -5 "$LATEST_POST"
             exit 1
           fi
@@ -149,12 +132,12 @@ jobs:
           echo "   Words: $WORD_COUNT"
 
           if [ "$WORD_COUNT" -lt 100 ]; then
-            echo "❌ Post too short: $WORD_COUNT words"
+            echo "\u274c Post too short: $WORD_COUNT words"
             exit 1
           fi
 
           if [ "$WORD_COUNT" -lt 800 ]; then
-            echo "⚠️  Warning: Post seems short (< 800 words, has $WORD_COUNT)"
+            echo "\u26a0\ufe0f  Warning: Post seems short (< 800 words, has $WORD_COUNT)"
           fi
 
           # Check for code blocks
@@ -163,36 +146,36 @@ jobs:
 
           # Check for friendly intro/outro (v3.0 feature)
           if grep -q "Hello everyone!" "$LATEST_POST"; then
-            echo "   Friendly intro: ✓"
+            echo "   Friendly intro: \u2713"
           fi
 
           if grep -q "Congratulations!" "$LATEST_POST"; then
-            echo "   Motivating outro: ✓"
+            echo "   Motivating outro: \u2713"
           fi
 
           echo ""
-          echo "🖼️  Checking generated assets..."
+          echo "\U0001f5bc\ufe0f  Checking generated assets..."
 
           # Check for topic-specific images
           if ls assets/images/20*/header-*.jpg 1> /dev/null 2>&1; then
             NEW_IMAGES=$(find assets/images/20*/ -type f 2>/dev/null | wc -l)
-            echo "✅ Generated $NEW_IMAGES topic-specific images"
-            find assets/images/20*/ -type f -exec basename {} \; | sed 's/^/   • /'
+            echo "\u2705 Generated $NEW_IMAGES topic-specific images"
+            find assets/images/20*/ -type f -exec basename {} \; | sed 's/^/   \u2022 /'
           else
-            echo "⚠️  No topic-specific images found (placeholders may be used)"
+            echo "\u26a0\ufe0f  No topic-specific images found (placeholders may be used)"
           fi
 
           echo ""
-          echo "✅ Post validation passed"
+          echo "\u2705 Post validation passed"
 
-      - name: 🔁 Rebuild blog index & API feeds
+      - name: "\U0001f501 Rebuild blog index & API feeds"
         run: |
           python blog/generate_index.py
           python export_data_feeds.py
 
-      - name: 📊 Quality report & coverage check
+      - name: "\U0001f4ca Quality report & coverage check"
         run: |
-          echo "📊 Quality report..."
+          echo "\U0001f4ca Quality report..."
 
           LATEST_POST=$(ls -t blog/posts/*.md 2>/dev/null | grep -v index | head -1)
 
@@ -201,23 +184,23 @@ jobs:
             ISSUES=0
 
             if ! grep -q '```python' "$LATEST_POST"; then
-              echo "⚠️  No code examples found"
+              echo "\u26a0\ufe0f  No code examples found"
               ISSUES=$((ISSUES + 1))
             fi
 
             if grep -qi "rapidly evolving" "$LATEST_POST"; then
-              echo "⚠️  AI buzzwords detected"
+              echo "\u26a0\ufe0f  AI buzzwords detected"
               ISSUES=$((ISSUES + 1))
             fi
 
             WORD_COUNT=$(grep -v "^---" "$LATEST_POST" | wc -w | xargs)
             if [ "$WORD_COUNT" -lt 500 ]; then
-              echo "⚠️  Short post (< 500 words)"
+              echo "\u26a0\ufe0f  Short post (< 500 words)"
               ISSUES=$((ISSUES + 1))
             fi
 
             if [ "$ISSUES" -eq 0 ]; then
-              echo "✅ No quality issues detected"
+              echo "\u2705 No quality issues detected"
             fi
           fi
 
@@ -225,21 +208,27 @@ jobs:
           if [ -f "data/blog_coverage.json" ]; then
             COVERAGE_COUNT=$(python -c "import json; print(len(json.load(open('data/blog_coverage.json'))))" 2>/dev/null || echo "?")
             echo ""
-            echo "📈 Coverage Stats:"
+            echo "\U0001f4c8 Coverage Stats:"
             echo "   Total posts: $COVERAGE_COUNT"
             echo "   Coverage file: data/blog_coverage.json"
           else
-            echo "⚠️  No coverage file found at data/blog_coverage.json"
+            echo "\u26a0\ufe0f  No coverage file found at data/blog_coverage.json"
             echo "   This may cause topic repetition!"
           fi
 
           echo ""
-          echo "✅ Quality check complete"
+          echo "\u2705 Quality check complete"
+
+      - name: Sync with remote before committing
+        run: |
+          git fetch origin main
+          git reset --soft origin/main
+          echo "\u2705 Synced with remote main"
 
       - name: Commit new blog + assets + updated feeds
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "🏆 Daily Best-of-the-Best blog with topic-specific images"
+          commit_message: "\U0001f3c6 Daily Best-of-the-Best blog with topic-specific images"
           file_pattern: |
             blog/posts/*.md
             blog/posts/index.json
@@ -252,12 +241,11 @@ jobs:
           commit_user_email: "actions@github.com"
           commit_options: '--no-verify'
 
-      - name: 📊 Upload logs (on failure)
+      - name: "\U0001f4ca Upload logs (on failure)"
         if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: blog-generation-logs
           path: |
             logs/blog_generation.log
-            /tmp/ollama.log
           retention-days: 7
