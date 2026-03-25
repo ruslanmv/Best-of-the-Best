@@ -266,9 +266,9 @@ class DailyBlogCrew:
         # Add metadata header
         metadata = f"""---
 date: {today.strftime('%Y-%m-%d')}
-title: "Daily AI Package Highlight - {package_name.title()} - {today.strftime('%B %d, %Y')}"
-author: "AI Multi-Agent System"
-tags: ["AI", "Machine Learning", "watsonx.ai", "Watson Orchestrate", "{package_name}"]
+title: "{package_name.replace('-', ' ').title()} Guide"
+author: "Ruslanmv"
+tags: ["{package_name}", "python", "machine-learning", "open-source"]
 topic_kind: "package"
 topic_id: "{package_name}"
 topic_version: 1
