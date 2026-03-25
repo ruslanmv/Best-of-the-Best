@@ -1,5 +1,5 @@
 ---
-title: "Unlocking TensorFlow Federated's Potential"
+title: "TensorFlow Federated: A Framework for Federated Learning and Analytics"
 date: 2026-02-04T09:00:00+00:00
 last_modified_at: 2026-02-04T09:00:00+00:00
 topic_kind: "package"
@@ -9,12 +9,15 @@ categories:
   - Engineering
   - AI
 tags:
-  - tensorflow federated
-  - decentralized ml
-  - federated ai
-  - machine learning
-  - ai framework
-excerpt: "Discover how TensorFlow Federated enables decentralized machine learning and learn from practical examples"
+  - python
+  - package
+  - pypi
+  - tensorflow
+  - federated-learning
+  - privacy-preserving-ml
+  - distributed-computing
+  - differential-privacy
+excerpt: "TensorFlow Federated (TFF) is an open-source framework for federated learning and federated analytics, enabling machine learning on decentralized data while preserving privacy."
 header:
   overlay_image: /assets/images/2026-02-04-package-tensorflow-federated/header-ai-abstract.jpg
   overlay_filter: 0.5
@@ -27,101 +30,234 @@ sidebar:
   nav: "blog"
 ---
 
-I now can give a great answer
-
-**Final Answer**
-
 ## Introduction
-TensorFlow Federated (TFF) is an open-source framework for building and deploying machine learning models in a decentralized manner. It enables collaboration between multiple organizations or parties while maintaining data privacy. In this article, we'll explore the key features, use cases, and best practices of TFF.
+
+TensorFlow Federated (TFF) is an open-source framework for machine learning and computation on decentralized data. It implements the federated learning paradigm, where a shared model is trained across multiple clients (devices or organizations) without collecting their raw data in a central location. Each client trains on its local data and only shares model updates, preserving data privacy.
+
+TFF provides both a high-level API for standard federated learning workflows and a low-level API for expressing custom federated computations.
 
 ## Overview
-TensorFlow Federated v0.21.0 provides a robust set of tools for building federated learning models. Its key features include:
 
-* **Federated Learning**: Enables multiple organizations to jointly train machine learning models on their local data without sharing the data.
-* **Privacy-Preserving**: Preserves data privacy by only sharing model updates and not the actual data.
+Key features:
 
-TFF is particularly useful in industries where data is sensitive or regulated, such as healthcare, finance, and government.
+* **Federated Learning API** (`tff.learning`) -- high-level tools for federated training and evaluation of Keras and functional models
+* **Federated Core API** (`tff.federated_computation`) -- a low-level programming model for expressing arbitrary federated algorithms
+* **Simulation runtime** (`tff.simulation`) -- tools for running federated experiments locally with simulated clients
+* **Built-in datasets** -- federated versions of EMNIST, Shakespeare, CIFAR-100, Stack Overflow, and more via `tff.simulation.datasets`
+* **Differential privacy** integration with `tensorflow-privacy`
+* **Aggregation strategies** -- federated averaging, federated SGD, and custom aggregators
+
+Use cases:
+
+* Training models across hospitals without sharing patient records
+* Mobile keyboard prediction where typing data stays on device
+* Cross-organization collaboration on sensitive financial data
+* Federated analytics (computing aggregate statistics without centralizing data)
 
 ## Getting Started
-To get started with TFF, you'll need to install it. You can do this using pip:
+
+Installation:
+
 ```
 pip install tensorflow-federated
 ```
-Here's a quick example of how to use TFF:
+
+TFF requires TensorFlow 2.x. Verify the installation:
 
 ```python
 import tensorflow_federated as tff
+print(tff.__version__)
+```
 
-# Define the federated learning task
-task = tff.tasks.ClientFederatedAveraging()
+Quick example -- set up federated averaging on the EMNIST dataset:
 
-# Create client datasets
-client_data = []
+```python
+import tensorflow as tf
+import tensorflow_federated as tff
 
-# Train the model
-model = task.create_model(client_data)
+# Load a federated dataset (split by writer/client)
+emnist_train, emnist_test = tff.simulation.datasets.emnist.load_data()
 
-# Evaluate the model
-loss = model.evaluate(client_data)
+# Inspect the dataset structure
+example_dataset = emnist_train.create_tf_dataset_for_client(
+    emnist_train.client_ids[0]
+)
+print(f"Number of clients: {len(emnist_train.client_ids)}")
+for batch in example_dataset.take(1):
+    print(f"Image shape: {batch['pixels'].shape}")
+    print(f"Label: {batch['label'].numpy()}")
 ```
 
 ## Core Concepts
-TensorFlow Federated is built around several core concepts:
 
-* **Federated Data**: The data that's shared between parties to train the model.
-* **Federated Model**: The machine learning model that's trained on the federated data.
-* **Client**: Each party involved in the collaboration.
+### Federated Learning API (tff.learning)
+
+The `tff.learning` module provides high-level building blocks for federated learning. The standard workflow is:
+
+1. Define a Keras model wrapped with `tff.learning.models.from_keras_model()`
+2. Build a federated learning process with `tff.learning.algorithms.build_weighted_fed_avg()`
+3. Run training rounds by selecting clients and calling the process
+
+### Federated Computation
+
+TFF introduces two placement types that describe where data and computation live:
+
+* `tff.SERVER` -- data or computation on the central server
+* `tff.CLIENTS` -- data or computation distributed across clients
+
+The `@tff.federated_computation` decorator lets you define computations that operate across these placements.
+
+### Simulation
+
+The `tff.simulation` module provides tools for simulating federated training locally. `tff.simulation.datasets` includes built-in federated datasets partitioned by natural client boundaries (e.g., by handwriting author in EMNIST).
 
 ## Practical Examples
-Here are two practical examples of using TFF:
 
-### Example 1: Federated Logistic Regression
+### Example 1: Federated Averaging on EMNIST
 
 ```python
+import collections
+import tensorflow as tf
 import tensorflow_federated as tff
-from tensorflow import keras
 
-# Define the federated learning task
-task = tff.tasks.ClientFederatedLogisticRegression()
+# Load the federated EMNIST dataset
+emnist_train, emnist_test = tff.simulation.datasets.emnist.load_data()
 
-# Create client datasets
-client_data = []
+# Preprocessing function for each client dataset
+def preprocess(dataset):
+    def element_fn(element):
+        return collections.OrderedDict(
+            x=tf.reshape(element["pixels"], [-1, 784]),
+            y=tf.reshape(element["label"], [-1, 1]),
+        )
+    return dataset.repeat(5).shuffle(500).batch(20).map(element_fn)
 
-# Train the model
-model = task.create_model(client_data)
+# Define a simple model function
+def model_fn():
+    keras_model = tf.keras.models.Sequential([
+        tf.keras.layers.InputLayer(input_shape=(784,)),
+        tf.keras.layers.Dense(200, activation="relu"),
+        tf.keras.layers.Dense(200, activation="relu"),
+        tf.keras.layers.Dense(10, activation="softmax"),
+    ])
+    return tff.learning.models.from_keras_model(
+        keras_model,
+        input_spec=collections.OrderedDict(
+            x=tf.TensorSpec(shape=[None, 784], dtype=tf.float32),
+            y=tf.TensorSpec(shape=[None, 1], dtype=tf.int32),
+        ),
+        loss=tf.keras.losses.SparseCategoricalCrossentropy(),
+        metrics=[tf.keras.metrics.SparseCategoricalAccuracy()],
+    )
 
-# Evaluate the model
-loss = model.evaluate(client_data)
+# Build the federated averaging process
+learning_process = tff.learning.algorithms.build_weighted_fed_avg(
+    model_fn,
+    client_optimizer_fn=lambda: tf.keras.optimizers.SGD(learning_rate=0.02),
+    server_optimizer_fn=lambda: tf.keras.optimizers.SGD(learning_rate=1.0),
+)
+
+# Initialize the process
+state = learning_process.initialize()
+
+# Run a few rounds of training
+for round_num in range(5):
+    # Select a sample of clients
+    client_ids = emnist_train.client_ids[:10]
+    client_datasets = [
+        preprocess(emnist_train.create_tf_dataset_for_client(cid))
+        for cid in client_ids
+    ]
+
+    result = learning_process.next(state, client_datasets)
+    state = result.state
+    metrics = result.metrics
+    print(f"Round {round_num + 1}: {metrics['client_work']['train']}")
 ```
 
-### Example 2: Federated Linear Regression
+### Example 2: Federated Evaluation
+
+```python
+import collections
+import tensorflow as tf
+import tensorflow_federated as tff
+
+emnist_train, emnist_test = tff.simulation.datasets.emnist.load_data()
+
+def preprocess(dataset):
+    def element_fn(element):
+        return collections.OrderedDict(
+            x=tf.reshape(element["pixels"], [-1, 784]),
+            y=tf.reshape(element["label"], [-1, 1]),
+        )
+    return dataset.batch(20).map(element_fn)
+
+def model_fn():
+    keras_model = tf.keras.models.Sequential([
+        tf.keras.layers.InputLayer(input_shape=(784,)),
+        tf.keras.layers.Dense(200, activation="relu"),
+        tf.keras.layers.Dense(10, activation="softmax"),
+    ])
+    return tff.learning.models.from_keras_model(
+        keras_model,
+        input_spec=collections.OrderedDict(
+            x=tf.TensorSpec(shape=[None, 784], dtype=tf.float32),
+            y=tf.TensorSpec(shape=[None, 1], dtype=tf.int32),
+        ),
+        loss=tf.keras.losses.SparseCategoricalCrossentropy(),
+        metrics=[tf.keras.metrics.SparseCategoricalAccuracy()],
+    )
+
+# Build a federated evaluation computation
+evaluation = tff.learning.algorithms.build_fed_eval(model_fn)
+
+# Initialize and evaluate on a sample of test clients
+eval_state = evaluation.initialize()
+test_client_ids = emnist_test.client_ids[:20]
+test_datasets = [
+    preprocess(emnist_test.create_tf_dataset_for_client(cid))
+    for cid in test_client_ids
+]
+
+eval_result = evaluation.next(eval_state, test_datasets)
+print(f"Evaluation metrics: {eval_result.metrics}")
+```
+
+### Example 3: Custom Federated Computation
 
 ```python
 import tensorflow_federated as tff
-from tensorflow import keras
 
-# Define the federated learning task
-task = tff.tasks.ClientFederatedLinearRegression()
+# Define a simple federated computation that averages values across clients
+@tff.federated_computation(tff.FederatedType(tf.float32, tff.CLIENTS))
+def federated_mean(client_values):
+    return tff.federated_mean(client_values)
 
-# Create client datasets
-client_data = []
-
-# Train the model
-model = task.create_model(client_data)
-
-# Evaluate the model
-loss = model.evaluate(client_data)
+# Simulate with a list of client values
+import tensorflow as tf
+result = federated_mean([1.0, 2.0, 3.0, 4.0, 5.0])
+print(f"Federated mean: {result}")  # 3.0
 ```
 
 ## Best Practices
-When working with TFF, keep the following best practices in mind:
 
-* **Use the correct data type**: Ensure that your data is in the correct format for TFF.
-* **Split your data correctly**: Divide your data into training and testing sets to evaluate your model.
-* **Monitor your model's performance**: Use metrics like loss and accuracy to track your model's performance.
+* Start with `tff.simulation.datasets` and the built-in federated datasets for prototyping before moving to your own data.
+* Use `tff.learning.algorithms.build_weighted_fed_avg()` for the standard Federated Averaging algorithm -- it handles model distribution, local training, and aggregation.
+* Keep client datasets reasonably sized and shuffled to simulate realistic on-device training conditions.
+* Monitor both server-side and client-side metrics to understand model convergence across the federation.
+* For production deployments with privacy guarantees, integrate differential privacy using `tensorflow-privacy` and TFF's `DifferentiallyPrivateFactory` aggregators.
+* Use `tff.backends.native.set_local_python_execution_context()` explicitly when running simulations to control the execution backend.
 
 ## Conclusion
-TensorFlow Federated provides a powerful framework for building and deploying machine learning models in a decentralized manner. By understanding its key features, core concepts, and best practices, you can effectively use TFF to collaborate with other parties while maintaining data privacy.
+
+TensorFlow Federated provides a complete framework for expressing, simulating, and experimenting with federated learning algorithms. Its layered API design -- from high-level federated averaging to low-level federated computations -- makes it suitable for both applied federated learning and research into novel federated algorithms.
+
+Resources:
+
+* [TensorFlow Federated Documentation](https://www.tensorflow.org/federated)
+* [TensorFlow Federated GitHub](https://github.com/google-parfait/tensorflow-federated)
+* [TFF Tutorials](https://www.tensorflow.org/federated/tutorials/tutorials_overview)
+* [Federated Learning Paper (McMahan et al.)](https://arxiv.org/abs/1602.05629)
 
 ---
 

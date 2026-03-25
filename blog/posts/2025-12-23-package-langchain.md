@@ -1,5 +1,5 @@
 ---
-title: "Langchain Guide"
+title: "LangChain: Build LLM-Powered Applications with Modern Composable Chains"
 date: 2025-12-23T09:00:00+00:00
 last_modified_at: 2025-12-23T09:00:00+00:00
 topic_kind: "package"
@@ -10,13 +10,13 @@ categories:
   - AI
 tags:
   - langchain
-  - large-language-models
-  - agent-architecture
-  - llm-integrations
+  - llm
+  - agents
+  - prompt-engineering
   - python
-  - autonomous-applications
-  - text-summarization
-excerpt: "Learn Langchain for building agents and integrating LLMs."
+  - rag
+  - lcel
+excerpt: "A practical guide to LangChain, the framework for building LLM-powered applications using composable chains, prompt templates, and the LangChain Expression Language."
 header:
   overlay_image: /assets/images/2025-12-23-package-langchain/header-ai-abstract.jpg
   overlay_filter: 0.5
@@ -30,77 +30,242 @@ sidebar:
 ---
 
 ## Introduction
-Langchain is an open-source platform designed for building reliable agents, focusing on simplicity, flexibility, and maintainability. It matters because it provides a comprehensive framework for developers to create autonomous applications and integrate large language models (LLMs) into their projects. In this blog, readers will learn about the key features of Langchain, its current version, and how to get started with using it. They will also discover practical examples of Langchain's applications and best practices for leveraging its capabilities.
+
+LangChain is a framework for developing applications powered by large language models. It provides composable building blocks for working with LLMs, including prompt templates, output parsers, retrieval integrations, and agent architectures. The modern LangChain ecosystem is organized around `langchain-core` for base abstractions, provider-specific packages like `langchain-openai`, and the LangChain Expression Language (LCEL) for building chains declaratively using the pipe operator. In this post, you will learn how to install LangChain, build chains with LCEL, use prompt templates and output parsers, and create retrieval-augmented generation pipelines.
 
 ## Overview
-Langchain's key features include its pre-built agent architecture, model integrations, and a simple API for interacting with LLMs. Use cases range from building autonomous applications to incorporating LLMs into existing projects. As of the latest validation report, Langchain is at version 4.x, ensuring that users have access to the most recent features and improvements. This version is critical for ensuring compatibility and leveraging the latest advancements in LLM technology.
+
+LangChain provides a modular framework for LLM application development:
+
+- **LangChain Expression Language (LCEL)** -- compose chains declaratively using the `|` pipe operator with streaming, batching, and async support built in
+- **ChatPromptTemplate** -- structured prompt templates with system, human, and AI message roles
+- **Chat models** -- unified interface to OpenAI, Anthropic, Google, and dozens of other LLM providers
+- **Output parsers** -- parse LLM output into structured formats like JSON, Pydantic models, or lists
+- **Retrievers** -- connect to vector stores and other data sources for retrieval-augmented generation
+- **Agents and tools** -- LLM-driven agents that can call external tools and APIs
+- **Memory** -- conversation history management for multi-turn interactions
+
+Common use cases include chatbots, question-answering over documents, text summarization, data extraction, and autonomous agent workflows.
 
 ## Getting Started
-To get started with Langchain, installation is straightforward via pip, using the command `pip install langchain`. A quick example to demonstrate its functionality could involve creating a simple agent that interacts with a user, such as:
-```python
-from langchain import LLMChain, PromptTemplate
 
-template = PromptTemplate(
-    input_variables=["name"],
-    template="Hello, {name}!",
-)
+Install the core packages:
 
-chain = LLMChain(llm=None, prompt=template)
-
-print(chain({"name": "John"}))
+```bash
+pip install langchain-core langchain-openai
 ```
-This example illustrates how to create a basic chain that uses an LLM to generate a greeting message based on a user's name.
+
+Set your OpenAI API key:
+
+```bash
+export OPENAI_API_KEY="your-api-key"
+```
+
+Here is a minimal example using LCEL to build a prompt-model-output chain:
+
+```python
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+from langchain_openai import ChatOpenAI
+
+# Define a prompt template
+prompt = ChatPromptTemplate.from_messages([
+    ("system", "You are a helpful assistant that explains concepts simply."),
+    ("human", "{question}"),
+])
+
+# Create the model and output parser
+model = ChatOpenAI(model="gpt-4o", temperature=0)
+parser = StrOutputParser()
+
+# Build the chain using LCEL pipe syntax
+chain = prompt | model | parser
+
+# Run the chain
+result = chain.invoke({"question": "What is a neural network?"})
+print(result)
+```
 
 ## Core Concepts
-Langchain's main functionality revolves around its agent architecture and model integrations. The API provides a simple interface for defining prompts, interacting with LLMs, and building complex chains of operations. An overview of the API reveals a modular design, allowing developers to easily extend and customize the platform. For example, integrating a new LLM model into Langchain can be as simple as specifying the model's details when initializing the LLMChain.
+
+### LangChain Expression Language (LCEL)
+
+LCEL is the recommended way to compose chains in modern LangChain. Each component implements the `Runnable` interface with `invoke`, `stream`, `batch`, and `ainvoke` methods. Components are composed using the `|` operator:
+
+```python
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+from langchain_openai import ChatOpenAI
+
+prompt = ChatPromptTemplate.from_template(
+    "Translate the following text to {language}: {text}"
+)
+model = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+parser = StrOutputParser()
+
+chain = prompt | model | parser
+
+# Invoke
+result = chain.invoke({"language": "French", "text": "Hello, how are you?"})
+print(result)
+
+# Stream tokens
+for chunk in chain.stream({"language": "Spanish", "text": "Good morning"}):
+    print(chunk, end="", flush=True)
+print()
+
+# Batch multiple inputs
+results = chain.batch([
+    {"language": "German", "text": "Thank you"},
+    {"language": "Japanese", "text": "Goodbye"},
+])
+for r in results:
+    print(r)
+```
+
+### Structured Output with Pydantic
+
+LangChain integrates with Pydantic to parse LLM output into typed Python objects:
+
+```python
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_openai import ChatOpenAI
+from pydantic import BaseModel, Field
+
+class MovieReview(BaseModel):
+    title: str = Field(description="The movie title")
+    rating: int = Field(description="Rating from 1 to 10")
+    summary: str = Field(description="One-sentence summary of the review")
+
+prompt = ChatPromptTemplate.from_messages([
+    ("system", "Extract structured information from the movie review."),
+    ("human", "{review}"),
+])
+
+model = ChatOpenAI(model="gpt-4o", temperature=0)
+structured_model = model.with_structured_output(MovieReview)
+
+chain = prompt | structured_model
+
+result = chain.invoke({
+    "review": "Inception is a mind-bending thriller by Christopher Nolan. The visual effects are stunning and the plot keeps you guessing. I'd give it a 9 out of 10."
+})
+print(f"Title: {result.title}")
+print(f"Rating: {result.rating}")
+print(f"Summary: {result.summary}")
+```
 
 ## Practical Examples
-### Example 1: Building a Conversational Agent
-Langchain can be used to build conversational agents by leveraging its LLMChain and PromptTemplate functionalities. For instance:
-```python
-from langchain import LLMChain, PromptTemplate
 
-# Define a prompt template for the conversation
-template = PromptTemplate(
-    input_variables=["user_input"],
-    template="You said: {user_input}. How can I assist you?",
+### Example 1: Retrieval-Augmented Generation (RAG)
+
+This example builds a RAG pipeline that answers questions using a set of documents:
+
+```python
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.runnables import RunnablePassthrough
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_core.documents import Document
+
+# Create sample documents
+docs = [
+    Document(page_content="LangChain is a framework for building LLM applications."),
+    Document(page_content="LCEL uses the pipe operator to compose chains."),
+    Document(page_content="Retrievers connect vector stores to LLM chains."),
+]
+
+# Build a vector store and retriever
+embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
+vectorstore = FAISS.from_documents(docs, embeddings)
+retriever = vectorstore.as_retriever(search_kwargs={"k": 2})
+
+# Define the RAG prompt
+prompt = ChatPromptTemplate.from_template(
+    "Answer the question based on the context below.\n\n"
+    "Context: {context}\n\n"
+    "Question: {question}"
 )
 
-# Create an LLM chain with the prompt template
-chain = LLMChain(llm=None, prompt=template)
+model = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 
-# Engage in a conversation
-while True:
-    user_input = input("User: ")
-    response = chain({"user_input": user_input})
-    print("Agent:", response)
-```
-### Example 2: Using Langchain for Text Summarization
-Langchain's capabilities can also be applied to text summarization tasks by utilizing its model integrations. An example might involve:
-```python
-from langchain import LLMChain, PromptTemplate
+# Build the RAG chain
+def format_docs(docs):
+    return "\n".join(doc.page_content for doc in docs)
 
-# Define a prompt template for summarization
-template = PromptTemplate(
-    input_variables=["text"],
-    template="Summarize the following text: {text}",
+chain = (
+    {"context": retriever | format_docs, "question": RunnablePassthrough()}
+    | prompt
+    | model
+    | StrOutputParser()
 )
 
-# Create an LLM chain with the prompt template
-chain = LLMChain(llm=None, prompt=template)
-
-# Summarize a piece of text
-text = "Your text here..."
-summary = chain({"text": text})
-print("Summary:", summary)
+result = chain.invoke("How does LCEL work?")
+print(result)
 ```
-Each of these examples demonstrates how Langchain can be applied to real-world problems, showcasing its versatility and potential for automating tasks and enhancing applications with LLM capabilities.
+
+### Example 2: Multi-Step Chain with RunnableParallel
+
+This example runs multiple chains in parallel and combines their results:
+
+```python
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.runnables import RunnableParallel
+from langchain_openai import ChatOpenAI
+
+model = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+parser = StrOutputParser()
+
+# Define two parallel analysis chains
+pros_chain = (
+    ChatPromptTemplate.from_template("List 3 pros of {topic}. Be concise.")
+    | model
+    | parser
+)
+
+cons_chain = (
+    ChatPromptTemplate.from_template("List 3 cons of {topic}. Be concise.")
+    | model
+    | parser
+)
+
+# Run both in parallel
+parallel = RunnableParallel(pros=pros_chain, cons=cons_chain)
+
+# Combine results with a summary chain
+summary_prompt = ChatPromptTemplate.from_template(
+    "Given these pros:\n{pros}\n\nAnd these cons:\n{cons}\n\n"
+    "Write a balanced one-paragraph summary."
+)
+summary_chain = summary_prompt | model | parser
+
+# Full pipeline
+full_chain = parallel | summary_chain
+
+result = full_chain.invoke({"topic": "remote work"})
+print(result)
+```
 
 ## Best Practices
-When working with Langchain, it's essential to follow best practices to ensure reliable and efficient operation. Tips include keeping the platform and its dependencies up to date, leveraging the pre-built agent architecture for simplicity, and thoroughly testing custom chains and integrations. Common pitfalls to avoid include neglecting to validate user input and failing to monitor the performance of integrated LLMs.
+
+- **Use LCEL over legacy chains** -- the `LLMChain` and `SequentialChain` classes are deprecated. Use the `|` pipe operator with LCEL instead.
+- **Install provider packages separately** -- use `langchain-openai`, `langchain-anthropic`, etc. rather than importing from the monolithic `langchain` package.
+- **Stream for interactive applications** -- LCEL chains support `.stream()` natively, sending tokens to the user as they are generated.
+- **Use `with_structured_output` for data extraction** -- this is more reliable than manually prompting for JSON and parsing the output.
+- **Keep prompts in templates** -- use `ChatPromptTemplate` to separate prompt logic from application code, making prompts easier to test and iterate on.
+- **Add fallbacks for resilience** -- use `.with_fallbacks([fallback_model])` to gracefully handle provider failures.
 
 ## Conclusion
-In summary, Langchain offers a powerful platform for building reliable agents and integrating LLMs into applications. By following the steps outlined in this blog, developers can quickly get started with Langchain and begin exploring its potential. For next steps, consider diving deeper into the official documentation and experimenting with the examples provided. The official documentation can be found at [Home - Docs by LangChain](https://docs.langchain.com/). Additional resources include tutorials and community forums where developers can share knowledge and learn from one another. With its simplicity, flexibility, and maintainability, Langchain is an ideal choice for developers looking to harness the power of LLMs in their projects.
+
+LangChain provides a composable, modular framework for building LLM-powered applications. The LangChain Expression Language makes it straightforward to chain together prompts, models, retrievers, and output parsers with a clean declarative syntax. Whether you are building a simple chatbot, a RAG pipeline, or a multi-step agent workflow, LangChain gives you the abstractions to develop, test, and deploy LLM applications efficiently.
+
+Resources:
+
+- [LangChain Official Documentation](https://python.langchain.com/)
+- [LangChain GitHub Repository](https://github.com/langchain-ai/langchain)
+- [LCEL Documentation](https://python.langchain.com/docs/concepts/lcel/)
 
 ---
 
