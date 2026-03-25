@@ -161,6 +161,102 @@ def is_ollama_llm() -> bool:
 
 
 # ============================================================================
+# CONTEXT SIZE MANAGEMENT & TOKEN COUNTING
+# ============================================================================
+# Approximate token budget: ~4 chars per token for English text.
+# LLM context window sizes:
+#   qwen2.5:7b  = 128K tokens
+#   llama3:8b   = 8K tokens
+#   llama3.2:3b = 128K tokens
+#
+# We set a safe per-task context budget to leave room for system prompts,
+# agent backstories, and the task description itself (~2000 tokens overhead).
+
+MAX_CONTEXT_TOKENS = 3000  # Max tokens from prior tasks' outputs combined
+CHARS_PER_TOKEN = 4        # Conservative estimate for English text
+
+def estimate_tokens(text: str) -> int:
+    """Estimate token count from character count. ~4 chars per token for English."""
+    if not text:
+        return 0
+    return len(text) // CHARS_PER_TOKEN
+
+
+def truncate_to_token_budget(text: str, max_tokens: int = MAX_CONTEXT_TOKENS) -> str:
+    """Truncate text to fit within a token budget while preserving structure.
+    Keeps the beginning (most important info) and end (conclusions/summaries)."""
+    if not text:
+        return text
+
+    current_tokens = estimate_tokens(text)
+    if current_tokens <= max_tokens:
+        return text
+
+    max_chars = max_tokens * CHARS_PER_TOKEN
+    # Keep 80% from start, 15% from end
+    head_chars = int(max_chars * 0.80)
+    tail_chars = int(max_chars * 0.15)
+
+    omitted = len(text) - head_chars - tail_chars
+    truncated = text[:head_chars]
+    truncated += f"\n\n[... ~{omitted // CHARS_PER_TOKEN} tokens omitted to fit context budget ...]\n\n"
+    truncated += text[-tail_chars:]
+
+    logger.info(f"   Context truncated: {current_tokens} -> ~{max_tokens} tokens "
+                f"({len(text)} -> {len(truncated)} chars)")
+    return truncated
+
+
+def enforce_context_budget(task_outputs: list, max_total_tokens: int = MAX_CONTEXT_TOKENS) -> None:
+    """Enforce a total token budget across multiple task outputs.
+
+    Modifies task output.raw in-place to fit within the budget.
+    Each task gets a proportional share of the budget.
+    """
+    if not task_outputs:
+        return
+
+    # Gather current sizes
+    sizes = []
+    for task in task_outputs:
+        if task and hasattr(task, 'output') and task.output:
+            raw = getattr(task.output, 'raw', '') or ''
+            sizes.append((task, raw, estimate_tokens(raw)))
+        else:
+            sizes.append((task, '', 0))
+
+    total_tokens = sum(s[2] for s in sizes)
+
+    if total_tokens <= max_total_tokens:
+        logger.debug(f"   Context budget OK: {total_tokens}/{max_total_tokens} tokens")
+        return
+
+    logger.info(f"   ⚠️  Context budget exceeded: {total_tokens}/{max_total_tokens} tokens - truncating")
+
+    # Distribute budget proportionally (but give at least 200 tokens each)
+    min_tokens_per_task = 200
+    num_tasks = len([s for s in sizes if s[2] > 0])
+    if num_tasks == 0:
+        return
+
+    available = max_total_tokens - (min_tokens_per_task * num_tasks)
+    if available < 0:
+        available = max_total_tokens
+
+    for task, raw, tokens in sizes:
+        if tokens == 0 or not task or not hasattr(task, 'output') or not task.output:
+            continue
+
+        # Proportional share
+        share = min_tokens_per_task + int(available * (tokens / total_tokens))
+        share = min(share, tokens)  # Don't expand
+
+        if tokens > share:
+            truncated = truncate_to_token_budget(raw, share)
+            task.output.raw = truncated
+
+
+# ============================================================================
 # OUTPUT EXTRACTION (ROBUST)
 # ============================================================================
 def extract_task_output(task: Task, task_name: str) -> str:
@@ -1336,33 +1432,25 @@ OUTPUT:
     # TASK 2: README Analysis
     readme_task = Task(
         description=f"""
-        Extract complete information from README for: {identifier}
-        
-        USE the tool: "Get README from PyPI package or GitHub repository" 
+        Extract a CONDENSED summary from README for: {identifier}
+
+        USE the tool: "Get README from PyPI package or GitHub repository"
         with input "{identifier}"
-        
-        Extract:
-        1. **Version Information**
-           - Current version, Python requirements, dependencies
-        
-        2. **Installation**
-           - Exact pip install command
-        
-        3. **Code Examples** (STRICT REALITY CHECK)
-           - Extract code blocks ONLY if they literally exist in the README text.
-           - Copy them EXACTLY as written.
-           - If the README contains no code, output: "NO_CODE_EXAMPLES_FOUND".
-           - DO NOT INVENT, SIMULATE, OR WRITE YOUR OWN CODE EXAMPLES.
-        
-        4. **Features**
-           - Main capabilities and Use cases
-        
-        5. **Warnings**
-           - Deprecation notices or known issues
-        
-        OUTPUT: Structured README analysis. If no code is in the source, explicitly state that.
+
+        IMPORTANT: Your output must be a SHORT, STRUCTURED SUMMARY (max 800 words).
+        Do NOT copy the entire README. Extract only the essential information:
+
+        1. **Version**: Current version number and Python requirement (1 line)
+        2. **Install**: Exact pip install command (1 line)
+        3. **What it does**: 2-3 sentence description
+        4. **Key features**: Bullet list (max 5 items)
+        5. **Code example**: ONE short working example from the README (max 15 lines).
+           - Copy EXACTLY as written. If none exists, write: "NO_CODE_EXAMPLES_FOUND"
+        6. **Warnings**: Any deprecation notices (1-2 lines, or "None")
+
+        OUTPUT: A condensed summary under 800 words. NOT the raw README.
         """,
-        expected_output="Accurate README analysis based ONLY on provided text",
+        expected_output="Condensed README summary (under 800 words) with version, install, features, and one code example",
         agent=readme_analyst,
     )
 
@@ -1775,6 +1863,42 @@ OUTPUT:
     # ========================================================================
     # ASSEMBLE CREW
     # ========================================================================
+    # ========================================================================
+    # TASK CALLBACK: Enforce token budget after each task completes
+    # ========================================================================
+    # Tasks that produce the article body (writer, fixer, editor) are exempt
+    # from truncation since their full output is the final deliverable.
+    EXEMPT_TASKS = {"writing_task", "fixing_task", "editing_task"}
+
+    def _task_completion_callback(task_output):
+        """Called after each task completes. Truncates large outputs to
+        prevent context overflow for subsequent agents."""
+        try:
+            raw = getattr(task_output, 'raw', '') or ''
+            tokens = estimate_tokens(raw)
+            task_desc = (getattr(task_output, 'description', '') or '')[:60]
+
+            # Log token count for every task
+            logger.info(f"   📊 Task output: ~{tokens} tokens ({len(raw)} chars)")
+
+            # Skip truncation for article-body tasks
+            if any(exempt in task_desc.lower() for exempt in
+                   ["write a", "fix all", "take the article", "polish"]):
+                logger.info(f"   ↳ Article body task - not truncating")
+                return
+
+            # Truncate research/analysis outputs that exceed budget
+            per_task_budget = MAX_CONTEXT_TOKENS
+            if tokens > per_task_budget:
+                truncated = truncate_to_token_budget(raw, per_task_budget)
+                task_output.raw = truncated
+                logger.info(f"   ↳ Truncated: {tokens} -> ~{per_task_budget} tokens")
+            else:
+                logger.info(f"   ↳ Within budget ({tokens}/{per_task_budget})")
+
+        except Exception as e:
+            logger.warning(f"   ⚠️  Task callback error (non-fatal): {e}")
+
     crew = Crew(
         agents=[
             orchestrator,
@@ -1805,6 +1929,7 @@ OUTPUT:
         process=Process.sequential,
         verbose=True,
         max_rpm=15,
+        task_callback=_task_completion_callback,
     )
     
     return crew, (
