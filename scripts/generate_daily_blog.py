@@ -725,15 +725,15 @@ def clean_content(body: str) -> str:
 
     # Remove common LLM preamble/artifact lines that leak into output
     artifact_patterns = [
-        (r'^\s*(Here is|Here\'s)\s+(the|my|a)\s+.*?[:.]?\s*\n+', '', re.IGNORECASE | re.MULTILINE),
-        (r'^\s*I (now can give|now have|will now).*?\.\s*\n+', '', re.IGNORECASE | re.MULTILINE),
-        (r'^\s*\*\*Final Answer\*\*\s*\n+', '', re.MULTILINE),
-        (r'^\s*Final Answer\s*[:.]?\s*\n+', '', re.IGNORECASE | re.MULTILINE),
-        (r'^\s*The complete corrected article.*?\n+', '', re.IGNORECASE | re.MULTILINE),
-        (r'^\s*Begin!.*?\n+', '', re.IGNORECASE | re.MULTILINE),
-        (r'^\s*Thought:.*?\n+', '', re.IGNORECASE | re.MULTILINE),
-        (r'^\s*Action:.*?\n+', '', re.IGNORECASE | re.MULTILINE),
-        (r'^\s*Action Input:.*?\n+', '', re.IGNORECASE | re.MULTILINE),
+        (r'^\s*(Here is|Here\'s)\s+(the|my|a)\s+.*?[:.]?\s*$', '', re.IGNORECASE | re.MULTILINE),
+        (r'^\s*I (now can give|now have|will now)[^\n]*$', '', re.IGNORECASE | re.MULTILINE),
+        (r'^\s*\*\*Final Answer\*\*\s*$', '', re.MULTILINE),
+        (r'^\s*Final Answer\s*[:.]?\s*$', '', re.IGNORECASE | re.MULTILINE),
+        (r'^\s*The complete corrected article[^\n]*$', '', re.IGNORECASE | re.MULTILINE),
+        (r'^\s*Begin![^\n]*$', '', re.IGNORECASE | re.MULTILINE),
+        (r'^\s*Thought:[^\n]*$', '', re.IGNORECASE | re.MULTILINE),
+        (r'^\s*Action:[^\n]*$', '', re.IGNORECASE | re.MULTILINE),
+        (r'^\s*Action Input:[^\n]*$', '', re.IGNORECASE | re.MULTILINE),
         # Remove trailing debug notes like "Note: I fixed..."
         (r'\n-{5,}\s*\n+\s*Note:.*$', '', re.IGNORECASE | re.DOTALL),
     ]

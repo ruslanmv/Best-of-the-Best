@@ -64,3 +64,4 @@ vendor/
 * copy.py
 * copy *.*
 * copy.*
+data/search_cache/
