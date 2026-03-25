@@ -61,8 +61,8 @@ jobs:
             echo "⏳ Waiting for Ollama..."
             sleep 2
           done
-          echo "⬇️ Pulling llama3:8b..."
-          ollama pull llama3:8b
+          echo "⬇️ Pulling qwen2.5:7b (best balance of quality/speed/memory)..."
+          ollama pull qwen2.5:7b
           echo "✅ Model ready"
 
       - name: Create required directories
@@ -76,7 +76,7 @@ jobs:
       - name: 🏆 Generate daily Best-of-the-Best blog post
         env:
           # Ollama configuration
-          NEWS_LLM_MODEL: "ollama/llama3:8b"
+          NEWS_LLM_MODEL: "ollama/qwen2.5:7b"
           OLLAMA_HOST: "http://127.0.0.1:11434"
 
           # LiteLLM timeout settings (prevent long hangs, enable fast retries)
