@@ -1,5 +1,5 @@
 ---
-title: "Unlocking Visual Intelligence with TensorFlow Graphics"
+title: "TensorFlow Graphics: Differentiable 3D Graphics Layers for Deep Learning"
 date: 2026-01-29T09:00:00+00:00
 last_modified_at: 2026-01-29T09:00:00+00:00
 topic_kind: "package"
@@ -9,12 +9,15 @@ categories:
   - Engineering
   - AI
 tags:
-  - tensorflow-graphics
-  - machine-learning
+  - python
+  - package
+  - pypi
+  - tensorflow
+  - 3d-graphics
+  - differentiable-rendering
   - computer-vision
-  - data-science
-  - ai
-excerpt: "Discover how TensorFlow Graphics enables developers to create visually stunning applications. Explore key features, use cases, and examples to get started."
+  - geometry
+excerpt: "TensorFlow Graphics provides differentiable graphics layers for 3D geometry transformations, rendering, and mesh operations, bridging the gap between computer graphics and deep learning."
 header:
   overlay_image: /assets/images/2026-01-29-package-tensorflow-graphics/header-data-science.jpg
   overlay_filter: 0.5
@@ -28,113 +31,198 @@ sidebar:
 ---
 
 ## Introduction
-TensorFlow Graphics is an open-source software library for computer vision and machine learning. It allows developers to create graphics-based models that can be used in various applications such as robotics, autonomous vehicles, and medical imaging.
 
-### What is Tensorflow Graphics?
-TensorFlow Graphics is a TensorFlow-based library designed to handle tasks related to 3D graphics, computer vision, and machine learning. It provides a set of tools for building and training neural networks that can process 2D and 3D visual data.
+TensorFlow Graphics is a library that provides a set of differentiable graphics layers for TensorFlow. It bridges the gap between computer graphics and deep learning by making standard 3D operations -- geometric transformations, camera projections, mesh convolutions, and rendering -- available as differentiable TensorFlow ops that can be used inside neural network training loops.
 
-### Why it matters
-TensorFlow Graphics has the potential to revolutionize various fields by enabling developers to build more accurate and efficient models. Its applications range from robotics and autonomous vehicles to medical imaging and augmented reality.
-
-### What readers will learn
+This allows researchers and engineers to build models that reason about 3D structure, pose, lighting, and shape while training end-to-end with gradient descent.
 
 ## Overview
-TensorFlow Graphics is built on top of TensorFlow, a widely-used machine learning framework. It provides an easy-to-use API for building and training neural networks that can process 2D and 3D visual data.
 
-### Key features
-* Support for 2D and 3D vision tasks
-* Integration with TensorFlow's machine learning capabilities
-* Easy-to-use API for building and training models
+Key features:
 
-### Use cases
-TensorFlow Graphics has a wide range of use cases, including:
-* Robotics: Building robots that can perceive and interact with their environment
-* Autonomous vehicles: Developing autonomous systems that can recognize and respond to visual data
-* Medical imaging: Analyzing medical images and detecting abnormalities
-* Augmented reality: Creating immersive experiences by processing 2D and 3D visual data
+* **Geometry transformations** -- rotation representations (Euler angles, quaternions, rotation matrices, axis-angle), rigid-body transformations, and conversions between them
+* **Camera models** -- perspective and orthographic projection functions
+* **3D math utilities** -- operations on points, vectors, normals, and barycentric coordinates
+* **Mesh operations** -- mesh sampling, normals computation, Laplacian smoothing
+* **Rendering** -- differentiable rasterization-based rendering (via OpenGL or software)
+* **Implicit representations** -- signed distance functions and related utilities
 
-### Current version: TensorFlow Graphics v1.5
+All operations are fully differentiable and compatible with `tf.GradientTape`.
+
+Use cases:
+
+* 3D object reconstruction from images
+* Novel view synthesis
+* 6-DoF pose estimation
+* Shape and mesh deformation learning
+* Differentiable rendering in generative models
 
 ## Getting Started
-To get started with TensorFlow Graphics, you'll need to install it using pip:
-```python
+
+Installation:
+
+```
 pip install tensorflow-graphics
 ```
-Next, you can explore the API documentation and start building your own models.
 
-### Quick example - [Insert example]
+TensorFlow Graphics requires TensorFlow 2.x.
+
+Quick example -- convert Euler angles to a rotation matrix:
+
+```python
+import tensorflow as tf
+import tensorflow_graphics.geometry.transformation as tfg_transformation
+
+# Euler angles in radians (roll, pitch, yaw)
+euler_angles = tf.constant([[0.0, 0.0, 1.5708]])  # ~90 degrees yaw
+
+# Convert to a 3x3 rotation matrix
+rotation_matrix = tfg_transformation.euler.from_euler(euler_angles)
+print("Rotation matrix:")
+print(rotation_matrix.numpy())
+```
 
 ## Core Concepts
 
-### Main functionality
-TensorFlow Graphics provides a set of tools for building and training neural networks that can process 2D and 3D visual data. Its main functionality includes:
-* Image processing: Applying filters, transformations, and augmentations to images
-* Object detection: Detecting objects in images using convolutional neural networks (CNNs)
-* Scene understanding: Analyzing scenes and recognizing objects
+### Module Structure
 
-### API overview
-The TensorFlow Graphics API provides a set of classes and functions for building and training models. It includes:
-* Image processing tools: Filter, transform, and augment images
-* Object detection tools: Detect objects in images using CNNs
-* Scene understanding tools: Analyze scenes and recognize objects
+TensorFlow Graphics is organized into submodules under `tensorflow_graphics`:
 
-### Example usage
+* `tensorflow_graphics.geometry.transformation` -- rotation and rigid-body transformations (Euler, quaternion, rotation matrix, axis-angle)
+* `tensorflow_graphics.geometry.representation` -- point, vector, and mesh representations
+* `tensorflow_graphics.rendering` -- differentiable rendering utilities
+* `tensorflow_graphics.math` -- mathematical utilities (interpolation, spherical harmonics, vector operations)
+* `tensorflow_graphics.nn` -- neural network layers for 3D data (e.g., graph convolutions)
+
+### Rotation Representations
+
+One of the most commonly used features is the conversion between rotation representations:
+
+```python
+import tensorflow as tf
+import tensorflow_graphics.geometry.transformation as tfg_transformation
+
+# Quaternion [w, x, y, z] representing a 90-degree rotation around Z axis
+quaternion = tf.constant([[0.7071068, 0.0, 0.0, 0.7071068]])
+
+# Convert quaternion to rotation matrix
+rot_matrix = tfg_transformation.quaternion.to_rotation_matrix(quaternion)
+print(f"Rotation matrix shape: {rot_matrix.shape}")  # (1, 3, 3)
+
+# Convert rotation matrix back to quaternion
+quat_back = tfg_transformation.quaternion.from_rotation_matrix(rot_matrix)
+print(f"Recovered quaternion: {quat_back.numpy()}")
+```
+
+### Differentiability
+
+All operations support automatic differentiation through `tf.GradientTape`, so they can be used as layers in trainable models:
+
+```python
+import tensorflow as tf
+import tensorflow_graphics.geometry.transformation as tfg_transformation
+
+angles = tf.Variable([0.1, 0.2, 0.3])
+
+with tf.GradientTape() as tape:
+    rotation_matrix = tfg_transformation.euler.from_euler(
+        tf.expand_dims(angles, axis=0)
+    )
+    # Some loss that depends on the rotation
+    loss = tf.reduce_sum(tf.square(rotation_matrix))
+
+gradients = tape.gradient(loss, angles)
+print(f"Gradients w.r.t. Euler angles: {gradients.numpy()}")
+```
 
 ## Practical Examples
 
-### Example 1: [specific use case] - [Insert example]
-This example demonstrates how to use TensorFlow Graphics to build a model that can detect objects in an image.
+### Example 1: Transforming 3D Points with a Rotation
 
 ```python
 import tensorflow as tf
-from tensorflow_graphics.graphics import ImageProcessing
+import tensorflow_graphics.geometry.transformation as tfg_transformation
 
-# Load the image
-image = tf.io.read_file('path/to/image.jpg')
-image = tf.image.convert_image_dtype(image, tf.float32)
+# Define a set of 3D points
+points = tf.constant([
+    [1.0, 0.0, 0.0],
+    [0.0, 1.0, 0.0],
+    [0.0, 0.0, 1.0],
+])
 
-# Apply filters and transformations to the image
-filtered_image = ImageProcessing.apply_filters(image, ['grayscale', 'blur'])
-transformed_image = ImageProcessing.transform(image, 'rotate')
+# Define a quaternion for a 90-degree rotation around the Z axis
+quaternion = tf.constant([0.7071068, 0.0, 0.0, 0.7071068])
 
-# Detect objects in the image
-objects = ObjectDetection.detect_objects(filtered_image)
+# Rotate the points
+rotated_points = tfg_transformation.quaternion.rotate(points, quaternion)
+print("Original points:")
+print(points.numpy())
+print("Rotated points:")
+print(rotated_points.numpy())
 ```
 
-### Example 2: [another use case] - [Insert example]
-This example demonstrates how to use TensorFlow Graphics to build a model that can analyze a scene and recognize objects.
+### Example 2: Perspective Camera Projection
 
 ```python
 import tensorflow as tf
-from tensorflow_graphics.graphics import SceneUnderstanding
+import tensorflow_graphics.rendering.camera.perspective as perspective
 
-# Load the scene data
-scene_data = tf.io.read_file('path/to/scene_data.json')
+# 3D points in camera space (batch of 3 points)
+points_3d = tf.constant([
+    [0.5, 0.3, 2.0],
+    [-0.5, 0.3, 3.0],
+    [0.0, -0.5, 1.5],
+])
 
-# Analyze the scene and recognize objects
-objects = SceneUnderstanding.analyze_scene(scene_data)
+# Focal length in pixels
+focal = tf.constant([500.0, 500.0])
+
+# Principal point
+principal_point = tf.constant([320.0, 240.0])
+
+# Project 3D points to 2D image coordinates
+points_2d = perspective.project(points_3d, focal, principal_point)
+print("Projected 2D points:")
+print(points_2d.numpy())
+```
+
+### Example 3: Axis-Angle to Rotation Matrix Conversion
+
+```python
+import tensorflow as tf
+import tensorflow_graphics.geometry.transformation as tfg_transformation
+import math
+
+# Axis-angle: rotate 45 degrees around the Y axis
+angle = math.pi / 4.0
+axis_angle = tf.constant([[0.0, angle, 0.0]])
+
+# Convert to rotation matrix
+rotation_matrix = tfg_transformation.axis_angle.to_rotation_matrix(axis_angle)
+print(f"Rotation matrix for 45-degree Y rotation:\n{rotation_matrix.numpy()}")
+
+# Convert to quaternion
+quaternion = tfg_transformation.axis_angle.to_quaternion(axis_angle)
+print(f"Equivalent quaternion: {quaternion.numpy()}")
 ```
 
 ## Best Practices
 
-### Tips and recommendations
-* Use the official API documentation as a reference for building models
-* Start with simple tasks and gradually move to more complex ones
-* Experiment with different architectures and hyperparameters to find what works best for your specific use case
-
-### Common pitfalls
-* Overfitting: Make sure to use regularization techniques and early stopping to prevent overfitting
-* Underfitting: Increase the model's capacity or collect more training data to improve performance
-* Data quality: Ensure that your training data is high-quality and representative of the real-world scenarios you're trying to solve
+* Import specific submodules rather than the top-level package to keep code readable (e.g., `import tensorflow_graphics.geometry.transformation as tfg_transformation`).
+* Use `tf.GradientTape` to verify that gradients flow through graphics operations when incorporating them into training loops.
+* When working with rotation representations, be aware of singularities (gimbal lock in Euler angles, double-cover in quaternions) and choose the representation best suited to your problem.
+* Combine TensorFlow Graphics with Keras models by using its operations inside custom layers or loss functions.
+* Check the shapes of your tensors carefully -- most functions expect specific batch dimensions and will broadcast when possible.
 
 ## Conclusion
-TensorFlow Graphics provides a powerful toolset for building and training neural networks that can process 2D and 3D visual data. By following best practices and experimenting with different architectures, you can create models that excel in various applications. Remember to always use high-quality training data and avoid common pitfalls such as overfitting and underfitting.
+
+TensorFlow Graphics brings differentiable 3D graphics primitives into the TensorFlow ecosystem, making it possible to integrate geometric reasoning directly into deep learning models. Its modules for transformations, camera projection, and rendering are valuable building blocks for research in 3D vision, pose estimation, and neural rendering.
 
 Resources:
-- [TensorFlow Graphics](https://www.tensorflow.org/graphics)
-- [Installing TensorFlow Graphics](https://tensorflow.google.cn/graphics/install?hl=en)
-- [DevDocs — TensorFlow documentation](https://devdocs.io/tensorflow/)
-- [TensorFlow User Guide - NVIDIA Docs - NVIDIA Documentation Hub](https://docs.nvidia.com/deeplearning/frameworks/tensorflow-user-guide/index.html)
+
+* [TensorFlow Graphics Documentation](https://www.tensorflow.org/graphics)
+* [TensorFlow Graphics GitHub](https://github.com/tensorflow/graphics)
+* [TensorFlow Graphics API Reference](https://www.tensorflow.org/graphics/api_docs/python/tfg)
 
 ---
 
