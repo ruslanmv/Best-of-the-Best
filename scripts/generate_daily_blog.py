@@ -172,7 +172,12 @@ def is_ollama_llm() -> bool:
 # We set a safe per-task context budget to leave room for system prompts,
 # agent backstories, and the task description itself (~2000 tokens overhead).
 
-MAX_CONTEXT_TOKENS = 3000  # Max tokens from prior tasks' outputs combined
+# For qwen2.5:7b (128K context), we can afford more generous budgets.
+# For llama3:8b (8K context), reduce to 1500.
+# The total prompt = system prompt (~500) + agent backstory (~500) + task description (~500)
+#                  + ALL context task outputs + the actual generation.
+# Safe budget: leave ~4000 tokens for system/backstory/task, ~2000 for generation.
+MAX_CONTEXT_TOKENS = 4000  # Max tokens per individual task output
 CHARS_PER_TOKEN = 4        # Conservative estimate for English text
 
 def estimate_tokens(text: str) -> int:
@@ -182,9 +187,45 @@ def estimate_tokens(text: str) -> int:
     return len(text) // CHARS_PER_TOKEN
 
 
+def _task_completion_callback(task_output):
+    """Module-level callback called after each task completes.
+    Truncates large outputs to prevent context overflow for subsequent agents.
+    Article-body tasks (writer, fixer, editor) are exempt from truncation."""
+    try:
+        raw = getattr(task_output, 'raw', '') or ''
+        tokens = estimate_tokens(raw)
+        task_desc = (getattr(task_output, 'description', '') or '')[:80]
+
+        logger.info(f"   📊 Task output: ~{tokens} tokens ({len(raw)} chars)")
+
+        # Skip truncation for article-body tasks
+        if any(kw in task_desc.lower() for kw in
+               ["write a", "fix all", "take the article", "polish"]):
+            logger.info(f"   ↳ Article body task - not truncating")
+            return
+
+        # Truncate research/analysis outputs that exceed budget
+        per_task_budget = MAX_CONTEXT_TOKENS
+        if tokens > per_task_budget:
+            truncated = truncate_to_token_budget(raw, per_task_budget)
+            task_output.raw = truncated
+            logger.info(f"   ↳ Truncated: {tokens} -> ~{per_task_budget} tokens")
+        else:
+            logger.info(f"   ↳ Within budget ({tokens}/{per_task_budget})")
+
+    except Exception as e:
+        logger.warning(f"   ⚠️  Task callback error (non-fatal): {e}")
+
+
 def truncate_to_token_budget(text: str, max_tokens: int = MAX_CONTEXT_TOKENS) -> str:
-    """Truncate text to fit within a token budget while preserving structure.
-    Keeps the beginning (most important info) and end (conclusions/summaries)."""
+    """Truncate text to fit within a token budget while preserving key sections.
+
+    Strategy:
+    - Splits on markdown headings (##, ###, **Section**)
+    - Always keeps the first section (intro/version/install info)
+    - Always keeps the last section (conclusion/warnings/resources)
+    - Trims middle sections if needed, keeping their headings as summaries
+    """
     if not text:
         return text
 
@@ -192,17 +233,43 @@ def truncate_to_token_budget(text: str, max_tokens: int = MAX_CONTEXT_TOKENS) ->
     if current_tokens <= max_tokens:
         return text
 
-    max_chars = max_tokens * CHARS_PER_TOKEN
-    # Keep 80% from start, 15% from end
-    head_chars = int(max_chars * 0.80)
-    tail_chars = int(max_chars * 0.15)
+    # Try section-aware truncation first
+    sections = re.split(r'(?=\n#{1,3}\s|\n\*\*[A-Z])', text)
 
-    omitted = len(text) - head_chars - tail_chars
-    truncated = text[:head_chars]
-    truncated += f"\n\n[... ~{omitted // CHARS_PER_TOKEN} tokens omitted to fit context budget ...]\n\n"
-    truncated += text[-tail_chars:]
+    if len(sections) <= 2:
+        # No sections found - fall back to head/tail
+        max_chars = max_tokens * CHARS_PER_TOKEN
+        head_chars = int(max_chars * 0.80)
+        tail_chars = int(max_chars * 0.15)
+        truncated = text[:head_chars]
+        truncated += f"\n\n[... trimmed to fit context ...]\n\n"
+        truncated += text[-tail_chars:]
+    else:
+        # Keep first section, last section, and as many middle sections as fit
+        first = sections[0]
+        last = sections[-1]
+        middle = sections[1:-1]
 
-    logger.info(f"   Context truncated: {current_tokens} -> ~{max_tokens} tokens "
+        reserved = estimate_tokens(first) + estimate_tokens(last) + 50  # 50 for markers
+        remaining_budget = max_tokens - reserved
+
+        kept_middle = []
+        for section in middle:
+            section_tokens = estimate_tokens(section)
+            if remaining_budget >= section_tokens:
+                kept_middle.append(section)
+                remaining_budget -= section_tokens
+            else:
+                # Keep just the heading line as a breadcrumb
+                heading_line = section.strip().split('\n')[0]
+                if heading_line:
+                    kept_middle.append(f"\n{heading_line} [... details trimmed ...]\n")
+                    remaining_budget -= 10
+
+        truncated = first + ''.join(kept_middle) + last
+
+    new_tokens = estimate_tokens(truncated)
+    logger.info(f"   Context truncated: {current_tokens} -> ~{new_tokens} tokens "
                 f"({len(text)} -> {len(truncated)} chars)")
     return truncated
 
@@ -688,8 +755,9 @@ def select_next_topic() -> Topic:
                 if not name or "/" not in name:
                     continue
                 id_ = name
-                repo_short = name.split("/")[1]
-                title = repo_short.replace("-", " ").title()
+                org, repo_short = name.split("/", 1)
+                # Use "Org/Repo" format for clear identification
+                title = f"{org}/{repo_short.replace('-', ' ').title()}"
                 desc = item.get("description", "").strip()
                 summary = desc if desc else f"An overview of the {repo_short} GitHub repository and its capabilities."
                 base_tags = [repo_short.lower(), "github", "open-source"]
@@ -1863,42 +1931,6 @@ OUTPUT:
     # ========================================================================
     # ASSEMBLE CREW
     # ========================================================================
-    # ========================================================================
-    # TASK CALLBACK: Enforce token budget after each task completes
-    # ========================================================================
-    # Tasks that produce the article body (writer, fixer, editor) are exempt
-    # from truncation since their full output is the final deliverable.
-    EXEMPT_TASKS = {"writing_task", "fixing_task", "editing_task"}
-
-    def _task_completion_callback(task_output):
-        """Called after each task completes. Truncates large outputs to
-        prevent context overflow for subsequent agents."""
-        try:
-            raw = getattr(task_output, 'raw', '') or ''
-            tokens = estimate_tokens(raw)
-            task_desc = (getattr(task_output, 'description', '') or '')[:60]
-
-            # Log token count for every task
-            logger.info(f"   📊 Task output: ~{tokens} tokens ({len(raw)} chars)")
-
-            # Skip truncation for article-body tasks
-            if any(exempt in task_desc.lower() for exempt in
-                   ["write a", "fix all", "take the article", "polish"]):
-                logger.info(f"   ↳ Article body task - not truncating")
-                return
-
-            # Truncate research/analysis outputs that exceed budget
-            per_task_budget = MAX_CONTEXT_TOKENS
-            if tokens > per_task_budget:
-                truncated = truncate_to_token_budget(raw, per_task_budget)
-                task_output.raw = truncated
-                logger.info(f"   ↳ Truncated: {tokens} -> ~{per_task_budget} tokens")
-            else:
-                logger.info(f"   ↳ Within budget ({tokens}/{per_task_budget})")
-
-        except Exception as e:
-            logger.warning(f"   ⚠️  Task callback error (non-fatal): {e}")
-
     crew = Crew(
         agents=[
             orchestrator,
