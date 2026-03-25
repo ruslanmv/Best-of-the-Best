@@ -205,9 +205,9 @@ author_profile: false
 
   </div>
 
-  <!-- PREVIOUS HIGHLIGHTS -->
+  <!-- PREVIOUS HIGHLIGHTS (blog-style list) -->
   <h2 class="botb-section-title">📅 Previous Highlights</h2>
-  <div id="recent-highlights" class="botb-grid"></div>
+  <div id="recent-highlights" class="botb-posts-list"></div>
 
 </div>
 
@@ -227,6 +227,7 @@ const compactNum = (n) => Intl.NumberFormat('en-US', {
 const stripMarkdown = (text) => {
   if (!text) return '';
   return text
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')  // [text](url) -> text
     .replace(/\*\*/g, '')
     .replace(/__/g, '')
     .replace(/`/g, '')
@@ -373,8 +374,8 @@ async function loadHighlights() {
       </article>
     `;
 
-    // Pagination settings
-    const POSTS_PER_PAGE = 9;
+    // Pagination: 3 posts per page (blog-style like ruslanmv.com)
+    const POSTS_PER_PAGE = 3;
     let currentPage = 1;
     const totalPages = Math.ceil(rest.length / POSTS_PER_PAGE);
 
@@ -389,28 +390,48 @@ async function loadHighlights() {
         return;
       }
 
-      const cardsHtml = pageItems.map(post => `
-        <article class="botb-card">
-          <div class="botb-card-date">
-            ${new Date(post.date).toLocaleDateString('en-US', {
-              month: 'short', day: 'numeric', year: 'numeric'
-            })}
-          </div>
-          <h4 class="botb-card-title">
-            <a href="${buildPostUrl(post.url)}">${post.title}</a>
-          </h4>
-          <p class="botb-card-excerpt">
-            ${stripMarkdown(post.excerpt || '').substring(0, 110)}…
-          </p>
-          <div class="botb-card-footer">Read highlight &rarr;</div>
-        </article>
-      `).join('');
+      // Build post cards with teaser images
+      const cardsHtml = pageItems.map(post => {
+        const teaserUrl = post.teaser
+          ? `${baseurl}${post.teaser}`
+          : `${baseurl}/assets/images/og_default_header.jpg`;
+        const cleanExcerpt = stripMarkdown(post.excerpt || '').substring(0, 160);
+        const postTags = (post.tags || []).slice(0, 3);
+        const tagsHtml = postTags.map(t =>
+          `<span class="botb-card-tag">${t}</span>`
+        ).join('');
+        const dateStr = new Date(post.date).toLocaleDateString('en-US', {
+          year: 'numeric', month: 'long', day: 'numeric'
+        });
 
-      // Build pagination controls
+        return `
+          <article class="botb-post-card">
+            <a href="${buildPostUrl(post.url)}" class="botb-post-card__image-link">
+              <img src="${teaserUrl}" alt="${post.title}" class="botb-post-card__image" loading="lazy"
+                   onerror="this.src='${baseurl}/assets/images/og_default_header.jpg'">
+            </a>
+            <div class="botb-post-card__body">
+              <div class="botb-post-card__meta">
+                <time class="botb-post-card__date">${dateStr}</time>
+                ${tagsHtml ? `<div class="botb-post-card__tags">${tagsHtml}</div>` : ''}
+              </div>
+              <h3 class="botb-post-card__title">
+                <a href="${buildPostUrl(post.url)}">${post.title}</a>
+              </h3>
+              <p class="botb-post-card__excerpt">${cleanExcerpt}${cleanExcerpt.length >= 160 ? '…' : ''}</p>
+              <a href="${buildPostUrl(post.url)}" class="botb-post-card__readmore">
+                Read article &rarr;
+              </a>
+            </div>
+          </article>
+        `;
+      }).join('');
+
+      // Pagination controls
       let paginationHtml = '';
       if (totalPages > 1) {
         paginationHtml = '<nav class="botb-pagination" aria-label="Blog pagination">';
-        paginationHtml += `<button class="botb-page-btn" onclick="changePage(${page - 1})" ${page <= 1 ? 'disabled' : ''}>&laquo; Prev</button>`;
+        paginationHtml += `<button class="botb-page-btn" onclick="changePage(${page - 1})" ${page <= 1 ? 'disabled' : ''}>&laquo; Newer</button>`;
 
         for (let i = 1; i <= totalPages; i++) {
           if (i === page) {
@@ -422,14 +443,13 @@ async function loadHighlights() {
           }
         }
 
-        paginationHtml += `<button class="botb-page-btn" onclick="changePage(${page + 1})" ${page >= totalPages ? 'disabled' : ''}>Next &raquo;</button>`;
+        paginationHtml += `<button class="botb-page-btn" onclick="changePage(${page + 1})" ${page >= totalPages ? 'disabled' : ''}>Older &raquo;</button>`;
         paginationHtml += '</nav>';
       }
 
       recentContainer.innerHTML = cardsHtml + paginationHtml;
     }
 
-    // Make changePage globally accessible
     window.changePage = function(page) {
       if (page < 1 || page > totalPages) return;
       renderPage(page);

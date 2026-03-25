@@ -5,8 +5,18 @@
     "title": "TensorFlow Federated: A Framework for Federated Learning and Analytics",
     "date": "2026-02-04T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "TensorFlow Federated (TFF) is an open-source framework for machine learning and computation on decentralized data. It implements the federated learning paradigm, where a shared model is trained across..."
+    "tags": [
+      "python",
+      "package",
+      "pypi",
+      "tensorflow",
+      "federated-learning",
+      "privacy-preserving-ml",
+      "distributed-computing",
+      "differential-privacy"
+    ],
+    "excerpt": "TensorFlow Federated (TFF) is an open-source framework for federated learning and federated analytics, enabling machine learning on decentralized data while preserving privacy.",
+    "teaser": "/assets/images/2026-02-04-package-tensorflow-federated/teaser-ai.jpg"
   },
   {
     "filename": "2026-01-11-package-mmdet.md",
@@ -14,8 +24,15 @@
     "title": "MMDetection: OpenMMLab's Object Detection Toolbox",
     "date": "2026-01-11T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "MMDetection is an open-source object detection toolbox developed by [OpenMMLab](https://openmmlab.com/), built on top of PyTorch and the MMEngine framework. It provides a rich collection of detection ..."
+    "tags": [
+      "object-detection",
+      "computer-vision",
+      "deep-learning",
+      "instance-segmentation",
+      "openmmlab"
+    ],
+    "excerpt": "MMDetection is OpenMMLab's comprehensive object detection toolbox built on PyTorch, supporting hundreds of detection and segmentation models with a modular, config-driven architecture.",
+    "teaser": "/assets/images/2026-01-11-package-mmdet/teaser-ai.jpg"
   },
   {
     "filename": "2025-12-23-package-langchain.md",
@@ -23,8 +40,17 @@
     "title": "LangChain: Build LLM-Powered Applications with Modern Composable Chains",
     "date": "2025-12-23T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "LangChain is a framework for developing applications powered by large language models. It provides composable building blocks for working with LLMs, including prompt templates, output parsers, retriev..."
+    "tags": [
+      "langchain",
+      "llm",
+      "agents",
+      "prompt-engineering",
+      "python",
+      "rag",
+      "lcel"
+    ],
+    "excerpt": "A practical guide to LangChain, the framework for building LLM-powered applications using composable chains, prompt templates, and the LangChain Expression Language.",
+    "teaser": "/assets/images/2025-12-23-package-langchain/teaser-ai.jpg"
   },
   {
     "filename": "2026-01-27-package-tpot.md",
@@ -32,8 +58,18 @@
     "title": "TPOT: Automated Machine Learning with Genetic Programming",
     "date": "2026-01-27T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "TPOT (Tree-based Pipeline Optimization Tool) is a Python AutoML library that uses genetic programming to automatically find the best machine learning pipeline for a given dataset. Rather than requirin..."
+    "tags": [
+      "python",
+      "package",
+      "pypi",
+      "automl",
+      "machine-learning",
+      "genetic-programming",
+      "scikit-learn",
+      "pipeline-optimization"
+    ],
+    "excerpt": "TPOT is a Python AutoML tool that uses genetic programming to automatically design and optimize scikit-learn machine learning pipelines.",
+    "teaser": "/assets/images/2026-01-27-package-tpot/teaser-ai.jpg"
   },
   {
     "filename": "2026-02-05-package-langfun.md",
@@ -41,8 +77,16 @@
     "title": "Langfun - Building Natural Language-Powered Functions with LLMs",
     "date": "2026-02-05T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "Langfun is a Google-developed Python library that enables developers to build natural language-powered functions using large language models (LLMs). Rather than treating LLMs as simple text-in, text-o..."
+    "tags": [
+      "langfun",
+      "llm",
+      "prompt-engineering",
+      "google",
+      "natural-language-functions",
+      "python"
+    ],
+    "excerpt": "Explore Langfun, Google's Python library for composing and calling LLM-powered functions using natural language prompt templates and structured output.",
+    "teaser": "/assets/images/2026-02-05-package-langfun/teaser-ai.jpg"
   },
   {
     "filename": "2025-12-27-package-ollama.md",
@@ -50,8 +94,17 @@
     "title": "Ollama: Run Large Language Models Locally",
     "date": "2025-12-27T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "Ollama is a tool for running open-source large language models locally on your own hardware. It handles model downloading, quantization, and serving behind a simple interface, letting you run models l..."
+    "tags": [
+      "ollama",
+      "llm",
+      "local-inference",
+      "python",
+      "llama",
+      "mistral",
+      "self-hosted"
+    ],
+    "excerpt": "A practical guide to Ollama, the tool for running open-source large language models like Llama, Mistral, and Gemma locally on your own machine.",
+    "teaser": "/assets/images/2025-12-27-package-ollama/teaser-ai.jpg"
   },
   {
     "filename": "2025-12-25-package-langgraph.md",
@@ -59,8 +112,17 @@
     "title": "LangGraph: Build Stateful Multi-Actor LLM Applications with Graphs",
     "date": "2025-12-25T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "LangGraph is a library for building stateful, multi-actor applications with large language models. Built on top of the LangChain ecosystem, it models workflows as directed graphs where nodes represent..."
+    "tags": [
+      "langgraph",
+      "llm",
+      "agents",
+      "graph-workflows",
+      "python",
+      "langchain",
+      "state-machines"
+    ],
+    "excerpt": "A practical guide to LangGraph, the library for building stateful, multi-actor LLM applications using graph-based workflows with cycles, branching, and persistence.",
+    "teaser": "/assets/images/2025-12-25-package-langgraph/teaser-ai.jpg"
   },
   {
     "filename": "2026-02-10-package-dopamine-rl.md",
@@ -68,8 +130,17 @@
     "title": "Dopamine - Google's Research Framework for Reinforcement Learning",
     "date": "2026-02-10T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "Dopamine is a research framework developed by Google for fast prototyping of reinforcement learning (RL) algorithms. Built on top of TensorFlow, it emphasizes simplicity, reproducibility, and ease of ..."
+    "tags": [
+      "dopamine-rl",
+      "reinforcement-learning",
+      "deep-learning",
+      "dqn",
+      "rainbow",
+      "atari",
+      "google-research"
+    ],
+    "excerpt": "A guide to Google's Dopamine framework for fast prototyping of reinforcement learning algorithms, featuring DQN, Rainbow, C51, and IQN agents on Atari environments.",
+    "teaser": "/assets/images/2026-02-10-package-dopamine-rl/teaser-ai.jpg"
   },
   {
     "filename": "2026-01-22-package-crawl4ai.md",
@@ -77,8 +148,18 @@
     "title": "Crawl4AI: Open-Source Web Crawling for LLMs and AI Pipelines",
     "date": "2026-01-22T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "Crawl4AI is an open-source Python library purpose-built for web crawling in AI and LLM workflows. Unlike general-purpose scrapers, Crawl4AI focuses on extracting clean, structured content -- Markdown,..."
+    "tags": [
+      "python",
+      "package",
+      "pypi",
+      "web-crawling",
+      "llm",
+      "data-extraction",
+      "async",
+      "rag"
+    ],
+    "excerpt": "Crawl4AI is an open-source, async-first web crawler built for feeding clean, structured content to LLMs and AI applications.",
+    "teaser": "/assets/images/2026-01-22-package-crawl4ai/teaser-ai.jpg"
   },
   {
     "filename": "2026-01-10-package-pyglove.md",
@@ -86,8 +167,15 @@
     "title": "PyGlove: Symbolic Programming for AutoML and Beyond",
     "date": "2026-01-10T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "PyGlove is a general-purpose symbolic programming library developed by Google that allows you to manipulate Python objects as mutable, searchable symbolic trees. Originally designed to power large-sca..."
+    "tags": [
+      "symbolic-programming",
+      "automl",
+      "hyperparameter-tuning",
+      "neural-architecture-search",
+      "google"
+    ],
+    "excerpt": "PyGlove is Google's library for symbolic programming in Python, enabling manipulation of programs as mutable objects for AutoML, hyperparameter tuning, and neural architecture search.",
+    "teaser": "/assets/images/2026-01-10-package-pyglove/teaser-ai.jpg"
   },
   {
     "filename": "2026-01-09-package-autofaiss.md",
@@ -95,8 +183,15 @@
     "title": "Autofaiss: Automatically Build Optimal Faiss Indexes for Vector Search",
     "date": "2026-01-09T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "Autofaiss is a library developed by Criteo that automatically builds optimal [Faiss](https://github.com/facebookresearch/faiss) indexes for approximate nearest neighbor (ANN) search. Faiss itself is a..."
+    "tags": [
+      "vector-search",
+      "approximate-nearest-neighbor",
+      "faiss",
+      "embeddings",
+      "machine-learning"
+    ],
+    "excerpt": "Autofaiss automatically selects the best Faiss index type and parameters for your embeddings, making it easy to build fast and memory-efficient approximate nearest neighbor search indexes.",
+    "teaser": "/assets/images/2026-01-09-package-autofaiss/teaser-ai.jpg"
   },
   {
     "filename": "2026-01-29-package-tensorflow-graphics.md",
@@ -104,8 +199,18 @@
     "title": "TensorFlow Graphics: Differentiable 3D Graphics Layers for Deep Learning",
     "date": "2026-01-29T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "TensorFlow Graphics is a library that provides a set of differentiable graphics layers for TensorFlow. It bridges the gap between computer graphics and deep learning by making standard 3D operations -..."
+    "tags": [
+      "python",
+      "package",
+      "pypi",
+      "tensorflow",
+      "3d-graphics",
+      "differentiable-rendering",
+      "computer-vision",
+      "geometry"
+    ],
+    "excerpt": "TensorFlow Graphics provides differentiable graphics layers for 3D geometry transformations, rendering, and mesh operations, bridging the gap between computer graphics and deep learning.",
+    "teaser": "/assets/images/2026-01-29-package-tensorflow-graphics/teaser-ai.jpg"
   },
   {
     "filename": "2026-02-25-repo-comfyui.md",
@@ -113,8 +218,16 @@
     "title": "ComfyUI - A Node-Based Interface for Stable Diffusion Image Generation",
     "date": "2026-02-25T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "[ComfyUI](https://github.com/comfyanonymous/ComfyUI) is a powerful, modular node-based graphical interface for Stable Diffusion and other diffusion-model image generation. Unlike traditional single-bu..."
+    "tags": [
+      "comfyui",
+      "stable-diffusion",
+      "image-generation",
+      "node-based-workflow",
+      "diffusion-models",
+      "python"
+    ],
+    "excerpt": "An in-depth look at ComfyUI, a powerful node-based graphical interface for designing and executing Stable Diffusion image generation workflows.",
+    "teaser": "/assets/images/2026-02-25-repo-comfyui/teaser-ai.jpg"
   },
   {
     "filename": "2026-01-24-package-mmsegmentation.md",
@@ -122,8 +235,18 @@
     "title": "MMSegmentation: OpenMMLab's Semantic Segmentation Toolbox",
     "date": "2026-01-24T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "MMSegmentation is an open-source semantic segmentation toolbox from the [OpenMMLab](https://openmmlab.com/) ecosystem. Built on PyTorch and the MMEngine framework, it provides a unified, config-driven..."
+    "tags": [
+      "python",
+      "package",
+      "pypi",
+      "semantic-segmentation",
+      "deep-learning",
+      "computer-vision",
+      "pytorch",
+      "openmmlab"
+    ],
+    "excerpt": "MMSegmentation is OpenMMLab's open-source semantic segmentation toolbox built on PyTorch, supporting 50+ architectures and a unified config-driven workflow for training and inference.",
+    "teaser": "/assets/images/2026-01-24-package-mmsegmentation/teaser-ai.jpg"
   },
   {
     "filename": "2026-01-07-package-bert-score.md",
@@ -131,8 +254,15 @@
     "title": "BERTScore: Evaluating Text Generation with Contextual Embeddings",
     "date": "2026-01-07T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "BERTScore is an automatic evaluation metric for text generation that computes token-level similarity between candidate and reference sentences using contextual embeddings from pre-trained BERT models...."
+    "tags": [
+      "nlp",
+      "text-evaluation",
+      "bert",
+      "machine-learning",
+      "metrics"
+    ],
+    "excerpt": "BERTScore leverages BERT contextual embeddings to evaluate text generation quality, providing precision, recall, and F1 scores that correlate better with human judgment than traditional n-gram metrics.",
+    "teaser": "/assets/images/2026-01-07-package-bert-score/teaser-ai.jpg"
   },
   {
     "filename": "2026-01-15-package-earthengine-api.md",
@@ -140,8 +270,15 @@
     "title": "Google Earth Engine API: Planetary-Scale Geospatial Analysis in Python",
     "date": "2026-01-15T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "The Google Earth Engine (GEE) Python API provides access to Google's multi-petabyte catalog of satellite imagery, climate data, and geospatial datasets. Earth Engine performs computation on Google's s..."
+    "tags": [
+      "geospatial",
+      "remote-sensing",
+      "satellite-imagery",
+      "google-earth-engine",
+      "python"
+    ],
+    "excerpt": "The Google Earth Engine Python API provides programmatic access to a multi-petabyte catalog of satellite imagery and geospatial datasets for analysis, visualization, and environmental monitoring at planetary scale.",
+    "teaser": "/assets/images/2026-01-15-package-earthengine-api/teaser-ai.jpg"
   },
   {
     "filename": "2026-02-15-repo-langchain.md",
@@ -149,8 +286,17 @@
     "title": "LangChain - A Framework for Building LLM-Powered Applications",
     "date": "2026-02-15T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "[LangChain](https://github.com/langchain-ai/langchain) is one of the most widely adopted open-source frameworks for building applications powered by large language models. The `langchain-ai/langchain`..."
+    "tags": [
+      "langchain",
+      "llm",
+      "agents",
+      "rag",
+      "chains",
+      "python",
+      "lcel"
+    ],
+    "excerpt": "A deep dive into the langchain-ai/langchain repository, exploring its modular architecture, LCEL composition model, agents, retrieval-augmented generation, and integration ecosystem.",
+    "teaser": "/assets/images/2026-02-15-repo-langchain/teaser-ai.jpg"
   },
   {
     "filename": "2026-02-26-repo-whisper.md",
@@ -158,8 +304,16 @@
     "title": "Whisper - OpenAI's Automatic Speech Recognition Model",
     "date": "2026-02-26T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "[Whisper](https://github.com/openai/whisper) is OpenAI's general-purpose speech recognition model, trained on 680,000 hours of multilingual and multitask supervised data collected from the web. It per..."
+    "tags": [
+      "whisper",
+      "speech-recognition",
+      "transcription",
+      "openai",
+      "audio",
+      "python"
+    ],
+    "excerpt": "An in-depth look at OpenAI's Whisper, a general-purpose speech recognition model that delivers robust transcription and translation across dozens of languages.",
+    "teaser": "/assets/images/2026-02-26-repo-whisper/teaser-ai.jpg"
   },
   {
     "filename": "2026-01-21-package-scikit-video.md",
@@ -167,8 +321,17 @@
     "title": "scikit-video: Video Processing in Python with FFmpeg",
     "date": "2026-01-21T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "scikit-video is a Python library that provides convenient functions for reading, writing, and processing video data. It wraps FFmpeg (or LibAV) behind a clean NumPy-based API, so you can load an entir..."
+    "tags": [
+      "python",
+      "package",
+      "pypi",
+      "video-processing",
+      "ffmpeg",
+      "computer-vision",
+      "numpy"
+    ],
+    "excerpt": "scikit-video (skvideo) is a Python library for video reading, writing, and processing built on top of FFmpeg and NumPy.",
+    "teaser": "/assets/images/2026-01-21-package-scikit-video/teaser-ai.jpg"
   },
   {
     "filename": "2025-12-23-package-catboost.md",
@@ -176,8 +339,17 @@
     "title": "CatBoost: Gradient Boosting with Native Categorical Feature Support",
     "date": "2025-12-23T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "CatBoost is an open-source gradient boosting library developed by Yandex. Its distinguishing feature is native support for categorical features -- it can process string and categorical columns directl..."
+    "tags": [
+      "catboost",
+      "machine-learning",
+      "gradient-boosting",
+      "data-science",
+      "python",
+      "classification",
+      "regression"
+    ],
+    "excerpt": "A practical guide to CatBoost, Yandex's gradient boosting library that handles categorical features natively without manual encoding.",
+    "teaser": "/assets/images/2025-12-23-package-catboost/teaser-ai.jpg"
   },
   {
     "filename": "2026-01-16-package-unsloth.md",
@@ -185,8 +357,15 @@
     "title": "Unsloth: Fine-Tune LLMs 2-5x Faster with 80% Less Memory",
     "date": "2026-01-16T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "Unsloth is an open-source library that makes fine-tuning large language models (LLMs) significantly faster and more memory-efficient. It achieves 2-5x speedups over standard Hugging Face training whil..."
+    "tags": [
+      "llm-fine-tuning",
+      "large-language-models",
+      "lora",
+      "parameter-efficient",
+      "deep-learning"
+    ],
+    "excerpt": "Unsloth accelerates LLM fine-tuning by 2-5x while reducing memory usage by up to 80%, enabling efficient LoRA and QLoRA training of models like Llama, Mistral, and Gemma on consumer GPUs.",
+    "teaser": "/assets/images/2026-01-16-package-unsloth/teaser-ai.jpg"
   },
   {
     "filename": "2025-12-24-package-llama-index.md",
@@ -194,8 +373,17 @@
     "title": "LlamaIndex: Connect Your Custom Data to Large Language Models",
     "date": "2025-12-24T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "LlamaIndex (formerly GPT Index) is a data framework for building retrieval-augmented generation (RAG) applications. It provides the tools to ingest, structure, and query your own data using large lang..."
+    "tags": [
+      "llamaindex",
+      "llm",
+      "retrieval-augmented-generation",
+      "vector-search",
+      "python",
+      "data-indexing",
+      "rag"
+    ],
+    "excerpt": "A practical guide to LlamaIndex, the data framework for building retrieval-augmented generation (RAG) applications that connect custom data sources to LLMs.",
+    "teaser": "/assets/images/2025-12-24-package-llama-index/teaser-ai.jpg"
   },
   {
     "filename": "2026-01-08-package-gin-config.md",
@@ -203,8 +391,15 @@
     "title": "Gin Config: Google's Lightweight Configuration Framework for Python",
     "date": "2026-01-08T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "Gin-config is a lightweight configuration framework developed by Google that provides a practical way to configure parameters of Python functions and classes. Rather than requiring explicit configurat..."
+    "tags": [
+      "configuration",
+      "dependency-injection",
+      "machine-learning",
+      "google",
+      "python"
+    ],
+    "excerpt": "Gin-config is Google's lightweight configuration framework that uses decorators and .gin files to make Python functions and classes configurable without boilerplate code.",
+    "teaser": "/assets/images/2026-01-08-package-gin-config/teaser-ai.jpg"
   },
   {
     "filename": "2025-12-26-package-folium.md",
@@ -212,8 +407,17 @@
     "title": "Folium: Create Interactive Leaflet.js Maps in Python",
     "date": "2025-12-26T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "Folium is a Python library that makes it easy to create interactive maps powered by Leaflet.js. It lets you generate rich map visualizations directly from Python, combining the data-processing capabil..."
+    "tags": [
+      "folium",
+      "python",
+      "data-visualization",
+      "geospatial",
+      "leaflet",
+      "interactive-maps",
+      "gis"
+    ],
+    "excerpt": "A practical guide to Folium, the Python library for creating interactive Leaflet.js maps with markers, choropleth layers, and heatmaps.",
+    "teaser": "/assets/images/2025-12-26-package-folium/teaser-ai.jpg"
   },
   {
     "filename": "2025-12-23-package-xgboost.md",
@@ -221,8 +425,17 @@
     "title": "XGBoost: Scalable Gradient Boosting for Classification and Regression",
     "date": "2025-12-23T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "XGBoost (eXtreme Gradient Boosting) is an optimized distributed gradient boosting library designed for efficiency, flexibility, and portability. It implements gradient boosted decision trees with a fo..."
+    "tags": [
+      "xgboost",
+      "machine-learning",
+      "gradient-boosting",
+      "classification",
+      "regression",
+      "python",
+      "data-science"
+    ],
+    "excerpt": "A hands-on guide to XGBoost, the optimized gradient boosting library known for speed, performance, and dominance in machine learning competitions.",
+    "teaser": "/assets/images/2025-12-23-package-xgboost/teaser-ai.jpg"
   },
   {
     "filename": "2026-02-12-repo-ollama.md",
@@ -230,8 +443,16 @@
     "title": "Ollama - Run Large Language Models Locally",
     "date": "2026-02-12T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "[Ollama](https://github.com/ollama/ollama) is an open-source tool that makes it straightforward to download, run, and interact with large language models on your local machine. It packages model weigh..."
+    "tags": [
+      "ollama",
+      "llm",
+      "local-inference",
+      "llama",
+      "self-hosted",
+      "python"
+    ],
+    "excerpt": "A look at the ollama/ollama repository, a tool for downloading, running, and managing large language models locally on your own hardware.",
+    "teaser": "/assets/images/2026-02-12-repo-ollama/teaser-ai.jpg"
   },
   {
     "filename": "2026-01-20-package-pybullet.md",
@@ -239,7 +460,17 @@
     "title": "PyBullet: Physics Simulation for Robotics and Reinforcement Learning",
     "date": "2026-01-20T09:00:00+00:00",
     "author": "Ruslanmv",
-    "tags": [],
-    "excerpt": "PyBullet is a Python binding for the [Bullet Physics SDK](https://pybullet.org/), a widely used open-source physics engine. It is designed for robotics simulation, reinforcement learning research, and..."
+    "tags": [
+      "python",
+      "package",
+      "pypi",
+      "robotics",
+      "physics-simulation",
+      "reinforcement-learning",
+      "bullet-physics",
+      "urdf"
+    ],
+    "excerpt": "PyBullet is a Python binding for the Bullet physics engine, providing real-time physics simulation for robotics, reinforcement learning, and VR applications.",
+    "teaser": "/assets/images/2026-01-20-package-pybullet/teaser-ai.jpg"
   }
 ]
