@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   best-of-the-best:
@@ -91,9 +93,14 @@ jobs:
           WATSONX_URL: ${{ secrets.WATSONX_URL }}
           WATSONX_PROJECT_ID: ${{ secrets.WATSONX_PROJECT_ID }}
         run: |
-          echo "🚀 Starting blog generation with v3.6..."
+          echo "🚀 Starting blog generation..."
           python scripts/generate_daily_blog.py
           echo "✅ Blog generation complete"
+
+      - name: 🖼️ Generate images for posts missing them
+        run: |
+          python scripts/generate_blog_images.py
+          echo "✅ Blog images ensured"
 
       - name: 🛡️ Check for duplicate topics
         run: |
@@ -161,23 +168,13 @@ jobs:
           CODE_BLOCKS=$(grep -c '```python' "$LATEST_POST" || echo "0")
           echo "   Code blocks: $CODE_BLOCKS"
 
-          # Check for friendly intro/outro (v3.0 feature)
-          if grep -q "Hello everyone!" "$LATEST_POST"; then
-            echo "   Friendly intro: ✓"
-          fi
-
-          if grep -q "Congratulations!" "$LATEST_POST"; then
-            echo "   Motivating outro: ✓"
-          fi
-
           echo ""
           echo "🖼️  Checking generated assets..."
 
           # Check for topic-specific images
           if ls assets/images/20*/header-*.jpg 1> /dev/null 2>&1; then
             NEW_IMAGES=$(find assets/images/20*/ -type f 2>/dev/null | wc -l)
-            echo "✅ Generated $NEW_IMAGES topic-specific images"
-            find assets/images/20*/ -type f -exec basename {} \; | sed 's/^/   • /'
+            echo "✅ $NEW_IMAGES topic-specific images found"
           else
             echo "⚠️  No topic-specific images found (placeholders may be used)"
           fi
@@ -197,7 +194,6 @@ jobs:
           LATEST_POST=$(ls -t blog/posts/*.md 2>/dev/null | grep -v index | head -1)
 
           if [ -n "$LATEST_POST" ]; then
-            # Check for potential issues
             ISSUES=0
 
             if ! grep -q '```python' "$LATEST_POST"; then
@@ -227,19 +223,14 @@ jobs:
             echo ""
             echo "📈 Coverage Stats:"
             echo "   Total posts: $COVERAGE_COUNT"
-            echo "   Coverage file: data/blog_coverage.json"
-          else
-            echo "⚠️  No coverage file found at data/blog_coverage.json"
-            echo "   This may cause topic repetition!"
           fi
 
-          echo ""
           echo "✅ Quality check complete"
 
       - name: Commit new blog + assets + updated feeds
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "🏆 Daily Best-of-the-Best blog with topic-specific images"
+          commit_message: "📝 Daily update: blog post + README tables - ${{ github.event.repository.updated_at || 'today' }}"
           file_pattern: |
             blog/posts/*.md
             blog/posts/index.json
@@ -251,6 +242,36 @@ jobs:
           commit_user_name: "BestOfTheBestBot"
           commit_user_email: "actions@github.com"
           commit_options: '--no-verify'
+
+      # -----------------------------------------------------------
+      # Jekyll Build & GitHub Pages Deploy
+      # -----------------------------------------------------------
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Install Jekyll dependencies
+        run: |
+          bundle install --jobs 4 --retry 3
+
+      - name: Build Jekyll site
+        env:
+          JEKYLL_ENV: production
+        run: |
+          bundle exec jekyll build --baseurl "/Best-of-the-Best"
+          touch ./_site/.nojekyll
+          echo "✅ Jekyll site built successfully"
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: 📊 Upload logs (on failure)
         if: failure()
