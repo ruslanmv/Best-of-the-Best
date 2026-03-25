@@ -1,10 +1,13 @@
-name: Daily AI Package Blog Generation & Jekyll Deploy
+name: Daily AI Package Blog Generation & Jekyll Deploy (DEPRECATED)
+
+# ============================================================================
+# DEPRECATED: This workflow is replaced by daily-best-of-the-best.yml
+# which handles blog generation, image creation, Jekyll build, and deployment.
+# Keeping this file disabled to preserve history.
+# ============================================================================
 
 on:
-  schedule:
-    # Run daily at 6:00 AM CET (5:00 AM UTC)
-    - cron: '0 5 * * *'
-  workflow_dispatch:  # Allow manual trigger
+  workflow_dispatch:  # Manual trigger only (no longer scheduled)
 
 permissions:
   contents: write
@@ -14,121 +17,11 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    if: false  # Disabled - use daily-best-of-the-best.yml instead
 
     steps:
-      # -----------------------------------------------------------
-      # 1) Checkout repo
-      # -----------------------------------------------------------
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      # -----------------------------------------------------------
-      # 2) Python + Ollama backend
-      # -----------------------------------------------------------
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install Ollama
+      - name: This workflow is deprecated
         run: |
-          curl -fsSL https://ollama.com/install.sh | sh
-          ollama serve &
-          sleep 5
-          ollama pull llama3.2
-
-      - name: Install Python dependencies
-        run: |
-          pip install --upgrade pip
-          pip install -r requirements-multiagent.txt
-
-      - name: Run multi-agent system
-        run: |
-          cd multiagent_system
-          python crew.py
-        timeout-minutes: 30
-
-      - name: Update README tables
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python update_readme_tables.py
-
-      - name: Update tracking database
-        run: python update_readme_daily.py
-
-      - name: Generate blog index
-        run: python blog/generate_index.py
-
-      - name: Export data feeds for API
-        run: python export_data_feeds.py
-
-      # -----------------------------------------------------------
-      # 3) Commit content changes
-      # -----------------------------------------------------------
-      - name: Commit and push blog updates
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-
-          # Pull latest changes first to avoid conflicts
-          git pull --rebase origin main || {
-            echo "No remote changes to pull or already up to date"
-          }
-
-          # Add files and directories (using safer directory-based approach)
-          git add README.md || true
-          git add data/ || true
-          git add blog/posts/ || true
-          git add blog/api/ || true
-          git add blog/ || true
-
-          # Check if there are any changes to commit
-          if git diff --staged --quiet; then
-            echo "✓ No changes to commit"
-            exit 0
-          fi
-
-          # Commit changes
-          git commit -m "📝 Daily update: blog post + README tables - $(date +'%Y-%m-%d')"
-
-          # Push changes with retry logic
-          git push || {
-            echo "Push failed, trying to pull and push again..."
-            git pull --rebase origin main
-            git push
-          }
-
-      # -----------------------------------------------------------
-      # 4) Jekyll Build (Manual Build)
-      # -----------------------------------------------------------
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.2'
-          bundler-cache: true
-
-      - name: Install Jekyll dependencies
-        run: |
-          bundle install --jobs 4 --retry 3
-
-      - name: Build Jekyll site
-        env:
-          JEKYLL_ENV: production
-        run: |
-          bundle exec jekyll build --baseurl "/Best-of-the-Best"
-          # Create .nojekyll to ensure GitHub serves it as static files
-          touch ./_site/.nojekyll
-
-      # -----------------------------------------------------------
-      # 5) Deploy Artifact (Requires Source: GitHub Actions in Settings)
-      # -----------------------------------------------------------
-      - name: Upload Pages Artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./_site
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          echo "This workflow has been replaced by daily-best-of-the-best.yml"
+          echo "Please use that workflow instead."
+          exit 0
