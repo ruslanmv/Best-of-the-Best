@@ -18,40 +18,47 @@ OUTPUT_HTML = BASE_DIR / "blog" / "index.html"
 OUTPUT_JSON = POSTS_DIR / "index.json"
 
 def extract_frontmatter(content: str) -> dict:
-    """Extract YAML frontmatter from markdown file"""
+    """Extract YAML frontmatter from markdown file using proper YAML parsing."""
     frontmatter = {}
 
-    # Check if file has frontmatter
-    if content.startswith('---'):
-        parts = content.split('---', 2)
-        if len(parts) >= 3:
-            frontmatter_text = parts[1].strip()
+    if not content.startswith('---'):
+        return frontmatter
 
-            # Parse simple YAML
-            for line in frontmatter_text.split('\n'):
-                if ':' in line:
-                    key, value = line.split(':', 1)
-                    key = key.strip()
-                    value = value.strip().strip('"\'')
+    parts = content.split('---', 2)
+    if len(parts) < 3:
+        return frontmatter
 
-                    # Handle tags (array)
-                    if key == 'tags':
-                        # Extract tags from ["tag1", "tag2"] format
-                        tags = re.findall(r'"([^"]*)"', value)
-                        # Fallback for comma separated tags if regex fails or format differs
-                        if not tags and ',' in value:
-                            tags = [t.strip() for t in value.replace('[', '').replace(']', '').split(',')]
-                        frontmatter[key] = tags
-                    else:
-                        frontmatter[key] = value
+    yaml_text = parts[1]
 
-            # Get excerpt from content
-            content_body = parts[2].strip()
-            # Get first paragraph as excerpt
-            paragraphs = [p.strip() for p in content_body.split('\n\n') if p.strip() and not p.strip().startswith('#')]
-            if paragraphs:
-                excerpt = paragraphs[0][:200] + '...' if len(paragraphs[0]) > 200 else paragraphs[0]
-                frontmatter['excerpt'] = excerpt
+    # Use PyYAML for proper parsing of lists, nested dicts, etc.
+    try:
+        import yaml
+        data = yaml.safe_load(yaml_text)
+        if isinstance(data, dict):
+            frontmatter = data
+    except Exception:
+        # Fallback: simple line-by-line parsing
+        for line in yaml_text.split('\n'):
+            if ':' in line and not line.startswith(' '):
+                key, value = line.split(':', 1)
+                frontmatter[key.strip()] = value.strip().strip('"\'')
+
+    # Extract teaser from nested header dict
+    header = frontmatter.get('header', {})
+    if isinstance(header, dict) and 'teaser' in header:
+        frontmatter['teaser'] = header['teaser']
+
+    # Clean excerpt: strip markdown links [text](url) -> text
+    excerpt = str(frontmatter.get('excerpt', ''))
+    excerpt = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', excerpt)
+    excerpt = re.sub(r'[*_`]', '', excerpt)
+    frontmatter['excerpt'] = excerpt
+
+    # Ensure tags is always a list
+    tags = frontmatter.get('tags', [])
+    if isinstance(tags, str):
+        tags = [t.strip() for t in tags.split(',')]
+    frontmatter['tags'] = [str(t) for t in tags if t]
 
     return frontmatter
 
@@ -356,14 +363,19 @@ def generate_posts_index():
             #   {site.baseurl}/blog/posts/<name>.html
             post_url = f"/blog/posts/{md_file.stem}.html"
 
+            # Ensure date is a string (yaml.safe_load returns datetime objects)
+            raw_date = frontmatter.get("date", datetime.now().isoformat())
+            date_str = raw_date.isoformat() if isinstance(raw_date, datetime) else str(raw_date)
+
             post_info = {
                 "filename": md_file.name,
                 "url": post_url,
                 "title": frontmatter.get("title", md_file.stem),
-                "date": frontmatter.get("date", datetime.now().isoformat()),
-                "author": frontmatter.get("author", "AI Multi-Agent System"),
-                "tags": frontmatter.get("tags", ["AI", "Machine Learning"]),
-                "excerpt": frontmatter.get("excerpt", "")
+                "date": date_str,
+                "author": frontmatter.get("author", "Ruslanmv"),
+                "tags": frontmatter.get("tags", []),
+                "excerpt": frontmatter.get("excerpt", ""),
+                "teaser": frontmatter.get("teaser", ""),
             }
 
             posts.append(post_info)
