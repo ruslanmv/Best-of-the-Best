@@ -390,37 +390,46 @@ async function loadHighlights() {
         return;
       }
 
-      // Build post cards with teaser images
+      // Build Medium-style post cards
       const cardsHtml = pageItems.map(post => {
         const teaserUrl = post.teaser
           ? `${baseurl}${post.teaser}`
-          : `${baseurl}/assets/images/og_default_header.jpg`;
-        const cleanExcerpt = stripMarkdown(post.excerpt || '').substring(0, 160);
-        const postTags = (post.tags || []).slice(0, 3);
+          : '';
+        const cleanExcerpt = stripMarkdown(post.excerpt || '').substring(0, 180);
+        // Only show up to 3 tags, clean display names
+        const postTags = (post.tags || []).filter(t => t && !['python','package','pypi'].includes(t)).slice(0, 3);
         const tagsHtml = postTags.map(t =>
-          `<span class="botb-card-tag">${t}</span>`
+          `<span class="botb-card-tag">${t.replace(/-/g, ' ')}</span>`
         ).join('');
         const dateStr = new Date(post.date).toLocaleDateString('en-US', {
-          year: 'numeric', month: 'long', day: 'numeric'
+          year: 'numeric', month: 'short', day: 'numeric'
         });
+        // Estimate reading time (~200 words per minute, estimate from excerpt length)
+        const readMin = Math.max(3, Math.ceil((cleanExcerpt.length / 5) * 8 / 200));
+        // Image HTML: show img if teaser exists, otherwise show gradient-only background
+        const imgHtml = teaserUrl
+          ? `<img src="${teaserUrl}" alt="${post.title}" class="botb-post-card__image" loading="lazy"
+                 onerror="this.style.display='none'">`
+          : '';
 
         return `
           <article class="botb-post-card">
             <a href="${buildPostUrl(post.url)}" class="botb-post-card__image-link">
-              <img src="${teaserUrl}" alt="${post.title}" class="botb-post-card__image" loading="lazy"
-                   onerror="this.src='${baseurl}/assets/images/og_default_header.jpg'">
+              ${imgHtml}
             </a>
             <div class="botb-post-card__body">
               <div class="botb-post-card__meta">
                 <time class="botb-post-card__date">${dateStr}</time>
+                <span class="botb-post-card__meta-dot"></span>
+                <span class="botb-post-card__reading-time">${readMin} min read</span>
                 ${tagsHtml ? `<div class="botb-post-card__tags">${tagsHtml}</div>` : ''}
               </div>
               <h3 class="botb-post-card__title">
                 <a href="${buildPostUrl(post.url)}">${post.title}</a>
               </h3>
-              <p class="botb-post-card__excerpt">${cleanExcerpt}${cleanExcerpt.length >= 160 ? '…' : ''}</p>
+              <p class="botb-post-card__excerpt">${cleanExcerpt}${cleanExcerpt.length >= 180 ? '…' : ''}</p>
               <a href="${buildPostUrl(post.url)}" class="botb-post-card__readmore">
-                Read article &rarr;
+                Continue reading <span style="transition:inherit">→</span>
               </a>
             </div>
           </article>
