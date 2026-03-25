@@ -373,9 +373,23 @@ async function loadHighlights() {
       </article>
     `;
 
-    const recent = rest.slice(0, 6);
-    if (recent.length) {
-      recentContainer.innerHTML = recent.map(post => `
+    // Pagination settings
+    const POSTS_PER_PAGE = 9;
+    let currentPage = 1;
+    const totalPages = Math.ceil(rest.length / POSTS_PER_PAGE);
+
+    function renderPage(page) {
+      currentPage = page;
+      const start = (page - 1) * POSTS_PER_PAGE;
+      const pageItems = rest.slice(start, start + POSTS_PER_PAGE);
+
+      if (!pageItems.length) {
+        recentContainer.innerHTML =
+          '<p class="botb-no-highlights">No previous highlights yet.</p>';
+        return;
+      }
+
+      const cardsHtml = pageItems.map(post => `
         <article class="botb-card">
           <div class="botb-card-date">
             ${new Date(post.date).toLocaleDateString('en-US', {
@@ -391,10 +405,38 @@ async function loadHighlights() {
           <div class="botb-card-footer">Read highlight &rarr;</div>
         </article>
       `).join('');
-    } else {
-      recentContainer.innerHTML =
-        '<p class="botb-no-highlights">No previous highlights yet.</p>';
+
+      // Build pagination controls
+      let paginationHtml = '';
+      if (totalPages > 1) {
+        paginationHtml = '<nav class="botb-pagination" aria-label="Blog pagination">';
+        paginationHtml += `<button class="botb-page-btn" onclick="changePage(${page - 1})" ${page <= 1 ? 'disabled' : ''}>&laquo; Prev</button>`;
+
+        for (let i = 1; i <= totalPages; i++) {
+          if (i === page) {
+            paginationHtml += `<span class="botb-page-btn botb-page-btn--active">${i}</span>`;
+          } else if (Math.abs(i - page) <= 2 || i === 1 || i === totalPages) {
+            paginationHtml += `<button class="botb-page-btn" onclick="changePage(${i})">${i}</button>`;
+          } else if (Math.abs(i - page) === 3) {
+            paginationHtml += '<span class="botb-page-ellipsis">…</span>';
+          }
+        }
+
+        paginationHtml += `<button class="botb-page-btn" onclick="changePage(${page + 1})" ${page >= totalPages ? 'disabled' : ''}>Next &raquo;</button>`;
+        paginationHtml += '</nav>';
+      }
+
+      recentContainer.innerHTML = cardsHtml + paginationHtml;
     }
+
+    // Make changePage globally accessible
+    window.changePage = function(page) {
+      if (page < 1 || page > totalPages) return;
+      renderPage(page);
+      document.getElementById('recent-highlights').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+
+    renderPage(1);
 
   } catch (err) {
     console.error('Content error:', err);
