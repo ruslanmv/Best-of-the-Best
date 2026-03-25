@@ -69,7 +69,7 @@ CACHE_DIR = Path(__file__).resolve().parent.parent / "data" / "search_cache"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
 CACHE_DURATION_HOURS = int(os.getenv("SEARCH_CACHE_HOURS", "24"))
-MAX_RESULTS_PER_SEARCH = int(os.getenv("SEARCH_MAX_RESULTS", "5"))
+MAX_RESULTS_PER_SEARCH = int(os.getenv("SEARCH_MAX_RESULTS", "3"))
 REQUEST_TIMEOUT = int(os.getenv("SEARCH_TIMEOUT", "10"))
 RATE_LIMIT = int(os.getenv("SEARCH_RATE_LIMIT", "10"))
 
