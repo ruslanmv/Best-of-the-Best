@@ -663,5 +663,12 @@
     "version": 1,
     "date": "2026-03-24",
     "filename": "2026-03-24-package-featured.md"
+  },
+  {
+    "kind": "package",
+    "id": "featured",
+    "version": 1,
+    "date": "2026-03-25",
+    "filename": "2026-03-25-package-featured.md"
   }
 ]
