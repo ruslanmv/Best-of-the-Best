@@ -1,5 +1,5 @@
 ---
-title: "Bert Score"
+title: "BERTScore: Evaluating Text Generation with Contextual Embeddings"
 date: 2026-01-07T09:00:00+00:00
 last_modified_at: 2026-01-07T09:00:00+00:00
 topic_kind: "package"
@@ -9,10 +9,12 @@ categories:
   - Engineering
   - AI
 tags:
-  - python
-  - package
-  - pypi
-excerpt: "Python package: bert-score"
+  - nlp
+  - text-evaluation
+  - bert
+  - machine-learning
+  - metrics
+excerpt: "BERTScore leverages BERT contextual embeddings to evaluate text generation quality, providing precision, recall, and F1 scores that correlate better with human judgment than traditional n-gram metrics."
 header:
   overlay_image: /assets/images/2026-01-07-package-bert-score/header-ai-abstract.jpg
   overlay_filter: 0.5
@@ -27,124 +29,168 @@ sidebar:
 
 ## Introduction
 
-What is Bert Score?
-Bert Score is a metric used to evaluate the similarity between two text sequences, such as sentences or paragraphs. This score can be applied in various natural language processing (NLP) tasks like question answering, sentiment analysis, and text classification.
+BERTScore is an automatic evaluation metric for text generation that computes token-level similarity between candidate and reference sentences using contextual embeddings from pre-trained BERT models. Unlike traditional metrics such as BLEU or ROUGE that rely on exact n-gram matching, BERTScore captures semantic similarity, making it more robust to paraphrasing and synonyms.
 
-Why it matters
-Understanding Bert Score can help developers and researchers improve NLP tasks by providing insights into the semantic meaning of text sequences.
+This matters because evaluating the quality of generated text is a fundamental challenge in NLP. Machine translation, summarization, and dialogue systems all benefit from metrics that align with human judgment, and BERTScore has been shown to correlate more strongly with human evaluations than surface-level metrics.
 
-What readers will learn
-This guide will cover the key features of Bert Score, its use cases, and provide practical examples to get you started with using this metric in your projects.
+In this guide, you will learn how to install BERTScore, compute precision, recall, and F1 scores for generated text, and apply it to practical evaluation scenarios.
 
 ## Overview
 
-Key features
-Bert Score is based on the BERT (Bidirectional Encoder Representations from Transformers) architecture. This model uses a multi-layer bidirectional transformer encoder to generate contextualized representations of input text sequences.
+BERTScore works by computing pairwise cosine similarities between tokens in the candidate and reference sentences using contextual embeddings. It then uses greedy matching to produce three scores:
 
-Use cases
-Bert Score can be applied in various NLP tasks, such as:
+- **Precision**: How much of the candidate is supported by the reference.
+- **Recall**: How much of the reference is covered by the candidate.
+- **F1**: The harmonic mean of precision and recall.
 
-* Question answering: evaluating the similarity between questions and answers
-* Sentiment analysis: determining the sentiment of text sequences
-* Text classification: categorizing text based on its content
+Key features include:
 
-Current version: 3.5.0
+- Support for over 100 pre-trained models (RoBERTa, DeBERTa, etc.)
+- Multi-language support via multilingual models
+- Optional importance weighting using inverse document frequency (IDF)
+- Command-line interface for batch evaluation
+- Baseline rescaling for more interpretable scores
 
 ## Getting Started
 
-Installation
-You can install Bert Score using pip: `pip install bert-score`
+Install BERTScore using pip:
 
-Quick example (complete code)
+```bash
+pip install bert-score
+```
+
+Here is a complete working example:
+
 ```python
-import pandas as pd
-from bert_score import BERTScorer
+from bert_score import score
 
-# Load pre-trained model and tokenizer
-model_name = 'bert-base-uncased'
-tokenizer = BERTTokenizer.from_pretrained(model_name)
+# Candidate sentences (generated text)
+cands = [
+    "The cat sat on the mat.",
+    "It is raining outside today."
+]
 
-# Create a scorer instance
-scorer = BERTScorer(model_name, num_class=2)
+# Reference sentences (ground truth)
+refs = [
+    "The cat is sitting on the mat.",
+    "Today it is raining outdoors."
+]
 
-# Calculate Bert Score for two text sequences
-text1 = "This is an example sentence."
-text2 = "Another example sentence."
-score = scorer.score(text1, text2)
-print(score)
+# Compute BERTScore
+P, R, F1 = score(cands, refs, lang="en", verbose=True)
+
+print(f"Precision: {P.tolist()}")
+print(f"Recall:    {R.tolist()}")
+print(f"F1:        {F1.tolist()}")
 ```
 
 ## Core Concepts
 
-Main functionality
-Bert Score calculates the similarity between two text sequences based on their semantic meaning.
+### The `score` Function
 
-API overview
-The Bert Score API provides methods for calculating the score and extracting relevant information from the input texts.
+The primary interface is the `score` function, which accepts lists of candidate and reference strings:
 
-Example usage
 ```python
-# Calculate Bert Score for a list of text sequences
-texts = ["Text 1", "Text 2", ...]
-scores = []
-for text in texts:
-    scores.append(scorer.score(text))
-print(scores)
+from bert_score import score
+
+P, R, F1 = score(
+    cands,           # List of candidate sentences
+    refs,            # List of reference sentences
+    lang="en",       # Language (used to select default model)
+    model_type=None, # Specify a model explicitly, e.g., "roberta-large"
+    num_layers=None, # Which layer to use for embeddings
+    verbose=False,   # Print progress
+    idf=False,       # Use IDF weighting
+    rescale_with_baseline=False  # Apply baseline rescaling
+)
+```
+
+The return values `P`, `R`, and `F1` are PyTorch tensors, one score per sentence pair.
+
+### The `BERTScorer` Class
+
+For repeated evaluations, use the `BERTScorer` class to avoid reloading the model:
+
+```python
+from bert_score import BERTScorer
+
+scorer = BERTScorer(lang="en", rescale_with_baseline=True)
+
+P, R, F1 = scorer.score(
+    ["The weather is nice today."],
+    ["Today the weather is pleasant."]
+)
+
+print(f"F1: {F1.item():.4f}")
 ```
 
 ## Practical Examples
 
-Example 1: Sentiment Analysis
-Use Bert Score to analyze the sentiment of a text sequence.
+### Example 1: Evaluating Machine Translation Output
+
 ```python
-# Load pre-trained model and tokenizer
-model_name = 'bert-base-uncased'
-tokenizer = BERTTokenizer.from_pretrained(model_name)
+from bert_score import score
 
-# Create a scorer instance
-scorer = BERTScorer(model_name, num_class=2)
+# Machine translation outputs
+translations = [
+    "The house is big and beautiful.",
+    "She goes to the school every day.",
+    "We had dinner at the restaurant last night."
+]
 
-# Calculate Bert Score for two text sequences
-text1 = "I love this product!"
-text2 = "This product is terrible."
-score = scorer.score(text1, text2)
-print(score)
+# Human reference translations
+references = [
+    "The house is large and lovely.",
+    "She attends school daily.",
+    "Last night, we dined at the restaurant."
+]
+
+P, R, F1 = score(translations, references, lang="en", rescale_with_baseline=True)
+
+for i, (p, r, f) in enumerate(zip(P, R, F1)):
+    print(f"Sentence {i+1} - P: {p:.4f}, R: {r:.4f}, F1: {f:.4f}")
 ```
 
-Example 2: Question Answering
-Use Bert Score to evaluate the similarity between a question and an answer.
+### Example 2: Comparing Summarization Models
+
 ```python
-# Load pre-trained model and tokenizer
-model_name = 'bert-base-uncased'
-tokenizer = BERTTokenizer.from_pretrained(model_name)
+from bert_score import score
 
-# Create a scorer instance
-scorer = BERTScorer(model_name, num_class=2)
+source_text = "The original article about climate change..."
 
-# Calculate Bert Score for two text sequences
-question = "What is the capital of France?"
-answer = "Paris"
-score = scorer.score(question, answer)
-print(score)
+summary_a = ["Global temperatures have risen significantly over the past century due to human activities."]
+summary_b = ["Climate change is caused by greenhouse gas emissions from industrial processes."]
+reference = ["Human-caused greenhouse gas emissions have led to significant global temperature increases."]
+
+_, _, f1_a = score(summary_a, reference, lang="en")
+_, _, f1_b = score(summary_b, reference, lang="en")
+
+print(f"Summary A F1: {f1_a.item():.4f}")
+print(f"Summary B F1: {f1_b.item():.4f}")
+print(f"Better summary: {'A' if f1_a > f1_b else 'B'}")
 ```
 
 ## Best Practices
 
-Tips and recommendations
-* Use pre-trained models for better performance
-* Tune hyperparameters for specific use cases
-Common pitfalls
-* Ignore deprecated features to avoid errors
+- **Choose the right model**: Use `roberta-large` for English evaluations for best correlation with human judgment. Use multilingual models for non-English text.
+- **Enable baseline rescaling**: Set `rescale_with_baseline=True` to get scores that are more interpretable and spread across the 0-1 range.
+- **Use IDF weighting**: When evaluating longer texts, IDF weighting can help downweight common tokens and emphasize content words.
+- **Reuse the scorer**: When evaluating many sentence pairs, instantiate `BERTScorer` once rather than calling `score()` repeatedly to avoid reloading the model.
+- **Batch processing**: Pass all candidates and references at once rather than scoring one pair at a time.
+
+Common pitfalls:
+
+- BERTScore requires a GPU for efficient computation on large datasets. CPU evaluation works but is slow.
+- Scores are not directly comparable across different models or layer selections.
+- Very short sentences may produce unreliable scores.
 
 ## Conclusion
 
-Summary
-This guide has covered the key concepts, features, and examples of Bert Score.
+BERTScore provides a semantically meaningful evaluation metric for text generation that significantly improves upon traditional n-gram-based approaches. By leveraging contextual embeddings, it captures paraphrasing, synonymy, and sentence structure in ways that better align with human judgment.
 
-Next steps
-Explore the API documentation and tutorials to learn more about using Bert Score in your projects.
 Resources:
-https://github.com/Tiiimax/BertScore
+- [GitHub - Tiiiger/bert_score](https://github.com/Tiiiger/bert_score)
+- [BERTScore Paper (ICLR 2020)](https://arxiv.org/abs/1904.09675)
 
 ---
 
