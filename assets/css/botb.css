@@ -422,7 +422,7 @@
 
 .botb-dash-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   padding: 0 1.5rem;
 }
@@ -739,19 +739,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.4rem;
-  flex-wrap: wrap;
+  gap: 0.35rem;
+  flex-wrap: nowrap;
 }
 
 .botb-page-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 2.5rem;
-  height: 2.5rem;
-  padding: 0 0.6rem;
+  min-width: 2.2rem;
+  height: 2.2rem;
+  padding: 0 0.5rem;
   border: 1px solid #e5e7eb;
-  border-radius: 8px;
+  border-radius: 6px;
   background: #ffffff;
   color: #374151;
   font-size: 0.875rem;
@@ -820,7 +820,7 @@
   .botb-stats-wrapper { margin-top: -2.4rem; }
   .botb-controls { justify-content: center; text-align: center; }
   .botb-btn-group { justify-content: center; width: 100%; flex-wrap: wrap; }
-  .botb-dash-grid { grid-template-columns: 1fr; }
+  .botb-dash-grid { grid-template-columns: repeat(2, 1fr); }
   .botb-leader-grid { grid-template-columns: 1fr; }
   .botb-pagination { gap: 0.25rem; }
   .botb-page-btn { min-width: 2.2rem; height: 2.2rem; font-size: 0.8rem; border-radius: 6px; }
