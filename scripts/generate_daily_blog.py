@@ -470,45 +470,104 @@ def generate_image_queries(topic: Topic) -> Dict[str, str]:
     return queries
 
 
-def ensure_blog_assets_topic_specific(topic: Topic, slug: str, date_str: str) -> Path:
-    """Ensure blog assets with topic-specific images"""
-    if not IMAGE_TOOLS_AVAILABLE:
-        blog_dir = BASE_ASSETS_DIR / f"{date_str}-{slug}"
-        blog_dir.mkdir(parents=True, exist_ok=True)
-        return blog_dir
+def _create_gradient_placeholder(path: Path, width: int, height: int, text: str = "") -> None:
+    """Create a gradient placeholder image using Pillow when stock photos are unavailable."""
+    try:
+        from PIL import Image, ImageDraw, ImageFilter
+        img = Image.new("RGB", (width, height))
+        draw = ImageDraw.Draw(img)
+        # Diagonal gradient
+        colors = [(30, 60, 114), (42, 82, 152), (70, 130, 180)]
+        for y in range(height):
+            for x in range(width):
+                t = (x / width * 0.6 + y / height * 0.4)
+                if t < 0.5:
+                    t2 = t * 2
+                    r = int(colors[0][0] * (1 - t2) + colors[1][0] * t2)
+                    g = int(colors[0][1] * (1 - t2) + colors[1][1] * t2)
+                    b = int(colors[0][2] * (1 - t2) + colors[1][2] * t2)
+                else:
+                    t2 = (t - 0.5) * 2
+                    r = int(colors[1][0] * (1 - t2) + colors[2][0] * t2)
+                    g = int(colors[1][1] * (1 - t2) + colors[2][1] * t2)
+                    b = int(colors[1][2] * (1 - t2) + colors[2][2] * t2)
+                draw.point((x, y), fill=(r, g, b))
+        # Add dot pattern
+        for py in range(0, height, 30):
+            for px in range(0, width, 30):
+                base = img.getpixel((px, py))
+                dot = tuple(min(255, c + 20) for c in base)
+                draw.ellipse([px-1, py-1, px+1, py+1], fill=dot)
+        img = img.filter(ImageFilter.GaussianBlur(radius=0.5))
+        path.parent.mkdir(parents=True, exist_ok=True)
+        img.save(path, "JPEG", quality=85)
+    except ImportError:
+        logger.warning("⚠️  Pillow not available for placeholder images")
+    except Exception as e:
+        logger.warning(f"⚠️  Failed to create placeholder image: {e}")
 
-    blog_dir = get_blog_assets_dir()
+
+def ensure_blog_assets_topic_specific(topic: Topic, slug: str, date_str: str) -> Path:
+    """Ensure blog assets with topic-specific images.
+
+    Priority: Pexels stock photos > Pillow gradient placeholders > empty directory.
+    Always creates images - never skips silently.
+    """
+    # Determine blog asset directory
+    if IMAGE_TOOLS_AVAILABLE:
+        blog_dir = get_blog_assets_dir()
+    else:
+        blog_dir = BASE_ASSETS_DIR / f"{date_str}-{slug}"
+
+    blog_dir.mkdir(parents=True, exist_ok=True)
+
+    # Standard images every blog post needs
+    required_images = {
+        "header-ai-abstract.jpg": (1920, 600),
+        "header-data-science.jpg": (1920, 600),
+        "header-cloud.jpg": (1920, 600),
+        "teaser-ai.jpg": (600, 400),
+    }
+
     api_key = os.getenv("PEXELS_API_KEY")
-    
-    if not api_key:
-        logger.warning("⚠️  PEXELS_API_KEY not set. Skipping image download.")
-        return blog_dir
-    
     queries = generate_image_queries(topic)
-    
-    assets_to_create = [
-        ("header", "ai-abstract", queries["header-primary"]),
-        ("teaser", "ai", queries["teaser-main"]),
-        ("header", "data-science", queries["header-secondary"]),
-        ("header", "cloud", queries["content-workspace"]),
-    ]
-    
-    for asset_type, descriptor, search_query in assets_to_create:
-        asset_name = f"{asset_type}-{descriptor}"
-        asset_path = blog_dir / f"{asset_name}.jpg"
-        
-        if asset_path.exists():
+
+    query_map = {
+        "header-ai-abstract.jpg": queries.get("header-primary", "technology abstract"),
+        "header-data-science.jpg": queries.get("header-secondary", "data science"),
+        "header-cloud.jpg": queries.get("content-workspace", "cloud technology"),
+        "teaser-ai.jpg": queries.get("teaser-main", "artificial intelligence"),
+    }
+
+    for img_name, (w, h) in required_images.items():
+        img_path = blog_dir / img_name
+        if img_path.exists():
             continue
-        
-        try:
-            ImageTools.get_stock_photo(
-                search_query,
-                filename=f"{asset_name}.jpg",
-                asset_type=asset_type
-            )
-        except Exception as e:
-            logger.warning(f"⚠️  Image download failed: {e}")
-    
+
+        created = False
+
+        # Try 1: Pexels stock photos (if API key available)
+        if api_key and IMAGE_TOOLS_AVAILABLE:
+            try:
+                asset_type = "header" if "header" in img_name else "teaser"
+                descriptor = img_name.replace("header-", "").replace("teaser-", "").replace(".jpg", "")
+                ImageTools.get_stock_photo(
+                    query_map[img_name],
+                    filename=img_name,
+                    asset_type=asset_type
+                )
+                if img_path.exists():
+                    created = True
+                    logger.info(f"   📸 Downloaded: {img_name}")
+            except Exception as e:
+                logger.debug(f"   Pexels failed for {img_name}: {e}")
+
+        # Try 2: Pillow gradient placeholder
+        if not created:
+            _create_gradient_placeholder(img_path, w, h, topic.title)
+            if img_path.exists():
+                logger.info(f"   🎨 Created placeholder: {img_name}")
+
     return blog_dir
 
 
