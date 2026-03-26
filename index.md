@@ -374,12 +374,12 @@ async function loadHighlights() {
       </article>
     `;
 
-    // Pagination: 3 posts per page (blog-style like ruslanmv.com)
+    // Pagination: 3 posts per page in a grid with slide animation
     const POSTS_PER_PAGE = 3;
     let currentPage = 1;
     const totalPages = Math.ceil(rest.length / POSTS_PER_PAGE);
 
-    function renderPage(page) {
+    function renderPage(page, direction) {
       currentPage = page;
       const start = (page - 1) * POSTS_PER_PAGE;
       const pageItems = rest.slice(start, start + POSTS_PER_PAGE);
@@ -390,28 +390,26 @@ async function loadHighlights() {
         return;
       }
 
-      // Build Medium-style post cards
+      // Build 3-column grid cards
       const cardsHtml = pageItems.map((post, idx) => {
-        // Use teaser image, or a free stock photo from picsum.photos as fallback
         const pageOffset = (page - 1) * POSTS_PER_PAGE + idx;
-        const fallbackImg = `https://picsum.photos/seed/botb${pageOffset}/800/400`;
+        const fallbackImg = `https://picsum.photos/seed/botb${pageOffset}/600/340`;
         const teaserUrl = post.teaser
           ? `${baseurl}${post.teaser}`
           : fallbackImg;
-        const cleanExcerpt = stripMarkdown(post.excerpt || '').substring(0, 180);
-        // Only show up to 3 tags, clean display names
-        const postTags = (post.tags || []).filter(t => t && !['python','package','pypi'].includes(t)).slice(0, 3);
+        const cleanExcerpt = stripMarkdown(post.excerpt || '').substring(0, 120);
+        const postTags = (post.tags || []).filter(t => t && !['python','package','pypi'].includes(t)).slice(0, 2);
         const tagsHtml = postTags.map(t =>
           `<span class="botb-card-tag">${t.replace(/-/g, ' ')}</span>`
         ).join('');
         const dateStr = new Date(post.date).toLocaleDateString('en-US', {
           year: 'numeric', month: 'short', day: 'numeric'
         });
-        // Estimate reading time
         const readMin = Math.max(3, Math.ceil((cleanExcerpt.length / 5) * 8 / 200));
+        const delay = idx * 120;
 
         return `
-          <article class="botb-post-card">
+          <article class="botb-post-card" style="animation-delay: ${delay}ms">
             <a href="${buildPostUrl(post.url)}" class="botb-post-card__image-link">
               <img src="${teaserUrl}" alt="${post.title}" class="botb-post-card__image" loading="lazy"
                    onerror="this.onerror=null; this.src='${fallbackImg}';">
@@ -421,12 +419,12 @@ async function loadHighlights() {
                 <time class="botb-post-card__date">${dateStr}</time>
                 <span class="botb-post-card__meta-dot"></span>
                 <span class="botb-post-card__reading-time">${readMin} min read</span>
-                ${tagsHtml ? `<div class="botb-post-card__tags">${tagsHtml}</div>` : ''}
               </div>
+              ${tagsHtml ? `<div class="botb-post-card__tags">${tagsHtml}</div>` : ''}
               <h3 class="botb-post-card__title">
                 <a href="${buildPostUrl(post.url)}">${post.title}</a>
               </h3>
-              <p class="botb-post-card__excerpt">${cleanExcerpt}${cleanExcerpt.length >= 180 ? '…' : ''}</p>
+              <p class="botb-post-card__excerpt">${cleanExcerpt}${cleanExcerpt.length >= 120 ? '…' : ''}</p>
               <a href="${buildPostUrl(post.url)}" class="botb-post-card__readmore">
                 Continue reading <span style="transition:inherit">→</span>
               </a>
