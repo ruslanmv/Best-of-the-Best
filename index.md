@@ -132,63 +132,79 @@ author_profile: false
     </div>
   </div>
 
-  <!-- AI ECOSYSTEM - Curated discovery feed -->
-  <div class="eco">
-    <div class="eco__header">
-      <h2 class="eco__title">📈 AI Ecosystem</h2>
-      <p class="eco__subtitle">Curated resources across learning, research, and practical building</p>
-    </div>
+  <!-- AI ECOSYSTEM - Leaderboard dashboard -->
+  <h2 class="botb-section-title">📈 AI Ecosystem Rankings</h2>
+  <p class="eco-dashboard__subtitle">What is leading today across learning, research, and practical building</p>
+  <div class="eco-dashboard">
 
     <!-- Trending Now -->
-    <section class="eco__section">
-      <div class="eco__section-head">
-        <h3 class="eco__section-title"><span class="eco__icon">🔥</span> Trending Now</h3>
+    <a class="eco-dashboard__link" href="{{ site.baseurl }}/blog/data.html">
+      <div class="eco-dashboard__card eco-dashboard__card--primary">
+        <div class="eco-dashboard__header">
+          <span class="eco-dashboard__emoji">🔥</span>
+          <div>
+            <h3 class="eco-dashboard__title">Trending Now</h3>
+            <p class="eco-dashboard__meta">Top ranked by popularity</p>
+          </div>
+        </div>
+        <ul id="eco-trending" class="eco-dashboard__list">
+          <li class="eco-dashboard__item eco-dashboard__loading">Loading…</li>
+        </ul>
+        <div class="eco-dashboard__footer">View trending →</div>
       </div>
-      <div id="eco-trending" class="eco__cards eco__cards--trending">
-        <div class="eco__card eco__card--skeleton"></div>
-        <div class="eco__card eco__card--skeleton"></div>
-        <div class="eco__card eco__card--skeleton"></div>
-      </div>
-    </section>
+    </a>
 
     <!-- Courses -->
-    <section class="eco__section">
-      <div class="eco__section-head">
-        <h3 class="eco__section-title"><span class="eco__icon">🎓</span> Courses</h3>
-        <a href="{{ site.baseurl }}/blog/courses.html" class="eco__view-all">View all →</a>
+    <a class="eco-dashboard__link" href="{{ site.baseurl }}/blog/courses.html">
+      <div class="eco-dashboard__card">
+        <div class="eco-dashboard__header">
+          <span class="eco-dashboard__emoji">🎓</span>
+          <div>
+            <h3 class="eco-dashboard__title">Top Courses</h3>
+            <p class="eco-dashboard__meta">Ranked learning resources</p>
+          </div>
+        </div>
+        <ul id="eco-courses" class="eco-dashboard__list">
+          <li class="eco-dashboard__item eco-dashboard__loading">Loading…</li>
+        </ul>
+        <div class="eco-dashboard__footer">View all courses →</div>
       </div>
-      <div id="eco-courses" class="eco__cards">
-        <div class="eco__card eco__card--skeleton"></div>
-        <div class="eco__card eco__card--skeleton"></div>
-        <div class="eco__card eco__card--skeleton"></div>
-      </div>
-    </section>
+    </a>
 
     <!-- Research -->
-    <section class="eco__section">
-      <div class="eco__section-head">
-        <h3 class="eco__section-title"><span class="eco__icon">🔬</span> Research</h3>
-        <a href="{{ site.baseurl }}/blog/research.html" class="eco__view-all">View all →</a>
+    <a class="eco-dashboard__link" href="{{ site.baseurl }}/blog/research.html">
+      <div class="eco-dashboard__card">
+        <div class="eco-dashboard__header">
+          <span class="eco-dashboard__emoji">🔬</span>
+          <div>
+            <h3 class="eco-dashboard__title">Top Research</h3>
+            <p class="eco-dashboard__meta">Ranked papers and studies</p>
+          </div>
+        </div>
+        <ul id="eco-research" class="eco-dashboard__list">
+          <li class="eco-dashboard__item eco-dashboard__loading">Loading…</li>
+        </ul>
+        <div class="eco-dashboard__footer">View all research →</div>
       </div>
-      <div id="eco-research" class="eco__cards">
-        <div class="eco__card eco__card--skeleton"></div>
-        <div class="eco__card eco__card--skeleton"></div>
-        <div class="eco__card eco__card--skeleton"></div>
-      </div>
-    </section>
+    </a>
 
-    <!-- Hands-on (Tutorials + Notebooks merged) -->
-    <section class="eco__section">
-      <div class="eco__section-head">
-        <h3 class="eco__section-title"><span class="eco__icon">🛠</span> Hands-on</h3>
-        <a href="{{ site.baseurl }}/blog/tutorials.html" class="eco__view-all">View all →</a>
+    <!-- Hands-on -->
+    <a class="eco-dashboard__link" href="{{ site.baseurl }}/blog/tutorials.html">
+      <div class="eco-dashboard__card">
+        <div class="eco-dashboard__header">
+          <span class="eco-dashboard__emoji">🛠</span>
+          <div>
+            <h3 class="eco-dashboard__title">Top Hands-on</h3>
+            <p class="eco-dashboard__meta">Ranked tutorials and notebooks</p>
+          </div>
+        </div>
+        <ul id="eco-handson" class="eco-dashboard__list">
+          <li class="eco-dashboard__item eco-dashboard__loading">Loading…</li>
+        </ul>
+        <div class="eco-dashboard__footer">View all tutorials →</div>
       </div>
-      <div id="eco-handson" class="eco__cards">
-        <div class="eco__card eco__card--skeleton"></div>
-        <div class="eco__card eco__card--skeleton"></div>
-        <div class="eco__card eco__card--skeleton"></div>
-      </div>
-    </section>
+    </a>
+
   </div>
 
   <!-- PREVIOUS HIGHLIGHTS (blog-style list) -->
@@ -480,38 +496,26 @@ async function loadHighlights() {
   }
 }
 
-// 3. Load AI Ecosystem dashboard (curated discovery feed)
+// 3. Load AI Ecosystem dashboard (leaderboard-style rankings)
 async function loadDashboardSummary() {
-  const renderCard = (item, cta, isFeatured) => {
-    const desc = stripMarkdown(item.excerpt || item.description || item.summary || '').substring(0, 90);
-    const tags = (item.tags || []).filter(t => !['Course','Paper','Tutorial','Notebook','Research','Citation'].includes(t)).slice(0, 2);
-    const tagsHtml = tags.map(t => `<span class="eco__tag">${t}</span>`).join('');
-    const typeBadge = (item.tags || []).find(t => ['Course','Paper','Tutorial','Notebook'].includes(t)) || '';
-    const url = buildPostUrl(item.url);
-
-    return `
-      <a href="${url}" class="eco__card ${isFeatured ? 'eco__card--featured' : ''}">
-        ${typeBadge ? `<span class="eco__badge">${typeBadge}</span>` : ''}
-        <h4 class="eco__card-title">${item.title}</h4>
-        ${desc ? `<p class="eco__card-desc">${desc}${desc.length >= 90 ? '…' : ''}</p>` : ''}
-        <div class="eco__card-footer">
-          <div class="eco__card-tags">${tagsHtml}</div>
-          <span class="eco__cta">${cta} →</span>
-        </div>
-      </a>
-    `;
-  };
-
-  const renderSection = (items, containerId, cta, limit) => {
+  const renderRankedList = (items, containerId, limit) => {
     const el = document.getElementById(containerId);
     if (!el) return;
     if (!items || !items.length) {
-      el.innerHTML = '<p class="eco__empty">No items available yet.</p>';
+      el.innerHTML = '<li class="eco-dashboard__item eco-dashboard__empty">No data yet.</li>';
       return;
     }
-    el.innerHTML = items.slice(0, limit || 3).map((item, i) =>
-      renderCard(item, cta, i === 0 && containerId === 'eco-trending')
-    ).join('');
+    el.innerHTML = items.slice(0, limit || 4).map((item, idx) => {
+      const typeBadge = (item.tags || []).find(t => ['Course','Paper','Tutorial','Notebook'].includes(t)) || '';
+      const title = (item.title || 'Untitled').substring(0, 60);
+      return `
+        <li class="eco-dashboard__item">
+          <span class="eco-dashboard__rank">#${idx + 1}</span>
+          <span class="eco-dashboard__name">${title}${item.title && item.title.length > 60 ? '…' : ''}</span>
+          ${typeBadge ? `<span class="eco-dashboard__type">${typeBadge}</span>` : ''}
+        </li>
+      `;
+    }).join('');
   };
 
   try {
@@ -521,18 +525,17 @@ async function loadDashboardSummary() {
 
     // Trending: mix top items from all categories
     const trending = data.trending || [];
-    if (trending.length < 3) {
-      // Supplement trending with top courses/tutorials if not enough
-      const supplement = [...(data.courses || []), ...(data.tutorials || [])].slice(0, 3 - trending.length);
+    if (trending.length < 4) {
+      const supplement = [...(data.courses || []), ...(data.tutorials || [])].slice(0, 4 - trending.length);
       trending.push(...supplement);
     }
-    renderSection(trending, 'eco-trending', 'Explore', 3);
+    renderRankedList(trending, 'eco-trending', 4);
 
     // Courses
-    renderSection(data.courses, 'eco-courses', 'Start', 3);
+    renderRankedList(data.courses, 'eco-courses', 4);
 
     // Research
-    renderSection(data.research, 'eco-research', 'Read', 3);
+    renderRankedList(data.research, 'eco-research', 4);
 
     // Hands-on: merge tutorials + notebooks, deduplicate by title
     const seen = new Set();
@@ -541,13 +544,13 @@ async function loadDashboardSummary() {
       seen.add(item.title);
       return true;
     });
-    renderSection(handson, 'eco-handson', 'Explore', 3);
+    renderRankedList(handson, 'eco-handson', 4);
 
   } catch (err) {
     console.error('Dashboard error:', err);
     ['eco-trending','eco-courses','eco-research','eco-handson'].forEach(id => {
       const el = document.getElementById(id);
-      if (el) el.innerHTML = '<p class="eco__empty">Dashboard is updating…</p>';
+      if (el) el.innerHTML = '<li class="eco-dashboard__item eco-dashboard__empty">Dashboard is updating…</li>';
     });
   }
 }
