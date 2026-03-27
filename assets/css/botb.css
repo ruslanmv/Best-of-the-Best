@@ -462,7 +462,7 @@
 /* =============================================
    8. AI ECOSYSTEM - Leaderboard dashboard
    ============================================= */
-.eco-dashboard__subtitle {
+.eco-dash-subtitle {
   text-align: center;
   font-size: 0.95rem;
   color: #6b7280;
@@ -474,21 +474,24 @@
 
 .eco-dashboard {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
   padding: 1.25rem 1.5rem 1.4rem;
   margin-bottom: 2.5rem;
   border-radius: 14px;
   background: #f1f5f9;
   border: 1px solid #e5e7eb;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.eco-dashboard__link {
+.eco-dash-link {
   text-decoration: none;
   color: inherit;
 }
 
-.eco-dashboard__card {
+.eco-dash-card {
   background: #ffffff;
   border-radius: var(--botb-radius);
   border: 1px solid var(--botb-border);
@@ -500,48 +503,48 @@
   flex-direction: column;
 }
 
-.eco-dashboard__card--primary {
+.eco-dash-card--primary {
   border-color: var(--botb-primary);
   box-shadow: 0 10px 22px rgba(37, 99, 235, 0.18);
   background: linear-gradient(135deg, #eff6ff 0%, #ffffff 45%);
 }
 
-.eco-dashboard__card:hover {
+.eco-dash-card:hover {
   transform: translateY(-2px);
   border-color: #cbd5e1;
   box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
 }
 
-.eco-dashboard__header {
+.eco-dash-header {
   display: flex;
   gap: 0.75rem;
   align-items: center;
 }
 
-.eco-dashboard__emoji {
+.eco-dash-emoji {
   font-size: 1.5rem;
 }
 
-.eco-dashboard__title {
+.eco-dash-title {
   font-size: 1.08rem;
   font-weight: 700;
   margin: 0;
   color: #0f172a;
 }
 
-.eco-dashboard__meta {
+.eco-dash-meta {
   font-size: 0.9rem;
   color: #6b7280;
   margin: 0.25rem 0 0;
 }
 
-.eco-dashboard__list {
+.eco-dash-list {
   list-style: none;
   margin: 0.95rem 0 0.85rem;
   padding: 0;
 }
 
-.eco-dashboard__item {
+.eco-dash-item {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
@@ -551,18 +554,18 @@
   color: #111827;
 }
 
-.eco-dashboard__item + .eco-dashboard__item {
+.eco-dash-item + .eco-dash-item {
   border-top: 1px solid #e5e7eb;
 }
 
-.eco-dashboard__loading,
-.eco-dashboard__empty {
+.eco-dash-loading,
+.eco-dash-empty {
   font-size: 0.9rem;
   color: #9ca3af;
   display: block;
 }
 
-.eco-dashboard__rank {
+.eco-dash-rank {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -576,7 +579,7 @@
   flex-shrink: 0;
 }
 
-.eco-dashboard__name {
+.eco-dash-name {
   flex: 1;
   font-weight: 650;
   color: #111827;
@@ -585,7 +588,7 @@
   text-overflow: ellipsis;
 }
 
-.eco-dashboard__type {
+.eco-dash-type {
   background: #f0f5ff;
   color: #3b82f6;
   font-size: 0.6rem;
@@ -598,7 +601,7 @@
   white-space: nowrap;
 }
 
-.eco-dashboard__footer {
+.eco-dash-footer {
   font-size: 0.9rem;
   color: #1d4ed8;
   font-weight: 650;
@@ -608,13 +611,13 @@
   gap: 0.25rem;
 }
 
-.eco-dashboard__footer::after {
+.eco-dash-footer::after {
   content: '→';
   font-size: 0.95rem;
   transition: transform 0.15s ease;
 }
 
-.eco-dashboard__card:hover .eco-dashboard__footer::after {
+.eco-dash-card:hover .eco-dash-footer::after {
   transform: translateX(2px);
 }
 
