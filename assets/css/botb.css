@@ -9,6 +9,39 @@
   background-position: center !important;
 }
 
+/* Slimmer site footer */
+.page__footer {
+  margin-top: 1.5em !important;
+}
+.page__footer footer {
+  margin-top: 0.6em !important;
+  padding: 0 1em 0.8em !important;
+}
+.page__footer-follow li {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+/* Blog post page background using teaser/overlay image */
+.page-bg-wrap {
+  position: relative;
+}
+.page-bg-wrap::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--page-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.06;
+  z-index: -1;
+  pointer-events: none;
+}
+
 :root {
   --botb-primary:   #1d4ed8;  /* Deep blue */
   --botb-secondary: #4f46e5;  /* Indigo accent */
@@ -459,173 +492,6 @@
   color: #64748b;
 }
 
-/* =============================================
-   8. AI ECOSYSTEM - Leaderboard dashboard
-   ============================================= */
-.eco-dash-subtitle {
-  text-align: center;
-  font-size: 0.95rem;
-  color: #6b7280;
-  margin: -0.8rem 1.5rem 1.5rem;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.eco-dashboard {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
-  padding: 1.25rem 1.5rem 1.4rem;
-  margin-bottom: 2.5rem;
-  border-radius: 14px;
-  background: #f1f5f9;
-  border: 1px solid #e5e7eb;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.eco-dash-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.eco-dash-card {
-  background: #ffffff;
-  border-radius: var(--botb-radius);
-  border: 1px solid var(--botb-border);
-  padding: 1.25rem 1.3rem 1.2rem;
-  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.04);
-  transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.eco-dash-card--primary {
-  border-color: var(--botb-primary);
-  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.18);
-  background: linear-gradient(135deg, #eff6ff 0%, #ffffff 45%);
-}
-
-.eco-dash-card:hover {
-  transform: translateY(-2px);
-  border-color: #cbd5e1;
-  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
-}
-
-.eco-dash-header {
-  display: flex;
-  gap: 0.75rem;
-  align-items: center;
-}
-
-.eco-dash-emoji {
-  font-size: 1.5rem;
-}
-
-.eco-dash-title {
-  font-size: 1.08rem;
-  font-weight: 700;
-  margin: 0;
-  color: #0f172a;
-}
-
-.eco-dash-meta {
-  font-size: 0.9rem;
-  color: #6b7280;
-  margin: 0.25rem 0 0;
-}
-
-.eco-dash-list {
-  list-style: none;
-  margin: 0.95rem 0 0.85rem;
-  padding: 0;
-}
-
-.eco-dash-item {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  column-gap: 0.6rem;
-  font-size: 0.94rem;
-  padding: 0.4rem 0;
-  color: #111827;
-}
-
-.eco-dash-item + .eco-dash-item {
-  border-top: 1px solid #e5e7eb;
-}
-
-.eco-dash-loading,
-.eco-dash-empty {
-  font-size: 0.9rem;
-  color: #9ca3af;
-  display: block;
-}
-
-.eco-dash-rank {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.9rem;
-  height: 1.9rem;
-  border-radius: 999px;
-  background: #e5edff;
-  color: #1d4ed8;
-  font-weight: 700;
-  font-size: 0.9rem;
-  flex-shrink: 0;
-}
-
-.eco-dash-name {
-  flex: 1;
-  font-weight: 650;
-  color: #111827;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.eco-dash-type {
-  background: #f0f5ff;
-  color: #3b82f6;
-  font-size: 0.6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 2px 8px;
-  border-radius: 100px;
-  border: 1px solid #dbeafe;
-  white-space: nowrap;
-}
-
-.eco-dash-footer {
-  font-size: 0.9rem;
-  color: #1d4ed8;
-  font-weight: 650;
-  margin-top: auto;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-}
-
-.eco-dash-footer::after {
-  content: '→';
-  font-size: 0.95rem;
-  transition: transform 0.15s ease;
-}
-
-.eco-dash-card:hover .eco-dash-footer::after {
-  transform: translateX(2px);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .eco-dashboard { grid-template-columns: 1fr; }
-}
-
 /* 8. BLOG POSTS - 3-column grid with slide-in animation */
 
 @keyframes botb-slideUp {
@@ -891,7 +757,6 @@
   .botb-stats-wrapper { margin-top: -2.4rem; }
   .botb-controls { justify-content: center; text-align: center; }
   .botb-btn-group { justify-content: center; width: 100%; flex-wrap: wrap; }
-  .eco-dashboard { grid-template-columns: 1fr; }
   .botb-leader-grid { grid-template-columns: 1fr; }
   .botb-pagination { gap: 0.25rem; }
   .botb-page-btn { min-width: 2.2rem; height: 2.2rem; font-size: 0.8rem; border-radius: 6px; }

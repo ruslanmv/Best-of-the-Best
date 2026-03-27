@@ -5,9 +5,6 @@ permalink: /
 author_profile: false
 ---
 
-<!-- Attach the BOTB CSS (served from assets/css/botb.css) -->
-<link rel="stylesheet" href="{{ '/assets/css/botb.css' | relative_url }}">
-
 <div class="botb-container">
 
   <!-- HERO -->
@@ -132,76 +129,75 @@ author_profile: false
     </div>
   </div>
 
-  <!-- AI ECOSYSTEM - Leaderboard dashboard -->
+  <!-- AI ECOSYSTEM - Leaderboard dashboard (reuses botb-leader styles) -->
   <h2 class="botb-section-title">📈 AI Ecosystem Rankings</h2>
-  <p class="eco-dash-subtitle">What is leading today across learning, research, and practical building</p>
-  <div class="eco-dashboard">
+  <div class="botb-leader-grid">
 
-    <!-- Trending Now -->
-    <a class="eco-dash-link" href="{{ site.baseurl }}/blog/data.html">
-      <div class="eco-dash-card eco-dash-card--primary">
-        <div class="eco-dash-header">
-          <span class="eco-dash-emoji">🔥</span>
+    <!-- Trending Now (primary card) -->
+    <a class="botb-leader-link" href="{{ site.baseurl }}/blog/data.html">
+      <div class="botb-leader-card botb-leader-card--primary">
+        <div class="botb-leader-header">
+          <span class="botb-leader-emoji">🔥</span>
           <div>
-            <h3 class="eco-dash-title">Trending Now</h3>
-            <p class="eco-dash-meta">Top ranked by popularity</p>
+            <h3 class="botb-leader-title">Trending Now</h3>
+            <p class="botb-leader-subtitle">Top ranked by popularity</p>
           </div>
         </div>
-        <ul id="eco-trending" class="eco-dash-list">
-          <li class="eco-dash-item eco-dash-loading">Loading…</li>
+        <ul id="eco-trending" class="botb-leader-list">
+          <li class="botb-leader-item botb-leader-loading">Loading…</li>
         </ul>
-        <div class="eco-dash-footer">View trending →</div>
+        <div class="botb-leader-footer">View trending</div>
       </div>
     </a>
 
     <!-- Courses -->
-    <a class="eco-dash-link" href="{{ site.baseurl }}/blog/courses.html">
-      <div class="eco-dash-card">
-        <div class="eco-dash-header">
-          <span class="eco-dash-emoji">🎓</span>
+    <a class="botb-leader-link" href="{{ site.baseurl }}/blog/courses.html">
+      <div class="botb-leader-card">
+        <div class="botb-leader-header">
+          <span class="botb-leader-emoji">🎓</span>
           <div>
-            <h3 class="eco-dash-title">Top Courses</h3>
-            <p class="eco-dash-meta">Ranked learning resources</p>
+            <h3 class="botb-leader-title">Top Courses</h3>
+            <p class="botb-leader-subtitle">Ranked learning resources</p>
           </div>
         </div>
-        <ul id="eco-courses" class="eco-dash-list">
-          <li class="eco-dash-item eco-dash-loading">Loading…</li>
+        <ul id="eco-courses" class="botb-leader-list">
+          <li class="botb-leader-item botb-leader-loading">Loading…</li>
         </ul>
-        <div class="eco-dash-footer">View all courses →</div>
+        <div class="botb-leader-footer">View all courses</div>
       </div>
     </a>
 
     <!-- Research -->
-    <a class="eco-dash-link" href="{{ site.baseurl }}/blog/research.html">
-      <div class="eco-dash-card">
-        <div class="eco-dash-header">
-          <span class="eco-dash-emoji">🔬</span>
+    <a class="botb-leader-link" href="{{ site.baseurl }}/blog/research.html">
+      <div class="botb-leader-card">
+        <div class="botb-leader-header">
+          <span class="botb-leader-emoji">🔬</span>
           <div>
-            <h3 class="eco-dash-title">Top Research</h3>
-            <p class="eco-dash-meta">Ranked papers and studies</p>
+            <h3 class="botb-leader-title">Top Research</h3>
+            <p class="botb-leader-subtitle">Ranked papers and studies</p>
           </div>
         </div>
-        <ul id="eco-research" class="eco-dash-list">
-          <li class="eco-dash-item eco-dash-loading">Loading…</li>
+        <ul id="eco-research" class="botb-leader-list">
+          <li class="botb-leader-item botb-leader-loading">Loading…</li>
         </ul>
-        <div class="eco-dash-footer">View all research →</div>
+        <div class="botb-leader-footer">View all research</div>
       </div>
     </a>
 
     <!-- Hands-on -->
-    <a class="eco-dash-link" href="{{ site.baseurl }}/blog/tutorials.html">
-      <div class="eco-dash-card">
-        <div class="eco-dash-header">
-          <span class="eco-dash-emoji">🛠</span>
+    <a class="botb-leader-link" href="{{ site.baseurl }}/blog/tutorials.html">
+      <div class="botb-leader-card">
+        <div class="botb-leader-header">
+          <span class="botb-leader-emoji">🛠</span>
           <div>
-            <h3 class="eco-dash-title">Top Hands-on</h3>
-            <p class="eco-dash-meta">Ranked tutorials and notebooks</p>
+            <h3 class="botb-leader-title">Top Hands-on</h3>
+            <p class="botb-leader-subtitle">Ranked tutorials and notebooks</p>
           </div>
         </div>
-        <ul id="eco-handson" class="eco-dash-list">
-          <li class="eco-dash-item eco-dash-loading">Loading…</li>
+        <ul id="eco-handson" class="botb-leader-list">
+          <li class="botb-leader-item botb-leader-loading">Loading…</li>
         </ul>
-        <div class="eco-dash-footer">View all tutorials →</div>
+        <div class="botb-leader-footer">View all tutorials</div>
       </div>
     </a>
 
@@ -502,17 +498,17 @@ async function loadDashboardSummary() {
     const el = document.getElementById(containerId);
     if (!el) return;
     if (!items || !items.length) {
-      el.innerHTML = '<li class="eco-dash-item eco-dash-empty">No data yet.</li>';
+      el.innerHTML = '<li class="botb-leader-item botb-leader-empty">No data yet.</li>';
       return;
     }
     el.innerHTML = items.slice(0, limit || 4).map((item, idx) => {
       const typeBadge = (item.tags || []).find(t => ['Course','Paper','Tutorial','Notebook'].includes(t)) || '';
       const title = (item.title || 'Untitled').substring(0, 60);
       return `
-        <li class="eco-dash-item">
-          <span class="eco-dash-rank">#${idx + 1}</span>
-          <span class="eco-dash-name">${title}${item.title && item.title.length > 60 ? '…' : ''}</span>
-          ${typeBadge ? `<span class="eco-dash-type">${typeBadge}</span>` : ''}
+        <li class="botb-leader-item">
+          <span class="botb-leader-rank">#${idx + 1}</span>
+          <span class="botb-leader-name">${title}${item.title && item.title.length > 60 ? '…' : ''}</span>
+          ${typeBadge ? `<span class="botb-leader-metric">${typeBadge}</span>` : ''}
         </li>
       `;
     }).join('');
@@ -550,7 +546,7 @@ async function loadDashboardSummary() {
     console.error('Dashboard error:', err);
     ['eco-trending','eco-courses','eco-research','eco-handson'].forEach(id => {
       const el = document.getElementById(id);
-      if (el) el.innerHTML = '<li class="eco-dash-item eco-dash-empty">Dashboard is updating…</li>';
+      if (el) el.innerHTML = '<li class="botb-leader-item botb-leader-empty">Dashboard is updating…</li>';
     });
   }
 }

@@ -14,7 +14,12 @@ layout: default
   {% endunless %}
 {% endif %}
 
+{% if page.header.overlay_image or page.header.teaser %}
+  {% assign bg_img = page.header.overlay_image | default: page.header.teaser %}
+<div id="main" role="main" class="page-bg-wrap" style="--page-bg-image: url('{{ bg_img | relative_url }}');">
+{% else %}
 <div id="main" role="main">
+{% endif %}
   {% include sidebar.html %}
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
