@@ -132,77 +132,63 @@ author_profile: false
     </div>
   </div>
 
-  <!-- DASHBOARD GRID -->
-  <h2 class="botb-section-title">📈 AI Ecosystem Dashboard</h2>
-  <p class="botb-dash-intro">
-    A compact view of the most relevant <strong>Courses</strong>, <strong>Research papers</strong>, 
-    <strong>Tutorials</strong>, and <strong>Notebooks</strong> curated by the multi-agent system.
-    Explore more details in the full 
-    <a href="{{ site.baseurl }}/blog/data.html" class="botb-dash-intro-link">Trending Dashboard</a>.
-  </p>
+  <!-- AI ECOSYSTEM - Curated discovery feed -->
+  <div class="eco">
+    <div class="eco__header">
+      <h2 class="eco__title">📈 AI Ecosystem</h2>
+      <p class="eco__subtitle">Curated resources across learning, research, and practical building</p>
+    </div>
 
-  <div class="botb-dash-grid">
+    <!-- Trending Now -->
+    <section class="eco__section">
+      <div class="eco__section-head">
+        <h3 class="eco__section-title"><span class="eco__icon">🔥</span> Trending Now</h3>
+      </div>
+      <div id="eco-trending" class="eco__cards eco__cards--trending">
+        <div class="eco__card eco__card--skeleton"></div>
+        <div class="eco__card eco__card--skeleton"></div>
+        <div class="eco__card eco__card--skeleton"></div>
+      </div>
+    </section>
 
     <!-- Courses -->
-    <div class="botb-dash-column">
-      <div class="botb-dash-header">
-        <div class="botb-dash-icon botb-dash-icon--courses">
-          <i class="fas fa-graduation-cap" aria-hidden="true"></i>
-        </div>
-        <h3 class="botb-dash-title">
-          <a href="{{ site.baseurl }}/blog/courses.html">Courses</a>
-        </h3>
+    <section class="eco__section">
+      <div class="eco__section-head">
+        <h3 class="eco__section-title"><span class="eco__icon">🎓</span> Courses</h3>
+        <a href="{{ site.baseurl }}/blog/courses.html" class="eco__view-all">View all →</a>
       </div>
-      <ul id="botb-dash-courses" class="botb-dash-list">
-        <li class="botb-dash-item botb-dash-item-loading">Loading…</li>
-      </ul>
-    </div>
+      <div id="eco-courses" class="eco__cards">
+        <div class="eco__card eco__card--skeleton"></div>
+        <div class="eco__card eco__card--skeleton"></div>
+        <div class="eco__card eco__card--skeleton"></div>
+      </div>
+    </section>
 
     <!-- Research -->
-    <div class="botb-dash-column">
-      <div class="botb-dash-header">
-        <div class="botb-dash-icon botb-dash-icon--research">
-          <i class="fas fa-scroll" aria-hidden="true"></i>
-        </div>
-        <h3 class="botb-dash-title">
-          <a href="{{ site.baseurl }}/blog/research.html">Research</a>
-        </h3>
+    <section class="eco__section">
+      <div class="eco__section-head">
+        <h3 class="eco__section-title"><span class="eco__icon">🔬</span> Research</h3>
+        <a href="{{ site.baseurl }}/blog/research.html" class="eco__view-all">View all →</a>
       </div>
-      <ul id="botb-dash-research" class="botb-dash-list">
-        <li class="botb-dash-item botb-dash-item-loading">Loading…</li>
-      </ul>
-    </div>
-
-    <!-- Tutorials -->
-    <div class="botb-dash-column">
-      <div class="botb-dash-header">
-        <div class="botb-dash-icon botb-dash-icon--tutorials">
-          <i class="fas fa-code" aria-hidden="true"></i>
-        </div>
-        <h3 class="botb-dash-title">
-          <a href="{{ site.baseurl }}/blog/tutorials.html">Tutorials</a>
-        </h3>
+      <div id="eco-research" class="eco__cards">
+        <div class="eco__card eco__card--skeleton"></div>
+        <div class="eco__card eco__card--skeleton"></div>
+        <div class="eco__card eco__card--skeleton"></div>
       </div>
-      <ul id="botb-dash-tutorials" class="botb-dash-list">
-        <li class="botb-dash-item botb-dash-item-loading">Loading…</li>
-      </ul>
-    </div>
+    </section>
 
-    <!-- Notebooks -->
-    <div class="botb-dash-column">
-      <div class="botb-dash-header">
-        <div class="botb-dash-icon botb-dash-icon--notebooks">
-          <i class="fas fa-book-open" aria-hidden="true"></i>
-        </div>
-        <h3 class="botb-dash-title">
-          <a href="{{ site.baseurl }}/blog/notebooks.html">Notebooks</a>
-        </h3>
+    <!-- Hands-on (Tutorials + Notebooks merged) -->
+    <section class="eco__section">
+      <div class="eco__section-head">
+        <h3 class="eco__section-title"><span class="eco__icon">🛠</span> Hands-on</h3>
+        <a href="{{ site.baseurl }}/blog/tutorials.html" class="eco__view-all">View all →</a>
       </div>
-      <ul id="botb-dash-notebooks" class="botb-dash-list">
-        <li class="botb-dash-item botb-dash-item-loading">Loading…</li>
-      </ul>
-    </div>
-
+      <div id="eco-handson" class="eco__cards">
+        <div class="eco__card eco__card--skeleton"></div>
+        <div class="eco__card eco__card--skeleton"></div>
+        <div class="eco__card eco__card--skeleton"></div>
+      </div>
+    </section>
   </div>
 
   <!-- PREVIOUS HIGHLIGHTS (blog-style list) -->
@@ -360,17 +346,29 @@ async function loadHighlights() {
       `<span class="botb-tag">#${t}</span>`
     ).join('');
 
+    const todayTeaser = today.teaser
+      ? `${baseurl}${today.teaser}`
+      : `https://picsum.photos/seed/today${today.title.length}/800/400`;
+    const todayExcerpt = stripMarkdown(today.excerpt) || 'Daily highlight selected from the leaderboard.';
+
     todayContainer.innerHTML = `
       <article class="botb-featured">
-        <div class="botb-featured-header">
-          <i class="far fa-calendar" aria-hidden="true"></i>
-          <span>${new Date(today.date).toLocaleDateString('en-US', {
-            weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
-          })}</span>
+        <a href="${buildPostUrl(today.url)}" class="botb-featured__image-link">
+          <img src="${todayTeaser}" alt="${today.title}" class="botb-featured__image"
+               onerror="this.onerror=null; this.src='https://picsum.photos/seed/topick/800/400';">
+        </a>
+        <div class="botb-featured__body">
+          <div class="botb-featured-header">
+            <i class="far fa-calendar" aria-hidden="true"></i>
+            <span>${new Date(today.date).toLocaleDateString('en-US', {
+              weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+            })}</span>
+          </div>
+          <h3><a href="${buildPostUrl(today.url)}">${today.title}</a></h3>
+          <p>${todayExcerpt}</p>
+          <div class="botb-tag-container">${tagsHtml}</div>
+          <a href="${buildPostUrl(today.url)}" class="botb-featured__cta">Read full article →</a>
         </div>
-        <h3><a href="${buildPostUrl(today.url)}">${today.title}</a></h3>
-        <p>${stripMarkdown(today.excerpt) || 'Daily highlight selected from the leaderboard.'}</p>
-        <div class="botb-tag-container">${tagsHtml}</div>
       </article>
     `;
 
@@ -482,50 +480,75 @@ async function loadHighlights() {
   }
 }
 
-// 3. Load dashboard summary (courses, research, tutorials, notebooks) from blog/api/dashboard.json
+// 3. Load AI Ecosystem dashboard (curated discovery feed)
 async function loadDashboardSummary() {
+  const renderCard = (item, cta, isFeatured) => {
+    const desc = stripMarkdown(item.excerpt || item.description || item.summary || '').substring(0, 90);
+    const tags = (item.tags || []).filter(t => !['Course','Paper','Tutorial','Notebook','Research','Citation'].includes(t)).slice(0, 2);
+    const tagsHtml = tags.map(t => `<span class="eco__tag">${t}</span>`).join('');
+    const typeBadge = (item.tags || []).find(t => ['Course','Paper','Tutorial','Notebook'].includes(t)) || '';
+    const url = buildPostUrl(item.url);
+
+    return `
+      <a href="${url}" class="eco__card ${isFeatured ? 'eco__card--featured' : ''}">
+        ${typeBadge ? `<span class="eco__badge">${typeBadge}</span>` : ''}
+        <h4 class="eco__card-title">${item.title}</h4>
+        ${desc ? `<p class="eco__card-desc">${desc}${desc.length >= 90 ? '…' : ''}</p>` : ''}
+        <div class="eco__card-footer">
+          <div class="eco__card-tags">${tagsHtml}</div>
+          <span class="eco__cta">${cta} →</span>
+        </div>
+      </a>
+    `;
+  };
+
+  const renderSection = (items, containerId, cta, limit) => {
+    const el = document.getElementById(containerId);
+    if (!el) return;
+    if (!items || !items.length) {
+      el.innerHTML = '<p class="eco__empty">No items available yet.</p>';
+      return;
+    }
+    el.innerHTML = items.slice(0, limit || 3).map((item, i) =>
+      renderCard(item, cta, i === 0 && containerId === 'eco-trending')
+    ).join('');
+  };
+
   try {
     const res = await fetch(dashboardApiUrl);
     if (!res.ok) throw new Error('Failed to load dashboard.json');
     const data = await res.json();
 
-    const renderColumn = (items, elementId) => {
-      const el = document.getElementById(elementId);
-      if (!el) return;
+    // Trending: mix top items from all categories
+    const trending = data.trending || [];
+    if (trending.length < 3) {
+      // Supplement trending with top courses/tutorials if not enough
+      const supplement = [...(data.courses || []), ...(data.tutorials || [])].slice(0, 3 - trending.length);
+      trending.push(...supplement);
+    }
+    renderSection(trending, 'eco-trending', 'Explore', 3);
 
-      if (!items || !items.length) {
-        el.innerHTML = '<li class="botb-dash-item botb-dash-item-empty">No items yet.</li>';
-        return;
-      }
+    // Courses
+    renderSection(data.courses, 'eco-courses', 'Start', 3);
 
-      const html = items.slice(0, 4).map(item => `
-        <li class="botb-dash-item">
-          <a href="${buildPostUrl(item.url)}">${item.title}</a>
-          <div class="botb-dash-meta">
-            <span>${new Date(item.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}</span>
-            ${(item.tags && item.tags.length > 0)
-              ? `<span class="botb-dash-tag">${item.tags[0]}</span>`
-              : ''}
-          </div>
-        </li>
-      `).join('');
+    // Research
+    renderSection(data.research, 'eco-research', 'Read', 3);
 
-      el.innerHTML = html;
-    };
-
-    renderColumn(data.courses,   'botb-dash-courses');
-    renderColumn(data.research,  'botb-dash-research');
-    renderColumn(data.tutorials, 'botb-dash-tutorials');
-    renderColumn(data.notebooks, 'botb-dash-notebooks');
+    // Hands-on: merge tutorials + notebooks, deduplicate by title
+    const seen = new Set();
+    const handson = [...(data.tutorials || []), ...(data.notebooks || [])].filter(item => {
+      if (seen.has(item.title)) return false;
+      seen.add(item.title);
+      return true;
+    });
+    renderSection(handson, 'eco-handson', 'Explore', 3);
 
   } catch (err) {
-    console.error('Dashboard summary error:', err);
-    ['botb-dash-courses','botb-dash-research','botb-dash-tutorials','botb-dash-notebooks']
-      .forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.innerHTML =
-          '<li class="botb-dash-item botb-dash-item-empty">Dashboard offline.</li>';
-      });
+    console.error('Dashboard error:', err);
+    ['eco-trending','eco-courses','eco-research','eco-handson'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = '<p class="eco__empty">Dashboard is updating…</p>';
+    });
   }
 }
 
