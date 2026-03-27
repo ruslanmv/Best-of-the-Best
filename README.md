@@ -1,4 +1,11 @@
-# The best for now March 2026:
+# Best of the Best - AI Highlights
+
+> Daily AI highlights from an autonomous multi-agent system that monitors GitHub, Papers with Code, and PyPI to surface the #1 ranked asset every day.
+
+**Live site:** [ruslanmv.com/Best-of-the-Best](https://ruslanmv.com/Best-of-the-Best/)
+
+## Current Rankings
+
 ### Repositories
 | Repository | Stars | Link |
 |---|---|---|
