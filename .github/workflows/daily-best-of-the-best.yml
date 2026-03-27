@@ -227,6 +227,16 @@ jobs:
 
           echo "✅ Quality check complete"
 
+      - name: Rebase on latest remote main before commit
+        run: |
+          git fetch origin main
+          git rebase origin/main || {
+            echo "⚠️ Rebase conflict — aborting and retrying with strategy"
+            git rebase --abort
+            git pull --rebase --strategy-option=theirs origin main
+          }
+          echo "✅ Up to date with origin/main"
+
       - name: Commit new blog + assets + updated feeds
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
