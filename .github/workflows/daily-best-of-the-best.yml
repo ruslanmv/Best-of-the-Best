@@ -10,6 +10,10 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: daily-best-of-the-best-blog
+  cancel-in-progress: false
+
 jobs:
   best-of-the-best:
     runs-on: ubuntu-latest
@@ -107,7 +111,7 @@ jobs:
           # Get the newest post
           LATEST_POST=$(ls -t blog/posts/*.md 2>/dev/null | grep -v index | head -1)
           if [ -z "$LATEST_POST" ]; then
-            echo "⚠️  No post found, skipping duplicate check"
+            echo "⚠️ No post found, skipping duplicate check"
             exit 0
           fi
 
@@ -161,7 +165,7 @@ jobs:
           fi
 
           if [ "$WORD_COUNT" -lt 800 ]; then
-            echo "⚠️  Warning: Post seems short (< 800 words, has $WORD_COUNT)"
+            echo "⚠️ Warning: Post seems short (< 800 words, has $WORD_COUNT)"
           fi
 
           # Check for code blocks
@@ -169,14 +173,14 @@ jobs:
           echo "   Code blocks: $CODE_BLOCKS"
 
           echo ""
-          echo "🖼️  Checking generated assets..."
+          echo "🖼️ Checking generated assets..."
 
           # Check for topic-specific images
           if ls assets/images/20*/header-*.jpg 1> /dev/null 2>&1; then
             NEW_IMAGES=$(find assets/images/20*/ -type f 2>/dev/null | wc -l)
             echo "✅ $NEW_IMAGES topic-specific images found"
           else
-            echo "⚠️  No topic-specific images found (placeholders may be used)"
+            echo "⚠️ No topic-specific images found (placeholders may be used)"
           fi
 
           echo ""
@@ -197,18 +201,18 @@ jobs:
             ISSUES=0
 
             if ! grep -q '```python' "$LATEST_POST"; then
-              echo "⚠️  No code examples found"
+              echo "⚠️ No code examples found"
               ISSUES=$((ISSUES + 1))
             fi
 
             if grep -qi "rapidly evolving" "$LATEST_POST"; then
-              echo "⚠️  AI buzzwords detected"
+              echo "⚠️ AI buzzwords detected"
               ISSUES=$((ISSUES + 1))
             fi
 
             WORD_COUNT=$(grep -v "^---" "$LATEST_POST" | wc -w | xargs)
             if [ "$WORD_COUNT" -lt 500 ]; then
-              echo "⚠️  Short post (< 500 words)"
+              echo "⚠️ Short post (< 500 words)"
               ISSUES=$((ISSUES + 1))
             fi
 
@@ -227,21 +231,14 @@ jobs:
 
           echo "✅ Quality check complete"
 
-      - name: Rebase on latest remote main before commit
+      - name: Commit generated files
         run: |
-          git fetch origin main
-          git rebase origin/main || {
-            echo "⚠️ Rebase conflict — aborting and retrying with strategy"
-            git rebase --abort
-            git pull --rebase --strategy-option=theirs origin main
-          }
-          echo "✅ Up to date with origin/main"
+          git config user.name "BestOfTheBestBot"
+          git config user.email "actions@github.com"
 
-      - name: Commit new blog + assets + updated feeds
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "📝 Daily update: blog post + README tables - ${{ github.event.repository.updated_at || 'today' }}"
-          file_pattern: |
+          shopt -s globstar nullglob
+
+          FILES=(
             blog/posts/*.md
             blog/posts/index.json
             blog/api/*.json
@@ -249,9 +246,25 @@ jobs:
             data/blog_coverage.json*
             assets/images/**/*.jpg
             assets/images/**/*.png
-          commit_user_name: "BestOfTheBestBot"
-          commit_user_email: "actions@github.com"
-          commit_options: '--no-verify'
+          )
+
+          if [ ${#FILES[@]} -eq 0 ]; then
+            echo "ℹ️ No matching files found to add"
+          else
+            git add "${FILES[@]}"
+          fi
+
+          if git diff --cached --quiet; then
+            echo "ℹ️ No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "📝 Daily update: blog post + README tables"
+
+      - name: Push changes
+        run: |
+          git fetch origin main
+          git push origin HEAD:main
 
       # -----------------------------------------------------------
       # Jekyll Build & GitHub Pages Deploy
@@ -259,7 +272,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
+          ruby-version: "3.2"
           bundler-cache: true
 
       - name: Install Jekyll dependencies
