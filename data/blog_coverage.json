@@ -22,17 +22,17 @@
   },
   {
     "kind": "package",
-    "id": "catboost",
-    "version": 1,
-    "date": "2025-12-23",
-    "filename": "2025-12-23-package-catboost.md"
-  },
-  {
-    "kind": "package",
     "id": "featured",
     "version": 1,
     "date": "2025-12-24",
     "filename": "2025-12-24-package-featured.md"
+  },
+  {
+    "kind": "package",
+    "id": "llama-index",
+    "version": 1,
+    "date": "2025-12-24",
+    "filename": "2025-12-24-package-llama-index.md"
   },
   {
     "kind": "package",
@@ -43,6 +43,13 @@
   },
   {
     "kind": "package",
+    "id": "langgraph",
+    "version": 1,
+    "date": "2025-12-25",
+    "filename": "2025-12-25-package-langgraph.md"
+  },
+  {
+    "kind": "package",
     "id": "transformers",
     "version": 1,
     "date": "2025-12-26",
@@ -50,38 +57,17 @@
   },
   {
     "kind": "package",
-    "id": "transformers",
+    "id": "folium",
+    "version": 1,
+    "date": "2025-12-26",
+    "filename": "2025-12-26-package-folium.md"
+  },
+  {
+    "kind": "package",
+    "id": "ollama",
     "version": 1,
     "date": "2025-12-27",
-    "filename": "2025-12-27-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2025-12-28",
-    "filename": "2025-12-28-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "featured",
-    "version": 1,
-    "date": "2025-12-29",
-    "filename": "2025-12-29-package-featured.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2025-12-30",
-    "filename": "2025-12-30-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2025-12-31",
-    "filename": "2025-12-31-package-transformers.md"
+    "filename": "2025-12-27-package-ollama.md"
   },
   {
     "kind": "package",
@@ -92,31 +78,10 @@
   },
   {
     "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-01-02",
-    "filename": "2026-01-02-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-01-03",
-    "filename": "2026-01-03-package-transformers.md"
-  },
-  {
-    "kind": "package",
     "id": "hugging",
     "version": 1,
     "date": "2026-01-04",
     "filename": "2026-01-04-package-hugging.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-01-05",
-    "filename": "2026-01-05-package-transformers.md"
   },
   {
     "kind": "package",
@@ -134,10 +99,17 @@
   },
   {
     "kind": "package",
-    "id": "introduction",
+    "id": "bert-score",
+    "version": 1,
+    "date": "2026-01-07",
+    "filename": "2026-01-07-package-bert-score.md"
+  },
+  {
+    "kind": "package",
+    "id": "gin-config",
     "version": 1,
     "date": "2026-01-08",
-    "filename": "2026-01-08-package-introduction.md"
+    "filename": "2026-01-08-package-gin-config.md"
   },
   {
     "kind": "package",
@@ -148,6 +120,13 @@
   },
   {
     "kind": "package",
+    "id": "autofaiss",
+    "version": 1,
+    "date": "2026-01-09",
+    "filename": "2026-01-09-package-autofaiss.md"
+  },
+  {
+    "kind": "package",
     "id": "transformers-xl",
     "version": 1,
     "date": "2026-01-10",
@@ -155,17 +134,17 @@
   },
   {
     "kind": "package",
-    "id": "transformers",
+    "id": "pyglove",
     "version": 1,
-    "date": "2026-01-11",
-    "filename": "2026-01-11-package-transformers.md"
+    "date": "2026-01-10",
+    "filename": "2026-01-10-package-pyglove.md"
   },
   {
     "kind": "package",
-    "id": "introduction",
+    "id": "mmdet",
     "version": 1,
-    "date": "2026-01-12",
-    "filename": "2026-01-12-package-introduction.md"
+    "date": "2026-01-11",
+    "filename": "2026-01-11-package-mmdet.md"
   },
   {
     "kind": "package",
@@ -183,73 +162,45 @@
   },
   {
     "kind": "package",
-    "id": "featured",
+    "id": "earthengine-api",
     "version": 1,
     "date": "2026-01-15",
-    "filename": "2026-01-15-package-featured.md"
+    "filename": "2026-01-15-package-earthengine-api.md"
   },
   {
     "kind": "package",
-    "id": "featured",
+    "id": "unsloth",
     "version": 1,
     "date": "2026-01-16",
-    "filename": "2026-01-16-package-featured.md"
+    "filename": "2026-01-16-package-unsloth.md"
   },
   {
     "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-01-17",
-    "filename": "2026-01-17-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-01-18",
-    "filename": "2026-01-18-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-01-19",
-    "filename": "2026-01-19-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
+    "id": "pybullet",
     "version": 1,
     "date": "2026-01-20",
-    "filename": "2026-01-20-package-transformers.md"
+    "filename": "2026-01-20-package-pybullet.md"
   },
   {
     "kind": "package",
-    "id": "pre-trained",
+    "id": "scikit-video",
     "version": 1,
     "date": "2026-01-21",
-    "filename": "2026-01-21-package-pre-trained.md"
+    "filename": "2026-01-21-package-scikit-video.md"
   },
   {
     "kind": "package",
-    "id": "transformers",
+    "id": "crawl4ai",
     "version": 1,
     "date": "2026-01-22",
-    "filename": "2026-01-22-package-transformers.md"
+    "filename": "2026-01-22-package-crawl4ai.md"
   },
   {
     "kind": "package",
-    "id": "transformers-xl",
-    "version": 1,
-    "date": "2026-01-23",
-    "filename": "2026-01-23-package-transformers-xl.md"
-  },
-  {
-    "kind": "package",
-    "id": "featured",
+    "id": "mmsegmentation",
     "version": 1,
     "date": "2026-01-24",
-    "filename": "2026-01-24-package-featured.md"
+    "filename": "2026-01-24-package-mmsegmentation.md"
   },
   {
     "kind": "package",
@@ -260,17 +211,17 @@
   },
   {
     "kind": "package",
-    "id": "hugging",
-    "version": 1,
-    "date": "2026-01-26",
-    "filename": "2026-01-26-package-hugging.md"
-  },
-  {
-    "kind": "package",
     "id": "detractor",
     "version": 1,
     "date": "2026-01-27",
     "filename": "2026-01-27-package-detractor.md"
+  },
+  {
+    "kind": "package",
+    "id": "tpot",
+    "version": 1,
+    "date": "2026-01-27",
+    "filename": "2026-01-27-package-tpot.md"
   },
   {
     "kind": "package",
@@ -281,129 +232,45 @@
   },
   {
     "kind": "package",
-    "id": "featured",
+    "id": "tensorflow-graphics",
     "version": 1,
     "date": "2026-01-29",
-    "filename": "2026-01-29-package-featured.md"
+    "filename": "2026-01-29-package-tensorflow-graphics.md"
   },
   {
     "kind": "package",
-    "id": "torch",
-    "version": 1,
-    "date": "2026-01-30",
-    "filename": "2026-01-30-package-torch.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-01-31",
-    "filename": "2026-01-31-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "hugging",
-    "version": 1,
-    "date": "2026-02-01",
-    "filename": "2026-02-01-package-hugging.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-02-02",
-    "filename": "2026-02-02-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-02-03",
-    "filename": "2026-02-03-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
+    "id": "tensorflow-federated",
     "version": 1,
     "date": "2026-02-04",
-    "filename": "2026-02-04-package-transformers.md"
+    "filename": "2026-02-04-package-tensorflow-federated.md"
   },
   {
     "kind": "package",
-    "id": "transformers",
+    "id": "langfun",
     "version": 1,
     "date": "2026-02-05",
-    "filename": "2026-02-05-package-transformers.md"
+    "filename": "2026-02-05-package-langfun.md"
   },
   {
     "kind": "package",
-    "id": "pre-trained",
-    "version": 1,
-    "date": "2026-02-06",
-    "filename": "2026-02-06-package-pre-trained.md"
-  },
-  {
-    "kind": "package",
-    "id": "featured",
-    "version": 1,
-    "date": "2026-02-07",
-    "filename": "2026-02-07-package-featured.md"
-  },
-  {
-    "kind": "package",
-    "id": "hugging",
-    "version": 1,
-    "date": "2026-02-08",
-    "filename": "2026-02-08-package-hugging.md"
-  },
-  {
-    "kind": "package",
-    "id": "hugging",
-    "version": 1,
-    "date": "2026-02-09",
-    "filename": "2026-02-09-package-hugging.md"
-  },
-  {
-    "kind": "package",
-    "id": "featured",
+    "id": "dopamine-rl",
     "version": 1,
     "date": "2026-02-10",
-    "filename": "2026-02-10-package-featured.md"
+    "filename": "2026-02-10-package-dopamine-rl.md"
   },
   {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-02-11",
-    "filename": "2026-02-11-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
+    "kind": "repo",
+    "id": "ollama/ollama",
     "version": 1,
     "date": "2026-02-12",
-    "filename": "2026-02-12-package-transformers.md"
+    "filename": "2026-02-12-repo-ollama.md"
   },
   {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-02-13",
-    "filename": "2026-02-13-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "hugging",
-    "version": 1,
-    "date": "2026-02-14",
-    "filename": "2026-02-14-package-hugging.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
+    "kind": "repo",
+    "id": "langchain-ai/langchain",
     "version": 1,
     "date": "2026-02-15",
-    "filename": "2026-02-15-package-transformers.md"
+    "filename": "2026-02-15-repo-langchain.md"
   },
   {
     "kind": "package",
@@ -414,87 +281,24 @@
   },
   {
     "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-02-17",
-    "filename": "2026-02-17-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-02-18",
-    "filename": "2026-02-18-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "hugging",
-    "version": 1,
-    "date": "2026-02-19",
-    "filename": "2026-02-19-package-hugging.md"
-  },
-  {
-    "kind": "package",
-    "id": "featured",
-    "version": 1,
-    "date": "2026-02-20",
-    "filename": "2026-02-20-package-featured.md"
-  },
-  {
-    "kind": "package",
-    "id": "hugging",
-    "version": 1,
-    "date": "2026-02-21",
-    "filename": "2026-02-21-package-hugging.md"
-  },
-  {
-    "kind": "package",
-    "id": "hugging",
-    "version": 1,
-    "date": "2026-02-22",
-    "filename": "2026-02-22-package-hugging.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-02-23",
-    "filename": "2026-02-23-package-transformers.md"
-  },
-  {
-    "kind": "package",
     "id": "pytorch-lightning",
     "version": 1,
     "date": "2026-02-24",
     "filename": "2026-02-24-package-pytorch-lightning.md"
   },
   {
-    "kind": "package",
-    "id": "unlocking",
+    "kind": "repo",
+    "id": "comfyanonymous/comfyui",
     "version": 1,
     "date": "2026-02-25",
-    "filename": "2026-02-25-package-unlocking.md"
+    "filename": "2026-02-25-repo-comfyui.md"
   },
   {
-    "kind": "package",
-    "id": "datasets",
+    "kind": "repo",
+    "id": "openai/whisper",
     "version": 1,
     "date": "2026-02-26",
-    "filename": "2026-02-26-package-datasets.md"
-  },
-  {
-    "kind": "package",
-    "id": "hugging",
-    "version": 1,
-    "date": "2026-02-27",
-    "filename": "2026-02-27-package-hugging.md"
-  },
-  {
-    "kind": "package",
-    "id": "featured",
-    "version": 1,
-    "date": "2026-02-28",
-    "filename": "2026-02-28-package-featured.md"
+    "filename": "2026-02-26-repo-whisper.md"
   },
   {
     "kind": "package",
@@ -505,170 +309,23 @@
   },
   {
     "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-03-02",
-    "filename": "2026-03-02-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "hugging",
-    "version": 1,
-    "date": "2026-03-03",
-    "filename": "2026-03-03-package-hugging.md"
-  },
-  {
-    "kind": "package",
-    "id": "introduction",
-    "version": 1,
-    "date": "2026-03-04",
-    "filename": "2026-03-04-package-introduction.md"
-  },
-  {
-    "kind": "package",
-    "id": "hugging",
-    "version": 1,
-    "date": "2026-03-05",
-    "filename": "2026-03-05-package-hugging.md"
-  },
-  {
-    "kind": "package",
-    "id": "overview",
-    "version": 1,
-    "date": "2026-03-06",
-    "filename": "2026-03-06-package-overview.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-03-07",
-    "filename": "2026-03-07-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "featured",
-    "version": 1,
-    "date": "2026-03-08",
-    "filename": "2026-03-08-package-featured.md"
-  },
-  {
-    "kind": "package",
-    "id": "overview",
-    "version": 1,
-    "date": "2026-03-09",
-    "filename": "2026-03-09-package-overview.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-03-10",
-    "filename": "2026-03-10-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "featured",
-    "version": 1,
-    "date": "2026-03-11",
-    "filename": "2026-03-11-package-featured.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-03-12",
-    "filename": "2026-03-12-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "hugging",
-    "version": 1,
-    "date": "2026-03-13",
-    "filename": "2026-03-13-package-hugging.md"
-  },
-  {
-    "kind": "package",
-    "id": "pre-trained",
-    "version": 1,
-    "date": "2026-03-14",
-    "filename": "2026-03-14-package-pre-trained.md"
-  },
-  {
-    "kind": "package",
-    "id": "catchy",
-    "version": 1,
-    "date": "2026-03-15",
-    "filename": "2026-03-15-package-catchy.md"
-  },
-  {
-    "kind": "package",
     "id": "fine-tuning",
     "version": 1,
     "date": "2026-03-16",
     "filename": "2026-03-16-package-fine-tuning.md"
   },
   {
-    "kind": "package",
-    "id": "featured",
+    "kind": "repo",
+    "id": "tensorflow/models",
     "version": 1,
-    "date": "2026-03-17",
-    "filename": "2026-03-17-package-featured.md"
+    "date": "2026-03-29",
+    "filename": "2026-03-29-repo-tensorflow-models.md"
   },
   {
-    "kind": "package",
-    "id": "transformers",
+    "kind": "repo",
+    "id": "tensorflow/models",
     "version": 1,
-    "date": "2026-03-18",
-    "filename": "2026-03-18-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-03-19",
-    "filename": "2026-03-19-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-03-20",
-    "filename": "2026-03-20-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "featured",
-    "version": 1,
-    "date": "2026-03-21",
-    "filename": "2026-03-21-package-featured.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-03-22",
-    "filename": "2026-03-22-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "transformers",
-    "version": 1,
-    "date": "2026-03-23",
-    "filename": "2026-03-23-package-transformers.md"
-  },
-  {
-    "kind": "package",
-    "id": "featured",
-    "version": 1,
-    "date": "2026-03-24",
-    "filename": "2026-03-24-package-featured.md"
-  },
-  {
-    "kind": "package",
-    "id": "featured",
-    "version": 1,
-    "date": "2026-03-25",
-    "filename": "2026-03-25-package-featured.md"
+    "date": "2026-03-29",
+    "filename": "2026-03-29-repo-tensorflow-models.md"
   }
 ]
