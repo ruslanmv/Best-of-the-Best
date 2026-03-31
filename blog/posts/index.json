@@ -16,6 +16,21 @@
     "teaser": "/assets/images/2026-01-16-package-unsloth/teaser-ai.jpg"
   },
   {
+    "filename": "2026-03-31-repo-killianlucas-open-interpreter.md",
+    "url": "/blog/posts/2026-03-31-repo-killianlucas-open-interpreter.html",
+    "title": "killianlucas/open-interpreter: modern python library for dynamic code execution",
+    "date": "2026-03-31T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "python",
+      "code-execution",
+      "dynamic-code",
+      "secure-execution"
+    ],
+    "excerpt": "learn about open interpreter, a versatile python tool that enables secure code evaluation in various applications. discover its key features, practical examples, and best practices.",
+    "teaser": "/assets/images/2026-03-31-repo-killianlucas-open-interpreter/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-20-package-pybullet.md",
     "url": "/blog/posts/2026-01-20-package-pybullet.html",
     "title": "PyBullet: Physics Simulation for Robotics and Reinforcement Learning",

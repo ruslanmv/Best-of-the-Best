@@ -330,9 +330,16 @@
   },
   {
     "kind": "repo",
-    "id": "compvis/stable-diffusion",
+    "id": "killianlucas/open-interpreter",
     "version": 1,
-    "date": "2026-03-30",
-    "filename": "2026-03-30-repo-compvis-stable-diffusion.md"
+    "date": "2026-03-31",
+    "filename": "2026-03-31-repo-killianlucas-open-interpreter.md"
+  },
+  {
+    "kind": "repo",
+    "id": "killianlucas/open-interpreter",
+    "version": 1,
+    "date": "2026-03-31",
+    "filename": "2026-03-31-repo-killianlucas-open-interpreter.md"
   }
 ]
