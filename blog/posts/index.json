@@ -208,6 +208,21 @@
     "teaser": "/assets/images/2025-12-24-package-llama-index/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-01-repo-corentinj-real-time-voice-cloning.md",
+    "url": "/blog/posts/2026-04-01-repo-corentinj-real-time-voice-cloning.html",
+    "title": "corentinj-real-time-voice-cloning",
+    "date": "2026-04-01T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "real-time",
+      "voice-cloning",
+      "gaming",
+      "virtual-assistants"
+    ],
+    "excerpt": "Learn about CorentinJ’s real-time voice cloning technology, its applications in gaming and virtual assistants, and how to set it up. Explore key features like customizable voice models.",
+    "teaser": "/assets/images/2026-04-01-repo-corentinj-real-time-voice-cloning/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-02-04-package-tensorflow-federated.md",
     "url": "/blog/posts/2026-02-04-package-tensorflow-federated.html",
     "title": "TensorFlow Federated: A Framework for Federated Learning and Analytics",

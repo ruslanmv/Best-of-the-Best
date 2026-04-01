@@ -337,9 +337,16 @@
   },
   {
     "kind": "repo",
-    "id": "killianlucas/open-interpreter",
+    "id": "corentinj/real-time-voice-cloning",
     "version": 1,
-    "date": "2026-03-31",
-    "filename": "2026-03-31-repo-killianlucas-open-interpreter.md"
+    "date": "2026-04-01",
+    "filename": "2026-04-01-repo-corentinj-real-time-voice-cloning.md"
+  },
+  {
+    "kind": "repo",
+    "id": "corentinj/real-time-voice-cloning",
+    "version": 1,
+    "date": "2026-04-01",
+    "filename": "2026-04-01-repo-corentinj-real-time-voice-cloning.md"
   }
 ]
