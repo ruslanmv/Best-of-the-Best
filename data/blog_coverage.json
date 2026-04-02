@@ -344,9 +344,16 @@
   },
   {
     "kind": "repo",
-    "id": "corentinj/real-time-voice-cloning",
+    "id": "ultralytics/yolov5",
     "version": 1,
-    "date": "2026-04-01",
-    "filename": "2026-04-01-repo-corentinj-real-time-voice-cloning.md"
+    "date": "2026-04-02",
+    "filename": "2026-04-02-repo-ultralytics-yolov5.md"
+  },
+  {
+    "kind": "repo",
+    "id": "ultralytics/yolov5",
+    "version": 1,
+    "date": "2026-04-02",
+    "filename": "2026-04-02-repo-ultralytics-yolov5.md"
   }
 ]
