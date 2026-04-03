@@ -351,9 +351,16 @@
   },
   {
     "kind": "repo",
-    "id": "ultralytics/yolov5",
+    "id": "facebookresearch/segment-anything",
     "version": 1,
-    "date": "2026-04-02",
-    "filename": "2026-04-02-repo-ultralytics-yolov5.md"
+    "date": "2026-04-03",
+    "filename": "2026-04-03-repo-facebookresearch-segment-anything.md"
+  },
+  {
+    "kind": "repo",
+    "id": "facebookresearch/segment-anything",
+    "version": 1,
+    "date": "2026-04-03",
+    "filename": "2026-04-03-repo-facebookresearch-segment-anything.md"
   }
 ]

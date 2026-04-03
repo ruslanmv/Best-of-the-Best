@@ -331,6 +331,23 @@
     "teaser": "/assets/images/2026-02-05-package-langfun/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-03-repo-facebookresearch-segment-anything.md",
+    "url": "/blog/posts/2026-04-03-repo-facebookresearch-segment-anything.html",
+    "title": "facebookresearch/Segment Anything - Advanced Image Segmentation Library",
+    "date": "2026-04-03T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "segment-anything",
+      "computer-vision",
+      "image-segmentation",
+      "ai-research",
+      "autonomous-driving",
+      "medical-imaging"
+    ],
+    "excerpt": "Discover how to use facebookresearch's Segment Anything library for precise image segmentation. Learn installation, best practices, and practical applications in autonomous driving and medical imaging.",
+    "teaser": "/assets/images/2026-04-03-repo-facebookresearch-segment-anything/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-02-repo-ultralytics-yolov5.md",
     "url": "/blog/posts/2026-04-02-repo-ultralytics-yolov5.html",
     "title": "ultralytics/Yolov5 - Real-Time Object Detection Guide",
