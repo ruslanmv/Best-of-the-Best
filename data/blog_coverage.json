@@ -358,9 +358,16 @@
   },
   {
     "kind": "repo",
-    "id": "facebookresearch/segment-anything",
+    "id": "jakevdp/pythondatasciencehandbook",
     "version": 1,
-    "date": "2026-04-03",
-    "filename": "2026-04-03-repo-facebookresearch-segment-anything.md"
+    "date": "2026-04-04",
+    "filename": "2026-04-04-repo-jakevdp-pythondatasciencehandbook.md"
+  },
+  {
+    "kind": "repo",
+    "id": "jakevdp/pythondatasciencehandbook",
+    "version": 1,
+    "date": "2026-04-04",
+    "filename": "2026-04-04-repo-jakevdp-pythondatasciencehandbook.md"
   }
 ]
