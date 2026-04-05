@@ -365,9 +365,16 @@
   },
   {
     "kind": "repo",
-    "id": "jakevdp/pythondatasciencehandbook",
+    "id": "lllyasviel/fooocus",
     "version": 1,
-    "date": "2026-04-04",
-    "filename": "2026-04-04-repo-jakevdp-pythondatasciencehandbook.md"
+    "date": "2026-04-05",
+    "filename": "2026-04-05-repo-lllyasviel-fooocus.md"
+  },
+  {
+    "kind": "repo",
+    "id": "lllyasviel/fooocus",
+    "version": 1,
+    "date": "2026-04-05",
+    "filename": "2026-04-05-repo-lllyasviel-fooocus.md"
   }
 ]

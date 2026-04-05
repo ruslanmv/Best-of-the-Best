@@ -451,6 +451,21 @@
     "teaser": "/assets/images/2026-03-30-repo-compvis-stable-diffusion/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-05-repo-lllyasviel-fooocus.md",
+    "url": "/blog/posts/2026-04-05-repo-lllyasviel-fooocus.html",
+    "title": "lllyasviel/Fooocus: Python Library for Image Enhancement",
+    "date": "2026-04-05T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "image-processing",
+      "python-library",
+      "fooocus",
+      "forensic-analysis"
+    ],
+    "excerpt": "Discover how to use lllyasviel/Fooocus for real-time noise reduction, image sharpening, and advanced contrast adjustment in Python. Perfect for forensic analysis, medical imaging, and digital archiving.",
+    "teaser": "/assets/images/2026-04-05-repo-lllyasviel-fooocus/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-02-25-repo-comfyui.md",
     "url": "/blog/posts/2026-02-25-repo-comfyui.html",
     "title": "ComfyUI - A Node-Based Interface for Stable Diffusion Image Generation",
