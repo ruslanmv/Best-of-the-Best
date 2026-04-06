@@ -532,6 +532,21 @@
     "teaser": "/assets/images/2026-01-07-package-bert-score/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-06-repo-stability-ai-stablediffusion.md",
+    "url": "/blog/posts/2026-04-06-repo-stability-ai-stablediffusion.html",
+    "title": "stability-ai/stablediffusion: text-generation framework overview",
+    "date": "2026-04-06T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "stability-ai",
+      "stablediffusion",
+      "text-generation",
+      "tensorflow"
+    ],
+    "excerpt": "Learn about Stability-AI/Stablediffusion, a powerful text generation tool using TensorFlow. Discover key features, installation steps, and practical examples for content creation and chatbot development.",
+    "teaser": "/assets/images/2026-04-06-repo-stability-ai-stablediffusion/teaser-ai.jpg"
+  },
+  {
     "filename": "2025-12-27-package-ollama.md",
     "url": "/blog/posts/2025-12-27-package-ollama.html",
     "title": "Ollama: Run Large Language Models Locally",
