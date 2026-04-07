@@ -596,6 +596,21 @@
     "teaser": "/assets/images/2026-01-08-package-gin-config/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-07-repo-microsoft-autogen.md",
+    "url": "/blog/posts/2026-04-07-repo-microsoft-autogen.html",
+    "title": "microsoft/Autogen: Simplify Large Language Model Development",
+    "date": "2026-04-07T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "microsoft",
+      "autogen",
+      "large-language-models",
+      "nlp"
+    ],
+    "excerpt": "Learn how to use Microsoft's Autogen project for building advanced NLP applications. Discover key features, setup steps, and best practices. Explore real-world examples in chatbots and content generation.",
+    "teaser": "/assets/images/2026-04-07-repo-microsoft-autogen/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-11-package-mmdet.md",
     "url": "/blog/posts/2026-01-11-package-mmdet.html",
     "title": "MMDetection: OpenMMLab's Object Detection Toolbox",

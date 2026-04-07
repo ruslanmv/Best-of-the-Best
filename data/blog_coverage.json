@@ -379,9 +379,16 @@
   },
   {
     "kind": "repo",
-    "id": "stability-ai/stablediffusion",
+    "id": "microsoft/autogen",
     "version": 1,
-    "date": "2026-04-06",
-    "filename": "2026-04-06-repo-stability-ai-stablediffusion.md"
+    "date": "2026-04-07",
+    "filename": "2026-04-07-repo-microsoft-autogen.md"
+  },
+  {
+    "kind": "repo",
+    "id": "microsoft/autogen",
+    "version": 1,
+    "date": "2026-04-07",
+    "filename": "2026-04-07-repo-microsoft-autogen.md"
   }
 ]
