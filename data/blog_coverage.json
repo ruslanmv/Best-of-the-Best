@@ -386,9 +386,16 @@
   },
   {
     "kind": "repo",
-    "id": "microsoft/autogen",
+    "id": "run-llama/llama_index",
     "version": 1,
-    "date": "2026-04-07",
-    "filename": "2026-04-07-repo-microsoft-autogen.md"
+    "date": "2026-04-08",
+    "filename": "2026-04-08-repo-run-llama-llama-index.md"
+  },
+  {
+    "kind": "repo",
+    "id": "run-llama/llama_index",
+    "version": 1,
+    "date": "2026-04-08",
+    "filename": "2026-04-08-repo-run-llama-llama-index.md"
   }
 ]
