@@ -393,9 +393,16 @@
   },
   {
     "kind": "repo",
-    "id": "run-llama/llama_index",
+    "id": "coqui-ai/tts",
     "version": 1,
-    "date": "2026-04-08",
-    "filename": "2026-04-08-repo-run-llama-llama-index.md"
+    "date": "2026-04-09",
+    "filename": "2026-04-09-repo-coqui-ai-tts.md"
+  },
+  {
+    "kind": "repo",
+    "id": "coqui-ai/tts",
+    "version": 1,
+    "date": "2026-04-09",
+    "filename": "2026-04-09-repo-coqui-ai-tts.md"
   }
 ]
