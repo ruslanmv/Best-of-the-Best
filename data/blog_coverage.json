@@ -400,9 +400,16 @@
   },
   {
     "kind": "repo",
-    "id": "coqui-ai/tts",
+    "id": "laion-ai/open-assistant",
     "version": 1,
-    "date": "2026-04-09",
-    "filename": "2026-04-09-repo-coqui-ai-tts.md"
+    "date": "2026-04-10",
+    "filename": "2026-04-10-repo-laion-ai-open-assistant.md"
+  },
+  {
+    "kind": "repo",
+    "id": "laion-ai/open-assistant",
+    "version": 1,
+    "date": "2026-04-10",
+    "filename": "2026-04-10-repo-laion-ai-open-assistant.md"
   }
 ]
