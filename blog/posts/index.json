@@ -209,6 +209,21 @@
     "teaser": "/assets/images/2026-01-21-package-scikit-video/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-11-repo-suno-ai-bark.md",
+    "url": "/blog/posts/2026-04-11-repo-suno-ai-bark.html",
+    "title": "suno-ai/Bark: Open-source Audio Synthesis Toolkit",
+    "date": "2026-04-11T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "audio-synthesis",
+      "text-to-speech",
+      "voice-cloning",
+      "bark-toolkit"
+    ],
+    "excerpt": "Learn how to use Bark, an open-source audio toolkit for text-to-speech and voice cloning. Get started with quick examples and tips for developers.",
+    "teaser": "/assets/images/2026-04-11-repo-suno-ai-bark/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-10-repo-laion-ai-open-assistant.md",
     "url": "/blog/posts/2026-04-10-repo-laion-ai-open-assistant.html",
     "title": "laion-ai/open-assistant - state-of-the-art-conversational-ai",

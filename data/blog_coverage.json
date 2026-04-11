@@ -407,9 +407,16 @@
   },
   {
     "kind": "repo",
-    "id": "laion-ai/open-assistant",
+    "id": "suno-ai/bark",
     "version": 1,
-    "date": "2026-04-10",
-    "filename": "2026-04-10-repo-laion-ai-open-assistant.md"
+    "date": "2026-04-11",
+    "filename": "2026-04-11-repo-suno-ai-bark.md"
+  },
+  {
+    "kind": "repo",
+    "id": "suno-ai/bark",
+    "version": 1,
+    "date": "2026-04-11",
+    "filename": "2026-04-11-repo-suno-ai-bark.md"
   }
 ]
