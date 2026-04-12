@@ -354,6 +354,21 @@
     "teaser": "/assets/images/2026-04-05-repo-lllyasviel-fooocus/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-12-repo-tencentarc-gfpgan.md",
+    "url": "/blog/posts/2026-04-12-repo-tencentarc-gfpgan.html",
+    "title": "tencentarc/gfpgan: state-of-the-art-face-restoration-model",
+    "date": "2026-04-12T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "gfpgan",
+      "face-restoration",
+      "perceptual-gans",
+      "image-enhancement"
+    ],
+    "excerpt": "Discover how to use GFPGAN for high-resolution face restoration, enhancing photos and videos. Learn setup, usage, and best practices directly from the source.",
+    "teaser": "/assets/images/2026-04-12-repo-tencentarc-gfpgan/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-02-26-repo-whisper.md",
     "url": "/blog/posts/2026-02-26-repo-whisper.html",
     "title": "Whisper - OpenAI's Automatic Speech Recognition Model",

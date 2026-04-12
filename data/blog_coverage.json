@@ -414,9 +414,16 @@
   },
   {
     "kind": "repo",
-    "id": "suno-ai/bark",
+    "id": "tencentarc/gfpgan",
     "version": 1,
-    "date": "2026-04-11",
-    "filename": "2026-04-11-repo-suno-ai-bark.md"
+    "date": "2026-04-12",
+    "filename": "2026-04-12-repo-tencentarc-gfpgan.md"
+  },
+  {
+    "kind": "repo",
+    "id": "tencentarc/gfpgan",
+    "version": 1,
+    "date": "2026-04-12",
+    "filename": "2026-04-12-repo-tencentarc-gfpgan.md"
   }
 ]
