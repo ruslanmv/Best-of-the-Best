@@ -421,9 +421,16 @@
   },
   {
     "kind": "repo",
-    "id": "tencentarc/gfpgan",
+    "id": "ultralytics/ultralytics",
     "version": 1,
-    "date": "2026-04-12",
-    "filename": "2026-04-12-repo-tencentarc-gfpgan.md"
+    "date": "2026-04-13",
+    "filename": "2026-04-13-repo-ultralytics-ultralytics.md"
+  },
+  {
+    "kind": "repo",
+    "id": "ultralytics/ultralytics",
+    "version": 1,
+    "date": "2026-04-13",
+    "filename": "2026-04-13-repo-ultralytics-ultralytics.md"
   }
 ]

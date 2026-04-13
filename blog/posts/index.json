@@ -536,6 +536,21 @@
     "teaser": "/assets/images/2025-12-25-package-langgraph/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-13-repo-ultralytics-ultralytics.md",
+    "url": "/blog/posts/2026-04-13-repo-ultralytics-ultralytics.html",
+    "title": "ultralytics/Ultralytics - Modern Computer Vision Library in Python",
+    "date": "2026-04-13T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "ultralytics",
+      "computer-vision",
+      "yolov5",
+      "pytorch"
+    ],
+    "excerpt": "Learn how to install and use the ultralytics/Ultralytics library for real-time object detection, segmentation, and tracking. Explore practical examples and best practices.",
+    "teaser": "/assets/images/2026-04-13-repo-ultralytics-ultralytics/teaser-ai.jpg"
+  },
+  {
     "filename": "2025-12-23-package-catboost.md",
     "url": "/blog/posts/2025-12-23-package-catboost.html",
     "title": "CatBoost: Gradient Boosting with Native Categorical Feature Support",
