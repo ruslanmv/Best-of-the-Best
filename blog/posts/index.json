@@ -339,6 +339,21 @@
     "teaser": "/assets/images/2026-01-10-package-pyglove/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-14-repo-ray-project-ray.md",
+    "url": "/blog/posts/2026-04-14-repo-ray-project-ray.html",
+    "title": "ray-project/Ray: Distributed Computing for Machine Learning",
+    "date": "2026-04-14T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "ray",
+      "distributed-training",
+      "machine-learning",
+      "hyperparameter-tuning"
+    ],
+    "excerpt": "Learn about Ray, an open-source library for scalable ML workflows. Explore its key features like distributed training and hyperparameter tuning with practical examples and best practices.",
+    "teaser": "/assets/images/2026-04-14-repo-ray-project-ray/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-05-repo-lllyasviel-fooocus.md",
     "url": "/blog/posts/2026-04-05-repo-lllyasviel-fooocus.html",
     "title": "lllyasviel/Fooocus: Python Library for Image Enhancement",

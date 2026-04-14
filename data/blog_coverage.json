@@ -428,9 +428,16 @@
   },
   {
     "kind": "repo",
-    "id": "ultralytics/ultralytics",
+    "id": "ray-project/ray",
     "version": 1,
-    "date": "2026-04-13",
-    "filename": "2026-04-13-repo-ultralytics-ultralytics.md"
+    "date": "2026-04-14",
+    "filename": "2026-04-14-repo-ray-project-ray.md"
+  },
+  {
+    "kind": "repo",
+    "id": "ray-project/ray",
+    "version": 1,
+    "date": "2026-04-14",
+    "filename": "2026-04-14-repo-ray-project-ray.md"
   }
 ]
