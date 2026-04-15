@@ -36,6 +36,21 @@
     "teaser": "/assets/images/2025-12-27-package-ollama/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-15-repo-google-research-google-research.md",
+    "url": "/blog/posts/2026-04-15-repo-google-research-google-research.html",
+    "title": "google-research/google research for machine learning projects",
+    "date": "2026-04-15T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "google-research",
+      "machine-learning",
+      "ai-development",
+      "research-tools"
+    ],
+    "excerpt": "Learn about google-research's key features and how to use it effectively in your ML projects, including setup, core concepts, and practical examples.",
+    "teaser": "/assets/images/2026-04-15-repo-google-research-google-research/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-24-package-mmsegmentation.md",
     "url": "/blog/posts/2026-01-24-package-mmsegmentation.html",
     "title": "MMSegmentation: OpenMMLab's Semantic Segmentation Toolbox",
