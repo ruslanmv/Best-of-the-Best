@@ -442,9 +442,16 @@
   },
   {
     "kind": "repo",
-    "id": "google-research/google-research",
+    "id": "microsoft/visual-chatgpt",
     "version": 1,
-    "date": "2026-04-15",
-    "filename": "2026-04-15-repo-google-research-google-research.md"
+    "date": "2026-04-16",
+    "filename": "2026-04-16-repo-microsoft-visual-chatgpt.md"
+  },
+  {
+    "kind": "repo",
+    "id": "microsoft/visual-chatgpt",
+    "version": 1,
+    "date": "2026-04-16",
+    "filename": "2026-04-16-repo-microsoft-visual-chatgpt.md"
   }
 ]

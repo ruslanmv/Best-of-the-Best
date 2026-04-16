@@ -224,6 +224,21 @@
     "teaser": "/assets/images/2026-01-21-package-scikit-video/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-16-repo-microsoft-visual-chatgpt.md",
+    "url": "/blog/posts/2026-04-16-repo-microsoft-visual-chatgpt.html",
+    "title": "microsoft/visual-chatgpt: integrating text & images for AI responses",
+    "date": "2026-04-16T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "microsoft",
+      "visual-chatgpt",
+      "ai",
+      "natural-language-processing"
+    ],
+    "excerpt": "Learn about microsoft’s visual chatgpt, a powerful tool combining text and image inputs to generate contextually relevant responses. Discover setup, use cases, and best practices.",
+    "teaser": "/assets/images/2026-04-16-repo-microsoft-visual-chatgpt/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-11-repo-suno-ai-bark.md",
     "url": "/blog/posts/2026-04-11-repo-suno-ai-bark.html",
     "title": "suno-ai/Bark: Open-source Audio Synthesis Toolkit",
