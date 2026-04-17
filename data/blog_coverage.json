@@ -448,10 +448,17 @@
     "filename": "2026-04-16-repo-microsoft-visual-chatgpt.md"
   },
   {
-    "kind": "repo",
-    "id": "microsoft/visual-chatgpt",
+    "kind": "paper",
+    "id": "image segmentation",
     "version": 1,
-    "date": "2026-04-16",
-    "filename": "2026-04-16-repo-microsoft-visual-chatgpt.md"
+    "date": "2026-04-17",
+    "filename": "2026-04-17-paper-image-segmentation.md"
+  },
+  {
+    "kind": "paper",
+    "id": "image segmentation",
+    "version": 1,
+    "date": "2026-04-17",
+    "filename": "2026-04-17-paper-image-segmentation.md"
   }
 ]

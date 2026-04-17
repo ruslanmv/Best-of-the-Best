@@ -563,6 +563,21 @@
     "teaser": "/assets/images/2026-02-10-package-dopamine-rl/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-17-paper-image-segmentation.md",
+    "url": "/blog/posts/2026-04-17-paper-image-segmentation.html",
+    "title": "image-segmentation-with-pytorch-unet-opencv",
+    "date": "2026-04-17T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "image-segmentation",
+      "pytorch-unet",
+      "opencv",
+      "medical-imaging"
+    ],
+    "excerpt": "Learn about image segmentation using PyTorch-UNet and OpenCV with practical examples and use cases in medical imaging, autonomous driving, and more.",
+    "teaser": "/assets/images/2026-04-17-paper-image-segmentation/teaser-ai.jpg"
+  },
+  {
     "filename": "2025-12-25-package-langgraph.md",
     "url": "/blog/posts/2025-12-25-package-langgraph.html",
     "title": "LangGraph: Build Stateful Multi-Actor LLM Applications with Graphs",
