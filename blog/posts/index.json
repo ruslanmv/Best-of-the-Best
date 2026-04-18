@@ -1,5 +1,21 @@
 [
   {
+    "filename": "2026-04-18-paper-alphafold.md",
+    "url": "/blog/posts/2026-04-18-paper-alphafold.html",
+    "title": "alphafold-2-0-protein-structure-prediction-revolutionary-tool",
+    "date": "2026-04-18T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "alphafold",
+      "protein-structures",
+      "bioinformatics",
+      "drug-discovery",
+      "genomics"
+    ],
+    "excerpt": "Explore how AlphaFold 2.0 predicts protein structures with unparalleled accuracy, ideal for drug discovery and genomics research. Learn setup, usage, and practical examples.",
+    "teaser": "/assets/images/2026-04-18-paper-alphafold/teaser-ai.jpg"
+  },
+  {
     "filename": "2025-12-23-package-xgboost.md",
     "url": "/blog/posts/2025-12-23-package-xgboost.html",
     "title": "XGBoost: Scalable Gradient Boosting for Classification and Regression",
