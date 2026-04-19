@@ -463,9 +463,16 @@
   },
   {
     "kind": "paper",
-    "id": "alphafold",
+    "id": "xgboost",
     "version": 1,
-    "date": "2026-04-18",
-    "filename": "2026-04-18-paper-alphafold.md"
+    "date": "2026-04-19",
+    "filename": "2026-04-19-paper-xgboost.md"
+  },
+  {
+    "kind": "paper",
+    "id": "xgboost",
+    "version": 1,
+    "date": "2026-04-19",
+    "filename": "2026-04-19-paper-xgboost.md"
   }
 ]

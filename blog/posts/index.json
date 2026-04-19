@@ -680,6 +680,23 @@
     "teaser": "/assets/images/2026-04-02-repo-ultralytics-yolov5/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-19-paper-xgboost.md",
+    "url": "/blog/posts/2026-04-19-paper-xgboost.html",
+    "title": "xgboost: fast & efficient gradient boosting in python",
+    "date": "2026-04-19T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "xgboost",
+      "gradient-boosting",
+      "machine-learning",
+      "python",
+      "classification",
+      "regression"
+    ],
+    "excerpt": "learn about xgboost’s key features, installation, core concepts, practical examples, and best practices for classification & regression tasks. get started now!",
+    "teaser": "/assets/images/2026-04-19-paper-xgboost/teaser-ai.jpg"
+  },
+  {
     "filename": "2025-12-23-package-langchain.md",
     "url": "/blog/posts/2025-12-23-package-langchain.html",
     "title": "LangChain: Build LLM-Powered Applications with Modern Composable Chains",
