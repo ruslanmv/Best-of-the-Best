@@ -470,9 +470,16 @@
   },
   {
     "kind": "paper",
-    "id": "xgboost",
+    "id": "cyclegan",
     "version": 1,
-    "date": "2026-04-19",
-    "filename": "2026-04-19-paper-xgboost.md"
+    "date": "2026-04-20",
+    "filename": "2026-04-20-paper-cyclegan.md"
+  },
+  {
+    "kind": "paper",
+    "id": "cyclegan",
+    "version": 1,
+    "date": "2026-04-20",
+    "filename": "2026-04-20-paper-cyclegan.md"
   }
 ]

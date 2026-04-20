@@ -415,6 +415,22 @@
     "teaser": "/assets/images/2026-04-05-repo-lllyasviel-fooocus/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-20-paper-cyclegan.md",
+    "url": "/blog/posts/2026-04-20-paper-cyclegan.html",
+    "title": "cyclegan-explained-for-image-transformation",
+    "date": "2026-04-20T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "cyclegan",
+      "image-transformation",
+      "gan",
+      "artistic-style-transfer",
+      "medical-imaging"
+    ],
+    "excerpt": "cyclegan is a powerful tool for translating images between domains without paired samples. learn its architecture, implementation in python, and practical applications in art & medical imaging.",
+    "teaser": "/assets/images/2026-04-20-paper-cyclegan/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-12-repo-tencentarc-gfpgan.md",
     "url": "/blog/posts/2026-04-12-repo-tencentarc-gfpgan.html",
     "title": "tencentarc/gfpgan: state-of-the-art-face-restoration-model",
