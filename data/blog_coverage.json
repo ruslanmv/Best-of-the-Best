@@ -477,9 +477,16 @@
   },
   {
     "kind": "paper",
-    "id": "cyclegan",
+    "id": "pix2pix",
     "version": 1,
-    "date": "2026-04-20",
-    "filename": "2026-04-20-paper-cyclegan.md"
+    "date": "2026-04-21",
+    "filename": "2026-04-21-paper-pix2pix.md"
+  },
+  {
+    "kind": "paper",
+    "id": "pix2pix",
+    "version": 1,
+    "date": "2026-04-21",
+    "filename": "2026-04-21-paper-pix2pix.md"
   }
 ]

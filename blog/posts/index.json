@@ -173,6 +173,21 @@
     "teaser": "/assets/images/2026-01-29-package-tensorflow-graphics/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-21-paper-pix2pix.md",
+    "url": "/blog/posts/2026-04-21-paper-pix2pix.html",
+    "title": "learn-pix2pix-image-to-image-translation-python",
+    "date": "2026-04-21T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "pix2pix",
+      "image-to-image-translation",
+      "conditional-gan",
+      "python"
+    ],
+    "excerpt": "Discover how to use Pix2Pix for image-to-image translation with Python. Explore setup, core concepts, practical examples, and best practices in this comprehensive guide.",
+    "teaser": "/assets/images/2026-04-21-paper-pix2pix/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-08-repo-run-llama-llama-index.md",
     "url": "/blog/posts/2026-04-08-repo-run-llama-llama-index.html",
     "title": "run-llama/Llama_Index: Building Powerful Information Retrieval Systems",
