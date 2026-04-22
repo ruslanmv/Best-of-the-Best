@@ -484,9 +484,16 @@
   },
   {
     "kind": "paper",
-    "id": "pix2pix",
+    "id": "moco",
     "version": 1,
-    "date": "2026-04-21",
-    "filename": "2026-04-21-paper-pix2pix.md"
+    "date": "2026-04-22",
+    "filename": "2026-04-22-paper-moco.md"
+  },
+  {
+    "kind": "paper",
+    "id": "moco",
+    "version": 1,
+    "date": "2026-04-22",
+    "filename": "2026-04-22-paper-moco.md"
   }
 ]
