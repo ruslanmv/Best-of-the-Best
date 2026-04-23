@@ -491,9 +491,16 @@
   },
   {
     "kind": "paper",
-    "id": "moco",
+    "id": "ldm",
     "version": 1,
-    "date": "2026-04-22",
-    "filename": "2026-04-22-paper-moco.md"
+    "date": "2026-04-23",
+    "filename": "2026-04-23-paper-ldm.md"
+  },
+  {
+    "kind": "paper",
+    "id": "ldm",
+    "version": 1,
+    "date": "2026-04-23",
+    "filename": "2026-04-23-paper-ldm.md"
   }
 ]
