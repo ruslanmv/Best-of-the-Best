@@ -270,6 +270,22 @@
     "teaser": "/assets/images/2026-04-23-paper-ldm/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-24-paper-efficientdet.md",
+    "url": "/blog/posts/2026-04-24-paper-efficientdet.html",
+    "title": "efficientdet for real-time object detection & deployment",
+    "date": "2026-04-24T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "efficientdet",
+      "object-detection",
+      "machine-learning",
+      "real-time",
+      "deployment"
+    ],
+    "excerpt": "Learn about efficientdet, a powerful model that balances accuracy and efficiency. Explore its key features, installation, practical examples, and best practices.",
+    "teaser": "/assets/images/2026-04-24-paper-efficientdet/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-16-repo-microsoft-visual-chatgpt.md",
     "url": "/blog/posts/2026-04-16-repo-microsoft-visual-chatgpt.html",
     "title": "microsoft/visual-chatgpt: integrating text & images for AI responses",

@@ -498,9 +498,16 @@
   },
   {
     "kind": "paper",
-    "id": "ldm",
+    "id": "efficientdet",
     "version": 1,
-    "date": "2026-04-23",
-    "filename": "2026-04-23-paper-ldm.md"
+    "date": "2026-04-24",
+    "filename": "2026-04-24-paper-efficientdet.md"
+  },
+  {
+    "kind": "paper",
+    "id": "efficientdet",
+    "version": 1,
+    "date": "2026-04-24",
+    "filename": "2026-04-24-paper-efficientdet.md"
   }
 ]
