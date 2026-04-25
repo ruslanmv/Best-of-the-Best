@@ -505,9 +505,16 @@
   },
   {
     "kind": "paper",
-    "id": "efficientdet",
+    "id": "convnext",
     "version": 1,
-    "date": "2026-04-24",
-    "filename": "2026-04-24-paper-efficientdet.md"
+    "date": "2026-04-25",
+    "filename": "2026-04-25-paper-convnext.md"
+  },
+  {
+    "kind": "paper",
+    "id": "convnext",
+    "version": 1,
+    "date": "2026-04-25",
+    "filename": "2026-04-25-paper-convnext.md"
   }
 ]

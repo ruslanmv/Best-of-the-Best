@@ -237,6 +237,21 @@
     "teaser": "/assets/images/2025-12-26-package-folium/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-25-paper-convnext.md",
+    "url": "/blog/posts/2026-04-25-paper-convnext.html",
+    "title": "convnext-explained-modern-convolutional-neural-network",
+    "date": "2026-04-25T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "convnext",
+      "cnn-architecture",
+      "image-classification",
+      "object-detection"
+    ],
+    "excerpt": "Learn about ConvNeXt, a cutting-edge CNN architecture designed for efficiency and performance. Discover its key features, implementation, and applications in image processing tasks like classification and object detection.",
+    "teaser": "/assets/images/2026-04-25-paper-convnext/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-21-package-scikit-video.md",
     "url": "/blog/posts/2026-01-21-package-scikit-video.html",
     "title": "scikit-video: Video Processing in Python with FFmpeg",
