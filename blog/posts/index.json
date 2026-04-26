@@ -252,6 +252,22 @@
     "teaser": "/assets/images/2026-04-25-paper-convnext/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-26-paper-deeplabcut.md",
+    "url": "/blog/posts/2026-04-26-paper-deeplabcut.html",
+    "title": "deeplabcut-explained-for-researchers",
+    "date": "2026-04-26T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "deeplabcut",
+      "neuroscience",
+      "tracking",
+      "animal-behavior",
+      "open-source"
+    ],
+    "excerpt": "Learn about deeplabcut, an open-source tool for tracking animal movements in images and videos. Discover its key features, installation process, and practical applications in neuroscience, ecology, and veterinary science.",
+    "teaser": "/assets/images/2026-04-26-paper-deeplabcut/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-21-package-scikit-video.md",
     "url": "/blog/posts/2026-01-21-package-scikit-video.html",
     "title": "scikit-video: Video Processing in Python with FFmpeg",

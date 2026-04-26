@@ -512,9 +512,16 @@
   },
   {
     "kind": "paper",
-    "id": "convnext",
+    "id": "deeplabcut",
     "version": 1,
-    "date": "2026-04-25",
-    "filename": "2026-04-25-paper-convnext.md"
+    "date": "2026-04-26",
+    "filename": "2026-04-26-paper-deeplabcut.md"
+  },
+  {
+    "kind": "paper",
+    "id": "deeplabcut",
+    "version": 1,
+    "date": "2026-04-26",
+    "filename": "2026-04-26-paper-deeplabcut.md"
   }
 ]
