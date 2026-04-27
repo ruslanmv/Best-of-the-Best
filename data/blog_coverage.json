@@ -519,9 +519,16 @@
   },
   {
     "kind": "paper",
-    "id": "deeplabcut",
+    "id": "stylegan 2",
     "version": 1,
-    "date": "2026-04-26",
-    "filename": "2026-04-26-paper-deeplabcut.md"
+    "date": "2026-04-27",
+    "filename": "2026-04-27-paper-stylegan-2.md"
+  },
+  {
+    "kind": "paper",
+    "id": "stylegan 2",
+    "version": 1,
+    "date": "2026-04-27",
+    "filename": "2026-04-27-paper-stylegan-2.md"
   }
 ]

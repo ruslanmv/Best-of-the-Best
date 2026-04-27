@@ -557,6 +557,23 @@
     "teaser": "/assets/images/2026-02-26-repo-whisper/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-27-paper-stylegan-2.md",
+    "url": "/blog/posts/2026-04-27-paper-stylegan-2.html",
+    "title": "stylegan-2-guide-to-generative-models",
+    "date": "2026-04-27T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "stylegan",
+      "generative-models",
+      "deep-learning",
+      "computer-vision",
+      "graphics",
+      "digital-art"
+    ],
+    "excerpt": "learn about stylegan 2, a top-notch generative model for image and video synthesis. discover its features, applications, and how to get started with setup instructions.",
+    "teaser": "/assets/images/2026-04-27-paper-stylegan-2/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-09-package-autofaiss.md",
     "url": "/blog/posts/2026-01-09-package-autofaiss.html",
     "title": "Autofaiss: Automatically Build Optimal Faiss Indexes for Vector Search",
