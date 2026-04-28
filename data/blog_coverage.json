@@ -526,9 +526,16 @@
   },
   {
     "kind": "paper",
-    "id": "stylegan 2",
+    "id": "fine-tuning a bert",
     "version": 1,
-    "date": "2026-04-27",
-    "filename": "2026-04-27-paper-stylegan-2.md"
+    "date": "2026-04-28",
+    "filename": "2026-04-28-paper-fine-tuning-a-bert.md"
+  },
+  {
+    "kind": "paper",
+    "id": "fine-tuning a bert",
+    "version": 1,
+    "date": "2026-04-28",
+    "filename": "2026-04-28-paper-fine-tuning-a-bert.md"
   }
 ]

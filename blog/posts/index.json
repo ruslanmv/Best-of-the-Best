@@ -1,142 +1,317 @@
 [
   {
-    "filename": "2026-04-18-paper-alphafold.md",
-    "url": "/blog/posts/2026-04-18-paper-alphafold.html",
-    "title": "alphafold-2-0-protein-structure-prediction-revolutionary-tool",
-    "date": "2026-04-18T09:00:00+00:00",
+    "filename": "2026-04-12-repo-tencentarc-gfpgan.md",
+    "url": "/blog/posts/2026-04-12-repo-tencentarc-gfpgan.html",
+    "title": "tencentarc/gfpgan: state-of-the-art-face-restoration-model",
+    "date": "2026-04-12T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
-      "alphafold",
-      "protein-structures",
-      "bioinformatics",
-      "drug-discovery",
-      "genomics"
+      "gfpgan",
+      "face-restoration",
+      "perceptual-gans",
+      "image-enhancement"
     ],
-    "excerpt": "Explore how AlphaFold 2.0 predicts protein structures with unparalleled accuracy, ideal for drug discovery and genomics research. Learn setup, usage, and practical examples.",
-    "teaser": "/assets/images/2026-04-18-paper-alphafold/teaser-ai.jpg"
+    "excerpt": "Discover how to use GFPGAN for high-resolution face restoration, enhancing photos and videos. Learn setup, usage, and best practices directly from the source.",
+    "teaser": "/assets/images/2026-04-12-repo-tencentarc-gfpgan/teaser-ai.jpg"
   },
   {
-    "filename": "2025-12-23-package-xgboost.md",
-    "url": "/blog/posts/2025-12-23-package-xgboost.html",
-    "title": "XGBoost: Scalable Gradient Boosting for Classification and Regression",
+    "filename": "2026-02-15-repo-langchain.md",
+    "url": "/blog/posts/2026-02-15-repo-langchain.html",
+    "title": "LangChain - A Framework for Building LLM-Powered Applications",
+    "date": "2026-02-15T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "langchain",
+      "llm",
+      "agents",
+      "rag",
+      "chains",
+      "python",
+      "lcel"
+    ],
+    "excerpt": "A deep dive into the langchain-ai/langchain repository, exploring its modular architecture, LCEL composition model, agents, retrieval-augmented generation, and integration ecosystem.",
+    "teaser": "/assets/images/2026-02-15-repo-langchain/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-04-26-paper-deeplabcut.md",
+    "url": "/blog/posts/2026-04-26-paper-deeplabcut.html",
+    "title": "deeplabcut-explained-for-researchers",
+    "date": "2026-04-26T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "deeplabcut",
+      "neuroscience",
+      "tracking",
+      "animal-behavior",
+      "open-source"
+    ],
+    "excerpt": "Learn about deeplabcut, an open-source tool for tracking animal movements in images and videos. Discover its key features, installation process, and practical applications in neuroscience, ecology, and veterinary science.",
+    "teaser": "/assets/images/2026-04-26-paper-deeplabcut/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-04-08-repo-run-llama-llama-index.md",
+    "url": "/blog/posts/2026-04-08-repo-run-llama-llama-index.html",
+    "title": "run-llama/Llama_Index: Building Powerful Information Retrieval Systems",
+    "date": "2026-04-08T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "run-llama",
+      "llama_index",
+      "information-retrieval",
+      "large-language-models"
+    ],
+    "excerpt": "Learn how to use run-llama/LlamaIndex for efficient data indexing and querying, supporting text documents & CSV files. Ideal for chatbots & knowledge graphs.",
+    "teaser": "/assets/images/2026-04-08-repo-run-llama-llama-index/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-02-05-package-langfun.md",
+    "url": "/blog/posts/2026-02-05-package-langfun.html",
+    "title": "Langfun - Building Natural Language-Powered Functions with LLMs",
+    "date": "2026-02-05T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "langfun",
+      "llm",
+      "prompt-engineering",
+      "google",
+      "natural-language-functions",
+      "python"
+    ],
+    "excerpt": "Explore Langfun, Google's Python library for composing and calling LLM-powered functions using natural language prompt templates and structured output.",
+    "teaser": "/assets/images/2026-02-05-package-langfun/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-03-30-repo-compvis-stable-diffusion.md",
+    "url": "/blog/posts/2026-03-30-repo-compvis-stable-diffusion.html",
+    "title": "compvis/stable-diffusion: text-to-image generation model",
+    "date": "2026-03-30T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "compvis",
+      "stable-diffusion",
+      "text-to-image",
+      "machine-learning"
+    ],
+    "excerpt": "learn about compvis/stable-diffusion, a powerful tool for generating high-quality images from text prompts. discover its features, installation, and practical examples in this comprehensive guide.",
+    "teaser": "/assets/images/2026-03-30-repo-compvis-stable-diffusion/teaser-ai.jpg"
+  },
+  {
+    "filename": "2025-12-23-package-langchain.md",
+    "url": "/blog/posts/2025-12-23-package-langchain.html",
+    "title": "LangChain: Build LLM-Powered Applications with Modern Composable Chains",
     "date": "2025-12-23T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
-      "xgboost",
-      "machine-learning",
-      "gradient-boosting",
-      "classification",
-      "regression",
-      "python",
-      "data-science"
-    ],
-    "excerpt": "A hands-on guide to XGBoost, the optimized gradient boosting library known for speed, performance, and dominance in machine learning competitions.",
-    "teaser": "/assets/images/2025-12-23-package-xgboost/teaser-ai.jpg"
-  },
-  {
-    "filename": "2025-12-27-package-ollama.md",
-    "url": "/blog/posts/2025-12-27-package-ollama.html",
-    "title": "Ollama: Run Large Language Models Locally",
-    "date": "2025-12-27T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "ollama",
+      "langchain",
       "llm",
-      "local-inference",
+      "agents",
+      "prompt-engineering",
       "python",
-      "llama",
-      "mistral",
-      "self-hosted"
+      "rag",
+      "lcel"
     ],
-    "excerpt": "A practical guide to Ollama, the tool for running open-source large language models like Llama, Mistral, and Gemma locally on your own machine.",
-    "teaser": "/assets/images/2025-12-27-package-ollama/teaser-ai.jpg"
+    "excerpt": "A practical guide to LangChain, the framework for building LLM-powered applications using composable chains, prompt templates, and the LangChain Expression Language.",
+    "teaser": "/assets/images/2025-12-23-package-langchain/teaser-ai.jpg"
   },
   {
-    "filename": "2026-04-15-repo-google-research-google-research.md",
-    "url": "/blog/posts/2026-04-15-repo-google-research-google-research.html",
-    "title": "google-research/google research for machine learning projects",
-    "date": "2026-04-15T09:00:00+00:00",
+    "filename": "2026-04-28-paper-fine-tuning-a-bert.md",
+    "url": "/blog/posts/2026-04-28-paper-fine-tuning-a-bert.html",
+    "title": "fine-tuning-a-bert",
+    "date": "2026-04-28T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
-      "google-research",
-      "machine-learning",
-      "ai-development",
-      "research-tools"
+      "bert",
+      "nlp",
+      "fine-tuning",
+      "pytorch",
+      "sentiment-analysis",
+      "text-classification"
     ],
-    "excerpt": "Learn about google-research's key features and how to use it effectively in your ML projects, including setup, core concepts, and practical examples.",
-    "teaser": "/assets/images/2026-04-15-repo-google-research-google-research/teaser-ai.jpg"
+    "excerpt": "learn how to fine-tune a BERT model for NLP tasks like sentiment analysis and text classification using Python. discover best practices and practical examples.",
+    "teaser": "/assets/images/2026-04-28-paper-fine-tuning-a-bert/teaser-ai.jpg"
   },
   {
-    "filename": "2026-01-24-package-mmsegmentation.md",
-    "url": "/blog/posts/2026-01-24-package-mmsegmentation.html",
-    "title": "MMSegmentation: OpenMMLab's Semantic Segmentation Toolbox",
-    "date": "2026-01-24T09:00:00+00:00",
+    "filename": "2025-12-25-package-langgraph.md",
+    "url": "/blog/posts/2025-12-25-package-langgraph.html",
+    "title": "LangGraph: Build Stateful Multi-Actor LLM Applications with Graphs",
+    "date": "2025-12-25T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "langgraph",
+      "llm",
+      "agents",
+      "graph-workflows",
+      "python",
+      "langchain",
+      "state-machines"
+    ],
+    "excerpt": "A practical guide to LangGraph, the library for building stateful, multi-actor LLM applications using graph-based workflows with cycles, branching, and persistence.",
+    "teaser": "/assets/images/2025-12-25-package-langgraph/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-01-27-package-tpot.md",
+    "url": "/blog/posts/2026-01-27-package-tpot.html",
+    "title": "TPOT: Automated Machine Learning with Genetic Programming",
+    "date": "2026-01-27T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
       "python",
       "package",
       "pypi",
-      "semantic-segmentation",
+      "automl",
+      "machine-learning",
+      "genetic-programming",
+      "scikit-learn",
+      "pipeline-optimization"
+    ],
+    "excerpt": "TPOT is a Python AutoML tool that uses genetic programming to automatically design and optimize scikit-learn machine learning pipelines.",
+    "teaser": "/assets/images/2026-01-27-package-tpot/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-04-22-paper-moco.md",
+    "url": "/blog/posts/2026-04-22-paper-moco.html",
+    "title": "mo-co-optimizer-for-motion-capture-data",
+    "date": "2026-04-22T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "moco",
+      "motion-capture",
+      "optimization",
+      "animation",
+      "bioinformatics",
+      "robotics"
+    ],
+    "excerpt": "Learn about MoCo, a powerful Motion Capture Optimizer tool for processing motion capture data efficiently. Explore its features and practical applications in animation, bioinformatics, and robotics.",
+    "teaser": "/assets/images/2026-04-22-paper-moco/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-01-08-package-gin-config.md",
+    "url": "/blog/posts/2026-01-08-package-gin-config.html",
+    "title": "Gin Config: Google's Lightweight Configuration Framework for Python",
+    "date": "2026-01-08T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "configuration",
+      "dependency-injection",
+      "machine-learning",
+      "google",
+      "python"
+    ],
+    "excerpt": "Gin-config is Google's lightweight configuration framework that uses decorators and .gin files to make Python functions and classes configurable without boilerplate code.",
+    "teaser": "/assets/images/2026-01-08-package-gin-config/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-03-31-repo-killianlucas-open-interpreter.md",
+    "url": "/blog/posts/2026-03-31-repo-killianlucas-open-interpreter.html",
+    "title": "killianlucas/open-interpreter: modern python library for dynamic code execution",
+    "date": "2026-03-31T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "python",
+      "code-execution",
+      "dynamic-code",
+      "secure-execution"
+    ],
+    "excerpt": "learn about open interpreter, a versatile python tool that enables secure code evaluation in various applications. discover its key features, practical examples, and best practices.",
+    "teaser": "/assets/images/2026-03-31-repo-killianlucas-open-interpreter/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-04-25-paper-convnext.md",
+    "url": "/blog/posts/2026-04-25-paper-convnext.html",
+    "title": "convnext-explained-modern-convolutional-neural-network",
+    "date": "2026-04-25T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "convnext",
+      "cnn-architecture",
+      "image-classification",
+      "object-detection"
+    ],
+    "excerpt": "Learn about ConvNeXt, a cutting-edge CNN architecture designed for efficiency and performance. Discover its key features, implementation, and applications in image processing tasks like classification and object detection.",
+    "teaser": "/assets/images/2026-04-25-paper-convnext/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-04-27-paper-stylegan-2.md",
+    "url": "/blog/posts/2026-04-27-paper-stylegan-2.html",
+    "title": "stylegan-2-guide-to-generative-models",
+    "date": "2026-04-27T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "stylegan",
+      "generative-models",
       "deep-learning",
       "computer-vision",
-      "pytorch",
-      "openmmlab"
+      "graphics",
+      "digital-art"
     ],
-    "excerpt": "MMSegmentation is OpenMMLab's open-source semantic segmentation toolbox built on PyTorch, supporting 50+ architectures and a unified config-driven workflow for training and inference.",
-    "teaser": "/assets/images/2026-01-24-package-mmsegmentation/teaser-ai.jpg"
+    "excerpt": "learn about stylegan 2, a top-notch generative model for image and video synthesis. discover its features, applications, and how to get started with setup instructions.",
+    "teaser": "/assets/images/2026-04-27-paper-stylegan-2/teaser-ai.jpg"
   },
   {
-    "filename": "2025-12-24-package-llama-index.md",
-    "url": "/blog/posts/2025-12-24-package-llama-index.html",
-    "title": "LlamaIndex: Connect Your Custom Data to Large Language Models",
-    "date": "2025-12-24T09:00:00+00:00",
+    "filename": "2025-12-26-package-folium.md",
+    "url": "/blog/posts/2025-12-26-package-folium.html",
+    "title": "Folium: Create Interactive Leaflet.js Maps in Python",
+    "date": "2025-12-26T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
-      "llamaindex",
-      "llm",
-      "retrieval-augmented-generation",
-      "vector-search",
+      "folium",
       "python",
-      "data-indexing",
-      "rag"
+      "data-visualization",
+      "geospatial",
+      "leaflet",
+      "interactive-maps",
+      "gis"
     ],
-    "excerpt": "A practical guide to LlamaIndex, the data framework for building retrieval-augmented generation (RAG) applications that connect custom data sources to LLMs.",
-    "teaser": "/assets/images/2025-12-24-package-llama-index/teaser-ai.jpg"
+    "excerpt": "A practical guide to Folium, the Python library for creating interactive Leaflet.js maps with markers, choropleth layers, and heatmaps.",
+    "teaser": "/assets/images/2025-12-26-package-folium/teaser-ai.jpg"
   },
   {
-    "filename": "2026-01-22-package-crawl4ai.md",
-    "url": "/blog/posts/2026-01-22-package-crawl4ai.html",
-    "title": "Crawl4AI: Open-Source Web Crawling for LLMs and AI Pipelines",
-    "date": "2026-01-22T09:00:00+00:00",
+    "filename": "2026-04-24-paper-efficientdet.md",
+    "url": "/blog/posts/2026-04-24-paper-efficientdet.html",
+    "title": "efficientdet for real-time object detection & deployment",
+    "date": "2026-04-24T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
+      "efficientdet",
+      "object-detection",
+      "machine-learning",
+      "real-time",
+      "deployment"
+    ],
+    "excerpt": "Learn about efficientdet, a powerful model that balances accuracy and efficiency. Explore its key features, installation, practical examples, and best practices.",
+    "teaser": "/assets/images/2026-04-24-paper-efficientdet/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-03-29-repo-tensorflow-models.md",
+    "url": "/blog/posts/2026-03-29-repo-tensorflow-models.html",
+    "title": "tensorflow/Models - Pre-Trained Machine Learning Models for Easy Deployment",
+    "date": "2026-03-29T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "tensorflow",
+      "models",
+      "machine-learning",
+      "image-classification"
+    ],
+    "excerpt": "Learn about TensorFlow/Models, a collection of pre-trained models for various tasks like image classification and text generation. Get started with installation, see examples, and discover best practices.",
+    "teaser": "/assets/images/2026-03-29-repo-tensorflow-models/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-04-19-paper-xgboost.md",
+    "url": "/blog/posts/2026-04-19-paper-xgboost.html",
+    "title": "xgboost: fast & efficient gradient boosting in python",
+    "date": "2026-04-19T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "xgboost",
+      "gradient-boosting",
+      "machine-learning",
       "python",
-      "package",
-      "pypi",
-      "web-crawling",
-      "llm",
-      "data-extraction",
-      "async",
-      "rag"
+      "classification",
+      "regression"
     ],
-    "excerpt": "Crawl4AI is an open-source, async-first web crawler built for feeding clean, structured content to LLMs and AI applications.",
-    "teaser": "/assets/images/2026-01-22-package-crawl4ai/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-01-16-package-unsloth.md",
-    "url": "/blog/posts/2026-01-16-package-unsloth.html",
-    "title": "Unsloth: Fine-Tune LLMs 2-5x Faster with 80% Less Memory",
-    "date": "2026-01-16T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "llm-fine-tuning",
-      "large-language-models",
-      "lora",
-      "parameter-efficient",
-      "deep-learning"
-    ],
-    "excerpt": "Unsloth accelerates LLM fine-tuning by 2-5x while reducing memory usage by up to 80%, enabling efficient LoRA and QLoRA training of models like Llama, Mistral, and Gemma on consumer GPUs.",
-    "teaser": "/assets/images/2026-01-16-package-unsloth/teaser-ai.jpg"
+    "excerpt": "learn about xgboost’s key features, installation, core concepts, practical examples, and best practices for classification & regression tasks. get started now!",
+    "teaser": "/assets/images/2026-04-19-paper-xgboost/teaser-ai.jpg"
   },
   {
     "filename": "2026-04-06-repo-stability-ai-stablediffusion.md",
@@ -152,6 +327,70 @@
     ],
     "excerpt": "Learn about Stability-AI/Stablediffusion, a powerful text generation tool using TensorFlow. Discover key features, installation steps, and practical examples for content creation and chatbot development.",
     "teaser": "/assets/images/2026-04-06-repo-stability-ai-stablediffusion/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-04-11-repo-suno-ai-bark.md",
+    "url": "/blog/posts/2026-04-11-repo-suno-ai-bark.html",
+    "title": "suno-ai/Bark: Open-source Audio Synthesis Toolkit",
+    "date": "2026-04-11T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "audio-synthesis",
+      "text-to-speech",
+      "voice-cloning",
+      "bark-toolkit"
+    ],
+    "excerpt": "Learn how to use Bark, an open-source audio toolkit for text-to-speech and voice cloning. Get started with quick examples and tips for developers.",
+    "teaser": "/assets/images/2026-04-11-repo-suno-ai-bark/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-01-21-package-scikit-video.md",
+    "url": "/blog/posts/2026-01-21-package-scikit-video.html",
+    "title": "scikit-video: Video Processing in Python with FFmpeg",
+    "date": "2026-01-21T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "python",
+      "package",
+      "pypi",
+      "video-processing",
+      "ffmpeg",
+      "computer-vision",
+      "numpy"
+    ],
+    "excerpt": "scikit-video (skvideo) is a Python library for video reading, writing, and processing built on top of FFmpeg and NumPy.",
+    "teaser": "/assets/images/2026-01-21-package-scikit-video/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-01-09-package-autofaiss.md",
+    "url": "/blog/posts/2026-01-09-package-autofaiss.html",
+    "title": "Autofaiss: Automatically Build Optimal Faiss Indexes for Vector Search",
+    "date": "2026-01-09T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "vector-search",
+      "approximate-nearest-neighbor",
+      "faiss",
+      "embeddings",
+      "machine-learning"
+    ],
+    "excerpt": "Autofaiss automatically selects the best Faiss index type and parameters for your embeddings, making it easy to build fast and memory-efficient approximate nearest neighbor search indexes.",
+    "teaser": "/assets/images/2026-01-09-package-autofaiss/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-04-23-paper-ldm.md",
+    "url": "/blog/posts/2026-04-23-paper-ldm.html",
+    "title": "ldm-package-for-facial-landmark-detection-and-face-recognition",
+    "date": "2026-04-23T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "ldm",
+      "facial-landmark-detection",
+      "face-recognition",
+      "python-package"
+    ],
+    "excerpt": "Learn how to use the LDM Python package for facial landmark detection, face feature extraction, and face recognition in images. Get started with quick examples and discover core functionalities like 'facefeature', 'landmarks', 'facerec', and more.",
+    "teaser": "/assets/images/2026-04-23-paper-ldm/teaser-ai.jpg"
   },
   {
     "filename": "2026-01-29-package-tensorflow-graphics.md",
@@ -188,279 +427,19 @@
     "teaser": "/assets/images/2026-04-21-paper-pix2pix/teaser-ai.jpg"
   },
   {
-    "filename": "2026-04-08-repo-run-llama-llama-index.md",
-    "url": "/blog/posts/2026-04-08-repo-run-llama-llama-index.html",
-    "title": "run-llama/Llama_Index: Building Powerful Information Retrieval Systems",
-    "date": "2026-04-08T09:00:00+00:00",
+    "filename": "2026-04-15-repo-google-research-google-research.md",
+    "url": "/blog/posts/2026-04-15-repo-google-research-google-research.html",
+    "title": "google-research/google research for machine learning projects",
+    "date": "2026-04-15T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
-      "run-llama",
-      "llama_index",
-      "information-retrieval",
-      "large-language-models"
-    ],
-    "excerpt": "Learn how to use run-llama/LlamaIndex for efficient data indexing and querying, supporting text documents & CSV files. Ideal for chatbots & knowledge graphs.",
-    "teaser": "/assets/images/2026-04-08-repo-run-llama-llama-index/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-01-07-package-bert-score.md",
-    "url": "/blog/posts/2026-01-07-package-bert-score.html",
-    "title": "BERTScore: Evaluating Text Generation with Contextual Embeddings",
-    "date": "2026-01-07T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "nlp",
-      "text-evaluation",
-      "bert",
+      "google-research",
       "machine-learning",
-      "metrics"
+      "ai-development",
+      "research-tools"
     ],
-    "excerpt": "BERTScore leverages BERT contextual embeddings to evaluate text generation quality, providing precision, recall, and F1 scores that correlate better with human judgment than traditional n-gram metrics.",
-    "teaser": "/assets/images/2026-01-07-package-bert-score/teaser-ai.jpg"
-  },
-  {
-    "filename": "2025-12-26-package-folium.md",
-    "url": "/blog/posts/2025-12-26-package-folium.html",
-    "title": "Folium: Create Interactive Leaflet.js Maps in Python",
-    "date": "2025-12-26T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "folium",
-      "python",
-      "data-visualization",
-      "geospatial",
-      "leaflet",
-      "interactive-maps",
-      "gis"
-    ],
-    "excerpt": "A practical guide to Folium, the Python library for creating interactive Leaflet.js maps with markers, choropleth layers, and heatmaps.",
-    "teaser": "/assets/images/2025-12-26-package-folium/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-04-25-paper-convnext.md",
-    "url": "/blog/posts/2026-04-25-paper-convnext.html",
-    "title": "convnext-explained-modern-convolutional-neural-network",
-    "date": "2026-04-25T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "convnext",
-      "cnn-architecture",
-      "image-classification",
-      "object-detection"
-    ],
-    "excerpt": "Learn about ConvNeXt, a cutting-edge CNN architecture designed for efficiency and performance. Discover its key features, implementation, and applications in image processing tasks like classification and object detection.",
-    "teaser": "/assets/images/2026-04-25-paper-convnext/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-04-26-paper-deeplabcut.md",
-    "url": "/blog/posts/2026-04-26-paper-deeplabcut.html",
-    "title": "deeplabcut-explained-for-researchers",
-    "date": "2026-04-26T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "deeplabcut",
-      "neuroscience",
-      "tracking",
-      "animal-behavior",
-      "open-source"
-    ],
-    "excerpt": "Learn about deeplabcut, an open-source tool for tracking animal movements in images and videos. Discover its key features, installation process, and practical applications in neuroscience, ecology, and veterinary science.",
-    "teaser": "/assets/images/2026-04-26-paper-deeplabcut/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-01-21-package-scikit-video.md",
-    "url": "/blog/posts/2026-01-21-package-scikit-video.html",
-    "title": "scikit-video: Video Processing in Python with FFmpeg",
-    "date": "2026-01-21T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "python",
-      "package",
-      "pypi",
-      "video-processing",
-      "ffmpeg",
-      "computer-vision",
-      "numpy"
-    ],
-    "excerpt": "scikit-video (skvideo) is a Python library for video reading, writing, and processing built on top of FFmpeg and NumPy.",
-    "teaser": "/assets/images/2026-01-21-package-scikit-video/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-04-23-paper-ldm.md",
-    "url": "/blog/posts/2026-04-23-paper-ldm.html",
-    "title": "ldm-package-for-facial-landmark-detection-and-face-recognition",
-    "date": "2026-04-23T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "ldm",
-      "facial-landmark-detection",
-      "face-recognition",
-      "python-package"
-    ],
-    "excerpt": "Learn how to use the LDM Python package for facial landmark detection, face feature extraction, and face recognition in images. Get started with quick examples and discover core functionalities like 'facefeature', 'landmarks', 'facerec', and more.",
-    "teaser": "/assets/images/2026-04-23-paper-ldm/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-04-24-paper-efficientdet.md",
-    "url": "/blog/posts/2026-04-24-paper-efficientdet.html",
-    "title": "efficientdet for real-time object detection & deployment",
-    "date": "2026-04-24T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "efficientdet",
-      "object-detection",
-      "machine-learning",
-      "real-time",
-      "deployment"
-    ],
-    "excerpt": "Learn about efficientdet, a powerful model that balances accuracy and efficiency. Explore its key features, installation, practical examples, and best practices.",
-    "teaser": "/assets/images/2026-04-24-paper-efficientdet/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-04-16-repo-microsoft-visual-chatgpt.md",
-    "url": "/blog/posts/2026-04-16-repo-microsoft-visual-chatgpt.html",
-    "title": "microsoft/visual-chatgpt: integrating text & images for AI responses",
-    "date": "2026-04-16T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "microsoft",
-      "visual-chatgpt",
-      "ai",
-      "natural-language-processing"
-    ],
-    "excerpt": "Learn about microsoft’s visual chatgpt, a powerful tool combining text and image inputs to generate contextually relevant responses. Discover setup, use cases, and best practices.",
-    "teaser": "/assets/images/2026-04-16-repo-microsoft-visual-chatgpt/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-04-11-repo-suno-ai-bark.md",
-    "url": "/blog/posts/2026-04-11-repo-suno-ai-bark.html",
-    "title": "suno-ai/Bark: Open-source Audio Synthesis Toolkit",
-    "date": "2026-04-11T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "audio-synthesis",
-      "text-to-speech",
-      "voice-cloning",
-      "bark-toolkit"
-    ],
-    "excerpt": "Learn how to use Bark, an open-source audio toolkit for text-to-speech and voice cloning. Get started with quick examples and tips for developers.",
-    "teaser": "/assets/images/2026-04-11-repo-suno-ai-bark/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-04-10-repo-laion-ai-open-assistant.md",
-    "url": "/blog/posts/2026-04-10-repo-laion-ai-open-assistant.html",
-    "title": "laion-ai/open-assistant - state-of-the-art-conversational-ai",
-    "date": "2026-04-10T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "open-source",
-      "ai-tools",
-      "natural-language-processing",
-      "chatbot-integration"
-    ],
-    "excerpt": "Explore how to use LAION-AI/Open Assistant for chatbots, virtual assistants, and content generation. Learn installation, examples, and best practices.",
-    "teaser": "/assets/images/2026-04-10-repo-laion-ai-open-assistant/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-02-15-repo-langchain.md",
-    "url": "/blog/posts/2026-02-15-repo-langchain.html",
-    "title": "LangChain - A Framework for Building LLM-Powered Applications",
-    "date": "2026-02-15T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "langchain",
-      "llm",
-      "agents",
-      "rag",
-      "chains",
-      "python",
-      "lcel"
-    ],
-    "excerpt": "A deep dive into the langchain-ai/langchain repository, exploring its modular architecture, LCEL composition model, agents, retrieval-augmented generation, and integration ecosystem.",
-    "teaser": "/assets/images/2026-02-15-repo-langchain/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-04-04-repo-jakevdp-pythondatasciencehandbook.md",
-    "url": "/blog/posts/2026-04-04-repo-jakevdp-pythondatasciencehandbook.html",
-    "title": "jakevdp/Pythondatasciencehandbook - Comprehensive Python Data Science Guide",
-    "date": "2026-04-04T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "python",
-      "datascience",
-      "numpy",
-      "pandas"
-    ],
-    "excerpt": "Explore the jakevdp/Pythondatasciencehandbook project, a comprehensive guide for data science in Python. Discover key libraries like NumPy, pandas, Matplotlib, and scikit-learn with practical examples.",
-    "teaser": "/assets/images/2026-04-04-repo-jakevdp-pythondatasciencehandbook/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-01-27-package-tpot.md",
-    "url": "/blog/posts/2026-01-27-package-tpot.html",
-    "title": "TPOT: Automated Machine Learning with Genetic Programming",
-    "date": "2026-01-27T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "python",
-      "package",
-      "pypi",
-      "automl",
-      "machine-learning",
-      "genetic-programming",
-      "scikit-learn",
-      "pipeline-optimization"
-    ],
-    "excerpt": "TPOT is a Python AutoML tool that uses genetic programming to automatically design and optimize scikit-learn machine learning pipelines.",
-    "teaser": "/assets/images/2026-01-27-package-tpot/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-03-31-repo-killianlucas-open-interpreter.md",
-    "url": "/blog/posts/2026-03-31-repo-killianlucas-open-interpreter.html",
-    "title": "killianlucas/open-interpreter: modern python library for dynamic code execution",
-    "date": "2026-03-31T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "python",
-      "code-execution",
-      "dynamic-code",
-      "secure-execution"
-    ],
-    "excerpt": "learn about open interpreter, a versatile python tool that enables secure code evaluation in various applications. discover its key features, practical examples, and best practices.",
-    "teaser": "/assets/images/2026-03-31-repo-killianlucas-open-interpreter/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-04-22-paper-moco.md",
-    "url": "/blog/posts/2026-04-22-paper-moco.html",
-    "title": "mo-co-optimizer-for-motion-capture-data",
-    "date": "2026-04-22T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "moco",
-      "motion-capture",
-      "optimization",
-      "animation",
-      "bioinformatics",
-      "robotics"
-    ],
-    "excerpt": "Learn about MoCo, a powerful Motion Capture Optimizer tool for processing motion capture data efficiently. Explore its features and practical applications in animation, bioinformatics, and robotics.",
-    "teaser": "/assets/images/2026-04-22-paper-moco/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-02-12-repo-ollama.md",
-    "url": "/blog/posts/2026-02-12-repo-ollama.html",
-    "title": "Ollama - Run Large Language Models Locally",
-    "date": "2026-02-12T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "ollama",
-      "llm",
-      "local-inference",
-      "llama",
-      "self-hosted",
-      "python"
-    ],
-    "excerpt": "A look at the ollama/ollama repository, a tool for downloading, running, and managing large language models locally on your own hardware.",
-    "teaser": "/assets/images/2026-02-12-repo-ollama/teaser-ai.jpg"
+    "excerpt": "Learn about google-research's key features and how to use it effectively in your ML projects, including setup, core concepts, and practical examples.",
+    "teaser": "/assets/images/2026-04-15-repo-google-research-google-research/teaser-ai.jpg"
   },
   {
     "filename": "2026-01-10-package-pyglove.md",
@@ -479,196 +458,20 @@
     "teaser": "/assets/images/2026-01-10-package-pyglove/teaser-ai.jpg"
   },
   {
-    "filename": "2026-04-14-repo-ray-project-ray.md",
-    "url": "/blog/posts/2026-04-14-repo-ray-project-ray.html",
-    "title": "ray-project/Ray: Distributed Computing for Machine Learning",
-    "date": "2026-04-14T09:00:00+00:00",
+    "filename": "2026-04-02-repo-ultralytics-yolov5.md",
+    "url": "/blog/posts/2026-04-02-repo-ultralytics-yolov5.html",
+    "title": "ultralytics/Yolov5 - Real-Time Object Detection Guide",
+    "date": "2026-04-02T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
-      "ray",
-      "distributed-training",
-      "machine-learning",
-      "hyperparameter-tuning"
+      "YOLOv5",
+      "object detection",
+      "real-time processing",
+      "installation",
+      "advanced configurations"
     ],
-    "excerpt": "Learn about Ray, an open-source library for scalable ML workflows. Explore its key features like distributed training and hyperparameter tuning with practical examples and best practices.",
-    "teaser": "/assets/images/2026-04-14-repo-ray-project-ray/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-04-05-repo-lllyasviel-fooocus.md",
-    "url": "/blog/posts/2026-04-05-repo-lllyasviel-fooocus.html",
-    "title": "lllyasviel/Fooocus: Python Library for Image Enhancement",
-    "date": "2026-04-05T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "image-processing",
-      "python-library",
-      "fooocus",
-      "forensic-analysis"
-    ],
-    "excerpt": "Discover how to use lllyasviel/Fooocus for real-time noise reduction, image sharpening, and advanced contrast adjustment in Python. Perfect for forensic analysis, medical imaging, and digital archiving.",
-    "teaser": "/assets/images/2026-04-05-repo-lllyasviel-fooocus/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-04-20-paper-cyclegan.md",
-    "url": "/blog/posts/2026-04-20-paper-cyclegan.html",
-    "title": "cyclegan-explained-for-image-transformation",
-    "date": "2026-04-20T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "cyclegan",
-      "image-transformation",
-      "gan",
-      "artistic-style-transfer",
-      "medical-imaging"
-    ],
-    "excerpt": "cyclegan is a powerful tool for translating images between domains without paired samples. learn its architecture, implementation in python, and practical applications in art & medical imaging.",
-    "teaser": "/assets/images/2026-04-20-paper-cyclegan/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-04-12-repo-tencentarc-gfpgan.md",
-    "url": "/blog/posts/2026-04-12-repo-tencentarc-gfpgan.html",
-    "title": "tencentarc/gfpgan: state-of-the-art-face-restoration-model",
-    "date": "2026-04-12T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "gfpgan",
-      "face-restoration",
-      "perceptual-gans",
-      "image-enhancement"
-    ],
-    "excerpt": "Discover how to use GFPGAN for high-resolution face restoration, enhancing photos and videos. Learn setup, usage, and best practices directly from the source.",
-    "teaser": "/assets/images/2026-04-12-repo-tencentarc-gfpgan/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-02-26-repo-whisper.md",
-    "url": "/blog/posts/2026-02-26-repo-whisper.html",
-    "title": "Whisper - OpenAI's Automatic Speech Recognition Model",
-    "date": "2026-02-26T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "whisper",
-      "speech-recognition",
-      "transcription",
-      "openai",
-      "audio",
-      "python"
-    ],
-    "excerpt": "An in-depth look at OpenAI's Whisper, a general-purpose speech recognition model that delivers robust transcription and translation across dozens of languages.",
-    "teaser": "/assets/images/2026-02-26-repo-whisper/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-04-27-paper-stylegan-2.md",
-    "url": "/blog/posts/2026-04-27-paper-stylegan-2.html",
-    "title": "stylegan-2-guide-to-generative-models",
-    "date": "2026-04-27T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "stylegan",
-      "generative-models",
-      "deep-learning",
-      "computer-vision",
-      "graphics",
-      "digital-art"
-    ],
-    "excerpt": "learn about stylegan 2, a top-notch generative model for image and video synthesis. discover its features, applications, and how to get started with setup instructions.",
-    "teaser": "/assets/images/2026-04-27-paper-stylegan-2/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-01-09-package-autofaiss.md",
-    "url": "/blog/posts/2026-01-09-package-autofaiss.html",
-    "title": "Autofaiss: Automatically Build Optimal Faiss Indexes for Vector Search",
-    "date": "2026-01-09T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "vector-search",
-      "approximate-nearest-neighbor",
-      "faiss",
-      "embeddings",
-      "machine-learning"
-    ],
-    "excerpt": "Autofaiss automatically selects the best Faiss index type and parameters for your embeddings, making it easy to build fast and memory-efficient approximate nearest neighbor search indexes.",
-    "teaser": "/assets/images/2026-01-09-package-autofaiss/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-02-25-repo-comfyui.md",
-    "url": "/blog/posts/2026-02-25-repo-comfyui.html",
-    "title": "ComfyUI - A Node-Based Interface for Stable Diffusion Image Generation",
-    "date": "2026-02-25T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "comfyui",
-      "stable-diffusion",
-      "image-generation",
-      "node-based-workflow",
-      "diffusion-models",
-      "python"
-    ],
-    "excerpt": "An in-depth look at ComfyUI, a powerful node-based graphical interface for designing and executing Stable Diffusion image generation workflows.",
-    "teaser": "/assets/images/2026-02-25-repo-comfyui/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-02-05-package-langfun.md",
-    "url": "/blog/posts/2026-02-05-package-langfun.html",
-    "title": "Langfun - Building Natural Language-Powered Functions with LLMs",
-    "date": "2026-02-05T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "langfun",
-      "llm",
-      "prompt-engineering",
-      "google",
-      "natural-language-functions",
-      "python"
-    ],
-    "excerpt": "Explore Langfun, Google's Python library for composing and calling LLM-powered functions using natural language prompt templates and structured output.",
-    "teaser": "/assets/images/2026-02-05-package-langfun/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-01-15-package-earthengine-api.md",
-    "url": "/blog/posts/2026-01-15-package-earthengine-api.html",
-    "title": "Google Earth Engine API: Planetary-Scale Geospatial Analysis in Python",
-    "date": "2026-01-15T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "geospatial",
-      "remote-sensing",
-      "satellite-imagery",
-      "google-earth-engine",
-      "python"
-    ],
-    "excerpt": "The Google Earth Engine Python API provides programmatic access to a multi-petabyte catalog of satellite imagery and geospatial datasets for analysis, visualization, and environmental monitoring at planetary scale.",
-    "teaser": "/assets/images/2026-01-15-package-earthengine-api/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-04-01-repo-corentinj-real-time-voice-cloning.md",
-    "url": "/blog/posts/2026-04-01-repo-corentinj-real-time-voice-cloning.html",
-    "title": "corentinj-real-time-voice-cloning",
-    "date": "2026-04-01T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "real-time",
-      "voice-cloning",
-      "gaming",
-      "virtual-assistants"
-    ],
-    "excerpt": "Learn about CorentinJ’s real-time voice cloning technology, its applications in gaming and virtual assistants, and how to set it up. Explore key features like customizable voice models.",
-    "teaser": "/assets/images/2026-04-01-repo-corentinj-real-time-voice-cloning/teaser-ai.jpg"
-  },
-  {
-    "filename": "2026-01-08-package-gin-config.md",
-    "url": "/blog/posts/2026-01-08-package-gin-config.html",
-    "title": "Gin Config: Google's Lightweight Configuration Framework for Python",
-    "date": "2026-01-08T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "configuration",
-      "dependency-injection",
-      "machine-learning",
-      "google",
-      "python"
-    ],
-    "excerpt": "Gin-config is Google's lightweight configuration framework that uses decorators and .gin files to make Python functions and classes configurable without boilerplate code.",
-    "teaser": "/assets/images/2026-01-08-package-gin-config/teaser-ai.jpg"
+    "excerpt": "Learn how to set up and use YOLOv5 for real-time object detection, including installation, basic usage, and advanced configurations. Explore practical applications in security, autonomous vehicles, and retail analytics.",
+    "teaser": "/assets/images/2026-04-02-repo-ultralytics-yolov5/teaser-ai.jpg"
   },
   {
     "filename": "2026-04-03-repo-facebookresearch-segment-anything.md",
@@ -688,55 +491,74 @@
     "teaser": "/assets/images/2026-04-03-repo-facebookresearch-segment-anything/teaser-ai.jpg"
   },
   {
-    "filename": "2026-02-10-package-dopamine-rl.md",
-    "url": "/blog/posts/2026-02-10-package-dopamine-rl.html",
-    "title": "Dopamine - Google's Research Framework for Reinforcement Learning",
-    "date": "2026-02-10T09:00:00+00:00",
+    "filename": "2026-01-22-package-crawl4ai.md",
+    "url": "/blog/posts/2026-01-22-package-crawl4ai.html",
+    "title": "Crawl4AI: Open-Source Web Crawling for LLMs and AI Pipelines",
+    "date": "2026-01-22T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
-      "dopamine-rl",
-      "reinforcement-learning",
-      "deep-learning",
-      "dqn",
-      "rainbow",
-      "atari",
-      "google-research"
+      "python",
+      "package",
+      "pypi",
+      "web-crawling",
+      "llm",
+      "data-extraction",
+      "async",
+      "rag"
     ],
-    "excerpt": "A guide to Google's Dopamine framework for fast prototyping of reinforcement learning algorithms, featuring DQN, Rainbow, C51, and IQN agents on Atari environments.",
-    "teaser": "/assets/images/2026-02-10-package-dopamine-rl/teaser-ai.jpg"
+    "excerpt": "Crawl4AI is an open-source, async-first web crawler built for feeding clean, structured content to LLMs and AI applications.",
+    "teaser": "/assets/images/2026-01-22-package-crawl4ai/teaser-ai.jpg"
   },
   {
-    "filename": "2026-04-17-paper-image-segmentation.md",
-    "url": "/blog/posts/2026-04-17-paper-image-segmentation.html",
-    "title": "image-segmentation-with-pytorch-unet-opencv",
-    "date": "2026-04-17T09:00:00+00:00",
+    "filename": "2026-04-18-paper-alphafold.md",
+    "url": "/blog/posts/2026-04-18-paper-alphafold.html",
+    "title": "alphafold-2-0-protein-structure-prediction-revolutionary-tool",
+    "date": "2026-04-18T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
-      "image-segmentation",
-      "pytorch-unet",
-      "opencv",
+      "alphafold",
+      "protein-structures",
+      "bioinformatics",
+      "drug-discovery",
+      "genomics"
+    ],
+    "excerpt": "Explore how AlphaFold 2.0 predicts protein structures with unparalleled accuracy, ideal for drug discovery and genomics research. Learn setup, usage, and practical examples.",
+    "teaser": "/assets/images/2026-04-18-paper-alphafold/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-01-24-package-mmsegmentation.md",
+    "url": "/blog/posts/2026-01-24-package-mmsegmentation.html",
+    "title": "MMSegmentation: OpenMMLab's Semantic Segmentation Toolbox",
+    "date": "2026-01-24T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "python",
+      "package",
+      "pypi",
+      "semantic-segmentation",
+      "deep-learning",
+      "computer-vision",
+      "pytorch",
+      "openmmlab"
+    ],
+    "excerpt": "MMSegmentation is OpenMMLab's open-source semantic segmentation toolbox built on PyTorch, supporting 50+ architectures and a unified config-driven workflow for training and inference.",
+    "teaser": "/assets/images/2026-01-24-package-mmsegmentation/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-04-20-paper-cyclegan.md",
+    "url": "/blog/posts/2026-04-20-paper-cyclegan.html",
+    "title": "cyclegan-explained-for-image-transformation",
+    "date": "2026-04-20T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "cyclegan",
+      "image-transformation",
+      "gan",
+      "artistic-style-transfer",
       "medical-imaging"
     ],
-    "excerpt": "Learn about image segmentation using PyTorch-UNet and OpenCV with practical examples and use cases in medical imaging, autonomous driving, and more.",
-    "teaser": "/assets/images/2026-04-17-paper-image-segmentation/teaser-ai.jpg"
-  },
-  {
-    "filename": "2025-12-25-package-langgraph.md",
-    "url": "/blog/posts/2025-12-25-package-langgraph.html",
-    "title": "LangGraph: Build Stateful Multi-Actor LLM Applications with Graphs",
-    "date": "2025-12-25T09:00:00+00:00",
-    "author": "Ruslanmv",
-    "tags": [
-      "langgraph",
-      "llm",
-      "agents",
-      "graph-workflows",
-      "python",
-      "langchain",
-      "state-machines"
-    ],
-    "excerpt": "A practical guide to LangGraph, the library for building stateful, multi-actor LLM applications using graph-based workflows with cycles, branching, and persistence.",
-    "teaser": "/assets/images/2025-12-25-package-langgraph/teaser-ai.jpg"
+    "excerpt": "cyclegan is a powerful tool for translating images between domains without paired samples. learn its architecture, implementation in python, and practical applications in art & medical imaging.",
+    "teaser": "/assets/images/2026-04-20-paper-cyclegan/teaser-ai.jpg"
   },
   {
     "filename": "2026-04-13-repo-ultralytics-ultralytics.md",
@@ -752,6 +574,38 @@
     ],
     "excerpt": "Learn how to install and use the ultralytics/Ultralytics library for real-time object detection, segmentation, and tracking. Explore practical examples and best practices.",
     "teaser": "/assets/images/2026-04-13-repo-ultralytics-ultralytics/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-01-16-package-unsloth.md",
+    "url": "/blog/posts/2026-01-16-package-unsloth.html",
+    "title": "Unsloth: Fine-Tune LLMs 2-5x Faster with 80% Less Memory",
+    "date": "2026-01-16T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "llm-fine-tuning",
+      "large-language-models",
+      "lora",
+      "parameter-efficient",
+      "deep-learning"
+    ],
+    "excerpt": "Unsloth accelerates LLM fine-tuning by 2-5x while reducing memory usage by up to 80%, enabling efficient LoRA and QLoRA training of models like Llama, Mistral, and Gemma on consumer GPUs.",
+    "teaser": "/assets/images/2026-01-16-package-unsloth/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-01-11-package-mmdet.md",
+    "url": "/blog/posts/2026-01-11-package-mmdet.html",
+    "title": "MMDetection: OpenMMLab's Object Detection Toolbox",
+    "date": "2026-01-11T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "object-detection",
+      "computer-vision",
+      "deep-learning",
+      "instance-segmentation",
+      "openmmlab"
+    ],
+    "excerpt": "MMDetection is OpenMMLab's comprehensive object detection toolbox built on PyTorch, supporting hundreds of detection and segmentation models with a modular, config-driven architecture.",
+    "teaser": "/assets/images/2026-01-11-package-mmdet/teaser-ai.jpg"
   },
   {
     "filename": "2025-12-23-package-catboost.md",
@@ -772,74 +626,83 @@
     "teaser": "/assets/images/2025-12-23-package-catboost/teaser-ai.jpg"
   },
   {
-    "filename": "2026-01-20-package-pybullet.md",
-    "url": "/blog/posts/2026-01-20-package-pybullet.html",
-    "title": "PyBullet: Physics Simulation for Robotics and Reinforcement Learning",
-    "date": "2026-01-20T09:00:00+00:00",
+    "filename": "2026-04-04-repo-jakevdp-pythondatasciencehandbook.md",
+    "url": "/blog/posts/2026-04-04-repo-jakevdp-pythondatasciencehandbook.html",
+    "title": "jakevdp/Pythondatasciencehandbook - Comprehensive Python Data Science Guide",
+    "date": "2026-04-04T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
       "python",
-      "package",
-      "pypi",
-      "robotics",
-      "physics-simulation",
-      "reinforcement-learning",
-      "bullet-physics",
-      "urdf"
+      "datascience",
+      "numpy",
+      "pandas"
     ],
-    "excerpt": "PyBullet is a Python binding for the Bullet physics engine, providing real-time physics simulation for robotics, reinforcement learning, and VR applications.",
-    "teaser": "/assets/images/2026-01-20-package-pybullet/teaser-ai.jpg"
+    "excerpt": "Explore the jakevdp/Pythondatasciencehandbook project, a comprehensive guide for data science in Python. Discover key libraries like NumPy, pandas, Matplotlib, and scikit-learn with practical examples.",
+    "teaser": "/assets/images/2026-04-04-repo-jakevdp-pythondatasciencehandbook/teaser-ai.jpg"
   },
   {
-    "filename": "2026-04-02-repo-ultralytics-yolov5.md",
-    "url": "/blog/posts/2026-04-02-repo-ultralytics-yolov5.html",
-    "title": "ultralytics/Yolov5 - Real-Time Object Detection Guide",
-    "date": "2026-04-02T09:00:00+00:00",
+    "filename": "2026-04-09-repo-coqui-ai-tts.md",
+    "url": "/blog/posts/2026-04-09-repo-coqui-ai-tts.html",
+    "title": "coqui-ai/Tts - Text-to-Speech Library for Developers",
+    "date": "2026-04-09T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
-      "YOLOv5",
-      "object detection",
-      "real-time processing",
-      "installation",
-      "advanced configurations"
+      "coqui-tts",
+      "text-to-speech",
+      "tts",
+      "speech-generation"
     ],
-    "excerpt": "Learn how to set up and use YOLOv5 for real-time object detection, including installation, basic usage, and advanced configurations. Explore practical applications in security, autonomous vehicles, and retail analytics.",
-    "teaser": "/assets/images/2026-04-02-repo-ultralytics-yolov5/teaser-ai.jpg"
+    "excerpt": "Learn how to use Coqui-TTS, a state-of-the-art text-to-speech library. Explore installation, core concepts, and practical examples in this comprehensive guide.",
+    "teaser": "/assets/images/2026-04-09-repo-coqui-ai-tts/teaser-ai.jpg"
   },
   {
-    "filename": "2026-04-19-paper-xgboost.md",
-    "url": "/blog/posts/2026-04-19-paper-xgboost.html",
-    "title": "xgboost: fast & efficient gradient boosting in python",
-    "date": "2026-04-19T09:00:00+00:00",
+    "filename": "2026-04-10-repo-laion-ai-open-assistant.md",
+    "url": "/blog/posts/2026-04-10-repo-laion-ai-open-assistant.html",
+    "title": "laion-ai/open-assistant - state-of-the-art-conversational-ai",
+    "date": "2026-04-10T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
-      "xgboost",
-      "gradient-boosting",
-      "machine-learning",
-      "python",
-      "classification",
-      "regression"
+      "open-source",
+      "ai-tools",
+      "natural-language-processing",
+      "chatbot-integration"
     ],
-    "excerpt": "learn about xgboost’s key features, installation, core concepts, practical examples, and best practices for classification & regression tasks. get started now!",
-    "teaser": "/assets/images/2026-04-19-paper-xgboost/teaser-ai.jpg"
+    "excerpt": "Explore how to use LAION-AI/Open Assistant for chatbots, virtual assistants, and content generation. Learn installation, examples, and best practices.",
+    "teaser": "/assets/images/2026-04-10-repo-laion-ai-open-assistant/teaser-ai.jpg"
   },
   {
-    "filename": "2025-12-23-package-langchain.md",
-    "url": "/blog/posts/2025-12-23-package-langchain.html",
-    "title": "LangChain: Build LLM-Powered Applications with Modern Composable Chains",
-    "date": "2025-12-23T09:00:00+00:00",
+    "filename": "2026-01-15-package-earthengine-api.md",
+    "url": "/blog/posts/2026-01-15-package-earthengine-api.html",
+    "title": "Google Earth Engine API: Planetary-Scale Geospatial Analysis in Python",
+    "date": "2026-01-15T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
-      "langchain",
+      "geospatial",
+      "remote-sensing",
+      "satellite-imagery",
+      "google-earth-engine",
+      "python"
+    ],
+    "excerpt": "The Google Earth Engine Python API provides programmatic access to a multi-petabyte catalog of satellite imagery and geospatial datasets for analysis, visualization, and environmental monitoring at planetary scale.",
+    "teaser": "/assets/images/2026-01-15-package-earthengine-api/teaser-ai.jpg"
+  },
+  {
+    "filename": "2025-12-24-package-llama-index.md",
+    "url": "/blog/posts/2025-12-24-package-llama-index.html",
+    "title": "LlamaIndex: Connect Your Custom Data to Large Language Models",
+    "date": "2025-12-24T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "llamaindex",
       "llm",
-      "agents",
-      "prompt-engineering",
+      "retrieval-augmented-generation",
+      "vector-search",
       "python",
-      "rag",
-      "lcel"
+      "data-indexing",
+      "rag"
     ],
-    "excerpt": "A practical guide to LangChain, the framework for building LLM-powered applications using composable chains, prompt templates, and the LangChain Expression Language.",
-    "teaser": "/assets/images/2025-12-23-package-langchain/teaser-ai.jpg"
+    "excerpt": "A practical guide to LlamaIndex, the data framework for building retrieval-augmented generation (RAG) applications that connect custom data sources to LLMs.",
+    "teaser": "/assets/images/2025-12-24-package-llama-index/teaser-ai.jpg"
   },
   {
     "filename": "2026-02-04-package-tensorflow-federated.md",
@@ -861,35 +724,102 @@
     "teaser": "/assets/images/2026-02-04-package-tensorflow-federated/teaser-ai.jpg"
   },
   {
-    "filename": "2026-03-29-repo-tensorflow-models.md",
-    "url": "/blog/posts/2026-03-29-repo-tensorflow-models.html",
-    "title": "tensorflow/Models - Pre-Trained Machine Learning Models for Easy Deployment",
-    "date": "2026-03-29T09:00:00+00:00",
+    "filename": "2026-02-25-repo-comfyui.md",
+    "url": "/blog/posts/2026-02-25-repo-comfyui.html",
+    "title": "ComfyUI - A Node-Based Interface for Stable Diffusion Image Generation",
+    "date": "2026-02-25T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
-      "tensorflow",
-      "models",
-      "machine-learning",
-      "image-classification"
+      "comfyui",
+      "stable-diffusion",
+      "image-generation",
+      "node-based-workflow",
+      "diffusion-models",
+      "python"
     ],
-    "excerpt": "Learn about TensorFlow/Models, a collection of pre-trained models for various tasks like image classification and text generation. Get started with installation, see examples, and discover best practices.",
-    "teaser": "/assets/images/2026-03-29-repo-tensorflow-models/teaser-ai.jpg"
+    "excerpt": "An in-depth look at ComfyUI, a powerful node-based graphical interface for designing and executing Stable Diffusion image generation workflows.",
+    "teaser": "/assets/images/2026-02-25-repo-comfyui/teaser-ai.jpg"
   },
   {
-    "filename": "2026-01-11-package-mmdet.md",
-    "url": "/blog/posts/2026-01-11-package-mmdet.html",
-    "title": "MMDetection: OpenMMLab's Object Detection Toolbox",
-    "date": "2026-01-11T09:00:00+00:00",
+    "filename": "2026-01-07-package-bert-score.md",
+    "url": "/blog/posts/2026-01-07-package-bert-score.html",
+    "title": "BERTScore: Evaluating Text Generation with Contextual Embeddings",
+    "date": "2026-01-07T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
-      "object-detection",
-      "computer-vision",
-      "deep-learning",
-      "instance-segmentation",
-      "openmmlab"
+      "nlp",
+      "text-evaluation",
+      "bert",
+      "machine-learning",
+      "metrics"
     ],
-    "excerpt": "MMDetection is OpenMMLab's comprehensive object detection toolbox built on PyTorch, supporting hundreds of detection and segmentation models with a modular, config-driven architecture.",
-    "teaser": "/assets/images/2026-01-11-package-mmdet/teaser-ai.jpg"
+    "excerpt": "BERTScore leverages BERT contextual embeddings to evaluate text generation quality, providing precision, recall, and F1 scores that correlate better with human judgment than traditional n-gram metrics.",
+    "teaser": "/assets/images/2026-01-07-package-bert-score/teaser-ai.jpg"
+  },
+  {
+    "filename": "2025-12-23-package-xgboost.md",
+    "url": "/blog/posts/2025-12-23-package-xgboost.html",
+    "title": "XGBoost: Scalable Gradient Boosting for Classification and Regression",
+    "date": "2025-12-23T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "xgboost",
+      "machine-learning",
+      "gradient-boosting",
+      "classification",
+      "regression",
+      "python",
+      "data-science"
+    ],
+    "excerpt": "A hands-on guide to XGBoost, the optimized gradient boosting library known for speed, performance, and dominance in machine learning competitions.",
+    "teaser": "/assets/images/2025-12-23-package-xgboost/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-04-16-repo-microsoft-visual-chatgpt.md",
+    "url": "/blog/posts/2026-04-16-repo-microsoft-visual-chatgpt.html",
+    "title": "microsoft/visual-chatgpt: integrating text & images for AI responses",
+    "date": "2026-04-16T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "microsoft",
+      "visual-chatgpt",
+      "ai",
+      "natural-language-processing"
+    ],
+    "excerpt": "Learn about microsoft’s visual chatgpt, a powerful tool combining text and image inputs to generate contextually relevant responses. Discover setup, use cases, and best practices.",
+    "teaser": "/assets/images/2026-04-16-repo-microsoft-visual-chatgpt/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-04-17-paper-image-segmentation.md",
+    "url": "/blog/posts/2026-04-17-paper-image-segmentation.html",
+    "title": "image-segmentation-with-pytorch-unet-opencv",
+    "date": "2026-04-17T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "image-segmentation",
+      "pytorch-unet",
+      "opencv",
+      "medical-imaging"
+    ],
+    "excerpt": "Learn about image segmentation using PyTorch-UNet and OpenCV with practical examples and use cases in medical imaging, autonomous driving, and more.",
+    "teaser": "/assets/images/2026-04-17-paper-image-segmentation/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-02-26-repo-whisper.md",
+    "url": "/blog/posts/2026-02-26-repo-whisper.html",
+    "title": "Whisper - OpenAI's Automatic Speech Recognition Model",
+    "date": "2026-02-26T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "whisper",
+      "speech-recognition",
+      "transcription",
+      "openai",
+      "audio",
+      "python"
+    ],
+    "excerpt": "An in-depth look at OpenAI's Whisper, a general-purpose speech recognition model that delivers robust transcription and translation across dozens of languages.",
+    "teaser": "/assets/images/2026-02-26-repo-whisper/teaser-ai.jpg"
   },
   {
     "filename": "2026-04-07-repo-microsoft-autogen.md",
@@ -907,33 +837,120 @@
     "teaser": "/assets/images/2026-04-07-repo-microsoft-autogen/teaser-ai.jpg"
   },
   {
-    "filename": "2026-04-09-repo-coqui-ai-tts.md",
-    "url": "/blog/posts/2026-04-09-repo-coqui-ai-tts.html",
-    "title": "coqui-ai/Tts - Text-to-Speech Library for Developers",
-    "date": "2026-04-09T09:00:00+00:00",
+    "filename": "2026-02-12-repo-ollama.md",
+    "url": "/blog/posts/2026-02-12-repo-ollama.html",
+    "title": "Ollama - Run Large Language Models Locally",
+    "date": "2026-02-12T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
-      "coqui-tts",
-      "text-to-speech",
-      "tts",
-      "speech-generation"
+      "ollama",
+      "llm",
+      "local-inference",
+      "llama",
+      "self-hosted",
+      "python"
     ],
-    "excerpt": "Learn how to use Coqui-TTS, a state-of-the-art text-to-speech library. Explore installation, core concepts, and practical examples in this comprehensive guide.",
-    "teaser": "/assets/images/2026-04-09-repo-coqui-ai-tts/teaser-ai.jpg"
+    "excerpt": "A look at the ollama/ollama repository, a tool for downloading, running, and managing large language models locally on your own hardware.",
+    "teaser": "/assets/images/2026-02-12-repo-ollama/teaser-ai.jpg"
   },
   {
-    "filename": "2026-03-30-repo-compvis-stable-diffusion.md",
-    "url": "/blog/posts/2026-03-30-repo-compvis-stable-diffusion.html",
-    "title": "compvis/stable-diffusion: text-to-image generation model",
-    "date": "2026-03-30T09:00:00+00:00",
+    "filename": "2026-04-01-repo-corentinj-real-time-voice-cloning.md",
+    "url": "/blog/posts/2026-04-01-repo-corentinj-real-time-voice-cloning.html",
+    "title": "corentinj-real-time-voice-cloning",
+    "date": "2026-04-01T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
-      "compvis",
-      "stable-diffusion",
-      "text-to-image",
-      "machine-learning"
+      "real-time",
+      "voice-cloning",
+      "gaming",
+      "virtual-assistants"
     ],
-    "excerpt": "learn about compvis/stable-diffusion, a powerful tool for generating high-quality images from text prompts. discover its features, installation, and practical examples in this comprehensive guide.",
-    "teaser": "/assets/images/2026-03-30-repo-compvis-stable-diffusion/teaser-ai.jpg"
+    "excerpt": "Learn about CorentinJ’s real-time voice cloning technology, its applications in gaming and virtual assistants, and how to set it up. Explore key features like customizable voice models.",
+    "teaser": "/assets/images/2026-04-01-repo-corentinj-real-time-voice-cloning/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-04-14-repo-ray-project-ray.md",
+    "url": "/blog/posts/2026-04-14-repo-ray-project-ray.html",
+    "title": "ray-project/Ray: Distributed Computing for Machine Learning",
+    "date": "2026-04-14T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "ray",
+      "distributed-training",
+      "machine-learning",
+      "hyperparameter-tuning"
+    ],
+    "excerpt": "Learn about Ray, an open-source library for scalable ML workflows. Explore its key features like distributed training and hyperparameter tuning with practical examples and best practices.",
+    "teaser": "/assets/images/2026-04-14-repo-ray-project-ray/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-01-20-package-pybullet.md",
+    "url": "/blog/posts/2026-01-20-package-pybullet.html",
+    "title": "PyBullet: Physics Simulation for Robotics and Reinforcement Learning",
+    "date": "2026-01-20T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "python",
+      "package",
+      "pypi",
+      "robotics",
+      "physics-simulation",
+      "reinforcement-learning",
+      "bullet-physics",
+      "urdf"
+    ],
+    "excerpt": "PyBullet is a Python binding for the Bullet physics engine, providing real-time physics simulation for robotics, reinforcement learning, and VR applications.",
+    "teaser": "/assets/images/2026-01-20-package-pybullet/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-04-05-repo-lllyasviel-fooocus.md",
+    "url": "/blog/posts/2026-04-05-repo-lllyasviel-fooocus.html",
+    "title": "lllyasviel/Fooocus: Python Library for Image Enhancement",
+    "date": "2026-04-05T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "image-processing",
+      "python-library",
+      "fooocus",
+      "forensic-analysis"
+    ],
+    "excerpt": "Discover how to use lllyasviel/Fooocus for real-time noise reduction, image sharpening, and advanced contrast adjustment in Python. Perfect for forensic analysis, medical imaging, and digital archiving.",
+    "teaser": "/assets/images/2026-04-05-repo-lllyasviel-fooocus/teaser-ai.jpg"
+  },
+  {
+    "filename": "2025-12-27-package-ollama.md",
+    "url": "/blog/posts/2025-12-27-package-ollama.html",
+    "title": "Ollama: Run Large Language Models Locally",
+    "date": "2025-12-27T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "ollama",
+      "llm",
+      "local-inference",
+      "python",
+      "llama",
+      "mistral",
+      "self-hosted"
+    ],
+    "excerpt": "A practical guide to Ollama, the tool for running open-source large language models like Llama, Mistral, and Gemma locally on your own machine.",
+    "teaser": "/assets/images/2025-12-27-package-ollama/teaser-ai.jpg"
+  },
+  {
+    "filename": "2026-02-10-package-dopamine-rl.md",
+    "url": "/blog/posts/2026-02-10-package-dopamine-rl.html",
+    "title": "Dopamine - Google's Research Framework for Reinforcement Learning",
+    "date": "2026-02-10T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "dopamine-rl",
+      "reinforcement-learning",
+      "deep-learning",
+      "dqn",
+      "rainbow",
+      "atari",
+      "google-research"
+    ],
+    "excerpt": "A guide to Google's Dopamine framework for fast prototyping of reinforcement learning algorithms, featuring DQN, Rainbow, C51, and IQN agents on Atari environments.",
+    "teaser": "/assets/images/2026-02-10-package-dopamine-rl/teaser-ai.jpg"
   }
 ]
