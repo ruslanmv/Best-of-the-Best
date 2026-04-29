@@ -533,9 +533,16 @@
   },
   {
     "kind": "paper",
-    "id": "fine-tuning a bert",
+    "id": "swinir",
     "version": 1,
-    "date": "2026-04-28",
-    "filename": "2026-04-28-paper-fine-tuning-a-bert.md"
+    "date": "2026-04-29",
+    "filename": "2026-04-29-paper-swinir.md"
+  },
+  {
+    "kind": "paper",
+    "id": "swinir",
+    "version": 1,
+    "date": "2026-04-29",
+    "filename": "2026-04-29-paper-swinir.md"
   }
 ]
