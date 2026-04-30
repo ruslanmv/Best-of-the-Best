@@ -540,9 +540,16 @@
   },
   {
     "kind": "paper",
-    "id": "swinir",
+    "id": "instant-ngp",
     "version": 1,
-    "date": "2026-04-29",
-    "filename": "2026-04-29-paper-swinir.md"
+    "date": "2026-04-30",
+    "filename": "2026-04-30-paper-instant-ngp.md"
+  },
+  {
+    "kind": "paper",
+    "id": "instant-ngp",
+    "version": 1,
+    "date": "2026-04-30",
+    "filename": "2026-04-30-paper-instant-ngp.md"
   }
 ]

@@ -431,6 +431,21 @@
     "teaser": "/assets/images/2026-01-27-package-tpot/teaser-ai.jpg"
   },
   {
+    "filename": "2026-04-30-paper-instant-ngp.md",
+    "url": "/blog/posts/2026-04-30-paper-instant-ngp.html",
+    "title": "instant-ngp: efficient neural network optimization",
+    "date": "2026-04-30T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "instant-ngp",
+      "neural-networks",
+      "optimization",
+      "deep-learning"
+    ],
+    "excerpt": "learn about instant-ngp, an optimized implementation of next generation proximal methods for deep learning. discover key features and practical usage in this guide.",
+    "teaser": "/assets/images/2026-04-30-paper-instant-ngp/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-03-31-repo-killianlucas-open-interpreter.md",
     "url": "/blog/posts/2026-03-31-repo-killianlucas-open-interpreter.html",
     "title": "killianlucas/open-interpreter: modern python library for dynamic code execution",
