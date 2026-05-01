@@ -771,6 +771,21 @@
     "teaser": "/assets/images/2025-12-25-package-langgraph/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-01-paper-mask2former.md",
+    "url": "/blog/posts/2026-05-01-paper-mask2former.html",
+    "title": "mask2former: advanced instance segmentation for computer vision",
+    "date": "2026-05-01T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "mask2former",
+      "instance-segmentation",
+      "panoptic-segmentation",
+      "computer-vision"
+    ],
+    "excerpt": "learn about mask2former, a powerful deep learning tool for medical imaging, autonomous driving, and more. discover its features, installation, and practical applications.",
+    "teaser": "/assets/images/2026-05-01-paper-mask2former/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-13-repo-ultralytics-ultralytics.md",
     "url": "/blog/posts/2026-04-13-repo-ultralytics-ultralytics.html",
     "title": "ultralytics/Ultralytics - Modern Computer Vision Library in Python",

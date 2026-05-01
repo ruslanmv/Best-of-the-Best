@@ -547,9 +547,16 @@
   },
   {
     "kind": "paper",
-    "id": "instant-ngp",
+    "id": "mask2former",
     "version": 1,
-    "date": "2026-04-30",
-    "filename": "2026-04-30-paper-instant-ngp.md"
+    "date": "2026-05-01",
+    "filename": "2026-05-01-paper-mask2former.md"
+  },
+  {
+    "kind": "paper",
+    "id": "mask2former",
+    "version": 1,
+    "date": "2026-05-01",
+    "filename": "2026-05-01-paper-mask2former.md"
   }
 ]
