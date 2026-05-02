@@ -554,9 +554,16 @@
   },
   {
     "kind": "paper",
-    "id": "mask2former",
+    "id": "hmr",
     "version": 1,
-    "date": "2026-05-01",
-    "filename": "2026-05-01-paper-mask2former.md"
+    "date": "2026-05-02",
+    "filename": "2026-05-02-paper-hmr.md"
+  },
+  {
+    "kind": "paper",
+    "id": "hmr",
+    "version": 1,
+    "date": "2026-05-02",
+    "filename": "2026-05-02-paper-hmr.md"
   }
 ]

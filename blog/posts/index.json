@@ -379,6 +379,22 @@
     "teaser": "/assets/images/2026-04-10-repo-laion-ai-open-assistant/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-02-paper-hmr.md",
+    "url": "/blog/posts/2026-05-02-paper-hmr.html",
+    "title": "hmr - hot-module-reload for efficient python development",
+    "date": "2026-05-02T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "hmr",
+      "hot-module-reload",
+      "python",
+      "flask",
+      "react"
+    ],
+    "excerpt": "Learn how to set up and use Hot Module Reload (HMR) in Python applications. Discover practical examples, best practices, and key features like real-time updates and seamless integration with Flask or React projects.",
+    "teaser": "/assets/images/2026-05-02-paper-hmr/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-02-15-repo-langchain.md",
     "url": "/blog/posts/2026-02-15-repo-langchain.html",
     "title": "LangChain - A Framework for Building LLM-Powered Applications",
