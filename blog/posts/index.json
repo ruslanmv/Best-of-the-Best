@@ -395,6 +395,21 @@
     "teaser": "/assets/images/2026-05-02-paper-hmr/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-03-paper-taming-transformers-for-high-resolution-image-synthesis.md",
+    "url": "/blog/posts/2026-05-03-paper-taming-transformers-for-high-resolution-image-synthesis.html",
+    "title": "taming-transformers-for-high-resolution-image-synthesis",
+    "date": "2026-05-03T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "taming-transformers",
+      "high-resolution-image-synthesis",
+      "image-generation",
+      "computer-vision"
+    ],
+    "excerpt": "Learn about taming transformers technology for generating, optimizing, and manipulating high-res images. Explore key features, use cases, and practical examples in this comprehensive guide.",
+    "teaser": "/assets/images/2026-05-03-paper-taming-transformers-for-high-resolution-image-synthesis/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-02-15-repo-langchain.md",
     "url": "/blog/posts/2026-02-15-repo-langchain.html",
     "title": "LangChain - A Framework for Building LLM-Powered Applications",

@@ -561,9 +561,16 @@
   },
   {
     "kind": "paper",
-    "id": "hmr",
+    "id": "taming transformers for high-resolution image synthesis",
     "version": 1,
-    "date": "2026-05-02",
-    "filename": "2026-05-02-paper-hmr.md"
+    "date": "2026-05-03",
+    "filename": "2026-05-03-paper-taming-transformers-for-high-resolution-image-synthesis.md"
+  },
+  {
+    "kind": "paper",
+    "id": "taming transformers for high-resolution image synthesis",
+    "version": 1,
+    "date": "2026-05-03",
+    "filename": "2026-05-03-paper-taming-transformers-for-high-resolution-image-synthesis.md"
   }
 ]
