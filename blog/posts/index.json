@@ -154,6 +154,22 @@
     "teaser": "/assets/images/2026-04-06-repo-stability-ai-stablediffusion/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-04-paper-semantic-segmentation.md",
+    "url": "/blog/posts/2026-05-04-paper-semantic-segmentation.html",
+    "title": "semantic-segmentation-overview-and-practices",
+    "date": "2026-05-04T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "semantic-segmentation",
+      "computer-vision",
+      "deeplabv3+",
+      "unet",
+      "medical-imaging"
+    ],
+    "excerpt": "Discover the basics of semantic segmentation, learn about key models like U-Net and DeepLabV3+, and explore practical examples in medical imaging and autonomous driving.",
+    "teaser": "/assets/images/2026-05-04-paper-semantic-segmentation/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-29-package-tensorflow-graphics.md",
     "url": "/blog/posts/2026-01-29-package-tensorflow-graphics.html",
     "title": "TensorFlow Graphics: Differentiable 3D Graphics Layers for Deep Learning",

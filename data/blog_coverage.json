@@ -568,9 +568,16 @@
   },
   {
     "kind": "paper",
-    "id": "taming transformers for high-resolution image synthesis",
+    "id": "semantic segmentation",
     "version": 1,
-    "date": "2026-05-03",
-    "filename": "2026-05-03-paper-taming-transformers-for-high-resolution-image-synthesis.md"
+    "date": "2026-05-04",
+    "filename": "2026-05-04-paper-semantic-segmentation.md"
+  },
+  {
+    "kind": "paper",
+    "id": "semantic segmentation",
+    "version": 1,
+    "date": "2026-05-04",
+    "filename": "2026-05-04-paper-semantic-segmentation.md"
   }
 ]
