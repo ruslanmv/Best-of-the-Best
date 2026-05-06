@@ -459,6 +459,21 @@
     "teaser": "/assets/images/2026-04-04-repo-jakevdp-pythondatasciencehandbook/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-06-paper-gaussian-splatting.md",
+    "url": "/blog/posts/2026-05-06-paper-gaussian-splatting.html",
+    "title": "understanding-gaussian-splatting-for-efficient-rendering",
+    "date": "2026-05-06T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "gaussian-splatting",
+      "point-clouds",
+      "real-time-rendering",
+      "computer-graphics"
+    ],
+    "excerpt": "Learn about Gaussian Splatting, a technique for efficient rendering of point clouds in real-time applications. Discover its key features and practical examples.",
+    "teaser": "/assets/images/2026-05-06-paper-gaussian-splatting/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-27-package-tpot.md",
     "url": "/blog/posts/2026-01-27-package-tpot.html",
     "title": "TPOT: Automated Machine Learning with Genetic Programming",

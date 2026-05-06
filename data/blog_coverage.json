@@ -575,9 +575,16 @@
   },
   {
     "kind": "paper",
-    "id": "semantic segmentation",
+    "id": "gaussian splatting",
     "version": 1,
-    "date": "2026-05-04",
-    "filename": "2026-05-04-paper-semantic-segmentation.md"
+    "date": "2026-05-06",
+    "filename": "2026-05-06-paper-gaussian-splatting.md"
+  },
+  {
+    "kind": "paper",
+    "id": "gaussian splatting",
+    "version": 1,
+    "date": "2026-05-06",
+    "filename": "2026-05-06-paper-gaussian-splatting.md"
   }
 ]
