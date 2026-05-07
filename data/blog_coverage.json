@@ -582,9 +582,16 @@
   },
   {
     "kind": "paper",
-    "id": "gaussian splatting",
+    "id": "bytetrack",
     "version": 1,
-    "date": "2026-05-06",
-    "filename": "2026-05-06-paper-gaussian-splatting.md"
+    "date": "2026-05-07",
+    "filename": "2026-05-07-paper-bytetrack.md"
+  },
+  {
+    "kind": "paper",
+    "id": "bytetrack",
+    "version": 1,
+    "date": "2026-05-07",
+    "filename": "2026-05-07-paper-bytetrack.md"
   }
 ]

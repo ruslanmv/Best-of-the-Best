@@ -52,6 +52,22 @@
     "teaser": "/assets/images/2025-12-27-package-ollama/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-07-paper-bytetrack.md",
+    "url": "/blog/posts/2026-05-07-paper-bytetrack.html",
+    "title": "byte-track-real-time-object-tracking-system",
+    "date": "2026-05-07T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "bytetrack",
+      "real-time-tracking",
+      "object-detection",
+      "surveillance-systems",
+      "autonomous-vehicles"
+    ],
+    "excerpt": "learn about bytetrack, an advanced real-time object tracking system for surveillance and autonomous vehicles. discover its key features and practical use cases.",
+    "teaser": "/assets/images/2026-05-07-paper-bytetrack/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-15-repo-google-research-google-research.md",
     "url": "/blog/posts/2026-04-15-repo-google-research-google-research.html",
     "title": "google-research/google research for machine learning projects",
