@@ -1062,6 +1062,21 @@
     "teaser": "/assets/images/2026-04-09-repo-coqui-ai-tts/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-08-paper-pifu.md",
+    "url": "/blog/posts/2026-05-08-paper-pifu.html",
+    "title": "pi-fu-for-3d-human-reconstruction-from-single-image",
+    "date": "2026-05-08T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "pifu",
+      "3d-reconstruction",
+      "virtual-try-on",
+      "character-animation"
+    ],
+    "excerpt": "Learn about PIFu, a deep-learning based method for detailed 3D human reconstruction from single images. Discover installation, core concepts, and practical examples in virtual try-ons and character animation.",
+    "teaser": "/assets/images/2026-05-08-paper-pifu/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-03-30-repo-compvis-stable-diffusion.md",
     "url": "/blog/posts/2026-03-30-repo-compvis-stable-diffusion.html",
     "title": "compvis/stable-diffusion: text-to-image generation model",

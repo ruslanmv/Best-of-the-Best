@@ -589,9 +589,16 @@
   },
   {
     "kind": "paper",
-    "id": "bytetrack",
+    "id": "pifu",
     "version": 1,
-    "date": "2026-05-07",
-    "filename": "2026-05-07-paper-bytetrack.md"
+    "date": "2026-05-08",
+    "filename": "2026-05-08-paper-pifu.md"
+  },
+  {
+    "kind": "paper",
+    "id": "pifu",
+    "version": 1,
+    "date": "2026-05-08",
+    "filename": "2026-05-08-paper-pifu.md"
   }
 ]
