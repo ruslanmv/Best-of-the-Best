@@ -596,9 +596,16 @@
   },
   {
     "kind": "paper",
-    "id": "pifu",
+    "id": "neural style transfer",
     "version": 1,
-    "date": "2026-05-08",
-    "filename": "2026-05-08-paper-pifu.md"
+    "date": "2026-05-09",
+    "filename": "2026-05-09-paper-neural-style-transfer.md"
+  },
+  {
+    "kind": "paper",
+    "id": "neural style transfer",
+    "version": 1,
+    "date": "2026-05-09",
+    "filename": "2026-05-09-paper-neural-style-transfer.md"
   }
 ]

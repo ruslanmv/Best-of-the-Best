@@ -235,6 +235,21 @@
     "teaser": "/assets/images/2026-04-08-repo-run-llama-llama-index/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-09-paper-neural-style-transfer.md",
+    "url": "/blog/posts/2026-05-09-paper-neural-style-transfer.html",
+    "title": "neural-style-transfer-explained-with-tensorflow",
+    "date": "2026-05-09T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "neural-style-transfer",
+      "tensorflow",
+      "deep-learning",
+      "artificial-intelligence"
+    ],
+    "excerpt": "learn how to implement neural style transfer using tensorflow. discover key concepts, best practices, and practical examples for artistic transformations.",
+    "teaser": "/assets/images/2026-05-09-paper-neural-style-transfer/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-07-package-bert-score.md",
     "url": "/blog/posts/2026-01-07-package-bert-score.html",
     "title": "BERTScore: Evaluating Text Generation with Contextual Embeddings",
