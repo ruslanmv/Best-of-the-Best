@@ -603,9 +603,16 @@
   },
   {
     "kind": "paper",
-    "id": "neural style transfer",
+    "id": "real-esrgan",
     "version": 1,
-    "date": "2026-05-09",
-    "filename": "2026-05-09-paper-neural-style-transfer.md"
+    "date": "2026-05-10",
+    "filename": "2026-05-10-paper-real-esrgan.md"
+  },
+  {
+    "kind": "paper",
+    "id": "real-esrgan",
+    "version": 1,
+    "date": "2026-05-10",
+    "filename": "2026-05-10-paper-real-esrgan.md"
   }
 ]

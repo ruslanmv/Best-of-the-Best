@@ -266,6 +266,23 @@
     "teaser": "/assets/images/2026-01-07-package-bert-score/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-10-paper-real-esrgan.md",
+    "url": "/blog/posts/2026-05-10-paper-real-esrgan.html",
+    "title": "real-esrgan super-resolution tool explained",
+    "date": "2026-05-10T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "real-esrgan",
+      "super-resolution",
+      "image-enhancement",
+      "video-upscaling",
+      "digital-arts",
+      "medical-imaging"
+    ],
+    "excerpt": "learn about real-esrgan, a top-tier super-resolution technology, its key features, installation process, and practical applications in digital arts, medical imaging & video upscaling.",
+    "teaser": "/assets/images/2026-05-10-paper-real-esrgan/teaser-ai.jpg"
+  },
+  {
     "filename": "2025-12-26-package-folium.md",
     "url": "/blog/posts/2025-12-26-package-folium.html",
     "title": "Folium: Create Interactive Leaflet.js Maps in Python",
