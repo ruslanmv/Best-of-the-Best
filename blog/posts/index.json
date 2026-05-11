@@ -350,6 +350,23 @@
     "teaser": "/assets/images/2026-01-21-package-scikit-video/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-11-tutorial-langgraph.md",
+    "url": "/blog/posts/2026-05-11-tutorial-langgraph.html",
+    "title": "exploring-langgraph-for-nlp-with-python",
+    "date": "2026-05-11T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "langgraph",
+      "nlp",
+      "python",
+      "graphs",
+      "sentiment-analysis",
+      "ne-recognition"
+    ],
+    "excerpt": "langgraph is a powerful python library for constructing graphs in nlp tasks. learn graph operations, integration with nltk and more examples.",
+    "teaser": "/assets/images/2026-05-11-tutorial-langgraph/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-23-paper-ldm.md",
     "url": "/blog/posts/2026-04-23-paper-ldm.html",
     "title": "ldm-package-for-facial-landmark-detection-and-face-recognition",

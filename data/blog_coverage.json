@@ -609,10 +609,17 @@
     "filename": "2026-05-10-paper-real-esrgan.md"
   },
   {
-    "kind": "paper",
-    "id": "real-esrgan",
+    "kind": "tutorial",
+    "id": "langgraph",
     "version": 1,
-    "date": "2026-05-10",
-    "filename": "2026-05-10-paper-real-esrgan.md"
+    "date": "2026-05-11",
+    "filename": "2026-05-11-tutorial-langgraph.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "langgraph",
+    "version": 1,
+    "date": "2026-05-11",
+    "filename": "2026-05-11-tutorial-langgraph.md"
   }
 ]
