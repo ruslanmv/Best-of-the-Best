@@ -617,9 +617,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "langgraph",
+    "id": "vc",
     "version": 1,
-    "date": "2026-05-11",
-    "filename": "2026-05-11-tutorial-langgraph.md"
+    "date": "2026-05-12",
+    "filename": "2026-05-12-tutorial-vc.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "vc",
+    "version": 1,
+    "date": "2026-05-12",
+    "filename": "2026-05-12-tutorial-vc.md"
   }
 ]

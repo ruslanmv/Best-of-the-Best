@@ -783,6 +783,21 @@
     "teaser": "/assets/images/2026-02-05-package-langfun/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-12-tutorial-vc.md",
+    "url": "/blog/posts/2026-05-12-tutorial-vc.html",
+    "title": "vc-tools-best-practices",
+    "date": "2026-05-12T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "vc",
+      "video-conferencing",
+      "pyzoom",
+      "best-practices"
+    ],
+    "excerpt": "Explore the basics of video conferencing tools, learn best practices for secure and efficient operation, and get practical examples using the pyZoom library.",
+    "teaser": "/assets/images/2026-05-12-tutorial-vc/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-15-package-earthengine-api.md",
     "url": "/blog/posts/2026-01-15-package-earthengine-api.html",
     "title": "Google Earth Engine API: Planetary-Scale Geospatial Analysis in Python",
