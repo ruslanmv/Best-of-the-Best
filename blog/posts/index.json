@@ -880,6 +880,21 @@
     "teaser": "/assets/images/2026-02-10-package-dopamine-rl/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-13-tutorial-yolov8.md",
+    "url": "/blog/posts/2026-05-13-tutorial-yolov8.html",
+    "title": "YOLOv8 - Real-Time Object Detection System Overview & Usage",
+    "date": "2026-05-13T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "yolov8",
+      "object-detection",
+      "real-time-processing",
+      "security-systems"
+    ],
+    "excerpt": "Learn about YOLOv8, a state-of-the-art real-time object detection system. Discover how to install and use it for security systems, autonomous driving, and more.",
+    "teaser": "/assets/images/2026-05-13-tutorial-yolov8/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-17-paper-image-segmentation.md",
     "url": "/blog/posts/2026-04-17-paper-image-segmentation.html",
     "title": "image-segmentation-with-pytorch-unet-opencv",
