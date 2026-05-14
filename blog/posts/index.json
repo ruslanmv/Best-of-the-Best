@@ -186,6 +186,22 @@
     "teaser": "/assets/images/2026-05-04-paper-semantic-segmentation/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-14-tutorial-building-your-own-federated-learning-algorithm.md",
+    "url": "/blog/posts/2026-05-14-tutorial-building-your-own-federated-learning-algorithm.html",
+    "title": "building-your-own-federated-learning-algorithm",
+    "date": "2026-05-14T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "federated-learning",
+      "tensorflow",
+      "machine-learning",
+      "python",
+      "privacy"
+    ],
+    "excerpt": "learn how to set up and implement a federated learning algorithm using tensorflow federated (tff) version 0.21.0 for secure data handling in healthcare, finance, and more.",
+    "teaser": "/assets/images/2026-05-14-tutorial-building-your-own-federated-learning-algorithm/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-29-package-tensorflow-graphics.md",
     "url": "/blog/posts/2026-01-29-package-tensorflow-graphics.html",
     "title": "TensorFlow Graphics: Differentiable 3D Graphics Layers for Deep Learning",

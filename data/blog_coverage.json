@@ -631,9 +631,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "yolov8",
+    "id": "building-your-own-federated-learning-algorithm",
     "version": 1,
-    "date": "2026-05-13",
-    "filename": "2026-05-13-tutorial-yolov8.md"
+    "date": "2026-05-14",
+    "filename": "2026-05-14-tutorial-building-your-own-federated-learning-algorithm.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "building-your-own-federated-learning-algorithm",
+    "version": 1,
+    "date": "2026-05-14",
+    "filename": "2026-05-14-tutorial-building-your-own-federated-learning-algorithm.md"
   }
 ]
