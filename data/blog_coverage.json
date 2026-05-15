@@ -638,9 +638,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "building-your-own-federated-learning-algorithm",
+    "id": "federated-learning-for-image-classification",
     "version": 1,
-    "date": "2026-05-14",
-    "filename": "2026-05-14-tutorial-building-your-own-federated-learning-algorithm.md"
+    "date": "2026-05-15",
+    "filename": "2026-05-15-tutorial-federated-learning-for-image-classification.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "federated-learning-for-image-classification",
+    "version": 1,
+    "date": "2026-05-15",
+    "filename": "2026-05-15-tutorial-federated-learning-for-image-classification.md"
   }
 ]
