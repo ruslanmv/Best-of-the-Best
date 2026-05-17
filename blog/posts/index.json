@@ -335,6 +335,21 @@
     "teaser": "/assets/images/2026-04-22-paper-moco/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-17-tutorial-federated-learning-for-text-generation.md",
+    "url": "/blog/posts/2026-05-17-tutorial-federated-learning-for-text-generation.html",
+    "title": "federated-learning-for-text-generation",
+    "date": "2026-05-17T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "federated-learning",
+      "text-generation",
+      "privacy-preserving",
+      "machine-learning"
+    ],
+    "excerpt": "Explore how federated learning enhances privacy while training text generation models. Dive into key features, use cases, and practical examples.",
+    "teaser": "/assets/images/2026-05-17-tutorial-federated-learning-for-text-generation/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-15-tutorial-federated-learning-for-image-classification.md",
     "url": "/blog/posts/2026-05-15-tutorial-federated-learning-for-image-classification.html",
     "title": "federated-learning-for-image-classification",

@@ -645,9 +645,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "federated-learning-for-image-classification",
+    "id": "federated-learning-for-text-generation",
     "version": 1,
-    "date": "2026-05-15",
-    "filename": "2026-05-15-tutorial-federated-learning-for-image-classification.md"
+    "date": "2026-05-17",
+    "filename": "2026-05-17-tutorial-federated-learning-for-text-generation.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "federated-learning-for-text-generation",
+    "version": 1,
+    "date": "2026-05-17",
+    "filename": "2026-05-17-tutorial-federated-learning-for-text-generation.md"
   }
 ]
