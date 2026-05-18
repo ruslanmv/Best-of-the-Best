@@ -652,9 +652,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "federated-learning-for-text-generation",
+    "id": "custom-federated-algorithms-part-1-introduction-to-the-federated-core",
     "version": 1,
-    "date": "2026-05-17",
-    "filename": "2026-05-17-tutorial-federated-learning-for-text-generation.md"
+    "date": "2026-05-18",
+    "filename": "2026-05-18-tutorial-custom-federated-algorithms-part-1-introduction-to-the-federated-core.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "custom-federated-algorithms-part-1-introduction-to-the-federated-core",
+    "version": 1,
+    "date": "2026-05-18",
+    "filename": "2026-05-18-tutorial-custom-federated-algorithms-part-1-introduction-to-the-federated-core.md"
   }
 ]
