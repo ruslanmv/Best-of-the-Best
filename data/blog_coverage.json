@@ -659,9 +659,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "custom-federated-algorithms-part-1-introduction-to-the-federated-core",
+    "id": "custom-federated-algorithms-part-2-implementing-federated-averaging",
     "version": 1,
-    "date": "2026-05-18",
-    "filename": "2026-05-18-tutorial-custom-federated-algorithms-part-1-introduction-to-the-federated-core.md"
+    "date": "2026-05-19",
+    "filename": "2026-05-19-tutorial-custom-federated-algorithms-part-2-implementing-federated-averaging.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "custom-federated-algorithms-part-2-implementing-federated-averaging",
+    "version": 1,
+    "date": "2026-05-19",
+    "filename": "2026-05-19-tutorial-custom-federated-algorithms-part-2-implementing-federated-averaging.md"
   }
 ]

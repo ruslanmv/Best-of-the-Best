@@ -921,6 +921,21 @@
     "teaser": "/assets/images/2026-01-10-package-pyglove/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-19-tutorial-custom-federated-algorithms-part-2-implementing-federated-averaging.md",
+    "url": "/blog/posts/2026-05-19-tutorial-custom-federated-algorithms-part-2-implementing-federated-averaging.html",
+    "title": "custom-federated-algorithms-part-2-implementing-federated-averaging",
+    "date": "2026-05-19T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "federated-learning",
+      "machine-learning",
+      "python",
+      "secure-model-training"
+    ],
+    "excerpt": "Learn to implement Federated Averaging using Custom Federated Algorithms package (1.2.3). Explore healthcare and finance examples for secure model training.",
+    "teaser": "/assets/images/2026-05-19-tutorial-custom-federated-algorithms-part-2-implementing-federated-averaging/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-30-paper-instant-ngp.md",
     "url": "/blog/posts/2026-04-30-paper-instant-ngp.html",
     "title": "instant-ngp: efficient neural network optimization",
