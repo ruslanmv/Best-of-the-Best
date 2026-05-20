@@ -239,6 +239,21 @@
     "teaser": "/assets/images/2026-04-11-repo-suno-ai-bark/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-20-tutorial-kornia.md",
+    "url": "/blog/posts/2026-05-20-tutorial-kornia.html",
+    "title": "kornia: Open-source Library for Computer Vision Tasks",
+    "date": "2026-05-20T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "kornia",
+      "computer-vision",
+      "pytorch",
+      "image-processing"
+    ],
+    "excerpt": "Discover kornia, an essential library for image and video processing. Learn how to install and use it effectively for complex tasks like geometric transformations and optical flow estimation.",
+    "teaser": "/assets/images/2026-05-20-tutorial-kornia/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-05-repo-lllyasviel-fooocus.md",
     "url": "/blog/posts/2026-04-05-repo-lllyasviel-fooocus.html",
     "title": "lllyasviel/Fooocus: Python Library for Image Enhancement",

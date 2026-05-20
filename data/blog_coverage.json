@@ -666,9 +666,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "custom-federated-algorithms-part-2-implementing-federated-averaging",
+    "id": "kornia",
     "version": 1,
-    "date": "2026-05-19",
-    "filename": "2026-05-19-tutorial-custom-federated-algorithms-part-2-implementing-federated-averaging.md"
+    "date": "2026-05-20",
+    "filename": "2026-05-20-tutorial-kornia.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "kornia",
+    "version": 1,
+    "date": "2026-05-20",
+    "filename": "2026-05-20-tutorial-kornia.md"
   }
 ]
