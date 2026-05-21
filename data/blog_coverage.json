@@ -673,9 +673,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "kornia",
+    "id": "contextualized-topic-models",
     "version": 1,
-    "date": "2026-05-20",
-    "filename": "2026-05-20-tutorial-kornia.md"
+    "date": "2026-05-21",
+    "filename": "2026-05-21-tutorial-contextualized-topic-models.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "contextualized-topic-models",
+    "version": 1,
+    "date": "2026-05-21",
+    "filename": "2026-05-21-tutorial-contextualized-topic-models.md"
   }
 ]

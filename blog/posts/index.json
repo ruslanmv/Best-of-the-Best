@@ -254,6 +254,21 @@
     "teaser": "/assets/images/2026-05-20-tutorial-kornia/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-21-tutorial-contextualized-topic-models.md",
+    "url": "/blog/posts/2026-05-21-tutorial-contextualized-topic-models.html",
+    "title": "contextualized-topic-models for advanced text analysis",
+    "date": "2026-05-21T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "topic-models",
+      "text-analysis",
+      "sentiment-analysis",
+      "document-summarization"
+    ],
+    "excerpt": "Learn about Contextualized Topic Models, their key features, practical implementation, and real-world use cases in sentiment analysis and document summarization.",
+    "teaser": "/assets/images/2026-05-21-tutorial-contextualized-topic-models/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-05-repo-lllyasviel-fooocus.md",
     "url": "/blog/posts/2026-04-05-repo-lllyasviel-fooocus.html",
     "title": "lllyasviel/Fooocus: Python Library for Image Enhancement",
