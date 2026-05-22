@@ -1259,6 +1259,21 @@
     "teaser": "/assets/images/2026-04-21-paper-pix2pix/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-22-tutorial-dm-control.md",
+    "url": "/blog/posts/2026-05-22-tutorial-dm-control.html",
+    "title": "dm_control: Python Library for Reinforcement Learning Simulations",
+    "date": "2026-05-22T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "dm_control",
+      "reinforcement-learning",
+      "deepmind",
+      "robotics"
+    ],
+    "excerpt": "Explore dmcontrol, a powerful Python library by DeepMind for designing and testing RL algorithms. Learn key features, installation, examples, and best practices.",
+    "teaser": "/assets/images/2026-05-22-tutorial-dm-control/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-29-package-tensorflow-graphics.md",
     "url": "/blog/posts/2026-01-29-package-tensorflow-graphics.html",
     "title": "TensorFlow Graphics: Differentiable 3D Graphics Layers for Deep Learning",

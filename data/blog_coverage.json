@@ -680,9 +680,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "contextualized-topic-models",
+    "id": "dm-control",
     "version": 1,
-    "date": "2026-05-21",
-    "filename": "2026-05-21-tutorial-contextualized-topic-models.md"
+    "date": "2026-05-22",
+    "filename": "2026-05-22-tutorial-dm-control.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "dm-control",
+    "version": 1,
+    "date": "2026-05-22",
+    "filename": "2026-05-22-tutorial-dm-control.md"
   }
 ]
