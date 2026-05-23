@@ -687,9 +687,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "dm-control",
+    "id": "mujoco",
     "version": 1,
-    "date": "2026-05-22",
-    "filename": "2026-05-22-tutorial-dm-control.md"
+    "date": "2026-05-23",
+    "filename": "2026-05-23-tutorial-mujoco.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "mujoco",
+    "version": 1,
+    "date": "2026-05-23",
+    "filename": "2026-05-23-tutorial-mujoco.md"
   }
 ]

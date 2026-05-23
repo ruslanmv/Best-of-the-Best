@@ -490,6 +490,22 @@
     "teaser": "/assets/images/2026-05-13-tutorial-yolov8/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-23-tutorial-mujoco.md",
+    "url": "/blog/posts/2026-05-23-tutorial-mujoco.html",
+    "title": "mujocona381-simulation-and-tutorial",
+    "date": "2026-05-23T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "mujocon",
+      "physics-engine",
+      "robotics",
+      "machine-learning",
+      "simulation"
+    ],
+    "excerpt": "Learn how to use MuJoCo 3.8.1 for physics simulations in robotics, machine learning & computer graphics. Explore setup, core concepts & practical examples.",
+    "teaser": "/assets/images/2026-05-23-tutorial-mujoco/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-08-package-gin-config.md",
     "url": "/blog/posts/2026-01-08-package-gin-config.html",
     "title": "Gin Config: Google's Lightweight Configuration Framework for Python",
