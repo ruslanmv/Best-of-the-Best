@@ -15,6 +15,21 @@
     "teaser": "/assets/images/2026-04-14-repo-ray-project-ray/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-24-tutorial-ollama.md",
+    "url": "/blog/posts/2026-05-24-tutorial-ollama.html",
+    "title": "ollama: Python Library for Automated Machine Learning",
+    "date": "2026-05-24T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "python",
+      "machine-learning",
+      "automated",
+      "ollama"
+    ],
+    "excerpt": "Learn about ollama, a user-friendly Python library that streamlines machine learning tasks. Discover setup, core concepts, and practical examples in this comprehensive guide.",
+    "teaser": "/assets/images/2026-05-24-tutorial-ollama/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-02-12-repo-ollama.md",
     "url": "/blog/posts/2026-02-12-repo-ollama.html",
     "title": "Ollama - Run Large Language Models Locally",
