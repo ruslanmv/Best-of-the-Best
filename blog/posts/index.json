@@ -458,6 +458,21 @@
     "teaser": "/assets/images/2026-02-26-repo-whisper/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-25-tutorial-langchain.md",
+    "url": "/blog/posts/2026-05-25-tutorial-langchain.html",
+    "title": "langchain: framework for building apps with large language models",
+    "date": "2026-05-25T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "langchain",
+      "large-language-models",
+      "api",
+      "hugging-face-transformers"
+    ],
+    "excerpt": "Learn about LangChain, a user-friendly API for integrating LLMs. Discover its features like modular architecture and support for Hugging Face Transformers in this comprehensive guide.",
+    "teaser": "/assets/images/2026-05-25-tutorial-langchain/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-10-paper-real-esrgan.md",
     "url": "/blog/posts/2026-05-10-paper-real-esrgan.html",
     "title": "real-esrgan super-resolution tool explained",
