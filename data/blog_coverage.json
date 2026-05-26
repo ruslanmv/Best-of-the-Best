@@ -708,9 +708,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "langchain",
+    "id": "notebookllama",
     "version": 1,
-    "date": "2026-05-25",
-    "filename": "2026-05-25-tutorial-langchain.md"
+    "date": "2026-05-26",
+    "filename": "2026-05-26-tutorial-notebookllama.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "notebookllama",
+    "version": 1,
+    "date": "2026-05-26",
+    "filename": "2026-05-26-tutorial-notebookllama.md"
   }
 ]

@@ -866,6 +866,23 @@
     "teaser": "/assets/images/2026-01-15-package-earthengine-api/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-26-tutorial-notebookllama.md",
+    "url": "/blog/posts/2026-05-26-tutorial-notebookllama.html",
+    "title": "notebookllama - python library for managing jupyter notebooks",
+    "date": "2026-05-26T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "notebookllama",
+      "python",
+      "jupyter-notebooks",
+      "data-science",
+      "automation",
+      "programming"
+    ],
+    "excerpt": "learn how to use notebookllama, a powerful python library that simplifies the creation and management of jupyter notebooks. discover key features like instant creation, dynamic cell management, and export options.",
+    "teaser": "/assets/images/2026-05-26-tutorial-notebookllama/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-27-package-tpot.md",
     "url": "/blog/posts/2026-01-27-package-tpot.html",
     "title": "TPOT: Automated Machine Learning with Genetic Programming",
