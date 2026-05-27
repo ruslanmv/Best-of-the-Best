@@ -1125,6 +1125,21 @@
     "teaser": "/assets/images/2026-05-02-paper-hmr/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-27-tutorial-anomalib.md",
+    "url": "/blog/posts/2026-05-27-tutorial-anomalib.html",
+    "title": "anomalib: open-source package for anomaly detection",
+    "date": "2026-05-27T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "anomaly-detection",
+      "deep-learning",
+      "python-package",
+      "time-series-analysis"
+    ],
+    "excerpt": "learn about anomalib, a powerful python library supporting various algorithms and deep learning frameworks. discover how to install, use, and integrate it into your projects.",
+    "teaser": "/assets/images/2026-05-27-tutorial-anomalib/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-20-package-pybullet.md",
     "url": "/blog/posts/2026-01-20-package-pybullet.html",
     "title": "PyBullet: Physics Simulation for Robotics and Reinforcement Learning",
