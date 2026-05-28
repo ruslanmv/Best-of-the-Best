@@ -1,6 +1,6 @@
 {
   "stats": {
-    "last_updated": "2026-05-27 08:54",
+    "last_updated": "2026-05-28 09:16",
     "total_courses": 10,
     "total_papers": 392,
     "total_tutorials": 295
@@ -9,7 +9,7 @@
     {
       "title": "TPOT",
       "url": "https://doi.org/10.1007/978-3-030-05318-5_8",
-      "date": "2026-05-27T08:54:41.263305",
+      "date": "2026-05-28T09:16:42.447946",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -22,7 +22,7 @@
     {
       "title": "NeuSpell",
       "url": "https://doi.org/10.18653/v1/2020.emnlp-demos.21",
-      "date": "2026-05-27T08:54:41.263302",
+      "date": "2026-05-28T09:16:42.447943",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -182,7 +182,7 @@
     {
       "title": "TPOT",
       "url": "https://doi.org/10.1007/978-3-030-05318-5_8",
-      "date": "2026-05-27T08:54:41.263305",
+      "date": "2026-05-28T09:16:42.447946",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -195,7 +195,7 @@
     {
       "title": "NeuSpell",
       "url": "https://doi.org/10.18653/v1/2020.emnlp-demos.21",
-      "date": "2026-05-27T08:54:41.263302",
+      "date": "2026-05-28T09:16:42.447943",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -208,7 +208,7 @@
     {
       "title": "Contextualized Topic Models",
       "url": "https://doi.org/10.18653/v1/2021.eacl-main.143",
-      "date": "2026-05-27T08:54:41.263300",
+      "date": "2026-05-28T09:16:42.447941",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -221,7 +221,7 @@
     {
       "title": "XGBoost",
       "url": "https://doi.org/10.1145/2939672.2939785",
-      "date": "2026-05-27T08:54:41.263295",
+      "date": "2026-05-28T09:16:42.447936",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -234,7 +234,7 @@
     {
       "title": "Cleanlab",
       "url": "https://doi.org/10.1613/jair.1.12125",
-      "date": "2026-05-27T08:54:41.263293",
+      "date": "2026-05-28T09:16:42.447933",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -247,7 +247,7 @@
     {
       "title": "PyTerrier",
       "url": "https://doi.org/10.1145/3459637.3482013",
-      "date": "2026-05-27T08:54:41.263290",
+      "date": "2026-05-28T09:16:42.447930",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -260,7 +260,7 @@
     {
       "title": "deep-significance",
       "url": "https://doi.org/10.18653/v1/p19-1266",
-      "date": "2026-05-27T08:54:41.263288",
+      "date": "2026-05-28T09:16:42.447928",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -273,7 +273,7 @@
     {
       "title": "Kornia",
       "url": "https://doi.org/10.1109/WACV45572.2020.9093363",
-      "date": "2026-05-27T08:54:41.263285",
+      "date": "2026-05-28T09:16:42.447925",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -286,7 +286,7 @@
     {
       "title": "SAHI",
       "url": "https://doi.org/10.1109/ICIP46576.2022.9897990",
-      "date": "2026-05-27T08:54:41.263283",
+      "date": "2026-05-28T09:16:42.447923",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -299,7 +299,7 @@
     {
       "title": "py-irt",
       "url": "https://doi.org/10.18653/v1/2021.acl-long.346",
-      "date": "2026-05-27T08:54:41.263280",
+      "date": "2026-05-28T09:16:42.447920",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -312,7 +312,7 @@
     {
       "title": "MMOCR",
       "url": "https://doi.org/10.1145/3474085.3478328",
-      "date": "2026-05-27T08:54:41.263278",
+      "date": "2026-05-28T09:16:42.447918",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -325,7 +325,7 @@
     {
       "title": "MMRotate",
       "url": "https://doi.org/10.1145/3503161.3548541",
-      "date": "2026-05-27T08:54:41.263275",
+      "date": "2026-05-28T09:16:42.447915",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -338,7 +338,7 @@
     {
       "title": "PyTorchVideo",
       "url": "https://doi.org/10.1145/3474085.3478329",
-      "date": "2026-05-27T08:54:41.263273",
+      "date": "2026-05-28T09:16:42.447913",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -351,7 +351,7 @@
     {
       "title": "Scenic",
       "url": "https://doi.org/10.1109/CVPR52688.2022.02070",
-      "date": "2026-05-27T08:54:41.263270",
+      "date": "2026-05-28T09:16:42.447910",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -364,7 +364,7 @@
     {
       "title": "EfficientDet",
       "url": "https://doi.org/10.1109/CVPR42600.2020.01079",
-      "date": "2026-05-27T08:54:41.263266",
+      "date": "2026-05-28T09:16:42.447905",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -377,7 +377,7 @@
     {
       "title": "TensorFlow Graphics",
       "url": "https://doi.org/10.1145/3450508.3464595",
-      "date": "2026-05-27T08:54:41.263263",
+      "date": "2026-05-28T09:16:42.447903",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -390,7 +390,7 @@
     {
       "title": "Classify text with BERT",
       "url": "https://doi.org/10.18653/v1/N19-1423",
-      "date": "2026-05-27T08:54:41.263259",
+      "date": "2026-05-28T09:16:42.447898",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -403,7 +403,7 @@
     {
       "title": "Image segmentation",
       "url": "http://doi.org/10.1007/978-3-319-24574-4_28",
-      "date": "2026-05-27T08:54:41.263256",
+      "date": "2026-05-28T09:16:42.447895",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -416,7 +416,7 @@
     {
       "title": "Pix2Pix",
       "url": "https://doi.org/10.1109/CVPR.2017.632",
-      "date": "2026-05-27T08:54:41.263254",
+      "date": "2026-05-28T09:16:42.447893",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -429,7 +429,7 @@
     {
       "title": "CycleGAN",
       "url": "https://doi.org/10.1109/ICCV.2017.244",
-      "date": "2026-05-27T08:54:41.263251",
+      "date": "2026-05-28T09:16:42.447890",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -442,7 +442,7 @@
     {
       "title": "AudioLM",
       "url": "https://doi.org/10.1109/TASLP.2023.3288409",
-      "date": "2026-05-27T08:54:41.263248",
+      "date": "2026-05-28T09:16:42.447888",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -455,7 +455,7 @@
     {
       "title": "FELIX",
       "url": "https://doi.org/10.1007/978-3-031-70359-1_14",
-      "date": "2026-05-27T08:54:41.263246",
+      "date": "2026-05-28T09:16:42.447885",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -468,7 +468,7 @@
     {
       "title": "Score Jacobian Chaining",
       "url": "https://doi.org/10.1109/CVPR52729.2023.01214",
-      "date": "2026-05-27T08:54:41.263243",
+      "date": "2026-05-28T09:16:42.447883",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -481,7 +481,7 @@
     {
       "title": "CodeTalker",
       "url": "https://doi.org/10.1109/CVPR52729.2023.01229",
-      "date": "2026-05-27T08:54:41.263241",
+      "date": "2026-05-28T09:16:42.447878",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -494,7 +494,7 @@
     {
       "title": "DifFace",
       "url": "https://doi.org/10.1109/TPAMI.2024.3432651",
-      "date": "2026-05-27T08:54:41.263236",
+      "date": "2026-05-28T09:16:42.447875",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -507,7 +507,7 @@
     {
       "title": "BiRefNet",
       "url": "https://doi.org/10.26599/AIR.2024.9150038",
-      "date": "2026-05-27T08:54:41.263234",
+      "date": "2026-05-28T09:16:42.447873",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -520,7 +520,7 @@
     {
       "title": "BasicVSR++",
       "url": "https://doi.org/10.1109/CVPR52688.2022.00588",
-      "date": "2026-05-27T08:54:41.263230",
+      "date": "2026-05-28T09:16:42.447870",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -533,7 +533,7 @@
     {
       "title": "RealBasicVSR",
       "url": "https://doi.org/10.1109/CVPR52688.2022.00587",
-      "date": "2026-05-27T08:54:41.263227",
+      "date": "2026-05-28T09:16:42.447867",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -546,7 +546,7 @@
     {
       "title": "ROMP",
       "url": "https://doi.org/10.1109/ICCV48922.2021.01099",
-      "date": "2026-05-27T08:54:41.263225",
+      "date": "2026-05-28T09:16:42.447863",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -559,7 +559,7 @@
     {
       "title": "FateZero",
       "url": "https://doi.org/10.1109/ICCV51070.2023.01460",
-      "date": "2026-05-27T08:54:41.263222",
+      "date": "2026-05-28T09:16:42.447860",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -572,7 +572,7 @@
     {
       "title": "HMR",
       "url": "https://doi.org/10.1109/CVPR.2018.00744",
-      "date": "2026-05-27T08:54:41.263218",
+      "date": "2026-05-28T09:16:42.447856",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -585,7 +585,7 @@
     {
       "title": "FollowYourPose",
       "url": "https://doi.org/10.1609/aaai.v38i5.28206",
-      "date": "2026-05-27T08:54:41.263215",
+      "date": "2026-05-28T09:16:42.447853",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -598,7 +598,7 @@
     {
       "title": "SCALE",
       "url": "https://doi.org/10.1109/CVPR46437.2021.01582",
-      "date": "2026-05-27T08:54:41.263213",
+      "date": "2026-05-28T09:16:42.447851",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -611,7 +611,7 @@
     {
       "title": "CAPE",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00650",
-      "date": "2026-05-27T08:54:41.263210",
+      "date": "2026-05-28T09:16:42.447848",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -624,7 +624,7 @@
     {
       "title": "SPIN",
       "url": "https://doi.org/10.1109/ICCV.2019.00234",
-      "date": "2026-05-27T08:54:41.263208",
+      "date": "2026-05-28T09:16:42.447846",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -637,7 +637,7 @@
     {
       "title": "AlphaPose",
       "url": "https://doi.org/10.1109/TPAMI.2022.3222784",
-      "date": "2026-05-27T08:54:41.263205",
+      "date": "2026-05-28T09:16:42.447843",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -650,7 +650,7 @@
     {
       "title": "VIBE",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00530",
-      "date": "2026-05-27T08:54:41.263203",
+      "date": "2026-05-28T09:16:42.447841",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -663,7 +663,7 @@
     {
       "title": "Background Matting V2",
       "url": "https://doi.org/10.1109/CVPR46437.2021.00865",
-      "date": "2026-05-27T08:54:41.263200",
+      "date": "2026-05-28T09:16:42.447838",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -676,7 +676,7 @@
     {
       "title": "RITM",
       "url": "https://doi.org/10.1109/ICIP46576.2022.9897365",
-      "date": "2026-05-27T08:54:41.263198",
+      "date": "2026-05-28T09:16:42.447836",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -689,7 +689,7 @@
     {
       "title": "f-BRS",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00865",
-      "date": "2026-05-27T08:54:41.263195",
+      "date": "2026-05-28T09:16:42.447833",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -702,7 +702,7 @@
     {
       "title": "DeepLabCut",
       "url": "https://doi.org/10.1038/s41593-018-0209-y",
-      "date": "2026-05-27T08:54:41.263193",
+      "date": "2026-05-28T09:16:42.447831",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -715,7 +715,7 @@
     {
       "title": "T2M-GPT",
       "url": "https://doi.org/10.1109/CVPR52729.2023.01415",
-      "date": "2026-05-27T08:54:41.263190",
+      "date": "2026-05-28T09:16:42.447828",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -728,7 +728,7 @@
     {
       "title": "VideoReTalking",
       "url": "https://doi.org/10.1145/3550469.3555399",
-      "date": "2026-05-27T08:54:41.263188",
+      "date": "2026-05-28T09:16:42.447825",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -741,7 +741,7 @@
     {
       "title": "SadTalker",
       "url": "https://doi.org/10.1109/CVPR52729.2023.00836",
-      "date": "2026-05-27T08:54:41.263183",
+      "date": "2026-05-28T09:16:42.447821",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -754,7 +754,7 @@
     {
       "title": "Gaussian Splatting",
       "url": "https://doi.org/10.1145/3592433",
-      "date": "2026-05-27T08:54:41.263181",
+      "date": "2026-05-28T09:16:42.447818",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -767,7 +767,7 @@
     {
       "title": "Tune-A-Video",
       "url": "https://doi.org/10.1109/ICCV51070.2023.00701",
-      "date": "2026-05-27T08:54:41.263178",
+      "date": "2026-05-28T09:16:42.447816",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -780,7 +780,7 @@
     {
       "title": "Text2Video-Zero",
       "url": "https://doi.org/10.1109/ICCV51070.2023.01462",
-      "date": "2026-05-27T08:54:41.263176",
+      "date": "2026-05-28T09:16:42.447813",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -793,7 +793,7 @@
     {
       "title": "NAFNet",
       "url": "https://doi.org/10.1007/978-3-031-20071-7_2",
-      "date": "2026-05-27T08:54:41.263173",
+      "date": "2026-05-28T09:16:42.447811",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -806,7 +806,7 @@
     {
       "title": "PyMAF-X",
       "url": "https://doi.org/10.1109/TPAMI.2023.3271691",
-      "date": "2026-05-27T08:54:41.263171",
+      "date": "2026-05-28T09:16:42.447808",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -819,7 +819,7 @@
     {
       "title": "HybrIK",
       "url": "https://doi.org/10.1109/CVPR46437.2021.00339",
-      "date": "2026-05-27T08:54:41.263168",
+      "date": "2026-05-28T09:16:42.447806",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -832,7 +832,7 @@
     {
       "title": "IDE-3D",
       "url": "https://doi.org/10.1145/3550454.3555506",
-      "date": "2026-05-27T08:54:41.263166",
+      "date": "2026-05-28T09:16:42.447803",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -845,7 +845,7 @@
     {
       "title": "StyleSDF",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01314",
-      "date": "2026-05-27T08:54:41.263163",
+      "date": "2026-05-28T09:16:42.447801",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -858,7 +858,7 @@
     {
       "title": "EPro-PnP",
       "url": "https://doi.org/10.1109/TPAMI.2024.3354997",
-      "date": "2026-05-27T08:54:41.263161",
+      "date": "2026-05-28T09:16:42.447798",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -871,7 +871,7 @@
     {
       "title": "UniFormerV2",
       "url": "https://doi.org/10.1109/ICCV51070.2023.00157",
-      "date": "2026-05-27T08:54:41.263158",
+      "date": "2026-05-28T09:16:42.447796",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -884,7 +884,7 @@
     {
       "title": "Panini-Net",
       "url": "https://doi.org/10.1609/aaai.v36i3.20159",
-      "date": "2026-05-27T08:54:41.263156",
+      "date": "2026-05-28T09:16:42.447793",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -897,7 +897,7 @@
     {
       "title": "Thin-Plate Spline Motion Model",
       "url": "https://doi.org/10.1109/CVPR52688.2022.00364",
-      "date": "2026-05-27T08:54:41.263153",
+      "date": "2026-05-28T09:16:42.447788",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -910,7 +910,7 @@
     {
       "title": "E2FGVI",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01704",
-      "date": "2026-05-27T08:54:41.263147",
+      "date": "2026-05-28T09:16:42.447784",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -923,7 +923,7 @@
     {
       "title": "PTI",
       "url": "https://doi.org/10.1145/3544777",
-      "date": "2026-05-27T08:54:41.263145",
+      "date": "2026-05-28T09:16:42.447781",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -936,7 +936,7 @@
     {
       "title": "PoolFormer",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01055",
-      "date": "2026-05-27T08:54:41.263142",
+      "date": "2026-05-28T09:16:42.447779",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -949,7 +949,7 @@
     {
       "title": "ECON",
       "url": "https://doi.org/10.1109/CVPR52729.2023.00057",
-      "date": "2026-05-27T08:54:41.263140",
+      "date": "2026-05-28T09:16:42.447776",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -962,7 +962,7 @@
     {
       "title": "ICON",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01294",
-      "date": "2026-05-27T08:54:41.263137",
+      "date": "2026-05-28T09:16:42.447774",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -975,7 +975,7 @@
     {
       "title": "LIDA",
       "url": "https://doi.org/10.18653/v1/2023.acl-demo.11",
-      "date": "2026-05-27T08:54:41.263135",
+      "date": "2026-05-28T09:16:42.447771",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -988,7 +988,7 @@
     {
       "title": "GLIP",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01069",
-      "date": "2026-05-27T08:54:41.263132",
+      "date": "2026-05-28T09:16:42.447769",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1001,7 +1001,7 @@
     {
       "title": "VQ-Diffusion",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01043",
-      "date": "2026-05-27T08:54:41.263130",
+      "date": "2026-05-28T09:16:42.447766",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1014,7 +1014,7 @@
     {
       "title": "Bringing Old Photo Back to Life",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00282",
-      "date": "2026-05-27T08:54:41.263127",
+      "date": "2026-05-28T09:16:42.447764",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1027,7 +1027,7 @@
     {
       "title": "MTTR",
       "url": "https://doi.org/10.1109/CVPR52688.2022.00493",
-      "date": "2026-05-27T08:54:41.263125",
+      "date": "2026-05-28T09:16:42.447761",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1040,7 +1040,7 @@
     {
       "title": "Swin2SR",
       "url": "https://doi.org/10.1007/978-3-031-25063-7_42",
-      "date": "2026-05-27T08:54:41.263122",
+      "date": "2026-05-28T09:16:42.447759",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1053,7 +1053,7 @@
     {
       "title": "VRT",
       "url": "https://doi.org/10.1109/TIP.2024.3372454",
-      "date": "2026-05-27T08:54:41.263120",
+      "date": "2026-05-28T09:16:42.447756",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1066,7 +1066,7 @@
     {
       "title": "SwinIR",
       "url": "https://doi.org/10.1109/ICCVW54120.2021.00210",
-      "date": "2026-05-27T08:54:41.263117",
+      "date": "2026-05-28T09:16:42.447754",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1079,7 +1079,7 @@
     {
       "title": "JoJoGAN",
       "url": "https://doi.org/10.1007/978-3-031-19787-1_8",
-      "date": "2026-05-27T08:54:41.263113",
+      "date": "2026-05-28T09:16:42.447749",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1092,7 +1092,7 @@
     {
       "title": "RVM",
       "url": "https://doi.org/10.1109/WACV51458.2022.00319",
-      "date": "2026-05-27T08:54:41.263110",
+      "date": "2026-05-28T09:16:42.447746",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1105,7 +1105,7 @@
     {
       "title": "LaMa",
       "url": "https://doi.org/10.1109/WACV51458.2022.00323",
-      "date": "2026-05-27T08:54:41.263108",
+      "date": "2026-05-28T09:16:42.447744",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1118,7 +1118,7 @@
     {
       "title": "Instant-NGP",
       "url": "https://doi.org/10.1145/3528223.3530127",
-      "date": "2026-05-27T08:54:41.263105",
+      "date": "2026-05-28T09:16:42.447741",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1131,7 +1131,7 @@
     {
       "title": "StyleCariGAN",
       "url": "https://doi.org/10.1145/3450626.3459860",
-      "date": "2026-05-27T08:54:41.263103",
+      "date": "2026-05-28T09:16:42.447739",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1144,7 +1144,7 @@
     {
       "title": "Live Speech Portraits",
       "url": "https://doi.org/10.1145/3478513.3480484",
-      "date": "2026-05-27T08:54:41.263100",
+      "date": "2026-05-28T09:16:42.447736",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1157,7 +1157,7 @@
     {
       "title": "GFPGAN",
       "url": "https://doi.org/10.1109/CVPR46437.2021.00905",
-      "date": "2026-05-27T08:54:41.263098",
+      "date": "2026-05-28T09:16:42.447734",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1170,7 +1170,7 @@
     {
       "title": "Real-ESRGAN",
       "url": "https://doi.org/10.1109/ICCVW54120.2021.00217",
-      "date": "2026-05-27T08:54:41.263095",
+      "date": "2026-05-28T09:16:42.447731",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1183,7 +1183,7 @@
     {
       "title": "Lifespan Age Transformation Synthesis",
       "url": "https://doi.org/10.1007/978-3-030-58539-6_44",
-      "date": "2026-05-27T08:54:41.263091",
+      "date": "2026-05-28T09:16:42.447729",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1196,7 +1196,7 @@
     {
       "title": "InterFaceGAN",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00926",
-      "date": "2026-05-27T08:54:41.263088",
+      "date": "2026-05-28T09:16:42.447726",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1209,7 +1209,7 @@
     {
       "title": "HiGAN",
       "url": "https://doi.org/10.1007/s11263-020-01429-5",
-      "date": "2026-05-27T08:54:41.263086",
+      "date": "2026-05-28T09:16:42.447722",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1222,7 +1222,7 @@
     {
       "title": "SeFa",
       "url": "https://doi.org/10.1109/CVPR46437.2021.00158",
-      "date": "2026-05-27T08:54:41.263083",
+      "date": "2026-05-28T09:16:42.447719",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1235,7 +1235,7 @@
     {
       "title": "Rewriting a Deep Generative Model",
       "url": "https://doi.org/10.1007/978-3-030-58452-8_21",
-      "date": "2026-05-27T08:54:41.263081",
+      "date": "2026-05-28T09:16:42.447717",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1248,7 +1248,7 @@
     {
       "title": "Anycost GAN",
       "url": "https://doi.org/10.1109/CVPR46437.2021.01474",
-      "date": "2026-05-27T08:54:41.263078",
+      "date": "2026-05-28T09:16:42.447714",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1261,7 +1261,7 @@
     {
       "title": "NeX",
       "url": "https://doi.org/10.1109/CVPR46437.2021.00843",
-      "date": "2026-05-27T08:54:41.263074",
+      "date": "2026-05-28T09:16:42.447709",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1274,7 +1274,7 @@
     {
       "title": "TediGAN",
       "url": "https://doi.org/10.1109/CVPR46437.2021.00229",
-      "date": "2026-05-27T08:54:41.263072",
+      "date": "2026-05-28T09:16:42.447706",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1287,7 +1287,7 @@
     {
       "title": "SimSwap",
       "url": "https://doi.org/10.1145/3394171.3413630",
-      "date": "2026-05-27T08:54:41.263069",
+      "date": "2026-05-28T09:16:42.447704",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1300,7 +1300,7 @@
     {
       "title": "Parallel WaveGAN",
       "url": "https://doi.org/10.1109/ICASSP40776.2020.9053795",
-      "date": "2026-05-27T08:54:41.263066",
+      "date": "2026-05-28T09:16:42.447701",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1313,7 +1313,7 @@
     {
       "title": "StyleCLIP",
       "url": "https://doi.org/10.1109/ICCV48922.2021.00209",
-      "date": "2026-05-27T08:54:41.263064",
+      "date": "2026-05-28T09:16:42.447696",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1326,7 +1326,7 @@
     {
       "title": "StyleGAN-NADA",
       "url": "https://doi.org/10.1145/3528223.3530164",
-      "date": "2026-05-27T08:54:41.263060",
+      "date": "2026-05-28T09:16:42.447693",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1339,7 +1339,7 @@
     {
       "title": "NeRViS",
       "url": "https://doi.org/10.1109/ICCV48922.2021.00230",
-      "date": "2026-05-27T08:54:41.263057",
+      "date": "2026-05-28T09:16:42.447691",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1352,7 +1352,7 @@
     {
       "title": "AnimeGANv3",
       "url": "http://doi.org/10.1587/transinf.2023EDP7061",
-      "date": "2026-05-27T08:54:41.263055",
+      "date": "2026-05-28T09:16:42.447688",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1365,7 +1365,7 @@
     {
       "title": "AnimeGANv2",
       "url": "https://doi.org/10.1007/978-981-15-5577-0_18",
-      "date": "2026-05-27T08:54:41.263052",
+      "date": "2026-05-28T09:16:42.447686",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1378,7 +1378,7 @@
     {
       "title": "HyperStyle",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01796",
-      "date": "2026-05-27T08:54:41.263049",
+      "date": "2026-05-28T09:16:42.447683",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1391,7 +1391,7 @@
     {
       "title": "SAM",
       "url": "https://doi.org/10.1145/3450626.3459805",
-      "date": "2026-05-27T08:54:41.263047",
+      "date": "2026-05-28T09:16:42.447681",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1404,7 +1404,7 @@
     {
       "title": "encoder4editing",
       "url": "https://doi.org/10.1145/3450626.3459838",
-      "date": "2026-05-27T08:54:41.263044",
+      "date": "2026-05-28T09:16:42.447678",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1417,7 +1417,7 @@
     {
       "title": "ReStyle",
       "url": "https://doi.org/10.1109/ICCV48922.2021.00664",
-      "date": "2026-05-27T08:54:41.263042",
+      "date": "2026-05-28T09:16:42.447675",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1430,7 +1430,7 @@
     {
       "title": "Pixel2Style2Pixel",
       "url": "https://doi.org/10.1109/CVPR46437.2021.00232",
-      "date": "2026-05-27T08:54:41.263038",
+      "date": "2026-05-28T09:16:42.447670",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1443,7 +1443,7 @@
     {
       "title": "SVG VAE",
       "url": "https://doi.org/10.1109/ICCV.2019.00802",
-      "date": "2026-05-27T08:54:41.263035",
+      "date": "2026-05-28T09:16:42.447667",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1456,7 +1456,7 @@
     {
       "title": "Stylized Neural Painting",
       "url": "https://doi.org/10.1109/CVPR46437.2021.01543",
-      "date": "2026-05-27T08:54:41.263033",
+      "date": "2026-05-28T09:16:42.447665",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1469,7 +1469,7 @@
     {
       "title": "SkyAR",
       "url": "https://doi.org/10.1109/TIP.2022.3192717",
-      "date": "2026-05-27T08:54:41.263030",
+      "date": "2026-05-28T09:16:42.447662",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1482,7 +1482,7 @@
     {
       "title": "MSG-Net",
       "url": "https://doi.org/10.1007/978-3-030-11018-5_32",
-      "date": "2026-05-27T08:54:41.263028",
+      "date": "2026-05-28T09:16:42.447659",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1495,7 +1495,7 @@
     {
       "title": "Wav2Lip",
       "url": "https://doi.org/10.1145/3394171.3413532",
-      "date": "2026-05-27T08:54:41.263025",
+      "date": "2026-05-28T09:16:42.447657",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1508,7 +1508,7 @@
     {
       "title": "HiDT",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00751",
-      "date": "2026-05-27T08:54:41.263023",
+      "date": "2026-05-28T09:16:42.447654",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1521,7 +1521,7 @@
     {
       "title": "AvatarCLIP",
       "url": "https://doi.org/10.1145/3528223.3530094",
-      "date": "2026-05-27T08:54:41.263020",
+      "date": "2026-05-28T09:16:42.447651",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1534,7 +1534,7 @@
     {
       "title": "LaSAFT",
       "url": "https://doi.org/10.1109/ICASSP39728.2021.9413896",
-      "date": "2026-05-27T08:54:41.263018",
+      "date": "2026-05-28T09:16:42.447648",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1547,7 +1547,7 @@
     {
       "title": "Open-Unmix",
       "url": "https://doi.org/10.21105/joss.01667",
-      "date": "2026-05-27T08:54:41.263015",
+      "date": "2026-05-28T09:16:42.447645",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1560,7 +1560,7 @@
     {
       "title": "Neural Style Transfer",
       "url": "https://doi.org/10.1167/16.12.326",
-      "date": "2026-05-27T08:54:41.263013",
+      "date": "2026-05-28T09:16:42.447643",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1573,7 +1573,7 @@
     {
       "title": "Ithaca",
       "url": "https://doi.org/10.1038/s41586-022-04448-z",
-      "date": "2026-05-27T08:54:41.263010",
+      "date": "2026-05-28T09:16:42.447640",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1586,7 +1586,7 @@
     {
       "title": "GraphCast",
       "url": "https://doi.org/10.1126/science.adi2336",
-      "date": "2026-05-27T08:54:41.263007",
+      "date": "2026-05-28T09:16:42.447637",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1599,7 +1599,7 @@
     {
       "title": "AlphaTensor",
       "url": "https://doi.org/10.1038/s41586-022-05172-4",
-      "date": "2026-05-27T08:54:41.263003",
+      "date": "2026-05-28T09:16:42.447632",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1612,7 +1612,7 @@
     {
       "title": "AlphaFold",
       "url": "https://doi.org/10.1038/s41586-021-03819-2",
-      "date": "2026-05-27T08:54:41.263001",
+      "date": "2026-05-28T09:16:42.447629",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1625,7 +1625,7 @@
     {
       "title": "Skillful Precipitation Nowcasting Using Deep Generative Models of Radar",
       "url": "https://doi.org/10.1038/s41586-021-03854-z",
-      "date": "2026-05-27T08:54:41.262998",
+      "date": "2026-05-28T09:16:42.447627",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1638,7 +1638,7 @@
     {
       "title": "LDM",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01042",
-      "date": "2026-05-27T08:54:41.262995",
+      "date": "2026-05-28T09:16:42.447623",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1651,7 +1651,7 @@
     {
       "title": "Rethinking Style Transfer: From Pixels to Parameterized Brushstrokes",
       "url": "https://doi.org/10.1109/CVPR46437.2021.01202",
-      "date": "2026-05-27T08:54:41.262993",
+      "date": "2026-05-28T09:16:42.447621",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1664,7 +1664,7 @@
     {
       "title": "Geometry-Free View Synthesis",
       "url": "https://doi.org/10.1109/ICCV48922.2021.01409",
-      "date": "2026-05-27T08:54:41.262990",
+      "date": "2026-05-28T09:16:42.447618",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1677,7 +1677,7 @@
     {
       "title": "Taming Transformers for High-Resolution Image Synthesis",
       "url": "https://doi.org/10.1109/CVPR46437.2021.01268",
-      "date": "2026-05-27T08:54:41.262988",
+      "date": "2026-05-28T09:16:42.447615",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1690,7 +1690,7 @@
     {
       "title": "MakeItTalk",
       "url": "https://doi.org/10.1145/3414685.3417774",
-      "date": "2026-05-27T08:54:41.262985",
+      "date": "2026-05-28T09:16:42.447612",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1703,7 +1703,7 @@
     {
       "title": "Instance-aware Image Colorization",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00799",
-      "date": "2026-05-27T08:54:41.262983",
+      "date": "2026-05-28T09:16:42.447609",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1716,7 +1716,7 @@
     {
       "title": "FGVC",
       "url": "https://doi.org/10.1007/978-3-030-58610-2_42",
-      "date": "2026-05-27T08:54:41.262980",
+      "date": "2026-05-28T09:16:42.447606",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1729,7 +1729,7 @@
     {
       "title": "3D Photo Inpainting",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00805",
-      "date": "2026-05-27T08:54:41.262978",
+      "date": "2026-05-28T09:16:42.447601",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1742,7 +1742,7 @@
     {
       "title": "ByteTrack",
       "url": "https://doi.org/10.1007/978-3-031-20047-2_1",
-      "date": "2026-05-27T08:54:41.262973",
+      "date": "2026-05-28T09:16:42.447596",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1755,7 +1755,7 @@
     {
       "title": "DualStyleGAN",
       "url": "https://doi.org/10.1109/CVPR52688.2022.00754",
-      "date": "2026-05-27T08:54:41.262971",
+      "date": "2026-05-28T09:16:42.447576",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1768,7 +1768,7 @@
     {
       "title": "VToonify",
       "url": "https://doi.org/10.1145/3550454.3555437",
-      "date": "2026-05-27T08:54:41.262967",
+      "date": "2026-05-28T09:16:42.447571",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1781,7 +1781,7 @@
     {
       "title": "CartoonGAN",
       "url": "https://doi.org/10.1109/CVPR.2018.00986",
-      "date": "2026-05-27T08:54:41.262964",
+      "date": "2026-05-28T09:16:42.447569",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1794,7 +1794,7 @@
     {
       "title": "MoCo",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00975",
-      "date": "2026-05-27T08:54:41.262961",
+      "date": "2026-05-28T09:16:42.447566",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1807,7 +1807,7 @@
     {
       "title": "ESM",
       "url": "https://doi.org/10.1101/622803",
-      "date": "2026-05-27T08:54:41.262959",
+      "date": "2026-05-28T09:16:42.447563",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1820,7 +1820,7 @@
     {
       "title": "Omnivore",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01563",
-      "date": "2026-05-27T08:54:41.262956",
+      "date": "2026-05-28T09:16:42.447561",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1833,7 +1833,7 @@
     {
       "title": "ConvNeXt",
       "url": "https://doi.org/10.1109/CVPR52688.2022.01167",
-      "date": "2026-05-27T08:54:41.262954",
+      "date": "2026-05-28T09:16:42.447558",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1846,7 +1846,7 @@
     {
       "title": "Mask2Former",
       "url": "https://doi.org/10.1109/CVPR52688.2022.00135",
-      "date": "2026-05-27T08:54:41.262949",
+      "date": "2026-05-28T09:16:42.447556",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1859,7 +1859,7 @@
     {
       "title": "Detic",
       "url": "https://doi.org/10.1007/978-3-031-20077-9_21",
-      "date": "2026-05-27T08:54:41.262947",
+      "date": "2026-05-28T09:16:42.447553",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1872,7 +1872,7 @@
     {
       "title": "PIFuHD",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00016",
-      "date": "2026-05-27T08:54:41.262944",
+      "date": "2026-05-28T09:16:42.447548",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1885,7 +1885,7 @@
     {
       "title": "PIFu",
       "url": "https://doi.org/10.1109/ICCV.2019.00239",
-      "date": "2026-05-27T08:54:41.262942",
+      "date": "2026-05-28T09:16:42.447546",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1898,7 +1898,7 @@
     {
       "title": "Nerfies",
       "url": "https://doi.org/10.1109/ICCV48922.2021.00581",
-      "date": "2026-05-27T08:54:41.262939",
+      "date": "2026-05-28T09:16:42.447543",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1911,7 +1911,7 @@
     {
       "title": "StylEx",
       "url": "https://doi.org/10.1109/ICCV48922.2021.00073",
-      "date": "2026-05-27T08:54:41.262937",
+      "date": "2026-05-28T09:16:42.447541",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1924,7 +1924,7 @@
     {
       "title": "BiT",
       "url": "https://doi.org/10.1007/978-3-030-58558-7_29",
-      "date": "2026-05-27T08:54:41.262934",
+      "date": "2026-05-28T09:16:42.447538",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1937,7 +1937,7 @@
     {
       "title": "OWL-ViT",
       "url": "https://doi.org/10.1007/978-3-031-20080-9_42",
-      "date": "2026-05-27T08:54:41.262932",
+      "date": "2026-05-28T09:16:42.447535",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1950,7 +1950,7 @@
     {
       "title": "FILM",
       "url": "https://doi.org/10.1007/978-3-031-20071-7_15",
-      "date": "2026-05-27T08:54:41.262927",
+      "date": "2026-05-28T09:16:42.447530",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1963,7 +1963,7 @@
     {
       "title": "Dream Fields",
       "url": "https://doi.org/10.1109/CVPR52688.2022.00094",
-      "date": "2026-05-27T08:54:41.262925",
+      "date": "2026-05-28T09:16:42.447527",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1976,7 +1976,7 @@
     {
       "title": "Motion Representations for Articulated Animation",
       "url": "https://doi.org/10.1109/CVPR46437.2021.01344",
-      "date": "2026-05-27T08:54:41.262922",
+      "date": "2026-05-28T09:16:42.447525",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -1989,7 +1989,7 @@
     {
       "title": "Motion Supervised co-part Segmentation",
       "url": "https://doi.org/10.1109/ICPR48806.2021.9412520",
-      "date": "2026-05-27T08:54:41.262920",
+      "date": "2026-05-28T09:16:42.447521",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -2002,7 +2002,7 @@
     {
       "title": "Text2Human",
       "url": "https://doi.org/10.1145/3528223.3530104",
-      "date": "2026-05-27T08:54:41.262915",
+      "date": "2026-05-28T09:16:42.447516",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -2015,7 +2015,7 @@
     {
       "title": "StyleGAN-Human",
       "url": "https://doi.org/10.1007/978-3-031-19787-1_1",
-      "date": "2026-05-27T08:54:41.262911",
+      "date": "2026-05-28T09:16:42.447511",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -2028,7 +2028,7 @@
     {
       "title": "StyleGAN 2",
       "url": "https://doi.org/10.1109/CVPR42600.2020.00813",
-      "date": "2026-05-27T08:54:41.262908",
+      "date": "2026-05-28T09:16:42.447509",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -2041,7 +2041,7 @@
     {
       "title": "Learning to Paint",
       "url": "https://doi.org/10.1109/ICCV.2019.00880",
-      "date": "2026-05-27T08:54:41.262905",
+      "date": "2026-05-28T09:16:42.447505",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -2054,7 +2054,7 @@
     {
       "title": "3D Ken Burns",
       "url": "https://doi.org/10.1145/3355089.3356528",
-      "date": "2026-05-27T08:54:41.262900",
+      "date": "2026-05-28T09:16:42.447500",
       "author": "AI Agent",
       "tags": [
         "Citation",
@@ -11573,125 +11573,26 @@
   ],
   "all_posts": [
     {
-      "title": "ray-project/Ray: Distributed Computing for Machine Learning",
-      "url": "posts/2026-04-14-repo-ray-project-ray.html",
-      "date": "2026-04-14T09:00:00+00:00",
+      "title": "kornia: Open-source Library for Computer Vision Tasks",
+      "url": "posts/2026-05-20-tutorial-kornia.html",
+      "date": "2026-05-20T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "Learn about Ray, an open-source library for scalable ML workflows. Explore its key features like distributed training and hyperparameter tuning with practical examples and best practices."
+      "excerpt": "Discover kornia, an essential library for image and video processing. Learn how to install and use it effectively for complex tasks like geometric transformations and optical flow estimation."
     },
     {
-      "title": "ollama: Python Library for Automated Machine Learning",
-      "url": "posts/2026-05-24-tutorial-ollama.html",
-      "date": "2026-05-24T09:00:00+00:00",
+      "title": "custom-federated-algorithms-part-1-introduction-to-the-federated-core",
+      "url": "posts/2026-05-18-tutorial-custom-federated-algorithms-part-1-introduction-to-the-federated-core.html",
+      "date": "2026-05-18T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "Learn about ollama, a user-friendly Python library that streamlines machine learning tasks. Discover setup, core concepts, and practical examples in this comprehensive guide."
-    },
-    {
-      "title": "Ollama - Run Large Language Models Locally",
-      "url": "posts/2026-02-12-repo-ollama.html",
-      "date": "2026-02-12T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "A look at the ollama/ollama repository, a tool for downloading, running, and managing large language models locally on your own hardware."
-    },
-    {
-      "title": "Ollama: Run Large Language Models Locally",
-      "url": "posts/2025-12-27-package-ollama.html",
-      "date": "2025-12-27T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "A practical guide to Ollama, the tool for running open-source large language models like Llama, Mistral, and Gemma locally on your own machine."
-    },
-    {
-      "title": "SwinIR: Advanced Image Restoration Framework | SEO Optimized",
-      "url": "posts/2026-04-29-paper-swinir.html",
-      "date": "2026-04-29T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Learn about SwinIR, an innovative image restoration tool that uses Transformer models for super-resolution, denoising & deblurring. Get started with easy installation and practical examples."
-    },
-    {
-      "title": "byte-track-real-time-object-tracking-system",
-      "url": "posts/2026-05-07-paper-bytetrack.html",
-      "date": "2026-05-07T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "learn about bytetrack, an advanced real-time object tracking system for surveillance and autonomous vehicles. discover its key features and practical use cases."
-    },
-    {
-      "title": "TensorFlow Federated: A Framework for Federated Learning and Analytics",
-      "url": "posts/2026-02-04-package-tensorflow-federated.html",
-      "date": "2026-02-04T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "TensorFlow Federated (TFF) is an open-source framework for federated learning and federated analytics, enabling machine learning on decentralized data while preserving privacy."
-    },
-    {
-      "title": "tencentarc/gfpgan: state-of-the-art-face-restoration-model",
-      "url": "posts/2026-04-12-repo-tencentarc-gfpgan.html",
-      "date": "2026-04-12T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Discover how to use GFPGAN for high-resolution face restoration, enhancing photos and videos. Learn setup, usage, and best practices directly from the source."
-    },
-    {
-      "title": "microsoft/Autogen: Simplify Large Language Model Development",
-      "url": "posts/2026-04-07-repo-microsoft-autogen.html",
-      "date": "2026-04-07T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Learn how to use Microsoft's Autogen project for building advanced NLP applications. Discover key features, setup steps, and best practices. Explore real-world examples in chatbots and content generation."
-    },
-    {
-      "title": "convnext-explained-modern-convolutional-neural-network",
-      "url": "posts/2026-04-25-paper-convnext.html",
-      "date": "2026-04-25T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Learn about ConvNeXt, a cutting-edge CNN architecture designed for efficiency and performance. Discover its key features, implementation, and applications in image processing tasks like classification and object detection."
-    },
-    {
-      "title": "laion-ai/open-assistant - state-of-the-art-conversational-ai",
-      "url": "posts/2026-04-10-repo-laion-ai-open-assistant.html",
-      "date": "2026-04-10T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Explore how to use LAION-AI/Open Assistant for chatbots, virtual assistants, and content generation. Learn installation, examples, and best practices."
+      "excerpt": "Learn about custom federated algorithms using Federated Core, including model training, evaluation and practical examples in healthcare & finance. Start building robust ML solutions."
     },
     {
       "title": "LangGraph: Build Stateful Multi-Actor LLM Applications with Graphs",
@@ -11705,279 +11606,48 @@
       "excerpt": "A practical guide to LangGraph, the library for building stateful, multi-actor LLM applications using graph-based workflows with cycles, branching, and persistence."
     },
     {
-      "title": "compvis/stable-diffusion: text-to-image generation model",
-      "url": "posts/2026-03-30-repo-compvis-stable-diffusion.html",
-      "date": "2026-03-30T09:00:00+00:00",
+      "title": "microsoft/Autogen: Simplify Large Language Model Development",
+      "url": "posts/2026-04-07-repo-microsoft-autogen.html",
+      "date": "2026-04-07T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "learn about compvis/stable-diffusion, a powerful tool for generating high-quality images from text prompts. discover its features, installation, and practical examples in this comprehensive guide."
+      "excerpt": "Learn how to use Microsoft's Autogen project for building advanced NLP applications. Discover key features, setup steps, and best practices. Explore real-world examples in chatbots and content generation."
     },
     {
-      "title": "taming-transformers-for-high-resolution-image-synthesis",
-      "url": "posts/2026-05-03-paper-taming-transformers-for-high-resolution-image-synthesis.html",
-      "date": "2026-05-03T09:00:00+00:00",
+      "title": "alphafold-2-0-protein-structure-prediction-revolutionary-tool",
+      "url": "posts/2026-04-18-paper-alphafold.html",
+      "date": "2026-04-18T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "Learn about taming transformers technology for generating, optimizing, and manipulating high-res images. Explore key features, use cases, and practical examples in this comprehensive guide."
+      "excerpt": "Explore how AlphaFold 2.0 predicts protein structures with unparalleled accuracy, ideal for drug discovery and genomics research. Learn setup, usage, and practical examples."
     },
     {
-      "title": "building-your-own-federated-learning-algorithm",
-      "url": "posts/2026-05-14-tutorial-building-your-own-federated-learning-algorithm.html",
-      "date": "2026-05-14T09:00:00+00:00",
+      "title": "Crawl4AI: Open-Source Web Crawling for LLMs and AI Pipelines",
+      "url": "posts/2026-01-22-package-crawl4ai.html",
+      "date": "2026-01-22T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "learn how to set up and implement a federated learning algorithm using tensorflow federated (tff) version 0.21.0 for secure data handling in healthcare, finance, and more."
+      "excerpt": "Crawl4AI is an open-source, async-first web crawler built for feeding clean, structured content to LLMs and AI applications."
     },
     {
-      "title": "suno-ai/Bark: Open-source Audio Synthesis Toolkit",
-      "url": "posts/2026-04-11-repo-suno-ai-bark.html",
-      "date": "2026-04-11T09:00:00+00:00",
+      "title": "byte-track-real-time-object-tracking-system",
+      "url": "posts/2026-05-07-paper-bytetrack.html",
+      "date": "2026-05-07T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "Learn how to use Bark, an open-source audio toolkit for text-to-speech and voice cloning. Get started with quick examples and tips for developers."
-    },
-    {
-      "title": "kornia: Open-source Library for Computer Vision Tasks",
-      "url": "posts/2026-05-20-tutorial-kornia.html",
-      "date": "2026-05-20T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Discover kornia, an essential library for image and video processing. Learn how to install and use it effectively for complex tasks like geometric transformations and optical flow estimation."
-    },
-    {
-      "title": "contextualized-topic-models for advanced text analysis",
-      "url": "posts/2026-05-21-tutorial-contextualized-topic-models.html",
-      "date": "2026-05-21T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Learn about Contextualized Topic Models, their key features, practical implementation, and real-world use cases in sentiment analysis and document summarization."
-    },
-    {
-      "title": "lllyasviel/Fooocus: Python Library for Image Enhancement",
-      "url": "posts/2026-04-05-repo-lllyasviel-fooocus.html",
-      "date": "2026-04-05T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Discover how to use lllyasviel/Fooocus for real-time noise reduction, image sharpening, and advanced contrast adjustment in Python. Perfect for forensic analysis, medical imaging, and digital archiving."
-    },
-    {
-      "title": "XGBoost: Scalable Gradient Boosting for Classification and Regression",
-      "url": "posts/2025-12-23-package-xgboost.html",
-      "date": "2025-12-23T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "A hands-on guide to XGBoost, the optimized gradient boosting library known for speed, performance, and dominance in machine learning competitions."
-    },
-    {
-      "title": "deeplabcut-explained-for-researchers",
-      "url": "posts/2026-04-26-paper-deeplabcut.html",
-      "date": "2026-04-26T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Learn about deeplabcut, an open-source tool for tracking animal movements in images and videos. Discover its key features, installation process, and practical applications in neuroscience, ecology, and veterinary science."
-    },
-    {
-      "title": "pi-fu-for-3d-human-reconstruction-from-single-image",
-      "url": "posts/2026-05-08-paper-pifu.html",
-      "date": "2026-05-08T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Learn about PIFu, a deep-learning based method for detailed 3D human reconstruction from single images. Discover installation, core concepts, and practical examples in virtual try-ons and character animation."
-    },
-    {
-      "title": "neural-style-transfer-explained-with-tensorflow",
-      "url": "posts/2026-05-09-paper-neural-style-transfer.html",
-      "date": "2026-05-09T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "learn how to implement neural style transfer using tensorflow. discover key concepts, best practices, and practical examples for artistic transformations."
-    },
-    {
-      "title": "mo-co-optimizer-for-motion-capture-data",
-      "url": "posts/2026-04-22-paper-moco.html",
-      "date": "2026-04-22T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Learn about MoCo, a powerful Motion Capture Optimizer tool for processing motion capture data efficiently. Explore its features and practical applications in animation, bioinformatics, and robotics."
-    },
-    {
-      "title": "federated-learning-for-text-generation",
-      "url": "posts/2026-05-17-tutorial-federated-learning-for-text-generation.html",
-      "date": "2026-05-17T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Explore how federated learning enhances privacy while training text generation models. Dive into key features, use cases, and practical examples."
-    },
-    {
-      "title": "federated-learning-for-image-classification",
-      "url": "posts/2026-05-15-tutorial-federated-learning-for-image-classification.html",
-      "date": "2026-05-15T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Learn about federated learning for image classification, its benefits like privacy and scalability, and how to set up a simple example using TensorFlow Federated."
-    },
-    {
-      "title": "Autofaiss: Automatically Build Optimal Faiss Indexes for Vector Search",
-      "url": "posts/2026-01-09-package-autofaiss.html",
-      "date": "2026-01-09T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Autofaiss automatically selects the best Faiss index type and parameters for your embeddings, making it easy to build fast and memory-efficient approximate nearest neighbor search indexes."
-    },
-    {
-      "title": "mask2former: advanced instance segmentation for computer vision",
-      "url": "posts/2026-05-01-paper-mask2former.html",
-      "date": "2026-05-01T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "learn about mask2former, a powerful deep learning tool for medical imaging, autonomous driving, and more. discover its features, installation, and practical applications."
-    },
-    {
-      "title": "Whisper - OpenAI's Automatic Speech Recognition Model",
-      "url": "posts/2026-02-26-repo-whisper.html",
-      "date": "2026-02-26T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "An in-depth look at OpenAI's Whisper, a general-purpose speech recognition model that delivers robust transcription and translation across dozens of languages."
-    },
-    {
-      "title": "langchain: framework for building apps with large language models",
-      "url": "posts/2026-05-25-tutorial-langchain.html",
-      "date": "2026-05-25T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Learn about LangChain, a user-friendly API for integrating LLMs. Discover its features like modular architecture and support for Hugging Face Transformers in this comprehensive guide."
-    },
-    {
-      "title": "real-esrgan super-resolution tool explained",
-      "url": "posts/2026-05-10-paper-real-esrgan.html",
-      "date": "2026-05-10T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "learn about real-esrgan, a top-tier super-resolution technology, its key features, installation process, and practical applications in digital arts, medical imaging & video upscaling."
-    },
-    {
-      "title": "vc-tools-best-practices",
-      "url": "posts/2026-05-12-tutorial-vc.html",
-      "date": "2026-05-12T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Explore the basics of video conferencing tools, learn best practices for secure and efficient operation, and get practical examples using the pyZoom library."
-    },
-    {
-      "title": "YOLOv8 - Real-Time Object Detection System Overview & Usage",
-      "url": "posts/2026-05-13-tutorial-yolov8.html",
-      "date": "2026-05-13T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Learn about YOLOv8, a state-of-the-art real-time object detection system. Discover how to install and use it for security systems, autonomous driving, and more."
-    },
-    {
-      "title": "mujocona381-simulation-and-tutorial",
-      "url": "posts/2026-05-23-tutorial-mujoco.html",
-      "date": "2026-05-23T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Learn how to use MuJoCo 3.8.1 for physics simulations in robotics, machine learning & computer graphics. Explore setup, core concepts & practical examples."
-    },
-    {
-      "title": "Gin Config: Google's Lightweight Configuration Framework for Python",
-      "url": "posts/2026-01-08-package-gin-config.html",
-      "date": "2026-01-08T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Gin-config is Google's lightweight configuration framework that uses decorators and .gin files to make Python functions and classes configurable without boilerplate code."
-    },
-    {
-      "title": "LangChain - A Framework for Building LLM-Powered Applications",
-      "url": "posts/2026-02-15-repo-langchain.html",
-      "date": "2026-02-15T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "A deep dive into the langchain-ai/langchain repository, exploring its modular architecture, LCEL composition model, agents, retrieval-augmented generation, and integration ecosystem."
-    },
-    {
-      "title": "LangChain: Build LLM-Powered Applications with Modern Composable Chains",
-      "url": "posts/2025-12-23-package-langchain.html",
-      "date": "2025-12-23T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "A practical guide to LangChain, the framework for building LLM-powered applications using composable chains, prompt templates, and the LangChain Expression Language."
+      "excerpt": "learn about bytetrack, an advanced real-time object tracking system for surveillance and autonomous vehicles. discover its key features and practical use cases."
     },
     {
       "title": "MMSegmentation: OpenMMLab's Semantic Segmentation Toolbox",
@@ -11991,37 +11661,15 @@
       "excerpt": "MMSegmentation is OpenMMLab's open-source semantic segmentation toolbox built on PyTorch, supporting 50+ architectures and a unified config-driven workflow for training and inference."
     },
     {
-      "title": "ultralytics/Yolov5 - Real-Time Object Detection Guide",
-      "url": "posts/2026-04-02-repo-ultralytics-yolov5.html",
-      "date": "2026-04-02T09:00:00+00:00",
+      "title": "image-segmentation-with-pytorch-unet-opencv",
+      "url": "posts/2026-04-17-paper-image-segmentation.html",
+      "date": "2026-04-17T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "Learn how to set up and use YOLOv5 for real-time object detection, including installation, basic usage, and advanced configurations. Explore practical applications in security, autonomous vehicles, and retail analytics."
-    },
-    {
-      "title": "Folium: Create Interactive Leaflet.js Maps in Python",
-      "url": "posts/2025-12-26-package-folium.html",
-      "date": "2025-12-26T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "A practical guide to Folium, the Python library for creating interactive Leaflet.js maps with markers, choropleth layers, and heatmaps."
-    },
-    {
-      "title": "stability-ai/stablediffusion: text-generation framework overview",
-      "url": "posts/2026-04-06-repo-stability-ai-stablediffusion.html",
-      "date": "2026-04-06T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Learn about Stability-AI/Stablediffusion, a powerful text generation tool using TensorFlow. Discover key features, installation steps, and practical examples for content creation and chatbot development."
+      "excerpt": "Learn about image segmentation using PyTorch-UNet and OpenCV with practical examples and use cases in medical imaging, autonomous driving, and more."
     },
     {
       "title": "coqui-ai/Tts - Text-to-Speech Library for Developers",
@@ -12035,70 +11683,26 @@
       "excerpt": "Learn how to use Coqui-TTS, a state-of-the-art text-to-speech library. Explore installation, core concepts, and practical examples in this comprehensive guide."
     },
     {
-      "title": "scikit-video: Video Processing in Python with FFmpeg",
-      "url": "posts/2026-01-21-package-scikit-video.html",
-      "date": "2026-01-21T09:00:00+00:00",
+      "title": "Gin Config: Google's Lightweight Configuration Framework for Python",
+      "url": "posts/2026-01-08-package-gin-config.html",
+      "date": "2026-01-08T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "scikit-video (skvideo) is a Python library for video reading, writing, and processing built on top of FFmpeg and NumPy."
+      "excerpt": "Gin-config is Google's lightweight configuration framework that uses decorators and .gin files to make Python functions and classes configurable without boilerplate code."
     },
     {
-      "title": "xgboost: fast & efficient gradient boosting in python",
-      "url": "posts/2026-04-19-paper-xgboost.html",
-      "date": "2026-04-19T09:00:00+00:00",
+      "title": "compvis/stable-diffusion: text-to-image generation model",
+      "url": "posts/2026-03-30-repo-compvis-stable-diffusion.html",
+      "date": "2026-03-30T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "learn about xgboost’s key features, installation, core concepts, practical examples, and best practices for classification & regression tasks. get started now!"
-    },
-    {
-      "title": "facebookresearch/Segment Anything - Advanced Image Segmentation Library",
-      "url": "posts/2026-04-03-repo-facebookresearch-segment-anything.html",
-      "date": "2026-04-03T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Discover how to use facebookresearch's Segment Anything library for precise image segmentation. Learn installation, best practices, and practical applications in autonomous driving and medical imaging."
-    },
-    {
-      "title": "MMDetection: OpenMMLab's Object Detection Toolbox",
-      "url": "posts/2026-01-11-package-mmdet.html",
-      "date": "2026-01-11T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "MMDetection is OpenMMLab's comprehensive object detection toolbox built on PyTorch, supporting hundreds of detection and segmentation models with a modular, config-driven architecture."
-    },
-    {
-      "title": "ldm-package-for-facial-landmark-detection-and-face-recognition",
-      "url": "posts/2026-04-23-paper-ldm.html",
-      "date": "2026-04-23T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Learn how to use the LDM Python package for facial landmark detection, face feature extraction, and face recognition in images. Get started with quick examples and discover core functionalities like 'face_feature', 'landmarks', 'face_rec', and more."
-    },
-    {
-      "title": "LlamaIndex: Connect Your Custom Data to Large Language Models",
-      "url": "posts/2025-12-24-package-llama-index.html",
-      "date": "2025-12-24T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "A practical guide to LlamaIndex, the data framework for building retrieval-augmented generation (RAG) applications that connect custom data sources to LLMs."
+      "excerpt": "learn about compvis/stable-diffusion, a powerful tool for generating high-quality images from text prompts. discover its features, installation, and practical examples in this comprehensive guide."
     },
     {
       "title": "tensorflow/Models - Pre-Trained Machine Learning Models for Easy Deployment",
@@ -12112,94 +11716,6 @@
       "excerpt": "Learn about TensorFlow/Models, a collection of pre-trained models for various tasks like image classification and text generation. Get started with installation, see examples, and discover best practices."
     },
     {
-      "title": "understanding-gaussian-splatting-for-efficient-rendering",
-      "url": "posts/2026-05-06-paper-gaussian-splatting.html",
-      "date": "2026-05-06T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Learn about Gaussian Splatting, a technique for efficient rendering of point clouds in real-time applications. Discover its key features and practical examples."
-    },
-    {
-      "title": "jakevdp/Pythondatasciencehandbook - Comprehensive Python Data Science Guide",
-      "url": "posts/2026-04-04-repo-jakevdp-pythondatasciencehandbook.html",
-      "date": "2026-04-04T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Explore the jakevdp/Pythondatasciencehandbook project, a comprehensive guide for data science in Python. Discover key libraries like NumPy, pandas, Matplotlib, and scikit-learn with practical examples."
-    },
-    {
-      "title": "semantic-segmentation-overview-and-practices",
-      "url": "posts/2026-05-04-paper-semantic-segmentation.html",
-      "date": "2026-05-04T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Discover the basics of semantic segmentation, learn about key models like U-Net and DeepLabV3+, and explore practical examples in medical imaging and autonomous driving."
-    },
-    {
-      "title": "fine-tuning-a-bert",
-      "url": "posts/2026-04-28-paper-fine-tuning-a-bert.html",
-      "date": "2026-04-28T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "learn how to fine-tune a BERT model for NLP tasks like sentiment analysis and text classification using Python. discover best practices and practical examples."
-    },
-    {
-      "title": "Google Earth Engine API: Planetary-Scale Geospatial Analysis in Python",
-      "url": "posts/2026-01-15-package-earthengine-api.html",
-      "date": "2026-01-15T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "The Google Earth Engine Python API provides programmatic access to a multi-petabyte catalog of satellite imagery and geospatial datasets for analysis, visualization, and environmental monitoring at planetary scale."
-    },
-    {
-      "title": "notebookllama - python library for managing jupyter notebooks",
-      "url": "posts/2026-05-26-tutorial-notebookllama.html",
-      "date": "2026-05-26T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "learn how to use notebookllama, a powerful python library that simplifies the creation and management of jupyter notebooks. discover key features like instant creation, dynamic cell management, and export options."
-    },
-    {
-      "title": "TPOT: Automated Machine Learning with Genetic Programming",
-      "url": "posts/2026-01-27-package-tpot.html",
-      "date": "2026-01-27T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "TPOT is a Python AutoML tool that uses genetic programming to automatically design and optimize scikit-learn machine learning pipelines."
-    },
-    {
-      "title": "efficientdet for real-time object detection & deployment",
-      "url": "posts/2026-04-24-paper-efficientdet.html",
-      "date": "2026-04-24T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Learn about efficientdet, a powerful model that balances accuracy and efficiency. Explore its key features, installation, practical examples, and best practices."
-    },
-    {
       "title": "Unsloth: Fine-Tune LLMs 2-5x Faster with 80% Less Memory",
       "url": "posts/2026-01-16-package-unsloth.html",
       "date": "2026-01-16T09:00:00+00:00",
@@ -12211,37 +11727,257 @@
       "excerpt": "Unsloth accelerates LLM fine-tuning by 2-5x while reducing memory usage by up to 80%, enabling efficient LoRA and QLoRA training of models like Llama, Mistral, and Gemma on consumer GPUs."
     },
     {
-      "title": "killianlucas/open-interpreter: modern python library for dynamic code execution",
-      "url": "posts/2026-03-31-repo-killianlucas-open-interpreter.html",
-      "date": "2026-03-31T09:00:00+00:00",
+      "title": "hello-many-worlds-theory-and-practice",
+      "url": "posts/2026-05-28-tutorial-hello-many-worlds.html",
+      "date": "2026-05-28T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "learn about open interpreter, a versatile python tool that enables secure code evaluation in various applications. discover its key features, practical examples, and best practices."
+      "excerpt": "Explore the concept 'Hello, many worlds' through theoretical perspectives and practical examples without using non-existent software. Learn about quantum mechanics and recommended tools like Qiskit or Cirq."
     },
     {
-      "title": "ultralytics/Ultralytics - Modern Computer Vision Library in Python",
-      "url": "posts/2026-04-13-repo-ultralytics-ultralytics.html",
-      "date": "2026-04-13T09:00:00+00:00",
+      "title": "PyBullet: Physics Simulation for Robotics and Reinforcement Learning",
+      "url": "posts/2026-01-20-package-pybullet.html",
+      "date": "2026-01-20T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "Learn how to install and use the ultralytics/Ultralytics library for real-time object detection, segmentation, and tracking. Explore practical examples and best practices."
+      "excerpt": "PyBullet is a Python binding for the Bullet physics engine, providing real-time physics simulation for robotics, reinforcement learning, and VR applications."
     },
     {
-      "title": "Langfun - Building Natural Language-Powered Functions with LLMs",
-      "url": "posts/2026-02-05-package-langfun.html",
-      "date": "2026-02-05T09:00:00+00:00",
+      "title": "taming-transformers-for-high-resolution-image-synthesis",
+      "url": "posts/2026-05-03-paper-taming-transformers-for-high-resolution-image-synthesis.html",
+      "date": "2026-05-03T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "Explore Langfun, Google's Python library for composing and calling LLM-powered functions using natural language prompt templates and structured output."
+      "excerpt": "Learn about taming transformers technology for generating, optimizing, and manipulating high-res images. Explore key features, use cases, and practical examples in this comprehensive guide."
+    },
+    {
+      "title": "langchain: framework for building apps with large language models",
+      "url": "posts/2026-05-25-tutorial-langchain.html",
+      "date": "2026-05-25T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn about LangChain, a user-friendly API for integrating LLMs. Discover its features like modular architecture and support for Hugging Face Transformers in this comprehensive guide."
+    },
+    {
+      "title": "google-research/google research for machine learning projects",
+      "url": "posts/2026-04-15-repo-google-research-google-research.html",
+      "date": "2026-04-15T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn about google-research's key features and how to use it effectively in your ML projects, including setup, core concepts, and practical examples."
+    },
+    {
+      "title": "federated-learning-for-text-generation",
+      "url": "posts/2026-05-17-tutorial-federated-learning-for-text-generation.html",
+      "date": "2026-05-17T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Explore how federated learning enhances privacy while training text generation models. Dive into key features, use cases, and practical examples."
+    },
+    {
+      "title": "vc-tools-best-practices",
+      "url": "posts/2026-05-12-tutorial-vc.html",
+      "date": "2026-05-12T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Explore the basics of video conferencing tools, learn best practices for secure and efficient operation, and get practical examples using the pyZoom library."
+    },
+    {
+      "title": "building-your-own-federated-learning-algorithm",
+      "url": "posts/2026-05-14-tutorial-building-your-own-federated-learning-algorithm.html",
+      "date": "2026-05-14T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "learn how to set up and implement a federated learning algorithm using tensorflow federated (tff) version 0.21.0 for secure data handling in healthcare, finance, and more."
+    },
+    {
+      "title": "ray-project/Ray: Distributed Computing for Machine Learning",
+      "url": "posts/2026-04-14-repo-ray-project-ray.html",
+      "date": "2026-04-14T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn about Ray, an open-source library for scalable ML workflows. Explore its key features like distributed training and hyperparameter tuning with practical examples and best practices."
+    },
+    {
+      "title": "run-llama/Llama_Index: Building Powerful Information Retrieval Systems",
+      "url": "posts/2026-04-08-repo-run-llama-llama-index.html",
+      "date": "2026-04-08T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn how to use run-llama/Llama_Index for efficient data indexing and querying, supporting text documents & CSV files. Ideal for chatbots & knowledge graphs."
+    },
+    {
+      "title": "pi-fu-for-3d-human-reconstruction-from-single-image",
+      "url": "posts/2026-05-08-paper-pifu.html",
+      "date": "2026-05-08T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn about PIFu, a deep-learning based method for detailed 3D human reconstruction from single images. Discover installation, core concepts, and practical examples in virtual try-ons and character animation."
+    },
+    {
+      "title": "hmr - hot-module-reload for efficient python development",
+      "url": "posts/2026-05-02-paper-hmr.html",
+      "date": "2026-05-02T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn how to set up and use Hot Module Reload (HMR) in Python applications. Discover practical examples, best practices, and key features like real-time updates and seamless integration with Flask or React projects."
+    },
+    {
+      "title": "microsoft/visual-chatgpt: integrating text & images for AI responses",
+      "url": "posts/2026-04-16-repo-microsoft-visual-chatgpt.html",
+      "date": "2026-04-16T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn about microsoft’s visual chatgpt, a powerful tool combining text and image inputs to generate contextually relevant responses. Discover setup, use cases, and best practices."
+    },
+    {
+      "title": "LangChain - A Framework for Building LLM-Powered Applications",
+      "url": "posts/2026-02-15-repo-langchain.html",
+      "date": "2026-02-15T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "A deep dive into the langchain-ai/langchain repository, exploring its modular architecture, LCEL composition model, agents, retrieval-augmented generation, and integration ecosystem."
+    },
+    {
+      "title": "facebookresearch/Segment Anything - Advanced Image Segmentation Library",
+      "url": "posts/2026-04-03-repo-facebookresearch-segment-anything.html",
+      "date": "2026-04-03T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Discover how to use facebookresearch's Segment Anything library for precise image segmentation. Learn installation, best practices, and practical applications in autonomous driving and medical imaging."
+    },
+    {
+      "title": "LlamaIndex: Connect Your Custom Data to Large Language Models",
+      "url": "posts/2025-12-24-package-llama-index.html",
+      "date": "2025-12-24T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "A practical guide to LlamaIndex, the data framework for building retrieval-augmented generation (RAG) applications that connect custom data sources to LLMs."
+    },
+    {
+      "title": "cyclegan-explained-for-image-transformation",
+      "url": "posts/2026-04-20-paper-cyclegan.html",
+      "date": "2026-04-20T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "cyclegan is a powerful tool for translating images between domains without paired samples. learn its architecture, implementation in python, and practical applications in art & medical imaging."
+    },
+    {
+      "title": "Whisper - OpenAI's Automatic Speech Recognition Model",
+      "url": "posts/2026-02-26-repo-whisper.html",
+      "date": "2026-02-26T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "An in-depth look at OpenAI's Whisper, a general-purpose speech recognition model that delivers robust transcription and translation across dozens of languages."
+    },
+    {
+      "title": "Ollama - Run Large Language Models Locally",
+      "url": "posts/2026-02-12-repo-ollama.html",
+      "date": "2026-02-12T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "A look at the ollama/ollama repository, a tool for downloading, running, and managing large language models locally on your own hardware."
+    },
+    {
+      "title": "CatBoost: Gradient Boosting with Native Categorical Feature Support",
+      "url": "posts/2025-12-23-package-catboost.html",
+      "date": "2025-12-23T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "A practical guide to CatBoost, Yandex's gradient boosting library that handles categorical features natively without manual encoding."
+    },
+    {
+      "title": "ldm-package-for-facial-landmark-detection-and-face-recognition",
+      "url": "posts/2026-04-23-paper-ldm.html",
+      "date": "2026-04-23T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn how to use the LDM Python package for facial landmark detection, face feature extraction, and face recognition in images. Get started with quick examples and discover core functionalities like 'face_feature', 'landmarks', 'face_rec', and more."
+    },
+    {
+      "title": "Ollama: Run Large Language Models Locally",
+      "url": "posts/2025-12-27-package-ollama.html",
+      "date": "2025-12-27T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "A practical guide to Ollama, the tool for running open-source large language models like Llama, Mistral, and Gemma locally on your own machine."
+    },
+    {
+      "title": "tencentarc/gfpgan: state-of-the-art-face-restoration-model",
+      "url": "posts/2026-04-12-repo-tencentarc-gfpgan.html",
+      "date": "2026-04-12T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Discover how to use GFPGAN for high-resolution face restoration, enhancing photos and videos. Learn setup, usage, and best practices directly from the source."
     },
     {
       "title": "ComfyUI - A Node-Based Interface for Stable Diffusion Image Generation",
@@ -12255,15 +11991,125 @@
       "excerpt": "An in-depth look at ComfyUI, a powerful node-based graphical interface for designing and executing Stable Diffusion image generation workflows."
     },
     {
-      "title": "PyGlove: Symbolic Programming for AutoML and Beyond",
-      "url": "posts/2026-01-10-package-pyglove.html",
-      "date": "2026-01-10T09:00:00+00:00",
+      "title": "mo-co-optimizer-for-motion-capture-data",
+      "url": "posts/2026-04-22-paper-moco.html",
+      "date": "2026-04-22T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "PyGlove is Google's library for symbolic programming in Python, enabling manipulation of programs as mutable objects for AutoML, hyperparameter tuning, and neural architecture search."
+      "excerpt": "Learn about MoCo, a powerful Motion Capture Optimizer tool for processing motion capture data efficiently. Explore its features and practical applications in animation, bioinformatics, and robotics."
+    },
+    {
+      "title": "deeplabcut-explained-for-researchers",
+      "url": "posts/2026-04-26-paper-deeplabcut.html",
+      "date": "2026-04-26T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn about deeplabcut, an open-source tool for tracking animal movements in images and videos. Discover its key features, installation process, and practical applications in neuroscience, ecology, and veterinary science."
+    },
+    {
+      "title": "fine-tuning-a-bert",
+      "url": "posts/2026-04-28-paper-fine-tuning-a-bert.html",
+      "date": "2026-04-28T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "learn how to fine-tune a BERT model for NLP tasks like sentiment analysis and text classification using Python. discover best practices and practical examples."
+    },
+    {
+      "title": "understanding-gaussian-splatting-for-efficient-rendering",
+      "url": "posts/2026-05-06-paper-gaussian-splatting.html",
+      "date": "2026-05-06T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn about Gaussian Splatting, a technique for efficient rendering of point clouds in real-time applications. Discover its key features and practical examples."
+    },
+    {
+      "title": "mujocona381-simulation-and-tutorial",
+      "url": "posts/2026-05-23-tutorial-mujoco.html",
+      "date": "2026-05-23T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn how to use MuJoCo 3.8.1 for physics simulations in robotics, machine learning & computer graphics. Explore setup, core concepts & practical examples."
+    },
+    {
+      "title": "TensorFlow Federated: A Framework for Federated Learning and Analytics",
+      "url": "posts/2026-02-04-package-tensorflow-federated.html",
+      "date": "2026-02-04T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "TensorFlow Federated (TFF) is an open-source framework for federated learning and federated analytics, enabling machine learning on decentralized data while preserving privacy."
+    },
+    {
+      "title": "semantic-segmentation-overview-and-practices",
+      "url": "posts/2026-05-04-paper-semantic-segmentation.html",
+      "date": "2026-05-04T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Discover the basics of semantic segmentation, learn about key models like U-Net and DeepLabV3+, and explore practical examples in medical imaging and autonomous driving."
+    },
+    {
+      "title": "suno-ai/Bark: Open-source Audio Synthesis Toolkit",
+      "url": "posts/2026-04-11-repo-suno-ai-bark.html",
+      "date": "2026-04-11T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn how to use Bark, an open-source audio toolkit for text-to-speech and voice cloning. Get started with quick examples and tips for developers."
+    },
+    {
+      "title": "mask2former: advanced instance segmentation for computer vision",
+      "url": "posts/2026-05-01-paper-mask2former.html",
+      "date": "2026-05-01T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "learn about mask2former, a powerful deep learning tool for medical imaging, autonomous driving, and more. discover its features, installation, and practical applications."
+    },
+    {
+      "title": "Google Earth Engine API: Planetary-Scale Geospatial Analysis in Python",
+      "url": "posts/2026-01-15-package-earthengine-api.html",
+      "date": "2026-01-15T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "The Google Earth Engine Python API provides programmatic access to a multi-petabyte catalog of satellite imagery and geospatial datasets for analysis, visualization, and environmental monitoring at planetary scale."
+    },
+    {
+      "title": "MMDetection: OpenMMLab's Object Detection Toolbox",
+      "url": "posts/2026-01-11-package-mmdet.html",
+      "date": "2026-01-11T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "MMDetection is OpenMMLab's comprehensive object detection toolbox built on PyTorch, supporting hundreds of detection and segmentation models with a modular, config-driven architecture."
     },
     {
       "title": "custom-federated-algorithms-part-2-implementing-federated-averaging",
@@ -12277,15 +12123,235 @@
       "excerpt": "Learn to implement Federated Averaging using Custom Federated Algorithms package (1.2.3). Explore healthcare and finance examples for secure model training."
     },
     {
-      "title": "instant-ngp: efficient neural network optimization",
-      "url": "posts/2026-04-30-paper-instant-ngp.html",
-      "date": "2026-04-30T09:00:00+00:00",
+      "title": "LangChain: Build LLM-Powered Applications with Modern Composable Chains",
+      "url": "posts/2025-12-23-package-langchain.html",
+      "date": "2025-12-23T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "learn about instant-ngp, an optimized implementation of next generation proximal methods for deep learning. discover key features and practical usage in this guide."
+      "excerpt": "A practical guide to LangChain, the framework for building LLM-powered applications using composable chains, prompt templates, and the LangChain Expression Language."
+    },
+    {
+      "title": "real-esrgan super-resolution tool explained",
+      "url": "posts/2026-05-10-paper-real-esrgan.html",
+      "date": "2026-05-10T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "learn about real-esrgan, a top-tier super-resolution technology, its key features, installation process, and practical applications in digital arts, medical imaging & video upscaling."
+    },
+    {
+      "title": "learn-pix2pix-image-to-image-translation-python",
+      "url": "posts/2026-04-21-paper-pix2pix.html",
+      "date": "2026-04-21T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Discover how to use Pix2Pix for image-to-image translation with Python. Explore setup, core concepts, practical examples, and best practices in this comprehensive guide."
+    },
+    {
+      "title": "YOLOv8 - Real-Time Object Detection System Overview & Usage",
+      "url": "posts/2026-05-13-tutorial-yolov8.html",
+      "date": "2026-05-13T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn about YOLOv8, a state-of-the-art real-time object detection system. Discover how to install and use it for security systems, autonomous driving, and more."
+    },
+    {
+      "title": "anomalib: open-source package for anomaly detection",
+      "url": "posts/2026-05-27-tutorial-anomalib.html",
+      "date": "2026-05-27T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "learn about anomalib, a powerful python library supporting various algorithms and deep learning frameworks. discover how to install, use, and integrate it into your projects."
+    },
+    {
+      "title": "neural-style-transfer-explained-with-tensorflow",
+      "url": "posts/2026-05-09-paper-neural-style-transfer.html",
+      "date": "2026-05-09T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "learn how to implement neural style transfer using tensorflow. discover key concepts, best practices, and practical examples for artistic transformations."
+    },
+    {
+      "title": "contextualized-topic-models for advanced text analysis",
+      "url": "posts/2026-05-21-tutorial-contextualized-topic-models.html",
+      "date": "2026-05-21T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn about Contextualized Topic Models, their key features, practical implementation, and real-world use cases in sentiment analysis and document summarization."
+    },
+    {
+      "title": "Autofaiss: Automatically Build Optimal Faiss Indexes for Vector Search",
+      "url": "posts/2026-01-09-package-autofaiss.html",
+      "date": "2026-01-09T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Autofaiss automatically selects the best Faiss index type and parameters for your embeddings, making it easy to build fast and memory-efficient approximate nearest neighbor search indexes."
+    },
+    {
+      "title": "efficientdet for real-time object detection & deployment",
+      "url": "posts/2026-04-24-paper-efficientdet.html",
+      "date": "2026-04-24T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn about efficientdet, a powerful model that balances accuracy and efficiency. Explore its key features, installation, practical examples, and best practices."
+    },
+    {
+      "title": "BERTScore: Evaluating Text Generation with Contextual Embeddings",
+      "url": "posts/2026-01-07-package-bert-score.html",
+      "date": "2026-01-07T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "BERTScore leverages BERT contextual embeddings to evaluate text generation quality, providing precision, recall, and F1 scores that correlate better with human judgment than traditional n-gram metrics."
+    },
+    {
+      "title": "PyGlove: Symbolic Programming for AutoML and Beyond",
+      "url": "posts/2026-01-10-package-pyglove.html",
+      "date": "2026-01-10T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "PyGlove is Google's library for symbolic programming in Python, enabling manipulation of programs as mutable objects for AutoML, hyperparameter tuning, and neural architecture search."
+    },
+    {
+      "title": "SwinIR: Advanced Image Restoration Framework | SEO Optimized",
+      "url": "posts/2026-04-29-paper-swinir.html",
+      "date": "2026-04-29T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn about SwinIR, an innovative image restoration tool that uses Transformer models for super-resolution, denoising & deblurring. Get started with easy installation and practical examples."
+    },
+    {
+      "title": "ultralytics/Ultralytics - Modern Computer Vision Library in Python",
+      "url": "posts/2026-04-13-repo-ultralytics-ultralytics.html",
+      "date": "2026-04-13T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn how to install and use the ultralytics/Ultralytics library for real-time object detection, segmentation, and tracking. Explore practical examples and best practices."
+    },
+    {
+      "title": "corentinj-real-time-voice-cloning",
+      "url": "posts/2026-04-01-repo-corentinj-real-time-voice-cloning.html",
+      "date": "2026-04-01T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn about CorentinJ’s real-time voice cloning technology, its applications in gaming and virtual assistants, and how to set it up. Explore key features like customizable voice models."
+    },
+    {
+      "title": "laion-ai/open-assistant - state-of-the-art-conversational-ai",
+      "url": "posts/2026-04-10-repo-laion-ai-open-assistant.html",
+      "date": "2026-04-10T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Explore how to use LAION-AI/Open Assistant for chatbots, virtual assistants, and content generation. Learn installation, examples, and best practices."
+    },
+    {
+      "title": "federated-learning-for-image-classification",
+      "url": "posts/2026-05-15-tutorial-federated-learning-for-image-classification.html",
+      "date": "2026-05-15T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn about federated learning for image classification, its benefits like privacy and scalability, and how to set up a simple example using TensorFlow Federated."
+    },
+    {
+      "title": "TPOT: Automated Machine Learning with Genetic Programming",
+      "url": "posts/2026-01-27-package-tpot.html",
+      "date": "2026-01-27T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "TPOT is a Python AutoML tool that uses genetic programming to automatically design and optimize scikit-learn machine learning pipelines."
+    },
+    {
+      "title": "convnext-explained-modern-convolutional-neural-network",
+      "url": "posts/2026-04-25-paper-convnext.html",
+      "date": "2026-04-25T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn about ConvNeXt, a cutting-edge CNN architecture designed for efficiency and performance. Discover its key features, implementation, and applications in image processing tasks like classification and object detection."
+    },
+    {
+      "title": "XGBoost: Scalable Gradient Boosting for Classification and Regression",
+      "url": "posts/2025-12-23-package-xgboost.html",
+      "date": "2025-12-23T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "A hands-on guide to XGBoost, the optimized gradient boosting library known for speed, performance, and dominance in machine learning competitions."
+    },
+    {
+      "title": "dm_control: Python Library for Reinforcement Learning Simulations",
+      "url": "posts/2026-05-22-tutorial-dm-control.html",
+      "date": "2026-05-22T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Explore dm_control, a powerful Python library by DeepMind for designing and testing RL algorithms. Learn key features, installation, examples, and best practices."
+    },
+    {
+      "title": "stability-ai/stablediffusion: text-generation framework overview",
+      "url": "posts/2026-04-06-repo-stability-ai-stablediffusion.html",
+      "date": "2026-04-06T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn about Stability-AI/Stablediffusion, a powerful text generation tool using TensorFlow. Discover key features, installation steps, and practical examples for content creation and chatbot development."
     },
     {
       "title": "Dopamine - Google's Research Framework for Reinforcement Learning",
@@ -12310,103 +12376,125 @@
       "excerpt": "learn about stylegan 2, a top-notch generative model for image and video synthesis. discover its features, applications, and how to get started with setup instructions."
     },
     {
-      "title": "microsoft/visual-chatgpt: integrating text & images for AI responses",
-      "url": "posts/2026-04-16-repo-microsoft-visual-chatgpt.html",
-      "date": "2026-04-16T09:00:00+00:00",
+      "title": "lllyasviel/Fooocus: Python Library for Image Enhancement",
+      "url": "posts/2026-04-05-repo-lllyasviel-fooocus.html",
+      "date": "2026-04-05T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "Learn about microsoft’s visual chatgpt, a powerful tool combining text and image inputs to generate contextually relevant responses. Discover setup, use cases, and best practices."
+      "excerpt": "Discover how to use lllyasviel/Fooocus for real-time noise reduction, image sharpening, and advanced contrast adjustment in Python. Perfect for forensic analysis, medical imaging, and digital archiving."
     },
     {
-      "title": "image-segmentation-with-pytorch-unet-opencv",
-      "url": "posts/2026-04-17-paper-image-segmentation.html",
-      "date": "2026-04-17T09:00:00+00:00",
+      "title": "ultralytics/Yolov5 - Real-Time Object Detection Guide",
+      "url": "posts/2026-04-02-repo-ultralytics-yolov5.html",
+      "date": "2026-04-02T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "Learn about image segmentation using PyTorch-UNet and OpenCV with practical examples and use cases in medical imaging, autonomous driving, and more."
+      "excerpt": "Learn how to set up and use YOLOv5 for real-time object detection, including installation, basic usage, and advanced configurations. Explore practical applications in security, autonomous vehicles, and retail analytics."
     },
     {
-      "title": "hmr - hot-module-reload for efficient python development",
-      "url": "posts/2026-05-02-paper-hmr.html",
-      "date": "2026-05-02T09:00:00+00:00",
+      "title": "Langfun - Building Natural Language-Powered Functions with LLMs",
+      "url": "posts/2026-02-05-package-langfun.html",
+      "date": "2026-02-05T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "Learn how to set up and use Hot Module Reload (HMR) in Python applications. Discover practical examples, best practices, and key features like real-time updates and seamless integration with Flask or React projects."
+      "excerpt": "Explore Langfun, Google's Python library for composing and calling LLM-powered functions using natural language prompt templates and structured output."
     },
     {
-      "title": "anomalib: open-source package for anomaly detection",
-      "url": "posts/2026-05-27-tutorial-anomalib.html",
-      "date": "2026-05-27T09:00:00+00:00",
+      "title": "xgboost: fast & efficient gradient boosting in python",
+      "url": "posts/2026-04-19-paper-xgboost.html",
+      "date": "2026-04-19T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "learn about anomalib, a powerful python library supporting various algorithms and deep learning frameworks. discover how to install, use, and integrate it into your projects."
+      "excerpt": "learn about xgboost’s key features, installation, core concepts, practical examples, and best practices for classification & regression tasks. get started now!"
     },
     {
-      "title": "PyBullet: Physics Simulation for Robotics and Reinforcement Learning",
-      "url": "posts/2026-01-20-package-pybullet.html",
-      "date": "2026-01-20T09:00:00+00:00",
+      "title": "jakevdp/Pythondatasciencehandbook - Comprehensive Python Data Science Guide",
+      "url": "posts/2026-04-04-repo-jakevdp-pythondatasciencehandbook.html",
+      "date": "2026-04-04T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "PyBullet is a Python binding for the Bullet physics engine, providing real-time physics simulation for robotics, reinforcement learning, and VR applications."
+      "excerpt": "Explore the jakevdp/Pythondatasciencehandbook project, a comprehensive guide for data science in Python. Discover key libraries like NumPy, pandas, Matplotlib, and scikit-learn with practical examples."
     },
     {
-      "title": "BERTScore: Evaluating Text Generation with Contextual Embeddings",
-      "url": "posts/2026-01-07-package-bert-score.html",
-      "date": "2026-01-07T09:00:00+00:00",
+      "title": "TensorFlow Graphics: Differentiable 3D Graphics Layers for Deep Learning",
+      "url": "posts/2026-01-29-package-tensorflow-graphics.html",
+      "date": "2026-01-29T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "BERTScore leverages BERT contextual embeddings to evaluate text generation quality, providing precision, recall, and F1 scores that correlate better with human judgment than traditional n-gram metrics."
+      "excerpt": "TensorFlow Graphics provides differentiable graphics layers for 3D geometry transformations, rendering, and mesh operations, bridging the gap between computer graphics and deep learning."
     },
     {
-      "title": "alphafold-2-0-protein-structure-prediction-revolutionary-tool",
-      "url": "posts/2026-04-18-paper-alphafold.html",
-      "date": "2026-04-18T09:00:00+00:00",
+      "title": "instant-ngp: efficient neural network optimization",
+      "url": "posts/2026-04-30-paper-instant-ngp.html",
+      "date": "2026-04-30T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "Explore how AlphaFold 2.0 predicts protein structures with unparalleled accuracy, ideal for drug discovery and genomics research. Learn setup, usage, and practical examples."
+      "excerpt": "learn about instant-ngp, an optimized implementation of next generation proximal methods for deep learning. discover key features and practical usage in this guide."
     },
     {
-      "title": "CatBoost: Gradient Boosting with Native Categorical Feature Support",
-      "url": "posts/2025-12-23-package-catboost.html",
-      "date": "2025-12-23T09:00:00+00:00",
+      "title": "scikit-video: Video Processing in Python with FFmpeg",
+      "url": "posts/2026-01-21-package-scikit-video.html",
+      "date": "2026-01-21T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "A practical guide to CatBoost, Yandex's gradient boosting library that handles categorical features natively without manual encoding."
+      "excerpt": "scikit-video (skvideo) is a Python library for video reading, writing, and processing built on top of FFmpeg and NumPy."
     },
     {
-      "title": "cyclegan-explained-for-image-transformation",
-      "url": "posts/2026-04-20-paper-cyclegan.html",
-      "date": "2026-04-20T09:00:00+00:00",
+      "title": "notebookllama - python library for managing jupyter notebooks",
+      "url": "posts/2026-05-26-tutorial-notebookllama.html",
+      "date": "2026-05-26T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "cyclegan is a powerful tool for translating images between domains without paired samples. learn its architecture, implementation in python, and practical applications in art & medical imaging."
+      "excerpt": "learn how to use notebookllama, a powerful python library that simplifies the creation and management of jupyter notebooks. discover key features like instant creation, dynamic cell management, and export options."
+    },
+    {
+      "title": "ollama: Python Library for Automated Machine Learning",
+      "url": "posts/2026-05-24-tutorial-ollama.html",
+      "date": "2026-05-24T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "Learn about ollama, a user-friendly Python library that streamlines machine learning tasks. Discover setup, core concepts, and practical examples in this comprehensive guide."
+    },
+    {
+      "title": "killianlucas/open-interpreter: modern python library for dynamic code execution",
+      "url": "posts/2026-03-31-repo-killianlucas-open-interpreter.html",
+      "date": "2026-03-31T09:00:00+00:00",
+      "author": "Ruslanmv",
+      "tags": [
+        ""
+      ],
+      "category": "general",
+      "excerpt": "learn about open interpreter, a versatile python tool that enables secure code evaluation in various applications. discover its key features, practical examples, and best practices."
     },
     {
       "title": "exploring-langgraph-for-nlp-with-python",
@@ -12420,92 +12508,15 @@
       "excerpt": "langgraph is a powerful python library for constructing graphs in nlp tasks. learn graph operations, integration with nltk and more examples."
     },
     {
-      "title": "custom-federated-algorithms-part-1-introduction-to-the-federated-core",
-      "url": "posts/2026-05-18-tutorial-custom-federated-algorithms-part-1-introduction-to-the-federated-core.html",
-      "date": "2026-05-18T09:00:00+00:00",
+      "title": "Folium: Create Interactive Leaflet.js Maps in Python",
+      "url": "posts/2025-12-26-package-folium.html",
+      "date": "2025-12-26T09:00:00+00:00",
       "author": "Ruslanmv",
       "tags": [
         ""
       ],
       "category": "general",
-      "excerpt": "Learn about custom federated algorithms using Federated Core, including model training, evaluation and practical examples in healthcare & finance. Start building robust ML solutions."
-    },
-    {
-      "title": "corentinj-real-time-voice-cloning",
-      "url": "posts/2026-04-01-repo-corentinj-real-time-voice-cloning.html",
-      "date": "2026-04-01T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Learn about CorentinJ’s real-time voice cloning technology, its applications in gaming and virtual assistants, and how to set it up. Explore key features like customizable voice models."
-    },
-    {
-      "title": "Crawl4AI: Open-Source Web Crawling for LLMs and AI Pipelines",
-      "url": "posts/2026-01-22-package-crawl4ai.html",
-      "date": "2026-01-22T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Crawl4AI is an open-source, async-first web crawler built for feeding clean, structured content to LLMs and AI applications."
-    },
-    {
-      "title": "run-llama/Llama_Index: Building Powerful Information Retrieval Systems",
-      "url": "posts/2026-04-08-repo-run-llama-llama-index.html",
-      "date": "2026-04-08T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Learn how to use run-llama/Llama_Index for efficient data indexing and querying, supporting text documents & CSV files. Ideal for chatbots & knowledge graphs."
-    },
-    {
-      "title": "google-research/google research for machine learning projects",
-      "url": "posts/2026-04-15-repo-google-research-google-research.html",
-      "date": "2026-04-15T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Learn about google-research's key features and how to use it effectively in your ML projects, including setup, core concepts, and practical examples."
-    },
-    {
-      "title": "learn-pix2pix-image-to-image-translation-python",
-      "url": "posts/2026-04-21-paper-pix2pix.html",
-      "date": "2026-04-21T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Discover how to use Pix2Pix for image-to-image translation with Python. Explore setup, core concepts, practical examples, and best practices in this comprehensive guide."
-    },
-    {
-      "title": "dm_control: Python Library for Reinforcement Learning Simulations",
-      "url": "posts/2026-05-22-tutorial-dm-control.html",
-      "date": "2026-05-22T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "Explore dm_control, a powerful Python library by DeepMind for designing and testing RL algorithms. Learn key features, installation, examples, and best practices."
-    },
-    {
-      "title": "TensorFlow Graphics: Differentiable 3D Graphics Layers for Deep Learning",
-      "url": "posts/2026-01-29-package-tensorflow-graphics.html",
-      "date": "2026-01-29T09:00:00+00:00",
-      "author": "Ruslanmv",
-      "tags": [
-        ""
-      ],
-      "category": "general",
-      "excerpt": "TensorFlow Graphics provides differentiable graphics layers for 3D geometry transformations, rendering, and mesh operations, bridging the gap between computer graphics and deep learning."
+      "excerpt": "A practical guide to Folium, the Python library for creating interactive Leaflet.js maps with markers, choropleth layers, and heatmaps."
     }
   ]
 }

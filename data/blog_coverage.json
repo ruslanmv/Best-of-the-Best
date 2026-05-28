@@ -722,9 +722,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "anomalib",
+    "id": "hello-many-worlds",
     "version": 1,
-    "date": "2026-05-27",
-    "filename": "2026-05-27-tutorial-anomalib.md"
+    "date": "2026-05-28",
+    "filename": "2026-05-28-tutorial-hello-many-worlds.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "hello-many-worlds",
+    "version": 1,
+    "date": "2026-05-28",
+    "filename": "2026-05-28-tutorial-hello-many-worlds.md"
   }
 ]
