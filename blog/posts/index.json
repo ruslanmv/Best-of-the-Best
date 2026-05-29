@@ -149,6 +149,21 @@
     "teaser": "/assets/images/2026-04-17-paper-image-segmentation/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-29-tutorial-opik.md",
+    "url": "/blog/posts/2026-05-29-tutorial-opik.html",
+    "title": "opik-software-for-spacecraft-trajectory-modeling",
+    "date": "2026-05-29T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "opik",
+      "space-mission-planning",
+      "trajectory-calculations",
+      "interplanetary-travel"
+    ],
+    "excerpt": "Learn about opik, a tool for accurate interplanetary trajectory calculations. Discover how to install and use it for space mission planning with practical examples.",
+    "teaser": "/assets/images/2026-05-29-tutorial-opik/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-09-repo-coqui-ai-tts.md",
     "url": "/blog/posts/2026-04-09-repo-coqui-ai-tts.html",
     "title": "coqui-ai/Tts - Text-to-Speech Library for Developers",

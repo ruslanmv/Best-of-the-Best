@@ -729,9 +729,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "hello-many-worlds",
+    "id": "opik",
     "version": 1,
-    "date": "2026-05-28",
-    "filename": "2026-05-28-tutorial-hello-many-worlds.md"
+    "date": "2026-05-29",
+    "filename": "2026-05-29-tutorial-opik.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "opik",
+    "version": 1,
+    "date": "2026-05-29",
+    "filename": "2026-05-29-tutorial-opik.md"
   }
 ]
