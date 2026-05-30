@@ -736,9 +736,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "opik",
+    "id": "lightautoml",
     "version": 1,
-    "date": "2026-05-29",
-    "filename": "2026-05-29-tutorial-opik.md"
+    "date": "2026-05-30",
+    "filename": "2026-05-30-tutorial-lightautoml.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "lightautoml",
+    "version": 1,
+    "date": "2026-05-30",
+    "filename": "2026-05-30-tutorial-lightautoml.md"
   }
 ]

@@ -1267,6 +1267,23 @@
     "teaser": "/assets/images/2026-04-04-repo-jakevdp-pythondatasciencehandbook/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-30-tutorial-lightautoml.md",
+    "url": "/blog/posts/2026-05-30-tutorial-lightautoml.html",
+    "title": "lightautoml: automate machine learning workflows",
+    "date": "2026-05-30T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "lightautoml",
+      "machine-learning",
+      "python",
+      "automation",
+      "model-selection",
+      "hyperparameter-tuning"
+    ],
+    "excerpt": "Learn how to use lightautoml for streamlined data preprocessing, model selection, and hyperparameter tuning. Get started with examples and best practices.",
+    "teaser": "/assets/images/2026-05-30-tutorial-lightautoml/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-29-package-tensorflow-graphics.md",
     "url": "/blog/posts/2026-01-29-package-tensorflow-graphics.html",
     "title": "TensorFlow Graphics: Differentiable 3D Graphics Layers for Deep Learning",
