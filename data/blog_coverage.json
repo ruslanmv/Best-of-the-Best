@@ -743,9 +743,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "lightautoml",
+    "id": "torchgeo",
     "version": 1,
-    "date": "2026-05-30",
-    "filename": "2026-05-30-tutorial-lightautoml.md"
+    "date": "2026-05-31",
+    "filename": "2026-05-31-tutorial-torchgeo.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "torchgeo",
+    "version": 1,
+    "date": "2026-05-31",
+    "filename": "2026-05-31-tutorial-torchgeo.md"
   }
 ]

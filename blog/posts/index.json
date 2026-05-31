@@ -15,6 +15,21 @@
     "teaser": "/assets/images/2026-05-20-tutorial-kornia/teaser-ai.jpg"
   },
   {
+    "filename": "2026-05-31-tutorial-torchgeo.md",
+    "url": "/blog/posts/2026-05-31-tutorial-torchgeo.html",
+    "title": "torchgeo - geospatial image processing with pytorch",
+    "date": "2026-05-31T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "torchgeo",
+      "pytorch",
+      "geospatial-data",
+      "image-segmentation"
+    ],
+    "excerpt": "learn about torchgeo, a python library for geospatial data segmentation and classification using pytorch. discover key features, installation, and practical examples in this comprehensive guide.",
+    "teaser": "/assets/images/2026-05-31-tutorial-torchgeo/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-18-tutorial-custom-federated-algorithms-part-1-introduction-to-the-federated-core.md",
     "url": "/blog/posts/2026-05-18-tutorial-custom-federated-algorithms-part-1-introduction-to-the-federated-core.html",
     "title": "custom-federated-algorithms-part-1-introduction-to-the-federated-core",
