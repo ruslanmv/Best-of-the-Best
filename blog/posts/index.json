@@ -179,6 +179,21 @@
     "teaser": "/assets/images/2026-05-29-tutorial-opik/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-01-tutorial-autogen.md",
+    "url": "/blog/posts/2026-06-01-tutorial-autogen.html",
+    "title": "auto-gen-learn-how-to-use-open-source-library-for-data-generation",
+    "date": "2026-06-01T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "autogen",
+      "data-generation",
+      "open-source",
+      "api-documentation"
+    ],
+    "excerpt": "Discover AutoGen, an open-source library for generating complex data structures. Learn how to set up and use it in practical examples and understand its benefits for dynamic applications.",
+    "teaser": "/assets/images/2026-06-01-tutorial-autogen/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-09-repo-coqui-ai-tts.md",
     "url": "/blog/posts/2026-04-09-repo-coqui-ai-tts.html",
     "title": "coqui-ai/Tts - Text-to-Speech Library for Developers",

@@ -750,9 +750,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "torchgeo",
+    "id": "autogen",
     "version": 1,
-    "date": "2026-05-31",
-    "filename": "2026-05-31-tutorial-torchgeo.md"
+    "date": "2026-06-01",
+    "filename": "2026-06-01-tutorial-autogen.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "autogen",
+    "version": 1,
+    "date": "2026-06-01",
+    "filename": "2026-06-01-tutorial-autogen.md"
   }
 ]
