@@ -757,9 +757,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "autogen",
+    "id": "langfun",
     "version": 1,
-    "date": "2026-06-01",
-    "filename": "2026-06-01-tutorial-autogen.md"
+    "date": "2026-06-02",
+    "filename": "2026-06-02-tutorial-langfun.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "langfun",
+    "version": 1,
+    "date": "2026-06-02",
+    "filename": "2026-06-02-tutorial-langfun.md"
   }
 ]

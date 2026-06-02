@@ -149,6 +149,21 @@
     "teaser": "/assets/images/2026-01-24-package-mmsegmentation/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-02-tutorial-langfun.md",
+    "url": "/blog/posts/2026-06-02-tutorial-langfun.html",
+    "title": "Langfun: Advanced Language Learning and Translation Library",
+    "date": "2026-06-02T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "langfun",
+      "translationlibrary",
+      "languagelearning",
+      "apiintegration"
+    ],
+    "excerpt": "Explore Langfun, an advanced language learning tool with real-time translation capabilities. Learn how to integrate it into applications for education and technology. #langfun #translationlibrary #languagelearning #apiintegration",
+    "teaser": "/assets/images/2026-06-02-tutorial-langfun/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-17-paper-image-segmentation.md",
     "url": "/blog/posts/2026-04-17-paper-image-segmentation.html",
     "title": "image-segmentation-with-pytorch-unet-opencv",
