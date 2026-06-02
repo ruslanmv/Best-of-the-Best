@@ -1,13 +1,19 @@
 # Best-of-the-Best/_data/navigation.yml
-# Navigation inside the Best-of-the-Best section
+# Navigation inside the Best-of-the-Best section.
+# Menu label stays "Rankings"; body/CTA links may use "AI Rankings".
 
 main:
-  - title: "Blog"
+  - title: "Home"
     url: https://ruslanmv.com
 
-  - title: "The Best"
-    url: /        # this site’s homepage => /Best-of-the-Best/
+  - title: "Blog"
+    url: /blog/       # this site's daily blog => /Best-of-the-Best/blog/
+
+  - title: "Rankings"
+    url: /            # this site's homepage => /Best-of-the-Best/
 
   - title: "News"
     url: https://ruslanmv.com/news-and-trends/
 
+  - title: "Tools"
+    url: https://ruslanmv.com/assets/tools/index.html
