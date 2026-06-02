@@ -9,6 +9,9 @@ main:
   - title: "Blog"
     url: /blog/       # this site's daily blog => /Best-of-the-Best/blog/
 
+  - title: "Learn"
+    url: https://ruslanmv.com/learn/
+
   - title: "Rankings"
     url: /            # this site's homepage => /Best-of-the-Best/
 
