@@ -1,6 +1,9 @@
 ---
 layout: default
-title: "Best of the Best | AI Highlights"
+title: "AI Rankings"
+description: "Daily ranked AI repositories, research papers, PyPI packages, courses, and tutorials from GitHub, Papers with Code, Hugging Face, and other AI ecosystem sources."
+# Served at /Best-of-the-Best/ via the site `baseurl` in _config.yml.
+# Keep permalink as "/" so baseurl is not duplicated (would become /Best-of-the-Best/Best-of-the-Best/).
 permalink: /
 author_profile: false
 ---
