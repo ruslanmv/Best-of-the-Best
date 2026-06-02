@@ -7,17 +7,61 @@ author_profile: false
 
 <!-- Attach the BOTB CSS (served from assets/css/botb.css) -->
 <link rel="stylesheet" href="{{ '/assets/css/botb.css' | relative_url }}">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800|Raleway:400,700&display=swap" rel="stylesheet">
 
 <div class="botb-container">
 
-  <!-- HERO -->
+  <!-- HERO : brand-native dark-green technical hero with animated data waves -->
   <header class="botb-hero">
-    <div class="botb-hero__badge">RuslanMV Blog Section</div>
-    <h1 class="botb-hero__title">The Best of the Best</h1>
-    <p class="botb-hero__lead">
-      Daily AI highlights from an autonomous multi-agent system that monitors GitHub, 
-      Papers with Code and HuggingFace to surface the #1 ranked asset every day.
-    </p>
+    <svg class="botb-hero__bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="botb-bg-grad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#08120d"/>
+          <stop offset="0.5" stop-color="#0a1f16"/>
+          <stop offset="1" stop-color="#04140d"/>
+        </linearGradient>
+        <radialGradient id="botb-glow" cx="0.78" cy="0.42" r="0.55">
+          <stop offset="0" stop-color="#0f9d63" stop-opacity="0.55"/>
+          <stop offset="0.5" stop-color="#0a7d4f" stop-opacity="0.18"/>
+          <stop offset="1" stop-color="#0a7d4f" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="botb-wave" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#16c98a" stop-opacity="0"/>
+          <stop offset="0.55" stop-color="#36e0a8" stop-opacity="0.85"/>
+          <stop offset="1" stop-color="#7dffd0" stop-opacity="0.9"/>
+        </linearGradient>
+        <filter id="botb-soft"><feGaussianBlur stdDeviation="1.1"/></filter>
+      </defs>
+      <rect width="1600" height="420" fill="url(#botb-bg-grad)"/>
+      <rect width="1600" height="420" fill="url(#botb-glow)"/>
+      <!-- faint matrix digits, far left -->
+      <g fill="#1d3b2c" font-family="monospace" font-size="13" opacity="0.5">
+        <text x="40" y="70">10110</text><text x="120" y="120">0110</text><text x="60" y="180">11001</text>
+        <text x="150" y="240">0101</text><text x="36" y="300">10011</text><text x="120" y="350">1100</text>
+      </g>
+      <!-- flowing particle wave streams, right side -->
+      <g filter="url(#botb-soft)">
+        <path d="M650 250 C 950 120, 1150 360, 1600 150" fill="none" stroke="url(#botb-wave)" stroke-width="2" opacity="0.9"/>
+        <path d="M680 290 C 980 170, 1180 400, 1600 210" fill="none" stroke="url(#botb-wave)" stroke-width="1.5" opacity="0.7"/>
+        <path d="M700 200 C 1000 90, 1220 300, 1600 110" fill="none" stroke="url(#botb-wave)" stroke-width="1.5" opacity="0.6"/>
+        <path d="M640 330 C 1000 230, 1240 430, 1600 270" fill="none" stroke="url(#botb-wave)" stroke-width="1" opacity="0.5"/>
+      </g>
+      <!-- particles along the streams -->
+      <g fill="#7dffd0">
+        <circle cx="1040" cy="210" r="2.2" opacity="0.9"/><circle cx="1180" cy="250" r="1.8" opacity="0.8"/>
+        <circle cx="1300" cy="180" r="2.5" opacity="0.95"/><circle cx="1420" cy="200" r="1.6" opacity="0.7"/>
+        <circle cx="960" cy="180" r="1.8" opacity="0.75"/><circle cx="1500" cy="150" r="2.2" opacity="0.9"/>
+        <circle cx="1120" cy="300" r="1.5" opacity="0.6"/><circle cx="1360" cy="260" r="1.8" opacity="0.7"/>
+      </g>
+    </svg>
+    <div class="botb-hero__inner">
+      <p class="botb-hero__kicker"><span class="botb-hero__dot"></span> Autonomous AI Digest</p>
+      <h1 class="botb-hero__title">Best of the Best</h1>
+      <p class="botb-hero__lead">
+        Daily AI highlights from an autonomous multi-agent system monitoring GitHub,
+        papers, code, and Hugging Face — built by Ruslan Magana Vsevolodovna.
+      </p>
+    </div>
   </header>
 
   <!-- STATS -->
