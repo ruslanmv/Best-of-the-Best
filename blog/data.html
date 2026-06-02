@@ -4,7 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Best of the Best - Live Data Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        /*
+          PALETTE — matches the ruslanmv.com premium theme
+          ======================================================
+          Dark base : #191919 / #000000   Nav: #292929
+          Accent    : #06d6a0 (primary) · #63ffd1 (light) · #00a371 (dark)
+          Text      : #ffffff on dark · #b8c0bd muted
+          Fonts     : Montserrat (headings) · Raleway (body)
+        */
+        :root {
+            --primary-color: #191919;
+            --primary-light-color: #292929;
+            --primary-dark-color: #000000;
+            --secondary-color: #06d6a0;
+            --secondary-light-color: #63ffd1;
+            --secondary-dark-color: #00a371;
+            --surface-color: #1c1c1c;
+            --surface-raised-color: #232323;
+            --border-color: #2c2c2c;
+            --text-color: #ffffff;
+            --text-muted-color: #a7b0ac;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -12,10 +37,11 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--text-color);
+            background: linear-gradient(135deg, #191919 0%, #000000 100%);
+            background-attachment: fixed;
             min-height: 100vh;
             padding: 20px;
         }
@@ -23,47 +49,76 @@
         .container {
             max-width: 1400px;
             margin: 0 auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.55);
             overflow: hidden;
         }
 
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px;
+            position: relative;
+            background: linear-gradient(135deg, #191919 0%, #0d0d0d 100%);
+            color: var(--text-color);
+            padding: 48px 40px;
             text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--secondary-dark-color), var(--secondary-color), var(--secondary-light-color));
         }
 
         header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 2.6em;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        header h1 .accent {
+            color: var(--secondary-color);
         }
 
         header p {
             font-size: 1.2em;
-            opacity: 0.9;
+            color: var(--text-muted-color);
         }
 
         nav {
-            background: #2d3748;
+            background: var(--primary-light-color);
             padding: 15px 40px;
             display: flex;
-            gap: 20px;
+            gap: 12px;
             flex-wrap: wrap;
+            border-bottom: 1px solid var(--border-color);
         }
 
         nav a {
-            color: white;
+            color: var(--text-color);
             text-decoration: none;
             padding: 8px 16px;
-            border-radius: 5px;
-            transition: background 0.3s;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background 0.25s, color 0.25s;
         }
 
-        nav a:hover, nav a.active {
-            background: #667eea;
+        nav a:hover {
+            color: var(--secondary-color);
+            background: rgba(6, 214, 160, 0.12);
+        }
+
+        nav a.active {
+            background: var(--secondary-color);
+            color: var(--primary-dark-color);
+            font-weight: 700;
         }
 
         .content {
@@ -78,21 +133,25 @@
         }
 
         .stat-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 25px;
-            border-radius: 10px;
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--secondary-dark-color) 100%);
+            color: var(--primary-dark-color);
+            padding: 28px 25px;
+            border-radius: 12px;
             text-align: center;
+            box-shadow: 0 8px 24px rgba(6, 214, 160, 0.18);
         }
 
         .stat-card h3 {
-            font-size: 2.5em;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 2.6em;
             margin-bottom: 5px;
         }
 
         .stat-card p {
-            opacity: 0.9;
+            font-weight: 600;
             font-size: 1.1em;
+            opacity: 0.85;
         }
 
         .section {
@@ -105,55 +164,65 @@
             align-items: center;
             margin-bottom: 20px;
             padding-bottom: 10px;
-            border-bottom: 3px solid #667eea;
+            border-bottom: 3px solid var(--secondary-color);
         }
 
         .section-header h2 {
-            color: #333;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: var(--text-color);
             font-size: 1.8em;
         }
 
         .api-badge {
-            background: #667eea;
-            color: white;
-            padding: 6px 12px;
-            border-radius: 5px;
+            background: var(--secondary-color);
+            color: var(--primary-dark-color);
+            padding: 7px 14px;
+            border-radius: 6px;
             font-size: 0.9em;
+            font-weight: 600;
             text-decoration: none;
-            transition: background 0.3s;
+            transition: background 0.25s, box-shadow 0.25s;
         }
 
         .api-badge:hover {
-            background: #764ba2;
+            background: var(--secondary-light-color);
+            box-shadow: 0 4px 14px rgba(6, 214, 160, 0.3);
         }
 
         .data-table {
             width: 100%;
             border-collapse: collapse;
-            background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            border-radius: 8px;
+            background: var(--surface-raised-color);
+            box-shadow: 0 2px 14px rgba(0,0,0,0.35);
+            border-radius: 10px;
             overflow: hidden;
         }
 
         .data-table thead {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: linear-gradient(135deg, var(--secondary-dark-color) 0%, var(--secondary-color) 100%);
+            color: var(--primary-dark-color);
         }
 
         .data-table th {
             padding: 15px;
             text-align: left;
-            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
         }
 
         .data-table td {
             padding: 15px;
-            border-bottom: 1px solid #e0e0e0;
+            color: var(--text-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .data-table tbody tr {
+            transition: background 0.2s;
         }
 
         .data-table tbody tr:hover {
-            background: #f8f9fa;
+            background: rgba(6, 214, 160, 0.07);
         }
 
         .data-table tbody tr:last-child td {
@@ -161,7 +230,7 @@
         }
 
         .trend-up {
-            color: #10b981;
+            color: var(--secondary-color);
             font-weight: bold;
         }
 
@@ -171,12 +240,14 @@
         }
 
         .github-link {
-            color: #667eea;
+            color: var(--secondary-color);
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
+            transition: color 0.2s;
         }
 
         .github-link:hover {
+            color: var(--secondary-light-color);
             text-decoration: underline;
         }
 
@@ -185,33 +256,37 @@
             padding: 4px 10px;
             border-radius: 12px;
             font-size: 0.85em;
-            font-weight: 500;
+            font-weight: 600;
+            border: 1px solid transparent;
         }
 
         .badge-stars {
-            background: #fef3c7;
-            color: #92400e;
+            background: rgba(250, 204, 21, 0.12);
+            color: #facc15;
+            border-color: rgba(250, 204, 21, 0.3);
         }
 
         .badge-citations {
-            background: #dbeafe;
-            color: #1e3a8a;
+            background: rgba(99, 255, 209, 0.1);
+            color: var(--secondary-light-color);
+            border-color: rgba(99, 255, 209, 0.28);
         }
 
         .badge-downloads {
-            background: #dcfce7;
-            color: #166534;
+            background: rgba(6, 214, 160, 0.12);
+            color: var(--secondary-color);
+            border-color: rgba(6, 214, 160, 0.3);
         }
 
         .loading {
             text-align: center;
             padding: 40px;
-            color: #666;
+            color: var(--text-muted-color);
         }
 
         .spinner {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #667eea;
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-top: 4px solid var(--secondary-color);
             border-radius: 50%;
             width: 40px;
             height: 40px;
@@ -225,19 +300,30 @@
         }
 
         .last-updated {
-            background: #f8f9fa;
+            background: var(--surface-raised-color);
+            border: 1px solid var(--border-color);
             padding: 15px;
-            border-radius: 8px;
+            border-radius: 10px;
             margin-bottom: 30px;
             text-align: center;
-            color: #666;
+            color: var(--text-muted-color);
+        }
+
+        .last-updated strong {
+            color: var(--text-color);
         }
 
         footer {
-            background: #2d3748;
-            color: white;
+            background: var(--primary-dark-color);
+            color: var(--text-muted-color);
             text-align: center;
-            padding: 20px;
+            padding: 24px 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        footer p:first-child {
+            color: var(--text-color);
+            font-weight: 600;
         }
 
         @media (max-width: 768px) {
@@ -267,7 +353,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>🏆 Best of the Best AI</h1>
+            <h1>🏆 Best of the Best <span class="accent">AI</span></h1>
             <p>Live Dashboard - Top Repositories, Papers & Packages</p>
         </header>
 
