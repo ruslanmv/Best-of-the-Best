@@ -1,272 +1,361 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily AI Package Highlights - Best of the Best</title>
-    <meta name="description" content="Discover the best AI packages with watsonx.ai and Watson Orchestrate integration insights">
-    <meta name="author" content="Ruslan Magana Vsevolodovna">
+---
+layout: default
+title: "Daily AI Blog"
+description: "Daily AI highlights — trending packages, repositories, research papers, and hands-on tutorials, written automatically by an autonomous multi-agent system."
+permalink: /blog/
+author_profile: false
+---
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Daily AI Package Highlights">
-    <meta property="og:description" content="Discover the best AI packages with watsonx.ai and Watson Orchestrate integration insights">
+<!-- Premium BOTB theme — same design language as the Rankings home page -->
+<link rel="stylesheet" href="{{ '/assets/css/botb.css' | relative_url }}">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800|Raleway:400,700&display=swap" rel="stylesheet">
 
-    <!-- Minimal Mistakes inspired CSS -->
-    <style>
-        /* Reset and Base Styles */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+<style>
+  /* ===========================================================
+     Daily AI Blog — page-scoped extensions to botb.css.
+     Uses the shared BOTB design tokens so it matches the
+     Rankings home page and the Data Leaderboard.
+     =========================================================== */
 
-        :root {
-            --primary-color: #7a8288;
-            --link-color: #3273dc;
-            --link-hover-color: #0a0a0a;
-            --text-color: #3a3a3a;
-            --background-color: #fff;
-            --border-color: #bdc1c4;
-            --notice-bg: #f3f3f3;
-            --code-bg: #fafafa;
-            --masthead-bg: #fff;
-            --footer-bg: #000;
-            --font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-            --font-family-mono: Monaco, Consolas, "Lucida Console", monospace;
-        }
+  /* Intro notice card */
+  .blog-intro {
+    max-width: 1100px;
+    margin: 0 auto 1rem;
+    padding: 1.3rem 1.5rem;
+    background: linear-gradient(135deg, #eafff5 0%, #ffffff 55%);
+    border: 1px solid #cfe9de;
+    border-left: 4px solid var(--botb-primary);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(10, 80, 50, 0.05);
+  }
+  .blog-intro h4 {
+    margin: 0 0 0.4rem;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 700;
+    color: var(--botb-dark);
+    font-size: 1.05rem;
+  }
+  .blog-intro p {
+    margin: 0;
+    color: var(--botb-muted);
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
 
-        html { font-size: 16px; -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; }
-        body { font-family: var(--font-family); color: var(--text-color); background-color: var(--background-color); line-height: 1.5; }
+  /* Feature grid (Why this blog?) */
+  .blog-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+    max-width: 1100px;
+    margin: 0 auto 1rem;
+    padding: 0 1.5rem;
+  }
+  .blog-feature-card {
+    background: #ffffff;
+    border: 1px solid var(--botb-border);
+    border-radius: var(--botb-radius);
+    padding: 1.3rem 1.35rem;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.04);
+    transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+  }
+  .blog-feature-card:hover {
+    transform: translateY(-3px);
+    border-color: #cbd5e1;
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.10);
+  }
+  .blog-feature-card h3 {
+    margin: 0 0 0.45rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0f172a;
+  }
+  .blog-feature-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--botb-muted);
+    line-height: 1.6;
+  }
 
-        /* Masthead */
-        .masthead { position: relative; background-color: var(--masthead-bg); border-bottom: 1px solid var(--border-color); animation: intro 0.3s both; animation-delay: 0.15s; z-index: 20; }
-        .masthead__inner-wrap { max-width: 1280px; margin-left: auto; margin-right: auto; padding: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-        .site-title { font-size: 1.25rem; font-weight: bold; line-height: 1; text-decoration: none; color: var(--text-color); }
-        .greedy-nav { display: flex; align-items: center; gap: 1rem; }
-        .greedy-nav a { color: var(--text-color); text-decoration: none; padding: 0.5rem; border-radius: 4px; transition: background-color 0.2s; }
-        .greedy-nav a:hover { background-color: var(--notice-bg); }
+  /* CTA row */
+  .blog-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin: 2.5rem 1.5rem 1rem;
+  }
 
-        /* Page Content */
-        .page__content { max-width: 1024px; margin: 0 auto; padding: 2em 1em; }
+  .blog-loading {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--botb-muted);
+  }
+  .blog-spinner {
+    border: 3px solid #e7f6ee;
+    border-top-color: #0a7d4f;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    margin: 0 auto 1rem;
+    animation: blog-spin 0.9s linear infinite;
+  }
+  @keyframes blog-spin { to { transform: rotate(360deg); } }
+</style>
 
-        /* Hero */
-        .page__hero { position: relative; margin-bottom: 2em; background-color: var(--notice-bg); background-size: cover; background-position: center; animation: intro 0.3s both; animation-delay: 0.25s; }
-        .page__hero-overlay { position: relative; padding: 3em 1em; background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%); color: #fff; }
-        .page__title { font-size: 2.5em; line-height: 1.2; margin-bottom: 0.5em; color: #fff; }
-        .page__lead { font-size: 1.25em; margin-bottom: 0; }
+<div class="botb-container">
 
-        /* Archive */
-        .archive { margin-bottom: 2em; }
-        .archive__item-title { margin-bottom: 0.25em; font-size: 1.5em; line-height: 1.2; }
-        .archive__item-title a { color: var(--text-color); text-decoration: none; }
-        .archive__item-title a:hover { color: var(--link-color); text-decoration: underline; }
-        .archive__item-excerpt { margin-top: 0.5em; font-size: 0.875em; color: var(--primary-color); }
-        .archive__item { background: var(--background-color); border: 1px solid var(--border-color); border-radius: 4px; padding: 1.5em; margin-bottom: 1.5em; transition: box-shadow 0.2s; }
-        .archive__item:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-        .page__meta { margin-top: 0.5em; color: var(--primary-color); font-size: 0.875em; }
-        .page__meta i { margin-right: 0.25em; }
-
-        /* Tags */
-        .page__taxonomy { margin-top: 1em; }
-        .page__taxonomy-item { display: inline-block; margin-right: 0.5em; margin-bottom: 0.5em; padding: 0.25em 0.75em; background-color: var(--code-bg); border: 1px solid var(--border-color); border-radius: 4px; font-size: 0.75em; text-decoration: none; color: var(--text-color); }
-        .page__taxonomy-item:hover { background-color: var(--notice-bg); }
-
-        /* Notice */
-        .notice { margin: 2em 0; padding: 1em; background-color: var(--notice-bg); border-left: 4px solid var(--link-color); border-radius: 4px; }
-        .notice h4 { margin-bottom: 0.5em; color: var(--text-color); }
-
-        /* Features */
-        .feature__wrapper { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5em; margin: 2em 0; }
-        .feature__item { background: var(--background-color); border: 1px solid var(--border-color); border-radius: 4px; padding: 1.5em; transition: transform 0.2s, box-shadow 0.2s; }
-        .feature__item:hover { transform: translateY(-5px); box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); }
-        .feature__item h3 { font-size: 1.25em; margin-bottom: 0.5em; color: var(--text-color); }
-
-        /* Footer */
-        .page__footer { background-color: var(--footer-bg); color: #fff; margin-top: 3em; animation: intro 0.3s both; animation-delay: 0.45s; }
-        .page__footer-inner { max-width: 1024px; margin: 0 auto; padding: 2em 1em; }
-        .page__footer-copyright { text-align: center; font-size: 0.875em; }
-        .page__footer-follow { text-align: center; margin-bottom: 1em; }
-        .page__footer a { color: #fff; text-decoration: none; margin: 0 0.5em; }
-        .page__footer a:hover { text-decoration: underline; }
-
-        /* Buttons */
-        .btn { display: inline-block; margin-bottom: 0.25em; padding: 0.5em 1em; font-family: var(--font-family); font-size: 0.875em; font-weight: bold; text-align: center; text-decoration: none; border-width: 0; border-radius: 4px; cursor: pointer; transition: background-color 0.2s; }
-        .btn--primary { background-color: var(--link-color); color: #fff; }
-        .btn--primary:hover { background-color: #276cda; }
-
-        /* Animations */
-        @keyframes intro { 0% { opacity: 0; } 100% { opacity: 1; } }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .page__title { font-size: 2em; }
-            .page__lead { font-size: 1em; }
-            .archive__item-title { font-size: 1.25em; }
-            .masthead__inner-wrap { flex-direction: column; align-items: flex-start; }
-            .greedy-nav { margin-top: 1em; flex-wrap: wrap; }
-        }
-
-        /* Loading state */
-        .loading { text-align: center; padding: 2em; color: var(--primary-color); }
-        .loading::after { content: '...'; animation: loading 1.5s infinite; }
-        @keyframes loading { 0% { content: '.'; } 33% { content: '..'; } 66% { content: '...'; } }
-    </style>
-</head>
-<body>
-    <!-- Masthead -->
-    <div class="masthead">
-        <div class="masthead__inner-wrap">
-            <a class="site-title" href="/">Best of the Best</a>
-            <nav class="greedy-nav">
-                <a href="/">Home</a>
-                <a href="data.html">Data Dashboard</a>
-                <a href="api/data.json" target="_blank">API</a>
-                <a href="https://github.com/ruslanmv/Best-of-the-Best" target="_blank">GitHub</a>
-            </nav>
-        </div>
+  <!-- HERO : brand-native dark-green technical hero with animated data waves -->
+  <header class="botb-hero">
+    <svg class="botb-hero__bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="botb-bg-grad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#08120d"/>
+          <stop offset="0.5" stop-color="#0a1f16"/>
+          <stop offset="1" stop-color="#04140d"/>
+        </linearGradient>
+        <radialGradient id="botb-glow" cx="0.78" cy="0.42" r="0.55">
+          <stop offset="0" stop-color="#0f9d63" stop-opacity="0.55"/>
+          <stop offset="0.5" stop-color="#0a7d4f" stop-opacity="0.18"/>
+          <stop offset="1" stop-color="#0a7d4f" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="botb-wave" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#16c98a" stop-opacity="0"/>
+          <stop offset="0.55" stop-color="#36e0a8" stop-opacity="0.85"/>
+          <stop offset="1" stop-color="#7dffd0" stop-opacity="0.9"/>
+        </linearGradient>
+        <filter id="botb-soft"><feGaussianBlur stdDeviation="1.1"/></filter>
+      </defs>
+      <rect width="1600" height="420" fill="url(#botb-bg-grad)"/>
+      <rect width="1600" height="420" fill="url(#botb-glow)"/>
+      <g fill="#1d3b2c" font-family="monospace" font-size="13" opacity="0.5">
+        <text x="40" y="70">10110</text><text x="120" y="120">0110</text><text x="60" y="180">11001</text>
+        <text x="150" y="240">0101</text><text x="36" y="300">10011</text><text x="120" y="350">1100</text>
+      </g>
+      <g filter="url(#botb-soft)">
+        <path d="M650 250 C 950 120, 1150 360, 1600 150" fill="none" stroke="url(#botb-wave)" stroke-width="2" opacity="0.9"/>
+        <path d="M680 290 C 980 170, 1180 400, 1600 210" fill="none" stroke="url(#botb-wave)" stroke-width="1.5" opacity="0.7"/>
+        <path d="M700 200 C 1000 90, 1220 300, 1600 110" fill="none" stroke="url(#botb-wave)" stroke-width="1.5" opacity="0.6"/>
+        <path d="M640 330 C 1000 230, 1240 430, 1600 270" fill="none" stroke="url(#botb-wave)" stroke-width="1" opacity="0.5"/>
+      </g>
+      <g fill="#7dffd0">
+        <circle cx="1040" cy="210" r="2.2" opacity="0.9"/><circle cx="1180" cy="250" r="1.8" opacity="0.8"/>
+        <circle cx="1300" cy="180" r="2.5" opacity="0.95"/><circle cx="1420" cy="200" r="1.6" opacity="0.7"/>
+        <circle cx="960" cy="180" r="1.8" opacity="0.75"/><circle cx="1500" cy="150" r="2.2" opacity="0.9"/>
+        <circle cx="1120" cy="300" r="1.5" opacity="0.6"/><circle cx="1360" cy="260" r="1.8" opacity="0.7"/>
+      </g>
+    </svg>
+    <div class="botb-hero__inner">
+      <p class="botb-hero__kicker"><span class="botb-hero__dot"></span> Autonomous AI Digest</p>
+      <h1 class="botb-hero__title">Daily AI Blog</h1>
+      <p class="botb-hero__lead">
+        Daily highlights on trending AI packages, repositories, research, and hands-on
+        tutorials — researched and written automatically by a multi-agent system.
+      </p>
     </div>
+  </header>
 
-    <!-- Hero -->
-    <div class="page__hero">
-        <div class="page__hero-overlay">
-            <div class="page__content">
-                <h1 class="page__title">Daily AI Package Highlights</h1>
-                <p class="page__lead">Discover the best AI packages with watsonx.ai and Watson Orchestrate integration insights</p>
-            </div>
-        </div>
+  <!-- INTRO -->
+  <div class="botb-stats-wrapper">
+    <div class="blog-intro">
+      <h4>🤖 AI-Powered Daily Insights</h4>
+      <p>Every day, an autonomous multi-agent system analyzes the most trending AI packages
+      and repositories, evaluates their potential — including IBM watsonx.ai and Watson
+      Orchestrate integration — and publishes a comprehensive write-up to help you stay
+      ahead in the AI landscape.</p>
     </div>
+  </div>
 
-    <!-- Main Content -->
-    <div class="page__content">
-        <!-- Introduction -->
-        <div class="notice">
-            <h4>🤖 AI-Powered Daily Insights</h4>
-            <p>Every day, our multi-agent AI system powered by CrewAI and Ollama analyzes the most trending AI packages, evaluates their potential integration with IBM watsonx.ai and Watson Orchestrate, and creates comprehensive blog posts to help you stay ahead in the AI landscape.</p>
-        </div>
-
-        <!-- Features -->
-        <h2>Why This Blog?</h2>
-        <div class="feature__wrapper">
-            <div class="feature__item">
-                <h3>🔍 AI-Powered Research</h3>
-                <p>Our research agent analyzes thousands of AI packages daily to identify the most impactful and trending tools.</p>
-            </div>
-            <div class="feature__item">
-                <h3>🧠 watsonx.ai Integration</h3>
-                <p>Expert analysis on how each package can enhance your IBM watsonx.ai workflows and capabilities.</p>
-            </div>
-            <div class="feature__item">
-                <h3>⚙️ Watson Orchestrate Applications</h3>
-                <p>Discover how to leverage packages in Watson Orchestrate for automated business processes.</p>
-            </div>
-            <div class="feature__item">
-                <h3>📝 Daily Insights</h3>
-                <p>Fresh content every day, written by AI agents with deep technical knowledge and business acumen.</p>
-            </div>
-            <div class="feature__item">
-                <h3>🤖 Multi-Agent System</h3>
-                <p>Powered by CrewAI with specialized agents for research, analysis, and technical writing.</p>
-            </div>
-            <div class="feature__item">
-                <h3>💡 Practical Examples</h3>
-                <p>Each post includes code examples, use cases, and implementation strategies.</p>
-            </div>
-        </div>
-
-        <!-- Blog Posts -->
-        <h2>Latest Posts</h2>
-        <div id="posts-container" class="archive">
-            <div class="loading">Loading posts</div>
-        </div>
-
-        <!-- Call to Action -->
-        <div style="text-align: center; margin: 3em 0;">
-            <a href="https://github.com/ruslanmv/Best-of-the-Best" class="btn btn--primary">⭐ Star on GitHub</a>
-            <a href="api/feed.xml" class="btn btn--primary">📰 Subscribe to RSS</a>
-        </div>
+  <!-- WHY THIS BLOG -->
+  <h2 class="botb-section-title">Why this blog?</h2>
+  <div class="blog-feature-grid">
+    <div class="blog-feature-card">
+      <h3>🔍 AI-Powered Research</h3>
+      <p>A research agent analyzes thousands of AI packages daily to surface the most impactful and trending tools.</p>
     </div>
+    <div class="blog-feature-card">
+      <h3>🧠 watsonx.ai Integration</h3>
+      <p>Expert analysis on how each package can enhance your IBM watsonx.ai workflows and capabilities.</p>
+    </div>
+    <div class="blog-feature-card">
+      <h3>⚙️ Watson Orchestrate</h3>
+      <p>Discover how to leverage packages in Watson Orchestrate for automated business processes.</p>
+    </div>
+    <div class="blog-feature-card">
+      <h3>📝 Daily Insights</h3>
+      <p>Fresh content every day, written by AI agents with deep technical knowledge and business acumen.</p>
+    </div>
+    <div class="blog-feature-card">
+      <h3>🤖 Multi-Agent System</h3>
+      <p>Powered by specialized agents for research, analysis, and technical writing working in concert.</p>
+    </div>
+    <div class="blog-feature-card">
+      <h3>💡 Practical Examples</h3>
+      <p>Each post includes code examples, real use cases, and concrete implementation strategies.</p>
+    </div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="page__footer">
-        <div class="page__footer-inner">
-            <div class="page__footer-follow">
-                <a href="https://github.com/ruslanmv" target="_blank">GitHub</a>
-                <a href="https://ruslanmv.com" target="_blank">Personal Site</a>
-                <a href="api/feed.xml">RSS Feed</a>
-            </div>
-            <div class="page__footer-copyright">
-                &copy; 2025 <strong>Ruslan Magana Vsevolodovna</strong>. Powered by Jekyll & Minimal Mistakes.
-            </div>
-        </div>
-    </footer>
+  <!-- LATEST POSTS -->
+  <h2 class="botb-section-title">📅 Latest Posts</h2>
+  <div id="posts-container" class="botb-posts-list">
+    <div class="blog-loading">
+      <div class="blog-spinner"></div>
+      <p>Loading posts…</p>
+    </div>
+  </div>
 
-    <!-- JavaScript -->
-    <script>
-        // Load and display blog posts
-        async function loadPosts() {
-            const container = document.getElementById('posts-container');
+  <!-- CTA -->
+  <div class="blog-cta">
+    <a class="botb-btn botb-btn-primary" href="https://github.com/ruslanmv/Best-of-the-Best" target="_blank" rel="noopener">
+      <i class="fab fa-github" aria-hidden="true"></i>
+      <span>Star on GitHub</span>
+    </a>
+    <a class="botb-btn botb-btn-outline" href="{{ site.baseurl }}/blog/api/feed.xml" target="_blank" rel="noopener">
+      <i class="fas fa-rss" aria-hidden="true"></i>
+      <span>Subscribe to RSS</span>
+    </a>
+    <a class="botb-btn botb-btn-outline" href="{{ site.baseurl }}/blog/data.html">
+      <i class="fas fa-chart-bar" aria-hidden="true"></i>
+      <span>Data Leaderboard</span>
+    </a>
+  </div>
 
-            try {
-                // Ensure we look in posts/index.json relative to the current location (blog/)
-                const response = await fetch('posts/index.json');
-                if (!response.ok) {
-                    throw new Error('Could not load posts index');
-                }
+</div>
 
-                const posts = await response.json();
+<script>
+  const baseurl       = '{{ site.baseurl | default: "" }}'.replace(/\/$/, '');
+  const postsIndexUrl = baseurl + '/blog/posts/index.json';
 
-                if (posts.length === 0) {
-                    container.innerHTML = `
-                        <div class="notice">
-                            <p>No posts available yet. Check back tomorrow for the first daily highlight!</p>
-                        </div>
-                    `;
-                    return;
-                }
+  const stripMarkdown = (text) => {
+    if (!text) return '';
+    return text
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+      .replace(/\*\*/g, '')
+      .replace(/__/g, '')
+      .replace(/`/g, '')
+      .replace(/#{1,6}\s/g, '');
+  };
 
-                // Sort posts by date (newest first)
-                posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+  // Build a post URL safely (mirrors the Rankings home page logic).
+  const buildPostUrl = (rawUrl) => {
+    if (!rawUrl) return '#';
+    const urlStr = String(rawUrl).trim();
+    if (/^https?:\/\//i.test(urlStr)) return urlStr;
+    let path = urlStr.replace(/^\/+/, '');
+    if (path.startsWith('blog/')) return `${baseurl}/${path}`;
+    return `${baseurl}/blog/${path}`;
+  };
 
-                // Generate HTML for each post
-                container.innerHTML = posts.map(post => {
-                    const date = new Date(post.date);
-                    const formattedDate = date.toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric'
-                    });
+  async function loadPosts() {
+    const container = document.getElementById('posts-container');
 
-                    return `
-                        <article class="archive__item">
-                            <h2 class="archive__item-title">
-                                <a href="posts/${post.filename.replace('.md', '.html')}">${post.title}</a>
-                            </h2>
-                            <p class="page__meta">
-                                <i>📅</i> <time datetime="${post.date}">${formattedDate}</time>
-                                <span> • </span>
-                                <i>✍️</i> ${post.author || 'AI Multi-Agent System'}
-                            </p>
-                            <p class="archive__item-excerpt">${post.excerpt || 'Click to read more...'}</p>
-                            <div class="page__taxonomy">
-                                ${(post.tags || ['AI', 'Machine Learning']).map(tag =>
-                                    `<a href="#${tag}" class="page__taxonomy-item">${tag}</a>`
-                                ).join('')}
-                            </div>
-                        </article>
-                    `;
-                }).join('');
+    try {
+      const response = await fetch(postsIndexUrl);
+      if (!response.ok) throw new Error('Could not load posts index');
 
-            } catch (error) {
-                console.error('Error loading posts:', error);
-                container.innerHTML = `
-                    <div class="notice">
-                        <h4>Posts Coming Soon</h4>
-                        <p>Posts will appear here once the multi-agent system starts generating daily content.</p>
-                        <p>The system analyzes trending AI packages and creates insightful blog posts automatically!</p>
-                    </div>
-                `;
+      let posts = await response.json();
+      if (!posts.length) {
+        container.innerHTML =
+          '<p class="botb-no-highlights">No posts available yet. Check back tomorrow for the first daily highlight!</p>';
+        return;
+      }
+
+      posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+      const POSTS_PER_PAGE = 10;
+      let currentPage = 1;
+      const totalPages = Math.ceil(posts.length / POSTS_PER_PAGE);
+
+      function renderPage(page) {
+        currentPage = page;
+        const start = (page - 1) * POSTS_PER_PAGE;
+        const pageItems = posts.slice(start, start + POSTS_PER_PAGE);
+
+        const cardsHtml = pageItems.map((post, idx) => {
+          const fallbackImg = `https://picsum.photos/seed/botb${start + idx}/600/340`;
+          const teaserUrl = post.teaser ? `${baseurl}${post.teaser}` : fallbackImg;
+          const cleanExcerpt = stripMarkdown(post.excerpt || '').substring(0, 120);
+          const postTags = (post.tags || [])
+            .filter((t) => t && !['python', 'package', 'pypi'].includes(t))
+            .slice(0, 2);
+          const tagsHtml = postTags
+            .map((t) => `<span class="botb-card-tag">${t.replace(/-/g, ' ')}</span>`)
+            .join('');
+          const dateStr = new Date(post.date).toLocaleDateString('en-US', {
+            year: 'numeric', month: 'short', day: 'numeric'
+          });
+          const readMin = Math.max(3, Math.ceil((cleanExcerpt.length / 5) * 8 / 200));
+          const delay = idx * 90;
+
+          return `
+            <article class="botb-post-card" style="animation-delay: ${delay}ms">
+              <a href="${buildPostUrl(post.url)}" class="botb-post-card__image-link">
+                <img src="${teaserUrl}" alt="${post.title}" class="botb-post-card__image" loading="lazy"
+                     onerror="this.onerror=null; this.src='${fallbackImg}';">
+              </a>
+              <div class="botb-post-card__body">
+                <div class="botb-post-card__meta">
+                  <time class="botb-post-card__date">${dateStr}</time>
+                  <span class="botb-post-card__meta-dot"></span>
+                  <span class="botb-post-card__reading-time">${readMin} min read</span>
+                </div>
+                ${tagsHtml ? `<div class="botb-post-card__tags">${tagsHtml}</div>` : ''}
+                <h3 class="botb-post-card__title">
+                  <a href="${buildPostUrl(post.url)}">${post.title}</a>
+                </h3>
+                <p class="botb-post-card__excerpt">${cleanExcerpt}${cleanExcerpt.length >= 120 ? '…' : ''}</p>
+                <a href="${buildPostUrl(post.url)}" class="botb-post-card__readmore">
+                  Continue reading <span style="transition:inherit">→</span>
+                </a>
+              </div>
+            </article>
+          `;
+        }).join('');
+
+        let paginationHtml = '';
+        if (totalPages > 1) {
+          const showingStart = start + 1;
+          const showingEnd = Math.min(start + POSTS_PER_PAGE, posts.length);
+
+          paginationHtml = `<div class="botb-pagination-wrapper">`;
+          paginationHtml += `<div class="botb-pagination-info">Page ${page} of ${totalPages} &middot; Showing ${showingStart}-${showingEnd} of ${posts.length} posts</div>`;
+          paginationHtml += `<nav class="botb-pagination" aria-label="Blog pagination">`;
+          paginationHtml += `<button class="botb-page-btn botb-page-btn--nav" onclick="changePage(${page - 1})" ${page <= 1 ? 'disabled' : ''}><span class="botb-page-arrow">&lsaquo;</span> Prev</button>`;
+
+          for (let i = 1; i <= totalPages; i++) {
+            if (i === page) {
+              paginationHtml += `<span class="botb-page-btn botb-page-btn--active">${i}</span>`;
+            } else if (i === 1 || i === totalPages || Math.abs(i - page) <= 1) {
+              paginationHtml += `<button class="botb-page-btn" onclick="changePage(${i})">${i}</button>`;
+            } else if (i === 2 && page > 4) {
+              paginationHtml += `<span class="botb-page-ellipsis">…</span>`;
+            } else if (i === totalPages - 1 && page < totalPages - 3) {
+              paginationHtml += `<span class="botb-page-ellipsis">…</span>`;
             }
+          }
+
+          paginationHtml += `<button class="botb-page-btn botb-page-btn--nav" onclick="changePage(${page + 1})" ${page >= totalPages ? 'disabled' : ''}>Next <span class="botb-page-arrow">&rsaquo;</span></button>`;
+          paginationHtml += `</nav></div>`;
         }
 
-        // Load posts when page loads
-        document.addEventListener('DOMContentLoaded', loadPosts);
-    </script>
-</body>
-</html>
+        container.innerHTML = cardsHtml + paginationHtml;
+      }
+
+      window.changePage = function (page) {
+        if (page < 1 || page > totalPages) return;
+        renderPage(page);
+        document.getElementById('posts-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      };
+
+      renderPage(1);
+
+    } catch (error) {
+      console.error('Error loading posts:', error);
+      container.innerHTML =
+        '<p class="botb-no-highlights">Posts will appear here once the multi-agent system starts generating daily content.</p>';
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', loadPosts);
+</script>
