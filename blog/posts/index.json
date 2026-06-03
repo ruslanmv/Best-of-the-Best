@@ -1280,6 +1280,21 @@
     "teaser": "/assets/images/2026-02-05-package-langfun/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-03-tutorial-comfyui.md",
+    "url": "/blog/posts/2026-06-03-tutorial-comfyui.html",
+    "title": "comfyui: user-friendly framework for generative ai models",
+    "date": "2026-06-03T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "comfyui",
+      "generative-ai",
+      "image-generation",
+      "text-processing"
+    ],
+    "excerpt": "Learn about comfyui, an open-source tool that simplifies working with generative AI. Get started easily and explore practical applications in image and text generation.",
+    "teaser": "/assets/images/2026-06-03-tutorial-comfyui/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-19-paper-xgboost.md",
     "url": "/blog/posts/2026-04-19-paper-xgboost.html",
     "title": "xgboost: fast & efficient gradient boosting in python",
