@@ -58,6 +58,13 @@ TOPIC_PALETTE_MAP = {
     "comfyui": "vision", "crawl4ai": "web", "folium": "data",
     "earthengine": "data", "autofaiss": "data", "gin": "ml",
     "llama": "ai", "video": "vision",
+    # broader coverage so fewer topics fall back to the generic "default"
+    "transformer": "ai", "gpt": "ai", "rag": "ai", "agent": "ai",
+    "diffusion": "vision", "stable": "vision", "image": "vision", "yolo": "vision",
+    "torch": "ml", "keras": "ml", "jax": "ml", "sklearn": "ml", "boost": "ml",
+    "spacy": "nlp", "translation": "nlp", "embedding": "nlp", "lang": "nlp",
+    "pandas": "data", "spark": "data", "duckdb": "data", "faiss": "data",
+    "fastapi": "web", "flask": "web", "django": "web", "gradio": "web",
 }
 
 
@@ -68,6 +75,30 @@ def get_palette(topic_id: str) -> List[Tuple[int, int, int]]:
         if keyword in topic_lower:
             return PALETTES[palette_name]
     return PALETTES["default"]
+
+
+# Content category -> descriptive search terms. Obscure library names (e.g.
+# "langfun", "transformerlens") don't match anything on stock-photo sites, so we
+# drive the query from the topic CATEGORY instead, which yields images that
+# actually relate to the post's subject area.
+CATEGORY_TERMS = {
+    "ai": "artificial intelligence neural network",
+    "ml": "machine learning model training",
+    "nlp": "language text processing communication",
+    "vision": "computer vision digital imagery",
+    "data": "data science analytics charts",
+    "web": "software code developer interface",
+    "default": "software engineering futuristic",
+}
+
+
+def get_category(topic_id: str) -> str:
+    """Map a topic id to a content category (ai/ml/nlp/vision/data/web)."""
+    topic_lower = topic_id.lower()
+    for keyword, cat in TOPIC_PALETTE_MAP.items():
+        if keyword in topic_lower:
+            return cat
+    return "default"
 
 
 def create_gradient_image(
@@ -142,24 +173,29 @@ def create_gradient_image(
 
 
 def download_pexels_image(
-    query: str, width: int, height: int, output_path: Path
+    query: str, width: int, height: int, output_path: Path, variety_key: str = ""
 ) -> bool:
-    """Download a free image from Pexels API."""
+    """Download a free image from Pexels API.
+
+    `variety_key` (e.g. the topic id) selects WHICH photo from the result page is
+    used, so different posts don't collide on the identical image even when their
+    queries are similar.
+    """
     api_key = os.getenv("PEXELS_API_KEY")
     if not api_key or not REQUESTS_AVAILABLE:
         return False
 
     try:
         headers = {"Authorization": api_key}
-        # Use a deterministic seed based on query to get consistent images
-        seed = int(hashlib.md5(query.encode()).hexdigest()[:8], 16) % 80 + 1
+        # Deterministic page from the query keeps results stable per category…
+        seed = int(hashlib.md5(query.encode()).hexdigest()[:8], 16) % 20 + 1
 
         response = requests.get(
             "https://api.pexels.com/v1/search",
             headers=headers,
             params={
                 "query": query,
-                "per_page": 1,
+                "per_page": 15,
                 "page": seed,
                 "orientation": "landscape" if width > height else "portrait",
             },
@@ -172,8 +208,9 @@ def download_pexels_image(
         if not photos:
             return False
 
-        # Get the image URL at the right size
-        photo = photos[0]
+        # …while variety_key picks a distinct photo per post, avoiding duplicates.
+        idx = int(hashlib.md5((variety_key or query).encode()).hexdigest()[:8], 16) % len(photos)
+        photo = photos[idx]
         img_url = photo["src"].get("large2x") or photo["src"].get("large") or photo["src"]["original"]
 
         # Download the image
@@ -219,16 +256,20 @@ def extract_post_metadata(post_path: Path) -> Dict:
 
 
 def get_search_query(topic_id: str, topic_kind: str) -> Dict[str, str]:
-    """Generate search queries for different image types."""
-    topic_clean = topic_id.replace("/", " ").replace("-", " ")
+    """Generate descriptive, category-aware search queries for each image type.
 
-    queries = {
-        "header-ai-abstract": f"abstract technology {topic_clean} digital",
-        "header-data-science": f"data science visualization {topic_clean}",
-        "header-cloud": f"cloud computing technology abstract",
-        "teaser-ai": f"artificial intelligence technology modern",
+    Driven by the topic CATEGORY (ai/ml/nlp/vision/data/web) rather than the raw
+    library name, so the stock photos actually relate to the post's subject —
+    instead of the previous generic "artificial intelligence technology modern"
+    that returned unrelated images (drones, music apps, buildings, …).
+    """
+    terms = CATEGORY_TERMS.get(get_category(topic_id), CATEGORY_TERMS["default"])
+    return {
+        "header-ai-abstract": f"abstract {terms} technology",
+        "header-data-science": f"data science visualization {terms}",
+        "header-cloud": "cloud computing data center technology",
+        "teaser-ai": f"{terms} technology concept",
     }
-    return queries
 
 
 def process_post(post_path: Path) -> int:
@@ -276,9 +317,9 @@ def process_post(post_path: Path) -> int:
 
         img_dir.mkdir(parents=True, exist_ok=True)
 
-        # Try Pexels first
+        # Try Pexels first (variety_key keeps each post's image distinct)
         query = queries.get(img_name.replace(".jpg", ""), f"technology abstract {topic_id}")
-        if download_pexels_image(query, w, h, img_path):
+        if download_pexels_image(query, w, h, img_path, variety_key=f"{topic_id}:{img_name}"):
             print(f"  Downloaded from Pexels: {img_name}")
             created += 1
             time.sleep(0.5)  # Rate limit
