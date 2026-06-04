@@ -771,9 +771,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "comfyui",
+    "id": "transformerlens",
     "version": 1,
-    "date": "2026-06-03",
-    "filename": "2026-06-03-tutorial-comfyui.md"
+    "date": "2026-06-04",
+    "filename": "2026-06-04-tutorial-transformerlens.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "transformerlens",
+    "version": 1,
+    "date": "2026-06-04",
+    "filename": "2026-06-04-tutorial-transformerlens.md"
   }
 ]

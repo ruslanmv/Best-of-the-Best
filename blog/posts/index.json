@@ -851,6 +851,22 @@
     "teaser": "/assets/images/2026-01-11-package-mmdet/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-04-tutorial-transformerlens.md",
+    "url": "/blog/posts/2026-06-04-tutorial-transformerlens.html",
+    "title": "transformerlens: exploring large language models with a flexible API",
+    "date": "2026-06-04T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "transformerlens",
+      "large-language-models",
+      "nlp",
+      "api",
+      "modular-design"
+    ],
+    "excerpt": "Learn how to install and utilize TransformerLens for experimenting with various LLMs. Discover its key features, practical examples, and best practices in NLP projects.",
+    "teaser": "/assets/images/2026-06-04-tutorial-transformerlens/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-19-tutorial-custom-federated-algorithms-part-2-implementing-federated-averaging.md",
     "url": "/blog/posts/2026-05-19-tutorial-custom-federated-algorithms-part-2-implementing-federated-averaging.html",
     "title": "custom-federated-algorithms-part-2-implementing-federated-averaging",
