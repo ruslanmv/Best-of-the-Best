@@ -623,6 +623,22 @@
     "teaser": "/assets/images/2026-04-23-paper-ldm/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-05-tutorial-supervision.md",
+    "url": "/blog/posts/2026-06-05-tutorial-supervision.html",
+    "title": "Understanding Supervision in Computer Vision",
+    "date": "2026-06-05T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "supervision",
+      "computer-vision",
+      "machine-learning",
+      "data-annotation",
+      "model-training"
+    ],
+    "excerpt": "Learn about the latest version (0.12.4) of Supervision—a high-level API for managing datasets, annotations, and model training in computer vision tasks. Streamline your workflow with this unified interface.",
+    "teaser": "/assets/images/2026-06-05-tutorial-supervision/teaser-ai.jpg"
+  },
+  {
     "filename": "2025-12-27-package-ollama.md",
     "url": "/blog/posts/2025-12-27-package-ollama.html",
     "title": "Ollama: Run Large Language Models Locally",

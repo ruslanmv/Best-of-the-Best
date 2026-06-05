@@ -778,9 +778,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "transformerlens",
+    "id": "supervision",
     "version": 1,
-    "date": "2026-06-04",
-    "filename": "2026-06-04-tutorial-transformerlens.md"
+    "date": "2026-06-05",
+    "filename": "2026-06-05-tutorial-supervision.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "supervision",
+    "version": 1,
+    "date": "2026-06-05",
+    "filename": "2026-06-05-tutorial-supervision.md"
   }
 ]
