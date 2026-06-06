@@ -785,9 +785,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "supervision",
+    "id": "xmanager",
     "version": 1,
-    "date": "2026-06-05",
-    "filename": "2026-06-05-tutorial-supervision.md"
+    "date": "2026-06-06",
+    "filename": "2026-06-06-tutorial-xmanager.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "xmanager",
+    "version": 1,
+    "date": "2026-06-06",
+    "filename": "2026-06-06-tutorial-xmanager.md"
   }
 ]

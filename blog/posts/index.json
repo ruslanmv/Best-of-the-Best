@@ -993,6 +993,21 @@
     "teaser": "/assets/images/2026-05-09-paper-neural-style-transfer/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-06-tutorial-xmanager.md",
+    "url": "/blog/posts/2026-06-06-tutorial-xmanager.html",
+    "title": "xmanager: Simplify Remote Server Management with This Powerful Tool",
+    "date": "2026-06-06T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "xmanager",
+      "remote-server-management",
+      "automation-scripts",
+      "server-administration"
+    ],
+    "excerpt": "Learn about the key features, installation process, and practical examples of xManager. Discover how it streamlines server administration tasks for developers and system administrators.",
+    "teaser": "/assets/images/2026-06-06-tutorial-xmanager/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-21-tutorial-contextualized-topic-models.md",
     "url": "/blog/posts/2026-05-21-tutorial-contextualized-topic-models.html",
     "title": "contextualized-topic-models for advanced text analysis",
