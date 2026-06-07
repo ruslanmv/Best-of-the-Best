@@ -867,6 +867,24 @@
     "teaser": "/assets/images/2026-01-11-package-mmdet/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-07-tutorial-flax.md",
+    "url": "/blog/posts/2026-06-07-tutorial-flax.html",
+    "title": "flax - efficient deep learning in python",
+    "date": "2026-06-07T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "flax",
+      "jax",
+      "neural-networks",
+      "deep-learning",
+      "python",
+      "model-definition",
+      "optimization"
+    ],
+    "excerpt": "flax is a powerful library that combines jax with neural network definitions, supporting both eager and just-in-time modes. learn key features, practical examples & best practices for model development.",
+    "teaser": "/assets/images/2026-06-07-tutorial-flax/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-06-04-tutorial-transformerlens.md",
     "url": "/blog/posts/2026-06-04-tutorial-transformerlens.html",
     "title": "transformerlens: exploring large language models with a flexible API",

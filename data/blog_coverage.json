@@ -792,9 +792,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "xmanager",
+    "id": "flax",
     "version": 1,
-    "date": "2026-06-06",
-    "filename": "2026-06-06-tutorial-xmanager.md"
+    "date": "2026-06-07",
+    "filename": "2026-06-07-tutorial-flax.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "flax",
+    "version": 1,
+    "date": "2026-06-07",
+    "filename": "2026-06-07-tutorial-flax.md"
   }
 ]
