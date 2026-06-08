@@ -1073,6 +1073,21 @@
     "teaser": "/assets/images/2026-04-24-paper-efficientdet/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-08-tutorial-haiku.md",
+    "url": "/blog/posts/2026-06-08-tutorial-haiku.html",
+    "title": "Haiku - Simple Python Web Framework",
+    "date": "2026-06-08T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "haiku",
+      "python",
+      "web-framework",
+      "routing"
+    ],
+    "excerpt": "Learn about Haiku, a lightweight web framework for Python developers. Discover how to set up, use routes, and integrate templates efficiently.",
+    "teaser": "/assets/images/2026-06-08-tutorial-haiku/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-07-package-bert-score.md",
     "url": "/blog/posts/2026-01-07-package-bert-score.html",
     "title": "BERTScore: Evaluating Text Generation with Contextual Embeddings",
