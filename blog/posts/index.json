@@ -1493,6 +1493,21 @@
     "teaser": "/assets/images/2026-05-26-tutorial-notebookllama/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-09-tutorial-sae-lens.md",
+    "url": "/blog/posts/2026-06-09-tutorial-sae-lens.html",
+    "title": "sae-lens-for-data-analysis",
+    "date": "2026-06-09T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "sae-lens",
+      "data-analysis",
+      "lenses",
+      "visualization"
+    ],
+    "excerpt": "SAE Lens is a powerful tool for data analysis with customizable lenses. It supports statistical summaries, time series, and high-performance computing. Learn how to use it today!",
+    "teaser": "/assets/images/2026-06-09-tutorial-sae-lens/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-24-tutorial-ollama.md",
     "url": "/blog/posts/2026-05-24-tutorial-ollama.html",
     "title": "ollama: Python Library for Automated Machine Learning",
