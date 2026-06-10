@@ -1476,6 +1476,21 @@
     "teaser": "/assets/images/2026-01-21-package-scikit-video/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-10-tutorial-moondream.md",
+    "url": "/blog/posts/2026-06-10-tutorial-moondream.html",
+    "title": "moondream - python gui framework for beginners",
+    "date": "2026-06-10T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "moondream",
+      "python",
+      "gui-framework",
+      "beginners"
+    ],
+    "excerpt": "learn about moondream, a lightweight python 3 gui framework. discover how to set up and use this intuitive tool for simple projects.",
+    "teaser": "/assets/images/2026-06-10-tutorial-moondream/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-26-tutorial-notebookllama.md",
     "url": "/blog/posts/2026-05-26-tutorial-notebookllama.html",
     "title": "notebookllama - python library for managing jupyter notebooks",

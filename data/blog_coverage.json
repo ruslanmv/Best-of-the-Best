@@ -813,9 +813,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "sae-lens",
+    "id": "moondream",
     "version": 1,
-    "date": "2026-06-09",
-    "filename": "2026-06-09-tutorial-sae-lens.md"
+    "date": "2026-06-10",
+    "filename": "2026-06-10-tutorial-moondream.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "moondream",
+    "version": 1,
+    "date": "2026-06-10",
+    "filename": "2026-06-10-tutorial-moondream.md"
   }
 ]
