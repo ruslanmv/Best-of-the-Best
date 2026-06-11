@@ -1,0 +1,81 @@
+{% comment %}
+  Renders one page of Best-of-the-Best blog posts followed by numbered
+  pagination. Expects two values injected by _plugins/blog_paginator.rb:
+    page.paginated_posts : the post pages for this page (max 7)
+    page.pg              : { page, total_pages, total_posts, start_index, end_index }
+  Page 1 lives at /blog/ ; page N lives at /blog/pageN/.
+{% endcomment %}
+
+<div class="entries-list">
+  {% for post in page.paginated_posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+</div>
+
+{% assign pg = page.pg %}
+{% if pg and pg.total_pages > 1 %}
+<nav class="pagination" aria-label="Blog pagination">
+  <ul>
+    {% comment %} Previous {% endcomment %}
+    {% if pg.page > 1 %}
+      {% assign prev = pg.page | minus: 1 %}
+      {% if prev == 1 %}{% assign prev_path = '/blog/' %}{% else %}{% capture prev_path %}/blog/page{{ prev }}/{% endcapture %}{% endif %}
+      <li><a href="{{ prev_path | relative_url }}" rel="prev">Previous</a></li>
+    {% else %}
+      <li><a href="#" class="disabled"><span aria-hidden="true">Previous</span></a></li>
+    {% endif %}
+
+    {% comment %} First page {% endcomment %}
+    {% if pg.page == 1 %}
+      <li><a href="#" class="disabled current">1</a></li>
+    {% else %}
+      <li><a href="{{ '/blog/' | relative_url }}">1</a></li>
+    {% endif %}
+
+    {% assign page_start = 2 %}
+    {% if pg.page > 4 %}
+      {% assign page_start = pg.page | minus: 2 %}
+      <li><a href="#" class="disabled">&hellip;</a></li>
+    {% endif %}
+
+    {% assign page_end = pg.total_pages | minus: 1 %}
+    {% assign pages_to_end = pg.total_pages | minus: pg.page %}
+    {% if pages_to_end > 4 %}
+      {% assign page_end = pg.page | plus: 2 %}
+    {% endif %}
+
+    {% for index in (page_start..page_end) %}
+      {% capture idx_path %}/blog/page{{ index }}/{% endcapture %}
+      {% if index == pg.page %}
+        <li><a href="{{ idx_path | relative_url }}" class="disabled current">{{ index }}</a></li>
+      {% else %}
+        <li><a href="{{ idx_path | relative_url }}">{{ index }}</a></li>
+      {% endif %}
+    {% endfor %}
+
+    {% comment %} Trailing ellipsis {% endcomment %}
+    {% if pages_to_end > 3 %}
+      <li><a href="#" class="disabled">&hellip;</a></li>
+    {% endif %}
+
+    {% comment %} Last page {% endcomment %}
+    {% if pg.page == pg.total_pages %}
+      <li><a href="#" class="disabled current">{{ pg.total_pages }}</a></li>
+    {% else %}
+      {% capture last_path %}/blog/page{{ pg.total_pages }}/{% endcapture %}
+      <li><a href="{{ last_path | relative_url }}">{{ pg.total_pages }}</a></li>
+    {% endif %}
+
+    {% comment %} Next {% endcomment %}
+    {% if pg.page < pg.total_pages %}
+      {% assign next = pg.page | plus: 1 %}
+      {% capture next_path %}/blog/page{{ next }}/{% endcapture %}
+      <li><a href="{{ next_path | relative_url }}" rel="next">Next</a></li>
+    {% else %}
+      <li><a href="#" class="disabled"><span aria-hidden="true">Next</span></a></li>
+    {% endif %}
+  </ul>
+</nav>
+
+<p class="page__meta pagination-summary">Showing {{ pg.start_index }}&ndash;{{ pg.end_index }} of {{ pg.total_posts }} insights</p>
+{% endif %}

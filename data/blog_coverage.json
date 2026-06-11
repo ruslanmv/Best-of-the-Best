@@ -22,13 +22,6 @@
   },
   {
     "kind": "package",
-    "id": "xgboost",
-    "version": 2,
-    "date": "2025-12-23",
-    "filename": "2025-12-23-package-xgboost.md"
-  },
-  {
-    "kind": "package",
     "id": "featured",
     "version": 1,
     "date": "2025-12-24",
@@ -71,22 +64,8 @@
   },
   {
     "kind": "package",
-    "id": "folium",
-    "version": 2,
-    "date": "2025-12-26",
-    "filename": "2025-12-26-package-folium.md"
-  },
-  {
-    "kind": "package",
     "id": "ollama",
     "version": 1,
-    "date": "2025-12-27",
-    "filename": "2025-12-27-package-ollama.md"
-  },
-  {
-    "kind": "package",
-    "id": "ollama",
-    "version": 2,
     "date": "2025-12-27",
     "filename": "2025-12-27-package-ollama.md"
   },
@@ -122,13 +101,6 @@
     "kind": "package",
     "id": "bert-score",
     "version": 1,
-    "date": "2026-01-07",
-    "filename": "2026-01-07-package-bert-score.md"
-  },
-  {
-    "kind": "package",
-    "id": "bert-score",
-    "version": 2,
     "date": "2026-01-07",
     "filename": "2026-01-07-package-bert-score.md"
   },
@@ -218,13 +190,6 @@
   },
   {
     "kind": "package",
-    "id": "scikit-video",
-    "version": 2,
-    "date": "2026-01-21",
-    "filename": "2026-01-21-package-scikit-video.md"
-  },
-  {
-    "kind": "package",
     "id": "crawl4ai",
     "version": 1,
     "date": "2026-01-22",
@@ -269,13 +234,6 @@
     "kind": "package",
     "id": "tensorflow-graphics",
     "version": 1,
-    "date": "2026-01-29",
-    "filename": "2026-01-29-package-tensorflow-graphics.md"
-  },
-  {
-    "kind": "package",
-    "id": "tensorflow-graphics",
-    "version": 2,
     "date": "2026-01-29",
     "filename": "2026-01-29-package-tensorflow-graphics.md"
   },
@@ -862,16 +820,9 @@
   },
   {
     "kind": "tutorial",
-    "id": "feast",
+    "id": "moondream",
     "version": 1,
-    "date": "2026-06-11",
-    "filename": "2026-06-11-tutorial-feast.md"
-  },
-  {
-    "kind": "tutorial",
-    "id": "feast",
-    "version": 1,
-    "date": "2026-06-11",
-    "filename": "2026-06-11-tutorial-feast.md"
+    "date": "2026-06-10",
+    "filename": "2026-06-10-tutorial-moondream.md"
   }
 ]
