@@ -1,10 +1,10 @@
 ---
-title: "TensorFlow Graphics: Differentiable 3D Graphics Layers for Deep Learning"
+title: "TensorFlow Graphics: Differentiable 3D Layers for Deep Learning — Guide and Honest Assessment"
 date: 2026-01-29T09:00:00+00:00
-last_modified_at: 2026-01-29T09:00:00+00:00
+last_modified_at: 2026-06-11T09:00:00+00:00
 topic_kind: "package"
 topic_id: "tensorflow-graphics"
-topic_version: 1
+topic_version: 2
 categories:
   - Engineering
   - AI
@@ -17,7 +17,7 @@ tags:
   - differentiable-rendering
   - computer-vision
   - geometry
-excerpt: "TensorFlow Graphics provides differentiable graphics layers for 3D geometry transformations, rendering, and mesh operations, bridging the gap between computer graphics and deep learning."
+excerpt: "What TensorFlow Graphics offers for differentiable 3D deep learning, where it stands today versus PyTorch3D, Kaolin, and nvdiffrast, and an honest take on whether you should build on it."
 header:
   overlay_image: /assets/images/2026-01-29-package-tensorflow-graphics/header-data-science.jpg
   overlay_filter: 0.5
@@ -30,199 +30,164 @@ sidebar:
   nav: "blog"
 ---
 
-## Introduction
+## Why differentiable graphics matters
 
-TensorFlow Graphics is a library that provides a set of differentiable graphics layers for TensorFlow. It bridges the gap between computer graphics and deep learning by making standard 3D operations -- geometric transformations, camera projections, mesh convolutions, and rendering -- available as differentiable TensorFlow ops that can be used inside neural network training loops.
+Most deep learning models treat images as flat grids of pixels. But images are projections of 3D scenes, governed by geometry, camera optics, and lighting. If you can express that image-formation process as a chain of differentiable operations, something powerful happens: you can backpropagate through it. A network can predict a 3D pose, render the result, compare it against the observed image, and let the gradient tell it how to adjust. This is the analysis-by-synthesis idea, and it underpins much of modern 3D vision — pose estimation, single-image 3D reconstruction, novel view synthesis, and neural rendering.
 
-This allows researchers and engineers to build models that reason about 3D structure, pose, lighting, and shape while training end-to-end with gradient descent.
+The catch is that classic graphics pipelines were never built with gradients in mind. Rasterization makes hard, discrete visibility decisions; rotation parameterizations have singularities; projection involves divisions that misbehave near zero depth. Differentiable graphics libraries solve these problems, packaging geometry, projection, and rendering as ops that work with automatic differentiation.
 
-## Overview
+TensorFlow Graphics was Google's answer for the TensorFlow ecosystem. It is a well-designed library with real pedigree — and, as I will get to below, a project whose maintenance reality you need to understand before building anything serious on it.
 
-Key features:
+## What TensorFlow Graphics provides
 
-* **Geometry transformations** -- rotation representations (Euler angles, quaternions, rotation matrices, axis-angle), rigid-body transformations, and conversions between them
-* **Camera models** -- perspective and orthographic projection functions
-* **3D math utilities** -- operations on points, vectors, normals, and barycentric coordinates
-* **Mesh operations** -- mesh sampling, normals computation, Laplacian smoothing
-* **Rendering** -- differentiable rasterization-based rendering (via OpenGL or software)
-* **Implicit representations** -- signed distance functions and related utilities
+The library lives under the `tensorflow_graphics` namespace, organized into a few focused submodules.
 
-All operations are fully differentiable and compatible with `tf.GradientTape`.
+### Geometry transformations
 
-Use cases:
+The `geometry.transformation` module is the part I have used most, and the part most people actually need. It covers the standard rotation representations — Euler angles, quaternions, rotation matrices, axis-angle — with conversions between them and ops that apply them to points. Everything is batched and differentiable, which matters because hand-rolling a numerically stable, gradient-safe quaternion-to-matrix conversion is the kind of task that quietly eats a week.
 
-* 3D object reconstruction from images
-* Novel view synthesis
-* 6-DoF pose estimation
-* Shape and mesh deformation learning
-* Differentiable rendering in generative models
+### Camera models
 
-## Getting Started
+The `rendering.camera` module provides perspective and orthographic cameras, including projection of 3D points to 2D image coordinates given intrinsics, plus the corresponding ray and unprojection operations. These are the building blocks for any reprojection loss.
 
-Installation:
+### Mesh operations and graph convolutions
 
-```
+The `geometry.representation.mesh` utilities handle mesh-level computations such as vertex normals, and the `nn` module includes graph convolution layers for learning directly on mesh connectivity, along with loss helpers like Chamfer distance — the workhorse loss for shape reconstruction.
+
+### Differentiable rendering
+
+The `rendering` module includes differentiable rasterization, interpolation of vertex attributes via barycentric coordinates, and simple reflectance models (Lambertian, Blinn-Phong) plus spherical harmonics lighting. This closes the full loop: geometry in, image out, gradients back.
+
+Everything composes with `tf.GradientTape` and Keras, so a graphics op can sit inside a custom layer or loss like any other TensorFlow op.
+
+## Quick start
+
+Installation is one pip command, though heed the version warning in the project health section:
+
+```bash
 pip install tensorflow-graphics
 ```
 
-TensorFlow Graphics requires TensorFlow 2.x.
-
-Quick example -- convert Euler angles to a rotation matrix:
+Here is a minimal, complete example: rotate 3D points with a quaternion and verify that gradients flow through the operation. It uses only the stable, well-documented core of the library.
 
 ```python
+import numpy as np
 import tensorflow as tf
-import tensorflow_graphics.geometry.transformation as tfg_transformation
+from tensorflow_graphics.geometry.transformation import quaternion
 
-# Euler angles in radians (roll, pitch, yaw)
-euler_angles = tf.constant([[0.0, 0.0, 1.5708]])  # ~90 degrees yaw
-
-# Convert to a 3x3 rotation matrix
-rotation_matrix = tfg_transformation.euler.from_euler(euler_angles)
-print("Rotation matrix:")
-print(rotation_matrix.numpy())
-```
-
-## Core Concepts
-
-### Module Structure
-
-TensorFlow Graphics is organized into submodules under `tensorflow_graphics`:
-
-* `tensorflow_graphics.geometry.transformation` -- rotation and rigid-body transformations (Euler, quaternion, rotation matrix, axis-angle)
-* `tensorflow_graphics.geometry.representation` -- point, vector, and mesh representations
-* `tensorflow_graphics.rendering` -- differentiable rendering utilities
-* `tensorflow_graphics.math` -- mathematical utilities (interpolation, spherical harmonics, vector operations)
-* `tensorflow_graphics.nn` -- neural network layers for 3D data (e.g., graph convolutions)
-
-### Rotation Representations
-
-One of the most commonly used features is the conversion between rotation representations:
-
-```python
-import tensorflow as tf
-import tensorflow_graphics.geometry.transformation as tfg_transformation
-
-# Quaternion [w, x, y, z] representing a 90-degree rotation around Z axis
-quaternion = tf.constant([[0.7071068, 0.0, 0.0, 0.7071068]])
-
-# Convert quaternion to rotation matrix
-rot_matrix = tfg_transformation.quaternion.to_rotation_matrix(quaternion)
-print(f"Rotation matrix shape: {rot_matrix.shape}")  # (1, 3, 3)
-
-# Convert rotation matrix back to quaternion
-quat_back = tfg_transformation.quaternion.from_rotation_matrix(rot_matrix)
-print(f"Recovered quaternion: {quat_back.numpy()}")
-```
-
-### Differentiability
-
-All operations support automatic differentiation through `tf.GradientTape`, so they can be used as layers in trainable models:
-
-```python
-import tensorflow as tf
-import tensorflow_graphics.geometry.transformation as tfg_transformation
-
-angles = tf.Variable([0.1, 0.2, 0.3])
-
-with tf.GradientTape() as tape:
-    rotation_matrix = tfg_transformation.euler.from_euler(
-        tf.expand_dims(angles, axis=0)
-    )
-    # Some loss that depends on the rotation
-    loss = tf.reduce_sum(tf.square(rotation_matrix))
-
-gradients = tape.gradient(loss, angles)
-print(f"Gradients w.r.t. Euler angles: {gradients.numpy()}")
-```
-
-## Practical Examples
-
-### Example 1: Transforming 3D Points with a Rotation
-
-```python
-import tensorflow as tf
-import tensorflow_graphics.geometry.transformation as tfg_transformation
-
-# Define a set of 3D points
+# Three points on the unit axes.
 points = tf.constant([
     [1.0, 0.0, 0.0],
     [0.0, 1.0, 0.0],
     [0.0, 0.0, 1.0],
 ])
 
-# Define a quaternion for a 90-degree rotation around the Z axis
-quaternion = tf.constant([0.7071068, 0.0, 0.0, 0.7071068])
+# Quaternion (x, y, z, w) for a 90-degree rotation about the Z axis.
+half_angle = np.pi / 4.0
+rot = tf.Variable([0.0, 0.0, np.sin(half_angle), np.cos(half_angle)])
 
-# Rotate the points
-rotated_points = tfg_transformation.quaternion.rotate(points, quaternion)
-print("Original points:")
-print(points.numpy())
-print("Rotated points:")
-print(rotated_points.numpy())
+with tf.GradientTape() as tape:
+    rotated = quaternion.rotate(points, rot)
+    loss = tf.reduce_sum(tf.square(rotated - points))
+
+grads = tape.gradient(loss, rot)
+print("Rotated points:\n", rotated.numpy())
+print("Gradient w.r.t. quaternion:", grads.numpy())
 ```
 
-### Example 2: Perspective Camera Projection
+One practical trap: TensorFlow Graphics uses the `(x, y, z, w)` quaternion convention with the scalar last — the opposite of many textbooks and some other libraries. Getting this wrong produces rotations that are subtly broken rather than obviously wrong, so always test with a known 90-degree rotation before trusting anything.
+
+## A realistic use case
+
+The canonical TensorFlow Graphics workload is 6-DoF object pose estimation trained with a geometric loss. Architecturally it looks like this.
+
+A convolutional backbone takes an RGB image of an object and regresses a pose: a quaternion for orientation and a 3-vector for translation. Instead of supervising the quaternion directly with an L2 loss — which behaves badly because rotation space is not Euclidean and quaternions double-cover it — you supervise in point space. Transform the object's known 3D keypoints with the predicted pose, do the same with the ground-truth pose, and penalize the distance between the two point sets. The gradient flows from 3D point error back through the rotation into the network weights, which is exactly what differentiable transformation ops are for.
+
+The loss itself is a few lines:
 
 ```python
 import tensorflow as tf
-import tensorflow_graphics.rendering.camera.perspective as perspective
+from tensorflow_graphics.geometry.transformation import quaternion
 
-# 3D points in camera space (batch of 3 points)
-points_3d = tf.constant([
-    [0.5, 0.3, 2.0],
-    [-0.5, 0.3, 3.0],
-    [0.0, -0.5, 1.5],
-])
-
-# Focal length in pixels
-focal = tf.constant([500.0, 500.0])
-
-# Principal point
-principal_point = tf.constant([320.0, 240.0])
-
-# Project 3D points to 2D image coordinates
-points_2d = perspective.project(points_3d, focal, principal_point)
-print("Projected 2D points:")
-print(points_2d.numpy())
+def pose_loss(model_points, pred_quat, pred_t, true_quat, true_t):
+    pred_pts = quaternion.rotate(model_points, pred_quat) + pred_t
+    true_pts = quaternion.rotate(model_points, true_quat) + true_t
+    return tf.reduce_mean(tf.norm(pred_pts - true_pts, axis=-1))
 ```
 
-### Example 3: Axis-Angle to Rotation Matrix Conversion
+A natural extension is a reprojection term: project both point sets through the camera intrinsics with the perspective camera module and penalize the 2D pixel error. Push further and you arrive at full analysis-by-synthesis — differentiably render the posed mesh and compare images directly — which TensorFlow Graphics supports in principle through its rasterizer, though that is where its rough edges show against newer alternatives.
 
-```python
-import tensorflow as tf
-import tensorflow_graphics.geometry.transformation as tfg_transformation
-import math
+## When to use it
 
-# Axis-angle: rotate 45 degrees around the Y axis
-angle = math.pi / 4.0
-axis_angle = tf.constant([[0.0, angle, 0.0]])
+- You have a committed TensorFlow/Keras codebase and need geometric building blocks — rotation conversions, pose losses, camera projection — without a framework migration.
+- You are maintaining or reproducing research code from roughly 2019–2021 that already depends on it.
+- Your needs are confined to the stable mathematical core: transformations, cameras, Chamfer-style losses. These are mature, well-tested ops.
+- You want a readable reference implementation. The source is clean and well-documented; I have used it more than once just to check conventions while implementing the same math elsewhere.
 
-# Convert to rotation matrix
-rotation_matrix = tfg_transformation.axis_angle.to_rotation_matrix(axis_angle)
-print(f"Rotation matrix for 45-degree Y rotation:\n{rotation_matrix.numpy()}")
+## When not to use it
 
-# Convert to quaternion
-quaternion = tfg_transformation.axis_angle.to_quaternion(axis_angle)
-print(f"Equivalent quaternion: {quaternion.numpy()}")
-```
+- You are starting a new 3D deep learning project with a free choice of framework. The research community has consolidated on PyTorch, and the tooling gap is decisive.
+- Differentiable rendering is central to your work. The TensorFlow Graphics rasterizer has seen far less optimization and battle-testing than nvdiffrast or PyTorch3D's renderer.
+- You need a library that tracks current TensorFlow releases, or one where a reported bug has a realistic chance of being fixed upstream.
+- You are building a production system with a multi-year support horizon. More on that next.
 
-## Best Practices
+## Project health: an honest assessment
 
-* Import specific submodules rather than the top-level package to keep code readable (e.g., `import tensorflow_graphics.geometry.transformation as tfg_transformation`).
-* Use `tf.GradientTape` to verify that gradients flow through graphics operations when incorporating them into training loops.
-* When working with rotation representations, be aware of singularities (gimbal lock in Euler angles, double-cover in quaternions) and choose the representation best suited to your problem.
-* Combine TensorFlow Graphics with Keras models by using its operations inside custom layers or loss functions.
-* Check the shapes of your tensors carefully -- most functions expect specific batch dimensions and will broadcast when possible.
+This is the part most package write-ups skip, and it is the most important section of this post.
 
-## Conclusion
+TensorFlow Graphics is, by any practical definition, a dormant project. The release cadence tells the story: active development ran from the 2019 launch through 2021, then fell off sharply. The PyPI release history is sparse after that point, commit activity on GitHub slowed to a trickle, and the issue tracker accumulated unanswered reports — including compatibility breakage with newer TensorFlow versions that a healthy project would fix within days. Installing `tensorflow-graphics` into a fresh environment with the latest TensorFlow is not guaranteed to work without pinning things back.
 
-TensorFlow Graphics brings differentiable 3D graphics primitives into the TensorFlow ecosystem, making it possible to integrate geometric reasoning directly into deep learning models. Its modules for transformations, camera projection, and rendering are valuable building blocks for research in 3D vision, pose estimation, and neural rendering.
+It is worth being precise about what dormant means here. The code is not bad — the mathematical core is excellent, essentially finished software; quaternion math does not rot. But dormancy has concrete consequences:
 
-Resources:
+1. **Compatibility risk compounds.** Every new TensorFlow release is a roll of the dice, and you inherit the integration testing the maintainers used to do.
+2. **No bug-fix response.** If you hit a wrong-gradient edge case, plan on patching a vendored copy yourself.
+3. **The ecosystem has moved.** New papers, pretrained models, and tutorials in differentiable rendering overwhelmingly target PyTorch3D, Kaolin, nvdiffrast, or Mitsuba 3.
 
-* [TensorFlow Graphics Documentation](https://www.tensorflow.org/graphics)
-* [TensorFlow Graphics GitHub](https://github.com/tensorflow/graphics)
-* [TensorFlow Graphics API Reference](https://www.tensorflow.org/graphics/api_docs/python/tfg)
+My rule of thumb: treat TensorFlow Graphics as frozen reference code, not as a living dependency. If you use it, pin everything — TensorFlow, tensorflow-graphics, and Python versions — and budget for eventually vendoring the handful of functions you actually call. The transformation module is small enough that vendoring is genuinely viable.
+
+## Integration with IBM watsonx.ai
+
+For teams running enterprise AI on IBM watsonx.ai, a TensorFlow Graphics workload fits as an upstream perception stage. A typical pattern: a pose-estimation or 3D-reconstruction model, trained with the geometric losses above, processes imagery from inspection cameras, robotics, or digital-twin pipelines, and its structured outputs — object poses, dimensional measurements, geometry metadata — feed watsonx.ai foundation models for downstream reasoning, report generation, or multimodal analysis. The custom TensorFlow model can be trained and served from watsonx.ai's machine learning tooling, which supports TensorFlow runtimes. Keep the boundary clean: 3D math in the vision model, language and orchestration in watsonx.ai.
+
+## Integration with IBM Watson Orchestrate
+
+IBM watsonx Orchestrate works at the workflow level, so the integration is indirect but practical: wrap your 3D vision model behind a REST API and register it as a skill. An automation can then chain it into business processes — an inspection workflow that ingests uploaded imagery, calls the pose/measurement service, evaluates tolerances, and routes failures to a human reviewer with a generated summary. Orchestrate never needs to know differentiable rendering was involved; it just consumes the structured JSON your model emits.
+
+## Alternatives compared
+
+| Library | Framework | Maintenance (2026) | Differentiable rendering | Best for |
+|---|---|---|---|---|
+| TensorFlow Graphics | TensorFlow | Dormant; sparse releases since ~2021 | Basic rasterizer, lighting models | Legacy TF codebases; reference math |
+| PyTorch3D | PyTorch | Actively maintained (Meta AI) | Mature mesh/point-cloud renderer | General 3D deep learning research |
+| NVIDIA Kaolin | PyTorch | Actively maintained (NVIDIA) | Via nvdiffrast, DIB-R | 3D data pipelines, GPU-heavy workloads |
+| nvdiffrast | PyTorch (+TF legacy) | Maintained (NVIDIA) | State-of-the-art, very fast | High-performance rasterization |
+| Mitsuba 3 | Dr.Jit (agnostic) | Actively maintained (EPFL) | Physically based path tracing | Inverse rendering with real light transport |
+
+My honest take: for new work, default to the PyTorch ecosystem and pick within it based on rendering needs. PyTorch3D is the sensible general-purpose starting point — transformations, cameras, mesh ops, and rendering with active maintenance and a community that has already hit your bugs. If rendering speed dominates, put nvdiffrast underneath; if you need physically based light transport for inverse rendering, Mitsuba 3 is in a class of its own.
+
+The uncomfortable truth for TensorFlow shops is that the differentiable graphics field consolidated on PyTorch, and TensorFlow Graphics' dormancy is both a symptom and an accelerant of that shift. I have seen teams spend more effort fighting TF version pins than porting their model to PyTorch would have cost. If 3D vision is becoming central to your roadmap rather than a side experiment, that port is usually the right call.
+
+## Limitations
+
+- **Dormant maintenance** is the overriding limitation; everything else flows from it.
+- **TensorFlow version sensitivity.** Expect import errors or deprecation breakage on current TF releases; pin aggressively.
+- **Rendering performance.** The rasterizer is serviceable for research-scale work but not competitive with nvdiffrast.
+- **No momentum on modern techniques.** Neural fields, Gaussian splatting, and recent differentiable rendering advances have no presence here.
+- **Convention traps.** Scalar-last quaternions and batched-shape expectations differ from other libraries; validate with known rotations.
+- **Sparse community support.** Issue responses largely dried up after 2021, so you debug alone.
+
+## Final recommendation
+
+TensorFlow Graphics earns a qualified, narrow recommendation. Its transformation and camera modules are mathematically solid, genuinely differentiable, and pleasant to use — if you live in TensorFlow and need a pose loss or reprojection term, they will serve you well today, provided you pin your versions and accept that nobody is coming to fix what breaks tomorrow. Treat it as finished reference code, consider vendoring the small slice you use, and do not architect anything long-lived around its renderer.
+
+For everyone else — especially anyone starting fresh in differentiable 3D deep learning — go to PyTorch3D, layer in nvdiffrast or Kaolin as needed, and reach for Mitsuba 3 when physics matters. That is where the field is, and where it will keep moving.
+
+## References
+
+- TensorFlow Graphics on GitHub: [https://github.com/tensorflow/graphics](https://github.com/tensorflow/graphics)
+- TensorFlow Graphics documentation: [https://www.tensorflow.org/graphics](https://www.tensorflow.org/graphics)
+- TensorFlow Graphics on PyPI: [https://pypi.org/project/tensorflow-graphics/](https://pypi.org/project/tensorflow-graphics/)
+- PyTorch3D: [https://pytorch3d.org/](https://pytorch3d.org/)
 
 ---
 

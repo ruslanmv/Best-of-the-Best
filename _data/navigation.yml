@@ -1,22 +1,149 @@
-# Best-of-the-Best/_data/navigation.yml
-# Navigation inside the Best-of-the-Best section.
-# Menu label stays "Rankings"; body/CTA links may use "AI Rankings".
+# =========================================================================
+#  Best-of-the-Best navigation
+#  Rendered by _includes/masthead.html (same self-contained nav used on
+#  ruslanmv.com so this subsite inherits the parent-site identity).
+#  - `main`   : the desktop top bar (items with `children` are dropdowns)
+#  - `burger` : the full slide-out sitemap (always available, all devices)
+#  - `blog`   : project sidebar nav shown on the daily blog posts
+#  URLs are root-relative: the site is served under ruslanmv.com, so they
+#  resolve to the parent site; project pages use the /Best-of-the-Best prefix.
+# =========================================================================
 
 main:
-  - title: "Home"
-    url: https://ruslanmv.com
+  - title: "About"
+    url: /about/
+    children:
+      - title: "Bio"
+        url: /about/
+      - title: "Certifications"
+        url: /certifications/
+      - title: "Contact"
+        url: /contact/
 
-  - title: "Blog"
-    url: /blog/       # this site's daily blog => /Best-of-the-Best/blog/
+  - title: "Work"
+    url: /projects/
+    children:
+      - title: "Projects"
+        url: /projects/
+      - title: "Labs"
+        url: /labs/
+      - title: "Alive System"
+        url: /alive-system/
+      - title: "Rankings"
+        url: /Best-of-the-Best/
+      - title: "MatrixHub"
+        url: "https://www.matrixhub.io"
+      - title: "OllaBridge"
+        url: "https://ollabridge.com"
+      - title: "MedOS"
+        url: "https://ai-medical-chabot.com"
+      - title: "LearnAI"
+        url: "https://learnskillsai.com"
+
+  - title: "Writing"
+    url: /essays/
+    children:
+      - title: "Essays"
+        url: /essays/
+      - title: "Blog"
+        url: /blog
+      - title: "Daily AI Blog"
+        url: /Best-of-the-Best/blog/
+      - title: "Podcast"
+        url: /podcast/
+      - title: "Guides"
+        url: /guides/
 
   - title: "Learn"
-    url: https://ruslanmv.com/learn/
+    url: /learn/
+    children:
+      - title: "Learn Hub"
+        url: /learn/
+      - title: "Guides"
+        url: /guides/
+      - title: "Courses"
+        url: /courses/
+      - title: "Latest Essays"
+        url: /essays/
+      - title: "Latest Blog Posts"
+        url: /blog
 
-  - title: "Rankings"
-    url: /            # this site's homepage => /Best-of-the-Best/
+  - title: "Publications"
+    url: /publications
+
+  - title: "Talks"
+    url: /talks/
 
   - title: "News"
     url: https://ruslanmv.com/news-and-trends/
 
-  - title: "Tools"
-    url: https://ruslanmv.com/assets/tools/index.html
+  - title: "Contact"
+    url: /contact/
+
+# Full sitemap shown inside the burger slide-out (every device).
+burger:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Work"
+    url: /projects/
+  - title: "Projects"
+    url: /projects/
+    indent: true
+  - title: "Labs"
+    url: /labs/
+    indent: true
+  - title: "Rankings"
+    url: /Best-of-the-Best/
+    indent: true
+  - title: "Daily AI Blog"
+    url: /Best-of-the-Best/blog/
+    indent: true
+  - title: "Data Leaderboard"
+    url: /Best-of-the-Best/blog/data.html
+    indent: true
+  - title: "Writing"
+    url: /essays/
+  - title: "Essays"
+    url: /essays/
+    indent: true
+  - title: "Blog"
+    url: /blog
+    indent: true
+  - title: "Guides"
+    url: /guides/
+    indent: true
+  - title: "Learn"
+    url: /learn/
+  - title: "Learn Hub"
+    url: /learn/
+    indent: true
+  - title: "Courses"
+    url: /courses/
+    indent: true
+  - title: "Publications"
+    url: /publications
+  - title: "Talks"
+    url: /talks/
+  - title: "News"
+    url: https://ruslanmv.com/news-and-trends/
+  - title: "Certifications"
+    url: /certifications/
+  - title: "Contact"
+    url: /contact/
+
+# Project sidebar nav for the daily blog posts (sidebar.nav: "blog").
+# nav_list applies relative_url, so these paths are relative to the
+# /Best-of-the-Best baseurl (unlike `main`/`burger` above).
+blog:
+  - title: "Best of the Best"
+    children:
+      - title: "AI Rankings"
+        url: /
+      - title: "Daily AI Blog"
+        url: /blog/
+      - title: "Data Leaderboard"
+        url: /blog/data.html
+      - title: "GitHub Repository"
+        url: https://github.com/ruslanmv/Best-of-the-Best

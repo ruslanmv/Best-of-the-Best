@@ -11,6 +11,9 @@ locale: "en"
 title: "Best-of-the-Best"
 title_separator: "-"
 name: "Best-of-the-Best"
+# Shown as the brand in the masthead so this subsite carries the
+# parent ruslanmv.com identity (page titles keep "Best-of-the-Best").
+masthead_title: "Ruslan Magana Vsevolodovna"
 description: "Curated list of top AI repositories, papers, packages, and courses."
 url: "https://ruslanmv.com"
 baseurl: "/Best-of-the-Best"
@@ -65,7 +68,7 @@ analytics:
 author:
   name: "Ruslan Magana Vsevolodovna"
   avatar: "/assets/images/avatar.png"
-  bio: "Best AI repos, papers, tools and courses curated automatically."
+  bio: "Senior AI Engineer · Agentic AI &amp; Multi-Agent Systems"
   location: "Genoa, Italy"
   email: "contact@ruslanmv.com"
   github: "ruslanmv"
@@ -102,6 +105,9 @@ exclude:
   - app.py
   - mcp_server.py
   - updater.py
+  - blog/generate_index.py
+  - blog/generate_index_html.py
+  - blog/README.md
 
 keep_files:
   - .git
@@ -201,6 +207,33 @@ defaults:
       comments: false
       share: true
       related: true
+      sidebar:
+        nav: "blog"
+
+  # Machine-readable API data: crawlable but never indexed or sitemapped
+  - scope:
+      path: "blog/api"
+    values:
+      sitemap: false
+      noindex: true
+
+  # Standalone data/browser pages (raw HTML, carry their own noindex meta)
+  - scope:
+      path: "blog/notebooks.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "blog/courses.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "blog/research.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "blog/tutorials.html"
+    values:
+      sitemap: false
 
   # Classic _posts (if you ever add them later)
   - scope:
