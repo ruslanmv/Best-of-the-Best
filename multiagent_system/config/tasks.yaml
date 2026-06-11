@@ -62,49 +62,75 @@ writing_task:
     - Use ONLY real, documented API calls from the package's official documentation.
     - Do NOT invent classes, methods, or functions that don't exist in the library.
     - Each code block must be complete with all imports and variable definitions.
-    - No placeholders (TODO, ..., your_X, pass).
+    - No placeholders (TODO, ..., your_X, pass). Environment variables for credentials are allowed.
     - If unsure about an API, use a simple, minimal example rather than an elaborate fake one.
+    - NEVER write the character sequences "{{" or "{%" anywhere (the post is processed
+      by Liquid/Jekyll and they break the build).
+
+    ORIGINALITY RULES (every post must read as original analysis, not a template):
+    - Take clear positions: say when the package is the right choice AND when it is not.
+    - Include an honest assessment of project health (release cadence, maintenance
+      activity, production readiness) — praise and criticism where deserved.
+    - Compare against real alternatives a practitioner would actually consider.
+    - The title must answer: what is this, who needs it, and why should they click?
+      (e.g. "BERTScore for LLM Evaluation: When to Use It, Examples, and watsonx.ai
+      Workflows" — never just the package name.)
 
     The blog post should follow this structure:
 
-    1. **Introduction:**
-       - What the package is and what problem it solves
-       - Why it matters in the current AI landscape
+    1. **Why <package> matters:**
+       - What problem it solves and why it matters in the current AI landscape
+       - 2-3 original paragraphs, not a feature list
 
-    2. **Overview:**
-       - Key features and capabilities
-       - Current version and maintenance status
-       - Primary use cases
+    2. **Quick start:**
+       - Installation plus ONE complete, minimal working example
 
-    3. **Getting Started:**
-       - Installation instructions
-       - Quick start with a complete, working code example
+    3. **Type-specific deep dive** (pick the variant matching the package type):
+       - Evaluation packages: metrics supported, example evaluation workflow,
+         comparison with RAGAS / DeepEval / classic metrics
+       - Agent frameworks: agent architecture, tool calling, memory,
+         human-in-the-loop, production readiness
+       - Data/vector packages: storage model, query patterns, scale limits,
+         integration examples
+       - Visualization packages: chart/map types, notebook support, dashboards,
+         export formats
+       - Models/runtimes: architecture, hardware requirements, serving options
+       - Anything else: the 3-4 API surfaces or workflows users actually need
 
-    4. **Core Concepts:**
-       - Main API surface and how it works
-       - Example usage with real API calls
+    4. **When to use it** — concrete scenarios where it is the right tool.
 
-    5. **Practical Examples:**
-       - Example 1: A specific, realistic use case with complete code
-       - Example 2: Another use case with complete code
+    5. **When not to use it** — concrete scenarios where an alternative wins.
 
-    6. **Best Practices:**
-       - Tips for effective usage
-       - Common pitfalls to avoid
+    6. **Integration with IBM watsonx.ai:**
+       - A credible, concrete integration pattern (mostly prose; at most one
+         minimal code sketch with credentials only via environment variables)
 
-    7. **Conclusion:**
-       - Summary of key takeaways
-       - Links to official documentation
+    7. **Integration with IBM Watson Orchestrate:**
+       - Prose only: how the package fits an automated business workflow
+
+    8. **Alternatives compared:**
+       - A Markdown table comparing 3-5 real alternatives (columns such as
+         "best for", "maintenance", "ecosystem"), followed by 2-3 paragraphs
+         of honest opinion
+
+    9. **Limitations** — real drawbacks, not soft caveats.
+
+    10. **Final recommendation** — a clear opinion: who should adopt it,
+        as part of what stack.
+
+    11. **References** — real links only (GitHub, official docs, paper, PyPI).
 
     Format the post in Markdown with proper headings (## and ###), code blocks, and links.
-    Target length: 1000-1500 words.
+    Target length: 1400-2000 words.
     Do NOT include any meta-commentary, preambles, or notes about being an AI.
 
   expected_output: |
     A complete blog post in Markdown format with:
-    - Professional title
-    - Engaging introduction
-    - Well-structured sections with ## and ### headings
-    - Complete, working code examples using real APIs
-    - Links to relevant resources
-    - Conclusion with next steps
+    - A title that answers "what is this, who needs it, why click" (never just the package name)
+    - An original "why it matters" opening (no boilerplate)
+    - A type-specific deep dive, "when to use it" and "when not to use it" sections
+    - watsonx.ai and Watson Orchestrate integration sections
+    - An alternatives comparison table with honest opinion
+    - Limitations and a clear final recommendation
+    - Complete, working code examples using real APIs (no "{{" or "{%" sequences)
+    - References with real links

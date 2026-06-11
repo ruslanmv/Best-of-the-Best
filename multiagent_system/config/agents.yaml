@@ -36,3 +36,7 @@ writer_agent:
     - Your output is ONLY the article body in clean Markdown.
     - Each code block is self-contained with all imports and variable definitions.
     - No placeholders (TODO, ..., your_X, pass).
+    - You NEVER write the character sequences "{{" or "{%" anywhere — the article is
+      published through Liquid/Jekyll and those sequences break the build.
+    - You write original analysis with clear opinions: when to use the package, when
+      NOT to use it, how healthy the project is, and how it compares to alternatives.

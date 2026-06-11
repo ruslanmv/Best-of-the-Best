@@ -63,7 +63,13 @@ def extract_frontmatter(content: str) -> dict:
     return frontmatter
 
 def generate_html_index(posts: list):
-    """Generate index.html file for the blog"""
+    """DEPRECATED: blog/index.html is now a static Jekyll template.
+
+    The blog index is a Liquid archive page (blog/index.html) that
+    enumerates blog/posts/*.md at build time, matching the design of
+    ruslanmv.com/blog. Regenerating it here would overwrite that page,
+    so this function is no longer called by main().
+    """
 
     html_template = '''<!DOCTYPE html>
 <html lang="en" class="no-js">
@@ -393,10 +399,10 @@ def generate_posts_index():
     return posts
 
 def main():
-    # Generate JSON index
-    posts = generate_posts_index()
-    # Generate HTML index
-    generate_html_index(posts)
+    # Generate JSON index (consumed by the dashboard and API feeds).
+    # NOTE: blog/index.html is a static Jekyll archive template now —
+    # it must NOT be regenerated here (see generate_html_index docstring).
+    generate_posts_index()
 
 if __name__ == '__main__':
     main()
