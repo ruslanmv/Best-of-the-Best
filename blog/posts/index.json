@@ -411,6 +411,21 @@
     "teaser": "/assets/images/2026-05-14-tutorial-building-your-own-federated-learning-algorithm/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-11-tutorial-feast.md",
+    "url": "/blog/posts/2026-06-11-tutorial-feast.html",
+    "title": "feast: manage machine learning features effectively",
+    "date": "2026-06-11T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "feast",
+      "feature-store",
+      "machine-learning",
+      "ml-models"
+    ],
+    "excerpt": "learn about feast, an open-source feature store for efficient ml model management. discover key features, installation steps, and practical examples to get started.",
+    "teaser": "/assets/images/2026-06-11-tutorial-feast/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-14-repo-ray-project-ray.md",
     "url": "/blog/posts/2026-04-14-repo-ray-project-ray.html",
     "title": "ray-project/Ray: Distributed Computing for Machine Learning",
@@ -641,7 +656,7 @@
   {
     "filename": "2025-12-27-package-ollama.md",
     "url": "/blog/posts/2025-12-27-package-ollama.html",
-    "title": "Ollama: Run Large Language Models Locally",
+    "title": "Ollama: Run LLMs Locally — Setup, Python Examples, and Production Considerations",
     "date": "2025-12-27T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
@@ -653,7 +668,7 @@
       "mistral",
       "self-hosted"
     ],
-    "excerpt": "A practical guide to Ollama, the tool for running open-source large language models like Llama, Mistral, and Gemma locally on your own machine.",
+    "excerpt": "How Ollama makes local LLMs practical: setup, the Python client and OpenAI-compatible API, when local inference beats hosted models, and how it pairs with watsonx.ai in hybrid architectures.",
     "teaser": "/assets/images/2025-12-27-package-ollama/teaser-ai.jpg"
   },
   {
@@ -1090,7 +1105,7 @@
   {
     "filename": "2026-01-07-package-bert-score.md",
     "url": "/blog/posts/2026-01-07-package-bert-score.html",
-    "title": "BERTScore: Evaluating Text Generation with Contextual Embeddings",
+    "title": "BERTScore for LLM Evaluation: When to Use It, Examples, and watsonx.ai Workflows",
     "date": "2026-01-07T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
@@ -1100,7 +1115,7 @@
       "machine-learning",
       "metrics"
     ],
-    "excerpt": "BERTScore leverages BERT contextual embeddings to evaluate text generation quality, providing precision, recall, and F1 scores that correlate better with human judgment than traditional n-gram metrics.",
+    "excerpt": "Learn how BERTScore evaluates generated text with contextual embeddings, when to use it instead of ROUGE, BLEU, or LLM-as-judge, and how to wire it into watsonx.ai evaluation workflows.",
     "teaser": "/assets/images/2026-01-07-package-bert-score/teaser-ai.jpg"
   },
   {
@@ -1231,7 +1246,7 @@
   {
     "filename": "2025-12-23-package-xgboost.md",
     "url": "/blog/posts/2025-12-23-package-xgboost.html",
-    "title": "XGBoost: Scalable Gradient Boosting for Classification and Regression",
+    "title": "XGBoost: When Gradient Boosting Beats Deep Learning — Practical Guide and Comparison",
     "date": "2025-12-23T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
@@ -1243,7 +1258,7 @@
       "python",
       "data-science"
     ],
-    "excerpt": "A hands-on guide to XGBoost, the optimized gradient boosting library known for speed, performance, and dominance in machine learning competitions.",
+    "excerpt": "Why XGBoost remains the default for tabular machine learning: a practical guide with early stopping, GPU training, and SHAP explainability, plus an honest comparison with LightGBM, CatBoost, and neural networks.",
     "teaser": "/assets/images/2025-12-23-package-xgboost/teaser-ai.jpg"
   },
   {
@@ -1426,7 +1441,7 @@
   {
     "filename": "2026-01-29-package-tensorflow-graphics.md",
     "url": "/blog/posts/2026-01-29-package-tensorflow-graphics.html",
-    "title": "TensorFlow Graphics: Differentiable 3D Graphics Layers for Deep Learning",
+    "title": "TensorFlow Graphics: Differentiable 3D Layers for Deep Learning — Guide and Honest Assessment",
     "date": "2026-01-29T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
@@ -1439,7 +1454,7 @@
       "computer-vision",
       "geometry"
     ],
-    "excerpt": "TensorFlow Graphics provides differentiable graphics layers for 3D geometry transformations, rendering, and mesh operations, bridging the gap between computer graphics and deep learning.",
+    "excerpt": "What TensorFlow Graphics offers for differentiable 3D deep learning, where it stands today versus PyTorch3D, Kaolin, and nvdiffrast, and an honest take on whether you should build on it.",
     "teaser": "/assets/images/2026-01-29-package-tensorflow-graphics/teaser-ai.jpg"
   },
   {
@@ -1460,7 +1475,7 @@
   {
     "filename": "2026-01-21-package-scikit-video.md",
     "url": "/blog/posts/2026-01-21-package-scikit-video.html",
-    "title": "scikit-video: Video Processing in Python with FFmpeg",
+    "title": "scikit-video: Video I/O and Quality Metrics in Python — Guide, Examples, and Alternatives",
     "date": "2026-01-21T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
@@ -1472,7 +1487,7 @@
       "computer-vision",
       "numpy"
     ],
-    "excerpt": "scikit-video (skvideo) is a Python library for video reading, writing, and processing built on top of FFmpeg and NumPy.",
+    "excerpt": "What scikit-video still does well — NumPy-first video I/O and quality metrics like PSNR and SSIM — where it shows its age, and when to reach for PyAV, imageio, decord, or torchvision instead.",
     "teaser": "/assets/images/2026-01-21-package-scikit-video/teaser-ai.jpg"
   },
   {
@@ -1572,7 +1587,7 @@
   {
     "filename": "2025-12-26-package-folium.md",
     "url": "/blog/posts/2025-12-26-package-folium.html",
-    "title": "Folium: Create Interactive Leaflet.js Maps in Python",
+    "title": "Folium: Interactive Maps in Python — Practical Guide, Use Cases, and Alternatives",
     "date": "2025-12-26T09:00:00+00:00",
     "author": "Ruslanmv",
     "tags": [
@@ -1584,7 +1599,7 @@
       "interactive-maps",
       "gis"
     ],
-    "excerpt": "A practical guide to Folium, the Python library for creating interactive Leaflet.js maps with markers, choropleth layers, and heatmaps.",
+    "excerpt": "A practical guide to Folium for interactive Leaflet.js maps in Python: markers, choropleths, heatmaps, when to choose it over Plotly or pydeck, and how to publish maps from data pipelines.",
     "teaser": "/assets/images/2025-12-26-package-folium/teaser-ai.jpg"
   }
 ]
