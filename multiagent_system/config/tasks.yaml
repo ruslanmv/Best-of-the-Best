@@ -73,8 +73,11 @@ writing_task:
       activity, production readiness) — praise and criticism where deserved.
     - Compare against real alternatives a practitioner would actually consider.
     - The title must answer: what is this, who needs it, and why should they click?
-      (e.g. "BERTScore for LLM Evaluation: When to Use It, Examples, and watsonx.ai
-      Workflows" — never just the package name.)
+      (e.g. "BERTScore for LLM Evaluation: When to Use It, Examples, and
+      Alternatives" — never just the package name.)
+    - Stay vendor-neutral. Do not frame the post around any single commercial
+      platform; name a specific vendor only when the integration is genuinely
+      true and useful to the reader.
 
     The blog post should follow this structure:
 
@@ -101,24 +104,24 @@ writing_task:
 
     5. **When not to use it** — concrete scenarios where an alternative wins.
 
-    6. **Integration with IBM watsonx.ai:**
-       - A credible, concrete integration pattern (mostly prose; at most one
-         minimal code sketch with credentials only via environment variables)
+    6. **Integration and production notes:**
+       - How the package fits into a real production stack (mostly prose; at
+         most one minimal code sketch with credentials only via environment
+         variables). Stay vendor-neutral — do NOT center the post on any single
+         commercial platform. Mention a specific vendor only when the
+         integration is genuinely true and load-bearing, never as filler.
 
-    7. **Integration with IBM Watson Orchestrate:**
-       - Prose only: how the package fits an automated business workflow
-
-    8. **Alternatives compared:**
+    7. **Alternatives compared:**
        - A Markdown table comparing 3-5 real alternatives (columns such as
          "best for", "maintenance", "ecosystem"), followed by 2-3 paragraphs
          of honest opinion
 
-    9. **Limitations** — real drawbacks, not soft caveats.
+    8. **Limitations** — real drawbacks, not soft caveats.
 
-    10. **Final recommendation** — a clear opinion: who should adopt it,
-        as part of what stack.
+    9. **Final recommendation** — a clear opinion: who should adopt it,
+       as part of what stack.
 
-    11. **References** — real links only (GitHub, official docs, paper, PyPI).
+    10. **References** — real links only (GitHub, official docs, paper, PyPI).
 
     Format the post in Markdown with proper headings (## and ###), code blocks, and links.
     Target length: 1400-2000 words.
@@ -129,7 +132,7 @@ writing_task:
     - A title that answers "what is this, who needs it, why click" (never just the package name)
     - An original "why it matters" opening (no boilerplate)
     - A type-specific deep dive, "when to use it" and "when not to use it" sections
-    - watsonx.ai and Watson Orchestrate integration sections
+    - A vendor-neutral "integration and production notes" section
     - An alternatives comparison table with honest opinion
     - Limitations and a clear final recommendation
     - Complete, working code examples using real APIs (no "{{" or "{%" sequences)

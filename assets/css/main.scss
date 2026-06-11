@@ -251,5 +251,35 @@ h3.archive__date {
         color: $secondary-color;
       }
   }
-  
+
+}
+
+/*
+   BLOG ARCHIVE — pagination & footer spacing
+   The theme pins .page__footer with position:absolute; bottom:0 (its sticky-
+   footer trick). On the long paginated blog archive that makes the footer ride
+   up over the numbered pagination. Return the footer to normal flow and give
+   the pagination breathing room so the controls are never cropped.
+   ========================================================================== */
+
+.page__footer {
+  position: relative !important;
+  bottom: auto !important;
+  margin-top: 4rem;
+}
+
+.archive,
+.entries-list {
+  padding-bottom: 2rem;
+}
+
+.pagination {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.pagination-summary {
+  clear: both;
+  padding-top: 0.5rem;
+  text-align: center;
 }
