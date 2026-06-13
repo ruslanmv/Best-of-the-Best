@@ -1413,6 +1413,21 @@
     "teaser": "/assets/images/2026-01-29-package-tensorflow-graphics/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-13-tutorial-fiftyone.md",
+    "url": "/blog/posts/2026-06-13-tutorial-fiftyone.html",
+    "title": "fiftyone-introduction-to-data-platform-for-ml",
+    "date": "2026-06-13T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "fiftyone",
+      "machine-learning",
+      "computer-vision",
+      "data-management"
+    ],
+    "excerpt": "Learn about fiftyone, an open-source data platform for building machine learning models. Discover installation, core features, and practical examples in computer vision tasks.",
+    "teaser": "/assets/images/2026-06-13-tutorial-fiftyone/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-26-paper-deeplabcut.md",
     "url": "/blog/posts/2026-04-26-paper-deeplabcut.html",
     "title": "deeplabcut-explained-for-researchers",

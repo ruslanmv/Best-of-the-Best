@@ -869,9 +869,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "feast",
+    "id": "fiftyone",
     "version": 1,
-    "date": "2026-06-12",
-    "filename": "2026-06-12-tutorial-feast.md"
+    "date": "2026-06-13",
+    "filename": "2026-06-13-tutorial-fiftyone.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "fiftyone",
+    "version": 1,
+    "date": "2026-06-13",
+    "filename": "2026-06-13-tutorial-fiftyone.md"
   }
 ]
