@@ -1377,6 +1377,21 @@
     "teaser": "/assets/images/2026-04-23-paper-ldm/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-14-tutorial-catboost.md",
+    "url": "/blog/posts/2026-06-14-tutorial-catboost.html",
+    "title": "catboost-explained-for-machine-learning-practitioners",
+    "date": "2026-06-14T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "catboost",
+      "machine-learning",
+      "gradient-boosting",
+      "categorical-data"
+    ],
+    "excerpt": "Discover how to use CatBoost, a powerful open-source gradient boosting library that excels with categorical data. This guide covers installation, key features, practical examples, and best practices for machine learning tasks.",
+    "teaser": "/assets/images/2026-06-14-tutorial-catboost/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-03-repo-facebookresearch-segment-anything.md",
     "url": "/blog/posts/2026-04-03-repo-facebookresearch-segment-anything.html",
     "title": "facebookresearch/Segment Anything - Advanced Image Segmentation Library",
