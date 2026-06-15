@@ -883,9 +883,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "catboost",
+    "id": "gemma-2",
     "version": 1,
-    "date": "2026-06-14",
-    "filename": "2026-06-14-tutorial-catboost.md"
+    "date": "2026-06-15",
+    "filename": "2026-06-15-tutorial-gemma-2.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "gemma-2",
+    "version": 1,
+    "date": "2026-06-15",
+    "filename": "2026-06-15-tutorial-gemma-2.md"
   }
 ]

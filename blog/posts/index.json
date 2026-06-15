@@ -1329,6 +1329,22 @@
     "teaser": "/assets/images/2026-06-07-tutorial-flax/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-15-tutorial-gemma-2.md",
+    "url": "/blog/posts/2026-06-15-tutorial-gemma-2.html",
+    "title": "gemma 2 - real-time data processing and multi-threaded support",
+    "date": "2026-06-15T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "gemma 2",
+      "python",
+      "data-processing",
+      "real-time",
+      "multi-threading"
+    ],
+    "excerpt": "learn about gemma 2, a powerful python library for handling large datasets. discover its key features like real-time processing and multi-threading. see practical examples and installation guide.",
+    "teaser": "/assets/images/2026-06-15-tutorial-gemma-2/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-06-01-tutorial-autogen.md",
     "url": "/blog/posts/2026-06-01-tutorial-autogen.html",
     "title": "auto-gen-learn-how-to-use-open-source-library-for-data-generation",
