@@ -1553,6 +1553,21 @@
     "teaser": "/assets/images/2026-04-12-repo-tencentarc-gfpgan/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-16-tutorial-llama-3-1.md",
+    "url": "/blog/posts/2026-06-16-tutorial-llama-3-1.html",
+    "title": "Llama 3.1 - Advanced Python Data Processing Library",
+    "date": "2026-06-16T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "llama-3.1",
+      "data-processing",
+      "python-library",
+      "real-time-data"
+    ],
+    "excerpt": "Learn about Llama 3.1, a powerful real-time data processing library in Python. Discover its features, installation, and best practices for handling large datasets and streaming data.",
+    "teaser": "/assets/images/2026-06-16-tutorial-llama-3-1/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-15-package-earthengine-api.md",
     "url": "/blog/posts/2026-01-15-package-earthengine-api.html",
     "title": "Google Earth Engine API: Planetary-Scale Geospatial Analysis in Python",
