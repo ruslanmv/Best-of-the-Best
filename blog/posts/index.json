@@ -1117,6 +1117,21 @@
     "teaser": "/assets/images/2026-05-03-paper-taming-transformers-for-high-resolution-image-synthesis/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-17-tutorial-mistral-small.md",
+    "url": "/blog/posts/2026-06-17-tutorial-mistral-small.html",
+    "title": "Mistral Small - Streamline Data Processing with Python Library",
+    "date": "2026-06-17T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "mistral_small",
+      "data-processing",
+      "python-library",
+      "machine-learning"
+    ],
+    "excerpt": "Learn how to integrate Mistral Small into your projects, explore its key features like efficient data loading & real-time analytics. Get started now!",
+    "teaser": "/assets/images/2026-06-17-tutorial-mistral-small/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-30-paper-instant-ngp.md",
     "url": "/blog/posts/2026-04-30-paper-instant-ngp.html",
     "title": "instant-ngp: efficient neural network optimization",

@@ -897,9 +897,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "llama-3-1",
+    "id": "mistral-small",
     "version": 1,
-    "date": "2026-06-16",
-    "filename": "2026-06-16-tutorial-llama-3-1.md"
+    "date": "2026-06-17",
+    "filename": "2026-06-17-tutorial-mistral-small.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "mistral-small",
+    "version": 1,
+    "date": "2026-06-17",
+    "filename": "2026-06-17-tutorial-mistral-small.md"
   }
 ]
