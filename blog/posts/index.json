@@ -474,6 +474,21 @@
     "teaser": "/assets/images/2026-05-19-tutorial-custom-federated-algorithms-part-2-implementing-federated-averaging/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-18-tutorial-dpo-zephyr.md",
+    "url": "/blog/posts/2026-06-18-tutorial-dpo-zephyr.html",
+    "title": "dpo zephyr: modern data processing library for real-time analytics",
+    "date": "2026-06-18T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "dpo zephyr",
+      "data processing",
+      "real-time analytics",
+      "parallel execution"
+    ],
+    "excerpt": "learn how to use dpo zephyr for efficient data processing, including parallel execution and memory management. discover practical examples and best practices in this guide.",
+    "teaser": "/assets/images/2026-06-18-tutorial-dpo-zephyr/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-08-package-gin-config.md",
     "url": "/blog/posts/2026-01-08-package-gin-config.html",
     "title": "Gin Config: Google's Lightweight Configuration Framework for Python",

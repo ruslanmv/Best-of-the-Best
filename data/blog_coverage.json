@@ -904,9 +904,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "mistral-small",
+    "id": "dpo-zephyr",
     "version": 1,
-    "date": "2026-06-17",
-    "filename": "2026-06-17-tutorial-mistral-small.md"
+    "date": "2026-06-18",
+    "filename": "2026-06-18-tutorial-dpo-zephyr.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "dpo-zephyr",
+    "version": 1,
+    "date": "2026-06-18",
+    "filename": "2026-06-18-tutorial-dpo-zephyr.md"
   }
 ]
