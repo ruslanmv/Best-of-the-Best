@@ -343,6 +343,21 @@
     "teaser": "/assets/images/2026-01-21-package-scikit-video/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-19-tutorial-orpo.md",
+    "url": "/blog/posts/2026-06-19-tutorial-orpo.html",
+    "title": "orpo - efficient data processing in python",
+    "date": "2026-06-19T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "orpo",
+      "python",
+      "data-processing",
+      "large-datasets"
+    ],
+    "excerpt": "learn about orpo, a powerful python package for handling large datasets with ease. discover its key features and practical examples to boost your data analysis skills.",
+    "teaser": "/assets/images/2026-06-19-tutorial-orpo/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-23-tutorial-mujoco.md",
     "url": "/blog/posts/2026-05-23-tutorial-mujoco.html",
     "title": "mujocona381-simulation-and-tutorial",
