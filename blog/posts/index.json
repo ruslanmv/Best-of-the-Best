@@ -737,6 +737,21 @@
     "teaser": "/assets/images/2026-05-08-paper-pifu/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-20-tutorial-phi-3-5.md",
+    "url": "/blog/posts/2026-06-20-tutorial-phi-3-5.html",
+    "title": "phi-3.5: High-Performance Computing for Python - Installation & Usage",
+    "date": "2026-06-20T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "phi-3.5",
+      "high-performance-computing",
+      "machine-learning",
+      "python"
+    ],
+    "excerpt": "Learn how to install and use phi-3.5, a powerful tool for high-performance computing tasks like machine learning and scientific simulations in Python.",
+    "teaser": "/assets/images/2026-06-20-tutorial-phi-3-5/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-07-paper-bytetrack.md",
     "url": "/blog/posts/2026-05-07-paper-bytetrack.html",
     "title": "byte-track-real-time-object-tracking-system",

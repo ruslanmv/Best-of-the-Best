@@ -918,9 +918,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "orpo",
+    "id": "phi-3-5",
     "version": 1,
-    "date": "2026-06-19",
-    "filename": "2026-06-19-tutorial-orpo.md"
+    "date": "2026-06-20",
+    "filename": "2026-06-20-tutorial-phi-3-5.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "phi-3-5",
+    "version": 1,
+    "date": "2026-06-20",
+    "filename": "2026-06-20-tutorial-phi-3-5.md"
   }
 ]
