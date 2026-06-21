@@ -925,9 +925,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "phi-3-5",
+    "id": "simple-audio-recognition",
     "version": 1,
-    "date": "2026-06-20",
-    "filename": "2026-06-20-tutorial-phi-3-5.md"
+    "date": "2026-06-21",
+    "filename": "2026-06-21-tutorial-simple-audio-recognition.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "simple-audio-recognition",
+    "version": 1,
+    "date": "2026-06-21",
+    "filename": "2026-06-21-tutorial-simple-audio-recognition.md"
   }
 ]

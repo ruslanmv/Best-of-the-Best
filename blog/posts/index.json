@@ -66,6 +66,21 @@
     "teaser": "/assets/images/2025-12-23-package-xgboost/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-21-tutorial-simple-audio-recognition.md",
+    "url": "/blog/posts/2026-06-21-tutorial-simple-audio-recognition.html",
+    "title": "simple-audio-recognition-for-python-apps",
+    "date": "2026-06-21T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "python",
+      "audio-processing",
+      "sound-detection",
+      "security-systems"
+    ],
+    "excerpt": "Learn about Simple Audio Recognition, a Python library for processing and recognizing sounds. Discover its key features, practical use cases like security systems and smart speakers, and how to get started.",
+    "teaser": "/assets/images/2026-06-21-tutorial-simple-audio-recognition/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-30-tutorial-lightautoml.md",
     "url": "/blog/posts/2026-05-30-tutorial-lightautoml.html",
     "title": "lightautoml: automate machine learning workflows",
