@@ -932,9 +932,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "simple-audio-recognition",
+    "id": "xformers",
     "version": 1,
-    "date": "2026-06-21",
-    "filename": "2026-06-21-tutorial-simple-audio-recognition.md"
+    "date": "2026-06-22",
+    "filename": "2026-06-22-tutorial-xformers.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "xformers",
+    "version": 1,
+    "date": "2026-06-22",
+    "filename": "2026-06-22-tutorial-xformers.md"
   }
 ]

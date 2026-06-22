@@ -373,6 +373,24 @@
     "teaser": "/assets/images/2026-06-19-tutorial-orpo/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-22-tutorial-xformers.md",
+    "url": "/blog/posts/2026-06-22-tutorial-xformers.html",
+    "title": "learn-xformers-for-high-performance-neural-networks",
+    "date": "2026-06-22T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "xformers",
+      "neural-networks",
+      "memory-efficiency",
+      "pytorch",
+      "attention-mechanism",
+      "natural-language-processing",
+      "computer-vision"
+    ],
+    "excerpt": "optimize-your-models-with-xformers-a-memory-efficient-library-for-attention-mechanisms-in-nlp-and-cv. discover its key features, setup, and practical examples in this comprehensive guide.",
+    "teaser": "/assets/images/2026-06-22-tutorial-xformers/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-23-tutorial-mujoco.md",
     "url": "/blog/posts/2026-05-23-tutorial-mujoco.html",
     "title": "mujocona381-simulation-and-tutorial",
