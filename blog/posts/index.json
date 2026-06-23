@@ -1646,6 +1646,21 @@
     "teaser": "/assets/images/2026-04-12-repo-tencentarc-gfpgan/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-23-tutorial-high-performance-simulations-with-tff.md",
+    "url": "/blog/posts/2026-06-23-tutorial-high-performance-simulations-with-tff.html",
+    "title": "High-performance simulations with TFF",
+    "date": "2026-06-23T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "tensorflow",
+      "federated-learning",
+      "high-performance",
+      "simulations"
+    ],
+    "excerpt": "Learn to develop high-performance simulations using TensorFlow Federated (TFF). Discover key features, setup steps, and practical examples for robust federated learning models.",
+    "teaser": "/assets/images/2026-06-23-tutorial-high-performance-simulations-with-tff/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-06-16-tutorial-llama-3-1.md",
     "url": "/blog/posts/2026-06-16-tutorial-llama-3-1.html",
     "title": "Llama 3.1 - Advanced Python Data Processing Library",

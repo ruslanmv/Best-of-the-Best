@@ -939,9 +939,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "xformers",
+    "id": "high-performance-simulations-with-tff",
     "version": 1,
-    "date": "2026-06-22",
-    "filename": "2026-06-22-tutorial-xformers.md"
+    "date": "2026-06-23",
+    "filename": "2026-06-23-tutorial-high-performance-simulations-with-tff.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "high-performance-simulations-with-tff",
+    "version": 1,
+    "date": "2026-06-23",
+    "filename": "2026-06-23-tutorial-high-performance-simulations-with-tff.md"
   }
 ]
