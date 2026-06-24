@@ -927,6 +927,22 @@
     "teaser": "/assets/images/2026-06-02-tutorial-langfun/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-24-tutorial-autodistill.md",
+    "url": "/blog/posts/2026-06-24-tutorial-autodistill.html",
+    "title": "autodistill - model-distillation-library-overview",
+    "date": "2026-06-24T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "autodistill",
+      "model-distillation",
+      "machine-learning",
+      "ai",
+      "deep-learning"
+    ],
+    "excerpt": "Learn about autodistill, an open-source library for distilling complex machine learning models into smaller ones. Discover its uses and how to implement it in your projects with our guide.",
+    "teaser": "/assets/images/2026-06-24-tutorial-autodistill/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-03-30-repo-compvis-stable-diffusion.md",
     "url": "/blog/posts/2026-03-30-repo-compvis-stable-diffusion.html",
     "title": "compvis/stable-diffusion: text-to-image generation model",

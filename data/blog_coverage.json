@@ -946,9 +946,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "high-performance-simulations-with-tff",
+    "id": "autodistill",
     "version": 1,
-    "date": "2026-06-23",
-    "filename": "2026-06-23-tutorial-high-performance-simulations-with-tff.md"
+    "date": "2026-06-24",
+    "filename": "2026-06-24-tutorial-autodistill.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "autodistill",
+    "version": 1,
+    "date": "2026-06-24",
+    "filename": "2026-06-24-tutorial-autodistill.md"
   }
 ]
