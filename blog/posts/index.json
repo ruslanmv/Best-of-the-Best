@@ -1502,6 +1502,21 @@
     "teaser": "/assets/images/2026-04-23-paper-ldm/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-25-tutorial-crawl4ai.md",
+    "url": "/blog/posts/2026-06-25-tutorial-crawl4ai.html",
+    "title": "crawl4ai: Web Crawling Library Guide",
+    "date": "2026-06-25T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "crawl4ai",
+      "web-crawling",
+      "data-collection",
+      "python-library"
+    ],
+    "excerpt": "Discover how to use crawl4ai, a powerful web crawling library, for data collection tasks like scraping and monitoring websites with ease. Learn setup, core concepts, and best practices.",
+    "teaser": "/assets/images/2026-06-25-tutorial-crawl4ai/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-06-14-tutorial-catboost.md",
     "url": "/blog/posts/2026-06-14-tutorial-catboost.html",
     "title": "catboost-explained-for-machine-learning-practitioners",

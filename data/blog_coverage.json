@@ -953,9 +953,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "autodistill",
+    "id": "crawl4ai",
     "version": 1,
-    "date": "2026-06-24",
-    "filename": "2026-06-24-tutorial-autodistill.md"
+    "date": "2026-06-25",
+    "filename": "2026-06-25-tutorial-crawl4ai.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "crawl4ai",
+    "version": 1,
+    "date": "2026-06-25",
+    "filename": "2026-06-25-tutorial-crawl4ai.md"
   }
 ]
