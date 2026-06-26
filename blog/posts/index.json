@@ -1487,6 +1487,21 @@
     "teaser": "/assets/images/2025-12-23-package-catboost/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-26-tutorial-xgboost.md",
+    "url": "/blog/posts/2026-06-26-tutorial-xgboost.html",
+    "title": "xgboost - optimized gradient boosting library for machine learning",
+    "date": "2026-06-26T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "xgboost",
+      "gradient-boosting",
+      "machine-learning",
+      "data-science"
+    ],
+    "excerpt": "Learn about xgboost, its key features, installation process, and practical examples. Discover how to use it effectively in various data science projects.",
+    "teaser": "/assets/images/2026-06-26-tutorial-xgboost/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-23-paper-ldm.md",
     "url": "/blog/posts/2026-04-23-paper-ldm.html",
     "title": "ldm-package-for-facial-landmark-detection-and-face-recognition",
