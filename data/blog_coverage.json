@@ -967,9 +967,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "xgboost",
+    "id": "yolov5",
     "version": 1,
-    "date": "2026-06-26",
-    "filename": "2026-06-26-tutorial-xgboost.md"
+    "date": "2026-06-27",
+    "filename": "2026-06-27-tutorial-yolov5.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "yolov5",
+    "version": 1,
+    "date": "2026-06-27",
+    "filename": "2026-06-27-tutorial-yolov5.md"
   }
 ]

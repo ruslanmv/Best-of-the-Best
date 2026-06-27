@@ -850,6 +850,21 @@
     "teaser": "/assets/images/2026-04-18-paper-alphafold/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-27-tutorial-yolov5.md",
+    "url": "/blog/posts/2026-06-27-tutorial-yolov5.html",
+    "title": "yolov5-object-detection-model-explained",
+    "date": "2026-06-27T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "yolov5",
+      "object-detection",
+      "machine-learning",
+      "computer-vision"
+    ],
+    "excerpt": "Discover the power of yolov5 for real-time object detection. Learn installation, usage in images and videos, and best practices.",
+    "teaser": "/assets/images/2026-06-27-tutorial-yolov5/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-29-paper-swinir.md",
     "url": "/blog/posts/2026-04-29-paper-swinir.html",
     "title": "SwinIR: Advanced Image Restoration Framework | SEO Optimized",
