@@ -974,9 +974,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "yolov5",
+    "id": "yolov3",
     "version": 1,
-    "date": "2026-06-27",
-    "filename": "2026-06-27-tutorial-yolov5.md"
+    "date": "2026-06-28",
+    "filename": "2026-06-28-tutorial-yolov3.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "yolov3",
+    "version": 1,
+    "date": "2026-06-28",
+    "filename": "2026-06-28-tutorial-yolov3.md"
   }
 ]

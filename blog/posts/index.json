@@ -441,6 +441,24 @@
     "teaser": "/assets/images/2026-04-21-paper-pix2pix/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-28-tutorial-yolov3.md",
+    "url": "/blog/posts/2026-06-28-tutorial-yolov3.html",
+    "title": "yolov3-object-detection-system",
+    "date": "2026-06-28T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "yolov3",
+      "object-detection",
+      "real-time",
+      "python",
+      "computer-vision",
+      "opencv",
+      "machine-learning"
+    ],
+    "excerpt": "Learn about YOLOv3, a real-time object detection system known for its speed and accuracy. Discover how to install and run YOLOv3 in Python.",
+    "teaser": "/assets/images/2026-06-28-tutorial-yolov3/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-06-08-tutorial-haiku.md",
     "url": "/blog/posts/2026-06-08-tutorial-haiku.html",
     "title": "Haiku - Simple Python Web Framework",
