@@ -1755,6 +1755,21 @@
     "teaser": "/assets/images/2026-06-16-tutorial-llama-3-1/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-29-tutorial-swarm.md",
+    "url": "/blog/posts/2026-06-29-tutorial-swarm.html",
+    "title": "Learn About Swarm - Docker Orchestration Tool",
+    "date": "2026-06-29T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "swarm",
+      "docker",
+      "orchestration",
+      "container-management"
+    ],
+    "excerpt": "Discover the key features, installation process, and best practices of Swarm for efficient container management. Dive into practical examples and explore official documentation.",
+    "teaser": "/assets/images/2026-06-29-tutorial-swarm/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-15-package-earthengine-api.md",
     "url": "/blog/posts/2026-01-15-package-earthengine-api.html",
     "title": "Google Earth Engine API: Planetary-Scale Geospatial Analysis in Python",

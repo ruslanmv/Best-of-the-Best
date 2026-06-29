@@ -981,9 +981,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "yolov3",
+    "id": "swarm",
     "version": 1,
-    "date": "2026-06-28",
-    "filename": "2026-06-28-tutorial-yolov3.md"
+    "date": "2026-06-29",
+    "filename": "2026-06-29-tutorial-swarm.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "swarm",
+    "version": 1,
+    "date": "2026-06-29",
+    "filename": "2026-06-29-tutorial-swarm.md"
   }
 ]
