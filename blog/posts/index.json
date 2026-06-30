@@ -1502,6 +1502,21 @@
     "teaser": "/assets/images/2026-06-01-tutorial-autogen/teaser-ai.jpg"
   },
   {
+    "filename": "2026-06-30-tutorial-lm-evaluation-harness.md",
+    "url": "/blog/posts/2026-06-30-tutorial-lm-evaluation-harness.html",
+    "title": "lm-evaluation-harness for robust llm assessment",
+    "date": "2026-06-30T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "lm-evaluation-harness",
+      "large-language-models",
+      "model-evaluation",
+      "machine-learning"
+    ],
+    "excerpt": "learn about lm evaluation harness, a modular framework for evaluating large language models across various metrics. discover setup, core concepts, practical examples, and best practices.",
+    "teaser": "/assets/images/2026-06-30-tutorial-lm-evaluation-harness/teaser-ai.jpg"
+  },
+  {
     "filename": "2025-12-23-package-catboost.md",
     "url": "/blog/posts/2025-12-23-package-catboost.html",
     "title": "CatBoost: Gradient Boosting with Native Categorical Feature Support",

@@ -988,9 +988,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "swarm",
+    "id": "lm-evaluation-harness",
     "version": 1,
-    "date": "2026-06-29",
-    "filename": "2026-06-29-tutorial-swarm.md"
+    "date": "2026-06-30",
+    "filename": "2026-06-30-tutorial-lm-evaluation-harness.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "lm-evaluation-harness",
+    "version": 1,
+    "date": "2026-06-30",
+    "filename": "2026-06-30-tutorial-lm-evaluation-harness.md"
   }
 ]
