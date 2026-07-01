@@ -1867,6 +1867,21 @@
     "teaser": "/assets/images/2026-06-03-tutorial-comfyui/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-01-tutorial-codegemma.md",
+    "url": "/blog/posts/2026-07-01-tutorial-codegemma.html",
+    "title": "codegemma-python-library-for-code-generation",
+    "date": "2026-07-01T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "python",
+      "codegemma",
+      "template-generation",
+      "coding"
+    ],
+    "excerpt": "Learn about CodeGemma, a Python library for dynamic code template generation. Discover its features and practical examples to streamline development.",
+    "teaser": "/assets/images/2026-07-01-tutorial-codegemma/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-22-tutorial-dm-control.md",
     "url": "/blog/posts/2026-05-22-tutorial-dm-control.html",
     "title": "dm_control: Python Library for Reinforcement Learning Simulations",
