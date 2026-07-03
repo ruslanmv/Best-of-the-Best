@@ -215,6 +215,21 @@
     "teaser": "/assets/images/2026-06-04-tutorial-transformerlens/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-03-tutorial-multimodal-maestro.md",
+    "url": "/blog/posts/2026-07-03-tutorial-multimodal-maestro.html",
+    "title": "multimodal maestro - powerful python library for multimodal data processing",
+    "date": "2026-07-03T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "multimodal",
+      "python",
+      "data-processing",
+      "machine-learning"
+    ],
+    "excerpt": "Discover how to use the versatile Multimodal Maestro library in Python. Learn about its key features, practical examples, and best practices for handling complex datasets with multiple input types.",
+    "teaser": "/assets/images/2026-07-03-tutorial-multimodal-maestro/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-09-package-autofaiss.md",
     "url": "/blog/posts/2026-01-09-package-autofaiss.html",
     "title": "Autofaiss: Automatically Build Optimal Faiss Indexes for Vector Search",

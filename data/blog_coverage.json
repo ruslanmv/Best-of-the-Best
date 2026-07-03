@@ -1002,9 +1002,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "codegemma",
+    "id": "multimodal-maestro",
     "version": 1,
-    "date": "2026-07-01",
-    "filename": "2026-07-01-tutorial-codegemma.md"
+    "date": "2026-07-03",
+    "filename": "2026-07-03-tutorial-multimodal-maestro.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "multimodal-maestro",
+    "version": 1,
+    "date": "2026-07-03",
+    "filename": "2026-07-03-tutorial-multimodal-maestro.md"
   }
 ]
