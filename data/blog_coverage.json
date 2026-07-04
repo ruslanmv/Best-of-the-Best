@@ -1009,9 +1009,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "multimodal-maestro",
+    "id": "trl",
     "version": 1,
-    "date": "2026-07-03",
-    "filename": "2026-07-03-tutorial-multimodal-maestro.md"
+    "date": "2026-07-04",
+    "filename": "2026-07-04-tutorial-trl.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "trl",
+    "version": 1,
+    "date": "2026-07-04",
+    "filename": "2026-07-04-tutorial-trl.md"
   }
 ]

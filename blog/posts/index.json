@@ -1882,6 +1882,21 @@
     "teaser": "/assets/images/2026-06-03-tutorial-comfyui/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-04-tutorial-trl.md",
+    "url": "/blog/posts/2026-07-04-tutorial-trl.html",
+    "title": "trl: understanding technology readiness levels for innovation",
+    "date": "2026-07-04T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "trl",
+      "technology-readiness-level",
+      "innovation",
+      "space-tech"
+    ],
+    "excerpt": "learn about the trl scale used by nasa's space technology mission directorate to assess tech maturity. explore practical examples and best practices in this comprehensive guide.",
+    "teaser": "/assets/images/2026-07-04-tutorial-trl/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-07-01-tutorial-codegemma.md",
     "url": "/blog/posts/2026-07-01-tutorial-codegemma.html",
     "title": "codegemma-python-library-for-code-generation",
