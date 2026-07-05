@@ -1016,9 +1016,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "trl",
+    "id": "peft",
     "version": 1,
-    "date": "2026-07-04",
-    "filename": "2026-07-04-tutorial-trl.md"
+    "date": "2026-07-05",
+    "filename": "2026-07-05-tutorial-peft.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "peft",
+    "version": 1,
+    "date": "2026-07-05",
+    "filename": "2026-07-05-tutorial-peft.md"
   }
 ]

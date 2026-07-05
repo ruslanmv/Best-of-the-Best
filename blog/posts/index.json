@@ -898,6 +898,21 @@
     "teaser": "/assets/images/2026-06-27-tutorial-yolov5/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-05-tutorial-peft.md",
+    "url": "/blog/posts/2026-07-05-tutorial-peft.html",
+    "title": "peft: parameter-efficient fine-tuning for nlp models",
+    "date": "2026-07-05T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "peft",
+      "nlp",
+      "lora",
+      "p-tuning"
+    ],
+    "excerpt": "learn about peft (parameter efficient fine-tuning) and its core concepts, including lora and p-tuning. discover practical examples and best practices to effectively apply peft in real-world scenarios.",
+    "teaser": "/assets/images/2026-07-05-tutorial-peft/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-29-paper-swinir.md",
     "url": "/blog/posts/2026-04-29-paper-swinir.html",
     "title": "SwinIR: Advanced Image Restoration Framework | SEO Optimized",
