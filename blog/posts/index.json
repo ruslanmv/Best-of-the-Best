@@ -230,6 +230,21 @@
     "teaser": "/assets/images/2026-07-03-tutorial-multimodal-maestro/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-06-tutorial-saa.md",
+    "url": "/blog/posts/2026-07-06-tutorial-saa.html",
+    "title": "SAA+ - Advanced Analytics Toolkit for Real-Time Processing",
+    "date": "2026-07-06T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "saa+",
+      "real-time-processing",
+      "data-analytics",
+      "secure-data"
+    ],
+    "excerpt": "Learn about SAA+, an advanced analytics toolkit with high-performance data processing, real-time streaming, and enhanced security. Explore its key features, installation, practical examples, and best practices.",
+    "teaser": "/assets/images/2026-07-06-tutorial-saa/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-09-package-autofaiss.md",
     "url": "/blog/posts/2026-01-09-package-autofaiss.html",
     "title": "Autofaiss: Automatically Build Optimal Faiss Indexes for Vector Search",

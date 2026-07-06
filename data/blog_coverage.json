@@ -1023,9 +1023,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "peft",
+    "id": "saa",
     "version": 1,
-    "date": "2026-07-05",
-    "filename": "2026-07-05-tutorial-peft.md"
+    "date": "2026-07-06",
+    "filename": "2026-07-06-tutorial-saa.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "saa",
+    "version": 1,
+    "date": "2026-07-06",
+    "filename": "2026-07-06-tutorial-saa.md"
   }
 ]
