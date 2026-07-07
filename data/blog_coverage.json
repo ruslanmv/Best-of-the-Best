@@ -1030,9 +1030,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "saa",
+    "id": "tensorrt",
     "version": 1,
-    "date": "2026-07-06",
-    "filename": "2026-07-06-tutorial-saa.md"
+    "date": "2026-07-07",
+    "filename": "2026-07-07-tutorial-tensorrt.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "tensorrt",
+    "version": 1,
+    "date": "2026-07-07",
+    "filename": "2026-07-07-tutorial-tensorrt.md"
   }
 ]

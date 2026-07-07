@@ -1179,6 +1179,24 @@
     "teaser": "/assets/images/2026-04-01-repo-corentinj-real-time-voice-cloning/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-07-tutorial-tensorrt.md",
+    "url": "/blog/posts/2026-07-07-tutorial-tensorrt.html",
+    "title": "tensorrt-explained-for-high-performance-deep-learning",
+    "date": "2026-07-07T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "tensorrt",
+      "nvidia",
+      "deep-learning",
+      "gpu-optimization",
+      "inference",
+      "onnx",
+      "real-time-inference"
+    ],
+    "excerpt": "Learn about tensorrt, a deep learning inference optimizer from nvidia. Discover its key features, installation process, and practical examples for optimizing models on gpus.",
+    "teaser": "/assets/images/2026-07-07-tutorial-tensorrt/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-06-12-tutorial-feast.md",
     "url": "/blog/posts/2026-06-12-tutorial-feast.html",
     "title": "understand-feast-feature-store",
