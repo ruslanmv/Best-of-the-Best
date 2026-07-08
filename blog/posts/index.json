@@ -1230,6 +1230,21 @@
     "teaser": "/assets/images/2026-05-26-tutorial-notebookllama/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-08-tutorial-datachain.md",
+    "url": "/blog/posts/2026-07-08-tutorial-datachain.html",
+    "title": "datachain: blockchain data management system - overview & practical use cases",
+    "date": "2026-07-08T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "datachain",
+      "blockchain",
+      "supply-chain-management",
+      "financial-services"
+    ],
+    "excerpt": "learn about the key features, installation, and practical examples of datachain in supply chain and financial services. discover how to effectively manage large volumes of data on the blockchain with this robust solution.",
+    "teaser": "/assets/images/2026-07-08-tutorial-datachain/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-06-06-tutorial-xmanager.md",
     "url": "/blog/posts/2026-06-06-tutorial-xmanager.html",
     "title": "xmanager: Simplify Remote Server Management with This Powerful Tool",

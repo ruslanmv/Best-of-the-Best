@@ -1037,9 +1037,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "tensorrt",
+    "id": "datachain",
     "version": 1,
-    "date": "2026-07-07",
-    "filename": "2026-07-07-tutorial-tensorrt.md"
+    "date": "2026-07-08",
+    "filename": "2026-07-08-tutorial-datachain.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "datachain",
+    "version": 1,
+    "date": "2026-07-08",
+    "filename": "2026-07-08-tutorial-datachain.md"
   }
 ]
