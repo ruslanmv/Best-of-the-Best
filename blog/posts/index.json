@@ -215,6 +215,21 @@
     "teaser": "/assets/images/2026-06-04-tutorial-transformerlens/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-09-tutorial-tff-for-federated-learning-research-model-and-update-compression.md",
+    "url": "/blog/posts/2026-07-09-tutorial-tff-for-federated-learning-research-model-and-update-compression.html",
+    "title": "tff-for-federated-learning-research-model-and-update-compression",
+    "date": "2026-07-09T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "tff",
+      "federated-learning",
+      "model-compression",
+      "update-compression"
+    ],
+    "excerpt": "Explore TFF for Federated Learning Research and learn how to compress models and updates using pruning, quantization, sparsification techniques. Optimize communication efficiency in large-scale projects.",
+    "teaser": "/assets/images/2026-07-09-tutorial-tff-for-federated-learning-research-model-and-update-compression/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-07-03-tutorial-multimodal-maestro.md",
     "url": "/blog/posts/2026-07-03-tutorial-multimodal-maestro.html",
     "title": "multimodal maestro - powerful python library for multimodal data processing",

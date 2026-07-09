@@ -1044,9 +1044,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "datachain",
+    "id": "tff-for-federated-learning-research-model-and-update-compression",
     "version": 1,
-    "date": "2026-07-08",
-    "filename": "2026-07-08-tutorial-datachain.md"
+    "date": "2026-07-09",
+    "filename": "2026-07-09-tutorial-tff-for-federated-learning-research-model-and-update-compression.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "tff-for-federated-learning-research-model-and-update-compression",
+    "version": 1,
+    "date": "2026-07-09",
+    "filename": "2026-07-09-tutorial-tff-for-federated-learning-research-model-and-update-compression.md"
   }
 ]
