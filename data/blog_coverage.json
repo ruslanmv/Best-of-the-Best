@@ -1051,9 +1051,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "tff-for-federated-learning-research-model-and-update-compression",
+    "id": "llamaindex",
     "version": 1,
-    "date": "2026-07-09",
-    "filename": "2026-07-09-tutorial-tff-for-federated-learning-research-model-and-update-compression.md"
+    "date": "2026-07-10",
+    "filename": "2026-07-10-tutorial-llamaindex.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "llamaindex",
+    "version": 1,
+    "date": "2026-07-10",
+    "filename": "2026-07-10-tutorial-llamaindex.md"
   }
 ]

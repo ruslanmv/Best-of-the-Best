@@ -215,6 +215,22 @@
     "teaser": "/assets/images/2026-06-04-tutorial-transformerlens/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-10-tutorial-llamaindex.md",
+    "url": "/blog/posts/2026-07-10-tutorial-llamaindex.html",
+    "title": "LlamaIndex: Powerful Language Model Indexing Library",
+    "date": "2026-07-10T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "llama-index",
+      "language-model-indexing",
+      "information-retrieval",
+      "nlp",
+      "data-management"
+    ],
+    "excerpt": "Discover how to set up LlamaIndex, its key features, and practical examples for information retrieval in NLP applications. Get started with easy installation and code snippets.",
+    "teaser": "/assets/images/2026-07-10-tutorial-llamaindex/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-07-09-tutorial-tff-for-federated-learning-research-model-and-update-compression.md",
     "url": "/blog/posts/2026-07-09-tutorial-tff-for-federated-learning-research-model-and-update-compression.html",
     "title": "tff-for-federated-learning-research-model-and-update-compression",
