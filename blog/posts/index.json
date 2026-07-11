@@ -1771,6 +1771,21 @@
     "teaser": "/assets/images/2026-04-26-paper-deeplabcut/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-11-tutorial-deforum-stable-diffusion.md",
+    "url": "/blog/posts/2026-07-11-tutorial-deforum-stable-diffusion.html",
+    "title": "deforum-stable-diffusion-guide-for-image-generation",
+    "date": "2026-07-11T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "deforum",
+      "stable-diffusion",
+      "image-generation",
+      "ai-art"
+    ],
+    "excerpt": "Learn how to use Deforum Stable Diffusion for text-to-image synthesis with detailed steps and practical examples. Perfect for artists, designers, and researchers.",
+    "teaser": "/assets/images/2026-07-11-tutorial-deforum-stable-diffusion/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-02-25-repo-comfyui.md",
     "url": "/blog/posts/2026-02-25-repo-comfyui.html",
     "title": "ComfyUI - A Node-Based Interface for Stable Diffusion Image Generation",

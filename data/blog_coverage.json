@@ -1058,9 +1058,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "llamaindex",
+    "id": "deforum-stable-diffusion",
     "version": 1,
-    "date": "2026-07-10",
-    "filename": "2026-07-10-tutorial-llamaindex.md"
+    "date": "2026-07-11",
+    "filename": "2026-07-11-tutorial-deforum-stable-diffusion.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "deforum-stable-diffusion",
+    "version": 1,
+    "date": "2026-07-11",
+    "filename": "2026-07-11-tutorial-deforum-stable-diffusion.md"
   }
 ]
