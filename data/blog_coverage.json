@@ -1065,9 +1065,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "deforum-stable-diffusion",
+    "id": "nerfstudio",
     "version": 1,
-    "date": "2026-07-11",
-    "filename": "2026-07-11-tutorial-deforum-stable-diffusion.md"
+    "date": "2026-07-12",
+    "filename": "2026-07-12-tutorial-nerfstudio.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "nerfstudio",
+    "version": 1,
+    "date": "2026-07-12",
+    "filename": "2026-07-12-tutorial-nerfstudio.md"
   }
 ]

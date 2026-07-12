@@ -1399,6 +1399,21 @@
     "teaser": "/assets/images/2026-05-14-tutorial-building-your-own-federated-learning-algorithm/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-12-tutorial-nerfstudio.md",
+    "url": "/blog/posts/2026-07-12-tutorial-nerfstudio.html",
+    "title": "nerfstudio: open-source 3d scene understanding platform",
+    "date": "2026-07-12T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "nerfstudio",
+      "3d-scene-understanding",
+      "photorealistic-3d-scenes",
+      "computer-graphics"
+    ],
+    "excerpt": "learn about nerfstudio, an easy-to-use tool for creating photorealistic 3d scenes from images or videos. discover key features and practical use cases in this comprehensive guide.",
+    "teaser": "/assets/images/2026-07-12-tutorial-nerfstudio/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-20-package-pybullet.md",
     "url": "/blog/posts/2026-01-20-package-pybullet.html",
     "title": "PyBullet: Physics Simulation for Robotics and Reinforcement Learning",
