@@ -1072,9 +1072,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "nerfstudio",
+    "id": "pyterrier",
     "version": 1,
-    "date": "2026-07-12",
-    "filename": "2026-07-12-tutorial-nerfstudio.md"
+    "date": "2026-07-13",
+    "filename": "2026-07-13-tutorial-pyterrier.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "pyterrier",
+    "version": 1,
+    "date": "2026-07-13",
+    "filename": "2026-07-13-tutorial-pyterrier.md"
   }
 ]

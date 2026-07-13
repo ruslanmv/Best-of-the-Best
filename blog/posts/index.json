@@ -1307,6 +1307,21 @@
     "teaser": "/assets/images/2026-05-02-paper-hmr/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-13-tutorial-pyterrier.md",
+    "url": "/blog/posts/2026-07-13-tutorial-pyterrier.html",
+    "title": "discover pyterrier - python library for information retrieval",
+    "date": "2026-07-13T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "pyterrier",
+      "information-retrieval",
+      "nlp",
+      "ir-systems"
+    ],
+    "excerpt": "learn about pyterrier, a powerful tool for building and evaluating ir systems. explore its features, usage examples, and best practices in this comprehensive guide.",
+    "teaser": "/assets/images/2026-07-13-tutorial-pyterrier/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-10-package-pyglove.md",
     "url": "/blog/posts/2026-01-10-package-pyglove.html",
     "title": "PyGlove: Symbolic Programming for AutoML and Beyond",
