@@ -1079,9 +1079,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "pyterrier",
+    "id": "highway-env",
     "version": 1,
-    "date": "2026-07-13",
-    "filename": "2026-07-13-tutorial-pyterrier.md"
+    "date": "2026-07-14",
+    "filename": "2026-07-14-tutorial-highway-env.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "highway-env",
+    "version": 1,
+    "date": "2026-07-14",
+    "filename": "2026-07-14-tutorial-highway-env.md"
   }
 ]

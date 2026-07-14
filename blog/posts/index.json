@@ -1833,6 +1833,21 @@
     "teaser": "/assets/images/2026-02-25-repo-comfyui/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-14-tutorial-highway-env.md",
+    "url": "/blog/posts/2026-07-14-tutorial-highway-env.html",
+    "title": "highway-env: Python Package for Traffic Control & Autonomous Vehicle Simulation",
+    "date": "2026-07-14T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "highway-env",
+      "reinforcement-learning",
+      "autonomous-vehicles",
+      "traffic-control"
+    ],
+    "excerpt": "Learn about highway-env, a powerful tool for researchers and practitioners in machine learning and autonomous vehicle technology. Explore its features, installation steps, and practical examples to test reinforcement learning algorithms.",
+    "teaser": "/assets/images/2026-07-14-tutorial-highway-env/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-20-paper-cyclegan.md",
     "url": "/blog/posts/2026-04-20-paper-cyclegan.html",
     "title": "cyclegan-explained-for-image-transformation",
