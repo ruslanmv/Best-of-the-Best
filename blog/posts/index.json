@@ -1338,6 +1338,21 @@
     "teaser": "/assets/images/2026-01-10-package-pyglove/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-15-tutorial-gnn.md",
+    "url": "/blog/posts/2026-07-15-tutorial-gnn.html",
+    "title": "gnn setup and usage guide",
+    "date": "2026-07-15T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "gnn",
+      "graph-neural-networks",
+      "machine-learning",
+      "node-classification"
+    ],
+    "excerpt": "learn how to set up and use the gnn package version 3.2.1 for graph representation learning, including node classification and link prediction tasks.",
+    "teaser": "/assets/images/2026-07-15-tutorial-gnn/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-10-repo-laion-ai-open-assistant.md",
     "url": "/blog/posts/2026-04-10-repo-laion-ai-open-assistant.html",
     "title": "laion-ai/open-assistant - state-of-the-art-conversational-ai",
