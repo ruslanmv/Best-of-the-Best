@@ -1093,9 +1093,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "gnn",
+    "id": "pix2pix",
     "version": 1,
-    "date": "2026-07-15",
-    "filename": "2026-07-15-tutorial-gnn.md"
+    "date": "2026-07-16",
+    "filename": "2026-07-16-tutorial-pix2pix.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "pix2pix",
+    "version": 1,
+    "date": "2026-07-16",
+    "filename": "2026-07-16-tutorial-pix2pix.md"
   }
 ]

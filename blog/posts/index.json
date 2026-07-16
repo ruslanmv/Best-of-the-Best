@@ -959,6 +959,22 @@
     "teaser": "/assets/images/2026-07-05-tutorial-peft/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-16-tutorial-pix2pix.md",
+    "url": "/blog/posts/2026-07-16-tutorial-pix2pix.html",
+    "title": "pix2pix for image-to-image translation | understand & implement",
+    "date": "2026-07-16T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "pix2pix",
+      "image-to-image",
+      "translation",
+      "style-transfer",
+      "facade-generation"
+    ],
+    "excerpt": "Discover how pix2pix can transform images, from style transfer to facade generation. Learn implementation steps and best practices.",
+    "teaser": "/assets/images/2026-07-16-tutorial-pix2pix/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-29-paper-swinir.md",
     "url": "/blog/posts/2026-04-29-paper-swinir.html",
     "title": "SwinIR: Advanced Image Restoration Framework | SEO Optimized",
