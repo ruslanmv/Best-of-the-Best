@@ -1100,9 +1100,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "pix2pix",
+    "id": "image-classification",
     "version": 1,
-    "date": "2026-07-16",
-    "filename": "2026-07-16-tutorial-pix2pix.md"
+    "date": "2026-07-17",
+    "filename": "2026-07-17-tutorial-image-classification.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "image-classification",
+    "version": 1,
+    "date": "2026-07-17",
+    "filename": "2026-07-17-tutorial-image-classification.md"
   }
 ]
