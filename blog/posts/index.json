@@ -667,6 +667,21 @@
     "teaser": "/assets/images/2026-06-24-tutorial-autodistill/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-18-tutorial-kor.md",
+    "url": "/blog/posts/2026-07-18-tutorial-kor.html",
+    "title": "kor framework - build modern web applications with ease",
+    "date": "2026-07-18T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "kor",
+      "web-framework",
+      "modern-applications",
+      "python"
+    ],
+    "excerpt": "learn about kor, a powerful web framework for building highly interactive apps. discover its key features, installation process, and best practices.",
+    "teaser": "/assets/images/2026-07-18-tutorial-kor/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-20-tutorial-kornia.md",
     "url": "/blog/posts/2026-05-20-tutorial-kornia.html",
     "title": "kornia: Open-source Library for Computer Vision Tasks",

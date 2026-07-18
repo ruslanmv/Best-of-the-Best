@@ -1107,9 +1107,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "image-classification",
+    "id": "kor",
     "version": 1,
-    "date": "2026-07-17",
-    "filename": "2026-07-17-tutorial-image-classification.md"
+    "date": "2026-07-18",
+    "filename": "2026-07-18-tutorial-kor.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "kor",
+    "version": 1,
+    "date": "2026-07-18",
+    "filename": "2026-07-18-tutorial-kor.md"
   }
 ]
