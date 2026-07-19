@@ -521,6 +521,21 @@
     "teaser": "/assets/images/2026-05-10-paper-real-esrgan/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-19-tutorial-mistral-inference.md",
+    "url": "/blog/posts/2026-07-19-tutorial-mistral-inference.html",
+    "title": "Mistral Inference: Data Analysis & Predictive Modeling Tool",
+    "date": "2026-07-19T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "mistral-inference",
+      "data-analysis",
+      "predictive-modeling",
+      "machine-learning"
+    ],
+    "excerpt": "Discover how Mistral Inference enhances data-driven decision-making with advanced algorithms and user-friendly API. Learn setup, key features, and practical applications.",
+    "teaser": "/assets/images/2026-07-19-tutorial-mistral-inference/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-12-repo-tencentarc-gfpgan.md",
     "url": "/blog/posts/2026-04-12-repo-tencentarc-gfpgan.html",
     "title": "tencentarc/gfpgan: state-of-the-art-face-restoration-model",

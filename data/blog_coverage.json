@@ -1114,9 +1114,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "kor",
+    "id": "mistral-inference",
     "version": 1,
-    "date": "2026-07-18",
-    "filename": "2026-07-18-tutorial-kor.md"
+    "date": "2026-07-19",
+    "filename": "2026-07-19-tutorial-mistral-inference.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "mistral-inference",
+    "version": 1,
+    "date": "2026-07-19",
+    "filename": "2026-07-19-tutorial-mistral-inference.md"
   }
 ]
