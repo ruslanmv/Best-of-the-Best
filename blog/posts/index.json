@@ -1429,6 +1429,21 @@
     "teaser": "/assets/images/2026-01-20-package-pybullet/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-21-tutorial-xland-minigrid.md",
+    "url": "/blog/posts/2026-07-21-tutorial-xland-minigrid.html",
+    "title": "xland-minigrid-reinforcement-learning-environment",
+    "date": "2026-07-21T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "reinforcement-learning",
+      "mini-grid",
+      "xland-minigrid",
+      "customizable-tasks"
+    ],
+    "excerpt": "Explore xlанд-miniгrid, an advanced reinforcement learning platform with complex tasks and customizable environments. Learn how to install and use it for sophisticated algorithm development.",
+    "teaser": "/assets/images/2026-07-21-tutorial-xland-minigrid/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-11-repo-suno-ai-bark.md",
     "url": "/blog/posts/2026-04-11-repo-suno-ai-bark.html",
     "title": "suno-ai/Bark: Open-source Audio Synthesis Toolkit",

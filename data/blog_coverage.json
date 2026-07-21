@@ -1121,9 +1121,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "mistral-inference",
+    "id": "xland-minigrid",
     "version": 1,
-    "date": "2026-07-19",
-    "filename": "2026-07-19-tutorial-mistral-inference.md"
+    "date": "2026-07-21",
+    "filename": "2026-07-21-tutorial-xland-minigrid.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "xland-minigrid",
+    "version": 1,
+    "date": "2026-07-21",
+    "filename": "2026-07-21-tutorial-xland-minigrid.md"
   }
 ]
