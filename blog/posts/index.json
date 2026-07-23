@@ -2127,6 +2127,22 @@
     "teaser": "/assets/images/2026-04-14-repo-ray-project-ray/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-23-tutorial-pytorch3d.md",
+    "url": "/blog/posts/2026-07-23-tutorial-pytorch3d.html",
+    "title": "learn-pytorch3d-for-3d-computer-vision",
+    "date": "2026-07-23T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "pytorch3d",
+      "computer-vision",
+      "3d-rendering",
+      "meshes",
+      "point-clouds"
+    ],
+    "excerpt": "dive into pytorch3d, an open-source library for 3d computer vision. explore its key features and practical examples to enhance your projects.",
+    "teaser": "/assets/images/2026-07-23-tutorial-pytorch3d/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-07-repo-microsoft-autogen.md",
     "url": "/blog/posts/2026-04-07-repo-microsoft-autogen.html",
     "title": "microsoft/Autogen: Simplify Large Language Model Development",

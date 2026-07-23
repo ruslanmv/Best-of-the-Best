@@ -1128,9 +1128,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "xland-minigrid",
+    "id": "pytorch3d",
     "version": 1,
-    "date": "2026-07-21",
-    "filename": "2026-07-21-tutorial-xland-minigrid.md"
+    "date": "2026-07-23",
+    "filename": "2026-07-23-tutorial-pytorch3d.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "pytorch3d",
+    "version": 1,
+    "date": "2026-07-23",
+    "filename": "2026-07-23-tutorial-pytorch3d.md"
   }
 ]
