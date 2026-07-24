@@ -504,6 +504,21 @@
     "teaser": "/assets/images/2026-07-17-tutorial-image-classification/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-24-tutorial-stable-diffusion-videos.md",
+    "url": "/blog/posts/2026-07-24-tutorial-stable-diffusion-videos.html",
+    "title": "Stable-Diffusion-Videos-Generate-High-Quality-Video-from-Text",
+    "date": "2026-07-24T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "stable-diffusion",
+      "video-generation",
+      "deep-learning",
+      "content-creation"
+    ],
+    "excerpt": "Learn how to use Stable Diffusion Videos for creating high-quality, stylized videos from text inputs. Explore key features and practical implementation steps in this comprehensive guide.",
+    "teaser": "/assets/images/2026-07-24-tutorial-stable-diffusion-videos/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-10-paper-real-esrgan.md",
     "url": "/blog/posts/2026-05-10-paper-real-esrgan.html",
     "title": "real-esrgan super-resolution tool explained",
