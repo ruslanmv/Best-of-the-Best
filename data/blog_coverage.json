@@ -1142,9 +1142,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "stable-diffusion-videos",
+    "id": "transfer-learning-and-fine-tuning",
     "version": 1,
-    "date": "2026-07-24",
-    "filename": "2026-07-24-tutorial-stable-diffusion-videos.md"
+    "date": "2026-07-25",
+    "filename": "2026-07-25-tutorial-transfer-learning-and-fine-tuning.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "transfer-learning-and-fine-tuning",
+    "version": 1,
+    "date": "2026-07-25",
+    "filename": "2026-07-25-tutorial-transfer-learning-and-fine-tuning.md"
   }
 ]
