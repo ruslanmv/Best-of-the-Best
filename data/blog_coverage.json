@@ -1149,9 +1149,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "transfer-learning-and-fine-tuning",
+    "id": "mars5",
     "version": 1,
-    "date": "2026-07-25",
-    "filename": "2026-07-25-tutorial-transfer-learning-and-fine-tuning.md"
+    "date": "2026-07-26",
+    "filename": "2026-07-26-tutorial-mars5.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "mars5",
+    "version": 1,
+    "date": "2026-07-26",
+    "filename": "2026-07-26-tutorial-mars5.md"
   }
 ]

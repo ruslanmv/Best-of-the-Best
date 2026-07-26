@@ -332,6 +332,21 @@
     "teaser": "/assets/images/2026-06-08-tutorial-haiku/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-26-tutorial-mars5.md",
+    "url": "/blog/posts/2026-07-26-tutorial-mars5.html",
+    "title": "mars5 library for complex regression tasks",
+    "date": "2026-07-26T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "mars5",
+      "regression",
+      "python",
+      "data-science"
+    ],
+    "excerpt": "Learn about MARS5, a Python library for multivariate adaptive regression splines, perfect for handling intricate data relationships in economics and biology. Explore its features and practical examples.",
+    "teaser": "/assets/images/2026-07-26-tutorial-mars5/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-06-03-tutorial-comfyui.md",
     "url": "/blog/posts/2026-06-03-tutorial-comfyui.html",
     "title": "comfyui: user-friendly framework for generative ai models",
