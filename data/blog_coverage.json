@@ -1156,9 +1156,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "mars5",
+    "id": "tooncrafter",
     "version": 1,
-    "date": "2026-07-26",
-    "filename": "2026-07-26-tutorial-mars5.md"
+    "date": "2026-07-27",
+    "filename": "2026-07-27-tutorial-tooncrafter.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "tooncrafter",
+    "version": 1,
+    "date": "2026-07-27",
+    "filename": "2026-07-27-tutorial-tooncrafter.md"
   }
 ]

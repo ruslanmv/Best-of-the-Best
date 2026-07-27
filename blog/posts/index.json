@@ -2016,6 +2016,22 @@
     "teaser": "/assets/images/2026-06-12-tutorial-feast/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-27-tutorial-tooncrafter.md",
+    "url": "/blog/posts/2026-07-27-tutorial-tooncrafter.html",
+    "title": "tooncrafter: create 2d animations with python",
+    "date": "2026-07-27T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "tooncrafter",
+      "python",
+      "animation",
+      "2d",
+      "programming"
+    ],
+    "excerpt": "learn how to use the powerful ToonCrafter tool for creating high-quality 2D animations using Python. Follow practical examples and best practices to get started quickly.",
+    "teaser": "/assets/images/2026-07-27-tutorial-tooncrafter/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-06-06-tutorial-xmanager.md",
     "url": "/blog/posts/2026-06-06-tutorial-xmanager.html",
     "title": "xmanager: Simplify Remote Server Management with This Powerful Tool",
