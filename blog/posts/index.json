@@ -1471,6 +1471,22 @@
     "teaser": "/assets/images/2026-01-07-package-bert-score/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-29-tutorial-brax.md",
+    "url": "/blog/posts/2026-07-29-tutorial-brax.html",
+    "title": "brax physics simulation library for developers",
+    "date": "2026-07-29T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "brax",
+      "physics-simulation",
+      "python-development",
+      "game-development",
+      "robotics"
+    ],
+    "excerpt": "learn about brax, a high-performance python-based physics simulation tool. discover its features, installation, and practical examples in this comprehensive guide.",
+    "teaser": "/assets/images/2026-07-29-tutorial-brax/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-05-repo-lllyasviel-fooocus.md",
     "url": "/blog/posts/2026-04-05-repo-lllyasviel-fooocus.html",
     "title": "lllyasviel/Fooocus: Python Library for Image Enhancement",

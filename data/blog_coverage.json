@@ -1163,9 +1163,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "tooncrafter",
+    "id": "brax",
     "version": 1,
-    "date": "2026-07-27",
-    "filename": "2026-07-27-tutorial-tooncrafter.md"
+    "date": "2026-07-29",
+    "filename": "2026-07-29-tutorial-brax.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "brax",
+    "version": 1,
+    "date": "2026-07-29",
+    "filename": "2026-07-29-tutorial-brax.md"
   }
 ]
