@@ -2032,6 +2032,21 @@
     "teaser": "/assets/images/2026-06-12-tutorial-feast/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-30-tutorial-diffsynth.md",
+    "url": "/blog/posts/2026-07-30-tutorial-diffsynth.html",
+    "title": "diffsynth - generate private synthetic data",
+    "date": "2026-07-30T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "diffsynth",
+      "differential-privacy",
+      "synthetic-data",
+      "python-library"
+    ],
+    "excerpt": "learn about diffsynth, a python library for generating synthetic datasets with differential privacy. discover its key features, use cases, and practical examples in this blog post.",
+    "teaser": "/assets/images/2026-07-30-tutorial-diffsynth/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-07-27-tutorial-tooncrafter.md",
     "url": "/blog/posts/2026-07-27-tutorial-tooncrafter.html",
     "title": "tooncrafter: create 2d animations with python",

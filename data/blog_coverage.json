@@ -1170,9 +1170,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "brax",
+    "id": "diffsynth",
     "version": 1,
-    "date": "2026-07-29",
-    "filename": "2026-07-29-tutorial-brax.md"
+    "date": "2026-07-30",
+    "filename": "2026-07-30-tutorial-diffsynth.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "diffsynth",
+    "version": 1,
+    "date": "2026-07-30",
+    "filename": "2026-07-30-tutorial-diffsynth.md"
   }
 ]
