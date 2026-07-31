@@ -1177,9 +1177,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "diffsynth",
+    "id": "transformer",
     "version": 1,
-    "date": "2026-07-30",
-    "filename": "2026-07-30-tutorial-diffsynth.md"
+    "date": "2026-07-31",
+    "filename": "2026-07-31-tutorial-transformer.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "transformer",
+    "version": 1,
+    "date": "2026-07-31",
+    "filename": "2026-07-31-tutorial-transformer.md"
   }
 ]

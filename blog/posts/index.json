@@ -1567,6 +1567,21 @@
     "teaser": "/assets/images/2026-06-15-tutorial-gemma-2/teaser-ai.jpg"
   },
   {
+    "filename": "2026-07-31-tutorial-transformer.md",
+    "url": "/blog/posts/2026-07-31-tutorial-transformer.html",
+    "title": "transformers-nlp-basics",
+    "date": "2026-07-31T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "transformer",
+      "nlp",
+      "text-classification",
+      "named-entity-recognition"
+    ],
+    "excerpt": "Learn the basics of transformers, key features, use cases, and practical examples like text classification & named entity recognition with Hugging Face library.",
+    "teaser": "/assets/images/2026-07-31-tutorial-transformer/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-02-25-repo-comfyui.md",
     "url": "/blog/posts/2026-02-25-repo-comfyui.html",
     "title": "ComfyUI - A Node-Based Interface for Stable Diffusion Image Generation",
