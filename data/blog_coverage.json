@@ -1184,9 +1184,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "transformer",
+    "id": "nemo",
     "version": 1,
-    "date": "2026-07-31",
-    "filename": "2026-07-31-tutorial-transformer.md"
+    "date": "2026-08-01",
+    "filename": "2026-08-01-tutorial-nemo.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "nemo",
+    "version": 1,
+    "date": "2026-08-01",
+    "filename": "2026-08-01-tutorial-nemo.md"
   }
 ]

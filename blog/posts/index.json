@@ -176,6 +176,21 @@
     "teaser": "/assets/images/2026-05-23-tutorial-mujoco/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-01-tutorial-nemo.md",
+    "url": "/blog/posts/2026-08-01-tutorial-nemo.html",
+    "title": "nemo-nvidia-toolkit-for-nlp-explained",
+    "date": "2026-08-01T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "ne mo",
+      "natural-language-processing",
+      "nvidia",
+      "text-classification"
+    ],
+    "excerpt": "Discover NeMo, NVIDIA’s powerful toolkit for Natural Language Processing. Learn how to install and use NeMo for text classification, language modeling, and more.",
+    "teaser": "/assets/images/2026-08-01-tutorial-nemo/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-13-tutorial-yolov8.md",
     "url": "/blog/posts/2026-05-13-tutorial-yolov8.html",
     "title": "YOLOv8 - Real-Time Object Detection System Overview & Usage",
