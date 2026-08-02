@@ -927,6 +927,21 @@
     "teaser": "/assets/images/2026-07-12-tutorial-nerfstudio/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-02-tutorial-sentencepiece.md",
+    "url": "/blog/posts/2026-08-02-tutorial-sentencepiece.html",
+    "title": "sentencepiece-for-text-processing-in-nlp-tasks",
+    "date": "2026-08-02T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "sentencepiece",
+      "nlp",
+      "tokenization",
+      "machine-translation"
+    ],
+    "excerpt": "Learn about SentencePiece, a subword tokenizer for multiple languages. Discover its key features, installation process, practical examples, and best practices for NLP pipelines.",
+    "teaser": "/assets/images/2026-08-02-tutorial-sentencepiece/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-07-14-tutorial-highway-env.md",
     "url": "/blog/posts/2026-07-14-tutorial-highway-env.html",
     "title": "highway-env: Python Package for Traffic Control & Autonomous Vehicle Simulation",

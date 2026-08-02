@@ -1191,9 +1191,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "nemo",
+    "id": "sentencepiece",
     "version": 1,
-    "date": "2026-08-01",
-    "filename": "2026-08-01-tutorial-nemo.md"
+    "date": "2026-08-02",
+    "filename": "2026-08-02-tutorial-sentencepiece.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "sentencepiece",
+    "version": 1,
+    "date": "2026-08-02",
+    "filename": "2026-08-02-tutorial-sentencepiece.md"
   }
 ]
