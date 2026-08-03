@@ -1990,6 +1990,21 @@
     "teaser": "/assets/images/2026-06-26-tutorial-xgboost/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-03-tutorial-llama3-from-scratch.md",
+    "url": "/blog/posts/2026-08-03-tutorial-llama3-from-scratch.html",
+    "title": "llama3 from scratch - build advanced NLP tools in Python",
+    "date": "2026-08-03T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "llama3",
+      "nlp",
+      "python",
+      "natural-language-processing"
+    ],
+    "excerpt": "Learn how to use the cutting-edge llama3 library for natural language processing tasks, including setup and practical examples. Ideal for developers and researchers.",
+    "teaser": "/assets/images/2026-08-03-tutorial-llama3-from-scratch/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-24-package-mmsegmentation.md",
     "url": "/blog/posts/2026-01-24-package-mmsegmentation.html",
     "title": "MMSegmentation: OpenMMLab's Semantic Segmentation Toolbox",

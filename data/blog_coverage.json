@@ -1198,9 +1198,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "sentencepiece",
+    "id": "llama3-from-scratch",
     "version": 1,
-    "date": "2026-08-02",
-    "filename": "2026-08-02-tutorial-sentencepiece.md"
+    "date": "2026-08-03",
+    "filename": "2026-08-03-tutorial-llama3-from-scratch.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "llama3-from-scratch",
+    "version": 1,
+    "date": "2026-08-03",
+    "filename": "2026-08-03-tutorial-llama3-from-scratch.md"
   }
 ]
