@@ -17,6 +17,21 @@
     "teaser": "/assets/images/2026-05-10-paper-real-esrgan/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-04-tutorial-ic-light.md",
+    "url": "/blog/posts/2026-08-04-tutorial-ic-light.html",
+    "title": "IC-Light: Advanced Data Processing Tool for Developers",
+    "date": "2026-08-04T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "ic-light",
+      "data-processing",
+      "software-package",
+      "developers"
+    ],
+    "excerpt": "Learn how to use IC-Light, a high-performance software package for complex data processing tasks. Discover its key features and practical examples in this comprehensive guide.",
+    "teaser": "/assets/images/2026-08-04-tutorial-ic-light/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-20-tutorial-kornia.md",
     "url": "/blog/posts/2026-05-20-tutorial-kornia.html",
     "title": "kornia: Open-source Library for Computer Vision Tasks",
