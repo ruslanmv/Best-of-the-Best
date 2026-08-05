@@ -1212,9 +1212,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "ic-light",
+    "id": "neural-style-transfer",
     "version": 1,
-    "date": "2026-08-04",
-    "filename": "2026-08-04-tutorial-ic-light.md"
+    "date": "2026-08-05",
+    "filename": "2026-08-05-tutorial-neural-style-transfer.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "neural-style-transfer",
+    "version": 1,
+    "date": "2026-08-05",
+    "filename": "2026-08-05-tutorial-neural-style-transfer.md"
   }
 ]

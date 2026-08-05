@@ -1627,6 +1627,23 @@
     "teaser": "/assets/images/2026-07-31-tutorial-transformer/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-05-tutorial-neural-style-transfer.md",
+    "url": "/blog/posts/2026-08-05-tutorial-neural-style-transfer.html",
+    "title": "neural-style-transfer",
+    "date": "2026-08-05T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "neural-style-transfer",
+      "tensorflow",
+      "machine-learning",
+      "art",
+      "digital-media",
+      "image-editing"
+    ],
+    "excerpt": "Explore the technique of neural style transfer, learn how it works, and see practical implementations using TensorFlow. Discover its applications in art, design, and digital media.",
+    "teaser": "/assets/images/2026-08-05-tutorial-neural-style-transfer/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-02-25-repo-comfyui.md",
     "url": "/blog/posts/2026-02-25-repo-comfyui.html",
     "title": "ComfyUI - A Node-Based Interface for Stable Diffusion Image Generation",
