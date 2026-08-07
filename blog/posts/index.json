@@ -440,6 +440,21 @@
     "teaser": "/assets/images/2025-12-23-package-catboost/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-07-tutorial-autoencoders.md",
+    "url": "/blog/posts/2026-08-07-tutorial-autoencoders.html",
+    "title": "understanding-autoencoders-in-depth",
+    "date": "2026-08-07T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "autoencoders",
+      "machine-learning",
+      "image-denoising",
+      "anomaly-detection"
+    ],
+    "excerpt": "dive into autoencoders and learn how to implement them for image denoising, anomaly detection & feature learning. discover practical use cases with python examples.",
+    "teaser": "/assets/images/2026-08-07-tutorial-autoencoders/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-26-paper-deeplabcut.md",
     "url": "/blog/posts/2026-04-26-paper-deeplabcut.html",
     "title": "deeplabcut-explained-for-researchers",
