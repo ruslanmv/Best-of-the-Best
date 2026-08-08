@@ -377,6 +377,22 @@
     "teaser": "/assets/images/2026-07-26-tutorial-mars5/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-08-tutorial-magictime.md",
+    "url": "/blog/posts/2026-08-08-tutorial-magictime.html",
+    "title": "magictime-python-library-for-time-helpers",
+    "date": "2026-08-08T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "python",
+      "magictime",
+      "timezone",
+      "timestamp",
+      "event-scheduling"
+    ],
+    "excerpt": "Learn about the powerful MagicTime library for Python that simplifies timezone handling, timestamp conversion, and event scheduling. Dive into practical examples and discover key features like recurring events and timezone adjustments.",
+    "teaser": "/assets/images/2026-08-08-tutorial-magictime/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-06-03-tutorial-comfyui.md",
     "url": "/blog/posts/2026-06-03-tutorial-comfyui.html",
     "title": "comfyui: user-friendly framework for generative ai models",
