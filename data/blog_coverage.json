@@ -1233,9 +1233,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "magictime",
+    "id": "sage",
     "version": 1,
-    "date": "2026-08-08",
-    "filename": "2026-08-08-tutorial-magictime.md"
+    "date": "2026-08-09",
+    "filename": "2026-08-09-tutorial-sage.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "sage",
+    "version": 1,
+    "date": "2026-08-09",
+    "filename": "2026-08-09-tutorial-sage.md"
   }
 ]

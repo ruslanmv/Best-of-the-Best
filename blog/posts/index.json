@@ -2342,6 +2342,21 @@
     "teaser": "/assets/images/2026-07-05-tutorial-peft/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-09-tutorial-sage.md",
+    "url": "/blog/posts/2026-08-09-tutorial-sage.html",
+    "title": "sage-mathematics-software-system-overview",
+    "date": "2026-08-09T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "sage",
+      "mathematics",
+      "algebra",
+      "number-theory"
+    ],
+    "excerpt": "Learn about SAGE, a comprehensive open-source mathematics software system supporting algebra, geometry, number theory, cryptography, and more. Explore installation, core concepts, practical examples, and best practices.",
+    "teaser": "/assets/images/2026-08-09-tutorial-sage/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-07-21-tutorial-xland-minigrid.md",
     "url": "/blog/posts/2026-07-21-tutorial-xland-minigrid.html",
     "title": "xland-minigrid-reinforcement-learning-environment",
