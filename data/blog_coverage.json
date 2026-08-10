@@ -1240,9 +1240,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "sage",
+    "id": "image-segmentation",
     "version": 1,
-    "date": "2026-08-09",
-    "filename": "2026-08-09-tutorial-sage.md"
+    "date": "2026-08-10",
+    "filename": "2026-08-10-tutorial-image-segmentation.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "image-segmentation",
+    "version": 1,
+    "date": "2026-08-10",
+    "filename": "2026-08-10-tutorial-image-segmentation.md"
   }
 ]

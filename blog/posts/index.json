@@ -1241,6 +1241,22 @@
     "teaser": "/assets/images/2026-05-31-tutorial-torchgeo/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-10-tutorial-image-segmentation.md",
+    "url": "/blog/posts/2026-08-10-tutorial-image-segmentation.html",
+    "title": "image-segmentation-with-pytorch",
+    "date": "2026-08-10T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "image-segmentation",
+      "pytorch",
+      "computer-vision",
+      "medical-imaging",
+      "satellite-imagery"
+    ],
+    "excerpt": "Learn the basics of image segmentation using PyTorch, from installation to practical examples in medical imaging and satellite imagery.",
+    "teaser": "/assets/images/2026-08-10-tutorial-image-segmentation/teaser-ai.jpg"
+  },
+  {
     "filename": "2025-12-23-package-xgboost.md",
     "url": "/blog/posts/2025-12-23-package-xgboost.html",
     "title": "XGBoost: When Gradient Boosting Beats Deep Learning — Practical Guide and Comparison",
