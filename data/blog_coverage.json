@@ -1247,9 +1247,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "image-segmentation",
+    "id": "open-sora-plan",
     "version": 1,
-    "date": "2026-08-10",
-    "filename": "2026-08-10-tutorial-image-segmentation.md"
+    "date": "2026-08-11",
+    "filename": "2026-08-11-tutorial-open-sora-plan.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "open-sora-plan",
+    "version": 1,
+    "date": "2026-08-11",
+    "filename": "2026-08-11-tutorial-open-sora-plan.md"
   }
 ]

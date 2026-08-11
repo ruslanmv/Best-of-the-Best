@@ -1928,6 +1928,22 @@
     "teaser": "/assets/images/2026-04-13-repo-ultralytics-ultralytics/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-11-tutorial-open-sora-plan.md",
+    "url": "/blog/posts/2026-08-11-tutorial-open-sora-plan.html",
+    "title": "open-sora-plan-explained-and-how-to-get-started",
+    "date": "2026-08-11T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "open-sora-plan",
+      "data-processing",
+      "real-time-data",
+      "secure-storage",
+      "python-library"
+    ],
+    "excerpt": "Learn about open-sora-plan, a powerful data processing library for real-time access and secure storage. Discover setup steps, core concepts, and best practices.",
+    "teaser": "/assets/images/2026-08-11-tutorial-open-sora-plan/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-07-paper-bytetrack.md",
     "url": "/blog/posts/2026-05-07-paper-bytetrack.html",
     "title": "byte-track-real-time-object-tracking-system",
