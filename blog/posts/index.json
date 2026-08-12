@@ -1455,6 +1455,21 @@
     "teaser": "/assets/images/2026-04-06-repo-stability-ai-stablediffusion/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-12-tutorial-gorilla.md",
+    "url": "/blog/posts/2026-08-12-tutorial-gorilla.html",
+    "title": "Gorilla Web Development Toolkit for Go - Setup & Examples",
+    "date": "2026-08-12T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "gorilla",
+      "go-web-development",
+      "middleware",
+      "routing"
+    ],
+    "excerpt": "Learn how to set up and use Gorilla, a powerful web development toolkit in Go. Explore its core concepts, practical examples, and best practices.",
+    "teaser": "/assets/images/2026-08-12-tutorial-gorilla/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-27-tutorial-anomalib.md",
     "url": "/blog/posts/2026-05-27-tutorial-anomalib.html",
     "title": "anomalib: open-source package for anomaly detection",
