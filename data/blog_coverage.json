@@ -1261,9 +1261,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "gorilla",
+    "id": "cleanlab",
     "version": 1,
-    "date": "2026-08-12",
-    "filename": "2026-08-12-tutorial-gorilla.md"
+    "date": "2026-08-13",
+    "filename": "2026-08-13-tutorial-cleanlab.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "cleanlab",
+    "version": 1,
+    "date": "2026-08-13",
+    "filename": "2026-08-13-tutorial-cleanlab.md"
   }
 ]
