@@ -1268,9 +1268,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "cleanlab",
+    "id": "aniportrait",
     "version": 1,
-    "date": "2026-08-13",
-    "filename": "2026-08-13-tutorial-cleanlab.md"
+    "date": "2026-08-14",
+    "filename": "2026-08-14-tutorial-aniportrait.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "aniportrait",
+    "version": 1,
+    "date": "2026-08-14",
+    "filename": "2026-08-14-tutorial-aniportrait.md"
   }
 ]
