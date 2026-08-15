@@ -1275,9 +1275,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "aniportrait",
+    "id": "openvino",
     "version": 1,
-    "date": "2026-08-14",
-    "filename": "2026-08-14-tutorial-aniportrait.md"
+    "date": "2026-08-15",
+    "filename": "2026-08-15-tutorial-openvino.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "openvino",
+    "version": 1,
+    "date": "2026-08-15",
+    "filename": "2026-08-15-tutorial-openvino.md"
   }
 ]
