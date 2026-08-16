@@ -1282,9 +1282,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "openvino",
+    "id": "gazelle",
     "version": 1,
-    "date": "2026-08-15",
-    "filename": "2026-08-15-tutorial-openvino.md"
+    "date": "2026-08-16",
+    "filename": "2026-08-16-tutorial-gazelle.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "gazelle",
+    "version": 1,
+    "date": "2026-08-16",
+    "filename": "2026-08-16-tutorial-gazelle.md"
   }
 ]

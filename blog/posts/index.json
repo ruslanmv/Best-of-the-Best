@@ -365,6 +365,23 @@
     "teaser": "/assets/images/2026-06-03-tutorial-comfyui/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-16-tutorial-gazelle.md",
+    "url": "/blog/posts/2026-08-16-tutorial-gazelle.html",
+    "title": "Gazelle Framework: Lightweight & Efficient Web Development",
+    "date": "2026-08-16T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "gazelle",
+      "webdevelopment",
+      "python",
+      "framework",
+      "lightweight",
+      "efficient"
+    ],
+    "excerpt": "Discover Gazelle, a user-friendly framework for rapid web app development. Learn its key features, installation, and practical examples. #gazelle #webdevelopment #python #framework",
+    "teaser": "/assets/images/2026-08-16-tutorial-gazelle/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-07-12-tutorial-nerfstudio.md",
     "url": "/blog/posts/2026-07-12-tutorial-nerfstudio.html",
     "title": "nerfstudio: open-source 3d scene understanding platform",
