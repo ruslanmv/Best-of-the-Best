@@ -1289,9 +1289,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "gazelle",
+    "id": "intel-extension-for-transformers",
     "version": 1,
-    "date": "2026-08-16",
-    "filename": "2026-08-16-tutorial-gazelle.md"
+    "date": "2026-08-17",
+    "filename": "2026-08-17-tutorial-intel-extension-for-transformers.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "intel-extension-for-transformers",
+    "version": 1,
+    "date": "2026-08-17",
+    "filename": "2026-08-17-tutorial-intel-extension-for-transformers.md"
   }
 ]

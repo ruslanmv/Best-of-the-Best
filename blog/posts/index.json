@@ -1652,6 +1652,24 @@
     "teaser": "/assets/images/2026-06-12-tutorial-feast/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-17-tutorial-intel-extension-for-transformers.md",
+    "url": "/blog/posts/2026-08-17-tutorial-intel-extension-for-transformers.html",
+    "title": "intel® extension for transformers: optimize deep learning models on intel® hardware",
+    "date": "2026-08-17T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "intel",
+      "extension-for-transformers",
+      "optimization",
+      "transformers",
+      "machine-learning",
+      "neural-networks",
+      "hugging-face"
+    ],
+    "excerpt": "learn about intel® extension for transformers, a library that optimizes hugging face transformers for better performance on intel® xeon® and optane™ technologies. discover installation, key features, and practical use cases.",
+    "teaser": "/assets/images/2026-08-17-tutorial-intel-extension-for-transformers/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-27-tutorial-anomalib.md",
     "url": "/blog/posts/2026-05-27-tutorial-anomalib.html",
     "title": "anomalib: open-source package for anomaly detection",
