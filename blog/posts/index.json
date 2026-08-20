@@ -2469,6 +2469,21 @@
     "teaser": "/assets/images/2026-05-07-paper-bytetrack/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-20-tutorial-evidently.md",
+    "url": "/blog/posts/2026-08-20-tutorial-evidently.html",
+    "title": "evidently: monitor machine learning models in production",
+    "date": "2026-08-20T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "evidently",
+      "machine-learning",
+      "model-monitoring",
+      "drift-detection"
+    ],
+    "excerpt": "Learn about the key features of Evidently, a Python library for monitoring model performance, detecting drift, and ensuring reliability in production environments.",
+    "teaser": "/assets/images/2026-08-20-tutorial-evidently/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-02-12-repo-ollama.md",
     "url": "/blog/posts/2026-02-12-repo-ollama.html",
     "title": "Ollama - Run Large Language Models Locally",

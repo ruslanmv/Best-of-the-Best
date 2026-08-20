@@ -1303,9 +1303,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "datasets",
+    "id": "evidently",
     "version": 1,
-    "date": "2026-08-18",
-    "filename": "2026-08-18-tutorial-datasets.md"
+    "date": "2026-08-20",
+    "filename": "2026-08-20-tutorial-evidently.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "evidently",
+    "version": 1,
+    "date": "2026-08-20",
+    "filename": "2026-08-20-tutorial-evidently.md"
   }
 ]
