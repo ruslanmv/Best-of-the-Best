@@ -2469,6 +2469,25 @@
     "teaser": "/assets/images/2026-05-07-paper-bytetrack/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-21-tutorial-instructor.md",
+    "url": "/blog/posts/2026-08-21-tutorial-instructor.html",
+    "title": "Instructor: Simplify Data Extraction with Python Library",
+    "date": "2026-08-21T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "instructor",
+      "python",
+      "library",
+      "language-models",
+      "data-extraction",
+      "api-calls",
+      "automated-retries",
+      "multiple-providers"
+    ],
+    "excerpt": "Learn about Instructor, a Python library that simplifies interactions with language models. Discover its key features, core concepts, and practical examples to streamline your projects.",
+    "teaser": "/assets/images/2026-08-21-tutorial-instructor/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-08-20-tutorial-evidently.md",
     "url": "/blog/posts/2026-08-20-tutorial-evidently.html",
     "title": "evidently: monitor machine learning models in production",
