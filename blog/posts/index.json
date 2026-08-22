@@ -678,6 +678,21 @@
     "teaser": "/assets/images/2026-04-26-paper-deeplabcut/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-22-tutorial-metavoice.md",
+    "url": "/blog/posts/2026-08-22-tutorial-metavoice.html",
+    "title": "metavoice - integrating metavoice into python projects",
+    "date": "2026-08-22T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "metavoice",
+      "voice-recognition",
+      "text-to-speech",
+      "python-projects"
+    ],
+    "excerpt": "learn how to use metavoice for voice recognition and synthesis in python projects with this comprehensive guide. discover core concepts, best practices, and practical examples.",
+    "teaser": "/assets/images/2026-08-22-tutorial-metavoice/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-14-repo-ray-project-ray.md",
     "url": "/blog/posts/2026-04-14-repo-ray-project-ray.html",
     "title": "ray-project/Ray: Distributed Computing for Machine Learning",

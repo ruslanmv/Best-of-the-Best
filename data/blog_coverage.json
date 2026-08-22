@@ -1317,9 +1317,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "instructor",
+    "id": "metavoice",
     "version": 1,
-    "date": "2026-08-21",
-    "filename": "2026-08-21-tutorial-instructor.md"
+    "date": "2026-08-22",
+    "filename": "2026-08-22-tutorial-metavoice.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "metavoice",
+    "version": 1,
+    "date": "2026-08-22",
+    "filename": "2026-08-22-tutorial-metavoice.md"
   }
 ]
