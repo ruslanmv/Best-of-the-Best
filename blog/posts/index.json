@@ -442,6 +442,24 @@
     "teaser": "/assets/images/2026-07-21-tutorial-xland-minigrid/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-23-tutorial-omegaconf.md",
+    "url": "/blog/posts/2026-08-23-tutorial-omegaconf.html",
+    "title": "OmegaConf: Powerful Python Library for Hierarchical Configuration Management",
+    "date": "2026-08-23T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "omegaconf",
+      "python",
+      "config-management",
+      "merging-configs",
+      "environment-variables",
+      "api",
+      "hierarchical-configs"
+    ],
+    "excerpt": "Learn how to use OmegaConf for managing complex configurations, merging from multiple sources, and integrating with other tools. Get started with easy examples and best practices.",
+    "teaser": "/assets/images/2026-08-23-tutorial-omegaconf/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-04-repo-jakevdp-pythondatasciencehandbook.md",
     "url": "/blog/posts/2026-04-04-repo-jakevdp-pythondatasciencehandbook.html",
     "title": "jakevdp/Pythondatasciencehandbook - Comprehensive Python Data Science Guide",

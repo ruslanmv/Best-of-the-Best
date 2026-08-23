@@ -1324,9 +1324,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "metavoice",
+    "id": "omegaconf",
     "version": 1,
-    "date": "2026-08-22",
-    "filename": "2026-08-22-tutorial-metavoice.md"
+    "date": "2026-08-23",
+    "filename": "2026-08-23-tutorial-omegaconf.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "omegaconf",
+    "version": 1,
+    "date": "2026-08-23",
+    "filename": "2026-08-23-tutorial-omegaconf.md"
   }
 ]
