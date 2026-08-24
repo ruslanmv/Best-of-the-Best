@@ -2015,6 +2015,25 @@
     "teaser": "/assets/images/2026-06-21-tutorial-simple-audio-recognition/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-24-tutorial-optuna.md",
+    "url": "/blog/posts/2026-08-24-tutorial-optuna.html",
+    "title": "optuna - hyperparameter-optimization-framework",
+    "date": "2026-08-24T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "optuna",
+      "hyperparameter-optimization",
+      "machine-learning",
+      "python",
+      "tuning",
+      "automl",
+      "ml-models",
+      "optimization"
+    ],
+    "excerpt": "learn about optuna, an efficient hyperparameter optimization tool for machine learning. discover key features, installation, and practical examples.",
+    "teaser": "/assets/images/2026-08-24-tutorial-optuna/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-12-repo-tencentarc-gfpgan.md",
     "url": "/blog/posts/2026-04-12-repo-tencentarc-gfpgan.html",
     "title": "tencentarc/gfpgan: state-of-the-art-face-restoration-model",

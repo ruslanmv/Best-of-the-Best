@@ -1331,9 +1331,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "omegaconf",
+    "id": "optuna",
     "version": 1,
-    "date": "2026-08-23",
-    "filename": "2026-08-23-tutorial-omegaconf.md"
+    "date": "2026-08-24",
+    "filename": "2026-08-24-tutorial-optuna.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "optuna",
+    "version": 1,
+    "date": "2026-08-24",
+    "filename": "2026-08-24-tutorial-optuna.md"
   }
 ]
