@@ -1032,6 +1032,23 @@
     "teaser": "/assets/images/2026-01-29-package-tensorflow-graphics/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-25-tutorial-data-augmentation.md",
+    "url": "/blog/posts/2026-08-25-tutorial-data-augmentation.html",
+    "title": "data-augmentation: improve-model-performance-with-creative-techniques",
+    "date": "2026-08-25T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "data-augmentation",
+      "machine-learning",
+      "deep-learning",
+      "image-augmentation",
+      "audio-augmentation",
+      "text-augmentation"
+    ],
+    "excerpt": "Learn about data augmentation, a technique to expand training datasets and enhance model accuracy. Discover how to use 'data-augmentation-lib' for image, audio, and text data processing.",
+    "teaser": "/assets/images/2026-08-25-tutorial-data-augmentation/teaser-ai.jpg"
+  },
+  {
     "filename": "2025-12-23-package-langchain.md",
     "url": "/blog/posts/2025-12-23-package-langchain.html",
     "title": "LangChain: Build LLM-Powered Applications with Modern Composable Chains",
