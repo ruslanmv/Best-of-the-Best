@@ -267,6 +267,23 @@
     "teaser": "/assets/images/2026-05-06-paper-gaussian-splatting/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-26-tutorial-stable-cascade.md",
+    "url": "/blog/posts/2026-08-26-tutorial-stable-cascade.html",
+    "title": "stable-cascade-algorithm-for-network-stability",
+    "date": "2026-08-26T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "network-stability",
+      "cascading-failures",
+      "predictive-modeling",
+      "self-healing",
+      "critical-infrastructure",
+      "cybersecurity"
+    ],
+    "excerpt": "Learn about Stable Cascade, a powerful algorithm designed to enhance network stability and prevent cascading failures. Discover implementation tips and practical examples. #network-stability #cascading-failures #predictive-modeling",
+    "teaser": "/assets/images/2026-08-26-tutorial-stable-cascade/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-08-08-tutorial-magictime.md",
     "url": "/blog/posts/2026-08-08-tutorial-magictime.html",
     "title": "magictime-python-library-for-time-helpers",

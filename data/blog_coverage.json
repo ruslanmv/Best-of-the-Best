@@ -1345,9 +1345,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "data-augmentation",
+    "id": "stable-cascade",
     "version": 1,
-    "date": "2026-08-25",
-    "filename": "2026-08-25-tutorial-data-augmentation.md"
+    "date": "2026-08-26",
+    "filename": "2026-08-26-tutorial-stable-cascade.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "stable-cascade",
+    "version": 1,
+    "date": "2026-08-26",
+    "filename": "2026-08-26-tutorial-stable-cascade.md"
   }
 ]
