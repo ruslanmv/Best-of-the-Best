@@ -1352,9 +1352,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "stable-cascade",
+    "id": "cleanvision",
     "version": 1,
-    "date": "2026-08-26",
-    "filename": "2026-08-26-tutorial-stable-cascade.md"
+    "date": "2026-08-27",
+    "filename": "2026-08-27-tutorial-cleanvision.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "cleanvision",
+    "version": 1,
+    "date": "2026-08-27",
+    "filename": "2026-08-27-tutorial-cleanvision.md"
   }
 ]

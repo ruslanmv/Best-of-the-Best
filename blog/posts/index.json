@@ -1341,6 +1341,24 @@
     "teaser": "/assets/images/2026-06-25-tutorial-crawl4ai/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-27-tutorial-cleanvision.md",
+    "url": "/blog/posts/2026-08-27-tutorial-cleanvision.html",
+    "title": "cleanvision-guide-to-enhancing-online-privacy",
+    "date": "2026-08-27T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "cleanvision",
+      "browser-extension",
+      "online-privacy",
+      "tracking-scripts",
+      "privacy-tools",
+      "browser-tools",
+      "data-protection"
+    ],
+    "excerpt": "Learn about CleanVision, a browser extension that cleans browsing history and blocks tracking scripts. Discover how to install and use it for better privacy in this comprehensive guide.",
+    "teaser": "/assets/images/2026-08-27-tutorial-cleanvision/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-08-13-tutorial-cleanlab.md",
     "url": "/blog/posts/2026-08-13-tutorial-cleanlab.html",
     "title": "cleanlab: Identify & Mitigate Label Errors in Machine Learning Datasets",
