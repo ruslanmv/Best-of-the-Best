@@ -1376,6 +1376,24 @@
     "teaser": "/assets/images/2026-08-13-tutorial-cleanlab/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-28-tutorial-dynamicrafter.md",
+    "url": "/blog/posts/2026-08-28-tutorial-dynamicrafter.html",
+    "title": "DynamiCrafter: Automating Crafting Processes with Advanced Algorithms",
+    "date": "2026-08-28T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "dynami-crafter",
+      "automation",
+      "machine-learning",
+      "resource-allocation",
+      "production-workflows",
+      "supply-chain",
+      "advanced-algorithms"
+    ],
+    "excerpt": "Discover DynamiCrafter, a cutting-edge tool for optimizing resource allocation and streamlining production workflows. Learn how to implement it in manufacturing, supply chain, and creative industries.",
+    "teaser": "/assets/images/2026-08-28-tutorial-dynamicrafter/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-08-11-tutorial-open-sora-plan.md",
     "url": "/blog/posts/2026-08-11-tutorial-open-sora-plan.html",
     "title": "open-sora-plan-explained-and-how-to-get-started",

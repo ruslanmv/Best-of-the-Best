@@ -1359,9 +1359,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "cleanvision",
+    "id": "dynamicrafter",
     "version": 1,
-    "date": "2026-08-27",
-    "filename": "2026-08-27-tutorial-cleanvision.md"
+    "date": "2026-08-28",
+    "filename": "2026-08-28-tutorial-dynamicrafter.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "dynamicrafter",
+    "version": 1,
+    "date": "2026-08-28",
+    "filename": "2026-08-28-tutorial-dynamicrafter.md"
   }
 ]
