@@ -2250,6 +2250,24 @@
     "teaser": "/assets/images/2026-06-01-tutorial-autogen/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-29-tutorial-xla.md",
+    "url": "/blog/posts/2026-08-29-tutorial-xla.html",
+    "title": "xla for tensorflow performance optimization",
+    "date": "2026-08-29T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "xla",
+      "tensorflow",
+      "performance",
+      "linear-algebra",
+      "machine-learning",
+      "optimization",
+      "tpu"
+    ],
+    "excerpt": "Learn about XLA, a high-performance compiler for tensor computations in TensorFlow. Discover how to use XLA for better performance and efficiency in machine learning models.",
+    "teaser": "/assets/images/2026-08-29-tutorial-xla/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-07-03-tutorial-multimodal-maestro.md",
     "url": "/blog/posts/2026-07-03-tutorial-multimodal-maestro.html",
     "title": "multimodal maestro - powerful python library for multimodal data processing",

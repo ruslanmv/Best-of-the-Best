@@ -1366,9 +1366,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "dynamicrafter",
+    "id": "xla",
     "version": 1,
-    "date": "2026-08-28",
-    "filename": "2026-08-28-tutorial-dynamicrafter.md"
+    "date": "2026-08-29",
+    "filename": "2026-08-29-tutorial-xla.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "xla",
+    "version": 1,
+    "date": "2026-08-29",
+    "filename": "2026-08-29-tutorial-xla.md"
   }
 ]
