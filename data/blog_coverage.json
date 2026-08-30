@@ -1373,9 +1373,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "xla",
+    "id": "composer",
     "version": 1,
-    "date": "2026-08-29",
-    "filename": "2026-08-29-tutorial-xla.md"
+    "date": "2026-08-30",
+    "filename": "2026-08-30-tutorial-composer.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "composer",
+    "version": 1,
+    "date": "2026-08-30",
+    "filename": "2026-08-30-tutorial-composer.md"
   }
 ]

@@ -823,6 +823,21 @@
     "teaser": "/assets/images/2026-05-22-tutorial-dm-control/teaser-ai.jpg"
   },
   {
+    "filename": "2026-08-30-tutorial-composer.md",
+    "url": "/blog/posts/2026-08-30-tutorial-composer.html",
+    "title": "composer-php-dependency-manager",
+    "date": "2026-08-30T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "composer",
+      "php",
+      "dependencies",
+      "dependency-manager"
+    ],
+    "excerpt": "Learn about Composer, a dependency manager for PHP projects. Understand how to install, manage dependencies, and use it effectively in your PHP development.",
+    "teaser": "/assets/images/2026-08-30-tutorial-composer/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-21-paper-pix2pix.md",
     "url": "/blog/posts/2026-04-21-paper-pix2pix.html",
     "title": "learn-pix2pix-image-to-image-translation-python",
