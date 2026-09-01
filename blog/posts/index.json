@@ -2343,6 +2343,21 @@
     "teaser": "/assets/images/2026-06-29-tutorial-swarm/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-01-tutorial-cyclegan.md",
+    "url": "/blog/posts/2026-09-01-tutorial-cyclegan.html",
+    "title": "cyclegan-explained-for-ai-developers",
+    "date": "2026-09-01T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "cyclegan",
+      "image-to-image-translation",
+      "machine-learning",
+      "artificial-intelligence"
+    ],
+    "excerpt": "CycleGAN is a powerful tool for unsupervised image-to-image translation, simplifying tasks like medical image enhancement and artistic style transfer. Learn how to use it effectively with this guide.",
+    "teaser": "/assets/images/2026-09-01-tutorial-cyclegan/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-06-26-tutorial-xgboost.md",
     "url": "/blog/posts/2026-06-26-tutorial-xgboost.html",
     "title": "xgboost - optimized gradient boosting library for machine learning",
