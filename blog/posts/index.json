@@ -1550,6 +1550,22 @@
     "teaser": "/assets/images/2026-02-10-package-dopamine-rl/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-02-tutorial-integrated-gradients.md",
+    "url": "/blog/posts/2026-09-02-tutorial-integrated-gradients.html",
+    "title": "integrated-gradients: method for attributing model predictions to input features",
+    "date": "2026-09-02T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "integrated-gradients",
+      "machine-learning",
+      "deep-neural-networks",
+      "attributions",
+      "prediction-explanation"
+    ],
+    "excerpt": "Learn how to use integrated gradients for explaining predictions in machine learning models, especially in deep neural networks. Get started with the integratedgradients library and understand key concepts and practical examples.",
+    "teaser": "/assets/images/2026-09-02-tutorial-integrated-gradients/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-03-31-repo-killianlucas-open-interpreter.md",
     "url": "/blog/posts/2026-03-31-repo-killianlucas-open-interpreter.html",
     "title": "killianlucas/open-interpreter: modern python library for dynamic code execution",

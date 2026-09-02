@@ -1387,9 +1387,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "cyclegan",
+    "id": "integrated-gradients",
     "version": 1,
-    "date": "2026-09-01",
-    "filename": "2026-09-01-tutorial-cyclegan.md"
+    "date": "2026-09-02",
+    "filename": "2026-09-02-tutorial-integrated-gradients.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "integrated-gradients",
+    "version": 1,
+    "date": "2026-09-02",
+    "filename": "2026-09-02-tutorial-integrated-gradients.md"
   }
 ]
