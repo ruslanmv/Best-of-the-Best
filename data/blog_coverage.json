@@ -1394,9 +1394,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "integrated-gradients",
+    "id": "magnet",
     "version": 1,
-    "date": "2026-09-02",
-    "filename": "2026-09-02-tutorial-integrated-gradients.md"
+    "date": "2026-09-03",
+    "filename": "2026-09-03-tutorial-magnet.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "magnet",
+    "version": 1,
+    "date": "2026-09-03",
+    "filename": "2026-09-03-tutorial-magnet.md"
   }
 ]
