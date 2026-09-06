@@ -201,6 +201,24 @@
     "teaser": "/assets/images/2026-07-13-tutorial-pyterrier/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-06-tutorial-autofaiss.md",
+    "url": "/blog/posts/2026-09-06-tutorial-autofaiss.html",
+    "title": "auto-faiss: Simplify Vector Search in Python",
+    "date": "2026-09-06T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "auto-faiss",
+      "vector-search",
+      "faiss",
+      "machine-learning",
+      "indexing",
+      "recommendation-systems",
+      "information-retrieval"
+    ],
+    "excerpt": "Discover how auto-faiss streamlines vector search and similarity queries, supporting multiple Faiss backends and automating model and index generation for developers and researchers.",
+    "teaser": "/assets/images/2026-09-06-tutorial-autofaiss/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-02-15-repo-langchain.md",
     "url": "/blog/posts/2026-02-15-repo-langchain.html",
     "title": "LangChain - A Framework for Building LLM-Powered Applications",

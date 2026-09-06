@@ -1401,9 +1401,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "magnet",
+    "id": "autofaiss",
     "version": 1,
-    "date": "2026-09-03",
-    "filename": "2026-09-03-tutorial-magnet.md"
+    "date": "2026-09-06",
+    "filename": "2026-09-06-tutorial-autofaiss.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "autofaiss",
+    "version": 1,
+    "date": "2026-09-06",
+    "filename": "2026-09-06-tutorial-autofaiss.md"
   }
 ]
