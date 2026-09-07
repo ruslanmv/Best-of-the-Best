@@ -953,6 +953,23 @@
     "teaser": "/assets/images/2026-01-11-package-mmdet/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-07-tutorial-retrieval-based-voice-conversion-webui.md",
+    "url": "/blog/posts/2026-09-07-tutorial-retrieval-based-voice-conversion-webui.html",
+    "title": "retrieval-based-voice-conversion-webui-for-realistic-speech",
+    "date": "2026-09-07T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "voice-conversion",
+      "webui",
+      "speech-synthesis",
+      "virtual-assistants",
+      "personalized-content",
+      "audio-processing"
+    ],
+    "excerpt": "Learn how to use the Retrieval based Voice Conversion WebUI for converting voice samples into realistic speech. Explore key features and practical examples for virtual assistants and personalized content delivery.",
+    "teaser": "/assets/images/2026-09-07-tutorial-retrieval-based-voice-conversion-webui/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-17-paper-image-segmentation.md",
     "url": "/blog/posts/2026-04-17-paper-image-segmentation.html",
     "title": "image-segmentation-with-pytorch-unet-opencv",

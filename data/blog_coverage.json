@@ -1408,9 +1408,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "autofaiss",
+    "id": "retrieval-based-voice-conversion-webui",
     "version": 1,
-    "date": "2026-09-06",
-    "filename": "2026-09-06-tutorial-autofaiss.md"
+    "date": "2026-09-07",
+    "filename": "2026-09-07-tutorial-retrieval-based-voice-conversion-webui.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "retrieval-based-voice-conversion-webui",
+    "version": 1,
+    "date": "2026-09-07",
+    "filename": "2026-09-07-tutorial-retrieval-based-voice-conversion-webui.md"
   }
 ]
