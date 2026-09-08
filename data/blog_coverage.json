@@ -1415,9 +1415,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "retrieval-based-voice-conversion-webui",
+    "id": "big-vision",
     "version": 1,
-    "date": "2026-09-07",
-    "filename": "2026-09-07-tutorial-retrieval-based-voice-conversion-webui.md"
+    "date": "2026-09-08",
+    "filename": "2026-09-08-tutorial-big-vision.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "big-vision",
+    "version": 1,
+    "date": "2026-09-08",
+    "filename": "2026-09-08-tutorial-big-vision.md"
   }
 ]

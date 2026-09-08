@@ -1851,6 +1851,21 @@
     "teaser": "/assets/images/2026-06-12-tutorial-feast/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-08-tutorial-big-vision.md",
+    "url": "/blog/posts/2026-09-08-tutorial-big-vision.html",
+    "title": "big-vision-python-library-for-computer-vision",
+    "date": "2026-09-08T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "big-vision",
+      "computer-vision",
+      "hugging-face",
+      "python-library"
+    ],
+    "excerpt": "Explore Big Vision, a powerful Python library for computer vision tasks. This article covers installation, key features, and practical examples to accelerate your computer vision projects.",
+    "teaser": "/assets/images/2026-09-08-tutorial-big-vision/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-07-23-tutorial-pytorch3d.md",
     "url": "/blog/posts/2026-07-23-tutorial-pytorch3d.html",
     "title": "learn-pytorch3d-for-3d-computer-vision",
