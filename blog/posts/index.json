@@ -2310,6 +2310,24 @@
     "teaser": "/assets/images/2026-01-09-package-autofaiss/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-09-tutorial-open-interpreter.md",
+    "url": "/blog/posts/2026-09-09-tutorial-open-interpreter.html",
+    "title": "Open Interpreter: Real-Time Python Coding in the Browser",
+    "date": "2026-09-09T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "open-interpreter",
+      "python",
+      "coding",
+      "web",
+      "interpreter",
+      "interactive",
+      "education"
+    ],
+    "excerpt": "Discover Open Interpreter, a lightweight Python interpreter for web-based coding. Learn key features, examples, and best practices for interactive coding and educational purposes.",
+    "teaser": "/assets/images/2026-09-09-tutorial-open-interpreter/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-07-26-tutorial-mars5.md",
     "url": "/blog/posts/2026-07-26-tutorial-mars5.html",
     "title": "mars5 library for complex regression tasks",
