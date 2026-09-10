@@ -970,6 +970,21 @@
     "teaser": "/assets/images/2026-09-07-tutorial-retrieval-based-voice-conversion-webui/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-10-tutorial-seamless-communication.md",
+    "url": "/blog/posts/2026-09-10-tutorial-seamless-communication.html",
+    "title": "seamless-communication: integrated-and-efficient-data-transfer",
+    "date": "2026-09-10T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "seamless-communication",
+      "data-transfer",
+      "iot",
+      "python"
+    ],
+    "excerpt": "Understand and implement seamless communication technology for smooth and reliable data transfer between devices. Explore practical examples and best practices.",
+    "teaser": "/assets/images/2026-09-10-tutorial-seamless-communication/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-17-paper-image-segmentation.md",
     "url": "/blog/posts/2026-04-17-paper-image-segmentation.html",
     "title": "image-segmentation-with-pytorch-unet-opencv",

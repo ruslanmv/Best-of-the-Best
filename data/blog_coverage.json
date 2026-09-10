@@ -1429,9 +1429,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "open-interpreter",
+    "id": "seamless-communication",
     "version": 1,
-    "date": "2026-09-09",
-    "filename": "2026-09-09-tutorial-open-interpreter.md"
+    "date": "2026-09-10",
+    "filename": "2026-09-10-tutorial-seamless-communication.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "seamless-communication",
+    "version": 1,
+    "date": "2026-09-10",
+    "filename": "2026-09-10-tutorial-seamless-communication.md"
   }
 ]
