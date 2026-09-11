@@ -1436,9 +1436,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "seamless-communication",
+    "id": "colab2pdf",
     "version": 1,
-    "date": "2026-09-10",
-    "filename": "2026-09-10-tutorial-seamless-communication.md"
+    "date": "2026-09-11",
+    "filename": "2026-09-11-tutorial-colab2pdf.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "colab2pdf",
+    "version": 1,
+    "date": "2026-09-11",
+    "filename": "2026-09-11-tutorial-colab2pdf.md"
   }
 ]

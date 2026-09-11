@@ -2276,6 +2276,24 @@
     "teaser": "/assets/images/2026-05-27-tutorial-anomalib/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-11-tutorial-colab2pdf.md",
+    "url": "/blog/posts/2026-09-11-tutorial-colab2pdf.html",
+    "title": "colab2pdf: Convert Jupyter Notebooks to PDFs Easily",
+    "date": "2026-09-11T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "colab2pdf",
+      "jupyter-notebooks",
+      "pdf-conversion",
+      "google-colab",
+      "python-package",
+      "margin-customization",
+      "header-adding"
+    ],
+    "excerpt": "Learn how to use colab2pdf to automate the conversion of Jupyter notebooks into professional PDFs in Google Colab. Customize margins, headers, and more with this powerful Python package.",
+    "teaser": "/assets/images/2026-09-11-tutorial-colab2pdf/teaser-ai.jpg"
+  },
+  {
     "filename": "2025-12-23-package-langchain.md",
     "url": "/blog/posts/2025-12-23-package-langchain.html",
     "title": "LangChain: Build LLM-Powered Applications with Modern Composable Chains",
