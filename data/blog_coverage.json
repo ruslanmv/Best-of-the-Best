@@ -1443,9 +1443,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "colab2pdf",
+    "id": "sentence-transformers",
     "version": 1,
-    "date": "2026-09-11",
-    "filename": "2026-09-11-tutorial-colab2pdf.md"
+    "date": "2026-09-12",
+    "filename": "2026-09-12-tutorial-sentence-transformers.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "sentence-transformers",
+    "version": 1,
+    "date": "2026-09-12",
+    "filename": "2026-09-12-tutorial-sentence-transformers.md"
   }
 ]

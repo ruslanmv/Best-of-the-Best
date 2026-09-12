@@ -634,6 +634,25 @@
     "teaser": "/assets/images/2026-09-02-tutorial-integrated-gradients/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-12-tutorial-sentence-transformers.md",
+    "url": "/blog/posts/2026-09-12-tutorial-sentence-transformers.html",
+    "title": "sentence-transformers: Generate Text Embeddings for NLP",
+    "date": "2026-09-12T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "sentence-transformers",
+      "text-embedding",
+      "nlp-library",
+      "semantic-search",
+      "text-classification",
+      "python-library",
+      "hugging-face",
+      "embedding-generation"
+    ],
+    "excerpt": "Learn about sentence-transformers, a library for generating text embeddings. Understand its key features, installation, and practical examples for text classification and semantic search.",
+    "teaser": "/assets/images/2026-09-12-tutorial-sentence-transformers/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-06-02-tutorial-langfun.md",
     "url": "/blog/posts/2026-06-02-tutorial-langfun.html",
     "title": "Langfun: Advanced Language Learning and Translation Library",
