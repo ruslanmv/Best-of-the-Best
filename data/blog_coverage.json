@@ -1450,9 +1450,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "sentence-transformers",
+    "id": "cleanrl",
     "version": 1,
-    "date": "2026-09-12",
-    "filename": "2026-09-12-tutorial-sentence-transformers.md"
+    "date": "2026-09-14",
+    "filename": "2026-09-14-tutorial-cleanrl.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "cleanrl",
+    "version": 1,
+    "date": "2026-09-14",
+    "filename": "2026-09-14-tutorial-cleanrl.md"
   }
 ]

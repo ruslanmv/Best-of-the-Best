@@ -2042,6 +2042,24 @@
     "teaser": "/assets/images/2026-01-27-package-tpot/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-14-tutorial-cleanrl.md",
+    "url": "/blog/posts/2026-09-14-tutorial-cleanrl.html",
+    "title": "cleanrl: Simplifying Reinforcement Learning Research with CleanRL",
+    "date": "2026-09-14T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "cleanrl",
+      "reinforcement-learning",
+      "dqn",
+      "a2c",
+      "ppo",
+      "python",
+      "rl-algorithms"
+    ],
+    "excerpt": "Discover CleanRL, a Python package for clean, documented, and well-tested RL environments. Explore DQN, A2C, PPO, and more with practical examples and best practices.",
+    "teaser": "/assets/images/2026-09-14-tutorial-cleanrl/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-13-repo-ultralytics-ultralytics.md",
     "url": "/blog/posts/2026-04-13-repo-ultralytics-ultralytics.html",
     "title": "ultralytics/Ultralytics - Modern Computer Vision Library in Python",
