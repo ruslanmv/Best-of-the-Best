@@ -1079,6 +1079,23 @@
     "teaser": "/assets/images/2026-05-22-tutorial-dm-control/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-15-tutorial-vocos.md",
+    "url": "/blog/posts/2026-09-15-tutorial-vocos.html",
+    "title": "Vocos - Python Library for Audio Reconstruction",
+    "date": "2026-09-15T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "vocos",
+      "python",
+      "audio-reconstruction",
+      "speech-synthesis",
+      "noise-reduction",
+      "encodec"
+    ],
+    "excerpt": "Learn how to use Vocos, a Python library for generating high-quality audio from mel-spectrograms or EnCodec tokens. Explore speech synthesis, noise reduction, and more with this powerful tool.",
+    "teaser": "/assets/images/2026-09-15-tutorial-vocos/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-30-tutorial-lightautoml.md",
     "url": "/blog/posts/2026-05-30-tutorial-lightautoml.html",
     "title": "lightautoml: automate machine learning workflows",
