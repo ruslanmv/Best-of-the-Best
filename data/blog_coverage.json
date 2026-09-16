@@ -1464,9 +1464,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "vocos",
+    "id": "x-llm",
     "version": 1,
-    "date": "2026-09-15",
-    "filename": "2026-09-15-tutorial-vocos.md"
+    "date": "2026-09-16",
+    "filename": "2026-09-16-tutorial-x-llm.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "x-llm",
+    "version": 1,
+    "date": "2026-09-16",
+    "filename": "2026-09-16-tutorial-x-llm.md"
   }
 ]

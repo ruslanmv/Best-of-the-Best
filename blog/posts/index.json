@@ -2124,6 +2124,22 @@
     "teaser": "/assets/images/2026-04-01-repo-corentinj-real-time-voice-cloning/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-16-tutorial-x-llm.md",
+    "url": "/blog/posts/2026-09-16-tutorial-x-llm.html",
+    "title": "x—llm: text generation and analysis library",
+    "date": "2026-09-16T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "x—llm",
+      "text generation",
+      "text analysis",
+      "python library",
+      "natural language processing"
+    ],
+    "excerpt": "learn how to use x—llm, a powerful python library for text generation and analysis. discover its key features, installation, and practical examples. perfect for developers and researchers.",
+    "teaser": "/assets/images/2026-09-16-tutorial-x-llm/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-08-21-tutorial-instructor.md",
     "url": "/blog/posts/2026-08-21-tutorial-instructor.html",
     "title": "Instructor: Simplify Data Extraction with Python Library",
