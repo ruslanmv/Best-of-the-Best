@@ -1471,9 +1471,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "x-llm",
+    "id": "distil-whisper",
     "version": 1,
-    "date": "2026-09-16",
-    "filename": "2026-09-16-tutorial-x-llm.md"
+    "date": "2026-09-17",
+    "filename": "2026-09-17-tutorial-distil-whisper.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "distil-whisper",
+    "version": 1,
+    "date": "2026-09-17",
+    "filename": "2026-09-17-tutorial-distil-whisper.md"
   }
 ]

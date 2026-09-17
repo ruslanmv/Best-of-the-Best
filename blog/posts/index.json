@@ -2895,6 +2895,23 @@
     "teaser": "/assets/images/2026-03-31-repo-killianlucas-open-interpreter/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-17-tutorial-distil-whisper.md",
+    "url": "/blog/posts/2026-09-17-tutorial-distil-whisper.html",
+    "title": "distil-whisper: lightweight voice activity detection & speech-to-text",
+    "date": "2026-09-17T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "distil-whisper",
+      "voice-activity-detection",
+      "speech-to-text",
+      "whisper-library",
+      "python",
+      "research"
+    ],
+    "excerpt": "distil-whisper is a compact, high-performance tool for developers and researchers. Learn its core concepts, installation, and practical applications in this comprehensive guide.",
+    "teaser": "/assets/images/2026-09-17-tutorial-distil-whisper/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-02-10-package-dopamine-rl.md",
     "url": "/blog/posts/2026-02-10-package-dopamine-rl.html",
     "title": "Dopamine - Google's Research Framework for Reinforcement Learning",
