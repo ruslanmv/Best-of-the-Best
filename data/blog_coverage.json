@@ -1478,9 +1478,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "distil-whisper",
+    "id": "animatediff",
     "version": 1,
-    "date": "2026-09-17",
-    "filename": "2026-09-17-tutorial-distil-whisper.md"
+    "date": "2026-09-18",
+    "filename": "2026-09-18-tutorial-animatediff.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "animatediff",
+    "version": 1,
+    "date": "2026-09-18",
+    "filename": "2026-09-18-tutorial-animatediff.md"
   }
 ]

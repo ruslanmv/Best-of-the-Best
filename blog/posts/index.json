@@ -1364,6 +1364,23 @@
     "teaser": "/assets/images/2026-07-18-tutorial-kor/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-18-tutorial-animatediff.md",
+    "url": "/blog/posts/2026-09-18-tutorial-animatediff.html",
+    "title": "animate-diff-library-for-deep-learning-animations",
+    "date": "2026-09-18T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "animate-diff",
+      "deep-learning",
+      "animations",
+      "python-library",
+      "video-effects",
+      "interactive-applications"
+    ],
+    "excerpt": "Learn about AnimateDiff, a Python library that simplifies the creation of high-quality animations using deep learning. Discover its key features, installation, and practical examples.",
+    "teaser": "/assets/images/2026-09-18-tutorial-animatediff/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-06-repo-stability-ai-stablediffusion.md",
     "url": "/blog/posts/2026-04-06-repo-stability-ai-stablediffusion.html",
     "title": "stability-ai/stablediffusion: text-generation framework overview",
