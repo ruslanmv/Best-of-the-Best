@@ -2463,6 +2463,25 @@
     "teaser": "/assets/images/2026-07-26-tutorial-mars5/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-19-tutorial-intel-neural-compressor.md",
+    "url": "/blog/posts/2026-09-19-tutorial-intel-neural-compressor.html",
+    "title": "inteli®-neural-compressor-for-model-optimization",
+    "date": "2026-09-19T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "intel",
+      "neural-compressor",
+      "quantization",
+      "model-compression",
+      "pruning",
+      "deep-learning",
+      "optimization",
+      "edge-devices"
+    ],
+    "excerpt": "learn how to use intel® neural compressor for optimizing deep learning models with quantization and pruning techniques. discover best practices and practical examples for deploying efficient models on edge devices.",
+    "teaser": "/assets/images/2026-09-19-tutorial-intel-neural-compressor/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-08-22-tutorial-metavoice.md",
     "url": "/blog/posts/2026-08-22-tutorial-metavoice.html",
     "title": "metavoice - integrating metavoice into python projects",
