@@ -1492,9 +1492,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "intel-neural-compressor",
+    "id": "bark",
     "version": 1,
-    "date": "2026-09-19",
-    "filename": "2026-09-19-tutorial-intel-neural-compressor.md"
+    "date": "2026-09-20",
+    "filename": "2026-09-20-tutorial-bark.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "bark",
+    "version": 1,
+    "date": "2026-09-20",
+    "filename": "2026-09-20-tutorial-bark.md"
   }
 ]

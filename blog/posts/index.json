@@ -1950,6 +1950,22 @@
     "teaser": "/assets/images/2026-07-23-tutorial-pytorch3d/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-20-tutorial-bark.md",
+    "url": "/blog/posts/2026-09-20-tutorial-bark.html",
+    "title": "Bark: Advanced Natural Language Processing Library",
+    "date": "2026-09-20T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "bark",
+      "natural-language-processing",
+      "text-generation",
+      "api",
+      "chatbots"
+    ],
+    "excerpt": "Learn how to use Bark, an NLP library for generating human-like text. Discover its features, get started with examples, and follow best practices.",
+    "teaser": "/assets/images/2026-09-20-tutorial-bark/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-25-paper-convnext.md",
     "url": "/blog/posts/2026-04-25-paper-convnext.html",
     "title": "convnext-explained-modern-convolutional-neural-network",
