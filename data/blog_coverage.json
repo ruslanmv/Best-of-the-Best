@@ -1499,9 +1499,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "bark",
+    "id": "mistral-transformer",
     "version": 1,
-    "date": "2026-09-20",
-    "filename": "2026-09-20-tutorial-bark.md"
+    "date": "2026-09-21",
+    "filename": "2026-09-21-tutorial-mistral-transformer.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "mistral-transformer",
+    "version": 1,
+    "date": "2026-09-21",
+    "filename": "2026-09-21-tutorial-mistral-transformer.md"
   }
 ]
