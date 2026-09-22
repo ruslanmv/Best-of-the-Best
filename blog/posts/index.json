@@ -1492,6 +1492,25 @@
     "teaser": "/assets/images/2026-08-03-tutorial-llama3-from-scratch/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-22-tutorial-fooocus.md",
+    "url": "/blog/posts/2026-09-22-tutorial-fooocus.html",
+    "title": "fooocus: python library for text-to-image generation",
+    "date": "2026-09-22T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "fooocus",
+      "python",
+      "text-to-image",
+      "machine-learning",
+      "image-generation",
+      "visual-content",
+      "developers",
+      "researchers"
+    ],
+    "excerpt": "learn how to use fooocus, a python library for generating high-quality images from text descriptions. explore its features and practical use cases for creating visual content.",
+    "teaser": "/assets/images/2026-09-22-tutorial-fooocus/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-16-repo-microsoft-visual-chatgpt.md",
     "url": "/blog/posts/2026-04-16-repo-microsoft-visual-chatgpt.html",
     "title": "microsoft/visual-chatgpt: integrating text & images for AI responses",

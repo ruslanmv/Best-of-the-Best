@@ -1506,9 +1506,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "mistral-transformer",
+    "id": "fooocus",
     "version": 1,
-    "date": "2026-09-21",
-    "filename": "2026-09-21-tutorial-mistral-transformer.md"
+    "date": "2026-09-22",
+    "filename": "2026-09-22-tutorial-fooocus.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "fooocus",
+    "version": 1,
+    "date": "2026-09-22",
+    "filename": "2026-09-22-tutorial-fooocus.md"
   }
 ]
