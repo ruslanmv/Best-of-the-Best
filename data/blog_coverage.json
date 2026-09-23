@@ -1513,9 +1513,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "fooocus",
+    "id": "actor-critic",
     "version": 1,
-    "date": "2026-09-22",
-    "filename": "2026-09-22-tutorial-fooocus.md"
+    "date": "2026-09-23",
+    "filename": "2026-09-23-tutorial-actor-critic.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "actor-critic",
+    "version": 1,
+    "date": "2026-09-23",
+    "filename": "2026-09-23-tutorial-actor-critic.md"
   }
 ]

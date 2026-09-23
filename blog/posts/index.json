@@ -50,6 +50,22 @@
     "teaser": "/assets/images/2026-05-26-tutorial-notebookllama/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-23-tutorial-actor-critic.md",
+    "url": "/blog/posts/2026-09-23-tutorial-actor-critic.html",
+    "title": "actor-critic: combining policy-based and value-based approaches",
+    "date": "2026-09-23T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "actor-critic",
+      "reinforcement-learning",
+      "policy-based",
+      "value-based",
+      "machine-learning"
+    ],
+    "excerpt": "Learn about actor-critic in reinforcement learning, its key features, installation, and practical examples. Dive into the best practices for optimizing model performance.",
+    "teaser": "/assets/images/2026-09-23-tutorial-actor-critic/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-06-07-tutorial-flax.md",
     "url": "/blog/posts/2026-06-07-tutorial-flax.html",
     "title": "flax - efficient deep learning in python",
