@@ -107,6 +107,21 @@
     "teaser": "/assets/images/2026-05-22-tutorial-dm-control/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-25-tutorial-seqio.md",
+    "url": "/blog/posts/2026-09-25-tutorial-seqio.html",
+    "title": "seqio-biopython-for-handling-biological-sequence-data",
+    "date": "2026-09-25T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "seqio",
+      "biopython",
+      "sequence-data",
+      "bioinformatics"
+    ],
+    "excerpt": "Learn about SeqIO, a module in Biopython for handling biological sequence data, including its key features, usage examples, and best practices for working with sequence data.",
+    "teaser": "/assets/images/2026-09-25-tutorial-seqio/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-09-07-tutorial-retrieval-based-voice-conversion-webui.md",
     "url": "/blog/posts/2026-09-07-tutorial-retrieval-based-voice-conversion-webui.html",
     "title": "retrieval-based-voice-conversion-webui-for-realistic-speech",
