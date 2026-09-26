@@ -1555,6 +1555,25 @@
     "teaser": "/assets/images/2026-09-12-tutorial-sentence-transformers/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-26-tutorial-mmaction2.md",
+    "url": "/blog/posts/2026-09-26-tutorial-mmaction2.html",
+    "title": "mmaction2: Open-Source Library for Action Recognition in Videos",
+    "date": "2026-09-26T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "mmaction2",
+      "action-recognition",
+      "video-understanding",
+      "machine-learning",
+      "deep-learning",
+      "computer-vision",
+      "mmdetection",
+      "mms Segmentation"
+    ],
+    "excerpt": "Learn how to install and use MMAction2, a powerful tool for action recognition in videos, with practical examples and best practices. Dive into its features and applications today!",
+    "teaser": "/assets/images/2026-09-26-tutorial-mmaction2/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-08-11-tutorial-open-sora-plan.md",
     "url": "/blog/posts/2026-08-11-tutorial-open-sora-plan.html",
     "title": "open-sora-plan-explained-and-how-to-get-started",
