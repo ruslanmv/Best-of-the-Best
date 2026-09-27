@@ -223,6 +223,24 @@
     "teaser": "/assets/images/2026-06-22-tutorial-xformers/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-27-tutorial-ray.md",
+    "url": "/blog/posts/2026-09-27-tutorial-ray.html",
+    "title": "Ray Introduction: AI Framework for Scalable Python Applications",
+    "date": "2026-09-27T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "ray",
+      "ai",
+      "python",
+      "distributed",
+      "ml",
+      "tune",
+      "serving"
+    ],
+    "excerpt": "Learn about Ray, a powerful framework for building scalable AI applications. Covering installation, core concepts, and practical examples. Get started today!",
+    "teaser": "/assets/images/2026-09-27-tutorial-ray/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-08-24-tutorial-optuna.md",
     "url": "/blog/posts/2026-08-24-tutorial-optuna.html",
     "title": "optuna - hyperparameter-optimization-framework",

@@ -1541,9 +1541,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "mmaction2",
+    "id": "ray",
     "version": 1,
-    "date": "2026-09-26",
-    "filename": "2026-09-26-tutorial-mmaction2.md"
+    "date": "2026-09-27",
+    "filename": "2026-09-27-tutorial-ray.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "ray",
+    "version": 1,
+    "date": "2026-09-27",
+    "filename": "2026-09-27-tutorial-ray.md"
   }
 ]
