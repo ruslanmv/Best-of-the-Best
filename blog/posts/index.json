@@ -2395,6 +2395,24 @@
     "teaser": "/assets/images/2026-02-25-repo-comfyui/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-28-tutorial-home-robot.md",
+    "url": "/blog/posts/2026-09-28-tutorial-home-robot.html",
+    "title": "home-robot: your guide to smart home automation",
+    "date": "2026-09-28T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "home-robot",
+      "smart-home",
+      "automation",
+      "navigation",
+      "obstacle-avoidance",
+      "python",
+      "tutorial"
+    ],
+    "excerpt": "learn how to use home-robot for smart home automation, navigation, and obstacle avoidance. get started with quick setup and example code.",
+    "teaser": "/assets/images/2026-09-28-tutorial-home-robot/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-07-25-tutorial-transfer-learning-and-fine-tuning.md",
     "url": "/blog/posts/2026-07-25-tutorial-transfer-learning-and-fine-tuning.html",
     "title": "transfer-learning-and-fine-tuning-explained",
