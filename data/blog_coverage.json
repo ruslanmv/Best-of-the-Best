@@ -1555,9 +1555,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "home-robot",
+    "id": "neural-tangents",
     "version": 1,
-    "date": "2026-09-28",
-    "filename": "2026-09-28-tutorial-home-robot.md"
+    "date": "2026-09-30",
+    "filename": "2026-09-30-tutorial-neural-tangents.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "neural-tangents",
+    "version": 1,
+    "date": "2026-09-30",
+    "filename": "2026-09-30-tutorial-neural-tangents.md"
   }
 ]

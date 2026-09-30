@@ -373,6 +373,25 @@
     "teaser": "/assets/images/2026-08-12-tutorial-gorilla/teaser-ai.jpg"
   },
   {
+    "filename": "2026-09-30-tutorial-neural-tangents.md",
+    "url": "/blog/posts/2026-09-30-tutorial-neural-tangents.html",
+    "title": "neural-tangents: library for analyzing neural networks",
+    "date": "2026-09-30T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "neural-tangents",
+      "deep-learning",
+      "kernel-methods",
+      "random-matrix-theory",
+      "jax",
+      "neural-network-analysis",
+      "infinite-width-limits",
+      "spectral-methods"
+    ],
+    "excerpt": "explore neural tangents, a library that uses kernel methods and random matrix theory for deep neural network analysis. discover its features, get started with examples, and learn best practices.",
+    "teaser": "/assets/images/2026-09-30-tutorial-neural-tangents/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-28-tutorial-hello-many-worlds.md",
     "url": "/blog/posts/2026-05-28-tutorial-hello-many-worlds.html",
     "title": "hello-many-worlds-theory-and-practice",
