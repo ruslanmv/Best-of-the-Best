@@ -1562,9 +1562,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "neural-tangents",
+    "id": "stable-diffusion-2",
     "version": 1,
-    "date": "2026-09-30",
-    "filename": "2026-09-30-tutorial-neural-tangents.md"
+    "date": "2026-10-01",
+    "filename": "2026-10-01-tutorial-stable-diffusion-2.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "stable-diffusion-2",
+    "version": 1,
+    "date": "2026-10-01",
+    "filename": "2026-10-01-tutorial-stable-diffusion-2.md"
   }
 ]

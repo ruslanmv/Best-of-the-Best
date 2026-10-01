@@ -1592,6 +1592,25 @@
     "teaser": "/assets/images/2026-09-12-tutorial-sentence-transformers/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-01-tutorial-stable-diffusion-2.md",
+    "url": "/blog/posts/2026-10-01-tutorial-stable-diffusion-2.html",
+    "title": "stable-diffusion-2-generative-ai-overview",
+    "date": "2026-10-01T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "stable-diffusion-2",
+      "text-to-image",
+      "generative-ai",
+      "art-creation",
+      "ai-technology",
+      "image-generation",
+      "webui",
+      "python"
+    ],
+    "excerpt": "Explore the advancements of Stable Diffusion 2 in text-to-image synthesis. Learn how to use it for high-resolution image generation and discover practical examples and best practices.",
+    "teaser": "/assets/images/2026-10-01-tutorial-stable-diffusion-2/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-09-26-tutorial-mmaction2.md",
     "url": "/blog/posts/2026-09-26-tutorial-mmaction2.html",
     "title": "mmaction2: Open-Source Library for Action Recognition in Videos",
