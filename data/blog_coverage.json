@@ -1569,9 +1569,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "stable-diffusion-2",
+    "id": "dall-e-mini",
     "version": 1,
-    "date": "2026-10-01",
-    "filename": "2026-10-01-tutorial-stable-diffusion-2.md"
+    "date": "2026-10-02",
+    "filename": "2026-10-02-tutorial-dall-e-mini.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "dall-e-mini",
+    "version": 1,
+    "date": "2026-10-02",
+    "filename": "2026-10-02-tutorial-dall-e-mini.md"
   }
 ]

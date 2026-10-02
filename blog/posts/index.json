@@ -2481,6 +2481,22 @@
     "teaser": "/assets/images/2026-05-03-paper-taming-transformers-for-high-resolution-image-synthesis/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-02-tutorial-dall-e-mini.md",
+    "url": "/blog/posts/2026-10-02-tutorial-dall-e-mini.html",
+    "title": "dalle-mini: generate images from text prompts easily",
+    "date": "2026-10-02T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "dalle-mini",
+      "ai-image-generation",
+      "text-to-image",
+      "art-creation",
+      "content-generation"
+    ],
+    "excerpt": "learn how to use dalle-mini, an ai model that creates images from text. explore its features, use cases, and practical applications in art and content creation.",
+    "teaser": "/assets/images/2026-10-02-tutorial-dall-e-mini/teaser-ai.jpg"
+  },
+  {
     "filename": "2025-12-24-package-llama-index.md",
     "url": "/blog/posts/2025-12-24-package-llama-index.html",
     "title": "LlamaIndex: Connect Your Custom Data to Large Language Models",
