@@ -1576,9 +1576,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "dall-e-mini",
+    "id": "classify-text-with-bert",
     "version": 1,
-    "date": "2026-10-02",
-    "filename": "2026-10-02-tutorial-dall-e-mini.md"
+    "date": "2026-10-03",
+    "filename": "2026-10-03-tutorial-classify-text-with-bert.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "classify-text-with-bert",
+    "version": 1,
+    "date": "2026-10-03",
+    "filename": "2026-10-03-tutorial-classify-text-with-bert.md"
   }
 ]

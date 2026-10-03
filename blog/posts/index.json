@@ -1525,6 +1525,22 @@
     "teaser": "/assets/images/2026-04-07-repo-microsoft-autogen/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-03-tutorial-classify-text-with-bert.md",
+    "url": "/blog/posts/2026-10-03-tutorial-classify-text-with-bert.html",
+    "title": "classify-text-with-bert",
+    "date": "2026-10-03T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "bert-classification",
+      "nlp",
+      "text-analysis",
+      "sentiment-analysis",
+      "topic-classification"
+    ],
+    "excerpt": "Learn how to use BERT for text classification, including sentiment analysis and topic classification. Get practical examples and best practices for setting up and using BERT effectively.",
+    "teaser": "/assets/images/2026-10-03-tutorial-classify-text-with-bert/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-30-tutorial-lightautoml.md",
     "url": "/blog/posts/2026-05-30-tutorial-lightautoml.html",
     "title": "lightautoml: automate machine learning workflows",
