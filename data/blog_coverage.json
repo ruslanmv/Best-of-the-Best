@@ -1583,9 +1583,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "classify-text-with-bert",
+    "id": "kandinsky-2-1",
     "version": 1,
-    "date": "2026-10-03",
-    "filename": "2026-10-03-tutorial-classify-text-with-bert.md"
+    "date": "2026-10-04",
+    "filename": "2026-10-04-tutorial-kandinsky-2-1.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "kandinsky-2-1",
+    "version": 1,
+    "date": "2026-10-04",
+    "filename": "2026-10-04-tutorial-kandinsky-2-1.md"
   }
 ]

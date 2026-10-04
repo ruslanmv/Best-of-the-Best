@@ -1443,6 +1443,25 @@
     "teaser": "/assets/images/2026-02-10-package-dopamine-rl/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-04-tutorial-kandinsky-2-1.md",
+    "url": "/blog/posts/2026-10-04-tutorial-kandinsky-2-1.html",
+    "title": "kandinsky 2.1: modern web design system for developers",
+    "date": "2026-10-04T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "kandinsky 2.1",
+      "css",
+      "javascript",
+      "responsive",
+      "design-system",
+      "web-development",
+      "modular-components",
+      "user-friendly"
+    ],
+    "excerpt": "learn about kandinsky 2.1, a powerful css and javascript design system for building scalable web applications. discover its key features, installation, and practical examples.",
+    "teaser": "/assets/images/2026-10-04-tutorial-kandinsky-2-1/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-06-16-tutorial-llama-3-1.md",
     "url": "/blog/posts/2026-06-16-tutorial-llama-3-1.html",
     "title": "Llama 3.1 - Advanced Python Data Processing Library",
