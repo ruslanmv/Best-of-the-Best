@@ -3003,6 +3003,22 @@
     "teaser": "/assets/images/2026-05-14-tutorial-building-your-own-federated-learning-algorithm/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-05-tutorial-softvc-vits.md",
+    "url": "/blog/posts/2026-10-05-tutorial-softvc-vits.html",
+    "title": "softvc vits: text-to-speech synthesis explained",
+    "date": "2026-10-05T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "softvc_vits",
+      "text-to-speech",
+      "natural-sounding",
+      "audio-output",
+      "deep-learning"
+    ],
+    "excerpt": "learn about softvc vits, a powerful tool for converting text into high-quality audio. discover its key features, use cases, and practical examples in this comprehensive guide.",
+    "teaser": "/assets/images/2026-10-05-tutorial-softvc-vits/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-02-04-package-tensorflow-federated.md",
     "url": "/blog/posts/2026-02-04-package-tensorflow-federated.html",
     "title": "TensorFlow Federated: A Framework for Federated Learning and Analytics",

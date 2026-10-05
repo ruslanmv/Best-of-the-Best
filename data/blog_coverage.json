@@ -1590,9 +1590,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "kandinsky-2-1",
+    "id": "softvc-vits",
     "version": 1,
-    "date": "2026-10-04",
-    "filename": "2026-10-04-tutorial-kandinsky-2-1.md"
+    "date": "2026-10-05",
+    "filename": "2026-10-05-tutorial-softvc-vits.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "softvc-vits",
+    "version": 1,
+    "date": "2026-10-05",
+    "filename": "2026-10-05-tutorial-softvc-vits.md"
   }
 ]
