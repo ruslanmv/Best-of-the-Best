@@ -2143,6 +2143,23 @@
     "teaser": "/assets/images/2026-05-09-paper-neural-style-transfer/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-06-tutorial-threestudio.md",
+    "url": "/blog/posts/2026-10-06-tutorial-threestudio.html",
+    "title": "threestudio: 3d modeling library for web applications",
+    "date": "2026-10-06T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "threestudio",
+      "3d-modeling",
+      "web-development",
+      "real-time-rendering",
+      "javascript",
+      "3d-graphics"
+    ],
+    "excerpt": "threestudio is a cutting-edge 3d modeling library that simplifies the creation of 3d scenes in web apps. learn how to set up and use it for real-time rendering and interactive 3d manipulation.",
+    "teaser": "/assets/images/2026-10-06-tutorial-threestudio/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-06-08-tutorial-haiku.md",
     "url": "/blog/posts/2026-06-08-tutorial-haiku.html",
     "title": "Haiku - Simple Python Web Framework",
