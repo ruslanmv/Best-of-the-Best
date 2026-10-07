@@ -392,6 +392,24 @@
     "teaser": "/assets/images/2026-09-30-tutorial-neural-tangents/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-07-tutorial-image-captioning.md",
+    "url": "/blog/posts/2026-10-07-tutorial-image-captioning.html",
+    "title": "Understanding Image Captioning and How to Implement It",
+    "date": "2026-10-07T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "image-captioning",
+      "computer-vision",
+      "natural-language-processing",
+      "machine-learning",
+      "content-management",
+      "accessibility",
+      "python-library"
+    ],
+    "excerpt": "Learn about image captioning, its applications, and how to use the captioning-lib library to generate text descriptions for images. Explore practical examples and best practices.",
+    "teaser": "/assets/images/2026-10-07-tutorial-image-captioning/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-28-tutorial-hello-many-worlds.md",
     "url": "/blog/posts/2026-05-28-tutorial-hello-many-worlds.html",
     "title": "hello-many-worlds-theory-and-practice",

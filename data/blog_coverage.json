@@ -1604,9 +1604,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "threestudio",
+    "id": "image-captioning",
     "version": 1,
-    "date": "2026-10-06",
-    "filename": "2026-10-06-tutorial-threestudio.md"
+    "date": "2026-10-07",
+    "filename": "2026-10-07-tutorial-image-captioning.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "image-captioning",
+    "version": 1,
+    "date": "2026-10-07",
+    "filename": "2026-10-07-tutorial-image-captioning.md"
   }
 ]
