@@ -1196,6 +1196,23 @@
     "teaser": "/assets/images/2026-08-20-tutorial-evidently/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-09-tutorial-word-embeddings.md",
+    "url": "/blog/posts/2026-10-09-tutorial-word-embeddings.html",
+    "title": "word-embeddings",
+    "date": "2026-10-09T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "word-embeddings",
+      "gensim",
+      "nlp",
+      "text-analysis",
+      "sentiment-analysis",
+      "recommendation-systems"
+    ],
+    "excerpt": "Learn how to use Gensim for word embeddings, improve NLP tasks, and explore practical applications like sentiment analysis and recommendation systems.",
+    "teaser": "/assets/images/2026-10-09-tutorial-word-embeddings/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-17-paper-image-segmentation.md",
     "url": "/blog/posts/2026-04-17-paper-image-segmentation.html",
     "title": "image-segmentation-with-pytorch-unet-opencv",
