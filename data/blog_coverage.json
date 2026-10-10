@@ -1625,9 +1625,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "word-embeddings",
+    "id": "tortoise",
     "version": 1,
-    "date": "2026-10-09",
-    "filename": "2026-10-09-tutorial-word-embeddings.md"
+    "date": "2026-10-10",
+    "filename": "2026-10-10-tutorial-tortoise.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "tortoise",
+    "version": 1,
+    "date": "2026-10-10",
+    "filename": "2026-10-10-tutorial-tortoise.md"
   }
 ]

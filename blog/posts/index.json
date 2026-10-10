@@ -973,6 +973,24 @@
     "teaser": "/assets/images/2026-07-03-tutorial-multimodal-maestro/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-10-tutorial-tortoise.md",
+    "url": "/blog/posts/2026-10-10-tutorial-tortoise.html",
+    "title": "tortoise-graphics: modern turtle graphics for web technologies",
+    "date": "2026-10-10T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "tortoise",
+      "turtle-graphics",
+      "web-technology",
+      "python",
+      "animations",
+      "graphics",
+      "web-development"
+    ],
+    "excerpt": "tortoise-graphics is a modern implementation of turtle graphics for web development, allowing you to create interactive graphics and animations using python in your web projects.",
+    "teaser": "/assets/images/2026-10-10-tutorial-tortoise/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-07-19-tutorial-mistral-inference.md",
     "url": "/blog/posts/2026-07-19-tutorial-mistral-inference.html",
     "title": "Mistral Inference: Data Analysis & Predictive Modeling Tool",
