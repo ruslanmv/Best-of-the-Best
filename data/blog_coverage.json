@@ -1632,9 +1632,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "tortoise",
+    "id": "petals",
     "version": 1,
-    "date": "2026-10-10",
-    "filename": "2026-10-10-tutorial-tortoise.md"
+    "date": "2026-10-11",
+    "filename": "2026-10-11-tutorial-petals.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "petals",
+    "version": 1,
+    "date": "2026-10-11",
+    "filename": "2026-10-11-tutorial-petals.md"
   }
 ]

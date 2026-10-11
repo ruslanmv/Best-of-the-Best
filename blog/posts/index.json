@@ -1134,6 +1134,23 @@
     "teaser": "/assets/images/2026-09-11-tutorial-colab2pdf/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-11-tutorial-petals.md",
+    "url": "/blog/posts/2026-10-11-tutorial-petals.html",
+    "title": "petals - framework for large language model training",
+    "date": "2026-10-11T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "petals",
+      "language-models",
+      "machine-learning",
+      "large-language-models",
+      "framework",
+      "training"
+    ],
+    "excerpt": "Learn about petals, a state-of-the-art framework for working with large language models. Discover its key features, installation, and practical examples. #petals #language-models #machine-learning",
+    "teaser": "/assets/images/2026-10-11-tutorial-petals/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-21-package-scikit-video.md",
     "url": "/blog/posts/2026-01-21-package-scikit-video.html",
     "title": "scikit-video: Video I/O and Quality Metrics in Python — Guide, Examples, and Alternatives",
