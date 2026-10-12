@@ -1639,9 +1639,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "petals",
+    "id": "epistemic-neural-networks",
     "version": 1,
-    "date": "2026-10-11",
-    "filename": "2026-10-11-tutorial-petals.md"
+    "date": "2026-10-12",
+    "filename": "2026-10-12-tutorial-epistemic-neural-networks.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "epistemic-neural-networks",
+    "version": 1,
+    "date": "2026-10-12",
+    "filename": "2026-10-12-tutorial-epistemic-neural-networks.md"
   }
 ]

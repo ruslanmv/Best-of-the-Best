@@ -1231,6 +1231,21 @@
     "teaser": "/assets/images/2026-08-20-tutorial-evidently/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-12-tutorial-epistemic-neural-networks.md",
+    "url": "/blog/posts/2026-10-12-tutorial-epistemic-neural-networks.html",
+    "title": "epistemic-neural-networks-for-uncertainty-in-deep-learning",
+    "date": "2026-10-12T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "epistemic-neural-networks",
+      "uncertainty-in-deep-learning",
+      "bayesian-methods",
+      "decision-making"
+    ],
+    "excerpt": "Learn about Epistemic Neural Networks (ENN) and how they capture uncertainty in predictions, essential for robust decision-making in critical applications like autonomous driving and medical diagnostics.",
+    "teaser": "/assets/images/2026-10-12-tutorial-epistemic-neural-networks/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-10-09-tutorial-word-embeddings.md",
     "url": "/blog/posts/2026-10-09-tutorial-word-embeddings.html",
     "title": "word-embeddings",
