@@ -847,6 +847,21 @@
     "teaser": "/assets/images/2026-10-08-tutorial-word2vec/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-13-tutorial-deepfloyd-if.md",
+    "url": "/blog/posts/2026-10-13-tutorial-deepfloyd-if.html",
+    "title": "deepfloyd-if-guide-for-text-to-image-and-video-synthesis",
+    "date": "2026-10-13T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "deepfloyd-if",
+      "image-generation",
+      "video-generation",
+      "ai-toolkit"
+    ],
+    "excerpt": "Learn about deepfloyd-if, a state-of-the-art tool for generating images and videos from text prompts. Discover its key features, installation process, and practical examples in this comprehensive guide.",
+    "teaser": "/assets/images/2026-10-13-tutorial-deepfloyd-if/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-08-09-tutorial-sage.md",
     "url": "/blog/posts/2026-08-09-tutorial-sage.html",
     "title": "sage-mathematics-software-system-overview",

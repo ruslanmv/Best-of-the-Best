@@ -1646,9 +1646,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "epistemic-neural-networks",
+    "id": "deepfloyd-if",
     "version": 1,
-    "date": "2026-10-12",
-    "filename": "2026-10-12-tutorial-epistemic-neural-networks.md"
+    "date": "2026-10-13",
+    "filename": "2026-10-13-tutorial-deepfloyd-if.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "deepfloyd-if",
+    "version": 1,
+    "date": "2026-10-13",
+    "filename": "2026-10-13-tutorial-deepfloyd-if.md"
   }
 ]
