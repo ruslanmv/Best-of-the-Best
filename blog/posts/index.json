@@ -2650,6 +2650,21 @@
     "teaser": "/assets/images/2026-05-03-paper-taming-transformers-for-high-resolution-image-synthesis/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-14-tutorial-normflows.md",
+    "url": "/blog/posts/2026-10-14-tutorial-normflows.html",
+    "title": "normflows: Probabilistic Modeling with Normalizing Flows",
+    "date": "2026-10-14T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "normflows",
+      "normalizing-flows",
+      "machine-learning",
+      "python-package"
+    ],
+    "excerpt": "Learn about normflows, a Python package for advanced probabilistic modeling using normalizing flows. Discover installation, core concepts, and practical examples.",
+    "teaser": "/assets/images/2026-10-14-tutorial-normflows/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-10-02-tutorial-dall-e-mini.md",
     "url": "/blog/posts/2026-10-02-tutorial-dall-e-mini.html",
     "title": "dalle-mini: generate images from text prompts easily",

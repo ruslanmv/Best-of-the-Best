@@ -1653,9 +1653,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "deepfloyd-if",
+    "id": "normflows",
     "version": 1,
-    "date": "2026-10-13",
-    "filename": "2026-10-13-tutorial-deepfloyd-if.md"
+    "date": "2026-10-14",
+    "filename": "2026-10-14-tutorial-normflows.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "normflows",
+    "version": 1,
+    "date": "2026-10-14",
+    "filename": "2026-10-14-tutorial-normflows.md"
   }
 ]
