@@ -507,6 +507,24 @@
     "teaser": "/assets/images/2026-08-25-tutorial-data-augmentation/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-15-tutorial-mmpose.md",
+    "url": "/blog/posts/2026-10-15-tutorial-mmpose.html",
+    "title": "MMPose: Open-Source Framework for Human Pose Estimation",
+    "date": "2026-10-15T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "mmpose",
+      "human-pose-estimation",
+      "computer-vision",
+      "open-source",
+      "mmdetection",
+      "pose-estimation",
+      "mmpose-api"
+    ],
+    "excerpt": "Learn about MMPose, a powerful and flexible open-source framework for human pose estimation, used in computer vision applications like surveillance and virtual try-on.",
+    "teaser": "/assets/images/2026-10-15-tutorial-mmpose/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-07-package-bert-score.md",
     "url": "/blog/posts/2026-01-07-package-bert-score.html",
     "title": "BERTScore for LLM Evaluation: When to Use It, Examples, and watsonx.ai Workflows",

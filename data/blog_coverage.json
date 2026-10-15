@@ -1660,9 +1660,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "normflows",
+    "id": "mmpose",
     "version": 1,
-    "date": "2026-10-14",
-    "filename": "2026-10-14-tutorial-normflows.md"
+    "date": "2026-10-15",
+    "filename": "2026-10-15-tutorial-mmpose.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "mmpose",
+    "version": 1,
+    "date": "2026-10-15",
+    "filename": "2026-10-15-tutorial-mmpose.md"
   }
 ]
