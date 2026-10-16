@@ -1695,6 +1695,24 @@
     "teaser": "/assets/images/2026-10-03-tutorial-classify-text-with-bert/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-16-tutorial-myosuite.md",
+    "url": "/blog/posts/2026-10-16-tutorial-myosuite.html",
+    "title": "myosuite: comprehensive guide to myoelectric signal processing",
+    "date": "2026-10-16T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "myosuite",
+      "myoelectric",
+      "signal-processing",
+      "python",
+      "research",
+      "bioengineering",
+      "prosthetics"
+    ],
+    "excerpt": "explore the powerful python package myosuite for real-time and offline myoelectric signal processing. learn key features, installation, and practical examples for researchers and developers.",
+    "teaser": "/assets/images/2026-10-16-tutorial-myosuite/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-30-tutorial-lightautoml.md",
     "url": "/blog/posts/2026-05-30-tutorial-lightautoml.html",
     "title": "lightautoml: automate machine learning workflows",
