@@ -3155,6 +3155,24 @@
     "teaser": "/assets/images/2026-06-26-tutorial-xgboost/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-17-tutorial-audiocraft.md",
+    "url": "/blog/posts/2026-10-17-tutorial-audiocraft.html",
+    "title": "audiocraft: open-source Python package for audio generation",
+    "date": "2026-10-17T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "audiocraft",
+      "python",
+      "audio-generation",
+      "music",
+      "diffusion-models",
+      "text-to-sound",
+      "encodec"
+    ],
+    "excerpt": "Learn about Audiocraft, an open-source Python package for generating high-quality audio using diffusion models. Discover its key features, installation, and practical examples. #audiocraft #python #audio-generation #music",
+    "teaser": "/assets/images/2026-10-17-tutorial-audiocraft/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-11-tutorial-langgraph.md",
     "url": "/blog/posts/2026-05-11-tutorial-langgraph.html",
     "title": "exploring-langgraph-for-nlp-with-python",

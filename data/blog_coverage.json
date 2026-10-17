@@ -1674,9 +1674,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "myosuite",
+    "id": "audiocraft",
     "version": 1,
-    "date": "2026-10-16",
-    "filename": "2026-10-16-tutorial-myosuite.md"
+    "date": "2026-10-17",
+    "filename": "2026-10-17-tutorial-audiocraft.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "audiocraft",
+    "version": 1,
+    "date": "2026-10-17",
+    "filename": "2026-10-17-tutorial-audiocraft.md"
   }
 ]
