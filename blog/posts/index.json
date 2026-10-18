@@ -2798,6 +2798,25 @@
     "teaser": "/assets/images/2026-05-29-tutorial-opik/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-18-tutorial-detectron2.md",
+    "url": "/blog/posts/2026-10-18-tutorial-detectron2.html",
+    "title": "detectron2: open-source library for object detection and instance segmentation",
+    "date": "2026-10-18T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "detectron2",
+      "object-detection",
+      "instance-segmentation",
+      "pytorch",
+      "computer-vision",
+      "machine-learning",
+      "open-source",
+      "ai"
+    ],
+    "excerpt": "learn how to install and use detectron2 for object detection, instance segmentation, and keypoint detection with detailed examples and best practices.",
+    "teaser": "/assets/images/2026-10-18-tutorial-detectron2/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-08-28-tutorial-dynamicrafter.md",
     "url": "/blog/posts/2026-08-28-tutorial-dynamicrafter.html",
     "title": "DynamiCrafter: Automating Crafting Processes with Advanced Algorithms",

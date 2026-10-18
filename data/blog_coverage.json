@@ -1681,9 +1681,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "audiocraft",
+    "id": "detectron2",
     "version": 1,
-    "date": "2026-10-17",
-    "filename": "2026-10-17-tutorial-audiocraft.md"
+    "date": "2026-10-18",
+    "filename": "2026-10-18-tutorial-detectron2.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "detectron2",
+    "version": 1,
+    "date": "2026-10-18",
+    "filename": "2026-10-18-tutorial-detectron2.md"
   }
 ]
