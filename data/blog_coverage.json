@@ -1688,9 +1688,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "detectron2",
+    "id": "reverb",
     "version": 1,
-    "date": "2026-10-18",
-    "filename": "2026-10-18-tutorial-detectron2.md"
+    "date": "2026-10-19",
+    "filename": "2026-10-19-tutorial-reverb.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "reverb",
+    "version": 1,
+    "date": "2026-10-19",
+    "filename": "2026-10-19-tutorial-reverb.md"
   }
 ]

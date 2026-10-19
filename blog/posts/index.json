@@ -1730,6 +1730,22 @@
     "teaser": "/assets/images/2026-05-30-tutorial-lightautoml/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-19-tutorial-reverb.md",
+    "url": "/blog/posts/2026-10-19-tutorial-reverb.html",
+    "title": "reverb: simplify regular expressions with python-like syntax",
+    "date": "2026-10-19T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "reverb",
+      "regular-expressions",
+      "python",
+      "text-processing",
+      "data-validation"
+    ],
+    "excerpt": "Learn about reverb, a Python library that simplifies regular expressions. Discover its key features, installation, and practical examples for text processing and data validation.",
+    "teaser": "/assets/images/2026-10-19-tutorial-reverb/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-13-repo-ultralytics-ultralytics.md",
     "url": "/blog/posts/2026-04-13-repo-ultralytics-ultralytics.html",
     "title": "ultralytics/Ultralytics - Modern Computer Vision Library in Python",
