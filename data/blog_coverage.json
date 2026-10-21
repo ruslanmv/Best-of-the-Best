@@ -1702,9 +1702,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "mmdetection",
+    "id": "chatrwkv",
     "version": 1,
-    "date": "2026-10-20",
-    "filename": "2026-10-20-tutorial-mmdetection.md"
+    "date": "2026-10-21",
+    "filename": "2026-10-21-tutorial-chatrwkv.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "chatrwkv",
+    "version": 1,
+    "date": "2026-10-21",
+    "filename": "2026-10-21-tutorial-chatrwkv.md"
   }
 ]
