@@ -1709,9 +1709,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "chatrwkv",
+    "id": "pyglove",
     "version": 1,
-    "date": "2026-10-21",
-    "filename": "2026-10-21-tutorial-chatrwkv.md"
+    "date": "2026-10-22",
+    "filename": "2026-10-22-tutorial-pyglove.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "pyglove",
+    "version": 1,
+    "date": "2026-10-22",
+    "filename": "2026-10-22-tutorial-pyglove.md"
   }
 ]

@@ -31,6 +31,21 @@
     "teaser": "/assets/images/2026-06-18-tutorial-dpo-zephyr/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-22-tutorial-pyglove.md",
+    "url": "/blog/posts/2026-10-22-tutorial-pyglove.html",
+    "title": "pyglove: automated machine learning with symbolic programming",
+    "date": "2026-10-22T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "pyglove",
+      "automated-machine-learning",
+      "neuro-architecture-search",
+      "symbolic-programming"
+    ],
+    "excerpt": "learn how to use pyglove for neuro architecture search, hyperparameter tuning, and model optimization. discover its key features and get started with practical examples in this guide.",
+    "teaser": "/assets/images/2026-10-22-tutorial-pyglove/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-07-18-tutorial-kor.md",
     "url": "/blog/posts/2026-07-18-tutorial-kor.html",
     "title": "kor framework - build modern web applications with ease",
