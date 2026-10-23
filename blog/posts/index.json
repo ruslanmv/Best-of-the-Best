@@ -61,6 +61,24 @@
     "teaser": "/assets/images/2026-07-18-tutorial-kor/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-23-tutorial-python-data-science-handbook.md",
+    "url": "/blog/posts/2026-10-23-tutorial-python-data-science-handbook.html",
+    "title": "python-data-science-handbook-guide",
+    "date": "2026-10-23T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "python",
+      "data-science",
+      "numpy",
+      "pandas",
+      "matplotlib",
+      "seaborn",
+      "scikit-learn"
+    ],
+    "excerpt": "Explore the essentials of Python data science with this comprehensive handbook, covering key libraries like NumPy, pandas, and scikit-learn. Ideal for beginners and experts alike.",
+    "teaser": "/assets/images/2026-10-23-tutorial-python-data-science-handbook/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-08-repo-run-llama-llama-index.md",
     "url": "/blog/posts/2026-04-08-repo-run-llama-llama-index.html",
     "title": "run-llama/Llama_Index: Building Powerful Information Retrieval Systems",
