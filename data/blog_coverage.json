@@ -1723,9 +1723,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "python-data-science-handbook",
+    "id": "pgmax",
     "version": 1,
-    "date": "2026-10-23",
-    "filename": "2026-10-23-tutorial-python-data-science-handbook.md"
+    "date": "2026-10-24",
+    "filename": "2026-10-24-tutorial-pgmax.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "pgmax",
+    "version": 1,
+    "date": "2026-10-24",
+    "filename": "2026-10-24-tutorial-pgmax.md"
   }
 ]

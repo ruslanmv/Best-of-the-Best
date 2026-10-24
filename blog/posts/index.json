@@ -443,6 +443,23 @@
     "teaser": "/assets/images/2026-10-07-tutorial-image-captioning/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-24-tutorial-pgmax.md",
+    "url": "/blog/posts/2026-10-24-tutorial-pgmax.html",
+    "title": "pgmax: Python package for probabilistic graphical models",
+    "date": "2026-10-24T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "pgmax",
+      "factor-graphs",
+      "mean-field",
+      "inference",
+      "machine-learning",
+      "computer-vision"
+    ],
+    "excerpt": "learn about pgmax, a powerful tool for factor graphs and mean-field variational inference, perfect for machine learning and computer vision applications.",
+    "teaser": "/assets/images/2026-10-24-tutorial-pgmax/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-28-tutorial-hello-many-worlds.md",
     "url": "/blog/posts/2026-05-28-tutorial-hello-many-worlds.html",
     "title": "hello-many-worlds-theory-and-practice",
