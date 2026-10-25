@@ -1561,6 +1561,24 @@
     "teaser": "/assets/images/2026-08-23-tutorial-omegaconf/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-25-tutorial-stablelm.md",
+    "url": "/blog/posts/2026-10-25-tutorial-stablelm.html",
+    "title": "stablelm: state-of-the-art-language-model-for-nlp-tasks",
+    "date": "2026-10-25T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "stablelm",
+      "nlp",
+      "text-generation",
+      "language-model",
+      "chatbots",
+      "content-generation",
+      "predictive-analysis"
+    ],
+    "excerpt": "StableLM is a powerful NLP model for text generation, understanding, and predictive analysis. Learn key features, installation, and practical examples. #stablelm #nlp #text-generation",
+    "teaser": "/assets/images/2026-10-25-tutorial-stablelm/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-11-package-mmdet.md",
     "url": "/blog/posts/2026-01-11-package-mmdet.html",
     "title": "MMDetection: OpenMMLab's Object Detection Toolbox",

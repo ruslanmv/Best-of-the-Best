@@ -1730,9 +1730,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "pgmax",
+    "id": "stablelm",
     "version": 1,
-    "date": "2026-10-24",
-    "filename": "2026-10-24-tutorial-pgmax.md"
+    "date": "2026-10-25",
+    "filename": "2026-10-25-tutorial-stablelm.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "stablelm",
+    "version": 1,
+    "date": "2026-10-25",
+    "filename": "2026-10-25-tutorial-stablelm.md"
   }
 ]
