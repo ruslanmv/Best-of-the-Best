@@ -1153,6 +1153,25 @@
     "teaser": "/assets/images/2025-12-23-package-catboost/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-26-tutorial-tts.md",
+    "url": "/blog/posts/2026-10-26-tutorial-tts.html",
+    "title": "ttsframework: text-to-speech guide for developers",
+    "date": "2026-10-26T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "tts",
+      "texttospeech",
+      "python",
+      "voiceassistants",
+      "ttsframework",
+      "customization",
+      "integration",
+      "flask"
+    ],
+    "excerpt": "Learn how to use the ttsframework library for text-to-speech in your projects. Explore installation, customization, and integration examples. #tts #texttospeech #python #voiceassistants",
+    "teaser": "/assets/images/2026-10-26-tutorial-tts/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-10-repo-laion-ai-open-assistant.md",
     "url": "/blog/posts/2026-04-10-repo-laion-ai-open-assistant.html",
     "title": "laion-ai/open-assistant - state-of-the-art-conversational-ai",

@@ -1737,9 +1737,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "stablelm",
+    "id": "tts",
     "version": 1,
-    "date": "2026-10-25",
-    "filename": "2026-10-25-tutorial-stablelm.md"
+    "date": "2026-10-26",
+    "filename": "2026-10-26-tutorial-tts.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "tts",
+    "version": 1,
+    "date": "2026-10-26",
+    "filename": "2026-10-26-tutorial-tts.md"
   }
 ]
