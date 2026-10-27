@@ -1902,6 +1902,24 @@
     "teaser": "/assets/images/2026-10-01-tutorial-stable-diffusion-2/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-27-tutorial-openclip.md",
+    "url": "/blog/posts/2026-10-27-tutorial-openclip.html",
+    "title": "openclip: cross-modal pretraining for vision-language models",
+    "date": "2026-10-27T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "openclip",
+      "cross-modal",
+      "pretraining",
+      "vision-language",
+      "multimodal",
+      "ai",
+      "research"
+    ],
+    "excerpt": "Learn about openclip, a library for training models that understand both images and text. Discover its key features, use cases, and practical examples in multimodal tasks.",
+    "teaser": "/assets/images/2026-10-27-tutorial-openclip/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-09-26-tutorial-mmaction2.md",
     "url": "/blog/posts/2026-09-26-tutorial-mmaction2.html",
     "title": "mmaction2: Open-Source Library for Action Recognition in Videos",

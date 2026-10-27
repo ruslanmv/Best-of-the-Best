@@ -1744,9 +1744,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "tts",
+    "id": "openclip",
     "version": 1,
-    "date": "2026-10-26",
-    "filename": "2026-10-26-tutorial-tts.md"
+    "date": "2026-10-27",
+    "filename": "2026-10-27-tutorial-openclip.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "openclip",
+    "version": 1,
+    "date": "2026-10-27",
+    "filename": "2026-10-27-tutorial-openclip.md"
   }
 ]
