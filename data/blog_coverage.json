@@ -1751,9 +1751,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "openclip",
+    "id": "stable-baselines3",
     "version": 1,
-    "date": "2026-10-27",
-    "filename": "2026-10-27-tutorial-openclip.md"
+    "date": "2026-10-28",
+    "filename": "2026-10-28-tutorial-stable-baselines3.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "stable-baselines3",
+    "version": 1,
+    "date": "2026-10-28",
+    "filename": "2026-10-28-tutorial-stable-baselines3.md"
   }
 ]
