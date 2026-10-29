@@ -1758,9 +1758,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "stable-baselines3",
+    "id": "rl-baselines3-zoo",
     "version": 1,
-    "date": "2026-10-28",
-    "filename": "2026-10-28-tutorial-stable-baselines3.md"
+    "date": "2026-10-29",
+    "filename": "2026-10-29-tutorial-rl-baselines3-zoo.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "rl-baselines3-zoo",
+    "version": 1,
+    "date": "2026-10-29",
+    "filename": "2026-10-29-tutorial-rl-baselines3-zoo.md"
   }
 ]
