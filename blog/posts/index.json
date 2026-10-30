@@ -237,6 +237,21 @@
     "teaser": "/assets/images/2026-08-01-tutorial-nemo/teaser-ai.jpg"
   },
   {
+    "filename": "2026-10-30-tutorial-grounded-sam.md",
+    "url": "/blog/posts/2026-10-30-tutorial-grounded-sam.html",
+    "title": "grounded-sam-for-image-generation",
+    "date": "2026-10-30T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "grounded-sam",
+      "image-generation",
+      "vision-language-model",
+      "ai-art"
+    ],
+    "excerpt": "learn about grounded-sam, a powerful vision-language model for generating images from text. discover installation, core concepts, and practical examples. perfect for creative design and art.",
+    "teaser": "/assets/images/2026-10-30-tutorial-grounded-sam/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-06-13-tutorial-fiftyone.md",
     "url": "/blog/posts/2026-06-13-tutorial-fiftyone.html",
     "title": "fiftyone-introduction-to-data-platform-for-ml",

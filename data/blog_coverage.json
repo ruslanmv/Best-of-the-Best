@@ -1765,9 +1765,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "rl-baselines3-zoo",
+    "id": "grounded-sam",
     "version": 1,
-    "date": "2026-10-29",
-    "filename": "2026-10-29-tutorial-rl-baselines3-zoo.md"
+    "date": "2026-10-30",
+    "filename": "2026-10-30-tutorial-grounded-sam.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "grounded-sam",
+    "version": 1,
+    "date": "2026-10-30",
+    "filename": "2026-10-30-tutorial-grounded-sam.md"
   }
 ]
