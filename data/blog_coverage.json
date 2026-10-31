@@ -1772,9 +1772,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "grounded-sam",
+    "id": "tfds",
     "version": 1,
-    "date": "2026-10-30",
-    "filename": "2026-10-30-tutorial-grounded-sam.md"
+    "date": "2026-10-31",
+    "filename": "2026-10-31-tutorial-tfds.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "tfds",
+    "version": 1,
+    "date": "2026-10-31",
+    "filename": "2026-10-31-tutorial-tfds.md"
   }
 ]
