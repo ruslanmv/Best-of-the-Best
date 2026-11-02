@@ -2315,6 +2315,21 @@
     "teaser": "/assets/images/2026-09-24-tutorial-mmagic/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-02-tutorial-mmocr.md",
+    "url": "/blog/posts/2026-11-02-tutorial-mmocr.html",
+    "title": "mmocr: unified end-to-end library for text recognition and detection",
+    "date": "2026-11-02T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "mmocr",
+      "text-recognition",
+      "text-detection",
+      "document-image-analysis"
+    ],
+    "excerpt": "Learn how to install and use MMOCR for text processing tasks. Discover its features, applications, and best practices in document image analysis.",
+    "teaser": "/assets/images/2026-11-02-tutorial-mmocr/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-08-paper-pifu.md",
     "url": "/blog/posts/2026-05-08-paper-pifu.html",
     "title": "pi-fu-for-3d-human-reconstruction-from-single-image",
