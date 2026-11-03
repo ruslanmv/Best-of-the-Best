@@ -2215,6 +2215,25 @@
     "teaser": "/assets/images/2026-06-29-tutorial-swarm/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-03-tutorial-mmsegmentation.md",
+    "url": "/blog/posts/2026-11-03-tutorial-mmsegmentation.html",
+    "title": "mmsegmentation-learn-to-use-high-performance-semantic-segmentation-library",
+    "date": "2026-11-03T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "mmsegmentation",
+      "semantic-segmentation",
+      "image-analysis",
+      "video-analysis",
+      "deeplearning",
+      "mmsegmentation-library",
+      "object-detection",
+      "3d-data"
+    ],
+    "excerpt": "Discover how to use MMSegmentation for high-performance semantic segmentation. Learn about its key features, installation, and practical examples in image and video analysis.",
+    "teaser": "/assets/images/2026-11-03-tutorial-mmsegmentation/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-08-23-tutorial-omegaconf.md",
     "url": "/blog/posts/2026-08-23-tutorial-omegaconf.html",
     "title": "OmegaConf: Powerful Python Library for Hierarchical Configuration Management",

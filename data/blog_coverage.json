@@ -1793,9 +1793,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "mmocr",
+    "id": "mmsegmentation",
     "version": 1,
-    "date": "2026-11-02",
-    "filename": "2026-11-02-tutorial-mmocr.md"
+    "date": "2026-11-03",
+    "filename": "2026-11-03-tutorial-mmsegmentation.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "mmsegmentation",
+    "version": 1,
+    "date": "2026-11-03",
+    "filename": "2026-11-03-tutorial-mmsegmentation.md"
   }
 ]
