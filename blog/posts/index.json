@@ -3176,6 +3176,24 @@
     "teaser": "/assets/images/2026-07-18-tutorial-kor/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-04-tutorial-lavis.md",
+    "url": "/blog/posts/2026-11-04-tutorial-lavis.html",
+    "title": "lavis: multimodal framework for advanced visual language tasks",
+    "date": "2026-11-04T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "lavis",
+      "multimodal",
+      "framework",
+      "image-captioning",
+      "question-answering",
+      "pytorch",
+      "machine-learning"
+    ],
+    "excerpt": "Learn about LAVIS, a state-of-the-art framework for visual language tasks. Discover its key features, installation, and practical examples like image captioning and question answering.",
+    "teaser": "/assets/images/2026-11-04-tutorial-lavis/teaser-ai.jpg"
+  },
+  {
     "filename": "2025-12-23-package-catboost.md",
     "url": "/blog/posts/2025-12-23-package-catboost.html",
     "title": "CatBoost: Gradient Boosting with Native Categorical Feature Support",

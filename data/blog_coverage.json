@@ -1800,9 +1800,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "mmsegmentation",
+    "id": "lavis",
     "version": 1,
-    "date": "2026-11-03",
-    "filename": "2026-11-03-tutorial-mmsegmentation.md"
+    "date": "2026-11-04",
+    "filename": "2026-11-04-tutorial-lavis.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "lavis",
+    "version": 1,
+    "date": "2026-11-04",
+    "filename": "2026-11-04-tutorial-lavis.md"
   }
 ]
