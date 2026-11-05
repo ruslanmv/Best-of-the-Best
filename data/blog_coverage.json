@@ -1807,9 +1807,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "lavis",
+    "id": "audiolm",
     "version": 1,
-    "date": "2026-11-04",
-    "filename": "2026-11-04-tutorial-lavis.md"
+    "date": "2026-11-05",
+    "filename": "2026-11-05-tutorial-audiolm.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "audiolm",
+    "version": 1,
+    "date": "2026-11-05",
+    "filename": "2026-11-05-tutorial-audiolm.md"
   }
 ]
