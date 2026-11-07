@@ -1446,6 +1446,21 @@
     "teaser": "/assets/images/2026-08-23-tutorial-omegaconf/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-07-tutorial-mmselfsup.md",
+    "url": "/blog/posts/2026-11-07-tutorial-mmselfsup.html",
+    "title": "mmselfsup: modular self-supervised learning framework",
+    "date": "2026-11-07T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "mmselfsup",
+      "self-supervised-learning",
+      "computer-vision",
+      "openmmlab"
+    ],
+    "excerpt": "explore mmselfsup, a versatile tool for self-supervised learning in computer vision. learn how to set it up and use practical examples to get started.",
+    "teaser": "/assets/images/2026-11-07-tutorial-mmselfsup/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-10-28-tutorial-stable-baselines3.md",
     "url": "/blog/posts/2026-10-28-tutorial-stable-baselines3.html",
     "title": "stable-baselines3-for-reinforcement-learning",

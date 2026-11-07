@@ -1821,9 +1821,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "pymdp",
+    "id": "mmselfsup",
     "version": 1,
-    "date": "2026-11-06",
-    "filename": "2026-11-06-tutorial-pymdp.md"
+    "date": "2026-11-07",
+    "filename": "2026-11-07-tutorial-mmselfsup.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "mmselfsup",
+    "version": 1,
+    "date": "2026-11-07",
+    "filename": "2026-11-07-tutorial-mmselfsup.md"
   }
 ]
