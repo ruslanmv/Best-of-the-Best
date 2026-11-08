@@ -2926,6 +2926,24 @@
     "teaser": "/assets/images/2025-12-25-package-langgraph/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-08-tutorial-tzer.md",
+    "url": "/blog/posts/2026-11-08-tutorial-tzer.html",
+    "title": "tzer: streamline deployment with powerful automation tools",
+    "date": "2026-11-08T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "tzer",
+      "deployment",
+      "automation",
+      "devops",
+      "cloud",
+      "kubernetes",
+      "microservices"
+    ],
+    "excerpt": "Learn how to use tzer for efficient software application deployment and configuration. Discover its core features, practical use cases, and best practices. Explore the latest version, v2.4.5, with improved performance and bug fixes.",
+    "teaser": "/assets/images/2026-11-08-tutorial-tzer/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-06-05-tutorial-supervision.md",
     "url": "/blog/posts/2026-06-05-tutorial-supervision.html",
     "title": "Understanding Supervision in Computer Vision",

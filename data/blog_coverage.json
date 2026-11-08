@@ -1828,9 +1828,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "mmselfsup",
+    "id": "tzer",
     "version": 1,
-    "date": "2026-11-07",
-    "filename": "2026-11-07-tutorial-mmselfsup.md"
+    "date": "2026-11-08",
+    "filename": "2026-11-08-tutorial-tzer.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "tzer",
+    "version": 1,
+    "date": "2026-11-08",
+    "filename": "2026-11-08-tutorial-tzer.md"
   }
 ]
