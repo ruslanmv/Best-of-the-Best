@@ -1835,9 +1835,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "tzer",
+    "id": "artline",
     "version": 1,
-    "date": "2026-11-08",
-    "filename": "2026-11-08-tutorial-tzer.md"
+    "date": "2026-11-09",
+    "filename": "2026-11-09-tutorial-artline.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "artline",
+    "version": 1,
+    "date": "2026-11-09",
+    "filename": "2026-11-09-tutorial-artline.md"
   }
 ]

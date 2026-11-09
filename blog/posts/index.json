@@ -1605,6 +1605,22 @@
     "teaser": "/assets/images/2026-04-25-paper-convnext/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-09-tutorial-artline.md",
+    "url": "/blog/posts/2026-11-09-tutorial-artline.html",
+    "title": "artline: guide to generating line drawings and art with python",
+    "date": "2026-11-09T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "artline",
+      "python",
+      "line-drawings",
+      "data-visualization",
+      "geometrical-shapes"
+    ],
+    "excerpt": "learn about artline, a python library for creating line drawings and art from images and geometrical shapes. discover its features, installation, and practical examples in data visualization and art generation.",
+    "teaser": "/assets/images/2026-11-09-tutorial-artline/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-12-tutorial-vc.md",
     "url": "/blog/posts/2026-05-12-tutorial-vc.html",
     "title": "vc-tools-best-practices",
