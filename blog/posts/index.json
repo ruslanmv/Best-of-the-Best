@@ -2529,6 +2529,25 @@
     "teaser": "/assets/images/2026-07-17-tutorial-image-classification/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-10-tutorial-sahi.md",
+    "url": "/blog/posts/2026-11-10-tutorial-sahi.html",
+    "title": "sahi: simplifying object detection and instance segmentation post-processing",
+    "date": "2026-11-10T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "sahi",
+      "object-detection",
+      "instance-segmentation",
+      "post-processing",
+      "python-library",
+      "api",
+      "customization",
+      "model-integration"
+    ],
+    "excerpt": "SAHI is a Python library that streamlines post-processing for object detection and instance segmentation models, offering a user-friendly API and customizable features for developers.",
+    "teaser": "/assets/images/2026-11-10-tutorial-sahi/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-08-14-tutorial-aniportrait.md",
     "url": "/blog/posts/2026-08-14-tutorial-aniportrait.html",
     "title": "AniPortrait - Streamline Portrait Creation with Text Descriptions",

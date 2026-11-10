@@ -1842,9 +1842,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "artline",
+    "id": "sahi",
     "version": 1,
-    "date": "2026-11-09",
-    "filename": "2026-11-09-tutorial-artline.md"
+    "date": "2026-11-10",
+    "filename": "2026-11-10-tutorial-sahi.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "sahi",
+    "version": 1,
+    "date": "2026-11-10",
+    "filename": "2026-11-10-tutorial-sahi.md"
   }
 ]
