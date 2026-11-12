@@ -1556,6 +1556,25 @@
     "teaser": "/assets/images/2026-08-28-tutorial-dynamicrafter/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-12-tutorial-ampligraph.md",
+    "url": "/blog/posts/2026-11-12-tutorial-ampligraph.html",
+    "title": "ampligraph: knowledge-graph-embedding-library",
+    "date": "2026-11-12T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "ampligraph",
+      "knowledge-graph-embedding",
+      "semantic-search",
+      "recommendation-systems",
+      "python-library",
+      "entity-linking",
+      "knowledge-graph",
+      "machine-learning"
+    ],
+    "excerpt": "learn how to use ampligraph for knowledge graph embedding and explore its applications in semantic search and recommendation systems.",
+    "teaser": "/assets/images/2026-11-12-tutorial-ampligraph/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-17-paper-image-segmentation.md",
     "url": "/blog/posts/2026-04-17-paper-image-segmentation.html",
     "title": "image-segmentation-with-pytorch-unet-opencv",

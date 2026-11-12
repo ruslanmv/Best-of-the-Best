@@ -1849,9 +1849,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "sahi",
+    "id": "ampligraph",
     "version": 1,
-    "date": "2026-11-10",
-    "filename": "2026-11-10-tutorial-sahi.md"
+    "date": "2026-11-12",
+    "filename": "2026-11-12-tutorial-ampligraph.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "ampligraph",
+    "version": 1,
+    "date": "2026-11-12",
+    "filename": "2026-11-12-tutorial-ampligraph.md"
   }
 ]
