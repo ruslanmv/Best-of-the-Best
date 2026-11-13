@@ -1856,9 +1856,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "ampligraph",
+    "id": "nmt-with-attention",
     "version": 1,
-    "date": "2026-11-12",
-    "filename": "2026-11-12-tutorial-ampligraph.md"
+    "date": "2026-11-13",
+    "filename": "2026-11-13-tutorial-nmt-with-attention.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "nmt-with-attention",
+    "version": 1,
+    "date": "2026-11-13",
+    "filename": "2026-11-13-tutorial-nmt-with-attention.md"
   }
 ]

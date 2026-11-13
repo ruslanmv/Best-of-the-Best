@@ -2613,6 +2613,24 @@
     "teaser": "/assets/images/2026-06-15-tutorial-gemma-2/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-13-tutorial-nmt-with-attention.md",
+    "url": "/blog/posts/2026-11-13-tutorial-nmt-with-attention.html",
+    "title": "nmt-with-attention: Neural Machine Translation with Attention",
+    "date": "2026-11-13T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "nmt",
+      "machine-translation",
+      "attention-mechanism",
+      "nmt-with-attention",
+      "translation-library",
+      "neural-machine-translation",
+      "python-library"
+    ],
+    "excerpt": "Learn how to use the nmtwithattention library for high-quality translations. Discover pre-trained models, customization options, and practical examples. #nmt #machine-translation #attention-mechanism",
+    "teaser": "/assets/images/2026-11-13-tutorial-nmt-with-attention/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-01-27-package-tpot.md",
     "url": "/blog/posts/2026-01-27-package-tpot.html",
     "title": "TPOT: Automated Machine Learning with Genetic Programming",
