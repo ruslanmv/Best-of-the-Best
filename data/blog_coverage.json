@@ -1863,9 +1863,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "nmt-with-attention",
+    "id": "glue-using-bert-on-tpu",
     "version": 1,
-    "date": "2026-11-13",
-    "filename": "2026-11-13-tutorial-nmt-with-attention.md"
+    "date": "2026-11-14",
+    "filename": "2026-11-14-tutorial-glue-using-bert-on-tpu.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "glue-using-bert-on-tpu",
+    "version": 1,
+    "date": "2026-11-14",
+    "filename": "2026-11-14-tutorial-glue-using-bert-on-tpu.md"
   }
 ]

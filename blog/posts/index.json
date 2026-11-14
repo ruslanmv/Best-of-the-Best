@@ -339,6 +339,24 @@
     "teaser": "/assets/images/2026-04-08-repo-run-llama-llama-index/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-14-tutorial-glue-using-bert-on-tpu.md",
+    "url": "/blog/posts/2026-11-14-tutorial-glue-using-bert-on-tpu.html",
+    "title": "glue-using-bert-on-tpu-for-nlu",
+    "date": "2026-11-14T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "glue",
+      "bert",
+      "tpu",
+      "nlu",
+      "natural-language-processing",
+      "tensorflow",
+      "machine-learning"
+    ],
+    "excerpt": "Learn how to use BERT models optimized for Tensor Processing Units (TPU) for Natural Language Understanding tasks. Explore setup, usage, and practical applications.",
+    "teaser": "/assets/images/2026-11-14-tutorial-glue-using-bert-on-tpu/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-07-24-tutorial-stable-diffusion-videos.md",
     "url": "/blog/posts/2026-07-24-tutorial-stable-diffusion-videos.html",
     "title": "Stable-Diffusion-Videos-Generate-High-Quality-Video-from-Text",
