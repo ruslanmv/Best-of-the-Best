@@ -1870,9 +1870,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "glue-using-bert-on-tpu",
+    "id": "tensorboard",
     "version": 1,
-    "date": "2026-11-14",
-    "filename": "2026-11-14-tutorial-glue-using-bert-on-tpu.md"
+    "date": "2026-11-15",
+    "filename": "2026-11-15-tutorial-tensorboard.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "tensorboard",
+    "version": 1,
+    "date": "2026-11-15",
+    "filename": "2026-11-15-tutorial-tensorboard.md"
   }
 ]

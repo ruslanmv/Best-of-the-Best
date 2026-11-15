@@ -2139,6 +2139,24 @@
     "teaser": "/assets/images/2026-10-01-tutorial-stable-diffusion-2/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-15-tutorial-tensorboard.md",
+    "url": "/blog/posts/2026-11-15-tutorial-tensorboard.html",
+    "title": "tensorboard-for-tensorflow-model-visualization",
+    "date": "2026-11-15T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "tensorboard",
+      "tensorflow",
+      "machine-learning",
+      "visualization",
+      "model-training",
+      "real-time",
+      "data-visualization"
+    ],
+    "excerpt": "learn about tensorboard, its key features, and how to use it for monitoring and optimizing machine learning models with real-time data visualization.",
+    "teaser": "/assets/images/2026-11-15-tutorial-tensorboard/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-08-25-tutorial-data-augmentation.md",
     "url": "/blog/posts/2026-08-25-tutorial-data-augmentation.html",
     "title": "data-augmentation: improve-model-performance-with-creative-techniques",
