@@ -1877,9 +1877,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "tensorboard",
+    "id": "high-performance-simulation-with-kubernetes",
     "version": 1,
-    "date": "2026-11-15",
-    "filename": "2026-11-15-tutorial-tensorboard.md"
+    "date": "2026-11-16",
+    "filename": "2026-11-16-tutorial-high-performance-simulation-with-kubernetes.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "high-performance-simulation-with-kubernetes",
+    "version": 1,
+    "date": "2026-11-16",
+    "filename": "2026-11-16-tutorial-high-performance-simulation-with-kubernetes.md"
   }
 ]

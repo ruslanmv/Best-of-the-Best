@@ -1205,6 +1205,21 @@
     "teaser": "/assets/images/2026-07-09-tutorial-tff-for-federated-learning-research-model-and-update-compression/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-16-tutorial-high-performance-simulation-with-kubernetes.md",
+    "url": "/blog/posts/2026-11-16-tutorial-high-performance-simulation-with-kubernetes.html",
+    "title": "high-performance-simulation-with-kubernetes",
+    "date": "2026-11-16T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "kubernetes",
+      "high-performance-simulation",
+      "statefulsets",
+      "custom-resource-definitions"
+    ],
+    "excerpt": "Learn how to use Kubernetes for high-performance simulations with StatefulSets and Custom Resource Definitions. Optimize resource usage and ensure reliability in complex workloads.",
+    "teaser": "/assets/images/2026-11-16-tutorial-high-performance-simulation-with-kubernetes/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-07-29-tutorial-brax.md",
     "url": "/blog/posts/2026-07-29-tutorial-brax.html",
     "title": "brax physics simulation library for developers",
