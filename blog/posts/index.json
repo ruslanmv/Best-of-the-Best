@@ -3083,6 +3083,24 @@
     "teaser": "/assets/images/2026-06-05-tutorial-supervision/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-17-tutorial-compel.md",
+    "url": "/blog/posts/2026-11-17-tutorial-compel.html",
+    "title": "compel: simplify data manipulation in python",
+    "date": "2026-11-17T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "compel",
+      "python",
+      "data-transformation",
+      "data-processing",
+      "data-structure",
+      "performance-optimization",
+      "extensibility"
+    ],
+    "excerpt": "compel is a lightweight python library for efficient data processing, offering tools for transformation, configuration, and optimization. perfect for handling complex data structures.",
+    "teaser": "/assets/images/2026-11-17-tutorial-compel/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-06-02-tutorial-langfun.md",
     "url": "/blog/posts/2026-06-02-tutorial-langfun.html",
     "title": "Langfun: Advanced Language Learning and Translation Library",

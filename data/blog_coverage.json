@@ -1884,9 +1884,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "high-performance-simulation-with-kubernetes",
+    "id": "compel",
     "version": 1,
-    "date": "2026-11-16",
-    "filename": "2026-11-16-tutorial-high-performance-simulation-with-kubernetes.md"
+    "date": "2026-11-17",
+    "filename": "2026-11-17-tutorial-compel.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "compel",
+    "version": 1,
+    "date": "2026-11-17",
+    "filename": "2026-11-17-tutorial-compel.md"
   }
 ]
