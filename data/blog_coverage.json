@@ -1891,9 +1891,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "compel",
+    "id": "dall-e-flow",
     "version": 1,
-    "date": "2026-11-17",
-    "filename": "2026-11-17-tutorial-compel.md"
+    "date": "2026-11-18",
+    "filename": "2026-11-18-tutorial-dall-e-flow.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "dall-e-flow",
+    "version": 1,
+    "date": "2026-11-18",
+    "filename": "2026-11-18-tutorial-dall-e-flow.md"
   }
 ]

@@ -535,6 +535,21 @@
     "teaser": "/assets/images/2026-07-31-tutorial-transformer/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-18-tutorial-dall-e-flow.md",
+    "url": "/blog/posts/2026-11-18-tutorial-dall-e-flow.html",
+    "title": "dalle-flow-guide-image-generation-tool",
+    "date": "2026-11-18T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "dalle-flow",
+      "image-generation",
+      "api",
+      "python"
+    ],
+    "excerpt": "learn about dalle-flow, a user-friendly image generation tool that uses the dalle api to create images from text prompts. discover its features and get started with practical examples.",
+    "teaser": "/assets/images/2026-11-18-tutorial-dall-e-flow/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-28-tutorial-hello-many-worlds.md",
     "url": "/blog/posts/2026-05-28-tutorial-hello-many-worlds.html",
     "title": "hello-many-worlds-theory-and-practice",
