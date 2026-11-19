@@ -2979,6 +2979,21 @@
     "teaser": "/assets/images/2026-05-09-paper-neural-style-transfer/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-19-tutorial-diffusers.md",
+    "url": "/blog/posts/2026-11-19-tutorial-diffusers.html",
+    "title": "diffusers: library for building and deploying diffusion models",
+    "date": "2026-11-19T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "diffusers",
+      "diffusion-models",
+      "image-generation",
+      "text-to-image"
+    ],
+    "excerpt": "learn about diffusers, a user-friendly library for diffusion models in image generation, text-to-image synthesis, and more. discover key features, installation, and practical examples.",
+    "teaser": "/assets/images/2026-11-19-tutorial-diffusers/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-05-13-tutorial-yolov8.md",
     "url": "/blog/posts/2026-05-13-tutorial-yolov8.html",
     "title": "YOLOv8 - Real-Time Object Detection System Overview & Usage",

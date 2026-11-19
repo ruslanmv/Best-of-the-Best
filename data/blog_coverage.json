@@ -1898,9 +1898,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "dall-e-flow",
+    "id": "diffusers",
     "version": 1,
-    "date": "2026-11-18",
-    "filename": "2026-11-18-tutorial-dall-e-flow.md"
+    "date": "2026-11-19",
+    "filename": "2026-11-19-tutorial-diffusers.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "diffusers",
+    "version": 1,
+    "date": "2026-11-19",
+    "filename": "2026-11-19-tutorial-diffusers.md"
   }
 ]
