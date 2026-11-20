@@ -1623,6 +1623,21 @@
     "teaser": "/assets/images/2026-11-12-tutorial-ampligraph/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-20-tutorial-sample-factory.md",
+    "url": "/blog/posts/2026-11-20-tutorial-sample-factory.html",
+    "title": "sample-factory: modular reinforcement learning framework",
+    "date": "2026-11-20T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "sample-factory",
+      "reinforcement-learning",
+      "rl-algorithms",
+      "modular-architecture"
+    ],
+    "excerpt": "sample factory is a flexible and efficient platform for researchers and practitioners to experiment with rl algorithms. learn key features, installation, and practical examples.",
+    "teaser": "/assets/images/2026-11-20-tutorial-sample-factory/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-04-17-paper-image-segmentation.md",
     "url": "/blog/posts/2026-04-17-paper-image-segmentation.html",
     "title": "image-segmentation-with-pytorch-unet-opencv",

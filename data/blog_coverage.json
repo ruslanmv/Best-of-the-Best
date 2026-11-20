@@ -1905,9 +1905,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "diffusers",
+    "id": "sample-factory",
     "version": 1,
-    "date": "2026-11-19",
-    "filename": "2026-11-19-tutorial-diffusers.md"
+    "date": "2026-11-20",
+    "filename": "2026-11-20-tutorial-sample-factory.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "sample-factory",
+    "version": 1,
+    "date": "2026-11-20",
+    "filename": "2026-11-20-tutorial-sample-factory.md"
   }
 ]
