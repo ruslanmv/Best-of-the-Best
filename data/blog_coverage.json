@@ -1919,9 +1919,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "open-assistant",
+    "id": "panda-gym",
     "version": 1,
-    "date": "2026-11-21",
-    "filename": "2026-11-21-tutorial-open-assistant.md"
+    "date": "2026-11-22",
+    "filename": "2026-11-22-tutorial-panda-gym.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "panda-gym",
+    "version": 1,
+    "date": "2026-11-22",
+    "filename": "2026-11-22-tutorial-panda-gym.md"
   }
 ]
