@@ -2077,6 +2077,25 @@
     "teaser": "/assets/images/2026-11-09-tutorial-artline/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-23-tutorial-banmo.md",
+    "url": "/blog/posts/2026-11-23-tutorial-banmo.html",
+    "title": "banmo-automate-nlp-task-adaptation-easily",
+    "date": "2026-11-23T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "banmo",
+      "nlp",
+      "task-adaptation",
+      "framework",
+      "automation",
+      "python",
+      "model-adaptation",
+      "text-classification"
+    ],
+    "excerpt": "Learn how to use BANMo, a state-of-the-art NLP framework, to quickly adapt models for new tasks. Explore setup, core concepts, and practical examples. Get the latest version for optimal performance.",
+    "teaser": "/assets/images/2026-11-23-tutorial-banmo/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-06-27-tutorial-yolov5.md",
     "url": "/blog/posts/2026-06-27-tutorial-yolov5.html",
     "title": "yolov5-object-detection-model-explained",

@@ -1926,9 +1926,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "panda-gym",
+    "id": "banmo",
     "version": 1,
-    "date": "2026-11-22",
-    "filename": "2026-11-22-tutorial-panda-gym.md"
+    "date": "2026-11-23",
+    "filename": "2026-11-23-tutorial-banmo.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "banmo",
+    "version": 1,
+    "date": "2026-11-23",
+    "filename": "2026-11-23-tutorial-banmo.md"
   }
 ]
