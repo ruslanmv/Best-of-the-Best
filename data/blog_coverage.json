@@ -1933,9 +1933,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "banmo",
+    "id": "tensor-parallel",
     "version": 1,
-    "date": "2026-11-23",
-    "filename": "2026-11-23-tutorial-banmo.md"
+    "date": "2026-11-24",
+    "filename": "2026-11-24-tutorial-tensor-parallel.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "tensor-parallel",
+    "version": 1,
+    "date": "2026-11-24",
+    "filename": "2026-11-24-tutorial-tensor-parallel.md"
   }
 ]

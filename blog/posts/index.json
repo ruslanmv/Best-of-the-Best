@@ -1336,6 +1336,23 @@
     "teaser": "/assets/images/2026-07-06-tutorial-saa/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-24-tutorial-tensor-parallel.md",
+    "url": "/blog/posts/2026-11-24-tutorial-tensor-parallel.html",
+    "title": "tensor_parallel: Parallelize Tensor Operations Across GPUs",
+    "date": "2026-11-24T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "tensor_parallel",
+      "deep-learning",
+      "gpu",
+      "parallelism",
+      "tensorflow",
+      "pytorch"
+    ],
+    "excerpt": "Learn how to implement tensorparallel in TensorFlow and PyTorch for efficient model training and inference, with practical examples and best practices.",
+    "teaser": "/assets/images/2026-11-24-tutorial-tensor-parallel/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-11-18-tutorial-dall-e-flow.md",
     "url": "/blog/posts/2026-11-18-tutorial-dall-e-flow.html",
     "title": "dalle-flow-guide-image-generation-tool",
