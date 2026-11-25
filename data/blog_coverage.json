@@ -1940,9 +1940,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "tensor-parallel",
+    "id": "tpu",
     "version": 1,
-    "date": "2026-11-24",
-    "filename": "2026-11-24-tutorial-tensor-parallel.md"
+    "date": "2026-11-25",
+    "filename": "2026-11-25-tutorial-tpu.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "tpu",
+    "version": 1,
+    "date": "2026-11-25",
+    "filename": "2026-11-25-tutorial-tpu.md"
   }
 ]
