@@ -1947,9 +1947,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "tpu",
+    "id": "rliable",
     "version": 1,
-    "date": "2026-11-25",
-    "filename": "2026-11-25-tutorial-tpu.md"
+    "date": "2026-11-26",
+    "filename": "2026-11-26-tutorial-rliable.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "rliable",
+    "version": 1,
+    "date": "2026-11-26",
+    "filename": "2026-11-26-tutorial-rliable.md"
   }
 ]
