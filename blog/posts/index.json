@@ -3260,6 +3260,22 @@
     "teaser": "/assets/images/2026-11-12-tutorial-ampligraph/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-27-tutorial-tf-agents.md",
+    "url": "/blog/posts/2026-11-27-tutorial-tf-agents.html",
+    "title": "tf-agents: Reinforcement Learning Library in TensorFlow",
+    "date": "2026-11-27T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "tf-agents",
+      "reinforcement-learning",
+      "tensorflow",
+      "dqn",
+      "ppo"
+    ],
+    "excerpt": "Explore TF-Agents, a TensorFlow library for reinforcement learning. Learn about its key features, installation, and practical examples for DQN and PPO agents.",
+    "teaser": "/assets/images/2026-11-27-tutorial-tf-agents/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-11-15-tutorial-tensorboard.md",
     "url": "/blog/posts/2026-11-15-tutorial-tensorboard.html",
     "title": "tensorboard-for-tensorflow-model-visualization",

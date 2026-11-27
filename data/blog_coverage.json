@@ -1954,9 +1954,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "rliable",
+    "id": "tf-agents",
     "version": 1,
-    "date": "2026-11-26",
-    "filename": "2026-11-26-tutorial-rliable.md"
+    "date": "2026-11-27",
+    "filename": "2026-11-27-tutorial-tf-agents.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "tf-agents",
+    "version": 1,
+    "date": "2026-11-27",
+    "filename": "2026-11-27-tutorial-tf-agents.md"
   }
 ]
