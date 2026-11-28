@@ -1961,9 +1961,16 @@
   },
   {
     "kind": "tutorial",
-    "id": "tf-agents",
+    "id": "pyg",
     "version": 1,
-    "date": "2026-11-27",
-    "filename": "2026-11-27-tutorial-tf-agents.md"
+    "date": "2026-11-28",
+    "filename": "2026-11-28-tutorial-pyg.md"
+  },
+  {
+    "kind": "tutorial",
+    "id": "pyg",
+    "version": 1,
+    "date": "2026-11-28",
+    "filename": "2026-11-28-tutorial-pyg.md"
   }
 ]

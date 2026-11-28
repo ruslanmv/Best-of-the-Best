@@ -181,6 +181,24 @@
     "teaser": "/assets/images/2026-04-22-paper-moco/teaser-ai.jpg"
   },
   {
+    "filename": "2026-11-28-tutorial-pyg.md",
+    "url": "/blog/posts/2026-11-28-tutorial-pyg.html",
+    "title": "pyg-introduction-to-graph-neural-networks",
+    "date": "2026-11-28T09:00:00+00:00",
+    "author": "Ruslanmv",
+    "tags": [
+      "pyg",
+      "pytorch-geometric",
+      "graph-neural-networks",
+      "graph-ml",
+      "machine-learning",
+      "deep-learning",
+      "graph-data"
+    ],
+    "excerpt": "Learn about PyTorch Geometric (PyG) for deep learning on graphs. Discover how to install, use, and build graph neural networks with practical examples and best practices.",
+    "teaser": "/assets/images/2026-11-28-tutorial-pyg/teaser-ai.jpg"
+  },
+  {
     "filename": "2026-08-29-tutorial-xla.md",
     "url": "/blog/posts/2026-08-29-tutorial-xla.html",
     "title": "xla for tensorflow performance optimization",
